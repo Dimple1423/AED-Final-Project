@@ -25,6 +25,7 @@ public class PatientData {
 
     public PatientData() {
         patientId = count;
+        //increment the count after constructor is called
         count++;
     }
 
