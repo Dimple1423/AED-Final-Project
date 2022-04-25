@@ -1,4 +1,4 @@
-package finalproject.models.Employee;
+package HealthBuddy.models.Employee;
 
 /**
  *

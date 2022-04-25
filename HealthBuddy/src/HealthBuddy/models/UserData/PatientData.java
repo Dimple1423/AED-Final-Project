@@ -1,4 +1,4 @@
-package finalproject.models.UserData;
+package HealthBuddy.models.UserData;
 
 import java.util.Date;
 

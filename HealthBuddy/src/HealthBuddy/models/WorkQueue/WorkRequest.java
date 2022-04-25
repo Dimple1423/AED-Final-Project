@@ -1,7 +1,7 @@
-package finalproject.models.WorkQueue;
+package HealthBuddy.models.WorkQueue;
 
+import HealthBuddy.models.UserAccount.UserAccount;
 import java.util.Date;
-import finalproject.models.UserAccount.*;
 
 /**
  *

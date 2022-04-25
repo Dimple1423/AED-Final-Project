@@ -1,4 +1,4 @@
-package finalproject.models.UserAccount;
+package HealthBuddy.models.UserAccount;
 
 /**
  *
