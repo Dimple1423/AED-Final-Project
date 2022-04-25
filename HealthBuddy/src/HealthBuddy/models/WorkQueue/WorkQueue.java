@@ -1,4 +1,4 @@
-package finalproject.models.WorkQueue;
+package HealthBuddy.models.WorkQueue;
 
 import java.util.ArrayList;
 import java.util.List;

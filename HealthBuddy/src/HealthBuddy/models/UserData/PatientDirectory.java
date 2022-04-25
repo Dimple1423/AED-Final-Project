@@ -1,9 +1,9 @@
-package finalproject.models.UserData;
+package HealthBuddy.models.UserData;
 
 import java.util.ArrayList;
 import java.util.stream.Collectors;
-import finalproject.models.WorkQueue.WorkQueue;
-import finalproject.models.UserData.PatientData;
+import HealthBuddy.models.WorkQueue.WorkQueue;
+import HealthBuddy.models.UserData.PatientData;
 
 /**
  *
