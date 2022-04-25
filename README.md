@@ -13,3 +13,6 @@ Name: Bhawna Singh <br>
 Email: singh.bhaw@northeastern.edu <br>
 NUID: 002920202<br>
 <br>
+
+## Object Model Diagram:
+![Model Diagram](Images/UML.png)
