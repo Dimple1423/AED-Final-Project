@@ -1,5 +1,6 @@
 package HealthBuddy.models.WorkQueue;
 
+import HealthBuddy.models.WorkQueue.WorkRequest;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
