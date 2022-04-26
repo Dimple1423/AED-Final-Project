@@ -21,10 +21,10 @@ import HealthBuddy.models.Organisation.Organisation.Type;
 import HealthBuddy.models.User.Organisation.DonorOrganisation;
 import HealthBuddy.models.User.Organisation.PatientOrganisation;
 import HealthBuddy.models.UserAccount.UserAccount;
-import HealthBuddy.models.Hospital.Organisation.HospitalOrganisationDoctor;
-import HealthBuddy.models.Hospital.Organisation.HospitalOrganisationAdmin;
-import HealthBuddy.models.Hospital.Organisation.HospitalOrganisationAttendant;
-import HealthBuddy.models.Hospital.Organisation.HospitalOrganisationAssistant;
+import HealthBuddy.models.Healthcare.Organisation.HealthcareOrganisationDoctor;
+import HealthBuddy.models.Healthcare.Organisation.HealthcareOrganisationAdmin;
+import HealthBuddy.models.Healthcare.Organisation.HealthcareOrganisationAttendant;
+import HealthBuddy.models.Healthcare.Organisation.HealthcareOrganisationAssistant;
 
 import java.util.ArrayList;
 
@@ -48,7 +48,7 @@ public class OrganisationCatalog {
         Organisation organisation = null;
         if (type.getValue().equals(Type.Doctor.getValue()))
         {
-            organisation = new HospitalOrganisationDoctor();
+            organisation = new HealthcareOrganisationDoctor();
             organisationList.add(organisation);
         }
         
@@ -63,19 +63,19 @@ public class OrganisationCatalog {
             organisation = new DonorOrganisation();
             organisationList.add(organisation);
         }
-        else if(type.getValue().equals(Type.HospitalAdmin.getValue()))
+        else if(type.getValue().equals(Type.HealthcareAdmin.getValue()))
         {
-            organisation = new HospitalOrganisationAdmin();
+            organisation = new HealthcareOrganisationAdmin();
             organisationList.add(organisation);
         }
         else if(type.getValue().equals(Type.Assistant.getValue()))
         {
-            organisation = new HospitalOrganisationAssistant();
+            organisation = new HealthcareOrganisationAssistant();
             organisationList.add(organisation);
         }
         else if(type.getValue().equals(Type.Attendant.getValue()))
         {
-            organisation = new HospitalOrganisationAttendant();
+            organisation = new HealthcareOrganisationAttendant();
             organisationList.add(organisation);
         }
         else if(type.getValue().equals(Type.BloodbankAdmin.getValue()))
