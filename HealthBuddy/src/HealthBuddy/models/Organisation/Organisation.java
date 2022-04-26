@@ -26,7 +26,7 @@ public abstract class Organisation {
 //    private static int counter=0;
     
     public enum Type{
-        HospitalAdmin("Hospital Admin Organisation"), 
+        HealthcareAdmin("Healthcare Admin Organisation"), 
         Doctor("Doctor Organisation"), 
         Assistant("Assistant Organisation"),
         Attendant("Attendant Organisation"),
@@ -46,8 +46,8 @@ public abstract class Organisation {
             return value;
         }
 
-        public static Type getHospitalAdmin() {
-            return HospitalAdmin;
+        public static Type getHealthcareAdmin() {
+            return HealthcareAdmin;
         }
 
         public static Type getDoctor() {
