@@ -29,10 +29,10 @@ private String val;
 private RoleType(String val){
     this.val=val;
 }
-
+//Changing body of generated methods, choose Tools | Templates
 @Override
 public String toString() {
-    return val; //To change body of generated methods, choose Tools | Templates.
+    return val; 
 }
 }
 public abstract JPanel createWorkArea(JPanel userProcessContainer, 
