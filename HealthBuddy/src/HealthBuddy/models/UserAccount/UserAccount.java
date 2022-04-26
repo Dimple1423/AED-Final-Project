@@ -1,6 +1,6 @@
 package HealthBuddy.models.UserAccount;
 
-import HealthBuddy.Employee.Employee;
+import HealthBuddy.models.Employee.Employee;
 import HealthBuddy.models.Role.Role;
 import HealthBuddy.models.UserData.DonorData;
 import HealthBuddy.models.UserData.PatientData;
@@ -8,7 +8,7 @@ import HealthBuddy.models.WorkQueue.WorkQueue;
 
 /**
  *
- * @author Bhawna
+ * @author Bhawna Singh
  */
 public class UserAccount {
     
