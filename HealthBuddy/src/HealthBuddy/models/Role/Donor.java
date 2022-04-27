@@ -15,7 +15,8 @@ import HealthBuddy.models.User.User;
 public class Donor extends Role{
 
     @Override
+    //To change body of generated methods, choose Tools | Templates
     public JPanel createWorkArea(JPanel userProcessContainer, User account, Organisation organisation, Enterprise enterprise, Network network, EcoSystem system) {
-        return new WorkAreaDonorJPanel(system, account); //To change body of generated methods, choose Tools | Templates.
+        return new WorkAreaDonorJPanel(system, account); 
     }
 }
