@@ -16,7 +16,7 @@ import Healthbuddy.ui.BloodDonorCenter.HeadBloodDonorCenterMainPageJPanel;
  *
  * @author Bhawna Singh
  */
-public class BloodDonorCenterHead extends Role {
+public class BloodDonorCenterController extends Role {
 
     @Override
     public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Organisation organisation, Enterprise enterprise, Network network, EcoSystem system) {
