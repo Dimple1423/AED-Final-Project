@@ -19,7 +19,6 @@ public class TrustVolunteerRole extends Role{
     @Override
     public JPanel createWorkArea(JPanel userProcessContainer, User account, Organisation organisation, Enterprise enterprise,Network network, EcoSystem business)
     {
-        //need to write the code here
         return new WorkAreaVolunteerJPanel(userProcessContainer, account,(TrustOrgVolunteer) organisation,(EnterpriseTrust) enterprise,network, business);
     }
 }
