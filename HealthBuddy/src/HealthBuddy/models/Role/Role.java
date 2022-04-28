@@ -1,4 +1,4 @@
-package HealthBuddy.Role;
+package HealthBuddy.models.Role;
 
 import javax.swing.JPanel;
 import HealthBuddy.models.UserAccount.UserAccount;

@@ -1,4 +1,4 @@
-package Healthbuddy.models.Healthcare.Role;
+package HealthBuddy.models.Healthcare.Role;
 
 import javax.swing.JPanel;
 import Healthbuddy.models.EcoSystem;
