@@ -2,15 +2,15 @@
 package HealthBuddy.models.BloodDonorCenter.Role;
 
 import javax.swing.JPanel;
-import Healthbuddy.models.BloodDonorCenter.Organisation.HeadsOrganisation;
-import Healthbuddy.models.EcoSystem;
-import Healthbuddy.models.Enterprise.BloodDonorCenterEnterprise;
-import Healthbuddy.models.Enterprise.Enterprise;
-import Healthbuddy.models.Network.Network;
-import Healthbuddy.models.Organisation.Organisation;
-import Healthbuddy.models.Role.Role;
-import Healthbuddy.models.UserAccount.UserAccount;
-import Healthbuddy.ui.BloodDonorCenter.HeadBloodDonorCenterMainPageJPanel;
+import HealthBuddy.models.BloodDonorCenter.Organisation.BDCControllerOrganisation;
+import HealthBuddy.models.EcoSystem;
+import HealthBuddy.models.Enterprise.EnterpriseBloodDonorCenter;
+import HealthBuddy.models.Enterprise.Enterprise;
+import HealthBuddy.models.Network.Network;
+import HealthBuddy.models.Organisation.Organisation;
+import HealthBuddy.models.Role.Role;
+import HealthBuddy.models.UserAccount.UserAccount;
+import HealthBuddy.ui.BloodDonorCenter.BloodDonorCenterControllerMainPageJPanel;
 
 /**
  *
@@ -20,7 +20,7 @@ public class BloodDonorCenterController extends Role {
 
     @Override
     public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Organisation organisation, Enterprise enterprise, Network network, EcoSystem system) {
-        return new ControllerBloodDonorCenterMainPageJPanel(userProcessContainer,account,(ControllerOrganisation)organisation,(BloodDonorCenterEnterprise)enterprise,network,system);
+        return new BloodDonorCenterControllerMainPageJPanel(userProcessContainer,account,(BDCControllerOrganisation)organisation,(EnterpriseBloodDonorCenter)enterprise,network,system);
     }
    
 }

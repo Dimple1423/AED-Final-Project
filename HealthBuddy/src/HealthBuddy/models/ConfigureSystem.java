@@ -1,6 +1,6 @@
 package HealthBuddy.models;
 import HealthBuddy.models.Employee.Employee;
-import HealthBuddy.models.Role.SystemAdmin;
+import HealthBuddy.models.Role.SysAdmin;
 import HealthBuddy.models.UserAccount.UserAccountDirectory;
 import HealthBuddy.models.UserAccount.UserAccount;
 

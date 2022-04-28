@@ -4,8 +4,8 @@ import HealthBuddy.models.Organisation.Organisation;
 import HealthBuddy.models.Role.Role;
 import HealthBuddy.models.UserData.PatientDirectory;
 import HealthBuddy.models.UserData.DonorDirectory;
-import HealthBuddy.models.Hospital.Appointment.AppointmentDirectory;
-import HealthBuddy.models.Funds.Donation.FundsDirectory;
+import HealthBuddy.models.Healthcare.Appointment.AppointmentCatalog;
+import HealthBuddy.models.Trust.Donation.TrustCatalog;
 import java.util.ArrayList;
 
 
@@ -13,13 +13,13 @@ import java.util.ArrayList;
  *
  * @author Dimple Patel
  */
-public class EcoSystem {
+public class EcoSystem extends Organisation {
     private static EcoSystem business;
     private ArrayList<Network> networkList;
     private PatientDirectory patientDir;
     private DonorDirectory donorDir;
-    private AppointmentDirectory appointmentDirectory;
-    private FundsDirectory fundsDirectory;
+    private AppointmentCatalog appointmentCatalog;
+    private TrustCatalog trustCatalog;
     
     public static EcoSystem getInstance()
     {
@@ -43,24 +43,24 @@ public class EcoSystem {
         networkList=new ArrayList<>();
         this.patientDir = new PatientDirectory();
         this.donorDir = new DonorDirectory();
-        this.appointmentDirectory = new AppointmentDirectory();
-        this.fundsDirectory = new FundsDirectory();
+        this.appointmentCatalog = new AppointmentCatalog();
+        this.trustCatalog = new TrustCatalog();
     }
 
-    public AppointmentDirectory getAppointmentDirectory() {
-        return appointmentDirectory;
+    public AppointmentCatalog getAppointmentCatalog() {
+        return appointmentCatalog;
     }
 
-    public void setAppointmentDirectory(AppointmentDirectory appointmentDirectory) {
-        this.appointmentDirectory = appointmentDirectory;
+    public void setAppointmentCatalog(AppointmentCatalog appointmentCatalog) {
+        this.appointmentCatalog = appointmentCatalog;
     }
 
-    public FundsDirectory getDonationDirectory() {
-        return fundsDirectory;
+    public TrustCatalog getDonationDirectory() {
+        return trustCatalog;
     }
 
-    public void setDonationDirectory(FundsDirectory donationDirectory) {
-        this.fundsDirectory = donationDirectory;
+    public void setDonationDirectory(TrustCatalog donationDirectory) {
+        this.trustCatalog = donationDirectory;
     }
 
     public PatientDirectory getPatientDir() {

@@ -7,7 +7,7 @@ import HeathBuddy.models.Network.Network;
 import HeathBuddy.models.Organisation.Organisation;
 import HeathBuddy.models.Role.Role;
 import HeathBuddy.models.UserAccount.UserAccount;
-import Healthbuddy.ui.admin.AdminWorkAreaPanel;
+import HealthBuddy.ui.admin.AdminWorkAreaPanel;
 
 /**
  *
