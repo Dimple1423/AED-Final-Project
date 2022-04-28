@@ -1,6 +1,5 @@
 package HealthBuddy.models.Trust.Organisation;
 
-import HealthBuddy.Role.Role;
 import java.util.ArrayList;
 import HealthBuddy.models.Trust.Role.TrustAdmin;
 import HealthBuddy.models.Organisation.Organisation;
