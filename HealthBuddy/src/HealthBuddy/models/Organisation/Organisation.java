@@ -20,7 +20,7 @@ public abstract class Organisation {
     private String name;
     private WorkQueue workQueue;
     private EmployeeCatalog employeeCatalog;
-    private UserAccountCatalog userAccountCatalog;
+    private UserCatalog userCatalog;
     private String organizationID;
     private String cause;
 //    private static int counter=0;
@@ -82,12 +82,12 @@ public abstract class Organisation {
             return Volunteer;
         }
 
-        public static Type getBloodbankAdmin() {
-            return BloodbankAdmin;
+        public static Type getBloodDonorCenterAdmin() {
+            return BloodDonorCenterAdmin;
         }
 
         public static Type getBloodBankIncharge() {
-            return BloodBankHead;
+            return BloodDonorCenterController;
         }
         
     }
@@ -96,7 +96,7 @@ public abstract class Organisation {
         this.name = name;
         workQueue = new WorkQueue();
         employeeCatalog = new EmployeeCatalog();
-        userAccountCatalog = new UserAccountCatalog();
+        userCatalog = new UserCatalog();
         organizationID = UUID.randomUUID().toString();
 //        ++counter;
     }
@@ -105,7 +105,7 @@ public abstract class Organisation {
         this.name = name;
         workQueue = new WorkQueue();
         employeeCatalog = new EmployeeCatalog();
-        userAccountCatalog = new UserAccountCatalog();
+        userCatalog = new UserCatalog();
         organizationID = UUID.randomUUID().toString();
         this.cause=cause;
 //        ++counter;
@@ -121,8 +121,8 @@ public abstract class Organisation {
     }
     
     
-    public UserAccountCatalog getUserAccountCatalog() {
-        return userAccountCatalog;
+    public UserCatalog getUserCatalog() {
+        return userCatalog;
     }
 
     public String getOrganizationID() {
