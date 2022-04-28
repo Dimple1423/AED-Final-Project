@@ -20,18 +20,18 @@ public class User {
     private DonorData donor;
     private Role role;
     private WorkQueue workQueue;
-    private int loginattempt=0;
+    private int loginAttempt=0;
 
     public int getLoginattempt() {
-        return loginattempt;
+        return loginAttempt;
     }
 
-    public void setLoginattempt(int loginattempt) {
-        this.loginattempt += loginattempt;
+    public void setLoginattempt(int loginAttempt) {
+        this.loginAttempt += loginAttempt;
     }
 
     public void resetLogin() {
-        loginattempt = 0;
+        loginAttempt = 0;
 
     }
 
