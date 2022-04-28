@@ -35,8 +35,8 @@ public abstract class Organisation {
         FunderAdmin("Funder Admin Organisation"),
         Manager("Manager Organisation"),
         Volunteer("Volunteer Organisation"),
-        BloodbankAdmin("BloodBank Admin Organisation"),
-        BloodBankHead("BloodBankHead");
+        BloodDonorCenterAdmin("BloodDonorCenter Admin Organisation"),
+        BloodDonorCenterController("BloodDonorCenterController");
         
         private String value;
         private Type(String value) {

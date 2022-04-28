@@ -11,7 +11,7 @@ import java.util.ArrayList;
  */
 public class BDCOrganisationAdmin extends Organisation{
     public BDCOrganisationAdmin() {
-        super(Organisation.Type.BloodbankAdmin.getValue());
+        super(Organisation.Type.BloodDonorCenterAdmin.getValue());
     }
 
     @Override
