@@ -7,9 +7,9 @@ import java.util.ArrayList;
  *
  * @author Dimple Patel
  */
-public class EnterpriseHealthcare {
+public class EnterpriseHealthcare extends Enterprise{
     public EnterpriseHealthcare(String name){
-        super(name,EnterpriseClassification.Hospital);
+        super(name,EnterpriseClassification.Healthcare);
     }
 
 

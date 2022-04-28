@@ -1,8 +1,8 @@
 package HealthBuddy.models;
 import HealthBuddy.models.Employee.Employee;
 import HealthBuddy.models.Role.SysAdmin;
-import HealthBuddy.models.UserAccount.UserAccountDirectory;
-import HealthBuddy.models.UserAccount.UserAccount;
+import HealthBuddy.models.User.UserCatalog;
+import HealthBuddy.models.User.User;
 
 /**
  *
@@ -12,8 +12,8 @@ public class ConfigureSystem {
     public static EcoSystem configure()
     {    
         EcoSystem system = EcoSystem.getInstance();
-        Employee employee = system.getEmployeeDirectory().addEmployee("sysadmin");
-        UserAccount ua = system.getUserAccountDirectory().newUserAccount("sysadmin", "sysadmin", employee,new SystemAdmin());
+        Employee employee = system.getEmployeeCatalog().addEmployee("sysadmin");
+        User user = system.getUserCatalog().newUser("sysadmin", "sysadmin", employee,new SysAdmin());
         
         return system;
     }

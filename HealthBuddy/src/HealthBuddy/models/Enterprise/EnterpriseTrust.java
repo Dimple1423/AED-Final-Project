@@ -7,16 +7,16 @@ import java.util.ArrayList;
  *
  * @author Dimple Patel
  */
-public class EnterpriseTrust {
+public class EnterpriseTrust extends Enterprise{
     public EnterpriseTrust(String name)
     {
-        super(name,EnterpriseClassification.Funds);
+        super(name,EnterpriseClassification.Trust);
    
     }
     
      public EnterpriseTrust(String name, String cause)
     {
-        super(name,EnterpriseClassification.Funds, cause);
+        super(name,EnterpriseClassification.Trust, cause);
    
     }
 

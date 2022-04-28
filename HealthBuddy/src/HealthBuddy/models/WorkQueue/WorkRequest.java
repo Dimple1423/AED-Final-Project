@@ -1,6 +1,6 @@
 package HealthBuddy.models.WorkQueue;
 
-import HealthBuddy.models.UserAccount.UserAccount;
+import HealthBuddy.models.UserAccount.User;
 import java.util.Date;
 
 /**
@@ -9,8 +9,8 @@ import java.util.Date;
  */
 public class WorkRequest {
     private String message;
-    private UserAccount sender;
-    private UserAccount receiver;
+    private User sender;
+    private User receiver;
     private String status;
     private Date requestDate;
     private Date resolveDate;
@@ -27,19 +27,19 @@ public class WorkRequest {
         this.message = message;
     }
 
-    public UserAccount getSender() {
+    public User getSender() {
         return sender;
     }
 
-    public void setSender(UserAccount sender) {
+    public void setSender(User sender) {
         this.sender = sender;
     }
 
-    public UserAccount getReceiver() {
+    public User getReceiver() {
         return receiver;
     }
 
-    public void setReceiver(UserAccount receiver) {
+    public void setReceiver(User receiver) {
         this.receiver = receiver;
     }
 

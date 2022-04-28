@@ -1,5 +1,6 @@
-package HealthBuddy.models.UserAccount;
+package HealthBuddy.models.User;
 
+import HealthBuddy.models.User.*;
 import HealthBuddy.models.Employee.Employee;
 import HealthBuddy.models.Role.Role;
 import HealthBuddy.models.UserData.DonorData;
@@ -10,7 +11,7 @@ import HealthBuddy.models.WorkQueue.WorkQueue;
  *
  * @author Bhawna Singh
  */
-public class UserAccount {
+public class User {
     
     private String username;
     private String password;
@@ -34,7 +35,7 @@ public class UserAccount {
 
     }
 
-    public UserAccount() {
+    public User() {
         workQueue = new WorkQueue();
     }
 
@@ -97,4 +98,5 @@ public class UserAccount {
     @Override
     public String toString() {
         return username;
+    }
 }

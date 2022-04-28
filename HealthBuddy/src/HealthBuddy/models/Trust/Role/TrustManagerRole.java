@@ -7,7 +7,7 @@ import HealthBuddy.models.Enterprise.Enterprise;
 import HealthBuddy.models.Network.Network;
 import HealthBuddy.models.Organisation.Organisation;
 import HealthBuddy.models.Role.Role;
-import HealthBuddy.models.UserAccount.UserAccount;
+import HealthBuddy.models.UserAccount.User;
 import javax.swing.JPanel;
 import HealthBuddy.models.Role.Role;
 import HealthBuddy.ui.FundManager.ManagerWorkAreaJPanel;
@@ -18,7 +18,7 @@ import HealthBuddy.ui.FundManager.ManagerWorkAreaJPanel;
  */
 public class TrustManagerRole extends Role{
     @Override
-    public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Organisation organisation, Enterprise enterprise, Network network,EcoSystem system) {
+    public JPanel createWorkArea(JPanel userProcessContainer, User account, Organisation organisation, Enterprise enterprise, Network network,EcoSystem system) {
         //need to write the code here:
        return new ManagerWorkAreaJPanel(userProcessContainer,account,(TrustOrganisationManager) organisation,(FundingEnterprise) enterprise,network,system);
     }
