@@ -17,7 +17,7 @@ public class TrustAdminRole extends Role{
     @Override
     public JPanel createWorkArea(JPanel userProcessContainer, User account, Organisation organisation, Enterprise enterprise, Network network ,EcoSystem business) 
     {
-         //need to add the work Area for AdminWorkAreaHere
+         //added the work Area for AdminWorkAreaHere
         return new WorkAreaAdminPanel(userProcessContainer, enterprise);
     }
 }
