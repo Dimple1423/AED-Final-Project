@@ -19,7 +19,6 @@ import HealthBuddy.ui.TrustManager.WorkAreaManagerJPanel;
 public class TrustManagerRole extends Role{
     @Override
     public JPanel createWorkArea(JPanel userProcessContainer, User account, Organisation organisation, Enterprise enterprise, Network network,EcoSystem system) {
-        //need to write the code here:
        return new WorkAreaManagerJPanel(userProcessContainer,account,(TrustOrgManager) organisation,(EnterpriseTrust) enterprise,network,system);
     }
 }
