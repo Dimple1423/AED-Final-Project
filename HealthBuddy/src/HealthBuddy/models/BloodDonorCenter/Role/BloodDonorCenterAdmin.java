@@ -1,4 +1,4 @@
-package HeathBuddy.models.BloodDonorCenter.Role;
+package HealthBuddy.models.BloodDonorCenter.Role;
 
 import javax.swing.JPanel;
 import HeathBuddy.models.EcoSystem;

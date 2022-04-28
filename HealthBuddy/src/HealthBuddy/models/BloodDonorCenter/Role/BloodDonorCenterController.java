@@ -1,5 +1,5 @@
 
-package Healthbuddy.models.BloodDonorCenter.Role;
+package HealthBuddy.models.BloodDonorCenter.Role;
 
 import javax.swing.JPanel;
 import Healthbuddy.models.BloodDonorCenter.Organisation.HeadsOrganisation;
