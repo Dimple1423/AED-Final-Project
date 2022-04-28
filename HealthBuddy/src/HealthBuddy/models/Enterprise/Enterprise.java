@@ -7,7 +7,8 @@ import HealthBuddy.models.Organisation.OrganisationCatalog;
  *
  * @author Dimple Patel
  */
-public class Enterprise {
+public abstract class Enterprise extends Organisation{
+
     private EnterpriseClassification enterpriseClassification;
     private OrganisationCatalog organisationList;
     
@@ -22,7 +23,7 @@ public class Enterprise {
         organisationList= new OrganisationCatalog();
     }
     public enum EnterpriseClassification{
-                User("User"), Hospital("Hospital"), Bloodbank("BloodBank"), Funds("Funds") ;
+                User("User"), Healthcare("Healthcare"), BloodDonorCenter("BloodDonorCenter"), Trust("Trust") ;
                 private String val;
                 private EnterpriseClassification(String val){
                     this.val=val;
@@ -34,7 +35,7 @@ public class Enterprise {
 
         @Override
         public String toString() {
-            return val; //To change body of generated methods, choose Tools | Templates.
+            return val;
         }           
     }
     public OrganisationCatalog getOrganizationCatalog() {

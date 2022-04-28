@@ -1,12 +1,12 @@
 package HealthBuddy.models.BloodDonorCenter.Role;
 
 import javax.swing.JPanel;
-import HeathBuddy.models.EcoSystem;
-import HeathBuddy.models.Enterprise.Enterprise;
-import HeathBuddy.models.Network.Network;
-import HeathBuddy.models.Organisation.Organisation;
-import HeathBuddy.models.Role.Role;
-import HeathBuddy.models.UserAccount.UserAccount;
+import HealthBuddy.models.EcoSystem;
+import HealthBuddy.models.Enterprise.Enterprise;
+import HealthBuddy.models.Network.Network;
+import HealthBuddy.models.Organisation.Organisation;
+import HealthBuddy.models.Role.Role;
+import HealthBuddy.models.User.User;
 import HealthBuddy.ui.admin.AdminWorkAreaPanel;
 
 /**
@@ -16,8 +16,9 @@ import HealthBuddy.ui.admin.AdminWorkAreaPanel;
 public class BloodDonorCenterAdmin extends Role{
 
     @Override
-    public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Organisation organisation, Enterprise enterprise, Network network, EcoSystem system) {
+    public JPanel createWorkArea(JPanel userProcessContainer, User account, Organisation organisation, Enterprise enterprise, Network network, EcoSystem system) {
         return new AdminWorkAreaPanel(userProcessContainer, enterprise); //To change body of generated methods, choose Tools | Templates.
     }
+}
     
     

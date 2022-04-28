@@ -9,7 +9,7 @@ package HealthBuddy.models.Organisation;
 import HealthBuddy.models.Organisation.Organisation.Type;
 import HealthBuddy.models.User.Organisation.DonorOrganisation;
 import HealthBuddy.models.User.Organisation.PatientOrganisation;
-import HealthBuddy.models.UserAccount.UserAccount;
+import HealthBuddy.models.UserAccount.User;
 
 import HealthBuddy.models.Bloodbank.Organisation.BloodbankAdminOrg;
 import HealthBuddy.models.Bloodbank.Organisation.HeadsOrganisation;
@@ -20,7 +20,7 @@ import HealthBuddy.models.Enterprise.FundingEnterprise;
 import HealthBuddy.models.Organisation.Organisation.Type;
 import HealthBuddy.models.User.Organisation.DonorOrganisation;
 import HealthBuddy.models.User.Organisation.PatientOrganisation;
-import HealthBuddy.models.UserAccount.UserAccount;
+import HealthBuddy.models.UserAccount.User;
 import HealthBuddy.models.Healthcare.Organisation.HealthcareOrganisationDoctor;
 import HealthBuddy.models.Healthcare.Organisation.HealthcareOrganisationAdmin;
 import HealthBuddy.models.Healthcare.Organisation.HealthcareOrganisationAttendant;

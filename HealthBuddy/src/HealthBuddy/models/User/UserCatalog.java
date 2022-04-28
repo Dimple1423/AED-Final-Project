@@ -1,5 +1,6 @@
-package HealthBuddy.models.UserAccount;
+package HealthBuddy.models.User;
 
+import HealthBuddy.models.UserAccount.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -15,19 +16,19 @@ import HealthBuddy.models.UserData.PatientData;
  */
 public class UserCatalog {
     
-    private ArrayList<UserAccount> userCatalog;
+    private ArrayList<User> userCatalog;
 
     public UserCatalog() {
         this.userCatalog = new ArrayList();
     }
 
-    public ArrayList<UserAccount> getUserCatalog() {
+    public ArrayList<User> getUserCatalog() {
         return userCatalog;
     }
     
     //To create new user account
-    public UserAccount newUserAccount(String username, String password, Employee employee, Role role){
-        UserAccount ua = new UserAccount();
+    public User newUserAccount(String username, String password, Employee employee, Role role){
+        User ua = new User();
         ua.setUsername(username);
         ua.setPassword(password);
         ua.setEmployee(employee);
@@ -37,9 +38,9 @@ public class UserCatalog {
     }
     
      //To create new donor account
-    public UserAccount newDonorAccount(String username, String password, DonorData donor, Role role)
+    public User newDonorAccount(String username, String password, DonorData donor, Role role)
     {
-        UserAccount ua = new UserAccount();
+        User ua = new User();
         ua.setUsername(username);
         ua.setPassword(password);
         ua.setDonor(donor);
@@ -49,9 +50,9 @@ public class UserCatalog {
     }
     
     //To create new patient account
-    public UserAccount newPatientAccount(String username, String password, PatientData patient, Role role)
+    public User newPatientAccount(String username, String password, PatientData patient, Role role)
     {
-        UserAccount ua = new UserAccount();
+        User ua = new User();
         ua.setUsername(username);
         ua.setPassword(password);
         ua.setPatient(patient);
@@ -62,17 +63,17 @@ public class UserCatalog {
     
     //Validate if username is unique
     public boolean ifUniqueUsername(String username){
-        for (UserAccount ua : userCatalog){
+        for (User ua : userCatalog){
             if (ua.getUsername().equals(username))
                 return false;
         }
         return true;
     }
    //To authenticate user
-   public UserAccount authenticateUserAccount(String username, String password){
-       List<UserAccount> useraccList = userCatalog.stream().filter(acc -> acc.getUsername().equals(username) && acc.getPassword().equals(password))
+   public User authenticateUserAccount(String username, String password){
+       List<User> useraccList = userCatalog.stream().filter(acc -> acc.getUsername().equals(username) && acc.getPassword().equals(password))
                 .collect(Collectors.toList());
-       List<UserAccount> useraccList1 = userCatalog.stream().filter(acc -> acc.getUsername().equals(username))
+       List<User> useraccList1 = userCatalog.stream().filter(acc -> acc.getUsername().equals(username))
                .collect(Collectors.toList());
 
        boolean isUsernamePresent = userCatalog.stream().filter(acc -> acc.getUsername().equals(username))
@@ -97,7 +98,7 @@ public class UserCatalog {
     }
    
    public boolean isUserNameUnique(String username) {
-       List<UserAccount> useraccList = userCatalog.stream().filter(acc -> acc.getUsername().equals(username))
+       List<User> useraccList = userCatalog.stream().filter(acc -> acc.getUsername().equals(username))
                 .collect(Collectors.toList());
        
        return useraccList.size() == 0; 
@@ -105,7 +106,7 @@ public class UserCatalog {
    
    //To remove user
     public void removeUserAccount(String username){
-        for(UserAccount ua :userCatalog){
+        for(User ua :userCatalog){
             if(ua.getUsername().equals(username))
             {
                 userCatalog.remove(ua);
@@ -115,7 +116,7 @@ public class UserCatalog {
     }
     
     //to return the user on the basis of userName for login attempt functionality:
-    public UserAccount getUser(String username){
+    public User getUser(String username){
         System.out.println(userCatalog.size());
        return userCatalog.stream().filter(acc -> acc.getUsername().equals(username))
          .collect(Collectors.toList()).get(0);

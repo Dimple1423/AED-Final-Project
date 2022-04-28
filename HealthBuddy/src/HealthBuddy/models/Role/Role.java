@@ -1,7 +1,7 @@
 package HealthBuddy.models.Role;
 
 import javax.swing.JPanel;
-import HealthBuddy.models.UserAccount.UserAccount;
+import HealthBuddy.models.UserAccount.User;
 import HealthBuddy.models.EcoSystem;
 import HealthBuddy.models.Enterprise.Enterprise;
 import HealthBuddy.models.Network.Network;
@@ -37,7 +37,7 @@ public String toString() {
 }
 }
 public abstract JPanel createWorkArea(JPanel userProcessContainer, 
-        UserAccount account, 
+        User account, 
         Organisation organisation, 
         Enterprise enterprise,
         Network network,

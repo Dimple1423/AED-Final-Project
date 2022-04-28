@@ -7,7 +7,7 @@ package HealthBuddy.models.Organisation;
 
 import HealthBuddy.models.Employee.EmployeeCatalog;
 import HealthBuddy.models.Role.Role;
-import HealthBuddy.models.UserAccount.UserAccountCatalog;
+import HealthBuddy.models.UserAccount.UserCatalog;
 import HealthBuddy.models.WorkQueue.WorkQueue;
 import java.util.ArrayList;
 import java.util.UUID;

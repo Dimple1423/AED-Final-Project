@@ -5,7 +5,7 @@
  */
 package HealthBuddy.models.DB4OUtil;
 
-import HealthBuddy.models.ConfigureASystem;
+import HealthBuddy.models.ConfigureSystem;
 import HealthBuddy.models.EcoSystem;
 import com.db4o.Db4oEmbedded;
 import com.db4o.ObjectContainer;
@@ -69,7 +69,7 @@ public class DB4OUtil {
         ObjectSet<EcoSystem> systems = conn.query(EcoSystem.class); // Change to the object you want to save
         EcoSystem system;
         if (systems.isEmpty()){
-            system = ConfigureASystem.configure();  // If there's no System in the record, create a new one
+            system = ConfigureSystem.configure();  // If there's no System in the record, create a new one
         }
         else{
             system = systems.get(systems.size() - 1);

@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package HealthBuddy.models.Enterprise;
 
 import java.util.ArrayList;
@@ -29,20 +25,20 @@ public class EnterpriseCatalog {
     //Create enterprise
     public Enterprise createAndAddEnterprise(String name,Enterprise.EnterpriseClassification type){
         Enterprise enterprise=null;
-        if(type==Enterprise.EnterpriseClassification.Hospital){
-            enterprise = new HospitalEnterprise(name);
+        if(type==Enterprise.EnterpriseClassification.Healthcare){
+            enterprise = new EnterpriseHealthcare(name);
             enterpriseList.add(enterprise);
         }
-        else if(type==Enterprise.EnterpriseClassification.Bloodbank){
-            enterprise = new BloodbankEnterprise(name);
+        else if(type==Enterprise.EnterpriseClassification.BloodDonorCenter){
+            enterprise = new EnterpriseBloodDonorCenter(name);
             enterpriseList.add(enterprise);
         }
-          else if(type==Enterprise.EnterpriseClassification.Funds){
-            enterprise = new FundingEnterprise(name);
+          else if(type==Enterprise.EnterpriseClassification.Trust){
+            enterprise = new EnterpriseTrust(name);
             enterpriseList.add(enterprise);
         }
           else if(type==Enterprise.EnterpriseClassification.User){
-            enterprise = new UserEnterprise(name);
+            enterprise = new EnterpriseUser(name);
             enterpriseList.add(enterprise);
         }
         
@@ -53,20 +49,20 @@ public class EnterpriseCatalog {
     
      public Enterprise createAndAddEnterprise(String name,Enterprise.EnterpriseClassification type, String cause){
         Enterprise enterprise=null;
-        if(type==Enterprise.EnterpriseClassification.Hospital){
-            enterprise = new HospitalEnterprise(name);
+        if(type==Enterprise.EnterpriseClassification.Healthcare){
+            enterprise = new EnterpriseHealthcare(name);
             enterpriseList.add(enterprise);
         }
-        else if(type==Enterprise.EnterpriseClassification.Bloodbank){
-            enterprise = new BloodbankEnterprise(name);
+        else if(type==Enterprise.EnterpriseClassification.BloodDonorCenter){
+            enterprise = new EnterpriseBloodDonorCenter(name);
             enterpriseList.add(enterprise);
         }
-          else if(type==Enterprise.EnterpriseClassification.Funds){
-            enterprise = new FundingEnterprise(name, cause);
+          else if(type==Enterprise.EnterpriseClassification.Trust){
+            enterprise = new EnterpriseTrust(name, cause);
             enterpriseList.add(enterprise);
         }
           else if(type==Enterprise.EnterpriseClassification.User){
-            enterprise = new UserEnterprise(name);
+            enterprise = new EnterpriseUser(name);
             enterpriseList.add(enterprise);
         }
         

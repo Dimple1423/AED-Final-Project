@@ -3,7 +3,7 @@ package Healthbuddy.models.WorkQueue;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Date;
-import HealthBuddy.models.UserAccount.UserAccount;
+import HealthBuddy.models.UserAccount.User;
 import HealthBuddyUtil.Utilities;
 
 /**
