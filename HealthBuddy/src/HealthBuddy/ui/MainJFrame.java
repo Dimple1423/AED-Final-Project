@@ -2,7 +2,7 @@ package HealthBuddy.ui;
 
 import java.awt.CardLayout;
 import javax.swing.JPanel;
-import HealthBuddy.ui.patient.CreatePatientJPanel;
+import HealthBuddy.ui.patient.PatientCreateJPanel;
 import HealthBuddy.models.DB4OUtil.DB4OUtil;
 import HealthBuddy.ui.login.LoginJPanel;
 import HealthBuddy.models.EcoSystem;
@@ -228,7 +228,7 @@ public class MainJFrame extends javax.swing.JFrame {
     private void ButtonPatientActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonPatientActionPerformed
         // TODO add your handling code here:      
         
-        CreatePatientJPanel createDonor = new CreatePatientJPanel(bodyPanel, system);
+        PatientCreateJPanel createDonor = new PatientCreateJPanel(bodyPanel, system);
         bodyPanel.add("CreatePatientJPanel", createDonor);
         CardLayout layout = (CardLayout) bodyPanel.getLayout();
         layout.next(bodyPanel);
