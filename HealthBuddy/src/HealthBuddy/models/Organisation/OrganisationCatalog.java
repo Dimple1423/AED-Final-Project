@@ -5,25 +5,23 @@
  */
 package HealthBuddy.models.Organisation;
 
-
-import HealthBuddy.models.Organisation.Organisation.Type;
 import HealthBuddy.models.User.Organisation.DonorOrganisation;
-import HealthBuddy.models.User.Organisation.PatientOrganisation;
-import HealthBuddy.models.UserAccount.User;
-
-import HealthBuddy.models.Bloodbank.Organisation.BloodbankAdminOrg;
-import HealthBuddy.models.Bloodbank.Organisation.HeadsOrganisation;
-import HealthBuddy.models.Funds.Organisation.FundsOrganisationAdmin;
-import HealthBuddy.models.Funds.Organisation.FundsOrganisationManager;
-import HealthBuddy.models.Funds.Organisation.FundsOrganisationVolunteer;
-import HealthBuddy.models.Enterprise.FundingEnterprise;
 import HealthBuddy.models.Organisation.Organisation.Type;
-import HealthBuddy.models.User.Organisation.DonorOrganisation;
+import HealthBuddy.models.User.User;
 import HealthBuddy.models.User.Organisation.PatientOrganisation;
-import HealthBuddy.models.UserAccount.User;
+import HealthBuddy.models.BloodDonorCenter.Organisation.BDCControllerOrganisation;
+import HealthBuddy.models.BloodDonorCenter.Organisation.BDCOrganisationAdmin;
+import HealthBuddy.models.Trust.Organisation.TrustOrgManager;
+import HealthBuddy.models.Trust.Organisation.TrustOrgAdmin;
+import HealthBuddy.models.Enterprise.EnterpriseTrust;
+import HealthBuddy.models.Trust.Organisation.TrustOrgVolunteer;
+import HealthBuddy.models.User.Organisation.DonorOrganisation;
+import HealthBuddy.models.Organisation.Organisation.Type;
+import HealthBuddy.models.User.User;
 import HealthBuddy.models.Healthcare.Organisation.HealthcareOrganisationDoctor;
 import HealthBuddy.models.Healthcare.Organisation.HealthcareOrganisationAdmin;
 import HealthBuddy.models.Healthcare.Organisation.HealthcareOrganisationAttendant;
+import HealthBuddy.models.User.Organisation.PatientOrganisation;
 import HealthBuddy.models.Healthcare.Organisation.HealthcareOrganisationAssistant;
 
 import java.util.ArrayList;
@@ -78,29 +76,29 @@ public class OrganisationCatalog {
             organisation = new HealthcareOrganisationAttendant();
             organisationList.add(organisation);
         }
-        else if(type.getValue().equals(Type.BloodbankAdmin.getValue()))
+        else if(type.getValue().equals(Type.BloodDonorCenterController.getValue()))
         {
-            organisation = new BloodbankAdminOrg();
+            organisation = new BDCControllerOrganisation();
             organisationList.add(organisation);
         }
-        else if(type.getValue().equals(Type.BloodBankHead.getValue()))
+        else if(type.getValue().equals(Type.BloodDonorCenterAdmin.getValue()))
         {
-            organisation = new HeadsOrganisation();
-            organisationList.add(organisation);
-        }
-        else if(type.getValue().equals(Type.FunderAdmin.getValue()))
-        {
-            organisation = new FundsOrganisationAdmin();
+            organisation = new BDCOrganisationAdmin();
             organisationList.add(organisation);
         }
         else if(type.getValue().equals(Type.Volunteer.getValue()))
         {
-            organisation = new FundsOrganisationVolunteer();
+            organisation = new TrustOrgVolunteer();
+            organisationList.add(organisation);
+        }
+        else if(type.getValue().equals(Type.TrustAdmin.getValue()))
+        {
+            organisation = new TrustOrgAdmin();
             organisationList.add(organisation);
         }
         else if(type.getValue().equals(Type.Manager.getValue()))
         {
-            organisation = new FundsOrganisationManager();
+            organisation = new TrustOrgManager();
             organisationList.add(organisation);
         }
         

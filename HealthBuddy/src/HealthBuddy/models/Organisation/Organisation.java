@@ -5,10 +5,10 @@
  */
 package HealthBuddy.models.Organisation;
 
-import HealthBuddy.models.Employee.EmployeeCatalog;
 import HealthBuddy.models.Role.Role;
-import HealthBuddy.models.UserAccount.UserCatalog;
+import HealthBuddy.models.Employee.EmployeeCatalog;
 import HealthBuddy.models.WorkQueue.WorkQueue;
+import HealthBuddy.models.User.UserCatalog;
 import java.util.ArrayList;
 import java.util.UUID;
 
@@ -27,14 +27,14 @@ public abstract class Organisation {
     
     public enum Type{
         HealthcareAdmin("Healthcare Admin Organisation"), 
-        Doctor("Doctor Organisation"), 
         Assistant("Assistant Organisation"),
+        Doctor("Doctor Organisation"), 
         Attendant("Attendant Organisation"),
-        Patient("Patient Organisation"),
         Donor("Donor Organisation"),
-        TrustAdmin("Trust Admin Organisation"),
+        Patient("Patient Organisation"),
         Manager("Manager Organisation"),
         Volunteer("Volunteer Organisation"),
+        TrustAdmin("Trust Admin Organisation"),
         BloodDonorCenterAdmin("BloodDonorCenter Admin Organisation"),
         BloodDonorCenterController("BloodDonorCenterController");
         
