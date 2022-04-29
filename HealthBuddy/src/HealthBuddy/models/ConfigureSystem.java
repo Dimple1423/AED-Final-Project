@@ -13,7 +13,7 @@ public class ConfigureSystem {
     {    
         EcoSystem system = EcoSystem.getInstance();
         Employee employee = system.getEmployeeCatalog().addEmployee("sysadmin");
-        User user = system.getUserCatalog().newUser("sysadmin", "sysadmin", employee,new SysAdmin());
+        User user = system.getUserCatalog().newUserAccount("sysadmin", "sysadmin", employee,new SysAdmin());
         
         return system;
     }

@@ -50,6 +50,7 @@ public class AssistantAddingTimetoWQ extends WorkRequest{
     public void setTimings(LocalDateTime timings) {
         this.timings = timings;
     }
+    
     @Override
     public String toString(){
         return this.nameOfHealthcare;
