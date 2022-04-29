@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package HealthBuddy.models.SystemAdminWorkArea;
+package HealthBuddy.ui.SystemAdminWorkArea;
 
 import java.awt.CardLayout;
 import java.util.HashMap;
