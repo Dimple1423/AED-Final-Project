@@ -1,13 +1,13 @@
 package HealthBuddy.models.Healthcare.Role;
 
 import javax.swing.JPanel;
-import Healthbuddy.models.EcoSystem;
-import Healthbuddy.models.Enterprise.Enterprise;
-import Healthbuddy.models.Network.Network;
-import Healthbuddy.models.Organisation.Organisation;
-import Healthbuddy.models.Role.Role;
-import Healthbuddy.models.UserAccount.UserAccount;
-import Healthbuddy.ui.admin.AdminWorkAreaPanel;
+import HealthBuddy.models.EcoSystem;
+import HealthBuddy.models.Enterprise.Enterprise;
+import HealthBuddy.models.Network.Network;
+import HealthBuddy.models.Organisation.Organisation;
+import HealthBuddy.models.Role.Role;
+import HealthBuddy.models.User.User;
+import HealthBuddy.ui.admin.AdminWorkAreaPanel;
 
 /**
  *
@@ -16,7 +16,8 @@ import Healthbuddy.ui.admin.AdminWorkAreaPanel;
 public class HealthcareAdmin extends Role{
 
     @Override
-    public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Organisation organisation, Enterprise enterprise, Network network, EcoSystem system) {
+    public JPanel createWorkArea(JPanel userProcessContainer, User account, Organisation organisation, Enterprise enterprise, Network network, EcoSystem system) {
         return new AdminWorkAreaPanel(userProcessContainer, enterprise);//To change body of generated methods, choose Tools | Templates.
     }
+}
     
