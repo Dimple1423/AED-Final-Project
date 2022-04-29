@@ -8,7 +8,7 @@ import HealthBuddy.models.Network.Network;
 import HealthBuddy.models.Organisation.Organisation;
 import HealthBuddy.models.Role.Role;
 import HealthBuddy.models.User.User;
-import HealthBuddy.ui.attendant.AttendantWorkAreaPanel;
+import HealthBuddy.ui.attendant.WorkAreaAttendantJPanel;
 
 /**
  *
@@ -18,7 +18,7 @@ public class HealthcareAttendant extends Role{
 
     @Override
     public JPanel createWorkArea(JPanel userProcessContainer, User account, Organisation organisation, Enterprise enterprise, Network network, EcoSystem system) {
-        return new AttendantWorkAreaPanel(userProcessContainer,account,(HealthcareOrganisationAttendant) organisation,enterprise,network,system);
+        return new WorkAreaAttendantJPanel(userProcessContainer,account,(HealthcareOrganisationAttendant) organisation,enterprise,network,system);
     }
     
 }
