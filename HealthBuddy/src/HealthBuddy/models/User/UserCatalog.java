@@ -104,7 +104,6 @@ public class UserCatalog {
        return useraccList.size() == 0; 
    }
    
-   //To remove user
     public void removeUserAccount(String username){
         for(User ua :userCatalog){
             if(ua.getUsername().equals(username))
