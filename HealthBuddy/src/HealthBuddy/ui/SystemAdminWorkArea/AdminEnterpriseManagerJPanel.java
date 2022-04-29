@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package HealthBuddy.models.SystemAdminWorkArea;
+package HealthBuddy.ui.SystemAdminWorkArea;
 
 import medistopBackend.EcoSystem;
 import medistopBackend.Employee.Employee;
