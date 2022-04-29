@@ -12,43 +12,43 @@ import java.util.stream.Collectors;
  *
  * @author Nidhi Singh
  */
-public class DonorDirectory {
-    private ArrayList<DonorData> donorDirectory;
-     public DonorDirectory(){
+public class DonorCatalog {
+    private ArrayList<DonorData> donorCatalog;
+     public DonorCatalog(){
         
-        this.donorDirectory = new ArrayList<DonorData>();
+        this.donorCatalog = new ArrayList<DonorData>();
     }
 
-    public ArrayList<DonorData> getDonorDirectory() 
+    public ArrayList<DonorData> getDonorCatalog() 
     {
-        return donorDirectory;
+        return donorCatalog;
     }
 
-    public void setDonorDirectory(ArrayList<DonorData> donorDirectory) 
+    public void setDonorCatalog(ArrayList<DonorData> donorCatalog) 
     {
-        this.donorDirectory = donorDirectory;
+        this.donorCatalog = donorCatalog;
     }
     public void deleteDonor(DonorData donor){
-        donorDirectory.remove(donor);
+        donorCatalog.remove(donor);
     }
     public DonorData addDonor()
     {
         DonorData donor = new DonorData();
-        donorDirectory.add(donor);
+        donorCatalog.add(donor);
         return donor;
     }
 
     public DonorData addDonor(DonorData donorData)
     {
 
-        donorDirectory.add(donorData);
+        donorCatalog.add(donorData);
         return donorData;
     }
     
     
     public DonorData getDonor(String username) {
         
-        return donorDirectory.stream().filter(donor -> donor.getUsername()
+        return donorCatalog.stream().filter(donor -> donor.getUsername()
                 .equals(username))
                 .collect(Collectors.toList()).get(0);
     

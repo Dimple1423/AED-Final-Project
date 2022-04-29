@@ -1,11 +1,10 @@
 package HealthBuddy.models.Role;
-
+import HealthBuddy.models.User.User;
 import javax.swing.JPanel;
-import HealthBuddy.models.UserAccount.User;
-import HealthBuddy.models.EcoSystem;
 import HealthBuddy.models.Enterprise.Enterprise;
-import HealthBuddy.models.Network.Network;
+import HealthBuddy.models.EcoSystem;
 import HealthBuddy.models.Organisation.Organisation;
+import HealthBuddy.models.Network.Network;
 /**
  *
  * @author Bhawna Singh
@@ -42,7 +41,4 @@ public abstract JPanel createWorkArea(JPanel userProcessContainer,
         Enterprise enterprise,
         Network network,
         EcoSystem system);
-
-
-
 }

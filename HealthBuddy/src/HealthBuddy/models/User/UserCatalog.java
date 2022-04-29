@@ -1,14 +1,14 @@
 package HealthBuddy.models.User;
 
-import HealthBuddy.models.UserAccount.*;
 import java.util.ArrayList;
+import HealthBuddy.models.User.*;
 import java.util.List;
-import java.util.stream.Collectors;
 import javax.swing.JOptionPane;
-import HealthBuddy.models.Employee.Employee;
 import HealthBuddy.models.Role.Role;
-import HealthBuddy.models.UserData.DonorData;
+import java.util.stream.Collectors;
+import HealthBuddy.models.Employee.Employee;
 import HealthBuddy.models.UserData.PatientData;
+import HealthBuddy.models.UserData.DonorData;
 
 /**
  *
