@@ -11,7 +11,7 @@ import medistopBackend.Enterprise.BloodbankEnterprise;
 import medistopBackend.Network.Network;
 import medistopBackend.UserAccount.UserAccount;
 import medistopBackend.Hospital.Organisation.HospitalOrganisationAttendant;
-import medistopUI.attendant.AttendantWorkAreaPanel;
+import HealthBuddy.ui.attendant.WorkAreaAttendantJPanel;
 import java.awt.CardLayout;
 import javax.swing.JPanel;
 
