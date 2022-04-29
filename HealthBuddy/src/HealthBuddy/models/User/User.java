@@ -27,7 +27,8 @@ public class User {
     }
 
     public void setLoginattempt(int loginAttempt) {
-        this.loginAttempt += loginAttempt;
+        //incrementing the login attempt count
+        this.loginAttempt += loginAttempt; 
     }
 
     public void resetLogin() {
