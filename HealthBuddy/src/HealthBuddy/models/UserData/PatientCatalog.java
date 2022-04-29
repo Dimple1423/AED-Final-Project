@@ -20,6 +20,7 @@ public class PatientCatalog {
     public void setWorkQueue(WorkQueue workQueue) {
         this.workQueue = workQueue;
     }
+    
     public PatientCatalog()
     {
         this.patientCatalog = new ArrayList<PatientData>();
