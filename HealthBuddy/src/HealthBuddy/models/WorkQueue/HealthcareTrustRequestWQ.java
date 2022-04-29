@@ -4,7 +4,7 @@ package HealthBuddy.models.WorkQueue;
  *
  * @author Dimple Patel
  */
-public class HealthcareFundWQ extends WorkRequest{
+public class HealthcareTrustRequestWQ extends WorkRequest{
     private float amount;
     private String Message;
     private String PatientName;

@@ -1,6 +1,6 @@
 package HealthBuddy.models.WorkQueue;
 
-import HealthBuddy.models.Healthcare.Appointment.AppointmentDetails;
+import HealthBuddy.models.Healthcare.Appointment.AppointmentInformation;
 
 /**
  *
@@ -9,20 +9,20 @@ import HealthBuddy.models.Healthcare.Appointment.AppointmentDetails;
 public class DoctorAssistantAccountWQ extends WorkRequest{
     private boolean isrequiredFunds;
     private String prescribed;
-    private AppointmentDetails apd;
+    private AppointmentInformation apd;
     private boolean isfundsApproved;
 
     
-    public AppointmentDetails getApd() {
+    public AppointmentInformation getApd() {
         return apd;
     }
 
-    public void setApd(AppointmentDetails apd) {
+    public void setApd(AppointmentInformation apd) {
         this.apd = apd;
     }
     
     public DoctorAssistantAccountWQ(){
-        this.apd = new AppointmentDetails();
+        this.apd = new AppointmentInformation();
     }
     public boolean isFundingRequired() {
         return isrequiredFunds;

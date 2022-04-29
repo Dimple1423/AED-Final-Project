@@ -1,7 +1,7 @@
 package HealthBuddy.models.WorkQueue;
 
-import HealthBuddy.models.UserAccount.User;
 import java.util.Date;
+import HealthBuddy.models.User.User;
 
 /**
  *

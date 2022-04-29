@@ -6,7 +6,7 @@ import java.util.Date;
  *
  * @author Dimple Patel
  */
-public class FundReceiveWQ extends WorkRequest{
+public class TrustReceiveWQ extends WorkRequest{
     private String patientName;
     private String funderName;
     private String city;

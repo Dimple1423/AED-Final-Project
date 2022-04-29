@@ -1,11 +1,11 @@
-package HeathBuddy.models.Role;
+package HealthBuddy.models.Role;
 
+import HealthBuddy.models.EcoSystem;
 import javax.swing.JPanel;
-import HeathBuddy.models.EcoSystem;
-import HeathBuddy.models.Enterprise.Enterprise;
-import HeathBuddy.models.Network.Network;
-import HeathBuddy.models.Organisation.Organisation;
-import HeathBuddy.models.UserAccount.UserAccount;
+import HealthBuddy.models.Network.Network;
+import HealthBuddy.models.Enterprise.Enterprise;
+import HealthBuddy.models.User.User;
+import HealthBuddy.models.Organisation.Organisation;
 import HealthBuddy.ui.patient.PatientWorkAreaPanel;
 
 /**
@@ -15,7 +15,7 @@ import HealthBuddy.ui.patient.PatientWorkAreaPanel;
 public class Patient extends Role {
 
     @Override
-    public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Organisation organisation, Enterprise enterprise, Network network, EcoSystem system) {
+    public JPanel createWorkArea(JPanel userProcessContainer, User account, Organisation organisation, Enterprise enterprise, Network network, EcoSystem system) {
         return new PatientWorkAreaPanel(userProcessContainer, system, account, organisation);
 
     }

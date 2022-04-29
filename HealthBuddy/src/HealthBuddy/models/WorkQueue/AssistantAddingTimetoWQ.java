@@ -1,10 +1,10 @@
 package Healthbuddy.models.WorkQueue;
 
-import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.time.LocalDateTime;
 import java.util.Date;
-import HealthBuddy.models.UserAccount.User;
-import HealthBuddyUtil.Utilities;
+import HealthBuddy.models.User.User;
+import HealthBuddy.Util.Utilities;
 
 /**
  *

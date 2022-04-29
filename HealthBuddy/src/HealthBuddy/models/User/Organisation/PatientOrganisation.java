@@ -1,14 +1,9 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package HealthBuddy.models.User.Organisation;
 
-import java.util.ArrayList;
 import HealthBuddy.models.Organisation.Organisation;
-import HealthBuddy.models.Role.Patient;
+import java.util.ArrayList;
 import HealthBuddy.models.Role.Role;
+import HealthBuddy.models.Role.Patient;
 
 /**
  *

@@ -1,4 +1,5 @@
 package HealthBuddy.models.WorkQueue;
+
 import HealthBuddy.models.UserData.PatientData;
 /**
  *

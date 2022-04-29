@@ -1,4 +1,4 @@
-package medistopBackend.WorkQueue;
+package HealthBuddy.models.WorkQueue;
 
 /**
  *

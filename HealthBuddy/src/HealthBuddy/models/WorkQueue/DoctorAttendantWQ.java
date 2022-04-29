@@ -1,10 +1,10 @@
-package medistopBackend.WorkQueue;
+package HealthBuddy.models.WorkQueue;
 
-import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.Date;
-import HealthBuddy.models.UserAccount.User;
+import java.time.LocalDateTime;
+import HealthBuddy.models.User.User;
 import HealthBuddy.Util.Utilities;
+import java.util.Date;
 
 /**
  *

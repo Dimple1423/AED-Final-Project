@@ -2,8 +2,8 @@ package HealthBuddy.models;
 import HealthBuddy.models.Network.Network;
 import HealthBuddy.models.Organisation.Organisation;
 import HealthBuddy.models.Role.Role;
-import HealthBuddy.models.UserData.PatientDirectory;
-import HealthBuddy.models.UserData.DonorDirectory;
+import HealthBuddy.models.UserData.PatientCatalog;
+import HealthBuddy.models.UserData.DonorCatalog;
 import HealthBuddy.models.Healthcare.Appointment.AppointmentCatalog;
 import HealthBuddy.models.Trust.Donation.TrustCatalog;
 import java.util.ArrayList;
@@ -16,8 +16,8 @@ import java.util.ArrayList;
 public class EcoSystem extends Organisation {
     private static EcoSystem business;
     private ArrayList<Network> networkList;
-    private PatientDirectory patientDir;
-    private DonorDirectory donorDir;
+    private PatientCatalog patientDir;
+    private DonorCatalog donorDir;
     private AppointmentCatalog appointmentCatalog;
     private TrustCatalog trustCatalog;
     
@@ -41,8 +41,8 @@ public class EcoSystem extends Organisation {
     {
         super(null);
         networkList=new ArrayList<>();
-        this.patientDir = new PatientDirectory();
-        this.donorDir = new DonorDirectory();
+        this.patientDir = new PatientCatalog();
+        this.donorDir = new DonorCatalog();
         this.appointmentCatalog = new AppointmentCatalog();
         this.trustCatalog = new TrustCatalog();
     }
@@ -63,19 +63,19 @@ public class EcoSystem extends Organisation {
         this.trustCatalog = donationDirectory;
     }
 
-    public PatientDirectory getPatientDir() {
+    public PatientCatalog getPatientDir() {
         return patientDir;
     }
 
-    public void setPatientDir(PatientDirectory patientDir) {
+    public void setPatientDir(PatientCatalog patientDir) {
         this.patientDir = patientDir;
     }
 
-    public DonorDirectory getDonorDir() {
+    public DonorCatalog getDonorDir() {
         return donorDir;
     }
 
-    public void setDonorDir(DonorDirectory donorDir) {
+    public void setDonorDir(DonorCatalog donorDir) {
         this.donorDir = donorDir;
     }
 

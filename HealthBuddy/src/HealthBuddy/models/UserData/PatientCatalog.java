@@ -1,16 +1,16 @@
 package HealthBuddy.models.UserData;
 
-import java.util.ArrayList;
 import java.util.stream.Collectors;
-import HealthBuddy.models.WorkQueue.WorkQueue;
+import java.util.ArrayList;
 import HealthBuddy.models.UserData.PatientData;
+import HealthBuddy.models.WorkQueue.WorkQueue;
 
 /**
  *
  * @author Bhawna Singh
  */
-public class PatientDirectory {
-     private ArrayList<PatientData> patientDirectory;
+public class PatientCatalog {
+     private ArrayList<PatientData> patientCatalog;
     private WorkQueue workQueue;
 
     public WorkQueue getWorkQueue() {
@@ -20,44 +20,44 @@ public class PatientDirectory {
     public void setWorkQueue(WorkQueue workQueue) {
         this.workQueue = workQueue;
     }
-    public PatientDirectory()
+    public PatientCatalog()
     {
-        this.patientDirectory = new ArrayList<PatientData>();
+        this.patientCatalog = new ArrayList<PatientData>();
        this.workQueue = new WorkQueue();
     }
 
-    public ArrayList<PatientData> getPatientDirectory() {
-        return patientDirectory;
+    public ArrayList<PatientData> getPatientCatalog() {
+        return patientCatalog;
     }
 
-    public void setPatientDirectory(ArrayList<PatientData> patientDirectory) 
+    public void setPatientCatalog(ArrayList<PatientData> patientCatalog) 
     {
-        this.patientDirectory = patientDirectory;
+        this.patientCatalog = patientCatalog;
     }
     
     public PatientData createPatient()
     {
         PatientData patientObj = new PatientData();
-        patientDirectory.add(patientObj);
+        patientCatalog.add(patientObj);
         return patientObj;
     }
     public void removePatient(PatientData patient)
     {
-        patientDirectory.remove(patient);
+        patientCatalog.remove(patient);
     }
 
 
     public PatientData addPat(PatientData patientData)
     {
 
-        patientDirectory.add(patientData);
+        patientCatalog.add(patientData);
         return patientData;
     }
 
 
     public PatientData getPatient(String username) {
 
-        return patientDirectory.stream().filter(donor -> donor.getUsername()
+        return patientCatalog.stream().filter(donor -> donor.getUsername()
                         .equals(username))
                 .collect(Collectors.toList()).get(0);
 

@@ -1,11 +1,11 @@
 package HealthBuddy.models.User;
 
-import HealthBuddy.models.User.*;
 import HealthBuddy.models.Employee.Employee;
-import HealthBuddy.models.Role.Role;
+import HealthBuddy.models.User.*;
 import HealthBuddy.models.UserData.DonorData;
-import HealthBuddy.models.UserData.PatientData;
+import HealthBuddy.models.Role.Role;
 import HealthBuddy.models.WorkQueue.WorkQueue;
+import HealthBuddy.models.UserData.PatientData;
 
 /**
  *
@@ -39,20 +39,20 @@ public class User {
         workQueue = new WorkQueue();
     }
 
-    public String getUsername() {
-        return username;
-    }
-
-    public void setUsername(String username) {
-        this.username = username;
-    }
-
     public String getPassword() {
         return password;
     }
 
     public void setPassword(String password) {
         this.password = password;
+    }
+    
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     public Employee getEmployee() {
@@ -63,20 +63,20 @@ public class User {
         this.employee = employee;
     }
 
-    public PatientData getPatient() {
-        return patient;
-    }
-
-    public void setPatient(PatientData patient) {
-        this.patient = patient;
-    }
-
     public DonorData getDonor() {
         return donor;
     }
 
     public void setDonor(DonorData donor) {
         this.donor = donor;
+    }
+    
+    public PatientData getPatient() {
+        return patient;
+    }
+
+    public void setPatient(PatientData patient) {
+        this.patient = patient;
     }
 
     public Role getRole() {
