@@ -250,7 +250,7 @@ public class AssistantWorkAreaPanel extends javax.swing.JPanel {
                     .addGroup(manageFundingRequestsPanelLayout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 1089, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 418, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 1708, Short.MAX_VALUE)
                 .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 830, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 830, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -353,7 +353,7 @@ public class AssistantWorkAreaPanel extends javax.swing.JPanel {
                                 .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 887, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 964, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 953, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 2622, Short.MAX_VALUE)
                 .addComponent(jLabel2)
                 .addGap(128, 128, 128))
         );
@@ -465,7 +465,7 @@ public class AssistantWorkAreaPanel extends javax.swing.JPanel {
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 1124, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(95, 95, 95)
                         .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 505, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(1764, Short.MAX_VALUE))
+                .addContainerGap(2918, Short.MAX_VALUE))
         );
         manageAppointmentsPanelLayout.setVerticalGroup(
             manageAppointmentsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -489,7 +489,7 @@ public class AssistantWorkAreaPanel extends javax.swing.JPanel {
                 .addGroup(manageAppointmentsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnAccept)
                     .addComponent(btnReject))
-                .addContainerGap(399, Short.MAX_VALUE))
+                .addContainerGap(406, Short.MAX_VALUE))
         );
 
         donationTabbedPane.addTab("Manage Appointments", manageAppointmentsPanel);
@@ -605,7 +605,7 @@ public class AssistantWorkAreaPanel extends javax.swing.JPanel {
                             .addComponent(btnAddSlot, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(139, 139, 139)
                 .addComponent(jLabel4)
-                .addContainerGap(2142, Short.MAX_VALUE))
+                .addContainerGap(3776, Short.MAX_VALUE))
         );
         manageDocSlotsPanelLayout.setVerticalGroup(
             manageDocSlotsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -639,7 +639,7 @@ public class AssistantWorkAreaPanel extends javax.swing.JPanel {
                     .addGroup(manageDocSlotsPanelLayout.createSequentialGroup()
                         .addGap(51, 51, 51)
                         .addComponent(jLabel4)))
-                .addContainerGap(512, Short.MAX_VALUE))
+                .addContainerGap(661, Short.MAX_VALUE))
         );
 
         donationTabbedPane.addTab("Manage Doctor Slots", manageDocSlotsPanel);
