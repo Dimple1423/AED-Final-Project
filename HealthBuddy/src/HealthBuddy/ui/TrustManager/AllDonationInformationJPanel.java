@@ -17,7 +17,7 @@ import javax.swing.table.DefaultTableModel;
  *
  * @author 
  */
-public class CompleteDonationRelatedDetailsJPanel extends javax.swing.JPanel 
+public class AllDonationInformationJPanel extends javax.swing.JPanel 
 {
     private EcoSystem ecoSystem;
     private JPanel showPanel;
@@ -26,7 +26,7 @@ public class CompleteDonationRelatedDetailsJPanel extends javax.swing.JPanel
     /**
      * Creates new form ViewDonationJPanel
      */
-    public CompleteDonationRelatedDetailsJPanel(JPanel showPanel, EcoSystem ecoSystem, Enterprise enterprise, UserAccount userAccount)
+    public AllDonationInformationJPanel(JPanel showPanel, EcoSystem ecoSystem, Enterprise enterprise, UserAccount userAccount)
     {
         initComponents();
         this.showPanel = showPanel;

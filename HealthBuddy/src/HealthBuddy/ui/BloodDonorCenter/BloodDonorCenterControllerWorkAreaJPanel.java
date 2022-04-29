@@ -25,10 +25,10 @@ import javax.swing.table.DefaultTableModel;
  *
  * @author Virendra Rathore
  */
-public class HeadBloodDonorCenterWorkAreaJPanel extends javax.swing.JPanel {
+public class BloodDonorCenterControllerWorkAreaJPanel extends javax.swing.JPanel {
 
     /**
-     * Creates new form HeadBloodDonorCenterWorkAreaJPanel
+     * Creates new form BloodDonorCenterControllerWorkAreaJPanel
      */
    
     private JPanel showPanel;
@@ -39,7 +39,7 @@ public class HeadBloodDonorCenterWorkAreaJPanel extends javax.swing.JPanel {
     private BloodbankEnterprise enterprise;
     private BloodBankStockDirectory bloodBankStockDirectory;
 
-    public HeadBloodDonorCenterWorkAreaJPanel(JPanel displayJPanel, UserAccount userAccount, HeadsOrganisation headsOrganisation, BloodbankEnterprise enterprise, Network network, EcoSystem business) {
+    public BloodDonorCenterControllerWorkAreaJPanel(JPanel displayJPanel, UserAccount userAccount, HeadsOrganisation headsOrganisation, BloodbankEnterprise enterprise, Network network, EcoSystem business) {
                
        
         initComponents();

@@ -20,7 +20,7 @@ import medistopBackend.UserAccount.UserAccount;
  *
  * @author Zeenia
  */
-public class AdminWorkAreaPanel extends javax.swing.JPanel {
+public class WorkAreaAdminPanel extends javax.swing.JPanel {
     
     private JPanel displayJPanel;
     private Enterprise enterprise;
@@ -29,7 +29,7 @@ public class AdminWorkAreaPanel extends javax.swing.JPanel {
     /**
      * Creates new form AdminWorkAreaPanel
      */
-    public AdminWorkAreaPanel(JPanel displayJPanel, Enterprise enterprise) {
+    public WorkAreaAdminPanel(JPanel displayJPanel, Enterprise enterprise) {
        
         initComponents();
         this.displayJPanel = displayJPanel;
@@ -132,7 +132,6 @@ public class AdminWorkAreaPanel extends javax.swing.JPanel {
         menuItemName6.setForeground(new java.awt.Color(0, 102, 102));
         menuItemName6.setText("Organisation Type:");
 
-        comboManageOrg.setBackground(new java.awt.Color(255, 255, 255));
         comboManageOrg.setFont(new java.awt.Font("Tahoma", 0, 13)); // NOI18N
         comboManageOrg.setForeground(new java.awt.Color(0, 102, 102));
         comboManageOrg.setMaximumRowCount(10);
@@ -265,7 +264,6 @@ public class AdminWorkAreaPanel extends javax.swing.JPanel {
         menuItemName7.setForeground(new java.awt.Color(0, 102, 102));
         menuItemName7.setText("Organisation:");
 
-        comboUserOrganisation.setBackground(new java.awt.Color(255, 255, 255));
         comboUserOrganisation.setFont(new java.awt.Font("Tahoma", 0, 13)); // NOI18N
         comboUserOrganisation.setForeground(new java.awt.Color(0, 102, 102));
         comboUserOrganisation.addActionListener(new java.awt.event.ActionListener() {
@@ -279,7 +277,6 @@ public class AdminWorkAreaPanel extends javax.swing.JPanel {
         menuItemName8.setForeground(new java.awt.Color(0, 102, 102));
         menuItemName8.setText("Employee:");
 
-        comboUserEmployee.setBackground(new java.awt.Color(255, 255, 255));
         comboUserEmployee.setFont(new java.awt.Font("Tahoma", 0, 13)); // NOI18N
         comboUserEmployee.setForeground(new java.awt.Color(0, 102, 102));
 
@@ -288,7 +285,6 @@ public class AdminWorkAreaPanel extends javax.swing.JPanel {
         menuItemName9.setForeground(new java.awt.Color(0, 102, 102));
         menuItemName9.setText("Role:");
 
-        comboUserRole.setBackground(new java.awt.Color(255, 255, 255));
         comboUserRole.setFont(new java.awt.Font("Tahoma", 0, 13)); // NOI18N
         comboUserRole.setForeground(new java.awt.Color(0, 102, 102));
 
