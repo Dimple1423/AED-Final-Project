@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package HealthBuddy.ui.SystemAdminWorkArea;
+package HealthBuddy.ui.SysAdminWorkArea;
 
 import java.awt.CardLayout;
 import javax.swing.JPanel;
@@ -162,7 +162,7 @@ JPanel showPanel;
     }//GEN-LAST:event_btnManageEnterAdministratorActionPerformed
 
     private void btnApplicationAnalyticsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnApplicationAnalyticsActionPerformed
-        SysAdminAnalyticsJPanel systemAdminAnalytics = new SysAdminAnalyticsJPanel(showPanel,ecosystem);
+        SysAdminPerformanceJPanel systemAdminAnalytics = new SysAdminPerformanceJPanel(showPanel,ecosystem);
         showPanel.add("systemAdminAnalyticsJPanel",systemAdminAnalytics);
         CardLayout layout=(CardLayout)showPanel.getLayout();
         layout.next(showPanel);

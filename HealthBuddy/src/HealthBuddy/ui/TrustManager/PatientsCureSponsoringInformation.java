@@ -25,7 +25,7 @@ import javax.swing.table.DefaultTableModel;
  *
  * @author Virendra Rathore
  */
-public class PatientsTreatmentSponsoringDetails extends javax.swing.JPanel 
+public class PatientsCureSponsoringInformation extends javax.swing.JPanel 
 {
     private JPanel showPanel;
     private FundingEnterprise fundingEnterprise;
@@ -37,7 +37,7 @@ public class PatientsTreatmentSponsoringDetails extends javax.swing.JPanel
     /**
      * Creates new form ViewPatienttoSponsorJPanel
      */
-    public PatientsTreatmentSponsoringDetails(JPanel showPanel,FundingEnterprise fundingEnterprise, Network network,EcoSystem ecoSystem, UserAccount userAccount, String funds ) 
+    public PatientsCureSponsoringInformation(JPanel showPanel,FundingEnterprise fundingEnterprise, Network network,EcoSystem ecoSystem, UserAccount userAccount, String funds ) 
     {
         initComponents();
         this.showPanel = showPanel;

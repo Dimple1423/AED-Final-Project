@@ -19,7 +19,7 @@ import javax.swing.JPanel;
  *
  * @author Virendra Rathore
  */
-public class HeadBloodDonorCenterMainPageJPanel extends javax.swing.JPanel {
+public class BloodDonorCenterControllerMainPageJPanel extends javax.swing.JPanel {
     private JPanel showPanel;
     private UserAccount userAccount;
     private HeadsOrganisation headsOrganisation;
@@ -30,7 +30,7 @@ public class HeadBloodDonorCenterMainPageJPanel extends javax.swing.JPanel {
      * Creates new form BloodBankInchargeLandingJPanel
      */
    
-    public HeadBloodDonorCenterMainPageJPanel(JPanel showPanel, UserAccount account, HeadsOrganisation headsOrganisation, BloodbankEnterprise bloodbankEnterprise, Network network, EcoSystem ecoSystem) {
+    public BloodDonorCenterControllerMainPageJPanel(JPanel showPanel, UserAccount account, HeadsOrganisation headsOrganisation, BloodbankEnterprise bloodbankEnterprise, Network network, EcoSystem ecoSystem) {
         initComponents();
         this.showPanel=showPanel;
         this.headsOrganisation = headsOrganisation;
@@ -89,7 +89,7 @@ public class HeadBloodDonorCenterMainPageJPanel extends javax.swing.JPanel {
 
     private void ViewRequestjButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ViewRequestjButtonActionPerformed
         
-         HeadBloodDonorCenterWorkAreaJPanel headBloodBankWorkAreaPanel = new HeadBloodDonorCenterWorkAreaJPanel(showPanel,userAccount,headsOrganisation,enterprise,network,ecoSystem);
+         BloodDonorCenterControllerWorkAreaJPanel headBloodBankWorkAreaPanel = new BloodDonorCenterControllerWorkAreaJPanel(showPanel,userAccount,headsOrganisation,enterprise,network,ecoSystem);
         showPanel.add("HeadBloodBankWorkAreaJPanel", headBloodBankWorkAreaPanel);
         CardLayout layout = (CardLayout) showPanel.getLayout();
         layout.next(showPanel);

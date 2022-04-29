@@ -21,7 +21,7 @@ import javax.swing.JPanel;
  *
  * @author Virendra Rathore
  */
-public class ManagerWorkAreaJPanel extends javax.swing.JPanel 
+public class WorkAreaManagerJPanel extends javax.swing.JPanel 
 {
     private JPanel showPanel;
     private FundingEnterprise enterprise;
@@ -32,7 +32,7 @@ public class ManagerWorkAreaJPanel extends javax.swing.JPanel
     /**
      * Creates new form ManagerWorkAreaJPanel
      */
-    public ManagerWorkAreaJPanel(JPanel showPanel, UserAccount userAccount, FundsOrganisationManager organisation, FundingEnterprise enterprise, Network network, EcoSystem ecoSystem) 
+    public WorkAreaManagerJPanel(JPanel showPanel, UserAccount userAccount, FundsOrganisationManager organisation, FundingEnterprise enterprise, Network network, EcoSystem ecoSystem) 
     {
         initComponents();
         this.showPanel = showPanel;
@@ -172,14 +172,14 @@ public class ManagerWorkAreaJPanel extends javax.swing.JPanel
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnViewDonationsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnViewDonationsActionPerformed
-        CompleteDonationRelatedDetailsJPanel completeDonationRelatedDetailsJPanel = new CompleteDonationRelatedDetailsJPanel(showPanel, ecoSystem,enterprise, userAccount);
+        AllDonationInformationJPanel completeDonationRelatedDetailsJPanel = new AllDonationInformationJPanel(showPanel, ecoSystem,enterprise, userAccount);
         showPanel.add("completeDonationRelatedDetailsJPanel", completeDonationRelatedDetailsJPanel);
         CardLayout layout = (CardLayout) showPanel.getLayout();
         layout.next(showPanel);
     }//GEN-LAST:event_btnViewDonationsActionPerformed
 
     private void btnPickUpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPickUpActionPerformed
-        PatientsTreatmentSponsoringDetails patientsTreatmentSponsoringDetails = new PatientsTreatmentSponsoringDetails(showPanel,enterprise,network,ecoSystem, userAccount,funds);
+        PatientsCureSponsoringInformation patientsTreatmentSponsoringDetails = new PatientsCureSponsoringInformation(showPanel,enterprise,network,ecoSystem, userAccount,funds);
         showPanel.add("patientsTreatmentSponsoringDetails", patientsTreatmentSponsoringDetails);
         CardLayout layout = (CardLayout) showPanel.getLayout();
         layout.next(showPanel);

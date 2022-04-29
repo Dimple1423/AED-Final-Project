@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package HealthBuddy.ui.SystemAdminWorkArea;
+package HealthBuddy.ui.SysAdminWorkArea;
 
 import java.awt.CardLayout;
 import java.util.HashMap;
@@ -18,14 +18,14 @@ import medistopBackend.Hospital.Appointment.AppointmentDetails;
  *
  * @author Virendra Rathore
  */
-public class SysAdminAnalyticsJPanel extends javax.swing.JPanel 
+public class SysAdminPerformanceJPanel extends javax.swing.JPanel 
 {
     private JPanel showPanel;
     private EcoSystem ecosystem;
     /**
      * Creates new form SystemAdminAnalyticsJPanel
      */
-    public SysAdminAnalyticsJPanel(JPanel showPanel, EcoSystem system) 
+    public SysAdminPerformanceJPanel(JPanel showPanel, EcoSystem system) 
     {
         initComponents();
         this.showPanel = showPanel;
