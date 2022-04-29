@@ -1,4 +1,4 @@
-package Healthbuddy.models.WorkQueue;
+package HealthBuddy.models.WorkQueue;
 
 import java.time.format.DateTimeFormatter;
 import java.time.LocalDateTime;

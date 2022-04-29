@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package HealthBuddy.ui.Assistant;
 
 import java.text.DateFormat;
@@ -13,35 +8,35 @@ import javax.swing.DefaultComboBoxModel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.table.DefaultTableModel;
-import medistopBackend.EcoSystem;
-import medistopBackend.Employee.Employee;
-import medistopBackend.Enterprise.Enterprise;
-import medistopBackend.Hospital.Appointment.AppointmentDetails;
-import medistopBackend.Hospital.Organisation.HospitalOrganisationAssistant;
-import medistopBackend.Network.Network;
-import medistopBackend.Organisation.Organisation;
-import medistopBackend.UserAccount.UserAccount;
-import medistopBackend.WorkQueue.AssistantAddingTimingsWorkQueue;
-import medistopBackend.WorkQueue.DoctorAssistantAccountingWorkQueue;
-import medistopBackend.WorkQueue.HospitalFundsRequestWorkQueue;
-import medistopBackend.WorkQueue.PatientBookingWorkQueue;
-import medistopBackend.WorkQueue.ReceivedFundWorkRequest;
-import medistopBackend.WorkQueue.WorkRequest;
-import medistopUtil.SMSUtility;
+import HealthBuddy.models.EcoSystem;
+import HealthBuddy.models.Employee.Employee;
+import HealthBuddy.models.Enterprise.Enterprise;
+import HealthBuddy.models.Healthcare.Appointment.AppointmentInformation;
+import HealthBuddy.models.Healthcare.Organisation.HealthcareOrganisationAssistant;
+import HealthBuddy.models.Network.Network;
+import HealthBuddy.models.Organisation.Organisation;
+import HealthBuddy.models.User.User;
+import HealthBuddy.models.WorkQueue.AssistantAddingTimetoWQ;
+import HealthBuddy.models.WorkQueue.DoctorAssistantAccountWQ;
+import HealthBuddy.models.WorkQueue.HealthcareTrustRequestWQ;
+import HealthBuddy.models.WorkQueue.PatientBookingWQ;
+import HealthBuddy.models.WorkQueue.TrustReceiveWR;
+import HealthBuddy.models.WorkQueue.WorkRequest;
+import HealthBuddy.Util.SMSUtility;
 
 /**
  *
- * @author Zeenia
+ * @author Nidhi Singh
  */
 public class AssistantWorkAreaPanel extends javax.swing.JPanel {
 
     private JPanel displayJPanel;
-    private UserAccount ua;
+    private User ua;
     private Enterprise enterprise;
     private EcoSystem ecosystem;
     private Network network;
-    private HospitalOrganisationAssistant hospitalAssistant;
-    private AssistantAddingTimingsWorkQueue assistantAddSlot;
+    private HealthcareOrganisationAssistant hospitalAssistant;
+    private AssistantAddingTimetoWQ assistantAddSlot;
     private DefaultComboBoxModel minuteModel;
     
     /**
@@ -61,7 +56,7 @@ public class AssistantWorkAreaPanel extends javax.swing.JPanel {
 //
 //    }
     
-    public AssistantWorkAreaPanel(JPanel dispJPanel, UserAccount account, HospitalOrganisationAssistant organisation, Enterprise enterprise,Network net,EcoSystem system) {
+    public AssistantWorkAreaPanel(JPanel dispJPanel, User account, HealthcareOrganisationAssistant organisation, Enterprise enterprise,Network net,EcoSystem system) {
 
         this.displayJPanel = dispJPanel;
         this.ua = account;
@@ -712,12 +707,12 @@ public class AssistantWorkAreaPanel extends javax.swing.JPanel {
            }
            
 
-           assistantAddSlot = new AssistantAddingTimingsWorkQueue();
+           assistantAddSlot = new AssistantAddingTimetoWQ();
            
            assistantAddSlot.setTimings(LocalDateTime.of(yearValue, monthValue,date, hourValue, minuteValue, 0));
            for(Network net : ecosystem.getNetworkList())
            {
-               for(Enterprise ent : net.getEnterpriseDirectory().getEnterpriseList())
+               for(Enterprise ent : net.getEnterpriseCatalog().getEnterpriseList())
                {
                    if(ent.getName().equalsIgnoreCase(enterprise.getName()))
                    {
@@ -732,7 +727,7 @@ public class AssistantWorkAreaPanel extends javax.swing.JPanel {
            assistantAddSlot.setSender(ua);
            assistantAddSlot.setStatus("Available");
            assistantAddSlot.setMessage("Available slots");
-           assistantAddSlot.setHospitalName(enterprise.getName());
+           assistantAddSlot.setHealthcareName(enterprise.getName());
            assistantAddSlot.setCity(network.getNetworkName());
            ecosystem.getPatientDir().getWorkQueue().getWorkRequestList().add(assistantAddSlot);
            ua.getWorkQueue().getWorkRequestList().add(assistantAddSlot);
@@ -745,7 +740,7 @@ public class AssistantWorkAreaPanel extends javax.swing.JPanel {
        int selectedRow = tblAppointment.getSelectedRow();
             if(selectedRow>-1)
             {
-                PatientBookingWorkQueue patientBooking = (PatientBookingWorkQueue)tblAppointment.getValueAt(selectedRow, 0);
+                PatientBookingWQ patientBooking = (PatientBookingWQ)tblAppointment.getValueAt(selectedRow, 0);
                 
                 if(patientBooking.getStatus().equals("Approved"))
                 {
@@ -835,7 +830,7 @@ public class AssistantWorkAreaPanel extends javax.swing.JPanel {
          int selectedRow = tblAppointment.getSelectedRow();
          if(selectedRow>-1)
             {
-                PatientBookingWorkQueue patientBooking = (PatientBookingWorkQueue)tblAppointment.getValueAt(selectedRow, 0);
+                PatientBookingWQ patientBooking = (PatientBookingWQ)tblAppointment.getValueAt(selectedRow, 0);
                 
                 if(patientBooking.getStatus().equals("Approved"))
                 {
@@ -938,8 +933,8 @@ public void populateAppointmentTable()
 
         for(WorkRequest request : hospitalAssistant.getIncomingPatients().getWorkRequestList())
         {
-            PatientBookingWorkQueue patient = new PatientBookingWorkQueue();
-            patient = (PatientBookingWorkQueue)request;
+            PatientBookingWQ patient = new PatientBookingWQ();
+            patient = (PatientBookingWQ)request;
             Object[] row = new Object[4];
             row[0] = patient;
             row[1] = patient.getPatient().getPatientId();
@@ -959,8 +954,8 @@ public void populateAppointmentTable()
         
             for(WorkRequest request : hospitalAssistant.getFundsReceived().getWorkRequestList())
             {
-                ReceivedFundWorkRequest t = new ReceivedFundWorkRequest();
-                t = (ReceivedFundWorkRequest)request;
+                TrustReceiveWR t = new TrustReceiveWR();
+                t = (TrustReceiveWR)request;
                 
                 if(enterprise.getName().equalsIgnoreCase(t.getHospitalName()))
                 {
@@ -983,8 +978,8 @@ public void populateFundingRequestsTable(){
         
             for(WorkRequest request : hospitalAssistant.getFundApplicationQueue().getWorkRequestList())
             {
-                DoctorAssistantAccountingWorkQueue accounting = new DoctorAssistantAccountingWorkQueue();
-                accounting = (DoctorAssistantAccountingWorkQueue)request;
+                DoctorAssistantAccountWQ accounting = new DoctorAssistantAccountWQ();
+                accounting = (DoctorAssistantAccountWQ)request;
                 Object[] row = new Object[3];
                 row[0] = accounting;
                 row[1] = accounting.getPrescribed();
@@ -997,10 +992,10 @@ public void populateFundingRequestsTable(){
 
 public void populateComboDoctor(){
     comboManageSlots.removeAllItems();
-        for(Organisation o : enterprise.getOrganizationDirectory().getOrganizationList()){
+        for(Organisation o : enterprise.getOrganizationCatalog().getOrganizationList()){
             if(o.getName().equals("Doctor Organisation"))
             {
-                for(Employee e: o.getEmployeeDirectory().getEmployeeDirectory())
+                for(Employee e: o.getEmployeeCatalog().getEmployeeCatalog())
                 {
                     comboManageSlots.addItem(e);
                 }

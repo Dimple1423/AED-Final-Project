@@ -1,36 +1,31 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package HealthBuddy.ui.BloodDonorCenter;
 
-import medistopBackend.Bloodbank.Organisation.HeadsOrganisation;
-import medistopBackend.EcoSystem;
-import medistopBackend.Enterprise.BloodbankEnterprise;
-import medistopBackend.Network.Network;
-import medistopBackend.UserAccount.UserAccount;
-import medistopBackend.Hospital.Organisation.HospitalOrganisationAttendant;
+import HealthBuddy.models.BloodDonorCenter.Organisation.BDCControllerOrganisation;
+import HealthBuddy.models.EcoSystem;
+import HealthBuddy.models.Enterprise.EnterpriseBloodDonorCenter;
+import HealthBuddy.models.Network.Network;
+import HealthBuddy.models.User.User;
+import HealthBuddy.models.Healthcare.Organisation.HealthcareOrganisationAttendant;
 import HealthBuddy.ui.attendant.WorkAreaAttendantJPanel;
 import java.awt.CardLayout;
 import javax.swing.JPanel;
 
 /**
  *
- * @author Virendra Rathore
+ * @author Nidhi Singh
  */
 public class BloodDonorCenterControllerMainPageJPanel extends javax.swing.JPanel {
     private JPanel showPanel;
-    private UserAccount userAccount;
-    private HeadsOrganisation headsOrganisation;
+    private User userAccount;
+    private BDCControllerOrganisation headsOrganisation;
     private EcoSystem ecoSystem;
     private Network network;
-    private BloodbankEnterprise enterprise;
+    private EnterpriseBloodDonorCenter enterprise;
     /**
      * Creates new form BloodBankInchargeLandingJPanel
      */
    
-    public BloodDonorCenterControllerMainPageJPanel(JPanel showPanel, UserAccount account, HeadsOrganisation headsOrganisation, BloodbankEnterprise bloodbankEnterprise, Network network, EcoSystem ecoSystem) {
+    public BloodDonorCenterControllerMainPageJPanel(JPanel showPanel, User account, BDCControllerOrganisation headsOrganisation, EnterpriseBloodDonorCenter bloodbankEnterprise, Network network, EcoSystem ecoSystem) {
         initComponents();
         this.showPanel=showPanel;
         this.headsOrganisation = headsOrganisation;
