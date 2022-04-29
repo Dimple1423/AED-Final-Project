@@ -1,14 +1,13 @@
 package HealthBuddy.models.Trust.Role;
 
-import HealthBuddy.models.EcoSystem;
 import HealthBuddy.models.Enterprise.Enterprise;
+import HealthBuddy.models.EcoSystem;
 import HealthBuddy.models.Network.Network;
-import HealthBuddy.models.Organisation.Organisation;
 import HealthBuddy.models.Role.Role;
-import HealthBuddy.models.UserAccount.User;
-//import HealthBuddy.ui.Admin.AdminWorkAreaJPanel;
+import HealthBuddy.models.Organisation.Organisation;
+import HealthBuddy.models.User.User;
+import HealthBuddy.ui.Admin.AdminWorkAreaJPanel;
 import javax.swing.JPanel;
-import HealthBuddy.ui.admin.AdminWorkAreaPanel;
 
 /**
  *
