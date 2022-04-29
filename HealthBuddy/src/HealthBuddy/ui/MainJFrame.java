@@ -4,10 +4,10 @@ import java.awt.CardLayout;
 import javax.swing.JPanel;
 import HealthBuddy.ui.patient.PatientCreateJPanel;
 import HealthBuddy.models.DB4OUtil.DB4OUtil;
-import HealthBuddy.ui.login.LoginJPanel;
+import HealthBuddy.ui.signin.SigninJPanel;
 import HealthBuddy.models.EcoSystem;
 import HealthBuddy.ui.donor.CreateDonorJPanel;
-import HealthBuddy.ui.login.LogoutJPanel;
+import HealthBuddy.ui.signin.SignoutJPanel;
 import HealthBuddy.Util.Utilities;
 
 /**
@@ -185,8 +185,8 @@ public class MainJFrame extends javax.swing.JFrame {
         // TODO add your handling code here:
         
         
-        LoginJPanel loginJPanel = new LoginJPanel(bodyPanel, system);
-        bodyPanel.add("LoginJPanel", loginJPanel);
+        SigninJPanel signinJPanel = new SigninJPanel(bodyPanel, system);
+        bodyPanel.add("SigninJPanel", signinJPanel);
         CardLayout layout = (CardLayout) bodyPanel.getLayout();
         layout.next(bodyPanel);
 
@@ -218,8 +218,8 @@ public class MainJFrame extends javax.swing.JFrame {
         ButtonPatient.setEnabled(true);
         
         bodyPanel.removeAll();
-        LogoutJPanel logoutPanel = new LogoutJPanel(bodyPanel);
-        bodyPanel.add("LogoutJPanel", logoutPanel);
+        SignoutJPanel signoutPanel = new SignoutJPanel(bodyPanel);
+        bodyPanel.add("SignoutJPanel", signoutPanel);
         CardLayout crdLyt = (CardLayout) bodyPanel.getLayout();
         crdLyt.next(bodyPanel);
         dB4OUtil.storeSystem(system);

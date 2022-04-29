@@ -5,7 +5,7 @@ import HealthBuddy.models.UserData.PatientData;
  *
  * @author Dimple Patel
  */
-public class PatientBookingWQ {
+public class PatientBookingWQ extends WorkRequest {
     private PatientData patient;
     private String doctor;
     public String city;
