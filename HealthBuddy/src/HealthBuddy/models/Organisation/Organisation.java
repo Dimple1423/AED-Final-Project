@@ -32,7 +32,7 @@ public abstract class Organisation {
         Attendant("Attendant Organisation"),
         Patient("Patient Organisation"),
         Donor("Donor Organisation"),
-        FunderAdmin("Funder Admin Organisation"),
+        TrustAdmin("Trust Admin Organisation"),
         Manager("Manager Organisation"),
         Volunteer("Volunteer Organisation"),
         BloodDonorCenterAdmin("BloodDonorCenter Admin Organisation"),
@@ -71,7 +71,7 @@ public abstract class Organisation {
         }
 
         public static Type getCharityAdmin() {
-            return FunderAdmin;
+            return TrustAdmin;
         }
 
         public static Type getManager() {
