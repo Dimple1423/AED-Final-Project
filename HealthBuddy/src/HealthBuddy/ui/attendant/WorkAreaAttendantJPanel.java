@@ -6,7 +6,6 @@
 
 package HealthBuddy.ui.attendant;
 
-import medistopUI.donor.*;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
