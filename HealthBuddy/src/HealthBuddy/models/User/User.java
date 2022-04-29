@@ -12,7 +12,7 @@ import HealthBuddy.models.UserData.PatientData;
  * @author Bhawna Singh
  */
 public class User {
-    
+
     private String username;
     private String password;
     private Employee employee;
@@ -20,7 +20,7 @@ public class User {
     private DonorData donor;
     private Role role;
     private WorkQueue workQueue;
-    private int loginAttempt=0;
+    private int loginAttempt = 0;
 
     public int getLoginattempt() {
         return loginAttempt;
@@ -28,7 +28,7 @@ public class User {
 
     public void setLoginattempt(int loginAttempt) {
         //incrementing the login attempt count
-        this.loginAttempt += loginAttempt; 
+        this.loginAttempt += loginAttempt;
     }
 
     public void resetLogin() {
@@ -47,7 +47,7 @@ public class User {
     public void setPassword(String password) {
         this.password = password;
     }
-    
+
     public String getUsername() {
         return username;
     }
@@ -71,7 +71,7 @@ public class User {
     public void setDonor(DonorData donor) {
         this.donor = donor;
     }
-    
+
     public PatientData getPatient() {
         return patient;
     }
