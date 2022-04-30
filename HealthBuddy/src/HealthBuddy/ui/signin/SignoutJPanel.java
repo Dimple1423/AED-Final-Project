@@ -38,10 +38,11 @@ public class SignoutJPanel extends javax.swing.JPanel {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(255, 255, 255));
+        setBackground(new java.awt.Color(0, 102, 102));
 
-        jLabel1.setBackground(new java.awt.Color(204, 204, 255));
+        jLabel1.setBackground(new java.awt.Color(0, 102, 102));
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 40)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("You have been logged out!");
 
         jLabel2.setBackground(new java.awt.Color(255, 255, 255));
