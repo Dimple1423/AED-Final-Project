@@ -99,7 +99,6 @@ public class WorkAreaManagerJPanel extends javax.swing.JPanel
         jLabel1 = new javax.swing.JLabel();
         lblFundsUsed = new javax.swing.JLabel();
         btnRefresh = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(253, 175, 23));
         setBorder(javax.swing.BorderFactory.createTitledBorder("Funding Manager"));
@@ -161,9 +160,6 @@ public class WorkAreaManagerJPanel extends javax.swing.JPanel
             }
         });
         add(btnRefresh, new org.netbeans.lib.awtextra.AbsoluteConstraints(1010, 20, -1, -1));
-
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/medistopUI.images/istockphoto-1209999432-170667a.jpg"))); // NOI18N
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 190, 790, 560));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnViewDonationsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnViewDonationsActionPerformed
@@ -202,7 +198,6 @@ public class WorkAreaManagerJPanel extends javax.swing.JPanel
     private javax.swing.JButton btnRefresh;
     private javax.swing.JButton btnViewDonations;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel lblFunds;
     private javax.swing.JLabel lblFundsUsed;
     private javax.swing.JLabel lblFundsValue;

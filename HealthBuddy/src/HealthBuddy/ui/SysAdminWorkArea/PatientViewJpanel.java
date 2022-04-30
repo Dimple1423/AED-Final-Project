@@ -67,7 +67,6 @@ public class PatientViewJpanel extends javax.swing.JPanel
         lblUserName = new javax.swing.JLabel();
         txtPatientUserName = new javax.swing.JTextField();
         lblUserPhoto = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
         setBorder(javax.swing.BorderFactory.createTitledBorder("Patient Information"));
@@ -124,9 +123,6 @@ public class PatientViewJpanel extends javax.swing.JPanel
         add(lblUserName, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 326, -1, -1));
         add(txtPatientUserName, new org.netbeans.lib.awtextra.AbsoluteConstraints(195, 321, 181, -1));
         add(lblUserPhoto, new org.netbeans.lib.awtextra.AbsoluteConstraints(497, 87, -1, -1));
-
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/medistopUI.images/favpng_icon-design-user-icon.png"))); // NOI18N
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 10, 400, 400));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
@@ -137,7 +133,6 @@ public class PatientViewJpanel extends javax.swing.JPanel
      
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnBack;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel lblAddress;
     private javax.swing.JLabel lblCity;
     private javax.swing.JLabel lblGender;

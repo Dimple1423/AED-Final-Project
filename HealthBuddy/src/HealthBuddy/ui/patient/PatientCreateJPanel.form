@@ -47,8 +47,6 @@
                           <Component id="zipCodeTF" alignment="0" min="-2" pref="398" max="-2" attributes="0"/>
                           <Component id="stateCombobox" min="-2" pref="190" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="73" max="-2" attributes="0"/>
-                      <Component id="jLabel2" min="-2" pref="1705" max="-2" attributes="0"/>
                   </Group>
                   <Component id="deliveryDirLabel" min="-2" pref="807" max="-2" attributes="0"/>
                   <Component id="deliveryDirLabel2" min="-2" pref="807" max="-2" attributes="0"/>
@@ -92,7 +90,7 @@
                       </Group>
                   </Group>
               </Group>
-              <EmptySpace pref="2008" max="32767" attributes="0"/>
+              <EmptySpace pref="3596" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -109,74 +107,69 @@
               <EmptySpace max="-2" attributes="0"/>
               <Component id="deliveryDirLabel" min="-2" pref="52" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="menuItemName" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="donorNameTF" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" attributes="0">
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="menuItemName" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="donorNameTF" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="menuItemName1" min="-2" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="maleRB" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="femaleRB" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="notToSayRB" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="biRB" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
-                      <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="menuItemName2" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="dobTF" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="menuItemName3" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="addTF" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="menuItemName4" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="cityTF" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="menuItemName6" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="zipCodeTF" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="stateCombobox" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="menuItemName5" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="menuItemName8" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="phoneTF" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="menuItemName7" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="uploadPicBtn" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="menuItemName9" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="emailTF" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="menuItemName10" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="bloodGroupCB" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="registerBtn" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="backBtn" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
+                  <Component id="menuItemName1" min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="maleRB" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="femaleRB" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="notToSayRB" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="biRB" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="menuItemName2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="dobTF" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="menuItemName3" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="addTF" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="menuItemName4" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="cityTF" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="menuItemName6" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="zipCodeTF" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="stateCombobox" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="menuItemName5" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="menuItemName8" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="phoneTF" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="menuItemName7" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="uploadPicBtn" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="menuItemName9" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="emailTF" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="menuItemName10" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="bloodGroupCB" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="registerBtn" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="backBtn" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="2285" max="-2" attributes="0"/>
               <Component id="profilePicPathLabel" min="-2" max="-2" attributes="0"/>
@@ -552,13 +545,6 @@
       </AuxValues>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel1">
-    </Component>
-    <Component class="javax.swing.JLabel" name="jLabel2">
-      <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/medistopUI.images/register.png"/>
-        </Property>
-      </Properties>
     </Component>
   </SubComponents>
 </Form>

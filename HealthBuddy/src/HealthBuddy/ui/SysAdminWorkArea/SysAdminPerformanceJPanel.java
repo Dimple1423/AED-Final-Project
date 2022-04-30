@@ -57,7 +57,6 @@ public class SysAdminPerformanceJPanel extends javax.swing.JPanel
         jScrollPane1 = new javax.swing.JScrollPane();
         tblToDisplayAnalytics = new javax.swing.JTable();
         btnBack = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(129, 121, 226));
         setBorder(javax.swing.BorderFactory.createTitledBorder("Analytics Information"));
@@ -166,10 +165,6 @@ public class SysAdminPerformanceJPanel extends javax.swing.JPanel
             }
         });
         add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 20, -1, -1));
-
-        jLabel1.setBackground(new java.awt.Color(153, 102, 255));
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/medistopUI.images/74pZ.gif"))); // NOI18N
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 70, 1020, 850));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnOrganisationWithMaximumFundsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOrganisationWithMaximumFundsActionPerformed
@@ -354,7 +349,6 @@ public class SysAdminPerformanceJPanel extends javax.swing.JPanel
     private javax.swing.JButton btnOrganisationWithMaximumDonors;
     private javax.swing.JButton btnOrganisationWithMaximumFunds;
     private javax.swing.JButton btnPrimeDonor;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lblTitle;
     private javax.swing.JTable tblToDisplayAnalytics;

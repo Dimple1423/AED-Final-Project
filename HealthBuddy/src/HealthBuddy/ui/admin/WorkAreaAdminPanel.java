@@ -51,7 +51,6 @@ public class WorkAreaAdminPanel extends javax.swing.JPanel {
         donationTabbedPane = new javax.swing.JTabbedPane();
         manageOrgPanel = new javax.swing.JPanel();
         deliveryDirLabel5 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         deliveryDirLabel = new javax.swing.JLabel();
         menuItemName6 = new javax.swing.JLabel();
@@ -61,7 +60,6 @@ public class WorkAreaAdminPanel extends javax.swing.JPanel {
         btnCreateOrg = new javax.swing.JButton();
         manageUserPanel = new javax.swing.JPanel();
         deliveryDirLabel7 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         menuItemName7 = new javax.swing.JLabel();
         comboUserOrganisation = new javax.swing.JComboBox();
@@ -96,7 +94,6 @@ public class WorkAreaAdminPanel extends javax.swing.JPanel {
         empNameTF = new javax.swing.JTextField();
         btnAddEmployee = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
 
         jPanel1.setBackground(new java.awt.Color(0, 102, 102));
         jPanel1.setForeground(new java.awt.Color(0, 102, 102));
@@ -111,9 +108,6 @@ public class WorkAreaAdminPanel extends javax.swing.JPanel {
         deliveryDirLabel5.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
         deliveryDirLabel5.setForeground(new java.awt.Color(0, 102, 102));
         deliveryDirLabel5.setText("ADMIN WORK AREA");
-
-        jLabel2.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/medistopUI.images/favpng_vector-graphics-health-care-illustration-hospital-chalisgaon-city-guide.png"))); // NOI18N
 
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
         jPanel3.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.darkGray, java.awt.Color.lightGray));
@@ -205,7 +199,7 @@ public class WorkAreaAdminPanel extends javax.swing.JPanel {
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(menuItemName6)
                     .addComponent(comboManageOrg, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 111, Short.MAX_VALUE)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(85, 85, 85)
                 .addComponent(btnCreateOrg)
@@ -220,13 +214,11 @@ public class WorkAreaAdminPanel extends javax.swing.JPanel {
                 .addGroup(manageOrgPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(manageOrgPanelLayout.createSequentialGroup()
                         .addGap(151, 151, 151)
-                        .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(37, 37, 37)
-                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 628, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(manageOrgPanelLayout.createSequentialGroup()
                         .addGap(669, 669, 669)
                         .addComponent(deliveryDirLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 490, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(781, Short.MAX_VALUE))
+                .addContainerGap(1129, Short.MAX_VALUE))
         );
         manageOrgPanelLayout.setVerticalGroup(
             manageOrgPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -234,9 +226,7 @@ public class WorkAreaAdminPanel extends javax.swing.JPanel {
                 .addGap(30, 30, 30)
                 .addComponent(deliveryDirLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(26, 26, 26)
-                .addGroup(manageOrgPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 483, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(1545, Short.MAX_VALUE))
         );
 
@@ -248,8 +238,6 @@ public class WorkAreaAdminPanel extends javax.swing.JPanel {
         deliveryDirLabel7.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
         deliveryDirLabel7.setForeground(new java.awt.Color(0, 102, 102));
         deliveryDirLabel7.setText("ADMIN WORK AREA");
-
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/medistopUI.images/reshot-illustration-doctors-working-8SAYHQJBZL.png"))); // NOI18N
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
         jPanel2.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.darkGray, java.awt.Color.white));
@@ -455,36 +443,28 @@ public class WorkAreaAdminPanel extends javax.swing.JPanel {
             manageUserPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(manageUserPanelLayout.createSequentialGroup()
                 .addGroup(manageUserPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(manageUserPanelLayout.createSequentialGroup()
-                        .addGroup(manageUserPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(manageUserPanelLayout.createSequentialGroup()
-                                .addGap(40, 40, 40)
-                                .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, manageUserPanelLayout.createSequentialGroup()
-                                .addContainerGap()
-                                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jLabel1))
+                    .addGroup(manageUserPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(manageUserPanelLayout.createSequentialGroup()
+                            .addGap(40, 40, 40)
+                            .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, manageUserPanelLayout.createSequentialGroup()
+                            .addContainerGap()
+                            .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(manageUserPanelLayout.createSequentialGroup()
                         .addGap(523, 523, 523)
                         .addComponent(deliveryDirLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 651, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(819, Short.MAX_VALUE))
+                .addContainerGap(1114, Short.MAX_VALUE))
         );
         manageUserPanelLayout.setVerticalGroup(
             manageUserPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(manageUserPanelLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(deliveryDirLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGroup(manageUserPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(manageUserPanelLayout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addComponent(jLabel1))
-                    .addGroup(manageUserPanelLayout.createSequentialGroup()
-                        .addGap(16, 16, 16)
-                        .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(36, 36, 36)
-                        .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                .addContainerGap(1346, Short.MAX_VALUE))
+                .addGap(16, 16, 16)
+                .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(36, 36, 36)
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(1421, Short.MAX_VALUE))
         );
 
         donationTabbedPane.addTab("Manage User", manageUserPanel);
@@ -642,8 +622,6 @@ public class WorkAreaAdminPanel extends javax.swing.JPanel {
                 .addContainerGap(52, Short.MAX_VALUE))
         );
 
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/medistopUI.images/favpng_icon-design-user-icon.png"))); // NOI18N
-
         javax.swing.GroupLayout manageUserPanel1Layout = new javax.swing.GroupLayout(manageUserPanel1);
         manageUserPanel1.setLayout(manageUserPanel1Layout);
         manageUserPanel1Layout.setHorizontalGroup(
@@ -658,37 +636,32 @@ public class WorkAreaAdminPanel extends javax.swing.JPanel {
                                 .addComponent(helpTextLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 798, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(50, 50, 50))))
                     .addGroup(manageUserPanel1Layout.createSequentialGroup()
-                        .addGap(212, 212, 212)
+                        .addGap(215, 215, 215)
                         .addGroup(manageUserPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(manageUserPanel1Layout.createSequentialGroup()
                                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(jLabel3)))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel5)
-                .addContainerGap(1082, Short.MAX_VALUE))
+                .addContainerGap(1347, Short.MAX_VALUE))
         );
         manageUserPanel1Layout.setVerticalGroup(
             manageUserPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(manageUserPanel1Layout.createSequentialGroup()
                 .addGap(16, 16, 16)
+                .addComponent(deliveryDirLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGroup(manageUserPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(manageUserPanel1Layout.createSequentialGroup()
-                        .addComponent(deliveryDirLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGroup(manageUserPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(manageUserPanel1Layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(manageUserPanel1Layout.createSequentialGroup()
-                                .addGap(118, 118, 118)
-                                .addComponent(jLabel3))))
-                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 233, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(manageUserPanel1Layout.createSequentialGroup()
+                        .addGap(118, 118, 118)
+                        .addComponent(jLabel3)))
                 .addGap(29, 29, 29)
                 .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(78, 78, 78)
                 .addComponent(helpTextLabel1)
-                .addContainerGap(1327, Short.MAX_VALUE))
+                .addContainerGap(1338, Short.MAX_VALUE))
         );
 
         donationTabbedPane.addTab("Manage Employee", manageUserPanel1);
@@ -864,10 +837,7 @@ public class WorkAreaAdminPanel extends javax.swing.JPanel {
     private javax.swing.JTabbedPane donationTabbedPane;
     private javax.swing.JTextField empNameTF;
     private javax.swing.JLabel helpTextLabel1;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;

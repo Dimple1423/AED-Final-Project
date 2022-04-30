@@ -73,12 +73,10 @@ public class WorkAreaDoctorJPanel extends javax.swing.JPanel {
         valuePatientName = new javax.swing.JLabel();
         btnAddPrescription = new javax.swing.JButton();
         btnRefresh = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
         lblPatientName1 = new javax.swing.JLabel();
         lblPatientsWaiting = new javax.swing.JLabel();
         RadioFundsYes = new javax.swing.JRadioButton();
         RadioFundsNo = new javax.swing.JRadioButton();
-        jLabel3 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(102, 153, 255));
 
@@ -176,8 +174,6 @@ public class WorkAreaDoctorJPanel extends javax.swing.JPanel {
             }
         });
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/medistopUI.images/2966327.png"))); // NOI18N
-
         lblPatientName1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         lblPatientName1.setForeground(new java.awt.Color(0, 0, 102));
         lblPatientName1.setText("Patients Waiting:");
@@ -195,9 +191,6 @@ public class WorkAreaDoctorJPanel extends javax.swing.JPanel {
                 RadioFundsNoActionPerformed(evt);
             }
         });
-
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/medistopUI.images/reshot-illustration-doctor-review-V3K9GLAREF.png"))); // NOI18N
-        jLabel3.setText("jLabel3");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -243,9 +236,7 @@ public class WorkAreaDoctorJPanel extends javax.swing.JPanel {
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(259, 259, 259)
                                 .addComponent(btnAddPrescription, javax.swing.GroupLayout.PREFERRED_SIZE, 199, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 60, Short.MAX_VALUE)
-                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 572, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(298, 298, 298))
+                        .addGap(298, 930, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                             .addGroup(layout.createSequentialGroup()
@@ -257,8 +248,6 @@ public class WorkAreaDoctorJPanel extends javax.swing.JPanel {
                                 .addGap(89, 89, 89)
                                 .addComponent(valuePatientName, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel1)
-                        .addGap(318, 318, 318)
                         .addComponent(btnRefresh, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE))))
         );
 
@@ -282,8 +271,7 @@ public class WorkAreaDoctorJPanel extends javax.swing.JPanel {
                         .addGap(59, 59, 59)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(lblPatientsWaiting, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(lblPatientName1)))
+                            .addComponent(lblPatientName1))
                         .addGap(55, 55, 55)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(lblPatientName)
@@ -318,11 +306,6 @@ public class WorkAreaDoctorJPanel extends javax.swing.JPanel {
                                 .addComponent(RadioFundsNo)))
                         .addGap(67, 67, 67)
                         .addComponent(btnAddPrescription))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(17, 17, 17)
-                        .addComponent(jLabel1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel3))
                     .addComponent(btnRefresh))
                 .addContainerGap(278, Short.MAX_VALUE))
         );
@@ -423,8 +406,6 @@ public class WorkAreaDoctorJPanel extends javax.swing.JPanel {
     private javax.swing.JRadioButton RadioFundsYes;
     private javax.swing.JButton btnAddPrescription;
     private javax.swing.JButton btnRefresh;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel lblBloodGroup;
     private javax.swing.JLabel lblDOB;
     private javax.swing.JLabel lblDisease;

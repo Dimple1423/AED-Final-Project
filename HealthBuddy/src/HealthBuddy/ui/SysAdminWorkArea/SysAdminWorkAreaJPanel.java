@@ -37,7 +37,6 @@ JPanel showPanel;
         btnTitle = new javax.swing.JLabel();
         btnManageEnterAdministrator = new javax.swing.JButton();
         btnApplicationAnalytics = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
         setBorder(javax.swing.BorderFactory.createTitledBorder("System Administrator Work Area"));
@@ -109,10 +108,6 @@ JPanel showPanel;
             }
         });
         add(btnApplicationAnalytics, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 420, 202, 120));
-
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/medistopUI.images/reshot-illustration-share-location-DRVTAKQ9GF-a483c (1).png"))); // NOI18N
-        jLabel1.setText("jLabel1");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-170, 40, 1870, 1100));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnManageLocationActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnManageLocationActionPerformed
@@ -172,6 +167,5 @@ JPanel showPanel;
     private javax.swing.JButton btnManageLocation;
     private javax.swing.JButton btnManagePatient;
     private javax.swing.JLabel btnTitle;
-    private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }

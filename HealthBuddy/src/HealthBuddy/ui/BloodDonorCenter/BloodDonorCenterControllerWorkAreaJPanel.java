@@ -84,7 +84,6 @@ public class BloodDonorCenterControllerWorkAreaJPanel extends javax.swing.JPanel
         lblTitle = new javax.swing.JLabel();
         btnAccept = new javax.swing.JButton();
         btnBack = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(102, 153, 255));
         setBorder(javax.swing.BorderFactory.createTitledBorder("Blood Requests"));
@@ -140,9 +139,6 @@ public class BloodDonorCenterControllerWorkAreaJPanel extends javax.swing.JPanel
             }
         });
         add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(1030, 30, -1, -1));
-
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/medistopUI.images/bloodStatus.jpg"))); // NOI18N
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 130, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnAcceptActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAcceptActionPerformed
@@ -229,7 +225,6 @@ public class BloodDonorCenterControllerWorkAreaJPanel extends javax.swing.JPanel
     private javax.swing.JTable BloodRequestJTable;
     private javax.swing.JButton btnAccept;
     private javax.swing.JButton btnBack;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lblTitle;
     // End of variables declaration//GEN-END:variables
