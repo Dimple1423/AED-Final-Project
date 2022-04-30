@@ -1,30 +1,25 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package HealthBuddy.ui.admin;
 
-import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+import javax.swing.JOptionPane;
+import HealthBuddy.models.Employee.Employee;
 import javax.swing.table.DefaultTableModel;
-import medistopBackend.Employee.Employee;
-import medistopBackend.Enterprise.Enterprise;
-import medistopBackend.Organisation.Organisation;
-import medistopBackend.Organisation.Organisation.Type;
-import medistopBackend.Organisation.OrganisationDirectory;
-import medistopBackend.Role.Role;
-import medistopBackend.UserAccount.UserAccount;
+import HealthBuddy.models.Organisation.Organisation;
+import HealthBuddy.models.Enterprise.Enterprise;
+import HealthBuddy.models.Organisation.OrganisationCatalog;
+import HealthBuddy.models.Organisation.Organisation.Type;
+import HealthBuddy.models.User.User;
+import HealthBuddy.models.Role.Role;
 
 /**
  *
- * @author Zeenia
+ * @author Dimple
  */
 public class WorkAreaAdminPanel extends javax.swing.JPanel {
     
     private JPanel displayJPanel;
     private Enterprise enterprise;
-    private OrganisationDirectory organizationDirectory;
+    private OrganisationCatalog organizationDirectory;
 
     /**
      * Creates new form AdminWorkAreaPanel
@@ -34,7 +29,7 @@ public class WorkAreaAdminPanel extends javax.swing.JPanel {
         initComponents();
         this.displayJPanel = displayJPanel;
         this.enterprise = enterprise;
-        this.organizationDirectory = enterprise.getOrganizationDirectory();
+        this.organizationDirectory = enterprise.getOrganizationCatalog();
         
         populateManageOrganisationCombo();
         populateUserOrganizationCombo();
@@ -757,7 +752,7 @@ public class WorkAreaAdminPanel extends javax.swing.JPanel {
         String name = empNameTF.getText();
         
         if(!name.isEmpty())  {
-        organisation.getEmployeeDirectory().addEmployee(name);
+        organisation.getEmployeeCatalog().addEmployee(name);
         populateEmployeeTable(organisation);
         JOptionPane.showMessageDialog(null,"Employee Added Successfully!!","Success",JOptionPane.INFORMATION_MESSAGE);
         txtUsername.setText("");
@@ -805,11 +800,11 @@ public class WorkAreaAdminPanel extends javax.swing.JPanel {
         }
         
         else{
-        boolean result = organisation.getUserAccountDirectory().ifUniqueUsername(userName);
+        boolean result = organisation.getUserCatalog().ifUniqueUsername(userName);
         
         if(result == true)
         {
-            organisation.getUserAccountDirectory().newUserAccount(userName, password, employee, role);
+            organisation.getUserCatalog().newUserAccount(userName, password, employee, role);
             JOptionPane.showMessageDialog(null, "Successfully recorded the User Details ","Success", JOptionPane.INFORMATION_MESSAGE);
             
             txtUsername.setText("");
@@ -908,7 +903,7 @@ public class WorkAreaAdminPanel extends javax.swing.JPanel {
     {
         comboManageOrg.removeAllItems();
         
-        if(enterprise.getEnterpriseClassification().equals(Enterprise.EnterpriseClassification.Hospital))
+        if(enterprise.getEnterpriseClassification().equals(Enterprise.EnterpriseClassification.Healthcare))
         {
             for (Type type : Organisation.Type.values())
             {
@@ -919,18 +914,18 @@ public class WorkAreaAdminPanel extends javax.swing.JPanel {
             }
         }
         
-        else if(enterprise.getEnterpriseClassification().equals(Enterprise.EnterpriseClassification.Bloodbank))
+        else if(enterprise.getEnterpriseClassification().equals(Enterprise.EnterpriseClassification.BloodDonorCenter))
         {
             for (Type type : Organisation.Type.values())
             {
-                if (type.getValue().equals(Type.BloodBankHead.getValue()))
+                if (type.getValue().equals(Type.BloodDonorCenterController.getValue()))
                 {
                     comboManageOrg.addItem(type);
                 }
             }
         }
         
-        else if(enterprise.getEnterpriseClassification().equals(Enterprise.EnterpriseClassification.Funds))
+        else if(enterprise.getEnterpriseClassification().equals(Enterprise.EnterpriseClassification.Trust))
         {
             for (Type type : Organisation.Type.values())
             {
@@ -965,7 +960,7 @@ public class WorkAreaAdminPanel extends javax.swing.JPanel {
     public void populateUserOrganizationCombo() {
        comboUserOrganisation.removeAllItems();
 
-        for (Organisation organisation : enterprise.getOrganizationDirectory().getOrganizationList()) {
+        for (Organisation organisation : enterprise.getOrganizationCatalog().getOrganizationList()) {
             comboUserOrganisation.addItem(organisation);
         }
     }
@@ -973,7 +968,7 @@ public class WorkAreaAdminPanel extends javax.swing.JPanel {
     public void populateUserEmployeeCombo(Organisation organization){
         comboUserEmployee.removeAllItems();
         
-        for (Employee employee : organization.getEmployeeDirectory().getEmployeeDirectory()){
+        for (Employee employee : organization.getEmployeeCatalog().getEmployeeCatalog()){
             comboUserEmployee.addItem(employee);
         }
     }
@@ -992,8 +987,8 @@ public class WorkAreaAdminPanel extends javax.swing.JPanel {
 
         model.setRowCount(0);
 
-        for (Organisation organisation : enterprise.getOrganizationDirectory().getOrganizationList()) {
-            for (UserAccount userAccount : organisation.getUserAccountDirectory().getUserAccountDirectory()) {
+        for (Organisation organisation : enterprise.getOrganizationCatalog().getOrganizationList()) {
+            for (User userAccount : organisation.getUserCatalog().getUserCatalog()) {
                 Object row[] = new Object[2];
                 row[0] = userAccount;
                 row[1] = userAccount.getRole();
@@ -1029,7 +1024,7 @@ public class WorkAreaAdminPanel extends javax.swing.JPanel {
         
         model.setRowCount(0);
         
-        for (Employee employee : organization.getEmployeeDirectory().getEmployeeDirectory())
+        for (Employee employee : organization.getEmployeeCatalog().getEmployeeCatalog())
         {
             Object[] row = new Object[2];
             row[0] = employee.getEmpId();

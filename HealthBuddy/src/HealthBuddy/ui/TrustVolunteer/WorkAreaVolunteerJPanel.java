@@ -1,23 +1,18 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package HealthBuddy.ui.TrustVolunteer;
 
-import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+import javax.swing.JOptionPane;
+import HealthBuddy.models.EcoSystem;
 import javax.swing.table.DefaultTableModel;
-import medistopBackend.EcoSystem;
-import medistopBackend.Enterprise.FundingEnterprise;
-import medistopBackend.Funds.Donation.FundsInfo;
-import medistopBackend.Funds.Organisation.FundsOrganisationVolunteer;
-import medistopBackend.Network.Network;
-import medistopBackend.UserAccount.UserAccount;
-import medistopBackend.WorkQueue.HospitalFundsRequestWorkQueue;
-import medistopBackend.WorkQueue.WorkRequest;
-import medistopUtil.SendEmailUtility;
-import medistopUtil.Utilities;
+import HealthBuddy.models.Trust.Donation.TrustDetails;
+import HealthBuddy.models.Enterprise.EnterpriseTrust;
+import HealthBuddy.models.Network.Network;
+import HealthBuddy.models.Trust.Organisation.TrustOrgVolunteer;
+import HealthBuddy.models.WorkQueue.HealthcareTrustRequestWQ;
+import HealthBuddy.models.User.User;
+import HealthBuddy.Util.SendEmailUtility;
+import HealthBuddy.models.WorkQueue.WorkRequest;
+import HealthBuddy.Util.Utilities;
 
 /**
  *
@@ -30,11 +25,11 @@ public class WorkAreaVolunteerJPanel extends javax.swing.JPanel {
      */
     private JPanel displayJPanel;
     private EcoSystem ecosystem;
-    private FundingEnterprise enterprise;
+    private EnterpriseTrust enterprise;
     private Network network;
-    private UserAccount userAccount;
+    private User userAccount;
  
-    public WorkAreaVolunteerJPanel(JPanel displayJPanel,UserAccount account, FundsOrganisationVolunteer orgVolunteer ,FundingEnterprise enterprise, Network network, EcoSystem ecosystem) {
+    public WorkAreaVolunteerJPanel(JPanel displayJPanel,User account, TrustOrgVolunteer orgVolunteer ,EnterpriseTrust enterprise, Network network, EcoSystem ecosystem) {
         initComponents();
         this.displayJPanel = displayJPanel;
         this.userAccount = account;
@@ -196,7 +191,7 @@ public class WorkAreaVolunteerJPanel extends javax.swing.JPanel {
         
         if (selectedRow > -1)
         {
-            HospitalFundsRequestWorkQueue request = (HospitalFundsRequestWorkQueue)tblPatientCharity.getValueAt(selectedRow,0);
+            HealthcareTrustRequestWQ request = (HealthcareTrustRequestWQ)tblPatientCharity.getValueAt(selectedRow,0);
             
             if(request.getStatus().equalsIgnoreCase("Published"))
             {
@@ -207,9 +202,9 @@ public class WorkAreaVolunteerJPanel extends javax.swing.JPanel {
                 request.setStatus("Published");
                 populateTable();
                 int count =0;
-                for(FundsInfo funds : ecosystem.getDonationDirectory().getFundsDirectory())
+                for(TrustDetails funds : ecosystem.getDonationDirectory().geTrustCatalog())
                 {
-                    if(funds.getFundsOrgName().equalsIgnoreCase(enterprise.getName()))
+                    if(funds.geTrustOrgName().equalsIgnoreCase(enterprise.getName()))
                     {
                         count++;
                     }
@@ -218,9 +213,9 @@ public class WorkAreaVolunteerJPanel extends javax.swing.JPanel {
                 String[] receiver = new String[count];
         
                 int index =0;
-                for(FundsInfo donation : ecosystem.getDonationDirectory().getFundsDirectory())
+                for(TrustDetails donation : ecosystem.getDonationDirectory().geTrustCatalog())
                 {
-                    if(donation.getFundsOrgName().equalsIgnoreCase(enterprise.getName()))
+                    if(donation.geTrustOrgName().equalsIgnoreCase(enterprise.getName()))
                     {
                         receiver[index++] = donation.getDonor().getEmail();
                     }
@@ -267,7 +262,7 @@ public class WorkAreaVolunteerJPanel extends javax.swing.JPanel {
         
         for(WorkRequest workRequest : network.getFundsRequests().getWorkRequestList())
         {
-            HospitalFundsRequestWorkQueue fundsReqWorkQueue = (HospitalFundsRequestWorkQueue)workRequest;
+            HealthcareTrustRequestWQ fundsReqWorkQueue = (HealthcareTrustRequestWQ)workRequest;
                 
             if(fundsReqWorkQueue.getMessage().equalsIgnoreCase("Acknowledged") && fundsReqWorkQueue.getFunderName().equalsIgnoreCase(enterprise.getName()))
             {
