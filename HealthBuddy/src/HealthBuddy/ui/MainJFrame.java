@@ -2,13 +2,16 @@ package HealthBuddy.ui;
 
 import java.awt.CardLayout;
 import javax.swing.JPanel;
+import javax.swing.ImageIcon;
 import HealthBuddy.ui.patient.PatientCreateJPanel;
+import java.awt.Image;
 import HealthBuddy.models.DB4OUtil.DB4OUtil;
 import HealthBuddy.ui.signin.SigninJPanel;
 import HealthBuddy.models.EcoSystem;
 import HealthBuddy.ui.donor.CreateDonorJPanel;
 import HealthBuddy.ui.signin.SignoutJPanel;
 import HealthBuddy.Util.Utilities;
+
 
 /**
  *
@@ -25,7 +28,8 @@ public class MainJFrame extends javax.swing.JFrame {
 
         initComponents();
         system=dB4OUtil.retrieveSystem();
-
+        setSize(1540,800);
+        setTitle("HealthBuddy System");
 
     }
 
@@ -64,40 +68,48 @@ public class MainJFrame extends javax.swing.JFrame {
         LabelHealthBuddy.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         LabelHealthBuddy.setText("HEALTH BUDDY");
 
-        ButtonDonor.setBackground(new java.awt.Color(0, 51, 102));
+        ButtonDonor.setBackground(new java.awt.Color(255, 255, 255));
         ButtonDonor.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
         ButtonDonor.setForeground(new java.awt.Color(0, 102, 102));
         ButtonDonor.setText("DONOR");
+        ButtonDonor.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        ButtonDonor.setBorderPainted(false);
         ButtonDonor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ButtonDonorActionPerformed(evt);
             }
         });
 
-        ButtonPatient.setBackground(new java.awt.Color(0, 51, 102));
+        ButtonPatient.setBackground(new java.awt.Color(255, 255, 255));
         ButtonPatient.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
         ButtonPatient.setForeground(new java.awt.Color(0, 102, 102));
         ButtonPatient.setText("PATIENT");
+        ButtonPatient.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        ButtonPatient.setBorderPainted(false);
         ButtonPatient.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ButtonPatientActionPerformed(evt);
             }
         });
 
-        ButtonSI.setBackground(new java.awt.Color(0, 102, 102));
+        ButtonSI.setBackground(new java.awt.Color(255, 255, 255));
         ButtonSI.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
         ButtonSI.setForeground(new java.awt.Color(0, 102, 102));
         ButtonSI.setText("SIGN IN");
+        ButtonSI.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        ButtonSI.setBorderPainted(false);
         ButtonSI.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ButtonSIActionPerformed(evt);
             }
         });
 
-        ButtonSO.setBackground(new java.awt.Color(0, 51, 102));
+        ButtonSO.setBackground(new java.awt.Color(255, 255, 255));
         ButtonSO.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
         ButtonSO.setForeground(new java.awt.Color(0, 102, 102));
         ButtonSO.setText("SIGN OUT");
+        ButtonSO.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        ButtonSO.setBorderPainted(false);
         ButtonSO.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ButtonSOActionPerformed(evt);
@@ -109,7 +121,7 @@ public class MainJFrame extends javax.swing.JFrame {
         headerPanelLayout.setHorizontalGroup(
             headerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(headerPanelLayout.createSequentialGroup()
-                .addContainerGap(534, Short.MAX_VALUE)
+                .addContainerGap(642, Short.MAX_VALUE)
                 .addComponent(LabelHealthBuddy, javax.swing.GroupLayout.PREFERRED_SIZE, 243, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(320, 320, 320)
                 .addComponent(ButtonSI)
@@ -121,6 +133,9 @@ public class MainJFrame extends javax.swing.JFrame {
                 .addComponent(ButtonPatient)
                 .addGap(21, 21, 21))
         );
+
+        headerPanelLayout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {ButtonDonor, ButtonPatient, ButtonSI, ButtonSO});
+
         headerPanelLayout.setVerticalGroup(
             headerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(headerPanelLayout.createSequentialGroup()
@@ -134,6 +149,8 @@ public class MainJFrame extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
+        headerPanelLayout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {ButtonDonor, ButtonPatient, ButtonSI, ButtonSO});
+
         mainSplitPane.setTopComponent(headerPanel);
 
         bodyPanel.setBackground(new java.awt.Color(255, 255, 255));
@@ -142,18 +159,20 @@ public class MainJFrame extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/HealthBuddy/ui/images/welcome-15.gif"))); // NOI18N
-
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 1692, Short.MAX_VALUE)
+            .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 1692, Short.MAX_VALUE)
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 700, Short.MAX_VALUE)
+            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 698, Short.MAX_VALUE)
         );
+
+        ImageIcon imageIcon =  new ImageIcon(new ImageIcon(getClass().getResource("/HealthBuddy/ui/images/welcome-15.gif")).getImage().getScaledInstance(1540, 750, Image.SCALE_DEFAULT));
+
+        jLabel1.setIcon(imageIcon);
 
         bodyPanel.add(jPanel1, "card2");
 

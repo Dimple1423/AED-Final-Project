@@ -1,8 +1,10 @@
 package HealthBuddy.ui.signin;
 
 import java.awt.CardLayout;
+import java.awt.Image;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+import javax.swing.ImageIcon;
 import HealthBuddy.models.EcoSystem;
 import HealthBuddy.models.Enterprise.Enterprise;
 import HealthBuddy.models.Network.Network;
@@ -24,6 +26,7 @@ public class SigninJPanel extends javax.swing.JPanel {
         initComponents();
         this.bodyPanel = bodyPanel;
         this.ecosystem = ecosystem;
+        setSize(1540,800);
     }
 
     /**
@@ -42,6 +45,7 @@ public class SigninJPanel extends javax.swing.JPanel {
         usernameTF = new javax.swing.JTextField();
         loginBtn = new javax.swing.JButton();
         setAccL = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
 
@@ -123,21 +127,31 @@ public class SigninJPanel extends javax.swing.JPanel {
                 .addContainerGap(38, Short.MAX_VALUE))
         );
 
+        ImageIcon imageIcon =  new ImageIcon(new ImageIcon(getClass().getResource("/HealthBuddy/ui/images/login.gif")).getImage().getScaledInstance(900, 600, Image.SCALE_DEFAULT));
+        jLabel1.setIcon(imageIcon);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(318, 318, 318)
+                .addGap(222, 222, 222)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(2093, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 723, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(1462, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(227, 227, 227)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(75, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(273, 273, 273)
+                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(81, 81, 81)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 460, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(302, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -214,6 +228,7 @@ public class SigninJPanel extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JButton loginBtn;
     private javax.swing.JPasswordField passPF;
