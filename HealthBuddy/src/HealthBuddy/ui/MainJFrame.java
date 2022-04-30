@@ -121,7 +121,7 @@ public class MainJFrame extends javax.swing.JFrame {
         headerPanelLayout.setHorizontalGroup(
             headerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(headerPanelLayout.createSequentialGroup()
-                .addContainerGap(653, Short.MAX_VALUE)
+                .addContainerGap(649, Short.MAX_VALUE)
                 .addComponent(LabelHealthBuddy, javax.swing.GroupLayout.PREFERRED_SIZE, 243, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(305, 305, 305)
                 .addComponent(ButtonSI, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)

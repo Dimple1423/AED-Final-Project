@@ -12,6 +12,8 @@ import java.awt.CardLayout;
 import java.awt.Component;
 import javax.swing.JPanel;
 import javax.swing.table.DefaultTableModel;
+import javax.swing.ImageIcon;
+import java.awt.Image;
 
 
 public class AdminEnterpriseManagerJPanel extends javax.swing.JPanel {
@@ -87,6 +89,7 @@ public class AdminEnterpriseManagerJPanel extends javax.swing.JPanel {
         txtPassword = new javax.swing.JPasswordField();
         btnBack = new javax.swing.JButton();
         lblTitle = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
         setBorder(javax.swing.BorderFactory.createTitledBorder("Enterprise Admin"));
@@ -199,6 +202,10 @@ public class AdminEnterpriseManagerJPanel extends javax.swing.JPanel {
         lblTitle.setForeground(new java.awt.Color(0, 102, 102));
         lblTitle.setText("Add Enterprise Admin");
         add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 30, 470, -1));
+
+        ImageIcon imageIcon = new ImageIcon(new ImageIcon(getClass().getResource("/HealthBuddy/ui/images/enterpriseAdmin.gif")).getImage().getScaledInstance(700, 500, Image.SCALE_DEFAULT));
+        jLabel1.setIcon(imageIcon);
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 90, 800, 610));
     }// </editor-fold>//GEN-END:initComponents
 
     private void networkJComboBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_networkJComboBoxActionPerformed
@@ -248,6 +255,7 @@ public class AdminEnterpriseManagerJPanel extends javax.swing.JPanel {
     private javax.swing.JButton btnBack;
     private javax.swing.JButton btnsubmit;
     private javax.swing.JComboBox enterpriseJComboBox;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lblEnterPrise;
     private javax.swing.JLabel lblName;
