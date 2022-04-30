@@ -1,38 +1,33 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package HealthBuddy.ui.donor;
 
-import java.awt.CardLayout;
 import java.io.File;
-import java.text.SimpleDateFormat;
+import java.awt.CardLayout;
 import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+import java.text.SimpleDateFormat;
 import javax.swing.JFileChooser;
-import javax.swing.JOptionPane;
+import java.util.regex.Pattern;
 import javax.swing.JPanel;
+import javax.swing.JOptionPane;
 import javax.swing.filechooser.FileSystemView;
 
-import medistopBackend.UserData.DonorData;
-import medistopBackend.UserData.DonorDirectory;
-import medistopUtil.OTPUtility;
-import medistopUtil.SMSUtility;
-import medistopUtil.SendEmailUtility;
-import medistopUtil.Utilities;
+import HealthBuddy.models.UserData.DonorData;
+import HealthBuddy.models.UserData.DonorCatalog;
+import HealthBuddy.Util.OTPUtility;
+import HealthBuddy.Util.SMSUtility;
+import HealthBuddy.Util.SendEmailUtility;
+import HealthBuddy.Util.Utilities;
 
-import medistopBackend.EcoSystem;
+import HealthBuddy.models.EcoSystem;
 
 /**
  *
- * @author 18577
+ * @author Dimple Patel
  */
 public class CreateDonorJPanel extends javax.swing.JPanel {
 
     private JPanel bodyPanel;
     private EcoSystem ecosystem;
-    private DonorDirectory donorDir;
+    private DonorCatalog donorDir;
 
     /**
      * Creates new form DonorForm

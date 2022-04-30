@@ -1,30 +1,24 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package HealthBuddy.ui.patient;
 
 
-import medistopBackend.EcoSystem;
-import medistopBackend.Enterprise.Enterprise;
-import medistopBackend.Hospital.Appointment.AppointmentDetails;
-import medistopBackend.Hospital.Organisation.HospitalOrganisationAssistant;
-import medistopBackend.Organisation.Organisation;
-import medistopBackend.Role.Patient;
-import medistopBackend.UserAccount.UserAccount;
-import medistopBackend.UserData.DonorData;
-import medistopBackend.UserData.PatientData;
+import HealthBuddy.models.Enterprise.Enterprise;
+import HealthBuddy.models.EcoSystem;
+import HealthBuddy.models.Healthcare.Organisation.HealthcareOrganisationAssistant;
+import HealthBuddy.models.Healthcare.Appointment.AppointmentInformation;
+import HealthBuddy.models.Role.Patient;
+import HealthBuddy.models.Organisation.Organisation;
+import HealthBuddy.models.UserData.DonorData;
+import HealthBuddy.models.User.User;
+import HealthBuddy.models.UserData.PatientData;
 
 import javax.swing.*;
+import HealthBuddy.models.Network.Network;
 import javax.swing.table.DefaultTableModel;
-import medistopBackend.Network.Network;
-import medistopBackend.WorkQueue.AssistantAddingTimingsWorkQueue;
-import medistopBackend.WorkQueue.PatientBookingWorkQueue;
-import medistopBackend.WorkQueue.WorkRequest;
-import medistopUtil.SMSUtility;
-import medistopUtil.WhatsappUtility;
+import HealthBuddy.models.WorkQueue.PatientBookingWQ;
+import HealthBuddy.models.WorkQueue.AssistantAddingTimetoWQ;
+import HealthBuddy.Util.SMSUtility;
+import HealthBuddy.models.WorkQueue.WorkRequest;
+import HealthBuddy.Util.WhatsappUtility;
 
 import java.awt.*;
 import java.text.DateFormat;
@@ -32,19 +26,19 @@ import java.text.SimpleDateFormat;
 
 /**
  *
- * @author 18577
+ * @author Dimple Patel
  */
 public class WorkAreaPatientPanel extends javax.swing.JPanel {
     DefaultTableModel appointmentDirectoryTableModel;
     DefaultTableModel appointmentHistoryTableModel;
-    private UserAccount userAccount;
+    private User userAccount;
     private EcoSystem ecoSystem;
     private PatientData patientData;
     private Organisation organisation;
     private JPanel bodyPanel;
 
     /** Creates new form DonorWorkAreaPanel */
-    public WorkAreaPatientPanel(JPanel bodyPanel, EcoSystem ecoSys, UserAccount userAcc, Organisation organisation) {
+    public WorkAreaPatientPanel(JPanel bodyPanel, EcoSystem ecoSys, User userAcc, Organisation organisation) {
         ecoSystem = ecoSys;
         userAccount = userAcc;
         this.bodyPanel = bodyPanel;
@@ -95,8 +89,8 @@ public class WorkAreaPatientPanel extends javax.swing.JPanel {
         for (Network network: ecoSystem.getNetworkList()) {
         
           for(WorkRequest request: ecoSystem.getPatientDir().getWorkQueue().getWorkRequestList()){
-            AssistantAddingTimingsWorkQueue assistantAddingTimingsWorkQueue = new AssistantAddingTimingsWorkQueue();
-              assistantAddingTimingsWorkQueue = (AssistantAddingTimingsWorkQueue)request;
+            AssistantAddingTimetoWQ assistantAddingTimingsWorkQueue = new AssistantAddingTimetoWQ();
+              assistantAddingTimingsWorkQueue = (AssistantAddingTimetoWQ)request;
             if(network.getNetworkName().equals(assistantAddingTimingsWorkQueue.getCity()))
             {
 
@@ -125,7 +119,7 @@ public class WorkAreaPatientPanel extends javax.swing.JPanel {
 
         model.setRowCount(0);
 
-        for(AppointmentDetails appDetails : ecoSystem.getAppointmentDirectory().getAppointmentDirectory())
+        for(AppointmentInformation appDetails : ecoSystem.getAppointmentCatalog().getAppointmentCatalog())
         {
             if(userAccount.getUsername().equalsIgnoreCase(appDetails.getPatient().getUsername()))
             {
@@ -320,7 +314,7 @@ public class WorkAreaPatientPanel extends javax.swing.JPanel {
         if (selectedRow < 0){
             return;
         }
-        AssistantAddingTimingsWorkQueue request = (AssistantAddingTimingsWorkQueue)appointDirTable.getValueAt(selectedRow,0);
+        AssistantAddingTimetoWQ request = (AssistantAddingTimetoWQ)appointDirTable.getValueAt(selectedRow,0);
         if(request.getStatus().equals("Booked")){
             JOptionPane.showMessageDialog(null,"Select Valid Slot. The slot you are trying to book is not available.");
         }
@@ -328,9 +322,9 @@ public class WorkAreaPatientPanel extends javax.swing.JPanel {
             request.setStatus("Booked");
 //            Network net = (Network) cityJComboBox.getSelectedItem();
             populateAvailAppontments();
-            PatientBookingWorkQueue patientBookingWorkQueue = new PatientBookingWorkQueue();
+            PatientBookingWQ patientBookingWorkQueue = new PatientBookingWQ();
             PatientData patientData = null;
-            for(PatientData pat : ecoSystem.getPatientDir().getPatientDirectory()){
+            for(PatientData pat : ecoSystem.getPatientDir().getPatientCatalog()){
                 if(pat.getUsername().equals(userAccount.getUsername()))
                 {
                     patientData = pat;
@@ -342,29 +336,29 @@ public class WorkAreaPatientPanel extends javax.swing.JPanel {
             patientBookingWorkQueue.setStatus("Booked");
             patientBookingWorkQueue.setCity(request.getCity());
             patientBookingWorkQueue.setDoctor(request.getDoctor());
-            patientBookingWorkQueue.setHospitalName(request.getHospitalName());
+            patientBookingWorkQueue.setHospitalName(request.getHealthcareName());
             Enterprise enterprise = null;
             for(Network n: ecoSystem.getNetworkList() ){
-                for(Enterprise e: n.getEnterpriseDirectory().getEnterpriseList()){
-                    if(e.getName().equalsIgnoreCase(request.getHospitalName()))
+                for(Enterprise e: n.getEnterpriseCatalog().getEnterpriseList()){
+                    if(e.getName().equalsIgnoreCase(request.getHealthcareName()))
                     {
                         enterprise = e;
                         break;
                     }
                 }
             }
-            HospitalOrganisationAssistant org = null;
-            for (Organisation o : enterprise.getOrganizationDirectory().getOrganizationList()){
-                if(o instanceof HospitalOrganisationAssistant)
+            HealthcareOrganisationAssistant org = null;
+            for (Organisation o : enterprise.getOrganizationCatalog().getOrganizationList()){
+                if(o instanceof HealthcareOrganisationAssistant)
                 {
-                    org = (HospitalOrganisationAssistant)o;
+                    org = (HealthcareOrganisationAssistant)o;
                     break;
                 }
             }
             org.getIncomingPatients().getWorkRequestList().add(patientBookingWorkQueue);
             userAccount.getWorkQueue().getWorkRequestList().add(patientBookingWorkQueue);
 
-            String message = "Dear "+ patientData.getPatientName() +",\n\nYour appointment has been requested for " + " " + request.getTimings() + " with Doctor: " + request.getDoctor() + " at Hospital " + request.getHospitalName()+"\n\nThanks,\nTeam MediStop";
+            String message = "Dear "+ patientData.getPatientName() +",\n\nYour appointment has been requested for " + " " + request.getTimings() + " with Doctor: " + request.getDoctor() + " at Hospital " + request.getHealthcareName()+"\n\nThanks,\nTeam MediStop";
             SMSUtility.sendSMS(patientData.getContactNo(), message);
             WhatsappUtility.sendWhatsappMessage(patientData.getContactNo(), message);
             JOptionPane.showMessageDialog(null,"Slot has been booked.");

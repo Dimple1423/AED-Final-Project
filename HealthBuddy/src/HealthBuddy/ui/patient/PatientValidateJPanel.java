@@ -1,24 +1,19 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package HealthBuddy.ui.patient;
 
-import javax.swing.JOptionPane;
 import javax.swing.JPanel;
-import medistopBackend.DB4OUtil.DB4OUtil;
-import medistopBackend.EcoSystem;
-import medistopBackend.Role.Donor;
-import medistopBackend.Role.Patient;
-import medistopBackend.UserData.DonorData;
-import medistopBackend.UserData.PatientData;
-import medistopUI.donor.*;
-import medistopUtil.Utilities;
+import javax.swing.JOptionPane;
+import HealthBuddy.models.EcoSystem;
+import HealthBuddy.models.DB4OUtil.DB4OUtil;
+import HealthBuddy.models.Role.Patient;
+import HealthBuddy.models.Role.Donor;
+import HealthBuddy.models.UserData.PatientData;
+import HealthBuddy.models.UserData.DonorData;
+import HealthBuddy.Util.Utilities;
+import HealthBuddy.ui.donor.*;
 
 /**
  *
- * @author 18577
+ * @author Dimple Patel
  */
 public class PatientValidateJPanel extends javax.swing.JPanel {
      private PatientData patientData;
@@ -238,11 +233,11 @@ public class PatientValidateJPanel extends javax.swing.JPanel {
         String userName = Utilities.getTrimmedText(usernameTF);
         String password = String.valueOf(passPF.getPassword());
         
-        boolean result = ecosystem.getUserAccountDirectory().isUserNameUnique(userName);
+        boolean result = ecosystem.getUserCatalog().isUserNameUnique(userName);
         
         if (result) {
             patientData.setUsername(userName);
-            ecosystem.getUserAccountDirectory().newPatientAccount(userName, password,
+            ecosystem.getUserCatalog().newPatientAccount(userName, password,
                     patientData, new Patient());
             ecosystem.getPatientDir().addPat(patientData);
             dB4OUtil.storeSystem(ecosystem);

@@ -1,23 +1,18 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package HealthBuddy.ui.signin;
 
 import java.awt.CardLayout;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
-import medistopBackend.EcoSystem;
-import medistopBackend.Enterprise.Enterprise;
-import medistopBackend.Network.Network;
-import medistopBackend.Organisation.Organisation;
-import medistopBackend.UserAccount.UserAccount;
-import medistopUtil.Utilities;
+import HealthBuddy.models.EcoSystem;
+import HealthBuddy.models.Enterprise.Enterprise;
+import HealthBuddy.models.Network.Network;
+import HealthBuddy.models.Organisation.Organisation;
+import HealthBuddy.models.User.User;
+import HealthBuddy.Util.Utilities;
 
 /**
  *
- * @author 18577
+ * @author Dimple Patel
  */
 public class SigninJPanel extends javax.swing.JPanel {
    private JPanel bodyPanel;
@@ -162,7 +157,7 @@ public class SigninJPanel extends javax.swing.JPanel {
         String userName = Utilities.getTrimmedText(usernameTF);
         String password = String.valueOf(passPF.getPassword());
         
-        UserAccount userAccount= ecosystem.getUserAccountDirectory().authenticateUserAccount(userName, password);
+        User userAccount= ecosystem.getUserCatalog().authenticateUserAccount(userName, password);
         Enterprise inEnterprise=null;
         Organisation inOrganisation=null;
         Network net = null;
@@ -173,12 +168,12 @@ public class SigninJPanel extends javax.swing.JPanel {
             for(Network network:ecosystem.getNetworkList()){
                 //Step 2.a: check against each enterprise
                 net = network;
-                for(Enterprise enterprise: network.getEnterpriseDirectory().getEnterpriseList()){
-                    userAccount=enterprise.getUserAccountDirectory().authenticateUserAccount(userName, password);
+                for(Enterprise enterprise: network.getEnterpriseCatalog().getEnterpriseList()){
+                    userAccount=enterprise.getUserCatalog().authenticateUserAccount(userName, password);
                     if(userAccount==null){
                         //Step 3:check against each organization for each enterprise
-                        for(Organisation organisation:enterprise.getOrganizationDirectory().getOrganizationList()){
-                            userAccount=organisation.getUserAccountDirectory().authenticateUserAccount(userName, password);
+                        for(Organisation organisation:enterprise.getOrganizationCatalog().getOrganizationList()){
+                            userAccount=organisation.getUserCatalog().authenticateUserAccount(userName, password);
                             if(userAccount!=null){
                                 inEnterprise=enterprise;
                                 inOrganisation=organisation;

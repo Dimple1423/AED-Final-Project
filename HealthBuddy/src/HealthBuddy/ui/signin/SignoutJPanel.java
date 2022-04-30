@@ -1,23 +1,18 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package HealthBuddy.ui.signin;
 
 import java.awt.CardLayout;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
-import medistopBackend.EcoSystem;
-import medistopBackend.Enterprise.Enterprise;
-import medistopBackend.Network.Network;
-import medistopBackend.Organisation.Organisation;
-import medistopBackend.UserAccount.UserAccount;
-import medistopUtil.Utilities;
+import HealthBuddy.models.EcoSystem;
+import HealthBuddy.models.Enterprise.Enterprise;
+import HealthBuddy.models.Network.Network;
+import HealthBuddy.models.Organisation.Organisation;
+import HealthBuddy.models.User.User;
+import HealthBuddy.Util.Utilities;
 
 /**
  *
- * @author 18577
+ * @author Dimple Patel
  */
 public class SignoutJPanel extends javax.swing.JPanel {
    private JPanel bodyPanel;

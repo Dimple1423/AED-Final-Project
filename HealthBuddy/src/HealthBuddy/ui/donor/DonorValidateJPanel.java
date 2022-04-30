@@ -1,17 +1,12 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package HealthBuddy.ui.donor;
 
 import javax.swing.*;
 
-import medistopBackend.EcoSystem;
-import medistopBackend.Role.Donor;
-import medistopBackend.UserData.DonorData;
-import medistopUtil.Utilities;
-import medistopBackend.DB4OUtil.DB4OUtil;
+import HealthBuddy.models.EcoSystem;
+import HealthBuddy.models.Role.Donor;
+import HealthBuddy.models.UserData.DonorData;
+import HealthBuddy.Util.Utilities;
+import HealthBuddy.models.DB4OUtil.DB4OUtil;
 
 /**
  *
@@ -234,11 +229,11 @@ public class DonorValidateJPanel extends javax.swing.JPanel {
         String userName = Utilities.getTrimmedText(usernameTF);
         String password = String.valueOf(passPF.getPassword());
         
-        boolean result = ecosystem.getUserAccountDirectory().isUserNameUnique(userName);
+        boolean result = ecosystem.getUserCatalog().isUserNameUnique(userName);
         
         if (result) {
             donorData.setUsername(userName);
-            ecosystem.getUserAccountDirectory().newDonorAccount(userName, password, donorData, new Donor());
+            ecosystem.getUserCatalog().newDonorAccount(userName, password, donorData, new Donor());
             ecosystem.getDonorDir().addDonor(donorData);
             dB4OUtil.storeSystem(ecosystem);
 
