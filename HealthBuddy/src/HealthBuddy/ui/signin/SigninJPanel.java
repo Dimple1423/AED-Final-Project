@@ -26,7 +26,7 @@ public class SigninJPanel extends javax.swing.JPanel {
         initComponents();
         this.bodyPanel = bodyPanel;
         this.ecosystem = ecosystem;
-        setSize(1540,800);
+        setSize(1540,830);
     }
 
     /**
@@ -149,8 +149,8 @@ public class SigninJPanel extends javax.swing.JPanel {
                         .addGap(273, 273, 273)
                         .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(81, 81, 81)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 460, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addContainerGap()
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 552, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(302, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
