@@ -12,11 +12,11 @@ import HealthBuddy.models.User.User;
  *
  * @author Bhawna Singh
  */
-public class Donor extends Role{
+public class Donor extends Role {
 
     @Override
     //To change body of generated methods, choose Tools | Templates
     public JPanel createWorkArea(JPanel userProcessContainer, User account, Organisation organisation, Enterprise enterprise, Network network, EcoSystem system) {
-        return new WorkAreaDonorJPanel(system, account); 
+        return new WorkAreaDonorJPanel(system, account);
     }
 }

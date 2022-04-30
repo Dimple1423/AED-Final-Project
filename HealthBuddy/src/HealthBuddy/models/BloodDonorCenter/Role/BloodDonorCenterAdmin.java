@@ -13,12 +13,11 @@ import HealthBuddy.ui.admin.WorkAreaAdminPanel;
  *
  * @author Bhawna Singh
  */
-public class BloodDonorCenterAdmin extends Role{
+public class BloodDonorCenterAdmin extends Role {
 //Changing generated methods body, choose Tools | Templates
+
     @Override
     public JPanel createWorkArea(JPanel userProcessContainer, User account, Organisation organisation, Enterprise enterprise, Network network, EcoSystem system) {
-        return new WorkAreaAdminPanel(userProcessContainer, enterprise); 
+        return new WorkAreaAdminPanel(userProcessContainer, enterprise);
     }
 }
-    
-    

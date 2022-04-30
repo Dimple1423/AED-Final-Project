@@ -13,12 +13,12 @@ import HealthBuddy.ui.patient.WorkAreaPatientPanel;
  * @author Bhawna Singh
  */
 public class Patient extends Role {
+
     //CreateWorkarea of patient role fixed
     @Override
     public JPanel createWorkArea(JPanel userProcessContainer, User account, Organisation organisation, Enterprise enterprise, Network network, EcoSystem system) {
         return new WorkAreaPatientPanel(userProcessContainer, system, account, organisation);
 
     }
-    
-}
 
+}
