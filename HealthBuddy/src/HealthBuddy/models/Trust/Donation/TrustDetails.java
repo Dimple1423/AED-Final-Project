@@ -1,8 +1,6 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package HealthBuddy.models.Trust.Donation;
+
 import java.util.Date;
 import HealthBuddy.models.UserData.DonorData;
 
@@ -11,6 +9,7 @@ import HealthBuddy.models.UserData.DonorData;
  * @author Dimple Patel
  */
 public class TrustDetails {
+
     private String trustOrgName;
     private String trustOrgCity;
     private String donation;
@@ -74,5 +73,5 @@ public class TrustDetails {
     public void setDonor(DonorData donor) {
         this.donor = donor;
     }
-        
+
 }
