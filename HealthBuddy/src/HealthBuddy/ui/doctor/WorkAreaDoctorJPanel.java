@@ -1,22 +1,17 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package HealthBuddy.ui.doctor;
 
-import javax.swing.JOptionPane;
 import javax.swing.JPanel;
-import medistopBackend.EcoSystem;
-import medistopBackend.Enterprise.Enterprise;
-import medistopBackend.Hospital.Appointment.AppointmentDetails;
-import medistopBackend.Hospital.Organisation.HospitalOrganisationAssistant;
-import medistopBackend.Hospital.Organisation.HospitalOrganisationAttendant;
-import medistopBackend.Hospital.Organisation.HospitalOrganisationDoctor;
-import medistopBackend.Organisation.Organisation;
-import medistopBackend.UserAccount.UserAccount;
-import medistopBackend.WorkQueue.DoctorAssistantAccountingWorkQueue;
-import medistopBackend.WorkQueue.DoctorAttendentWorkQueue;
+import javax.swing.JOptionPane;
+import HealthBuddy.models.Enterprise.Enterprise;
+import HealthBuddy.models.EcoSystem;
+import HealthBuddy.models.Healthcare.Organisation.HealthcareOrganisationAssistant;
+import HealthBuddy.models.Healthcare.Appointment.AppointmentInformation;
+import HealthBuddy.models.Healthcare.Organisation.HealthcareOrganisationDoctor;
+import HealthBuddy.models.Healthcare.Organisation.HealthcareOrganisationAttendant;
+import HealthBuddy.models.User.User;
+import HealthBuddy.models.Organisation.Organisation;
+import HealthBuddy.models.WorkQueue.DoctorAttendantWQ;
+import HealthBuddy.models.WorkQueue.DoctorAssistantAccountWQ;
 
 /**
  *
@@ -30,16 +25,16 @@ public class WorkAreaDoctorJPanel extends javax.swing.JPanel {
     
     private EcoSystem ecosystem;
     private Enterprise enterprise;
-    private UserAccount userAccount;
-    private HospitalOrganisationDoctor docOrganisation;
-    private AppointmentDetails appointment;
+    private User userAccount;
+    private HealthcareOrganisationDoctor docOrganisation;
+    private AppointmentInformation appointment;
     private JPanel displayJPanel;
     
     public WorkAreaDoctorJPanel() {
         initComponents();
     }
 
-    public WorkAreaDoctorJPanel(JPanel displayJPanel,UserAccount userAccount ,HospitalOrganisationDoctor docOrganisation, Enterprise enterprise, EcoSystem ecosystem) 
+    public WorkAreaDoctorJPanel(JPanel displayJPanel,User userAccount ,HealthcareOrganisationDoctor docOrganisation, Enterprise enterprise, EcoSystem ecosystem) 
     {
         initComponents();
         this.displayJPanel = displayJPanel;
@@ -368,22 +363,22 @@ public class WorkAreaDoctorJPanel extends javax.swing.JPanel {
                 appointment.setIsBloodNeeded(bloodRequired);
                 appointment.setIsFundNeeded(donationRequired);
                 
-                DoctorAttendentWorkQueue attendantWorkQueue = new DoctorAttendentWorkQueue();
-                DoctorAssistantAccountingWorkQueue assistantWorkQueue = new DoctorAssistantAccountingWorkQueue();
+                DoctorAttendantWQ attendantWorkQueue = new DoctorAttendantWQ();
+                DoctorAssistantAccountWQ assistantWorkQueue = new DoctorAssistantAccountWQ();
                 
-                attendantWorkQueue.setAppointmentDetails(appointment);
+                attendantWorkQueue.setAppointmentInformation(appointment);
                 attendantWorkQueue.setSender(userAccount);
                 attendantWorkQueue.setMessage("Prescribed");
                 assistantWorkQueue.setApd(appointment);
                 assistantWorkQueue.setFundingRequired(donationRequired);
                 assistantWorkQueue.setFundingApproved(false);
                 assistantWorkQueue.setPrescribed(txtPrescription.getText());
-                HospitalOrganisationAttendant orgAttendant = null;
+                HealthcareOrganisationAttendant orgAttendant = null;
                 JOptionPane.showMessageDialog(null, "Prescription updated successfully!!","Success", JOptionPane.INFORMATION_MESSAGE);
         
-        for (Organisation organisation : enterprise.getOrganizationDirectory().getOrganizationList()){
-            if (organisation instanceof HospitalOrganisationAttendant){
-                orgAttendant = (HospitalOrganisationAttendant)organisation;
+        for (Organisation organisation : enterprise.getOrganizationCatalog().getOrganizationList()){
+            if (organisation instanceof HealthcareOrganisationAttendant){
+                orgAttendant = (HealthcareOrganisationAttendant)organisation;
                 break;
             }
         }
@@ -391,10 +386,10 @@ public class WorkAreaDoctorJPanel extends javax.swing.JPanel {
             orgAttendant.getDoctorAttendantWQ().getWorkRequestList().add(attendantWorkQueue);
             userAccount.getWorkQueue().getWorkRequestList().add(attendantWorkQueue);
         }
-        HospitalOrganisationAssistant orgAssistant = null;
-        for (Organisation organisation : enterprise.getOrganizationDirectory().getOrganizationList()){
-            if (organisation instanceof HospitalOrganisationAssistant){
-                orgAssistant = (HospitalOrganisationAssistant)organisation;
+        HealthcareOrganisationAssistant orgAssistant = null;
+        for (Organisation organisation : enterprise.getOrganizationCatalog().getOrganizationList()){
+            if (organisation instanceof HealthcareOrganisationAssistant){
+                orgAssistant = (HealthcareOrganisationAssistant)organisation;
                 break;
             }
         }
@@ -402,14 +397,9 @@ public class WorkAreaDoctorJPanel extends javax.swing.JPanel {
             orgAssistant.getFundApplicationQueue().getWorkRequestList().add(assistantWorkQueue);
             userAccount.getWorkQueue().getWorkRequestList().add(assistantWorkQueue);
         }
-        
         //--->Resetting form fields
-        
-                resetFields();
-                
-                populateForm();
-                
-
+        resetFields();
+        populateForm();
     }//GEN-LAST:event_btnAddPrescriptionActionPerformed
 
     private void btnRefreshActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRefreshActionPerformed
@@ -455,7 +445,7 @@ public class WorkAreaDoctorJPanel extends javax.swing.JPanel {
 
 public void populateForm()
     {
-        for(AppointmentDetails appointment : ecosystem.getAppointmentDirectory().getAppointmentDirectory())
+        for(AppointmentInformation appointment : ecosystem.getAppointmentCatalog().getAppointmentCatalog())
         {
             if(appointment.isisappointmentTaken() != true)
             {
@@ -472,7 +462,7 @@ public void populateForm()
 
 public void populateLabel(){
         int count = -1;
-        for(AppointmentDetails appointment : ecosystem.getAppointmentDirectory().getAppointmentDirectory())
+        for(AppointmentInformation appointment : ecosystem.getAppointmentCatalog().getAppointmentCatalog())
         {
             if(appointment.isisappointmentTaken() == false)
             {
@@ -493,12 +483,7 @@ public boolean isBloodRequired()
         {
             return false;
         }
-        
-//         output=RadioBloodYes.isSelected()?true:false;
-//         output=RadioBloodNo.isSelected()?false:true;
-         
         return false;
-        
     }
 
 public boolean isDonationRequired()

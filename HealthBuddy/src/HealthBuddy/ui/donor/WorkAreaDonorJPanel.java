@@ -1,37 +1,30 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package HealthBuddy.ui.donor;
 
-import HealthBuddy.models.EcoSystem;
 import HealthBuddy.models.User.User;
-
+import HealthBuddy.models.EcoSystem;
+import java.util.ArrayList;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
+import java.util.Date;
 import java.util.Objects;
-import java.util.stream.Collectors;
 import javax.swing.JOptionPane;
+import java.util.stream.Collectors;
 import javax.swing.table.DefaultTableModel;
-import medistopBackend.Enterprise.Enterprise;
-import medistopBackend.Funds.Donation.FundsInfo;
-import medistopBackend.Network.Network;
-import medistopBackend.UserData.DonorData;
-import medistopUtil.SMSUtility;
-import medistopUtil.SendEmailUtility;
-import medistopUtil.Utilities;
+import HealthBuddy.models.Enterprise.Enterprise;
+import HealthBuddy.models.Trust.Donation.TrustDetails;
+import HealthBuddy.models.Network.Network;
+import HealthBuddy.models.UserData.DonorData;
+import HealthBuddy.Util.SMSUtility;
+import HealthBuddy.Util.SendEmailUtility;
+import HealthBuddy.Util.Utilities;
 
 /**
  *
- * @author 18577
+ * @author Dimple Patel
  */
 public class WorkAreaDonorJPanel extends javax.swing.JPanel {
-    private UserAccount userAccount;
+    private User userAccount;
     private EcoSystem ecoSystem;
     private DonorData donorData;
 
@@ -40,7 +33,7 @@ public class WorkAreaDonorJPanel extends javax.swing.JPanel {
     
 
     /** Creates new form DonorWorkAreaPanel */
-    public WorkAreaDonorJPanel(EcoSystem ecoSys,UserAccount userAcc) {
+    public WorkAreaDonorJPanel(EcoSystem ecoSys,User userAcc) {
         ecoSystem = ecoSys;
         userAccount = userAcc;
         donorData = ecoSystem.getDonorDir().getDonor(userAcc.getUsername());
@@ -72,9 +65,9 @@ public class WorkAreaDonorJPanel extends javax.swing.JPanel {
 
             String networkName = net.getNetworkName();
 
-            List<Enterprise> charityList = net.getEnterpriseDirectory().getEnterpriseList().stream()
+            List<Enterprise> charityList = net.getEnterpriseCatalog().getEnterpriseList().stream()
                     .filter(enterprise ->
-                            enterprise.getEnterpriseClassification().equals(Enterprise.EnterpriseClassification.Funds))
+                            enterprise.getEnterpriseClassification().equals(Enterprise.EnterpriseClassification.Trust))
                     .collect(Collectors.toList());
 
             for (Enterprise enterprise: charityList) {
@@ -82,28 +75,23 @@ public class WorkAreaDonorJPanel extends javax.swing.JPanel {
                 String[] rowData = {enterprise.getName(), networkName, enterprise.getCause()};
 
                 charityModel.addRow(rowData);
-
-
             }
-
         }
-
- 
     }
     
     
     public void populateDonationHistoryTable() {
 
-        List<FundsInfo> donorData = ecoSystem.getDonationDirectory().getFundsInfoForADonor(userAccount.getUsername());
+        List<TrustDetails> donorData = ecoSystem.getDonationDirectory().getTrustDetailsForADonor(userAccount.getUsername());
         DefaultTableModel appointmentHisTable = (DefaultTableModel) searchDonationCatalogTable.getModel();
         
         appointmentHisTable.setRowCount(0);
         DateFormat formatter = new SimpleDateFormat("dd/mm/yyyy");
 
-        for (FundsInfo fundInfo: donorData) {
+        for (TrustDetails fundInfo: donorData) {
 
-            String[] rowData = {fundInfo.getFundsOrgName(), fundInfo.getFundsOrgCity(),
-                    fundInfo.getFundsCause(), fundInfo.getFrequencyType(), fundInfo.getDonation(),
+            String[] rowData = {fundInfo.geTrustOrgName(), fundInfo.geTrustOrgCity(),
+                    fundInfo.geTrustCause(), fundInfo.getFrequencyType(), fundInfo.getDonation(),
                     formatter.format(fundInfo.getDonationDate())
             };
 
@@ -118,69 +106,58 @@ public class WorkAreaDonorJPanel extends javax.swing.JPanel {
     
     public void populateDonationHistoryTableWithCharityName(String charityname) {
 
-        List<FundsInfo> donorData = ecoSystem.getDonationDirectory().getFundsInfoForACharityName(charityname);
+        List<TrustDetails> donorData = ecoSystem.getDonationDirectory().getTrustDetailsForACharityName(charityname);
         DefaultTableModel appointmentHisTable = (DefaultTableModel) searchDonationCatalogTable.getModel();
         
         appointmentHisTable.setRowCount(0);
         DateFormat formatter = new SimpleDateFormat("dd/mm/yyyy");
 
-        for (FundsInfo fundInfo: donorData) {
+        for (TrustDetails fundInfo: donorData) {
 
-            String[] rowData = {fundInfo.getFundsOrgName(), fundInfo.getFundsOrgCity(),
-                    fundInfo.getFundsCause(), fundInfo.getFrequencyType(), fundInfo.getDonation(),
+            String[] rowData = {fundInfo.geTrustOrgName(), fundInfo.geTrustOrgCity(),
+                    fundInfo.geTrustCause(), fundInfo.getFrequencyType(), fundInfo.getDonation(),
                     formatter.format(fundInfo.getDonationDate())
             };
-
             appointmentHisTable.addRow(rowData);
         }
-        
-        
-                
-        
-    
     }
     
     
      public void populateDonationHistoryTableWithCharityCause(String cause) {
 
-        List<FundsInfo> donorData = ecoSystem.getDonationDirectory().getFundsInfoForACharityCause(cause);
+        List<TrustDetails> donorData = ecoSystem.getDonationDirectory().getTrustDetailsForACharityCause(cause);
         DefaultTableModel appointmentHisTable = (DefaultTableModel) searchDonationCatalogTable.getModel();
         
         appointmentHisTable.setRowCount(0);
         DateFormat formatter = new SimpleDateFormat("dd/mm/yyyy");
 
-        for (FundsInfo fundInfo: donorData) {
+        for (TrustDetails fundInfo: donorData) {
 
-            String[] rowData = {fundInfo.getFundsOrgName(), fundInfo.getFundsOrgCity(),
-                    fundInfo.getFundsCause(), fundInfo.getFrequencyType(), fundInfo.getDonation(),
+            String[] rowData = {fundInfo.geTrustOrgName(), fundInfo.geTrustOrgCity(),
+                    fundInfo.geTrustCause(), fundInfo.getFrequencyType(), fundInfo.getDonation(),
                     formatter.format(fundInfo.getDonationDate())
             };
 
             appointmentHisTable.addRow(rowData);
         }
-        
-        
    }
      
     public void populateDonationHistoryTableWithCharityCity(String city) {
 
-        List<FundsInfo> donorData = ecoSystem.getDonationDirectory().getFundsInfoForACharityCity(city);
+        List<TrustDetails> donorData = ecoSystem.getDonationDirectory().getTrustDetailsForACharityCity(city);
         DefaultTableModel appointmentHisTable = (DefaultTableModel) searchDonationCatalogTable.getModel();
         
         appointmentHisTable.setRowCount(0);
         DateFormat formatter = new SimpleDateFormat("dd/mm/yyyy");
 
-        for (FundsInfo fundInfo: donorData) {
+        for (TrustDetails fundInfo: donorData) {
 
-            String[] rowData = {fundInfo.getFundsOrgName(), fundInfo.getFundsOrgCity(),
-                    fundInfo.getFundsCause(), fundInfo.getFrequencyType(), fundInfo.getDonation(),
+            String[] rowData = {fundInfo.geTrustOrgName(), fundInfo.geTrustOrgCity(),
+                    fundInfo.geTrustCause(), fundInfo.getFrequencyType(), fundInfo.getDonation(),
                     formatter.format(fundInfo.getDonationDate())
             };
-
             appointmentHisTable.addRow(rowData);
         }           
-        
-    
     } 
      
      
@@ -194,8 +171,6 @@ public class WorkAreaDonorJPanel extends javax.swing.JPanel {
         donationHistoryTableModel.addColumn("Donation Frequency");
         donationHistoryTableModel.addColumn("Donation Amount");
         donationHistoryTableModel.addColumn("Donation Date");
-
-
     }
 
     /** This method is called from within the constructor to
@@ -579,19 +554,19 @@ public class WorkAreaDonorJPanel extends javax.swing.JPanel {
                 float am = Float.parseFloat(amountTF.getText().trim());
                 if(amountTF.getText() != "" || amountTF.getText() != null)
                 {
-                    FundsInfo fundInfo = ecoSystem.getDonationDirectory().newDonation();
+                    TrustDetails fundInfo = ecoSystem.getDonationDirectory().newDonation();
                     fundInfo.setDonationDate(new Date());
-                    fundInfo.setFundsOrgName(charityDirTable.getValueAt(selectedRow, 0).toString());
-                    fundInfo.setFundsOrgCity(charityDirTable.getValueAt(selectedRow, 1).toString());
+                    fundInfo.seTrustOrgName(charityDirTable.getValueAt(selectedRow, 0).toString());
+                    fundInfo.seTrustOrgCity(charityDirTable.getValueAt(selectedRow, 1).toString());
                     fundInfo.setDonation(amountTF.getText());
                     fundInfo.setFrequencyType(((Object)frequencyCombobox.getSelectedItem()).toString());
                     fundInfo.setDonor(ecoSystem.getDonorDir().getDonor(userAccount.getUsername()));
 
 
-                    fundInfo.setFundsCause(Objects.isNull(charityDirTable.getValueAt(selectedRow, 2)) ? " " : charityDirTable.getValueAt(selectedRow, 2).toString());
+                    fundInfo.seTrustCause(Objects.isNull(charityDirTable.getValueAt(selectedRow, 2)) ? " " : charityDirTable.getValueAt(selectedRow, 2).toString());
                    
 
-                    String body = "Hi " + fundInfo.getDonor().getDonorName() +",\n $  " + amountTF.getText() + "was donated to organization " + fundInfo.getFundsOrgName() + "\n You have made a meaningful contribution. \n  " + " \n Frequency of donor:  " + fundInfo.getFrequencyType() + "\n Donation Cause  : " + fundInfo.getFundsCause() + "\n\n\n Thanks, \n Team MediStop";
+                    String body = "Hi " + fundInfo.getDonor().getDonorName() +",\n $  " + amountTF.getText() + "was donated to organization " + fundInfo.geTrustOrgName()+ "\n You have made a meaningful contribution. \n  " + " \n Frequency of donor:  " + fundInfo.getFrequencyType() + "\n Donation Cause  : " + fundInfo.geTrustCause()+ "\n\n\n Thanks, \n Team MediStop";
                     JOptionPane.showMessageDialog(null, body, "Success", JOptionPane.INFORMATION_MESSAGE);
 
                     String subject = " Receipt of your donation! ";
@@ -602,12 +577,8 @@ public class WorkAreaDonorJPanel extends javax.swing.JPanel {
 
                         e.printStackTrace();
                         JOptionPane.showMessageDialog(null, "Something went wrong!", "Error", JOptionPane.INFORMATION_MESSAGE);
-
                     }
-
-
                     populateDonationHistoryTable();
-
                     amountTF.setText("");
                 }
             
