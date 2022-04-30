@@ -1,7 +1,9 @@
 package HealthBuddy.ui.SysAdminWorkArea;
 
 import java.awt.CardLayout;
+import java.awt.Image;
 import javax.swing.JPanel;
+import javax.swing.ImageIcon;
 import HealthBuddy.models.EcoSystem;
 
 /**
@@ -19,6 +21,7 @@ JPanel showPanel;
         initComponents();
         this.ecosystem=ecosystem;
         this.showPanel=showPanel;
+        setSize(1540,800);
     }
 
     /**
@@ -37,6 +40,7 @@ JPanel showPanel;
         btnTitle = new javax.swing.JLabel();
         btnManageEnterAdministrator = new javax.swing.JButton();
         btnApplicationAnalytics = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
         setBorder(javax.swing.BorderFactory.createTitledBorder("System Administrator Work Area"));
@@ -48,52 +52,56 @@ JPanel showPanel;
         btnManageLocation.setForeground(new java.awt.Color(255, 255, 255));
         btnManageLocation.setText("Manage Location");
         btnManageLocation.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnManageLocation.setBorderPainted(false);
         btnManageLocation.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnManageLocationActionPerformed(evt);
             }
         });
-        add(btnManageLocation, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 130, 220, 60));
+        add(btnManageLocation, new org.netbeans.lib.awtextra.AbsoluteConstraints(1140, 130, 360, 50));
 
         btnManagePatient.setBackground(new java.awt.Color(0, 102, 102));
         btnManagePatient.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
         btnManagePatient.setForeground(new java.awt.Color(255, 255, 255));
         btnManagePatient.setText("Manage Patient");
         btnManagePatient.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnManagePatient.setBorderPainted(false);
         btnManagePatient.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnManagePatientActionPerformed(evt);
             }
         });
-        add(btnManagePatient, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 390, 220, 60));
+        add(btnManagePatient, new org.netbeans.lib.awtextra.AbsoluteConstraints(1140, 310, 360, 50));
 
         btnManageDonor.setBackground(new java.awt.Color(0, 102, 102));
         btnManageDonor.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
         btnManageDonor.setForeground(new java.awt.Color(255, 255, 255));
         btnManageDonor.setText("Manage Donor");
         btnManageDonor.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnManageDonor.setBorderPainted(false);
         btnManageDonor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnManageDonorActionPerformed(evt);
             }
         });
-        add(btnManageDonor, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 470, 220, 60));
+        add(btnManageDonor, new org.netbeans.lib.awtextra.AbsoluteConstraints(1140, 370, 360, 50));
 
         btnManageEnterprise.setBackground(new java.awt.Color(0, 102, 102));
         btnManageEnterprise.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
         btnManageEnterprise.setForeground(new java.awt.Color(255, 255, 255));
         btnManageEnterprise.setText("Manage Enterprise");
         btnManageEnterprise.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnManageEnterprise.setBorderPainted(false);
         btnManageEnterprise.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnManageEnterpriseActionPerformed(evt);
             }
         });
-        add(btnManageEnterprise, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 220, 220, 60));
+        add(btnManageEnterprise, new org.netbeans.lib.awtextra.AbsoluteConstraints(1140, 190, 360, 50));
 
         btnTitle.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
         btnTitle.setForeground(new java.awt.Color(0, 102, 102));
-        btnTitle.setText("SYSTEM ADMINISTRATOR");
+        btnTitle.setText("System Admin");
         add(btnTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 20, 500, -1));
 
         btnManageEnterAdministrator.setBackground(new java.awt.Color(0, 102, 102));
@@ -102,24 +110,30 @@ JPanel showPanel;
         btnManageEnterAdministrator.setText("Manage Enterprise admin");
         btnManageEnterAdministrator.setActionCommand("Manage Enterprise\nadmin");
         btnManageEnterAdministrator.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnManageEnterAdministrator.setBorderPainted(false);
         btnManageEnterAdministrator.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnManageEnterAdministratorActionPerformed(evt);
             }
         });
-        add(btnManageEnterAdministrator, new org.netbeans.lib.awtextra.AbsoluteConstraints(18, 300, 220, 60));
+        add(btnManageEnterAdministrator, new org.netbeans.lib.awtextra.AbsoluteConstraints(1140, 250, 360, 50));
 
         btnApplicationAnalytics.setBackground(new java.awt.Color(0, 102, 102));
         btnApplicationAnalytics.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
         btnApplicationAnalytics.setForeground(new java.awt.Color(255, 255, 255));
         btnApplicationAnalytics.setText("Application Analysis");
         btnApplicationAnalytics.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnApplicationAnalytics.setBorderPainted(false);
         btnApplicationAnalytics.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnApplicationAnalyticsActionPerformed(evt);
             }
         });
-        add(btnApplicationAnalytics, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 550, 220, 60));
+        add(btnApplicationAnalytics, new org.netbeans.lib.awtextra.AbsoluteConstraints(1140, 430, 360, 50));
+
+        ImageIcon imageIcon =  new ImageIcon(new ImageIcon(getClass().getResource("/HealthBuddy/ui/images/admin.gif")).getImage().getScaledInstance(900, 700, Image.SCALE_DEFAULT));
+        jLabel1.setIcon(imageIcon);
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 100, 1100, 540));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnManageLocationActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnManageLocationActionPerformed
@@ -179,5 +193,6 @@ JPanel showPanel;
     private javax.swing.JButton btnManageLocation;
     private javax.swing.JButton btnManagePatient;
     private javax.swing.JLabel btnTitle;
+    private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }
