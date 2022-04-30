@@ -54,10 +54,12 @@ EcoSystem ecosystem;
         btnBack = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(102, 153, 255));
+        setBackground(new java.awt.Color(255, 255, 255));
         setBorder(javax.swing.BorderFactory.createTitledBorder("Manage Network"));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        LocationJTable.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        LocationJTable.setForeground(new java.awt.Color(0, 102, 102));
         LocationJTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null},
@@ -88,25 +90,33 @@ EcoSystem ecosystem;
 
         add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 90, 404, 91));
 
+        btnSubmit.setBackground(new java.awt.Color(0, 102, 102));
         btnSubmit.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
-        btnSubmit.setForeground(new java.awt.Color(0, 51, 153));
+        btnSubmit.setForeground(new java.awt.Color(255, 255, 255));
         btnSubmit.setText("Submit");
+        btnSubmit.setBorderPainted(false);
         btnSubmit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnSubmitActionPerformed(evt);
             }
         });
-        add(btnSubmit, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 310, -1, -1));
-        add(txtEnterCity, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 220, 93, -1));
+        add(btnSubmit, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 270, -1, -1));
 
-        addCityjLabel.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
-        addCityjLabel.setForeground(new java.awt.Color(0, 51, 153));
-        addCityjLabel.setText("Add City");
-        add(addCityjLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 220, -1, -1));
+        txtEnterCity.setForeground(new java.awt.Color(0, 102, 102));
+        add(txtEnterCity, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 220, 130, 30));
 
+        addCityjLabel.setBackground(new java.awt.Color(255, 255, 255));
+        addCityjLabel.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        addCityjLabel.setForeground(new java.awt.Color(0, 102, 102));
+        addCityjLabel.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
+        addCityjLabel.setText("Add City:");
+        add(addCityjLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 220, 100, 30));
+
+        btnBack.setBackground(new java.awt.Color(0, 102, 102));
         btnBack.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
-        btnBack.setForeground(new java.awt.Color(0, 51, 153));
+        btnBack.setForeground(new java.awt.Color(255, 255, 255));
         btnBack.setText("Back");
+        btnBack.setBorderPainted(false);
         btnBack.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnBackActionPerformed(evt);
@@ -114,9 +124,10 @@ EcoSystem ecosystem;
         });
         add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 20, -1, -1));
 
+        jLabel2.setBackground(new java.awt.Color(255, 255, 255));
         jLabel2.setFont(new java.awt.Font("Songti TC", 1, 36)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 0, 51));
-        jLabel2.setText("ADD NETWORK");
+        jLabel2.setForeground(new java.awt.Color(0, 102, 102));
+        jLabel2.setText("Add Network");
         add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 30, 300, 46));
     }// </editor-fold>//GEN-END:initComponents
 
