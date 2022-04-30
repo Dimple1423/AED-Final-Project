@@ -30,23 +30,23 @@ public class WorkAreaVolunteerJPanel extends javax.swing.JPanel {
     private EnterpriseTrust enterprise;
     private Network network;
     private User userAccount;
- 
-    public WorkAreaVolunteerJPanel(JPanel displayJPanel,User account, TrustOrgVolunteer orgVolunteer ,EnterpriseTrust enterprise, Network network, EcoSystem ecosystem) {
+
+    public WorkAreaVolunteerJPanel(JPanel displayJPanel, User account, TrustOrgVolunteer orgVolunteer, EnterpriseTrust enterprise, Network network, EcoSystem ecosystem) {
         initComponents();
         this.displayJPanel = displayJPanel;
         this.userAccount = account;
         this.enterprise = enterprise;
         this.network = network;
         this.ecosystem = ecosystem;
-        setSize(1540,800);
-        
+        setSize(1540, 800);
+
         //Setting label values
         lblVolunteerName9.setText(userAccount.getUsername());
         lblFundsOrgName9.setText(this.enterprise.getName());
         lblFundsOrgCity9.setText(network.getNetworkName());
-        
+
         populateTable();
-        
+
     }
 
     /**
@@ -198,56 +198,43 @@ public class WorkAreaVolunteerJPanel extends javax.swing.JPanel {
         // TODO add your handling code here:
         DefaultTableModel model = (DefaultTableModel) tblPatientCharity9.getModel();
         int selectedRow = tblPatientCharity9.getSelectedRow();
-        
-        if (selectedRow > -1)
-        {
-            HealthcareTrustRequestWQ request = (HealthcareTrustRequestWQ)tblPatientCharity9.getValueAt(selectedRow,0);
-            
-            if(request.getStatus().equalsIgnoreCase("Published"))
-            {
+
+        if (selectedRow > -1) {
+            HealthcareTrustRequestWQ request = (HealthcareTrustRequestWQ) tblPatientCharity9.getValueAt(selectedRow, 0);
+
+            if (request.getStatus().equalsIgnoreCase("Published")) {
                 JOptionPane.showMessageDialog(null, "Newsletter Publication Already made!", "Warning", JOptionPane.WARNING_MESSAGE);
-            }
-            else
-            {
+            } else {
                 request.setStatus("Published");
                 populateTable();
-                int count =0;
-                for(TrustDetails funds : ecosystem.getDonationDirectory().getTrustCatalog())
-                {
-                    if(funds.geTrustOrgName().equalsIgnoreCase(enterprise.getName()))
-                    {
+                int count = 0;
+                for (TrustDetails funds : ecosystem.getDonationDirectory().getTrustCatalog()) {
+                    if (funds.geTrustOrgName().equalsIgnoreCase(enterprise.getName())) {
                         count++;
                     }
                 }
-        
+
                 String[] receiver = new String[count];
-        
-                int index =0;
-                for(TrustDetails donation : ecosystem.getDonationDirectory().getTrustCatalog())
-                {
-                    if(donation.geTrustOrgName().equalsIgnoreCase(enterprise.getName()))
-                    {
+
+                int index = 0;
+                for (TrustDetails donation : ecosystem.getDonationDirectory().getTrustCatalog()) {
+                    if (donation.geTrustOrgName().equalsIgnoreCase(enterprise.getName())) {
                         receiver[index++] = donation.getDonor().getEmail();
                     }
                 }
-        
-                
-                //Defining newsletter details
 
-        
-                String message = "Hi Donor," +",\n\nHope you are doing well! Your contribution brought a big change in saving lives!! Thank you for your help...!!!" + "\nBelow is the list of patients  whose life was saved because of you:\n" +"\n"+"Patient Name: "+request.getPatientName()+ "\nHospital Name: " + request.getHospitalName()+"\nHospital City: " + request.getCity() + "\nDonation Provided: "+request.getAmount()+"\n\nRegards,\n HealthBuddy Team";
-                String subject ="News @ HealthBuddy";
+                //Defining newsletter details
+                String message = "Hi Donor," + ",\n\nHope you are doing well! Your contribution brought a big change in saving lives!! Thank you for your help...!!!" + "\nBelow is the list of patients  whose life was saved because of you:\n" + "\n" + "Patient Name: " + request.getPatientName() + "\nHospital Name: " + request.getHospitalName() + "\nHospital City: " + request.getCity() + "\nDonation Provided: " + request.getAmount() + "\n\nRegards,\n HealthBuddy Team";
+                String subject = "News @ HealthBuddy";
                 SendEmailUtility.sendEmail(subject, Config.emailId, Config.password, message, receiver);
-        
+
                 JOptionPane.showMessageDialog(null, "Publication of NewsLetter Successful!!", "Success", JOptionPane.INFORMATION_MESSAGE);
             }
-        }
-        else
-        {
+        } else {
             JOptionPane.showMessageDialog(null, "Kindly select a record you would like to Broadcast.", "Warning", JOptionPane.WARNING_MESSAGE);
         }
-        
-            
+
+
     }//GEN-LAST:event_btnPublish9ActionPerformed
 
 
@@ -264,26 +251,23 @@ public class WorkAreaVolunteerJPanel extends javax.swing.JPanel {
     private javax.swing.JTable tblPatientCharity9;
     // End of variables declaration//GEN-END:variables
 
-    public void populateTable()
-    {
+    public void populateTable() {
         DefaultTableModel model = (DefaultTableModel) tblPatientCharity9.getModel();
         model.setRowCount(0);
-        
-        for(WorkRequest workRequest : network.getFundsRequests().getWorkRequestList())
-        {
-            HealthcareTrustRequestWQ fundsReqWorkQueue = (HealthcareTrustRequestWQ)workRequest;
-                
-            if(fundsReqWorkQueue.getMessage().equalsIgnoreCase("Acknowledged") && fundsReqWorkQueue.getFunderName().equalsIgnoreCase(enterprise.getName()))
-            {
+
+        for (WorkRequest workRequest : network.getFundsRequests().getWorkRequestList()) {
+            HealthcareTrustRequestWQ fundsReqWorkQueue = (HealthcareTrustRequestWQ) workRequest;
+
+            if (fundsReqWorkQueue.getMessage().equalsIgnoreCase("Acknowledged") && fundsReqWorkQueue.getFunderName().equalsIgnoreCase(enterprise.getName())) {
                 Object[] row = new Object[5];
                 row[0] = fundsReqWorkQueue;
                 row[1] = fundsReqWorkQueue.getCity();
                 row[2] = fundsReqWorkQueue.getHospitalName();
                 row[3] = fundsReqWorkQueue.getAmount();
                 row[4] = fundsReqWorkQueue.getStatus();
-                
+
                 model.addRow(row);
             }
-        }          
+        }
     }
 }
