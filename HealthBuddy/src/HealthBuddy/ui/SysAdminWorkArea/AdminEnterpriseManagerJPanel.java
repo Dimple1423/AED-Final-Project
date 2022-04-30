@@ -28,6 +28,7 @@ public class AdminEnterpriseManagerJPanel extends javax.swing.JPanel {
         this.system = system;
         populateEnterpriseAdminTable();
         populateNetworkComboBox();
+        setSize(1540,800);
     }
 
     private void populateEnterpriseAdminTable() {
@@ -87,9 +88,9 @@ public class AdminEnterpriseManagerJPanel extends javax.swing.JPanel {
         btnBack = new javax.swing.JButton();
         lblTitle = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(102, 153, 255));
+        setBackground(new java.awt.Color(255, 255, 255));
         setBorder(javax.swing.BorderFactory.createTitledBorder("Enterprise Admin"));
-        setForeground(new java.awt.Color(0, 51, 153));
+        setForeground(new java.awt.Color(0, 102, 102));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         tblEnterprise.setModel(new javax.swing.table.DefaultTableModel(
@@ -113,70 +114,90 @@ public class AdminEnterpriseManagerJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(tblEnterprise);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 90, 523, 95));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 90, 530, 130));
 
-        lblNetwork.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
-        lblNetwork.setForeground(new java.awt.Color(0, 51, 153));
+        lblNetwork.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        lblNetwork.setForeground(new java.awt.Color(0, 102, 102));
         lblNetwork.setText("Network");
-        add(lblNetwork, new org.netbeans.lib.awtextra.AbsoluteConstraints(94, 221, -1, -1));
+        add(lblNetwork, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 250, -1, -1));
 
+        networkJComboBox.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        networkJComboBox.setForeground(new java.awt.Color(0, 102, 102));
         networkJComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         networkJComboBox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 networkJComboBoxActionPerformed(evt);
             }
         });
-        add(networkJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(209, 217, 136, -1));
+        add(networkJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 240, 136, -1));
 
-        lblUserName.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
-        lblUserName.setForeground(new java.awt.Color(0, 51, 153));
+        lblUserName.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        lblUserName.setForeground(new java.awt.Color(0, 102, 102));
         lblUserName.setText("Username");
-        add(lblUserName, new org.netbeans.lib.awtextra.AbsoluteConstraints(94, 312, -1, -1));
-        add(txtUsername, new org.netbeans.lib.awtextra.AbsoluteConstraints(209, 307, 136, -1));
+        add(lblUserName, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 350, -1, -1));
 
-        lblEnterPrise.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
-        lblEnterPrise.setForeground(new java.awt.Color(0, 51, 153));
+        txtUsername.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        txtUsername.setForeground(new java.awt.Color(0, 102, 102));
+        add(txtUsername, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 350, 136, -1));
+
+        lblEnterPrise.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        lblEnterPrise.setForeground(new java.awt.Color(0, 102, 102));
         lblEnterPrise.setText("Enterprise");
-        add(lblEnterPrise, new org.netbeans.lib.awtextra.AbsoluteConstraints(94, 266, -1, -1));
+        add(lblEnterPrise, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 300, -1, -1));
 
+        enterpriseJComboBox.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        enterpriseJComboBox.setForeground(new java.awt.Color(0, 102, 102));
         enterpriseJComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        add(enterpriseJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(209, 262, 136, -1));
+        add(enterpriseJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 290, 136, -1));
 
-        btnsubmit.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
-        btnsubmit.setForeground(new java.awt.Color(0, 51, 153));
+        btnsubmit.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btnsubmit.setForeground(new java.awt.Color(0, 102, 102));
         btnsubmit.setText("Submit");
+        btnsubmit.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnsubmit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnsubmitActionPerformed(evt);
             }
         });
-        add(btnsubmit, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 470, -1, -1));
+        add(btnsubmit, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 520, 100, 30));
 
-        lblPassword.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
-        lblPassword.setForeground(new java.awt.Color(0, 51, 153));
+        lblPassword.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        lblPassword.setForeground(new java.awt.Color(0, 102, 102));
         lblPassword.setText("Password");
-        add(lblPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(94, 356, -1, -1));
-        add(txtName, new org.netbeans.lib.awtextra.AbsoluteConstraints(209, 395, 136, -1));
+        add(lblPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 400, -1, -1));
 
-        lblName.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
-        lblName.setForeground(new java.awt.Color(0, 51, 153));
+        txtName.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        txtName.setForeground(new java.awt.Color(0, 102, 102));
+        txtName.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtNameActionPerformed(evt);
+            }
+        });
+        add(txtName, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 450, 136, -1));
+
+        lblName.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        lblName.setForeground(new java.awt.Color(0, 102, 102));
         lblName.setText("Name");
-        add(lblName, new org.netbeans.lib.awtextra.AbsoluteConstraints(94, 400, -1, -1));
-        add(txtPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(209, 351, 134, -1));
+        add(lblName, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 460, -1, -1));
 
-        btnBack.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
-        btnBack.setForeground(new java.awt.Color(0, 51, 153));
+        txtPassword.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        txtPassword.setForeground(new java.awt.Color(0, 102, 102));
+        add(txtPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 400, 134, -1));
+
+        btnBack.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btnBack.setForeground(new java.awt.Color(0, 102, 102));
         btnBack.setText("Back");
+        btnBack.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnBack.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnBackActionPerformed(evt);
             }
         });
-        add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 20, -1, -1));
+        add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(1320, 30, 80, 30));
 
-        lblTitle.setFont(new java.awt.Font("Songti TC", 1, 36)); // NOI18N
-        lblTitle.setForeground(new java.awt.Color(255, 0, 51));
-        lblTitle.setText("ADD ENTERPRISE ADMIN");
+        lblTitle.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+        lblTitle.setForeground(new java.awt.Color(0, 102, 102));
+        lblTitle.setText("Add Enterprise Admin");
         add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 30, 470, -1));
     }// </editor-fold>//GEN-END:initComponents
 
@@ -218,6 +239,10 @@ public class AdminEnterpriseManagerJPanel extends javax.swing.JPanel {
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
         layout.previous(userProcessContainer);
     }//GEN-LAST:event_btnBackActionPerformed
+
+    private void txtNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNameActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtNameActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnBack;
