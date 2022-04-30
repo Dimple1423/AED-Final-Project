@@ -28,7 +28,7 @@ public class MainJFrame extends javax.swing.JFrame {
 
         initComponents();
         system=dB4OUtil.retrieveSystem();
-        setSize(1540,800);
+        setSize(1540,830);
         setTitle("HealthBuddy System");
 
     }
@@ -71,7 +71,7 @@ public class MainJFrame extends javax.swing.JFrame {
         ButtonDonor.setBackground(new java.awt.Color(255, 255, 255));
         ButtonDonor.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
         ButtonDonor.setForeground(new java.awt.Color(0, 102, 102));
-        ButtonDonor.setText("DONOR");
+        ButtonDonor.setText("Donor");
         ButtonDonor.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         ButtonDonor.setBorderPainted(false);
         ButtonDonor.addActionListener(new java.awt.event.ActionListener() {
@@ -83,7 +83,7 @@ public class MainJFrame extends javax.swing.JFrame {
         ButtonPatient.setBackground(new java.awt.Color(255, 255, 255));
         ButtonPatient.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
         ButtonPatient.setForeground(new java.awt.Color(0, 102, 102));
-        ButtonPatient.setText("PATIENT");
+        ButtonPatient.setText("Patient");
         ButtonPatient.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         ButtonPatient.setBorderPainted(false);
         ButtonPatient.addActionListener(new java.awt.event.ActionListener() {
@@ -95,7 +95,7 @@ public class MainJFrame extends javax.swing.JFrame {
         ButtonSI.setBackground(new java.awt.Color(255, 255, 255));
         ButtonSI.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
         ButtonSI.setForeground(new java.awt.Color(0, 102, 102));
-        ButtonSI.setText("SIGN IN");
+        ButtonSI.setText("SignIn");
         ButtonSI.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         ButtonSI.setBorderPainted(false);
         ButtonSI.addActionListener(new java.awt.event.ActionListener() {
@@ -107,7 +107,7 @@ public class MainJFrame extends javax.swing.JFrame {
         ButtonSO.setBackground(new java.awt.Color(255, 255, 255));
         ButtonSO.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
         ButtonSO.setForeground(new java.awt.Color(0, 102, 102));
-        ButtonSO.setText("SIGN OUT");
+        ButtonSO.setText("Sign Out");
         ButtonSO.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         ButtonSO.setBorderPainted(false);
         ButtonSO.addActionListener(new java.awt.event.ActionListener() {
@@ -121,10 +121,10 @@ public class MainJFrame extends javax.swing.JFrame {
         headerPanelLayout.setHorizontalGroup(
             headerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(headerPanelLayout.createSequentialGroup()
-                .addContainerGap(642, Short.MAX_VALUE)
+                .addContainerGap(653, Short.MAX_VALUE)
                 .addComponent(LabelHealthBuddy, javax.swing.GroupLayout.PREFERRED_SIZE, 243, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(320, 320, 320)
-                .addComponent(ButtonSI)
+                .addGap(305, 305, 305)
+                .addComponent(ButtonSI, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(ButtonSO)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)

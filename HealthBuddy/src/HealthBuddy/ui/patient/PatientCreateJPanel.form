@@ -26,38 +26,47 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" attributes="0">
+              <EmptySpace min="20" pref="20" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Component id="deliveryDirLabel1" min="-2" pref="320" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="490" max="-2" attributes="0"/>
+                      <Component id="deliveryDirLabel2" min="-2" pref="416" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="119" max="-2" attributes="0"/>
+                      <Component id="backBtn" min="-2" pref="125" max="-2" attributes="0"/>
+                  </Group>
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="20" pref="20" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="393" max="-2" attributes="0"/>
+                      <Component id="profilePicPathLabel" min="-2" pref="367" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
-                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="menuItemName6" alignment="1" pref="195" max="32767" attributes="0"/>
-                                  <Component id="menuItemName4" alignment="1" pref="195" max="32767" attributes="0"/>
-                                  <Component id="menuItemName5" alignment="1" pref="195" max="32767" attributes="0"/>
-                                  <Component id="menuItemName8" alignment="1" pref="195" max="32767" attributes="0"/>
-                                  <Component id="menuItemName7" alignment="1" pref="195" max="32767" attributes="0"/>
-                                  <Component id="menuItemName9" alignment="1" pref="195" max="32767" attributes="0"/>
-                                  <Component id="menuItemName10" alignment="1" pref="195" max="32767" attributes="0"/>
-                                  <Component id="backBtn" alignment="0" min="-2" pref="125" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                  <Component id="deliveryDirLabel" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="menuItemName" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="menuItemName1" alignment="0" min="-2" pref="195" max="-2" attributes="0"/>
                               </Group>
+                              <EmptySpace min="64" pref="64" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" attributes="0">
-                                      <EmptySpace min="-2" pref="64" max="-2" attributes="0"/>
-                                      <Group type="103" groupAlignment="1" attributes="0">
-                                          <Component id="bloodGroupCB" linkSize="5" alignment="1" max="32767" attributes="0"/>
-                                          <Component id="uploadPicBtn" linkSize="5" alignment="1" pref="167" max="32767" attributes="0"/>
-                                          <Component id="emailTF" linkSize="5" alignment="1" max="32767" attributes="0"/>
-                                          <Component id="phoneTF" linkSize="5" alignment="1" max="32767" attributes="0"/>
-                                          <Component id="stateCombobox" linkSize="5" alignment="1" max="32767" attributes="0"/>
-                                          <Component id="zipCodeTF" linkSize="5" alignment="1" max="32767" attributes="0"/>
-                                          <Component id="cityTF" linkSize="5" max="32767" attributes="0"/>
+                                      <Component id="maleRB" linkSize="3" min="-2" pref="108" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="femaleRB" linkSize="3" min="-2" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
+                                              <Component id="registerBtn" min="-2" pref="203" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                                              <Component id="biRB" linkSize="3" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                                              <Component id="notToSayRB" linkSize="3" min="-2" max="-2" attributes="0"/>
+                                          </Group>
                                       </Group>
                                   </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <EmptySpace min="-2" pref="223" max="-2" attributes="0"/>
-                                      <Component id="registerBtn" min="-2" pref="203" max="-2" attributes="0"/>
-                                  </Group>
+                                  <Component id="donorNameTF" linkSize="5" min="-2" pref="203" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
@@ -71,141 +80,146 @@
                                   <Component id="addTF" linkSize="5" max="32767" attributes="0"/>
                               </Group>
                           </Group>
-                          <Component id="deliveryDirLabel" min="-2" pref="807" max="-2" attributes="0"/>
                           <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="393" max="-2" attributes="0"/>
-                              <Component id="profilePicPathLabel" min="-2" pref="367" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="menuItemName" alignment="0" min="-2" pref="195" max="-2" attributes="0"/>
-                                  <Component id="menuItemName1" alignment="0" min="-2" pref="195" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="menuItemName8" alignment="1" pref="195" max="32767" attributes="0"/>
+                                  <Component id="menuItemName7" alignment="1" pref="195" max="32767" attributes="0"/>
+                                  <Component id="menuItemName9" alignment="1" pref="195" max="32767" attributes="0"/>
+                                  <Component id="menuItemName10" alignment="1" pref="195" max="32767" attributes="0"/>
                               </Group>
-                              <EmptySpace min="64" pref="64" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" attributes="0">
-                                      <Component id="maleRB" linkSize="3" min="-2" pref="60" max="-2" attributes="0"/>
-                                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                                      <Component id="femaleRB" linkSize="3" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                                      <Component id="biRB" linkSize="3" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                                      <Component id="notToSayRB" linkSize="3" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Component id="donorNameTF" linkSize="5" min="-2" pref="203" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="64" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="1" attributes="0">
+                                  <Component id="bloodGroupCB" linkSize="5" alignment="1" max="32767" attributes="0"/>
+                                  <Component id="uploadPicBtn" linkSize="5" alignment="1" pref="167" max="32767" attributes="0"/>
+                                  <Component id="emailTF" linkSize="5" alignment="1" max="32767" attributes="0"/>
+                                  <Component id="phoneTF" linkSize="5" alignment="1" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="menuItemName6" alignment="1" pref="195" max="32767" attributes="0"/>
+                                  <Component id="menuItemName4" alignment="1" pref="195" max="32767" attributes="0"/>
+                                  <Component id="menuItemName5" alignment="1" pref="195" max="32767" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="64" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="1" attributes="0">
+                                  <Component id="stateCombobox" linkSize="5" alignment="1" max="32767" attributes="0"/>
+                                  <Component id="zipCodeTF" linkSize="5" alignment="1" max="32767" attributes="0"/>
+                                  <Component id="cityTF" linkSize="5" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="867" max="-2" attributes="0"/>
-                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="deliveryDirLabel1" min="-2" pref="320" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="834" max="-2" attributes="0"/>
-                      <Component id="deliveryDirLabel2" min="-2" pref="416" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="-2" pref="477" max="-2" attributes="0"/>
+                              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="57" max="-2" attributes="0"/>
+                              <Component id="jLabel2" min="-2" pref="575" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
                   </Group>
               </Group>
-              <EmptySpace pref="1508" max="32767" attributes="0"/>
+              <EmptySpace pref="1253" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
-              <Component id="deliveryDirLabel2" min="-2" pref="55" max="-2" attributes="0"/>
-              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" attributes="0">
-                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="57" max="-2" attributes="0"/>
-                      <Component id="deliveryDirLabel" min="-2" pref="52" max="-2" attributes="0"/>
-                  </Group>
-                  <Component id="deliveryDirLabel1" min="-2" pref="44" max="-2" attributes="0"/>
-              </Group>
               <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="menuItemName" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="donorNameTF" linkSize="1" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Component id="deliveryDirLabel2" min="-2" pref="55" max="-2" attributes="0"/>
+                  <Component id="deliveryDirLabel1" min="-2" pref="44" max="-2" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="backBtn" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                  </Group>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="1" attributes="0">
-                  <Component id="menuItemName1" min="-2" max="-2" attributes="0"/>
-                  <Group type="102" attributes="0">
+                  <Group type="102" alignment="1" attributes="0">
+                      <Component id="deliveryDirLabel" min="-2" pref="52" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="maleRB" linkSize="4" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
-                          <Component id="femaleRB" linkSize="4" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="biRB" linkSize="4" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="notToSayRB" linkSize="4" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="menuItemName" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="donorNameTF" linkSize="1" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="3" pref="3" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="menuItemName1" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="maleRB" linkSize="4" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
+                                  <Component id="femaleRB" linkSize="4" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="biRB" linkSize="4" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="notToSayRB" linkSize="4" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="3" pref="3" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="menuItemName2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="dobTF" linkSize="1" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="menuItemName3" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="addTF" linkSize="1" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="menuItemName4" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="cityTF" linkSize="1" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="menuItemName6" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="zipCodeTF" linkSize="1" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="menuItemName5" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="stateCombobox" min="-2" pref="31" max="-2" attributes="0"/>
+                              <EmptySpace min="2" pref="2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="menuItemName8" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="phoneTF" linkSize="1" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="menuItemName7" min="-2" max="-2" attributes="0"/>
+                          <Component id="uploadPicBtn" alignment="0" min="-2" pref="30" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="menuItemName9" min="-2" max="-2" attributes="0"/>
+                          <Component id="emailTF" linkSize="1" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="menuItemName10" min="-2" max="-2" attributes="0"/>
+                          <Component id="bloodGroupCB" alignment="0" min="-2" pref="33" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="3" max="-2" attributes="0"/>
+                      <Component id="registerBtn" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="2406" max="-2" attributes="0"/>
+                      <Component id="profilePicPathLabel" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace pref="20" max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jLabel2" min="-2" pref="557" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="2463" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="menuItemName2" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="dobTF" linkSize="1" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="menuItemName3" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="addTF" linkSize="1" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="menuItemName4" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="cityTF" linkSize="1" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="menuItemName6" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="zipCodeTF" linkSize="1" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="1" attributes="0">
-                  <Component id="menuItemName5" min="-2" max="-2" attributes="0"/>
-                  <Group type="102" attributes="0">
-                      <Component id="stateCombobox" min="-2" pref="31" max="-2" attributes="0"/>
-                      <EmptySpace min="2" pref="2" max="-2" attributes="0"/>
-                  </Group>
-              </Group>
-              <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="menuItemName8" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="phoneTF" linkSize="1" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="menuItemName7" min="-2" max="-2" attributes="0"/>
-                  <Group type="102" attributes="0">
-                      <EmptySpace min="4" pref="4" max="-2" attributes="0"/>
-                      <Component id="uploadPicBtn" min="-2" pref="30" max="-2" attributes="0"/>
-                  </Group>
-              </Group>
-              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="menuItemName9" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="emailTF" linkSize="1" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="1" attributes="0">
-                  <Component id="menuItemName10" min="-2" max="-2" attributes="0"/>
-                  <Group type="102" attributes="0">
-                      <Component id="bloodGroupCB" min="-2" pref="33" max="-2" attributes="0"/>
-                      <EmptySpace min="2" pref="2" max="-2" attributes="0"/>
-                  </Group>
-              </Group>
-              <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="registerBtn" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="backBtn" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace min="-2" pref="2285" max="-2" attributes="0"/>
-              <Component id="profilePicPathLabel" min="-2" max="-2" attributes="0"/>
-              <EmptySpace max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -219,7 +233,7 @@
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="66" green="66" red="0" type="rgb"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="REGISTER AS A PATIENT"/>
+        <Property name="text" type="java.lang.String" value="Register as a Patient"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="deliveryDirLabel1">
@@ -290,11 +304,17 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="maleRB">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="14" style="0"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Male"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JRadioButton" name="femaleRB">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="14" style="0"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Female"/>
       </Properties>
       <Events>
@@ -303,11 +323,17 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="notToSayRB">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="14" style="0"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Prefer Not to Say"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JRadioButton" name="biRB">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="14" style="0"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Bi Sexual"/>
       </Properties>
       <Events>
@@ -571,6 +597,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="emailTFActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="registerBtn">
       <Properties>
@@ -656,6 +685,11 @@
       </AuxValues>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel1">
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel2">
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="ImageIcon imageIcon =  new ImageIcon(new ImageIcon(getClass().getResource(&quot;/HealthBuddy/ui/images/patient.gif&quot;)).getImage().getScaledInstance(500, 500, Image.SCALE_DEFAULT));&#xa;jLabel2.setIcon(imageIcon);"/>
+      </AuxValues>
     </Component>
   </SubComponents>
 </Form>
