@@ -8,12 +8,14 @@ import HealthBuddy.models.WorkQueue.WorkQueue;
  * @author Nidhi Singh
  */
 public class Network {
+
     private String nameOfNetwork;
     private EnterpriseCatalog enterpriseCatalog;
     private WorkQueue fundsRequests;
     private WorkQueue BloodDonorCenterRequests;
-    public Network(){
-        enterpriseCatalog=new EnterpriseCatalog();
+
+    public Network() {
+        enterpriseCatalog = new EnterpriseCatalog();
         this.fundsRequests = new WorkQueue();
         this.BloodDonorCenterRequests = new WorkQueue();
     }
@@ -33,8 +35,7 @@ public class Network {
     public void setBloodDonorCenterRequests(WorkQueue BloodDonorCenterRequests) {
         this.BloodDonorCenterRequests = BloodDonorCenterRequests;
     }
-    
-    
+
     public String getNetworkName() {
         return nameOfNetwork;
     }
@@ -46,9 +47,9 @@ public class Network {
     public EnterpriseCatalog getEnterpriseCatalog() {
         return enterpriseCatalog;
     }
-    
+
     @Override
-    public String toString(){
+    public String toString() {
         return nameOfNetwork;
     }
 }

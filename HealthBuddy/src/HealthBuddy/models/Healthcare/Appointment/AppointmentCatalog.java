@@ -7,10 +7,10 @@ import java.util.ArrayList;
  * @author Nidhi Singh
  */
 public class AppointmentCatalog {
+
     private ArrayList<AppointmentInformation> appointmentCatalog;
-    
-    public AppointmentCatalog()
-    {
+
+    public AppointmentCatalog() {
         this.appointmentCatalog = new ArrayList<AppointmentInformation>();
     }
 
@@ -21,15 +21,14 @@ public class AppointmentCatalog {
     public void setAppointmentCatalog(ArrayList<AppointmentInformation> appointmentCatalog) {
         this.appointmentCatalog = appointmentCatalog;
     }
-    
-    public AppointmentInformation createAppointment()
-    {
+
+    public AppointmentInformation createAppointment() {
         AppointmentInformation appointment = new AppointmentInformation();
         appointmentCatalog.add(appointment);
         return appointment;
     }
-    public void deletePatient(AppointmentInformation appointment)
-    {
+
+    public void deletePatient(AppointmentInformation appointment) {
         appointmentCatalog.remove(appointment);
     }
 }
