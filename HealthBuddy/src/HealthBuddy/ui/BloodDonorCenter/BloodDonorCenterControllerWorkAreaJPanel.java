@@ -12,7 +12,9 @@ import HealthBuddy.models.WorkQueue.BloodControllerAttendantWQ;
 import HealthBuddy.models.WorkQueue.WorkRequest;
 import HealthBuddy.models.Healthcare.Organisation.HealthcareOrganisationAttendant;
 import java.awt.CardLayout;
+import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
+import java.awt.Image;
 import javax.swing.JPanel;
 import javax.swing.table.DefaultTableModel;
 
@@ -47,6 +49,7 @@ public class BloodDonorCenterControllerWorkAreaJPanel extends javax.swing.JPanel
         this.userAccount=userAccount;
         this.bloodBankStockDirectory = this.headsOrganisation.getBbStockDirectory();    
         populateTable();
+        setSize(1540,800);
     }
    
     
@@ -84,11 +87,14 @@ public class BloodDonorCenterControllerWorkAreaJPanel extends javax.swing.JPanel
         lblTitle = new javax.swing.JLabel();
         btnAccept = new javax.swing.JButton();
         btnBack = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(102, 153, 255));
+        setBackground(new java.awt.Color(255, 255, 255));
         setBorder(javax.swing.BorderFactory.createTitledBorder("Blood Requests"));
+        setForeground(new java.awt.Color(0, 102, 102));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        BloodRequestJTable.setForeground(new java.awt.Color(0, 102, 102));
         BloodRequestJTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -113,32 +119,43 @@ public class BloodDonorCenterControllerWorkAreaJPanel extends javax.swing.JPanel
             BloodRequestJTable.getColumnModel().getColumn(3).setResizable(false);
         }
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 130, 600, 137));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 230, 540, 170));
 
+        lblTitle.setBackground(new java.awt.Color(255, 255, 255));
         lblTitle.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
-        lblTitle.setForeground(new java.awt.Color(255, 51, 51));
-        lblTitle.setText("All BLOOD REQUESTS");
-        add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 40, 380, 34));
+        lblTitle.setForeground(new java.awt.Color(0, 102, 102));
+        lblTitle.setText("Blood Request");
+        add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 180, 260, 34));
 
-        btnAccept.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        btnAccept.setForeground(new java.awt.Color(0, 51, 153));
+        btnAccept.setBackground(new java.awt.Color(0, 102, 102));
+        btnAccept.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        btnAccept.setForeground(new java.awt.Color(255, 255, 255));
         btnAccept.setText("Accept Request");
+        btnAccept.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnAccept.setBorderPainted(false);
         btnAccept.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAcceptActionPerformed(evt);
             }
         });
-        add(btnAccept, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 320, -1, -1));
+        add(btnAccept, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 420, 190, 40));
 
+        btnBack.setBackground(new java.awt.Color(0, 102, 102));
         btnBack.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        btnBack.setForeground(new java.awt.Color(0, 51, 153));
+        btnBack.setForeground(new java.awt.Color(255, 255, 255));
         btnBack.setText("Back");
+        btnBack.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnBack.setBorderPainted(false);
         btnBack.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnBackActionPerformed(evt);
             }
         });
-        add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(1030, 30, -1, -1));
+        add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(1293, 30, 90, 40));
+
+        ImageIcon imageIcon =  new ImageIcon(new ImageIcon(getClass().getResource("/HealthBuddy/ui/images/bloodRequest.jpg")).getImage().getScaledInstance(950, 550, Image.SCALE_DEFAULT));
+        jLabel1.setIcon(imageIcon);
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 80, 900, 640));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnAcceptActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAcceptActionPerformed
@@ -225,6 +242,7 @@ public class BloodDonorCenterControllerWorkAreaJPanel extends javax.swing.JPanel
     private javax.swing.JTable BloodRequestJTable;
     private javax.swing.JButton btnAccept;
     private javax.swing.JButton btnBack;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lblTitle;
     // End of variables declaration//GEN-END:variables

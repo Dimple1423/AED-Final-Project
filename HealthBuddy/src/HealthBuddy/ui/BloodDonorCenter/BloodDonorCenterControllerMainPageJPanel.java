@@ -1,7 +1,9 @@
 package HealthBuddy.ui.BloodDonorCenter;
 
+import javax.swing.ImageIcon;
 import HealthBuddy.models.BloodDonorCenter.Organisation.BDCControllerOrganisation;
 import HealthBuddy.models.EcoSystem;
+import java.awt.Image;
 import HealthBuddy.models.Enterprise.EnterpriseBloodDonorCenter;
 import HealthBuddy.models.Network.Network;
 import HealthBuddy.models.User.User;
@@ -28,6 +30,7 @@ public class BloodDonorCenterControllerMainPageJPanel extends javax.swing.JPanel
     public BloodDonorCenterControllerMainPageJPanel(JPanel showPanel, User account, BDCControllerOrganisation headsOrganisation, EnterpriseBloodDonorCenter bloodbankEnterprise, Network network, EcoSystem ecoSystem) {
         initComponents();
         this.showPanel=showPanel;
+        setSize(1540,800);
         this.headsOrganisation = headsOrganisation;
         this.userAccount = account;
         this.enterprise = bloodbankEnterprise;
@@ -47,14 +50,18 @@ public class BloodDonorCenterControllerMainPageJPanel extends javax.swing.JPanel
         ViewRequestjButton = new javax.swing.JButton();
         GoToInventoryjButton = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(235, 36, 91));
+        setBackground(new java.awt.Color(255, 255, 255));
         setBorder(javax.swing.BorderFactory.createTitledBorder("BBI Landing Area"));
+        setForeground(new java.awt.Color(0, 102, 102));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        ViewRequestjButton.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        ViewRequestjButton.setForeground(new java.awt.Color(0, 51, 153));
+        ViewRequestjButton.setBackground(new java.awt.Color(0, 102, 102));
+        ViewRequestjButton.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        ViewRequestjButton.setForeground(new java.awt.Color(255, 255, 255));
         ViewRequestjButton.setText("View Requests");
+        ViewRequestjButton.setBorderPainted(false);
         ViewRequestjButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ViewRequestjButtonActionPerformed(evt);
@@ -62,9 +69,11 @@ public class BloodDonorCenterControllerMainPageJPanel extends javax.swing.JPanel
         });
         add(ViewRequestjButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 190, 220, 66));
 
-        GoToInventoryjButton.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        GoToInventoryjButton.setForeground(new java.awt.Color(0, 51, 153));
+        GoToInventoryjButton.setBackground(new java.awt.Color(0, 102, 102));
+        GoToInventoryjButton.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        GoToInventoryjButton.setForeground(new java.awt.Color(255, 255, 255));
         GoToInventoryjButton.setText("Go To Inventory");
+        GoToInventoryjButton.setBorderPainted(false);
         GoToInventoryjButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 GoToInventoryjButtonActionPerformed(evt);
@@ -72,10 +81,15 @@ public class BloodDonorCenterControllerMainPageJPanel extends javax.swing.JPanel
         });
         add(GoToInventoryjButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 310, 220, 66));
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("BLOOD BANK INCHARGE");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 10, -1, -1));
+        jLabel1.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 102, 102));
+        jLabel1.setText("Blood Donor Center Controller");
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 30, -1, -1));
+
+        ImageIcon imageIcon =  new ImageIcon(new ImageIcon(getClass().getResource("/HealthBuddy/ui/images/bdc.jpg")).getImage().getScaledInstance(1100, 700, Image.SCALE_DEFAULT));
+        jLabel2.setIcon(imageIcon);
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 80, 1090, 610));
     }// </editor-fold>//GEN-END:initComponents
 
     private void ViewRequestjButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ViewRequestjButtonActionPerformed
@@ -103,5 +117,6 @@ public class BloodDonorCenterControllerMainPageJPanel extends javax.swing.JPanel
     private javax.swing.JButton GoToInventoryjButton;
     private javax.swing.JButton ViewRequestjButton;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     // End of variables declaration//GEN-END:variables
 }
