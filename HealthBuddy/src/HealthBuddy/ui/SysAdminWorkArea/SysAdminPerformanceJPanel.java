@@ -3,7 +3,9 @@ package HealthBuddy.ui.SysAdminWorkArea;
 import java.awt.CardLayout;
 import java.util.HashMap;
 import java.util.Map;
+import java.awt.Image;
 import javax.swing.JPanel;
+import javax.swing.ImageIcon;
 import javax.swing.table.DefaultTableModel;
 import HealthBuddy.models.EcoSystem;
 import HealthBuddy.models.Trust.Donation.TrustDetails;
@@ -25,6 +27,7 @@ public class SysAdminPerformanceJPanel extends javax.swing.JPanel
         initComponents();
         this.showPanel = showPanel;
         this.ecosystem = system;
+        setSize(1540,800);
           
     }
     
@@ -57,78 +60,98 @@ public class SysAdminPerformanceJPanel extends javax.swing.JPanel
         jScrollPane1 = new javax.swing.JScrollPane();
         tblToDisplayAnalytics = new javax.swing.JTable();
         btnBack = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(129, 121, 226));
+        setBackground(new java.awt.Color(255, 255, 255));
         setBorder(javax.swing.BorderFactory.createTitledBorder("Analytics Information"));
+        setForeground(new java.awt.Color(0, 102, 102));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        lblTitle.setFont(new java.awt.Font("Songti TC", 1, 48)); // NOI18N
-        lblTitle.setForeground(new java.awt.Color(255, 0, 0));
-        lblTitle.setText("ANALYTICS");
-        add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 30, 320, -1));
+        lblTitle.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+        lblTitle.setForeground(new java.awt.Color(0, 102, 102));
+        lblTitle.setText("Performance");
+        add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 30, 260, -1));
 
+        btnOrganisationWithMaximumFunds.setBackground(new java.awt.Color(0, 102, 102));
         btnOrganisationWithMaximumFunds.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
-        btnOrganisationWithMaximumFunds.setForeground(new java.awt.Color(0, 51, 153));
+        btnOrganisationWithMaximumFunds.setForeground(new java.awt.Color(255, 255, 255));
         btnOrganisationWithMaximumFunds.setText("Organisation With Maximum Funds");
+        btnOrganisationWithMaximumFunds.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnOrganisationWithMaximumFunds.setBorderPainted(false);
         btnOrganisationWithMaximumFunds.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnOrganisationWithMaximumFundsActionPerformed(evt);
             }
         });
-        add(btnOrganisationWithMaximumFunds, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 580, 380, -1));
+        add(btnOrganisationWithMaximumFunds, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 430, 320, 40));
 
+        btnFrequentlyVisitedHospital.setBackground(new java.awt.Color(0, 102, 102));
         btnFrequentlyVisitedHospital.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
-        btnFrequentlyVisitedHospital.setForeground(new java.awt.Color(0, 51, 153));
+        btnFrequentlyVisitedHospital.setForeground(new java.awt.Color(255, 255, 255));
         btnFrequentlyVisitedHospital.setText("Frequently Visited Hospital");
+        btnFrequentlyVisitedHospital.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnFrequentlyVisitedHospital.setBorderPainted(false);
         btnFrequentlyVisitedHospital.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnFrequentlyVisitedHospitalActionPerformed(evt);
             }
         });
-        add(btnFrequentlyVisitedHospital, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 530, 280, -1));
+        add(btnFrequentlyVisitedHospital, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 380, 280, 40));
 
+        btnPrimeDonor.setBackground(new java.awt.Color(0, 102, 102));
         btnPrimeDonor.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
-        btnPrimeDonor.setForeground(new java.awt.Color(0, 51, 153));
+        btnPrimeDonor.setForeground(new java.awt.Color(255, 255, 255));
         btnPrimeDonor.setText("Prime Donor");
+        btnPrimeDonor.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnPrimeDonor.setBorderPainted(false);
         btnPrimeDonor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnPrimeDonorActionPerformed(evt);
             }
         });
-        add(btnPrimeDonor, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 630, 380, -1));
+        add(btnPrimeDonor, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 480, 320, 40));
 
+        btnFrequentPatient.setBackground(new java.awt.Color(0, 102, 102));
         btnFrequentPatient.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
-        btnFrequentPatient.setForeground(new java.awt.Color(0, 51, 153));
+        btnFrequentPatient.setForeground(new java.awt.Color(255, 255, 255));
         btnFrequentPatient.setText("Frequent Patient");
+        btnFrequentPatient.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnFrequentPatient.setBorderPainted(false);
         btnFrequentPatient.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnFrequentPatientActionPerformed(evt);
             }
         });
-        add(btnFrequentPatient, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 630, 280, -1));
+        add(btnFrequentPatient, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 480, 280, 40));
 
+        btnFrequentlyVistedDoctor.setBackground(new java.awt.Color(0, 102, 102));
         btnFrequentlyVistedDoctor.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
-        btnFrequentlyVistedDoctor.setForeground(new java.awt.Color(0, 51, 153));
+        btnFrequentlyVistedDoctor.setForeground(new java.awt.Color(255, 255, 255));
         btnFrequentlyVistedDoctor.setText("Frequently visited Doctor");
+        btnFrequentlyVistedDoctor.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnFrequentlyVistedDoctor.setBorderPainted(false);
         btnFrequentlyVistedDoctor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnFrequentlyVistedDoctorActionPerformed(evt);
             }
         });
-        add(btnFrequentlyVistedDoctor, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 580, 280, -1));
+        add(btnFrequentlyVistedDoctor, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 430, 280, 40));
 
+        btnOrganisationWithMaximumDonors.setBackground(new java.awt.Color(0, 102, 102));
         btnOrganisationWithMaximumDonors.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
-        btnOrganisationWithMaximumDonors.setForeground(new java.awt.Color(0, 51, 153));
+        btnOrganisationWithMaximumDonors.setForeground(new java.awt.Color(255, 255, 255));
         btnOrganisationWithMaximumDonors.setText("Organisation With Maximum Donors");
+        btnOrganisationWithMaximumDonors.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnOrganisationWithMaximumDonors.setBorderPainted(false);
         btnOrganisationWithMaximumDonors.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnOrganisationWithMaximumDonorsActionPerformed(evt);
             }
         });
-        add(btnOrganisationWithMaximumDonors, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 530, 380, -1));
+        add(btnOrganisationWithMaximumDonors, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 380, 320, 40));
 
-        tblToDisplayAnalytics.setFont(new java.awt.Font("Tahoma", 0, 19)); // NOI18N
-        tblToDisplayAnalytics.setForeground(new java.awt.Color(0, 0, 153));
+        tblToDisplayAnalytics.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        tblToDisplayAnalytics.setForeground(new java.awt.Color(0, 102, 102));
         tblToDisplayAnalytics.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null},
@@ -154,17 +177,24 @@ public class SysAdminPerformanceJPanel extends javax.swing.JPanel
             tblToDisplayAnalytics.getColumnModel().getColumn(1).setResizable(false);
         }
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 110, 890, 120));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 130, 690, 220));
 
+        btnBack.setBackground(new java.awt.Color(0, 102, 102));
         btnBack.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
-        btnBack.setForeground(new java.awt.Color(0, 51, 153));
+        btnBack.setForeground(new java.awt.Color(255, 255, 255));
         btnBack.setText("Back");
+        btnBack.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnBack.setBorderPainted(false);
         btnBack.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnBackActionPerformed(evt);
             }
         });
-        add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 20, -1, -1));
+        add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(1240, 20, 110, 40));
+
+        ImageIcon imageIcon =  new ImageIcon(new ImageIcon(getClass().getResource("/HealthBuddy/ui/images/performance.gif")).getImage().getScaledInstance(700, 600, Image.SCALE_DEFAULT));
+        jLabel1.setIcon(imageIcon);
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 100, 670, 520));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnOrganisationWithMaximumFundsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOrganisationWithMaximumFundsActionPerformed
@@ -349,6 +379,7 @@ public class SysAdminPerformanceJPanel extends javax.swing.JPanel
     private javax.swing.JButton btnOrganisationWithMaximumDonors;
     private javax.swing.JButton btnOrganisationWithMaximumFunds;
     private javax.swing.JButton btnPrimeDonor;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lblTitle;
     private javax.swing.JTable tblToDisplayAnalytics;

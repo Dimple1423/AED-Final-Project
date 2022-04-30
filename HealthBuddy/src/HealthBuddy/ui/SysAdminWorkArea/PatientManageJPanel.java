@@ -1,7 +1,9 @@
 package HealthBuddy.ui.SysAdminWorkArea;
 
 import java.awt.CardLayout;
+import javax.swing.ImageIcon;
 import java.awt.Component;
+import java.awt.Image;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.table.DefaultTableModel;
@@ -22,6 +24,7 @@ EcoSystem ecosystem;
         initComponents();
         this.showPanel=showPanel;
         this.ecosystem=ecosystem;
+        setSize(1540,800);
         populatePatinetTable();
     }
 
@@ -56,6 +59,7 @@ EcoSystem ecosystem;
         btnBack = new javax.swing.JButton();
         btnDelete = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -82,11 +86,12 @@ EcoSystem ecosystem;
         jLabel1.setForeground(new java.awt.Color(51, 51, 255));
         jLabel1.setText("Donor Information");
 
-        setBackground(new java.awt.Color(102, 153, 255));
+        setBackground(new java.awt.Color(255, 255, 255));
         setBorder(javax.swing.BorderFactory.createTitledBorder("Manage Patient"));
-        setForeground(new java.awt.Color(0, 51, 153));
+        setForeground(new java.awt.Color(255, 255, 255));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        tblPatient.setForeground(new java.awt.Color(0, 102, 102));
         tblPatient.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -97,42 +102,56 @@ EcoSystem ecosystem;
         ));
         jScrollPane2.setViewportView(tblPatient);
 
-        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 90, 404, 145));
+        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 180, 404, 170));
 
+        btnView.setBackground(new java.awt.Color(0, 102, 102));
         btnView.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
-        btnView.setForeground(new java.awt.Color(0, 51, 153));
+        btnView.setForeground(new java.awt.Color(255, 255, 255));
         btnView.setText("View");
+        btnView.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnView.setBorderPainted(false);
         btnView.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnViewActionPerformed(evt);
             }
         });
-        add(btnView, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 270, 84, -1));
+        add(btnView, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 370, 120, 30));
 
+        btnBack.setBackground(new java.awt.Color(0, 102, 102));
         btnBack.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
-        btnBack.setForeground(new java.awt.Color(0, 51, 153));
+        btnBack.setForeground(new java.awt.Color(255, 255, 255));
         btnBack.setText("Back");
+        btnBack.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnBack.setBorderPainted(false);
         btnBack.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnBackActionPerformed(evt);
             }
         });
-        add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 20, -1, -1));
+        add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(1330, 30, 100, 40));
 
+        btnDelete.setBackground(new java.awt.Color(0, 102, 102));
         btnDelete.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
-        btnDelete.setForeground(new java.awt.Color(0, 51, 153));
+        btnDelete.setForeground(new java.awt.Color(255, 255, 255));
         btnDelete.setText("Delete");
+        btnDelete.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnDelete.setBorderPainted(false);
         btnDelete.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnDeleteActionPerformed(evt);
             }
         });
-        add(btnDelete, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 270, -1, -1));
+        add(btnDelete, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 370, 110, 30));
 
         jLabel2.setFont(new java.awt.Font("Songti TC", 1, 36)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 0, 51));
-        jLabel2.setText("MANAGE PATIENT INFORMATION");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 30, 600, 34));
+        jLabel2.setForeground(new java.awt.Color(0, 102, 102));
+        jLabel2.setText("Manage Patient Details");
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 100, 410, 34));
+
+        ImageIcon imageIcon =  new ImageIcon(new ImageIcon(getClass().getResource("/HealthBuddy/ui/images/managePatient.gif")).getImage().getScaledInstance(850, 550, Image.SCALE_DEFAULT));
+
+        jLabel3.setIcon(imageIcon);
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 50, 720, 640));
     }// </editor-fold>//GEN-END:initComponents
 
     private void ViewjButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ViewjButtonActionPerformed
@@ -187,6 +206,7 @@ EcoSystem ecosystem;
     private javax.swing.JButton btnView;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTable jTable1;
