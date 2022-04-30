@@ -78,11 +78,12 @@ EcoSystem ecosystem;
         lblName1 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(102, 153, 255));
+        setBackground(new java.awt.Color(255, 255, 255));
         setBorder(javax.swing.BorderFactory.createTitledBorder("Manage Enterprise"));
-        setForeground(new java.awt.Color(0, 51, 153));
+        setForeground(new java.awt.Color(0, 102, 102));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        tblEnterpriseDetails.setForeground(new java.awt.Color(0, 153, 153));
         tblEnterpriseDetails.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -95,40 +96,51 @@ EcoSystem ecosystem;
 
         add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 70, 370, 134));
 
-        lblTitle.setFont(new java.awt.Font("Songti TC", 1, 36)); // NOI18N
-        lblTitle.setForeground(new java.awt.Color(255, 0, 51));
-        lblTitle.setText("MANAGE ENTERPRISE ");
-        add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 20, 420, -1));
+        lblTitle.setBackground(new java.awt.Color(255, 255, 255));
+        lblTitle.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        lblTitle.setForeground(new java.awt.Color(0, 102, 102));
+        lblTitle.setText("Manage Enterprise");
+        add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 20, 420, 40));
 
+        lblNetwork.setBackground(new java.awt.Color(255, 255, 255));
         lblNetwork.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        lblNetwork.setForeground(new java.awt.Color(255, 255, 255));
+        lblNetwork.setForeground(new java.awt.Color(0, 102, 102));
+        lblNetwork.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         lblNetwork.setText("Network:");
-        add(lblNetwork, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 220, -1, -1));
+        add(lblNetwork, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 220, 150, -1));
 
-        add(networkJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 220, 136, -1));
+        networkJComboBox.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        networkJComboBox.setForeground(new java.awt.Color(0, 102, 102));
+        add(networkJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 220, 170, 30));
 
+        lblEnterprise.setBackground(new java.awt.Color(255, 255, 255));
         lblEnterprise.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        lblEnterprise.setForeground(new java.awt.Color(255, 255, 255));
+        lblEnterprise.setForeground(new java.awt.Color(0, 102, 102));
+        lblEnterprise.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         lblEnterprise.setText("Enterprise Type:");
-        add(lblEnterprise, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 270, -1, -1));
+        add(lblEnterprise, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 270, 190, -1));
 
-        add(enterpriseTypeJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 270, 136, -1));
+        add(enterpriseTypeJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 270, 170, 30));
 
         txtName.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtNameActionPerformed(evt);
             }
         });
-        add(txtName, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 310, 136, -1));
+        add(txtName, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 320, 170, 30));
 
+        lblName.setBackground(new java.awt.Color(255, 255, 255));
         lblName.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        lblName.setForeground(new java.awt.Color(255, 255, 255));
+        lblName.setForeground(new java.awt.Color(0, 102, 102));
+        lblName.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         lblName.setText("Name:");
-        add(lblName, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 310, -1, -1));
+        add(lblName, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 320, 150, -1));
 
+        btnBack.setBackground(new java.awt.Color(0, 102, 102));
         btnBack.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
-        btnBack.setForeground(new java.awt.Color(0, 51, 153));
+        btnBack.setForeground(new java.awt.Color(255, 255, 255));
         btnBack.setText("Back");
+        btnBack.setBorderPainted(false);
         btnBack.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnBackActionPerformed(evt);
@@ -136,21 +148,25 @@ EcoSystem ecosystem;
         });
         add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 20, -1, -1));
 
+        btnSubmit.setBackground(new java.awt.Color(0, 102, 102));
         btnSubmit.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
-        btnSubmit.setForeground(new java.awt.Color(0, 51, 153));
+        btnSubmit.setForeground(new java.awt.Color(255, 255, 255));
         btnSubmit.setText("Submit");
+        btnSubmit.setBorderPainted(false);
         btnSubmit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnSubmitActionPerformed(evt);
             }
         });
-        add(btnSubmit, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 410, -1, -1));
-        add(txtcause, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 350, 136, -1));
+        add(btnSubmit, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 430, -1, -1));
+        add(txtcause, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 370, 170, 30));
 
+        lblName1.setBackground(new java.awt.Color(255, 255, 255));
         lblName1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        lblName1.setForeground(new java.awt.Color(255, 255, 255));
+        lblName1.setForeground(new java.awt.Color(0, 102, 102));
+        lblName1.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         lblName1.setText("Cause:");
-        add(lblName1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 350, -1, -1));
+        add(lblName1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 370, 150, -1));
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-20, -10, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 

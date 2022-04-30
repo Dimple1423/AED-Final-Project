@@ -3,7 +3,10 @@
 <Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
   <Properties>
     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-      <Color blue="ff" green="99" red="66" type="rgb"/>
+      <Color type="null"/>
+    </Property>
+    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+      <Color blue="66" green="66" red="0" type="rgb"/>
     </Property>
     <Property name="autoscrolls" type="boolean" value="true"/>
   </Properties>
@@ -23,157 +26,186 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" attributes="0">
-              <EmptySpace min="20" pref="20" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="20" pref="20" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="menuItemName6" min="-2" pref="195" max="-2" attributes="0"/>
-                          <Component id="menuItemName4" min="-2" pref="195" max="-2" attributes="0"/>
-                          <Component id="menuItemName5" alignment="0" min="-2" pref="195" max="-2" attributes="0"/>
-                          <Component id="menuItemName8" alignment="0" min="-2" pref="195" max="-2" attributes="0"/>
-                          <Component id="menuItemName7" alignment="0" min="-2" pref="195" max="-2" attributes="0"/>
-                          <Component id="menuItemName9" alignment="0" min="-2" pref="195" max="-2" attributes="0"/>
-                          <Component id="menuItemName10" alignment="0" min="-2" pref="195" max="-2" attributes="0"/>
-                          <Component id="backBtn" min="-2" pref="173" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="-2" pref="64" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="registerBtn" min="-2" pref="173" max="-2" attributes="0"/>
-                          <Component id="bloodGroupCB" min="-2" pref="190" max="-2" attributes="0"/>
-                          <Component id="emailTF" min="-2" pref="398" max="-2" attributes="0"/>
-                          <Component id="uploadPicBtn" min="-2" max="-2" attributes="0"/>
-                          <Component id="phoneTF" min="-2" pref="398" max="-2" attributes="0"/>
-                          <Component id="cityTF" alignment="0" min="-2" pref="398" max="-2" attributes="0"/>
-                          <Component id="zipCodeTF" alignment="0" min="-2" pref="398" max="-2" attributes="0"/>
-                          <Component id="stateCombobox" min="-2" pref="190" max="-2" attributes="0"/>
-                      </Group>
-                  </Group>
-                  <Component id="deliveryDirLabel" min="-2" pref="807" max="-2" attributes="0"/>
-                  <Component id="deliveryDirLabel2" min="-2" pref="807" max="-2" attributes="0"/>
-                  <Group type="102" attributes="0">
-                      <Component id="deliveryDirLabel1" min="-2" pref="807" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
-                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="menuItemName2" alignment="0" min="-2" pref="195" max="-2" attributes="0"/>
-                          <Component id="menuItemName3" alignment="0" min="-2" pref="195" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="-2" pref="64" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="addTF" min="-2" pref="398" max="-2" attributes="0"/>
-                          <Component id="dobTF" min="-2" pref="398" max="-2" attributes="0"/>
-                      </Group>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="393" max="-2" attributes="0"/>
-                      <Component id="profilePicPathLabel" min="-2" pref="367" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" attributes="0">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="menuItemName" alignment="0" min="-2" pref="195" max="-2" attributes="0"/>
-                          <Component id="menuItemName1" alignment="0" min="-2" pref="195" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="-2" pref="64" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="donorNameTF" min="-2" pref="398" max="-2" attributes="0"/>
                           <Group type="102" alignment="0" attributes="0">
-                              <Component id="maleRB" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="femaleRB" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="biRB" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
-                              <Component id="notToSayRB" min="-2" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="menuItemName6" alignment="1" pref="195" max="32767" attributes="0"/>
+                                  <Component id="menuItemName4" alignment="1" pref="195" max="32767" attributes="0"/>
+                                  <Component id="menuItemName5" alignment="1" pref="195" max="32767" attributes="0"/>
+                                  <Component id="menuItemName8" alignment="1" pref="195" max="32767" attributes="0"/>
+                                  <Component id="menuItemName7" alignment="1" pref="195" max="32767" attributes="0"/>
+                                  <Component id="menuItemName9" alignment="1" pref="195" max="32767" attributes="0"/>
+                                  <Component id="menuItemName10" alignment="1" pref="195" max="32767" attributes="0"/>
+                                  <Component id="backBtn" alignment="0" min="-2" pref="125" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <EmptySpace min="-2" pref="64" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="1" attributes="0">
+                                          <Component id="bloodGroupCB" linkSize="5" alignment="1" max="32767" attributes="0"/>
+                                          <Component id="uploadPicBtn" linkSize="5" alignment="1" pref="167" max="32767" attributes="0"/>
+                                          <Component id="emailTF" linkSize="5" alignment="1" max="32767" attributes="0"/>
+                                          <Component id="phoneTF" linkSize="5" alignment="1" max="32767" attributes="0"/>
+                                          <Component id="stateCombobox" linkSize="5" alignment="1" max="32767" attributes="0"/>
+                                          <Component id="zipCodeTF" linkSize="5" alignment="1" max="32767" attributes="0"/>
+                                          <Component id="cityTF" linkSize="5" max="32767" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="223" max="-2" attributes="0"/>
+                                      <Component id="registerBtn" min="-2" pref="203" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="menuItemName2" alignment="0" min="-2" pref="195" max="-2" attributes="0"/>
+                                  <Component id="menuItemName3" alignment="0" min="-2" pref="195" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="64" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="dobTF" linkSize="5" pref="167" max="32767" attributes="0"/>
+                                  <Component id="addTF" linkSize="5" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Component id="deliveryDirLabel" min="-2" pref="807" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="393" max="-2" attributes="0"/>
+                              <Component id="profilePicPathLabel" min="-2" pref="367" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="menuItemName" alignment="0" min="-2" pref="195" max="-2" attributes="0"/>
+                                  <Component id="menuItemName1" alignment="0" min="-2" pref="195" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="64" pref="64" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <Component id="maleRB" linkSize="3" min="-2" pref="60" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="femaleRB" linkSize="3" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="biRB" linkSize="3" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="notToSayRB" linkSize="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Component id="donorNameTF" linkSize="5" min="-2" pref="203" max="-2" attributes="0"/>
+                              </Group>
                           </Group>
                       </Group>
                   </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="867" max="-2" attributes="0"/>
+                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="deliveryDirLabel1" min="-2" pref="320" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="834" max="-2" attributes="0"/>
+                      <Component id="deliveryDirLabel2" min="-2" pref="416" max="-2" attributes="0"/>
+                  </Group>
               </Group>
-              <EmptySpace pref="3596" max="32767" attributes="0"/>
+              <EmptySpace pref="1508" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
               <Component id="deliveryDirLabel2" min="-2" pref="55" max="-2" attributes="0"/>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="57" max="-2" attributes="0"/>
+                      <Component id="deliveryDirLabel" min="-2" pref="52" max="-2" attributes="0"/>
+                  </Group>
                   <Component id="deliveryDirLabel1" min="-2" pref="44" max="-2" attributes="0"/>
-                  <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Component id="deliveryDirLabel" min="-2" pref="52" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="menuItemName" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="donorNameTF" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="donorNameTF" linkSize="1" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="1" attributes="0">
                   <Component id="menuItemName1" min="-2" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="maleRB" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="femaleRB" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="notToSayRB" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="biRB" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="maleRB" linkSize="4" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
+                          <Component id="femaleRB" linkSize="4" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="biRB" linkSize="4" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="notToSayRB" linkSize="4" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="3" pref="3" max="-2" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="menuItemName2" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="dobTF" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="dobTF" linkSize="1" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="menuItemName3" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="addTF" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="addTF" linkSize="1" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="menuItemName4" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="cityTF" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="cityTF" linkSize="1" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="menuItemName6" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="zipCodeTF" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="zipCodeTF" linkSize="1" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="stateCombobox" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="menuItemName5" alignment="3" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Component id="menuItemName5" min="-2" max="-2" attributes="0"/>
+                  <Group type="102" attributes="0">
+                      <Component id="stateCombobox" min="-2" pref="31" max="-2" attributes="0"/>
+                      <EmptySpace min="2" pref="2" max="-2" attributes="0"/>
+                  </Group>
               </Group>
-              <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="menuItemName8" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="phoneTF" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="phoneTF" linkSize="1" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="menuItemName7" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="uploadPicBtn" alignment="3" min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="menuItemName7" min="-2" max="-2" attributes="0"/>
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="4" pref="4" max="-2" attributes="0"/>
+                      <Component id="uploadPicBtn" min="-2" pref="30" max="-2" attributes="0"/>
+                  </Group>
               </Group>
-              <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="menuItemName9" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="emailTF" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="emailTF" linkSize="1" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="menuItemName10" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="bloodGroupCB" alignment="3" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Component id="menuItemName10" min="-2" max="-2" attributes="0"/>
+                  <Group type="102" attributes="0">
+                      <Component id="bloodGroupCB" min="-2" pref="33" max="-2" attributes="0"/>
+                      <EmptySpace min="2" pref="2" max="-2" attributes="0"/>
+                  </Group>
               </Group>
-              <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="registerBtn" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="backBtn" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="2285" max="-2" attributes="0"/>
               <Component id="profilePicPathLabel" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="176" max="32767" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -185,41 +217,51 @@
           <Font name="Segoe UI" size="20" style="1"/>
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="66" green="33" red="0" type="rgb"/>
+          <Color blue="66" green="66" red="0" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="REGISTER AS A PATIENT"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="deliveryDirLabel1">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+        </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Segoe UI" size="36" style="1"/>
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="0" green="0" red="ff" type="rgb"/>
+          <Color blue="66" green="66" red="0" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Help us, Help you!"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="deliveryDirLabel2">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+        </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Segoe UI" size="36" style="1"/>
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="0" green="0" red="ff" type="rgb"/>
+          <Color blue="66" green="66" red="0" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="We want to help you..."/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="menuItemName">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color type="null"/>
+        </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Segoe UI" size="18" style="1"/>
+          <Font name="Tahoma" size="18" style="1"/>
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="66" green="0" red="0" type="rgb"/>
+          <Color blue="66" green="66" red="0" type="rgb"/>
         </Property>
+        <Property name="horizontalAlignment" type="int" value="11"/>
         <Property name="text" type="java.lang.String" value="Patient Name:"/>
       </Properties>
     </Component>
@@ -233,12 +275,16 @@
     </Component>
     <Component class="javax.swing.JLabel" name="menuItemName1">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color type="null"/>
+        </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Segoe UI" size="18" style="1"/>
+          <Font name="Tahoma" size="18" style="1"/>
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="66" green="0" red="0" type="rgb"/>
+          <Color blue="66" green="66" red="0" type="rgb"/>
         </Property>
+        <Property name="horizontalAlignment" type="int" value="11"/>
         <Property name="text" type="java.lang.String" value="Gender:"/>
       </Properties>
     </Component>
@@ -251,6 +297,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Female"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="femaleRBActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JRadioButton" name="notToSayRB">
       <Properties>
@@ -275,24 +324,32 @@
     </Component>
     <Component class="javax.swing.JLabel" name="menuItemName2">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color type="null"/>
+        </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Segoe UI" size="18" style="1"/>
+          <Font name="Tahoma" size="18" style="1"/>
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="66" green="0" red="0" type="rgb"/>
+          <Color blue="66" green="66" red="0" type="rgb"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Date of Birth"/>
+        <Property name="horizontalAlignment" type="int" value="11"/>
+        <Property name="text" type="java.lang.String" value="Date of Birth:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="menuItemName3">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color type="null"/>
+        </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Segoe UI" size="18" style="1"/>
+          <Font name="Tahoma" size="18" style="1"/>
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="66" green="0" red="0" type="rgb"/>
+          <Color blue="66" green="66" red="0" type="rgb"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Address"/>
+        <Property name="horizontalAlignment" type="int" value="11"/>
+        <Property name="text" type="java.lang.String" value="Address:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="addTF">
@@ -305,13 +362,17 @@
     </Component>
     <Component class="javax.swing.JLabel" name="menuItemName4">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color type="null"/>
+        </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Segoe UI" size="18" style="1"/>
+          <Font name="Tahoma" size="18" style="1"/>
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="66" green="0" red="0" type="rgb"/>
+          <Color blue="66" green="66" red="0" type="rgb"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="City"/>
+        <Property name="horizontalAlignment" type="int" value="11"/>
+        <Property name="text" type="java.lang.String" value="City:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="cityTF">
@@ -324,13 +385,17 @@
     </Component>
     <Component class="javax.swing.JLabel" name="menuItemName5">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color type="null"/>
+        </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Segoe UI" size="18" style="1"/>
+          <Font name="Tahoma" size="18" style="1"/>
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="66" green="0" red="0" type="rgb"/>
+          <Color blue="66" green="66" red="0" type="rgb"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="State"/>
+        <Property name="horizontalAlignment" type="int" value="11"/>
+        <Property name="text" type="java.lang.String" value="State:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JComboBox" name="stateCombobox">
@@ -402,13 +467,17 @@
     </Component>
     <Component class="javax.swing.JLabel" name="menuItemName6">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color type="null"/>
+        </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Segoe UI" size="18" style="1"/>
+          <Font name="Tahoma" size="18" style="1"/>
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="66" green="0" red="0" type="rgb"/>
+          <Color blue="66" green="66" red="0" type="rgb"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Zip Code"/>
+        <Property name="horizontalAlignment" type="int" value="11"/>
+        <Property name="text" type="java.lang.String" value="Zip Code:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="zipCodeTF">
@@ -421,12 +490,16 @@
     </Component>
     <Component class="javax.swing.JLabel" name="menuItemName7">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color type="null"/>
+        </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Segoe UI" size="18" style="1"/>
+          <Font name="Tahoma" size="18" style="1"/>
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="66" green="0" red="0" type="rgb"/>
+          <Color blue="66" green="66" red="0" type="rgb"/>
         </Property>
+        <Property name="horizontalAlignment" type="int" value="11"/>
         <Property name="text" type="java.lang.String" value="Profile Picture:"/>
       </Properties>
     </Component>
@@ -440,18 +513,32 @@
     </Component>
     <Component class="javax.swing.JLabel" name="menuItemName8">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color type="null"/>
+        </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Segoe UI" size="18" style="1"/>
+          <Font name="Tahoma" size="18" style="1"/>
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="66" green="0" red="0" type="rgb"/>
+          <Color blue="66" green="66" red="0" type="rgb"/>
         </Property>
+        <Property name="horizontalAlignment" type="int" value="11"/>
         <Property name="text" type="java.lang.String" value="Contact:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="uploadPicBtn">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="66" green="66" red="0" type="rgb"/>
+        </Property>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="18" style="0"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Upload +"/>
+        <Property name="borderPainted" type="boolean" value="false"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="uploadPicBtnActionPerformed"/>
@@ -464,13 +551,17 @@
     </Component>
     <Component class="javax.swing.JLabel" name="menuItemName9">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color type="null"/>
+        </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Segoe UI" size="18" style="1"/>
+          <Font name="Tahoma" size="18" style="1"/>
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="66" green="0" red="0" type="rgb"/>
+          <Color blue="66" green="66" red="0" type="rgb"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Email"/>
+        <Property name="horizontalAlignment" type="int" value="11"/>
+        <Property name="text" type="java.lang.String" value="Email:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="emailTF">
@@ -483,13 +574,17 @@
     </Component>
     <Component class="javax.swing.JButton" name="registerBtn">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="66" green="66" red="0" type="rgb"/>
+        </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Segoe UI" size="19" style="1"/>
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="66" green="0" red="0" type="rgb"/>
+          <Color blue="ff" green="ff" red="ff" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Register"/>
+        <Property name="borderPainted" type="boolean" value="false"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="registerBtnActionPerformed"/>
@@ -497,13 +592,17 @@
     </Component>
     <Component class="javax.swing.JButton" name="backBtn">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="66" green="66" red="0" type="rgb"/>
+        </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Segoe UI" size="19" style="1"/>
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="66" green="0" red="0" type="rgb"/>
+          <Color blue="ff" green="ff" red="ff" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="&lt;&lt; Back"/>
+        <Property name="borderPainted" type="boolean" value="false"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="backBtnActionPerformed"/>
@@ -511,19 +610,26 @@
     </Component>
     <Component class="javax.swing.JLabel" name="menuItemName10">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color type="null"/>
+        </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Segoe UI" size="18" style="1"/>
+          <Font name="Tahoma" size="18" style="1"/>
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="66" green="0" red="0" type="rgb"/>
+          <Color blue="66" green="66" red="0" type="rgb"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Blood Group"/>
+        <Property name="horizontalAlignment" type="int" value="11"/>
+        <Property name="text" type="java.lang.String" value="Blood Group:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JComboBox" name="bloodGroupCB">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="14" style="0"/>
+        </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="66" green="0" red="0" type="rgb"/>
+          <Color blue="66" green="66" red="0" type="rgb"/>
         </Property>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
           <StringArray count="10">
@@ -538,6 +644,11 @@
             <StringItem index="8" value="O-"/>
             <StringItem index="9" value=" "/>
           </StringArray>
+        </Property>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.EmptyBorderInfo">
+            <EmptyBorder/>
+          </Border>
         </Property>
       </Properties>
       <AuxValues>
