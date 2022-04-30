@@ -1,19 +1,15 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
- */
 package HealthBuddy.ui.SysAdminWorkArea;
 import java.awt.CardLayout;
 import java.awt.Component;
 import javax.swing.JOptionPane;
-import medistopBackend.EcoSystem;
+import HealthBuddy.models.EcoSystem;
 import javax.swing.JPanel;
 import javax.swing.table.DefaultTableModel;
-import medistopBackend.UserData.DonorData;
+import HealthBuddy.models.UserData.DonorData;
 
 /**
  *
- * @author Virendra Rathore
+ * @author Nidhi Singh
  */
 public class DonorManageJPanel extends javax.swing.JPanel {
 JPanel showPanel;
@@ -117,7 +113,7 @@ EcoSystem ecosystem;
         DefaultTableModel model = (DefaultTableModel) tblDonorsInformation.getModel();
 
         model.setRowCount(0);
-        for (DonorData test : ecosystem.getDonorDir().getDonorDirectory()) {
+        for (DonorData test : ecosystem.getDonorDir().getDonorCatalog()) {
             Object[] row = new Object[1];
             row[0] = test;
             model.addRow(row);
@@ -144,7 +140,7 @@ EcoSystem ecosystem;
         int selectedRow = tblDonorsInformation.getSelectedRow();
         if(selectedRow>=0){
             DonorData donor = (DonorData)tblDonorsInformation.getValueAt(selectedRow,0);
-            ecosystem.getUserAccountDirectory().removeUserAccount(donor.getUsername());
+            ecosystem.getUserCatalog().removeUserAccount(donor.getUsername());
             ecosystem.getDonorDir().deleteDonor(donor);
             populateDonorTable();
     }//GEN-LAST:event_btnDeleteActionPerformed

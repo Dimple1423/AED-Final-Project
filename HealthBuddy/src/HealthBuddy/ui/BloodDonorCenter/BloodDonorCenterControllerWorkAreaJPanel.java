@@ -1,21 +1,16 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package HealthBuddy.ui.BloodDonorCenter;
 
-import medistopBackend.Bloodbank.Stock.BloodBankStockDirectory;
-import medistopBackend.Bloodbank.Organisation.HeadsOrganisation;
-import medistopBackend.EcoSystem;
-import medistopBackend.Enterprise.BloodbankEnterprise;
-import medistopBackend.Enterprise.Enterprise;
-import medistopBackend.Network.Network;
-import medistopBackend.Organisation.Organisation;
-import medistopBackend.UserAccount.UserAccount;
-import medistopBackend.WorkQueue.BloodHeadAttendentWorkQueue;
-import medistopBackend.WorkQueue.WorkRequest;
-import medistopBackend.Hospital.Organisation.HospitalOrganisationAttendant;
+import HealthBuddy.models.BloodDonorCenter.Inventory.BloodDonorCenterInventoryCatalog;
+import HealthBuddy.models.BloodDonorCenter.Organisation.BDCControllerOrganisation;
+import HealthBuddy.models.EcoSystem;
+import HealthBuddy.models.Enterprise.EnterpriseBloodDonorCenter;
+import HealthBuddy.models.Enterprise.Enterprise;
+import HealthBuddy.models.Network.Network;
+import HealthBuddy.models.Organisation.Organisation;
+import HealthBuddy.models.User.User;
+import HealthBuddy.models.WorkQueue.BloodControllerAttendantWQ;
+import HealthBuddy.models.WorkQueue.WorkRequest;
+import HealthBuddy.models.Healthcare.Organisation.HealthcareOrganisationAttendant;
 import java.awt.CardLayout;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
@@ -23,7 +18,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author Virendra Rathore
+ * @author Nidhi Singh
  */
 public class BloodDonorCenterControllerWorkAreaJPanel extends javax.swing.JPanel {
 
@@ -32,14 +27,14 @@ public class BloodDonorCenterControllerWorkAreaJPanel extends javax.swing.JPanel
      */
    
     private JPanel showPanel;
-    private UserAccount userAccount;
-    private HeadsOrganisation headsOrganisation;
+    private User userAccount;
+    private BDCControllerOrganisation headsOrganisation;
     private EcoSystem system;
     private Network network;
-    private BloodbankEnterprise enterprise;
-    private BloodBankStockDirectory bloodBankStockDirectory;
+    private EnterpriseBloodDonorCenter enterprise;
+    private BloodDonorCenterInventoryCatalog bloodBankStockDirectory;
 
-    public BloodDonorCenterControllerWorkAreaJPanel(JPanel displayJPanel, UserAccount userAccount, HeadsOrganisation headsOrganisation, BloodbankEnterprise enterprise, Network network, EcoSystem business) {
+    public BloodDonorCenterControllerWorkAreaJPanel(JPanel displayJPanel, User userAccount, BDCControllerOrganisation headsOrganisation, EnterpriseBloodDonorCenter enterprise, Network network, EcoSystem business) {
                
        
         initComponents();
@@ -62,9 +57,9 @@ public class BloodDonorCenterControllerWorkAreaJPanel extends javax.swing.JPanel
         
         model.setRowCount(0);
         
-        for(WorkRequest request :network.getBloodBankRequests().getWorkRequestList())
+        for(WorkRequest request :network.getBloodDonorCenterRequests().getWorkRequestList())
         {
-            BloodHeadAttendentWorkQueue nb = (BloodHeadAttendentWorkQueue)request;
+            BloodControllerAttendantWQ nb = (BloodControllerAttendantWQ)request;
             Object[] row = new Object[4];
             row[0] = nb;
             row[1] = nb.getTypeOfBlood();
@@ -159,7 +154,7 @@ public class BloodDonorCenterControllerWorkAreaJPanel extends javax.swing.JPanel
        }
        else
        {
-           BloodHeadAttendentWorkQueue  bloodHeadAttendentWorkQueue = (BloodHeadAttendentWorkQueue)BloodRequestJTable.getValueAt(selectedRow, 0);
+           BloodControllerAttendantWQ  bloodHeadAttendentWorkQueue = (BloodControllerAttendantWQ)BloodRequestJTable.getValueAt(selectedRow, 0);
            boolean result = bloodBankStockDirectory.checkBloodQuantity(bloodHeadAttendentWorkQueue.getTypeOfBlood(), bloodHeadAttendentWorkQueue.getUnitsOfBlood());
            
            if(bloodHeadAttendentWorkQueue.getMessage().equals("Blood Supplied"))
@@ -172,7 +167,7 @@ public class BloodDonorCenterControllerWorkAreaJPanel extends javax.swing.JPanel
                     bloodHeadAttendentWorkQueue.setMessage("Blood Supplied");
                     populateTable();
                 
-                    BloodHeadAttendentWorkQueue bhawq= new BloodHeadAttendentWorkQueue();
+                    BloodControllerAttendantWQ bhawq= new BloodControllerAttendantWQ();
                              
                     bhawq.setSender(userAccount);
                     bhawq.setStatus("Blood Supplied");
@@ -181,22 +176,22 @@ public class BloodDonorCenterControllerWorkAreaJPanel extends javax.swing.JPanel
                     bhawq.setUnitsOfBlood(bloodHeadAttendentWorkQueue.getUnitsOfBlood());
                 
              
-                    HospitalOrganisationAttendant bb = null;
+                    HealthcareOrganisationAttendant bb = null;
                     for(Network network : system.getNetworkList())
                     {
                         if(network.getNetworkName().equals(network.getNetworkName()))
                         {
-                            for(Enterprise ent : network.getEnterpriseDirectory().getEnterpriseList())
+                            for(Enterprise ent : network.getEnterpriseCatalog().getEnterpriseList())
                             {
-                                for(Organisation org : ent.getOrganizationDirectory().getOrganizationList())
+                                for(Organisation org : ent.getOrganizationCatalog().getOrganizationList())
                                 {
                                     if(org.getName().equalsIgnoreCase("Attendant Organisation"))
                                     {
-                                        for(UserAccount uacnt : org.getUserAccountDirectory().getUserAccountDirectory())
+                                        for(User uacnt : org.getUserCatalog().getUserCatalog())
                                         {
                                             if(uacnt.getUsername().equalsIgnoreCase(bloodHeadAttendentWorkQueue.getSender().getUsername()))
                                             {
-                                                bb = (HospitalOrganisationAttendant)org;
+                                                bb = (HealthcareOrganisationAttendant)org;
                                                 break;
                                             }
                                         }

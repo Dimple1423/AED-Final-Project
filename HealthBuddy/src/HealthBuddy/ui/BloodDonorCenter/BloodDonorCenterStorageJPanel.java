@@ -1,18 +1,13 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package HealthBuddy.ui.BloodDonorCenter;
 
-import medistopBackend.Bloodbank.Stock.BloodBankStock;
-import medistopBackend.Bloodbank.Stock.BloodBankStock.BloodGroup;
-import medistopBackend.Bloodbank.Stock.BloodBankStockDirectory;
-import medistopBackend.Bloodbank.Organisation.HeadsOrganisation;
-import medistopBackend.EcoSystem;
-import medistopBackend.Enterprise.BloodbankEnterprise;
-import medistopBackend.Network.Network;
-import medistopBackend.UserAccount.UserAccount;
+import HealthBuddy.models.BloodDonorCenter.Inventory.BloodDonorCenterInventory;
+import HealthBuddy.models.BloodDonorCenter.Inventory.BloodDonorCenterInventory.BloodGroup;
+import HealthBuddy.models.BloodDonorCenter.Inventory.BloodDonorCenterInventoryCatalog;
+import HealthBuddy.models.BloodDonorCenter.Organisation.BDCControllerOrganisation;
+import HealthBuddy.models.EcoSystem;
+import HealthBuddy.models.Enterprise.EnterpriseBloodDonorCenter;
+import HealthBuddy.models.Network.Network;
+import HealthBuddy.models.User.User;
 import java.awt.CardLayout;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
@@ -29,14 +24,14 @@ public class BloodDonorCenterStorageJPanel extends javax.swing.JPanel {
      */
      
     private JPanel showPanel;
-    private UserAccount userAccount;
-    private HeadsOrganisation headOrganisation;
+    private User userAccount;
+    private BDCControllerOrganisation headOrganisation;
     private EcoSystem ecosystem;
     private Network network;
-    private BloodbankEnterprise bloodBankEnterprise;
-    private BloodBankStockDirectory bbsd;
+    private EnterpriseBloodDonorCenter bloodBankEnterprise;
+    private BloodDonorCenterInventoryCatalog bbsd;
    
-    public BloodDonorCenterStorageJPanel(JPanel showPanel, UserAccount userAccount, HeadsOrganisation headOrganisation, BloodbankEnterprise bloodBankEnterprise, Network network, EcoSystem ecosystem) 
+    public BloodDonorCenterStorageJPanel(JPanel showPanel, User userAccount, BDCControllerOrganisation headOrganisation, EnterpriseBloodDonorCenter bloodBankEnterprise, Network network, EcoSystem ecosystem) 
     {
         initComponents();
         
@@ -56,7 +51,7 @@ public class BloodDonorCenterStorageJPanel extends javax.swing.JPanel {
         
         for(BloodGroup t:BloodGroup.values())
         {
-            if(t.getVal().equals(BloodGroup.getBloodGroupOMinus().getVal()) ||t.getVal().equals(BloodGroup.getBloodGroupOPlus().getVal()) ||t.getVal().equals(BloodGroup.getBloodGroupBPlus().getVal())||t.getVal().equals(BloodGroup.getBloodGroupBMinus().getVal()) ||t.getVal().equals(BloodGroup.getBloodGroupAPlus().getVal())||t.getVal().equals(BloodGroup.getBloodGroupAMinus().getVal())||t.getVal().equals(BloodGroup.getBloodGroupABPlus().getVal())||t.getVal().equals(BloodGroup.getBloodGroupABMinus().getVal()))
+            if(t.getVal().equals(BloodGroup.getBloodGroupONegative().getVal()) ||t.getVal().equals(BloodGroup.getBloodGroupOPositive().getVal()) ||t.getVal().equals(BloodGroup.getBloodGroupBPositive().getVal())||t.getVal().equals(BloodGroup.getBloodGroupBNegative().getVal()) ||t.getVal().equals(BloodGroup.getBloodGroupAPositive().getVal())||t.getVal().equals(BloodGroup.getBloodGroupANegative().getVal())||t.getVal().equals(BloodGroup.getBloodGroupABPositive().getVal())||t.getVal().equals(BloodGroup.getBloodGroupABNegative().getVal()))
             {
                 BloodTypeComboBox.addItem(t);   
             }                  
@@ -242,7 +237,7 @@ public class BloodDonorCenterStorageJPanel extends javax.swing.JPanel {
             Integer quantity= (Integer.parseInt(txtUnitsOfBlood.getText()));                          
             BloodGroup typ = (BloodGroup) BloodTypeComboBox.getSelectedItem();
            
-            BloodBankStock bb=  bbsd.findBloodGroup(typ);
+            BloodDonorCenterInventory bb=  bbsd.findBloodGroup(typ);
         
             if(bb.getBloodGroup() == null || bb.getBloodGroup() == "")
             {
@@ -269,7 +264,7 @@ public class BloodDonorCenterStorageJPanel extends javax.swing.JPanel {
         
         model.setRowCount(0);
         
-        for(BloodBankStock b :bbsd.getStock())
+        for(BloodDonorCenterInventory b :bbsd.getStock())
         {
             if(b.getBloodGroup()!= null && b.getBloodGroup().equals(typ.getVal()))
             {
