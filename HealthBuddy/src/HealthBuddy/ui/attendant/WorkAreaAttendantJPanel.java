@@ -1,30 +1,25 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package HealthBuddy.ui.attendant;
 
-import java.util.ArrayList;
 import javax.swing.JOptionPane;
-import javax.swing.JPanel;
+import java.util.ArrayList;
 import javax.swing.table.DefaultTableModel;
-import medistopBackend.EcoSystem;
-import medistopBackend.Enterprise.BloodbankEnterprise;
-import medistopBackend.Enterprise.Enterprise;
-import medistopBackend.Hospital.Appointment.AppointmentDetails;
-import medistopBackend.Hospital.Organisation.HospitalOrganisationAttendant;
-import medistopBackend.Network.Network;
-import medistopBackend.UserAccount.UserAccount;
-import medistopBackend.WorkQueue.BloodHeadAttendentWorkQueue;
-import medistopBackend.WorkQueue.DoctorAttendentWorkQueue;
-import medistopBackend.WorkQueue.WorkRequest;
-import medistopUtil.Utilities;
+import javax.swing.JPanel;
+import HealthBuddy.models.EcoSystem;
+import HealthBuddy.models.Enterprise.EnterpriseBloodDonorCenter;
+import HealthBuddy.models.Enterprise.Enterprise;
+import HealthBuddy.models.Healthcare.Appointment.AppointmentInformation;
+import HealthBuddy.models.Healthcare.Organisation.HealthcareOrganisationAttendant;
+import HealthBuddy.models.Network.Network;
+import HealthBuddy.models.User.User;
+import HealthBuddy.models.WorkQueue.BloodControllerAttendantWQ;
+import HealthBuddy.models.WorkQueue.DoctorAttendantWQ;
+import HealthBuddy.models.WorkQueue.WorkRequest;
+import HealthBuddy.Util.Utilities;
 
 /**
  *
- * @author Zeenia
+ * @author Dimple Patel
+ * 
  */
 public class WorkAreaAttendantJPanel extends javax.swing.JPanel {
     
@@ -32,12 +27,12 @@ public class WorkAreaAttendantJPanel extends javax.swing.JPanel {
     private Enterprise enterprise;
     private EcoSystem system;
     private Network network;
-    private HospitalOrganisationAttendant attendantOrg;
-    private UserAccount ua;
-    private AppointmentDetails appointment;
+    private HealthcareOrganisationAttendant attendantOrg;
+    private User ua;
+    private AppointmentInformation appointment;
 
     /** Creates new form DonorWorkAreaPanel */
-    public WorkAreaAttendantJPanel(JPanel displayJPanel, UserAccount userAccount ,HospitalOrganisationAttendant attendantOrganisation, Enterprise enterprise,Network network,EcoSystem ecosystem) {
+    public WorkAreaAttendantJPanel(JPanel displayJPanel, User userAccount ,HealthcareOrganisationAttendant attendantOrganisation, Enterprise enterprise,Network network,EcoSystem ecosystem) {
         initComponents();
         this.displayJPanel  = displayJPanel;
         this.attendantOrg = attendantOrganisation;
@@ -303,20 +298,20 @@ public class WorkAreaAttendantJPanel extends javax.swing.JPanel {
         if(selectedRow>-1)
             {
                 try {
-                DoctorAttendentWorkQueue docAttendantWorkQueue = (DoctorAttendentWorkQueue)tblAttendant.getValueAt(selectedRow, 0);
-                BloodHeadAttendentWorkQueue bloodAttendantWorkQueue= new BloodHeadAttendentWorkQueue();   
+                DoctorAttendantWQ docAttendantWorkQueue = (DoctorAttendantWQ)tblAttendant.getValueAt(selectedRow, 0);
+                BloodControllerAttendantWQ bloodAttendantWorkQueue= new BloodControllerAttendantWQ();   
                 bloodAttendantWorkQueue.setSender(ua);
                 bloodAttendantWorkQueue.setUnitsOfBlood(Integer.parseInt(Utilities.getTrimmedText(txtBloodQuant)));
-                bloodAttendantWorkQueue.setNameOfPatient(docAttendantWorkQueue.getAppointmentDetails().getPatient().getPatientName());
-                bloodAttendantWorkQueue.setTypeOfBlood(docAttendantWorkQueue.getAppointmentDetails().getPatient().getBloodGroup());
+                bloodAttendantWorkQueue.setNameOfPatient(docAttendantWorkQueue.getAppointmentInformation().getPatient().getPatientName());
+                bloodAttendantWorkQueue.setTypeOfBlood(docAttendantWorkQueue.getAppointmentInformation().getPatient().getBloodGroup());
                 bloodAttendantWorkQueue.setMessage("InQueue");
                 bloodAttendantWorkQueue.setSender(ua);
-                BloodbankEnterprise bloodBank = null;
+                EnterpriseBloodDonorCenter bloodBank = null;
                 for(Network network : system.getNetworkList()){
                     if(network.getNetworkName().equals(this.network.getNetworkName()))
                     {
                     docAttendantWorkQueue.setMessage("Posted");
-                    this.network.getBloodBankRequests().getWorkRequestList().add(bloodAttendantWorkQueue);
+                    this.network.getBloodDonorCenterRequests().getWorkRequestList().add(bloodAttendantWorkQueue);
                     ua.getWorkQueue().getWorkRequestList().add(bloodAttendantWorkQueue);
                     txtBloodQuant.setText("");
                     populateAttendantTable();
@@ -368,15 +363,15 @@ public class WorkAreaAttendantJPanel extends javax.swing.JPanel {
         model.setRowCount(0);
         
         for(WorkRequest request : attendantOrg.getDoctorAttendantWQ().getWorkRequestList()){
-            DoctorAttendentWorkQueue doctorAttendantWorkQueue = new DoctorAttendentWorkQueue();
-            doctorAttendantWorkQueue = (DoctorAttendentWorkQueue)request;
+            DoctorAttendantWQ doctorAttendantWorkQueue = new DoctorAttendantWQ();
+            doctorAttendantWorkQueue = (DoctorAttendantWQ)request;
             Object[] row = new Object[7];
             row[0] = doctorAttendantWorkQueue;
-            row[1] = doctorAttendantWorkQueue.getAppointmentDetails().getDiseases();
-            row[2] = doctorAttendantWorkQueue.getAppointmentDetails().getDoctorName();
-            row[3] = doctorAttendantWorkQueue.getAppointmentDetails().isIsBloodNeeded();
-            row[4] = doctorAttendantWorkQueue.getAppointmentDetails().isFundNeeded();
-            row[5]= doctorAttendantWorkQueue.getAppointmentDetails().getPatient().getBloodGroup();
+            row[1] = doctorAttendantWorkQueue.getAppointmentInformation().getDiseases();
+            row[2] = doctorAttendantWorkQueue.getAppointmentInformation().getDoctorName();
+            row[3] = doctorAttendantWorkQueue.getAppointmentInformation().isIsBloodNeeded();
+            row[4] = doctorAttendantWorkQueue.getAppointmentInformation().isFundNeeded();
+            row[5]= doctorAttendantWorkQueue.getAppointmentInformation().getPatient().getBloodGroup();
             row[6] = doctorAttendantWorkQueue.getMessage();
             
             model.addRow(row);
@@ -390,8 +385,8 @@ public class WorkAreaAttendantJPanel extends javax.swing.JPanel {
     model.setRowCount(0);
     
        for(WorkRequest request :attendantOrg.getBloodHeadAttendantWQ().getWorkRequestList()){
-            BloodHeadAttendentWorkQueue bloodAttendantWorkQueue = new BloodHeadAttendentWorkQueue();
-            bloodAttendantWorkQueue = (BloodHeadAttendentWorkQueue)request;
+            BloodControllerAttendantWQ bloodAttendantWorkQueue = new BloodControllerAttendantWQ();
+            bloodAttendantWorkQueue = (BloodControllerAttendantWQ)request;
             Object[] row = new Object[4];
             row[0] = bloodAttendantWorkQueue;
             row[1] = bloodAttendantWorkQueue.getTypeOfBlood();

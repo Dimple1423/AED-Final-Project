@@ -15,7 +15,7 @@ import HealthBuddy.models.WorkQueue.DoctorAssistantAccountWQ;
 
 /**
  *
- * @author Zeenia
+ * @author Dimple Patel
  */
 public class WorkAreaDoctorJPanel extends javax.swing.JPanel {
 
