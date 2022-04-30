@@ -73,8 +73,6 @@ public class BloodDonorCenterStorageJPanel extends javax.swing.JPanel {
         jPanel5 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         BloodInventoryjTable = new javax.swing.JTable();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(102, 153, 255));
         setBorder(javax.swing.BorderFactory.createTitledBorder("Blood Bank"));
@@ -208,12 +206,6 @@ public class BloodDonorCenterStorageJPanel extends javax.swing.JPanel {
         );
 
         add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 510, 540, -1));
-
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/medistopUI.images/blood-bank.jpg"))); // NOI18N
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 40, 820, 170));
-
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/medistopUI.images/Blood-Bank-500.png"))); // NOI18N
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 240, 570, 420));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
@@ -281,8 +273,6 @@ public class BloodDonorCenterStorageJPanel extends javax.swing.JPanel {
     private javax.swing.JComboBox<Object> BloodTypeComboBox;
     private javax.swing.JButton btnAddBlood;
     private javax.swing.JButton btnBack;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JScrollPane jScrollPane1;

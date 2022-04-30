@@ -67,7 +67,6 @@ public class DonorViewJpanel extends javax.swing.JPanel
         lblUserName = new javax.swing.JLabel();
         txtDonorUserName = new javax.swing.JTextField();
         lblUserPhoto = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
         setBorder(javax.swing.BorderFactory.createTitledBorder("Donor Information"));
@@ -124,9 +123,6 @@ public class DonorViewJpanel extends javax.swing.JPanel
         add(lblUserName, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 310, -1, -1));
         add(txtDonorUserName, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 300, 181, -1));
         add(lblUserPhoto, new org.netbeans.lib.awtextra.AbsoluteConstraints(497, 87, -1, -1));
-
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/medistopUI.images/2966327.png"))); // NOI18N
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 20, 150, 150));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
@@ -137,7 +133,6 @@ public class DonorViewJpanel extends javax.swing.JPanel
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnBack;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel lblAddress;
     private javax.swing.JLabel lblCity;
     private javax.swing.JLabel lblGender;

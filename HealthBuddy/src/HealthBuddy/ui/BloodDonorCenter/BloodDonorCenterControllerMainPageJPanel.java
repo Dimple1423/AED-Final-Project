@@ -47,7 +47,6 @@ public class BloodDonorCenterControllerMainPageJPanel extends javax.swing.JPanel
         ViewRequestjButton = new javax.swing.JButton();
         GoToInventoryjButton = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(235, 36, 91));
         setBorder(javax.swing.BorderFactory.createTitledBorder("BBI Landing Area"));
@@ -77,9 +76,6 @@ public class BloodDonorCenterControllerMainPageJPanel extends javax.swing.JPanel
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("BLOOD BANK INCHARGE");
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 10, -1, -1));
-
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/medistopUI.images/blood.gif"))); // NOI18N
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 70, 800, 600));
     }// </editor-fold>//GEN-END:initComponents
 
     private void ViewRequestjButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ViewRequestjButtonActionPerformed
@@ -107,6 +103,5 @@ public class BloodDonorCenterControllerMainPageJPanel extends javax.swing.JPanel
     private javax.swing.JButton GoToInventoryjButton;
     private javax.swing.JButton ViewRequestjButton;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     // End of variables declaration//GEN-END:variables
 }
