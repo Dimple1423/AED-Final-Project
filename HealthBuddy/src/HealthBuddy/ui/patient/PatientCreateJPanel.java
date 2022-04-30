@@ -107,7 +107,8 @@ public class PatientCreateJPanel extends javax.swing.JPanel {
         menuItemName.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         menuItemName.setText("Patient Name:");
 
-        donorNameTF.setForeground(new java.awt.Color(0, 0, 102));
+        donorNameTF.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        donorNameTF.setForeground(new java.awt.Color(0, 102, 102));
         donorNameTF.setText(" ");
 
         menuItemName1.setBackground(null);
@@ -116,10 +117,14 @@ public class PatientCreateJPanel extends javax.swing.JPanel {
         menuItemName1.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         menuItemName1.setText("Gender:");
 
+        maleRB.setBackground(new java.awt.Color(255, 255, 255));
         maleRB.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        maleRB.setForeground(new java.awt.Color(0, 102, 102));
         maleRB.setText("Male");
 
+        femaleRB.setBackground(new java.awt.Color(255, 255, 255));
         femaleRB.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        femaleRB.setForeground(new java.awt.Color(0, 102, 102));
         femaleRB.setText("Female");
         femaleRB.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -127,10 +132,14 @@ public class PatientCreateJPanel extends javax.swing.JPanel {
             }
         });
 
+        notToSayRB.setBackground(new java.awt.Color(255, 255, 255));
         notToSayRB.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        notToSayRB.setForeground(new java.awt.Color(0, 102, 102));
         notToSayRB.setText("Prefer Not to Say");
 
+        biRB.setBackground(new java.awt.Color(255, 255, 255));
         biRB.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        biRB.setForeground(new java.awt.Color(0, 102, 102));
         biRB.setText("Bi Sexual");
         biRB.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -138,7 +147,8 @@ public class PatientCreateJPanel extends javax.swing.JPanel {
             }
         });
 
-        dobTF.setForeground(new java.awt.Color(0, 0, 102));
+        dobTF.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        dobTF.setForeground(new java.awt.Color(0, 102, 102));
         dobTF.setText(" ");
 
         menuItemName2.setBackground(null);
@@ -153,7 +163,8 @@ public class PatientCreateJPanel extends javax.swing.JPanel {
         menuItemName3.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         menuItemName3.setText("Address:");
 
-        addTF.setForeground(new java.awt.Color(0, 0, 102));
+        addTF.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        addTF.setForeground(new java.awt.Color(0, 102, 102));
         addTF.setText(" ");
 
         menuItemName4.setBackground(null);
@@ -162,7 +173,8 @@ public class PatientCreateJPanel extends javax.swing.JPanel {
         menuItemName4.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         menuItemName4.setText("City:");
 
-        cityTF.setForeground(new java.awt.Color(0, 0, 102));
+        cityTF.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        cityTF.setForeground(new java.awt.Color(0, 102, 102));
         cityTF.setText(" ");
 
         menuItemName5.setBackground(null);
@@ -180,7 +192,8 @@ public class PatientCreateJPanel extends javax.swing.JPanel {
         menuItemName6.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         menuItemName6.setText("Zip Code:");
 
-        zipCodeTF.setForeground(new java.awt.Color(0, 0, 102));
+        zipCodeTF.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        zipCodeTF.setForeground(new java.awt.Color(0, 102, 102));
         zipCodeTF.setText(" ");
 
         menuItemName7.setBackground(null);
@@ -189,7 +202,8 @@ public class PatientCreateJPanel extends javax.swing.JPanel {
         menuItemName7.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         menuItemName7.setText("Profile Picture:");
 
-        phoneTF.setForeground(new java.awt.Color(0, 0, 102));
+        phoneTF.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        phoneTF.setForeground(new java.awt.Color(0, 102, 102));
         phoneTF.setText(" ");
 
         menuItemName8.setBackground(null);
@@ -217,7 +231,8 @@ public class PatientCreateJPanel extends javax.swing.JPanel {
         menuItemName9.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         menuItemName9.setText("Email:");
 
-        emailTF.setForeground(new java.awt.Color(0, 0, 102));
+        emailTF.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        emailTF.setForeground(new java.awt.Color(0, 102, 102));
         emailTF.setText(" ");
         emailTF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
