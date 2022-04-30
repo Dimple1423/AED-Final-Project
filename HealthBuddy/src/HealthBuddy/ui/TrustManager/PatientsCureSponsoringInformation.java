@@ -23,10 +23,10 @@ import javax.swing.JPanel;
 public class PatientsCureSponsoringInformation extends javax.swing.JPanel 
 {
     private JPanel showPanel;
-    private FundingEnterprise fundingEnterprise;
+    private EnterpriseTrust fundingEnterprise;
     private Network network;
     private EcoSystem ecoSystem;
-    private UserAccount userAccount;
+    private User userAccount;
     String funds;
     Float amountFromFunding;
     /**

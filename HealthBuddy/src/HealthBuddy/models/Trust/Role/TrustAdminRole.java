@@ -6,7 +6,7 @@ import HealthBuddy.models.Network.Network;
 import HealthBuddy.models.Role.Role;
 import HealthBuddy.models.Organisation.Organisation;
 import HealthBuddy.models.User.User;
-import HealthBuddy.ui.Admin.AdminWorkAreaJPanel;
+import HealthBuddy.ui.admin.WorkAreaAdminPanel;
 import javax.swing.JPanel;
 
 /**
@@ -18,6 +18,6 @@ public class TrustAdminRole extends Role{
     public JPanel createWorkArea(JPanel userProcessContainer, User account, Organisation organisation, Enterprise enterprise, Network network ,EcoSystem business) 
     {
          //need to add the work Area for AdminWorkAreaHere
-        return new AdminWorkAreaPanel(userProcessContainer, enterprise);
+        return new WorkAreaAdminPanel(userProcessContainer, enterprise);
     }
 }
