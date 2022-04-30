@@ -1,13 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package HealthBuddy.ui.patient;
 
 import java.awt.CardLayout;
-import medistopUI.donor.*;
+import HealthBuddy.ui.donor.*;
 import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.regex.Matcher;
@@ -16,25 +10,25 @@ import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.filechooser.FileSystemView;
-import medistopBackend.EcoSystem;
-import medistopBackend.UserData.DonorData;
-import medistopBackend.UserData.DonorDirectory;
-import medistopBackend.UserData.PatientData;
-import medistopBackend.UserData.PatientDirectory;
-import medistopUtil.OTPUtility;
-import medistopUtil.SMSUtility;
-import medistopUtil.SendEmailUtility;
-import medistopUtil.Utilities;
+import HealthBuddy.models.EcoSystem;
+import HealthBuddy.models.UserData.DonorData;
+import HealthBuddy.models.UserData.DonorCatalog;
+import HealthBuddy.models.UserData.PatientData;
+import HealthBuddy.models.UserData.PatientCatalog;
+import HealthBuddy.Util.OTPUtility;
+import HealthBuddy.Util.SMSUtility;
+import HealthBuddy.Util.SendEmailUtility;
+import HealthBuddy.Util.Utilities;
 
 /**
  *
- * @author 18577
+ * @author Dimple Patel
  */
 public class PatientCreateJPanel extends javax.swing.JPanel {
     
     private JPanel bodyPanel;
     private EcoSystem ecosystem;
-    private PatientDirectory patientDirectoy;
+    private PatientCatalog patientDirectoy;
 
     /** Creates new form DonorForm */
     public PatientCreateJPanel(JPanel bodyPanel, EcoSystem ecosystem) {

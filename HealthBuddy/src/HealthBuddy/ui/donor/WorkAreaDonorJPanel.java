@@ -6,8 +6,8 @@
 
 package HealthBuddy.ui.donor;
 
-import medistopBackend.EcoSystem;
-import medistopBackend.UserAccount.UserAccount;
+import HealthBuddy.models.EcoSystem;
+import HealthBuddy.models.User.User;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
