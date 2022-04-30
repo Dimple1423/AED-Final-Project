@@ -12,7 +12,7 @@ import HealthBuddy.models.User.User;
  *
  * @author Bhawna Singh
  */
-public class SysAdmin extends Role{
+public class SysAdmin extends Role {
 
     @Override
     public JPanel createWorkArea(JPanel userProcessContainer, User account, Organisation organisation, Enterprise enterprise, Network network, EcoSystem system) {
