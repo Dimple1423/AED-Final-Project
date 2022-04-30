@@ -24,8 +24,8 @@ import java.awt.Image;
  *
  * @author Nidhi Singh
  */
-public class PatientsCureSponsoringInformation extends javax.swing.JPanel 
-{
+public class PatientsCureSponsoringInformation extends javax.swing.JPanel {
+
     private JPanel showPanel;
     private EnterpriseTrust fundingEnterprise;
     private Network network;
@@ -33,11 +33,11 @@ public class PatientsCureSponsoringInformation extends javax.swing.JPanel
     private User userAccount;
     String funds;
     Float amountFromFunding;
+
     /**
      * Creates new form ViewPatienttoSponsorJPanel
      */
-    public PatientsCureSponsoringInformation(JPanel showPanel,EnterpriseTrust fundingEnterprise, Network network,EcoSystem ecoSystem, User userAccount, String funds ) 
-    {
+    public PatientsCureSponsoringInformation(JPanel showPanel, EnterpriseTrust fundingEnterprise, Network network, EcoSystem ecoSystem, User userAccount, String funds) {
         initComponents();
         this.showPanel = showPanel;
         this.fundingEnterprise = fundingEnterprise;
@@ -45,32 +45,29 @@ public class PatientsCureSponsoringInformation extends javax.swing.JPanel
         this.ecoSystem = ecoSystem;
         this.userAccount = userAccount;
         this.funds = funds;
-        
+
         amountFromFunding = Float.parseFloat(funds);
-        
+
         populateJTable();
-        setSize(1540,800);
+        setSize(1540, 800);
     }
-    
-    public void populateJTable()
-    {
-            DefaultTableModel model = (DefaultTableModel) patsponsorTAble.getModel();
-        
-            model.setRowCount(0);
-            for(WorkRequest request : network.getFundsRequests().getWorkRequestList())
-            {
-                HealthcareTrustRequestWQ hospitalFundsRequestWorkQueue;
-                hospitalFundsRequestWorkQueue = (HealthcareTrustRequestWQ)request;
-                Object[] row = new Object[5];
-                row[0] = hospitalFundsRequestWorkQueue;
-                row[1] = hospitalFundsRequestWorkQueue.getAmount();
-                row[2] = hospitalFundsRequestWorkQueue.getMessage();
-                row[3] = hospitalFundsRequestWorkQueue.getHospitalName();
-                row[4] = hospitalFundsRequestWorkQueue.getCity();
-                model.addRow(row);
-            }
+
+    public void populateJTable() {
+        DefaultTableModel model = (DefaultTableModel) patsponsorTAble.getModel();
+
+        model.setRowCount(0);
+        for (WorkRequest request : network.getFundsRequests().getWorkRequestList()) {
+            HealthcareTrustRequestWQ hospitalFundsRequestWorkQueue;
+            hospitalFundsRequestWorkQueue = (HealthcareTrustRequestWQ) request;
+            Object[] row = new Object[5];
+            row[0] = hospitalFundsRequestWorkQueue;
+            row[1] = hospitalFundsRequestWorkQueue.getAmount();
+            row[2] = hospitalFundsRequestWorkQueue.getMessage();
+            row[3] = hospitalFundsRequestWorkQueue.getHospitalName();
+            row[4] = hospitalFundsRequestWorkQueue.getCity();
+            model.addRow(row);
+        }
     }
-    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -201,33 +198,26 @@ public class PatientsCureSponsoringInformation extends javax.swing.JPanel
     }// </editor-fold>//GEN-END:initComponents
 
     private void sponsorButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sponsorButtonActionPerformed
-        
+
         DefaultTableModel model = (DefaultTableModel) patsponsorTAble.getModel();
         int selectedRow = patsponsorTAble.getSelectedRow();
-        if (selectedRow < 0)
-        {
+        if (selectedRow < 0) {
             JOptionPane.showMessageDialog(null, "Select a patient to sponsor", "Warning", JOptionPane.WARNING_MESSAGE);
-        }
-        else
-        {
-            HealthcareTrustRequestWQ request = (HealthcareTrustRequestWQ)patsponsorTAble.getValueAt(selectedRow,0);
+        } else {
+            HealthcareTrustRequestWQ request = (HealthcareTrustRequestWQ) patsponsorTAble.getValueAt(selectedRow, 0);
             float amount = request.getAmount();
-            
-            if(amount<amountFromFunding)
-            {
-                if(request.getMessage().equals("Acknowledged"))
-                {
-                    JOptionPane.showMessageDialog(null,"Request Already Processed please select a different patient","Error",JOptionPane.ERROR_MESSAGE);
-                }
-                else
-                {
+
+            if (amount < amountFromFunding) {
+                if (request.getMessage().equals("Acknowledged")) {
+                    JOptionPane.showMessageDialog(null, "Request Already Processed please select a different patient", "Error", JOptionPane.ERROR_MESSAGE);
+                } else {
                     request.setMessage("Acknowledged");
                     request.setReceiver(userAccount);
                     request.setFunderName(fundingEnterprise.getName());
                     populateJTable();
-                    amountFromFunding = amountFromFunding-amount;
+                    amountFromFunding = amountFromFunding - amount;
                     TrustReceiveWR recivedFundWorkRequest = new TrustReceiveWR();
-                    
+
                     recivedFundWorkRequest.setPatientName(request.getPatientName());
                     recivedFundWorkRequest.setFunderName(fundingEnterprise.getName());
                     recivedFundWorkRequest.setCity(network.getNetworkName());
@@ -235,30 +225,23 @@ public class PatientsCureSponsoringInformation extends javax.swing.JPanel
                     recivedFundWorkRequest.setHospitalName(request.getHospitalName());
                     recivedFundWorkRequest.setSender(userAccount);
                     recivedFundWorkRequest.setFundsSponsored(String.valueOf(request.getAmount()));
-                    
+
                     Enterprise enterprise = null;
-                    for(Network net: ecoSystem.getNetworkList())
-                    {
-                        for(Enterprise enter : net.getEnterpriseCatalog().getEnterpriseList())
-                        {
-                            if(enter.getName().equalsIgnoreCase(request.getHospitalName()))
-                            {
+                    for (Network net : ecoSystem.getNetworkList()) {
+                        for (Enterprise enter : net.getEnterpriseCatalog().getEnterpriseList()) {
+                            if (enter.getName().equalsIgnoreCase(request.getHospitalName())) {
                                 enterprise = enter;
                                 break;
                             }
                         }
                     }
-            
+
                     HealthcareOrganisationAssistant org = null;
-                    for (Organisation organi : enterprise.getOrganizationCatalog().getOrganizationList())
-                    {
-                        if(organi instanceof HealthcareOrganisationAssistant)
-                        {
-                            for(User uacc : organi.getUserCatalog().getUserCatalog())
-                            {
-                                if(uacc.getUsername().equalsIgnoreCase(request.getSender().getUsername()))
-                                {
-                                    org = (HealthcareOrganisationAssistant)organi;
+                    for (Organisation organi : enterprise.getOrganizationCatalog().getOrganizationList()) {
+                        if (organi instanceof HealthcareOrganisationAssistant) {
+                            for (User uacc : organi.getUserCatalog().getUserCatalog()) {
+                                if (uacc.getUsername().equalsIgnoreCase(request.getSender().getUsername())) {
+                                    org = (HealthcareOrganisationAssistant) organi;
                                     break;
                                 }
                             }
@@ -266,12 +249,10 @@ public class PatientsCureSponsoringInformation extends javax.swing.JPanel
                     }
                     org.getFundsReceived().getWorkRequestList().add(recivedFundWorkRequest);
                     userAccount.getWorkQueue().getWorkRequestList().add(recivedFundWorkRequest);
-                
+
                     JOptionPane.showMessageDialog(null, "Hospital Request successfully acknowledged by hospital", "Success", JOptionPane.INFORMATION_MESSAGE);
                 }
-            }
-            else
-            {
+            } else {
                 JOptionPane.showMessageDialog(null, "Funding Oranisation can't sponsor the treatment due to money sortage", "Warning", JOptionPane.WARNING_MESSAGE);
             }
         }

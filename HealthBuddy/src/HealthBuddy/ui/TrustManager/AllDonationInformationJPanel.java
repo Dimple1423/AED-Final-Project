@@ -16,39 +16,36 @@ import java.awt.Image;
  *
  * @author Nidhi Singh
  */
-public class AllDonationInformationJPanel extends javax.swing.JPanel 
-{
+public class AllDonationInformationJPanel extends javax.swing.JPanel {
+
     private EcoSystem ecoSystem;
     private JPanel showPanel;
     private Enterprise enterprise;
     private User userAccount;
+
     /**
      * Creates new form ViewDonationJPanel
      */
-    public AllDonationInformationJPanel(JPanel showPanel, EcoSystem ecoSystem, Enterprise enterprise, User userAccount)
-    {
+    public AllDonationInformationJPanel(JPanel showPanel, EcoSystem ecoSystem, Enterprise enterprise, User userAccount) {
         initComponents();
         this.showPanel = showPanel;
         this.ecoSystem = ecoSystem;
         this.enterprise = enterprise;
         this.userAccount = userAccount;
-        
+
         valueLable.setText(enterprise.getName());
-        
+
         populateJTable();
-        setSize(1540,800);
+        setSize(1540, 800);
     }
-    
-    public void populateJTable()
-    {
+
+    public void populateJTable() {
         DefaultTableModel model = (DefaultTableModel) donationDetailsJTable.getModel();
-        
+
         model.setRowCount(0);
-        
-        for(TrustDetails dd : ecoSystem.getDonationDirectory().getTrustCatalog())
-        {
-            if(dd.geTrustOrgName().equalsIgnoreCase(valueLable.getText()))
-            {
+
+        for (TrustDetails dd : ecoSystem.getDonationDirectory().getTrustCatalog()) {
+            if (dd.geTrustOrgName().equalsIgnoreCase(valueLable.getText())) {
                 Object[] row = new Object[3];
                 row[0] = dd.getDonor().getDonorName();
                 row[1] = dd.getDonation();

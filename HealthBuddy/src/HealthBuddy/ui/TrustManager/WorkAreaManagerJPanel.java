@@ -20,68 +20,62 @@ import java.awt.Image;
  *
  * @author Nidhi Singh
  */
-public class WorkAreaManagerJPanel extends javax.swing.JPanel 
-{
+public class WorkAreaManagerJPanel extends javax.swing.JPanel {
+
     private JPanel showPanel;
     private EnterpriseTrust enterprise;
     private User userAccount;
     private EcoSystem ecoSystem;
     private Network network;
     String funds;
+
     /**
      * Creates new form ManagerWorkAreaJPanel
      */
-    public WorkAreaManagerJPanel(JPanel showPanel, User userAccount, TrustOrgManager organisation, EnterpriseTrust enterprise, Network network, EcoSystem ecoSystem) 
-    {
+    public WorkAreaManagerJPanel(JPanel showPanel, User userAccount, TrustOrgManager organisation, EnterpriseTrust enterprise, Network network, EcoSystem ecoSystem) {
         initComponents();
         this.showPanel = showPanel;
         this.enterprise = enterprise;
         this.userAccount = userAccount;
         this.ecoSystem = ecoSystem;
         this.network = network;
-        setSize(1540,800);
-        
-        valtext.setText(enterprise.getName());    
-        
+        setSize(1540, 800);
+
+        valtext.setText(enterprise.getName());
+
         float amountReceived = 0;
-        
-        try
-        {
-            for(TrustDetails dd : ecoSystem.getDonationDirectory().getTrustCatalog())
-            {
-                if(dd.geTrustOrgName().equalsIgnoreCase(valtext.getText()))
+
+        try {
+            for (TrustDetails dd : ecoSystem.getDonationDirectory().getTrustCatalog()) {
+                if (dd.geTrustOrgName().equalsIgnoreCase(valtext.getText())) {
                     amountReceived += Float.parseFloat(dd.getDonation());
+                }
             }
-        
+
             trustvaltext.setText(String.valueOf(amountReceived));
             float sumUsed = fundCalculation();
-            float sumAvailable = (amountReceived-sumUsed);
-            funds = String.valueOf(amountReceived-sumUsed);
-        }
-        catch(Exception e)
-        {
+            float sumAvailable = (amountReceived - sumUsed);
+            funds = String.valueOf(amountReceived - sumUsed);
+        } catch (Exception e) {
             JOptionPane.showMessageDialog(null, "Server Down", "Warning", JOptionPane.WARNING_MESSAGE);
         }
     }
-    
-    public float fundCalculation()
-    {
-        float sum =0;
-        
-        for(WorkRequest request : network.getFundsRequests().getWorkRequestList())
-            {
-                HealthcareTrustRequestWQ hospitalFundsRequestWorkQueue = (HealthcareTrustRequestWQ)request;
-                
-                if(hospitalFundsRequestWorkQueue.getMessage().equalsIgnoreCase("Acknowledged") && hospitalFundsRequestWorkQueue.getFunderName().equalsIgnoreCase(enterprise.getName()))
-                {
-                    sum += hospitalFundsRequestWorkQueue.getAmount();
-                }
+
+    public float fundCalculation() {
+        float sum = 0;
+
+        for (WorkRequest request : network.getFundsRequests().getWorkRequestList()) {
+            HealthcareTrustRequestWQ hospitalFundsRequestWorkQueue = (HealthcareTrustRequestWQ) request;
+
+            if (hospitalFundsRequestWorkQueue.getMessage().equalsIgnoreCase("Acknowledged") && hospitalFundsRequestWorkQueue.getFunderName().equalsIgnoreCase(enterprise.getName())) {
+                sum += hospitalFundsRequestWorkQueue.getAmount();
             }
-        
+        }
+
         trustusedtext.setText(String.valueOf(sum));
         return sum;
-    }   
-    
+    }
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -195,30 +189,30 @@ public class WorkAreaManagerJPanel extends javax.swing.JPanel
     }// </editor-fold>//GEN-END:initComponents
 
     private void viewDonButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_viewDonButtonActionPerformed
-        AllDonationInformationJPanel completeDonationRelatedDetailsJPanel = new AllDonationInformationJPanel(showPanel, ecoSystem,enterprise, userAccount);
+        AllDonationInformationJPanel completeDonationRelatedDetailsJPanel = new AllDonationInformationJPanel(showPanel, ecoSystem, enterprise, userAccount);
         showPanel.add("completeDonationRelatedDetailsJPanel", completeDonationRelatedDetailsJPanel);
         CardLayout layout = (CardLayout) showPanel.getLayout();
         layout.next(showPanel);
     }//GEN-LAST:event_viewDonButtonActionPerformed
 
     private void pickupButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pickupButtonActionPerformed
-        PatientsCureSponsoringInformation patientsTreatmentSponsoringDetails = new PatientsCureSponsoringInformation(showPanel,enterprise,network,ecoSystem, userAccount,funds);
+        PatientsCureSponsoringInformation patientsTreatmentSponsoringDetails = new PatientsCureSponsoringInformation(showPanel, enterprise, network, ecoSystem, userAccount, funds);
         showPanel.add("patientsTreatmentSponsoringDetails", patientsTreatmentSponsoringDetails);
         CardLayout layout = (CardLayout) showPanel.getLayout();
         layout.next(showPanel);
     }//GEN-LAST:event_pickupButtonActionPerformed
 
     private void btnRefreshActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRefreshActionPerformed
-        float sum =0;
-        
-        for(WorkRequest request : network.getFundsRequests().getWorkRequestList())
-            {
-                HealthcareTrustRequestWQ hospitalFundsRequestWorkQueue = (HealthcareTrustRequestWQ)request;
-                
-                if(hospitalFundsRequestWorkQueue.getMessage().equalsIgnoreCase("Acknowledged") && hospitalFundsRequestWorkQueue.getFunderName().equalsIgnoreCase(enterprise.getName()))
-                    sum += hospitalFundsRequestWorkQueue.getAmount();
+        float sum = 0;
+
+        for (WorkRequest request : network.getFundsRequests().getWorkRequestList()) {
+            HealthcareTrustRequestWQ hospitalFundsRequestWorkQueue = (HealthcareTrustRequestWQ) request;
+
+            if (hospitalFundsRequestWorkQueue.getMessage().equalsIgnoreCase("Acknowledged") && hospitalFundsRequestWorkQueue.getFunderName().equalsIgnoreCase(enterprise.getName())) {
+                sum += hospitalFundsRequestWorkQueue.getAmount();
             }
-        
+        }
+
         trustusedtext.setText(String.valueOf(sum));
     }//GEN-LAST:event_btnRefreshActionPerformed
 
