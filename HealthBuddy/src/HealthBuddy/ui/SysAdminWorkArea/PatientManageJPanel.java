@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package HealthBuddy.ui.SysAdminWorkArea;
 
 import java.awt.CardLayout;
@@ -10,12 +5,12 @@ import java.awt.Component;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.table.DefaultTableModel;
-import medistopBackend.EcoSystem;
-import medistopBackend.UserData.PatientData;
+import HealthBuddy.models.EcoSystem;
+import HealthBuddy.models.UserData.PatientData;
 
 /**
  *
- * @author Virendra Rathore
+ * @author Nidhi Singh
  */
 public class PatientManageJPanel extends javax.swing.JPanel {
 JPanel showPanel;
@@ -33,7 +28,7 @@ EcoSystem ecosystem;
     private void populatePatinetTable() {
         DefaultTableModel model = (DefaultTableModel) tblPatient.getModel();
         model.setRowCount(0);
-        for (PatientData network : ecosystem.getPatientDir().getPatientDirectory()) {
+        for (PatientData network : ecosystem.getPatientDir().getPatientCatalog()) {
             Object[] row = new Object[1];
             row[0] = network;
             model.addRow(row);
@@ -177,7 +172,7 @@ EcoSystem ecosystem;
        int selectedRow = tblPatient.getSelectedRow();
         if(selectedRow>=0){
         PatientData patient = (PatientData)tblPatient.getValueAt(selectedRow,0);
-        ecosystem.getUserAccountDirectory().removeUserAccount(patient.getUsername());
+        ecosystem.getUserCatalog().removeUserAccount(patient.getUsername());
         ecosystem.getPatientDir().removePatient(patient);
         populatePatinetTable();
     }//GEN-LAST:event_btnDeleteActionPerformed

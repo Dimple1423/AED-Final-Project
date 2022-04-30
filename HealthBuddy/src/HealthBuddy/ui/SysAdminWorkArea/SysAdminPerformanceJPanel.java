@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package HealthBuddy.ui.SysAdminWorkArea;
 
 import java.awt.CardLayout;
@@ -10,13 +5,13 @@ import java.util.HashMap;
 import java.util.Map;
 import javax.swing.JPanel;
 import javax.swing.table.DefaultTableModel;
-import medistopBackend.EcoSystem;
-import medistopBackend.Funds.Donation.FundsInfo;
-import medistopBackend.Hospital.Appointment.AppointmentDetails;
+import HealthBuddy.models.EcoSystem;
+import HealthBuddy.models.Trust.Donation.TrustDetails;
+import HealthBuddy.models.Healthcare.Appointment.AppointmentInformation;
 
 /**
  *
- * @author Virendra Rathore
+ * @author Nidhi Singh
  */
 public class SysAdminPerformanceJPanel extends javax.swing.JPanel 
 {
@@ -179,9 +174,9 @@ public class SysAdminPerformanceJPanel extends javax.swing.JPanel
 
     private void btnOrganisationWithMaximumFundsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOrganisationWithMaximumFundsActionPerformed
         Map<String,Float> funds = new HashMap<String, Float>();
-        for (int i = 0; i < ecosystem.getDonationDirectory().getFundsDirectory().size(); i++) {
-            FundsInfo fi=ecosystem.getDonationDirectory().getFundsDirectory().get(i);
-            String name  = fi.getFundsOrgName();
+        for (int i = 0; i < ecosystem.getDonationDirectory().getTrustCatalog().size(); i++) {
+            TrustDetails fi=ecosystem.getDonationDirectory().getTrustCatalog().get(i);
+            String name  = fi.geTrustOrgName();
             float amount = 0;
             if(funds.containsKey(name))
             {
@@ -207,8 +202,8 @@ public class SysAdminPerformanceJPanel extends javax.swing.JPanel
     private void btnFrequentlyVisitedHospitalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFrequentlyVisitedHospitalActionPerformed
         Map<String,Integer> patient = new HashMap<String, Integer>();
    
-        for (int i = 0; i < ecosystem.getAppointmentDirectory().getAppointmentDirectory().size(); i++) {
-            AppointmentDetails ad=ecosystem.getAppointmentDirectory().getAppointmentDirectory().get(i);
+        for (int i = 0; i < ecosystem.getAppointmentCatalog().getAppointmentCatalog().size(); i++) {
+            AppointmentInformation ad=ecosystem.getAppointmentCatalog().getAppointmentCatalog().get(i);
             String nameOfHospital  = ad.getHospitalName();
             int  visitMadeByPatients = 0;
             if(patient.containsKey(ad.getHospitalName()))
@@ -236,8 +231,8 @@ public class SysAdminPerformanceJPanel extends javax.swing.JPanel
 
     private void btnPrimeDonorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPrimeDonorActionPerformed
         Map<String,Float> donators = new HashMap<String, Float>();
-        for (int i = 0; i < ecosystem.getDonationDirectory().getFundsDirectory().size(); i++) {
-            FundsInfo fi=ecosystem.getDonationDirectory().getFundsDirectory().get(i);
+        for (int i = 0; i < ecosystem.getDonationDirectory().getTrustCatalog().size(); i++) {
+            TrustDetails fi=ecosystem.getDonationDirectory().getTrustCatalog().get(i);
             String donorsUserName  = fi.getDonor().getUsername();
             float amount = 0;
             if(donators.containsKey(fi.getDonor().getUsername()))
@@ -261,8 +256,8 @@ public class SysAdminPerformanceJPanel extends javax.swing.JPanel
 
     private void btnFrequentPatientActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFrequentPatientActionPerformed
         Map<String,Integer> patient = new HashMap<String, Integer>();
-        for (int i = 0; i < ecosystem.getAppointmentDirectory().getAppointmentDirectory().size(); i++) {
-            AppointmentDetails ad=ecosystem.getAppointmentDirectory().getAppointmentDirectory().get(i);
+        for (int i = 0; i < ecosystem.getAppointmentCatalog().getAppointmentCatalog().size(); i++) {
+            AppointmentInformation ad=ecosystem.getAppointmentCatalog().getAppointmentCatalog().get(i);
             String patientsUserName  = ad.getPatient().getUsername();
             int  NumberOfVisitsMadeByPatient = 0;
             if(patient.containsKey(ad.getPatient().getUsername()))
@@ -289,8 +284,8 @@ public class SysAdminPerformanceJPanel extends javax.swing.JPanel
 
     private void btnFrequentlyVistedDoctorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFrequentlyVistedDoctorActionPerformed
          Map<String,Integer> doctors = new HashMap<String, Integer>();
-        for (int i = 0; i < ecosystem.getAppointmentDirectory().getAppointmentDirectory().size(); i++) {
-            AppointmentDetails ad=ecosystem.getAppointmentDirectory().getAppointmentDirectory().get(i);
+        for (int i = 0; i < ecosystem.getAppointmentCatalog().getAppointmentCatalog().size(); i++) {
+            AppointmentInformation ad=ecosystem.getAppointmentCatalog().getAppointmentCatalog().get(i);
             String doctorsName  = ad.getDoctorName();
             int  visitMadeByPatient = 0;
             
@@ -319,9 +314,9 @@ public class SysAdminPerformanceJPanel extends javax.swing.JPanel
 
     private void btnOrganisationWithMaximumDonorsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOrganisationWithMaximumDonorsActionPerformed
         Map<String,Integer> mostfundedOrg = new HashMap<String, Integer>();
-        for (int i = 0; i < ecosystem.getDonationDirectory().getFundsDirectory().size(); i++) {
-            FundsInfo fi=ecosystem.getDonationDirectory().getFundsDirectory().get(i);
-            String name  = fi.getFundsOrgName();
+        for (int i = 0; i < ecosystem.getDonationDirectory().getTrustCatalog().size(); i++) {
+            TrustDetails fi=ecosystem.getDonationDirectory().getTrustCatalog().get(i);
+            String name  = fi.geTrustOrgName();
             int number = 0;
             if(mostfundedOrg.containsKey(name))
             {

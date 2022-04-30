@@ -14,7 +14,7 @@ public class TrustCatalog {
         this.trustCatalog = new ArrayList<TrustDetails>();
     }
 
-    public ArrayList<TrustDetails> geTrustCatalog() {
+    public ArrayList<TrustDetails> getTrustCatalog() {
         return trustCatalog;
     }
 

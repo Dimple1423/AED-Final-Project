@@ -1,17 +1,13 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package HealthBuddy.ui.SysAdminWorkArea;
 
-import medistopBackend.EcoSystem;
-import medistopBackend.Employee.Employee;
-import medistopBackend.Enterprise.Enterprise;
-import medistopBackend.Network.Network;
-import medistopBackend.Hospital.Role.HospitalAdmin;
-import medistopBackend.Funds.Role.FundsAdmin;
-import medistopBackend.Bloodbank.Role.BloodBankAdmin;
-import medistopBackend.UserAccount.UserAccount;
+import HealthBuddy.models.EcoSystem;
+import HealthBuddy.models.Employee.Employee;
+import HealthBuddy.models.Enterprise.Enterprise;
+import HealthBuddy.models.Network.Network;
+import HealthBuddy.models.Healthcare.Role.HealthcareAdmin;
+import HealthBuddy.models.Trust.Role.TrustAdminRole;
+import HealthBuddy.models.BloodDonorCenter.Role.BloodDonorCenterAdmin;
+import HealthBuddy.models.User.User;
 import java.awt.CardLayout;
 import java.awt.Component;
 import javax.swing.JPanel;
@@ -38,8 +34,8 @@ public class AdminEnterpriseManagerJPanel extends javax.swing.JPanel {
         DefaultTableModel model = (DefaultTableModel) tblEnterprise.getModel();
         model.setRowCount(0);
         for (Network network : system.getNetworkList()) {
-            for (Enterprise enterprise : network.getEnterpriseDirectory().getEnterpriseList()) {
-                for (UserAccount userAccount : enterprise.getUserAccountDirectory().getUserAccountDirectory()) {
+            for (Enterprise enterprise : network.getEnterpriseCatalog().getEnterpriseList()) {
+                for (User userAccount : enterprise.getUserCatalog().getUserCatalog()) {
                     Object[] row = new Object[3];
                     row[0] = enterprise.getName();
                     row[1] = network.getNetworkName();
@@ -60,8 +56,8 @@ public class AdminEnterpriseManagerJPanel extends javax.swing.JPanel {
     
     private void populateEnterpriseComboBox(Network network){
         enterpriseJComboBox.removeAllItems();
-        for (int i = 0; i < network.getEnterpriseDirectory().getEnterpriseList().size(); i++) {
-            Enterprise enterprise=network.getEnterpriseDirectory().getEnterpriseList().get(i);
+        for (int i = 0; i < network.getEnterpriseCatalog().getEnterpriseList().size(); i++) {
+            Enterprise enterprise=network.getEnterpriseCatalog().getEnterpriseList().get(i);
             enterpriseJComboBox.addItem(enterprise);
         }
     }
@@ -198,15 +194,15 @@ public class AdminEnterpriseManagerJPanel extends javax.swing.JPanel {
         String username = txtUsername.getText();
         String password = String.valueOf(txtPassword.getPassword());
         String name = txtName.getText();
-        Employee employee = enterprise.getEmployeeDirectory().addEmployee(name);
-        if(enterprise.getEnterpriseClassification().equals(Enterprise.EnterpriseClassification.Hospital)){
-        UserAccount account = enterprise.getUserAccountDirectory().newUserAccount(username, password, employee, new HospitalAdmin());
+        Employee employee = enterprise.getEmployeeCatalog().addEmployee(name);
+        if(enterprise.getEnterpriseClassification().equals(Enterprise.EnterpriseClassification.Healthcare)){
+        User account = enterprise.getUserCatalog().newUserAccount(username, password, employee, new HealthcareAdmin());
         }
-        if(enterprise.getEnterpriseClassification().equals(Enterprise.EnterpriseClassification.Funds)){
-        UserAccount account = enterprise.getUserAccountDirectory().newUserAccount(username, password, employee, new FundsAdmin());
+        if(enterprise.getEnterpriseClassification().equals(Enterprise.EnterpriseClassification.Trust)){
+        User account = enterprise.getUserCatalog().newUserAccount(username, password, employee, new TrustAdminRole());
         }
-        if(enterprise.getEnterpriseClassification().equals(Enterprise.EnterpriseClassification.Bloodbank)){
-        UserAccount account = enterprise.getUserAccountDirectory().newUserAccount(username, password, employee, new BloodBankAdmin());
+        if(enterprise.getEnterpriseClassification().equals(Enterprise.EnterpriseClassification.BloodDonorCenter)){
+        User account = enterprise.getUserCatalog().newUserAccount(username, password, employee, new BloodDonorCenterAdmin());
         }
         populateEnterpriseAdminTable();
         txtUsername.setText("");

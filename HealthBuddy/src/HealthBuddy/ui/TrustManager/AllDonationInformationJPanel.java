@@ -1,32 +1,27 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package HealthBuddy.ui.TrustManager;
 
-import medistopBackend.EcoSystem;
-import medistopBackend.Enterprise.Enterprise;
-import medistopBackend.UserAccount.UserAccount;
-import medistopBackend.Funds.Donation.FundsInfo;
+import HealthBuddy.models.EcoSystem;
+import HealthBuddy.models.Enterprise.Enterprise;
+import HealthBuddy.models.User.User;
+import HealthBuddy.models.Trust.Donation.TrustDetails;
 import java.awt.CardLayout;
 import javax.swing.JPanel;
 import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author 
+ * @author Nidhi Singh
  */
 public class AllDonationInformationJPanel extends javax.swing.JPanel 
 {
     private EcoSystem ecoSystem;
     private JPanel showPanel;
     private Enterprise enterprise;
-    private UserAccount userAccount;
+    private User userAccount;
     /**
      * Creates new form ViewDonationJPanel
      */
-    public AllDonationInformationJPanel(JPanel showPanel, EcoSystem ecoSystem, Enterprise enterprise, UserAccount userAccount)
+    public AllDonationInformationJPanel(JPanel showPanel, EcoSystem ecoSystem, Enterprise enterprise, User userAccount)
     {
         initComponents();
         this.showPanel = showPanel;
@@ -45,9 +40,9 @@ public class AllDonationInformationJPanel extends javax.swing.JPanel
         
         model.setRowCount(0);
         
-        for(FundsInfo dd : ecoSystem.getDonationDirectory().getFundsDirectory())
+        for(TrustDetails dd : ecoSystem.getDonationDirectory().getTrustCatalog())
         {
-            if(dd.getFundsOrgName().equalsIgnoreCase(lblValue.getText()))
+            if(dd.geTrustOrgName().equalsIgnoreCase(lblValue.getText()))
             {
                 Object[] row = new Object[3];
                 row[0] = dd.getDonor().getDonorName();
