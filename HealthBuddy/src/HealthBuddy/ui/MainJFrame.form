@@ -70,7 +70,7 @@
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace pref="653" max="32767" attributes="0"/>
+                      <EmptySpace pref="649" max="32767" attributes="0"/>
                       <Component id="LabelHealthBuddy" min="-2" pref="243" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="305" max="-2" attributes="0"/>
                       <Component id="ButtonSI" linkSize="1" min="-2" pref="106" max="-2" attributes="0"/>
