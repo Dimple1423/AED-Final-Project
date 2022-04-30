@@ -7,7 +7,7 @@ import com.twilio.exception.ApiException;
 
 /**
  *
- * @author Dimpole Patel
+ * @author Dimple Patel
  */
 public class SMSUtility {
 
