@@ -9,7 +9,7 @@ import HealthBuddy.models.Enterprise.Enterprise;
 import HealthBuddy.models.Network.Network;
 import HealthBuddy.models.Organisation.Organisation;
 import HealthBuddy.models.Role.Role;
-import HealthBuddy.models.UserAccount.User;
+import HealthBuddy.models.User.User;
 import HealthBuddy.ui.BloodDonorCenter.BloodDonorCenterControllerMainPageJPanel;
 
 /**

@@ -202,7 +202,7 @@ public class WorkAreaVolunteerJPanel extends javax.swing.JPanel {
                 request.setStatus("Published");
                 populateTable();
                 int count =0;
-                for(TrustDetails funds : ecosystem.getDonationDirectory().geTrustCatalog())
+                for(TrustDetails funds : ecosystem.getDonationDirectory().getTrustCatalog())
                 {
                     if(funds.geTrustOrgName().equalsIgnoreCase(enterprise.getName()))
                     {
@@ -213,7 +213,7 @@ public class WorkAreaVolunteerJPanel extends javax.swing.JPanel {
                 String[] receiver = new String[count];
         
                 int index =0;
-                for(TrustDetails donation : ecosystem.getDonationDirectory().geTrustCatalog())
+                for(TrustDetails donation : ecosystem.getDonationDirectory().getTrustCatalog())
                 {
                     if(donation.geTrustOrgName().equalsIgnoreCase(enterprise.getName()))
                     {

@@ -758,7 +758,7 @@ public class AssistantWorkAreaPanel extends javax.swing.JPanel {
                 {
                     patientBooking.setStatus("Approved");
                     populateAppointmentTable();
-                    AppointmentDetails appointment = ecosystem.getAppointmentDirectory().createAppointment();
+                    AppointmentInformation appointment = ecosystem.getAppointmentCatalog().createAppointment();
                     appointment.setCityOfTreated(patientBooking.getCity());
                     appointment.setDoctorName(patientBooking.getDoctor());
                     appointment.setHospitalName(patientBooking.getHospitalName());
@@ -784,8 +784,8 @@ public class AssistantWorkAreaPanel extends javax.swing.JPanel {
          
          if(selectedRow>-1)
             {
-                DoctorAssistantAccountingWorkQueue  assistantAccounting = (DoctorAssistantAccountingWorkQueue)tblFundingRequests.getValueAt(selectedRow, 0);
-                HospitalFundsRequestWorkQueue fundsRequest = new HospitalFundsRequestWorkQueue();
+                DoctorAssistantAccountWQ  assistantAccounting = (DoctorAssistantAccountWQ)tblFundingRequests.getValueAt(selectedRow, 0);
+                HealthcareTrustRequestWQ fundsRequest = new HealthcareTrustRequestWQ();
                 
                 fundsRequest.setSender(ua);
                 fundsRequest.setAmount(Float.parseFloat(txtFundReqd.getText()));
