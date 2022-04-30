@@ -43,30 +43,33 @@ public class SigninJPanel extends javax.swing.JPanel {
         loginBtn = new javax.swing.JButton();
         setAccL = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(102, 153, 255));
+        setBackground(new java.awt.Color(255, 255, 255));
 
-        jPanel1.setBackground(new java.awt.Color(153, 204, 255));
+        jPanel1.setBackground(new java.awt.Color(0, 102, 102));
         jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
 
-        userNameLabel.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        userNameLabel.setForeground(new java.awt.Color(0, 0, 102));
+        userNameLabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        userNameLabel.setForeground(new java.awt.Color(255, 255, 255));
         userNameLabel.setText("Username:");
 
+        passPF.setFont(new java.awt.Font("Tahoma", 0, 13)); // NOI18N
+        passPF.setForeground(new java.awt.Color(0, 102, 102));
         passPF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 passPFActionPerformed(evt);
             }
         });
 
-        paswdL.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        paswdL.setForeground(new java.awt.Color(0, 0, 102));
+        paswdL.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        paswdL.setForeground(new java.awt.Color(255, 255, 255));
         paswdL.setText("Password:");
 
-        usernameTF.setForeground(new java.awt.Color(0, 0, 102));
+        usernameTF.setFont(new java.awt.Font("Tahoma", 0, 13)); // NOI18N
+        usernameTF.setForeground(new java.awt.Color(0, 102, 102));
         usernameTF.setText(" ");
 
-        loginBtn.setBackground(new java.awt.Color(0, 51, 102));
-        loginBtn.setFont(new java.awt.Font("Segoe UI", 1, 19)); // NOI18N
+        loginBtn.setBackground(new java.awt.Color(0, 102, 102));
+        loginBtn.setFont(new java.awt.Font("Tahoma", 1, 19)); // NOI18N
         loginBtn.setForeground(new java.awt.Color(255, 255, 255));
         loginBtn.setText("Login");
         loginBtn.addActionListener(new java.awt.event.ActionListener() {
@@ -75,9 +78,10 @@ public class SigninJPanel extends javax.swing.JPanel {
             }
         });
 
-        setAccL.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        setAccL.setForeground(new java.awt.Color(0, 51, 102));
-        setAccL.setText("LOGIN INTO YOUR ACCOUNT");
+        setAccL.setBackground(new java.awt.Color(255, 255, 255));
+        setAccL.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        setAccL.setForeground(new java.awt.Color(255, 255, 255));
+        setAccL.setText("Signin To Your Account");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
