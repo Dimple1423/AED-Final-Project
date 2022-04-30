@@ -5,14 +5,14 @@
  */
 package HealthBuddy.ui.TrustManager;
 
-import medistopBackend.Funds.Organisation.FundsOrganisationManager;
-import medistopBackend.EcoSystem;
-import medistopBackend.Enterprise.FundingEnterprise;
-import medistopBackend.Network.Network;
-import medistopBackend.UserAccount.UserAccount;
-import medistopBackend.WorkQueue.HospitalFundsRequestWorkQueue;
-import medistopBackend.WorkQueue.WorkRequest;
-import medistopBackend.Funds.Donation.FundsInfo;
+import HealthBuddy.models.Trust.Organisation.TrustOrgManager;
+import HealthBuddy.models.EcoSystem;
+import HealthBuddy.models.Enterprise.EnterpriseTrust;
+import HealthBuddy.models.Network.Network;
+import HealthBuddy.models.User.User;
+import HealthBuddy.models.WorkQueue.HealthcareTrustRequestWQ;
+import HealthBuddy.models.WorkQueue.WorkRequest;
+import HealthBuddy.models.Trust.Donation.TrustDetails;
 import java.awt.CardLayout;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
@@ -24,15 +24,15 @@ import javax.swing.JPanel;
 public class WorkAreaManagerJPanel extends javax.swing.JPanel 
 {
     private JPanel showPanel;
-    private FundingEnterprise enterprise;
-    private UserAccount userAccount;
+    private EnterpriseTrust enterprise;
+    private User userAccount;
     private EcoSystem ecoSystem;
     private Network network;
     String funds;
     /**
      * Creates new form ManagerWorkAreaJPanel
      */
-    public WorkAreaManagerJPanel(JPanel showPanel, UserAccount userAccount, FundsOrganisationManager organisation, FundingEnterprise enterprise, Network network, EcoSystem ecoSystem) 
+    public WorkAreaManagerJPanel(JPanel showPanel, User userAccount, TrustOrgManager organisation, EnterpriseTrust enterprise, Network network, EcoSystem ecoSystem) 
     {
         initComponents();
         this.showPanel = showPanel;
@@ -47,9 +47,9 @@ public class WorkAreaManagerJPanel extends javax.swing.JPanel
         
         try
         {
-            for(FundsInfo dd : ecoSystem.getDonationDirectory().getFundsDirectory())
+            for(TrustDetails dd : ecoSystem.getDonationDirectory().getTrustCatalog())
             {
-                if(dd.getFundsOrgName().equalsIgnoreCase(lblValue.getText()))
+                if(dd.geTrustOrgName().equalsIgnoreCase(lblValue.getText()))
                 {
                     amountReceived += Float.parseFloat(dd.getDonation());
                 }
@@ -72,7 +72,7 @@ public class WorkAreaManagerJPanel extends javax.swing.JPanel
         
         for(WorkRequest request : network.getFundsRequests().getWorkRequestList())
             {
-                HospitalFundsRequestWorkQueue hospitalFundsRequestWorkQueue = (HospitalFundsRequestWorkQueue)request;
+                HealthcareTrustRequestWQ hospitalFundsRequestWorkQueue = (HealthcareTrustRequestWQ)request;
                 
                 if(hospitalFundsRequestWorkQueue.getMessage().equalsIgnoreCase("Acknowledged") && hospitalFundsRequestWorkQueue.getFunderName().equalsIgnoreCase(enterprise.getName()))
                 {
@@ -190,7 +190,7 @@ public class WorkAreaManagerJPanel extends javax.swing.JPanel
         
         for(WorkRequest request : network.getFundsRequests().getWorkRequestList())
             {
-                HospitalFundsRequestWorkQueue hospitalFundsRequestWorkQueue = (HospitalFundsRequestWorkQueue)request;
+                HealthcareTrustRequestWQ hospitalFundsRequestWorkQueue = (HealthcareTrustRequestWQ)request;
                 
                 if(hospitalFundsRequestWorkQueue.getMessage().equalsIgnoreCase("Acknowledged") && hospitalFundsRequestWorkQueue.getFunderName().equalsIgnoreCase(enterprise.getName()))
                 {

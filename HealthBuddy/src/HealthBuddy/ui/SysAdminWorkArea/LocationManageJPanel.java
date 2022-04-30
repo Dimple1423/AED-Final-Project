@@ -1,22 +1,18 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package HealthBuddy.ui.SysAdminWorkArea;
 
 
 import java.awt.CardLayout;
+import HealthBuddy.models.Network.Network;
 import java.awt.Component;
+import javax.swing.table.DefaultTableModel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
-import javax.swing.table.DefaultTableModel;
-import medistopBackend.EcoSystem;
-import medistopBackend.Network.Network;
+import HealthBuddy.models.EcoSystem;
+
 
 /**
  *
- * @author Virendra Rathore
+ * @author Nidhi Singh
  */
 public class LocationManageJPanel extends javax.swing.JPanel {
 JPanel showPanel;

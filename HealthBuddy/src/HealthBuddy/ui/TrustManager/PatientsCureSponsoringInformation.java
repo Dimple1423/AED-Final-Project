@@ -1,29 +1,24 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package HealthBuddy.ui.TrustManager;
 
-import medistopBackend.EcoSystem;
-import medistopBackend.Enterprise.FundingEnterprise;
-import medistopBackend.Enterprise.Enterprise;
-import medistopBackend.Network.Network;
-import medistopBackend.Organisation.Organisation;
-import medistopBackend.UserAccount.UserAccount;
-import medistopBackend.WorkQueue.ReceivedFundWorkRequest;
-import medistopBackend.WorkQueue.HospitalFundsRequestWorkQueue;
-import medistopBackend.WorkQueue.WorkRequest;
-import medistopBackend.Hospital.Organisation.HospitalOrganisationAssistant;
+import HealthBuddy.models.EcoSystem;
+import HealthBuddy.models.Organisation.Organisation;
+import HealthBuddy.models.Enterprise.EnterpriseTrust;
+import HealthBuddy.models.Enterprise.Enterprise;
+import HealthBuddy.models.Network.Network;
+import HealthBuddy.models.WorkQueue.TrustReceiveWR;
+import HealthBuddy.models.Healthcare.Organisation.HealthcareOrganisationAssistant;
+import HealthBuddy.models.WorkQueue.HealthcareTrustRequestWQ;
+import HealthBuddy.models.WorkQueue.WorkRequest;
+import HealthBuddy.models.User.User;
 import java.awt.CardLayout;
-import java.util.Date;
-import javax.swing.JOptionPane;
-import javax.swing.JPanel;
 import javax.swing.table.DefaultTableModel;
+import javax.swing.JOptionPane;
+import java.util.Date;
+import javax.swing.JPanel;
 
 /**
  *
- * @author Virendra Rathore
+ * @author Nidhi Singh
  */
 public class PatientsCureSponsoringInformation extends javax.swing.JPanel 
 {
@@ -37,7 +32,7 @@ public class PatientsCureSponsoringInformation extends javax.swing.JPanel
     /**
      * Creates new form ViewPatienttoSponsorJPanel
      */
-    public PatientsCureSponsoringInformation(JPanel showPanel,FundingEnterprise fundingEnterprise, Network network,EcoSystem ecoSystem, UserAccount userAccount, String funds ) 
+    public PatientsCureSponsoringInformation(JPanel showPanel,EnterpriseTrust fundingEnterprise, Network network,EcoSystem ecoSystem, User userAccount, String funds ) 
     {
         initComponents();
         this.showPanel = showPanel;
@@ -59,8 +54,8 @@ public class PatientsCureSponsoringInformation extends javax.swing.JPanel
             model.setRowCount(0);
             for(WorkRequest request : network.getFundsRequests().getWorkRequestList())
             {
-                HospitalFundsRequestWorkQueue hospitalFundsRequestWorkQueue;
-                hospitalFundsRequestWorkQueue = (HospitalFundsRequestWorkQueue)request;
+                HealthcareTrustRequestWQ hospitalFundsRequestWorkQueue;
+                hospitalFundsRequestWorkQueue = (HealthcareTrustRequestWQ)request;
                 Object[] row = new Object[5];
                 row[0] = hospitalFundsRequestWorkQueue;
                 row[1] = hospitalFundsRequestWorkQueue.getAmount();
@@ -196,7 +191,7 @@ public class PatientsCureSponsoringInformation extends javax.swing.JPanel
         }
         else
         {
-            HospitalFundsRequestWorkQueue request = (HospitalFundsRequestWorkQueue)patientSponsorshipJTable.getValueAt(selectedRow,0);
+            HealthcareTrustRequestWQ request = (HealthcareTrustRequestWQ)patientSponsorshipJTable.getValueAt(selectedRow,0);
             float amount = request.getAmount();
             
             if(amount<amountFromFunding)
@@ -212,7 +207,7 @@ public class PatientsCureSponsoringInformation extends javax.swing.JPanel
                     request.setFunderName(fundingEnterprise.getName());
                     populateJTable();
                     amountFromFunding = amountFromFunding-amount;
-                    ReceivedFundWorkRequest recivedFundWorkRequest = new ReceivedFundWorkRequest();
+                    TrustReceiveWR recivedFundWorkRequest = new TrustReceiveWR();
                     
                     recivedFundWorkRequest.setPatientName(request.getPatientName());
                     recivedFundWorkRequest.setFunderName(fundingEnterprise.getName());
@@ -225,7 +220,7 @@ public class PatientsCureSponsoringInformation extends javax.swing.JPanel
                     Enterprise enterprise = null;
                     for(Network net: ecoSystem.getNetworkList())
                     {
-                        for(Enterprise enter : net.getEnterpriseDirectory().getEnterpriseList())
+                        for(Enterprise enter : net.getEnterpriseCatalog().getEnterpriseList())
                         {
                             if(enter.getName().equalsIgnoreCase(request.getHospitalName()))
                             {
@@ -235,16 +230,16 @@ public class PatientsCureSponsoringInformation extends javax.swing.JPanel
                         }
                     }
             
-                    HospitalOrganisationAssistant org = null;
-                    for (Organisation organi : enterprise.getOrganizationDirectory().getOrganizationList())
+                    HealthcareOrganisationAssistant org = null;
+                    for (Organisation organi : enterprise.getOrganizationCatalog().getOrganizationList())
                     {
-                        if(organi instanceof HospitalOrganisationAssistant)
+                        if(organi instanceof HealthcareOrganisationAssistant)
                         {
-                            for(UserAccount uacc : organi.getUserAccountDirectory().getUserAccountDirectory())
+                            for(User uacc : organi.getUserCatalog().getUserCatalog())
                             {
                                 if(uacc.getUsername().equalsIgnoreCase(request.getSender().getUsername()))
                                 {
-                                    org = (HospitalOrganisationAssistant)organi;
+                                    org = (HealthcareOrganisationAssistant)organi;
                                     break;
                                 }
                             }

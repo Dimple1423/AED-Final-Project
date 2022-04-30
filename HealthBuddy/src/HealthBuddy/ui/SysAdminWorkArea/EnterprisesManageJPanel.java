@@ -1,22 +1,18 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package HealthBuddy.ui.SysAdminWorkArea;
 
 import java.awt.CardLayout;
+import javax.swing.table.DefaultTableModel;
 import java.awt.Component;
 import javax.swing.JOptionPane;
+import HealthBuddy.models.Network.Network;
 import javax.swing.JPanel;
-import javax.swing.table.DefaultTableModel;
-import medistopBackend.EcoSystem;
-import medistopBackend.Enterprise.Enterprise;
-import medistopBackend.Network.Network;
+import HealthBuddy.models.EcoSystem;
+import HealthBuddy.models.Enterprise.Enterprise;
+
 
 /**
  *
- * @author Virendra Rathore
+ * @author Nidhi Singh
  */
 public class EnterprisesManageJPanel extends javax.swing.JPanel {
 JPanel showPanel;
@@ -36,7 +32,7 @@ EcoSystem ecosystem;
         DefaultTableModel model = (DefaultTableModel) tblEnterpriseDetails.getModel();
         model.setRowCount(0);
         for (Network network : ecosystem.getNetworkList()) {
-            for (Enterprise enterprise : network.getEnterpriseDirectory().getEnterpriseList()) {
+            for (Enterprise enterprise : network.getEnterpriseCatalog().getEnterpriseList()) {
                 Object[] row = new Object[3];
                 row[0] = enterprise.getName();
                 row[1] = network.getNetworkName();
@@ -174,7 +170,7 @@ EcoSystem ecosystem;
         }
         else
         {    
-            Enterprise enterprise = network.getEnterpriseDirectory().createAndAddEnterprise(name, type, txtcause.getText().trim());
+            Enterprise enterprise = network.getEnterpriseCatalog().createAndAddEnterprise(name, type, txtcause.getText().trim());
             populateEnterpriseTable();
             txtName.setText("");
         }
