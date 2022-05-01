@@ -10,6 +10,8 @@ import HealthBuddy.models.UserData.PatientData;
 import HealthBuddy.models.UserData.DonorData;
 import HealthBuddy.Config.Config;
 import HealthBuddy.ui.donor.*;
+import javax.swing.ImageIcon;
+import java.awt.Image;
 
 /**
  *
@@ -33,6 +35,7 @@ public class PatientValidateJPanel extends javax.swing.JPanel {
         validationCode = code;
         this.patientData = patient;
         setValidated(false);
+        setSize(1540,800);
     }
     
     
@@ -44,34 +47,34 @@ public class PatientValidateJPanel extends javax.swing.JPanel {
        isValidated = valid;
        
        if (isValidated) {
-           valAccL.setVisible(false);
-           codeL.setVisible(false);
-           codeTF.setVisible(false);
-           helperLabel.setVisible(false);
-           registerBtn.setVisible(false);
+           verifypatacclabel.setVisible(false);
+           OTPlabel.setVisible(false);
+           oTPTextF.setVisible(false);
+           otPlabel.setVisible(false);
+           buttonverify.setVisible(false);
 
-           setAccL.setVisible(true);
-           userNameLabel.setVisible(true);
-           usernameTF.setVisible(true);
-           passPF.setVisible(true);
-           paswdL.setVisible(true);
-           saveBtn.setVisible(true);
+           accsetuplabel.setVisible(true);
+           unmlabel.setVisible(true);
+           unmTextF.setVisible(true);
+           psswrdTextF.setVisible(true);
+           psswrdlabel.setVisible(true);
+           buttonsv.setVisible(true);
        
        } else {
 
-           valAccL.setVisible(true);
-           codeL.setVisible(true);
-           codeTF.setVisible(true);
-           helperLabel.setVisible(true);
-           registerBtn.setVisible(true);
+           verifypatacclabel.setVisible(true);
+           OTPlabel.setVisible(true);
+           oTPTextF.setVisible(true);
+           otPlabel.setVisible(true);
+           buttonverify.setVisible(true);
 
 
-           setAccL.setVisible(false);
-           userNameLabel.setVisible(false);
-           usernameTF.setVisible(false);
-           passPF.setVisible(false);
-           paswdL.setVisible(false);
-           saveBtn.setVisible(false);
+           accsetuplabel.setVisible(false);
+           unmlabel.setVisible(false);
+           unmTextF.setVisible(false);
+           psswrdTextF.setVisible(false);
+           psswrdlabel.setVisible(false);
+           buttonsv.setVisible(false);
        
        }
        
@@ -86,71 +89,89 @@ public class PatientValidateJPanel extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setAccL = new javax.swing.JLabel();
-        codeL = new javax.swing.JLabel();
-        codeTF = new javax.swing.JTextField();
-        helperLabel = new javax.swing.JLabel();
-        registerBtn = new javax.swing.JButton();
-        userNameLabel = new javax.swing.JLabel();
-        usernameTF = new javax.swing.JTextField();
-        valAccL = new javax.swing.JLabel();
-        paswdL = new javax.swing.JLabel();
-        passPF = new javax.swing.JPasswordField();
-        saveBtn = new javax.swing.JButton();
+        accsetuplabel = new javax.swing.JLabel();
+        OTPlabel = new javax.swing.JLabel();
+        oTPTextF = new javax.swing.JTextField();
+        otPlabel = new javax.swing.JLabel();
+        buttonverify = new javax.swing.JButton();
+        unmlabel = new javax.swing.JLabel();
+        unmTextF = new javax.swing.JTextField();
+        verifypatacclabel = new javax.swing.JLabel();
+        psswrdlabel = new javax.swing.JLabel();
+        psswrdTextF = new javax.swing.JPasswordField();
+        buttonsv = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
-        setAccL.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
-        setAccL.setForeground(new java.awt.Color(0, 51, 102));
-        setAccL.setText("SET YOUR ACCOUNT AS A PATIENT");
+        accsetuplabel.setBackground(new java.awt.Color(255, 255, 255));
+        accsetuplabel.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
+        accsetuplabel.setForeground(new java.awt.Color(0, 102, 102));
+        accsetuplabel.setText("Patient Account Setup");
 
-        codeL.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        codeL.setForeground(new java.awt.Color(0, 0, 102));
-        codeL.setText("Code: ");
+        OTPlabel.setBackground(new java.awt.Color(255, 255, 255));
+        OTPlabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        OTPlabel.setForeground(new java.awt.Color(0, 102, 102));
+        OTPlabel.setText("One Time Password");
 
-        codeTF.setForeground(new java.awt.Color(0, 0, 102));
-        codeTF.setText(" ");
+        oTPTextF.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        oTPTextF.setForeground(new java.awt.Color(0, 102, 102));
+        oTPTextF.setText(" ");
 
-        helperLabel.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        helperLabel.setForeground(new java.awt.Color(0, 0, 102));
-        helperLabel.setText("Please check your email you will have received a code. Please check the spam folder as well.");
+        otPlabel.setBackground(new java.awt.Color(255, 255, 255));
+        otPlabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        otPlabel.setForeground(new java.awt.Color(0, 102, 102));
+        otPlabel.setText("Kindly check your SMS inbox for one time password verification.");
 
-        registerBtn.setFont(new java.awt.Font("Segoe UI", 1, 19)); // NOI18N
-        registerBtn.setForeground(new java.awt.Color(0, 0, 102));
-        registerBtn.setText("Validate");
-        registerBtn.addActionListener(new java.awt.event.ActionListener() {
+        buttonverify.setBackground(new java.awt.Color(0, 102, 102));
+        buttonverify.setFont(new java.awt.Font("Tahoma", 1, 19)); // NOI18N
+        buttonverify.setForeground(new java.awt.Color(255, 255, 255));
+        buttonverify.setText("Verify");
+        buttonverify.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        buttonverify.setBorderPainted(false);
+        buttonverify.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                registerBtnActionPerformed(evt);
+                buttonverifyActionPerformed(evt);
             }
         });
 
-        userNameLabel.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        userNameLabel.setForeground(new java.awt.Color(0, 0, 102));
-        userNameLabel.setText("Username:");
+        unmlabel.setBackground(new java.awt.Color(255, 255, 255));
+        unmlabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        unmlabel.setForeground(new java.awt.Color(0, 102, 102));
+        unmlabel.setText("Username:");
 
-        usernameTF.setForeground(new java.awt.Color(0, 0, 102));
-        usernameTF.setText(" ");
+        unmTextF.setForeground(new java.awt.Color(0, 0, 102));
+        unmTextF.setText(" ");
 
-        valAccL.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
-        valAccL.setForeground(new java.awt.Color(0, 51, 102));
-        valAccL.setText("VALIDATE YOUR ACCOUNT AS A PATIENT");
+        verifypatacclabel.setBackground(new java.awt.Color(255, 255, 255));
+        verifypatacclabel.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
+        verifypatacclabel.setForeground(new java.awt.Color(0, 102, 102));
+        verifypatacclabel.setText("Dear Patient, Verify Your Account !");
 
-        paswdL.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        paswdL.setForeground(new java.awt.Color(0, 0, 102));
-        paswdL.setText("Password:");
+        psswrdlabel.setBackground(new java.awt.Color(255, 255, 255));
+        psswrdlabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        psswrdlabel.setForeground(new java.awt.Color(0, 102, 102));
+        psswrdlabel.setText("Password:");
 
-        passPF.addActionListener(new java.awt.event.ActionListener() {
+        psswrdTextF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                passPFActionPerformed(evt);
+                psswrdTextFActionPerformed(evt);
             }
         });
 
-        saveBtn.setFont(new java.awt.Font("Segoe UI", 1, 19)); // NOI18N
-        saveBtn.setForeground(new java.awt.Color(0, 0, 102));
-        saveBtn.setText("Save");
-        saveBtn.addActionListener(new java.awt.event.ActionListener() {
+        buttonsv.setBackground(new java.awt.Color(0, 102, 102));
+        buttonsv.setFont(new java.awt.Font("Tahoma", 1, 19)); // NOI18N
+        buttonsv.setForeground(new java.awt.Color(255, 255, 255));
+        buttonsv.setText("Save");
+        buttonsv.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        buttonsv.setBorderPainted(false);
+        buttonsv.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                saveBtnActionPerformed(evt);
+                buttonsvActionPerformed(evt);
             }
         });
+
+        ImageIcon imageIcon = new ImageIcon(new ImageIcon(getClass().getResource("/HealthBuddy/ui/images/accvalidate.gif")).getImage().getScaledInstance(500, 500, Image.SCALE_DEFAULT));
+
+        jLabel1.setIcon(imageIcon);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -159,79 +180,89 @@ public class PatientValidateJPanel extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addGap(34, 34, 34)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(saveBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(setAccL, javax.swing.GroupLayout.PREFERRED_SIZE, 807, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(registerBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(userNameLabel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(paswdL, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(64, 64, 64)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(usernameTF, javax.swing.GroupLayout.DEFAULT_SIZE, 398, Short.MAX_VALUE)
-                            .addComponent(passPF)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(codeL, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(OTPlabel, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(64, 64, 64)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(codeTF, javax.swing.GroupLayout.PREFERRED_SIZE, 398, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(helperLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 814, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(17, Short.MAX_VALUE))
+                            .addComponent(oTPTextF, javax.swing.GroupLayout.PREFERRED_SIZE, 398, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(otPlabel, javax.swing.GroupLayout.PREFERRED_SIZE, 595, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addContainerGap(647, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(buttonsv, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(unmlabel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(psswrdlabel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(unmTextF)
+                                    .addComponent(psswrdTextF, javax.swing.GroupLayout.PREFERRED_SIZE, 248, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(accsetuplabel, javax.swing.GroupLayout.PREFERRED_SIZE, 306, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(143, 143, 143))
+                            .addComponent(buttonverify, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 593, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(311, 311, 311))))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
                     .addGap(34, 34, 34)
-                    .addComponent(valAccL, javax.swing.GroupLayout.PREFERRED_SIZE, 807, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(283, Short.MAX_VALUE)))
+                    .addComponent(verifypatacclabel, javax.swing.GroupLayout.PREFERRED_SIZE, 807, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(694, Short.MAX_VALUE)))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(119, 119, 119)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(codeL)
-                    .addComponent(codeTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(OTPlabel)
+                    .addComponent(oTPTextF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(helperLabel)
+                .addComponent(otPlabel)
                 .addGap(52, 52, 52)
-                .addComponent(registerBtn)
-                .addGap(29, 29, 29)
-                .addComponent(setAccL, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(32, 32, 32)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(userNameLabel)
-                    .addComponent(usernameTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(31, 31, 31)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(paswdL)
-                    .addComponent(passPF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(57, 57, 57)
-                .addComponent(saveBtn)
-                .addContainerGap(161, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(buttonverify)
+                        .addGap(56, 56, 56)
+                        .addComponent(accsetuplabel, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(32, 32, 32)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(unmlabel)
+                            .addComponent(unmTextF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(31, 31, 31)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(psswrdlabel)
+                            .addComponent(psswrdTextF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(57, 57, 57)
+                        .addComponent(buttonsv))
+                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 523, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(44, Short.MAX_VALUE))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
                     .addGap(48, 48, 48)
-                    .addComponent(valAccL, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(647, Short.MAX_VALUE)))
+                    .addComponent(verifypatacclabel, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(699, Short.MAX_VALUE)))
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void registerBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_registerBtnActionPerformed
+    private void buttonverifyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonverifyActionPerformed
         // TODO add your handling code here:
-        boolean valid = Config.getClippedText(codeTF).equals(validationCode);
+        boolean valid = Config.getClippedText(oTPTextF).equals(validationCode);
         setValidated(valid);
 
 
-    }//GEN-LAST:event_registerBtnActionPerformed
+    }//GEN-LAST:event_buttonverifyActionPerformed
 
-    private void passPFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_passPFActionPerformed
+    private void psswrdTextFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_psswrdTextFActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_passPFActionPerformed
+    }//GEN-LAST:event_psswrdTextFActionPerformed
 
-    private void saveBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_saveBtnActionPerformed
+    private void buttonsvActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonsvActionPerformed
         // TODO add your handling code here:
         
-        String userName = Config.getClippedText(usernameTF);
-        String password = String.valueOf(passPF.getPassword());
+        String userName = Config.getClippedText(unmTextF);
+        String password = String.valueOf(psswrdTextF.getPassword());
         
         boolean result = ecosystem.getUserCatalog().isUserNameUnique(userName);
         
@@ -242,34 +273,35 @@ public class PatientValidateJPanel extends javax.swing.JPanel {
             ecosystem.getPatientDir().addPat(patientData);
             dB4OUtil.storeSystem(ecosystem);
 
-            JOptionPane.showMessageDialog(null, "You have been officially registered as Patient \nPlease Login to start getting the help ",
+            JOptionPane.showMessageDialog(null, "Your Registration as Patient is Successful \nKindly Signin now to get started ",
                     "Success", JOptionPane.INFORMATION_MESSAGE);
             
-            saveBtn.setEnabled(false);
-            usernameTF.setEditable(false);
-            passPF.setEditable(false);
-            usernameTF.setText("");
-            passPF.setText("");
+            buttonsv.setEnabled(false);
+            unmTextF.setEditable(false);
+            psswrdTextF.setEditable(false);
+            unmTextF.setText("");
+            psswrdTextF.setText("");
         }
         else {
-            JOptionPane.showMessageDialog(null, "Try a different username, current username already exists","Error", JOptionPane.ERROR_MESSAGE);
-            usernameTF.setText("");
-            passPF.setText("");
+            JOptionPane.showMessageDialog(null, "Kindly try a with different credentials, these credentials already exists","Error", JOptionPane.ERROR_MESSAGE);
+            unmTextF.setText("");
+            psswrdTextF.setText("");
         }
-    }//GEN-LAST:event_saveBtnActionPerformed
+    }//GEN-LAST:event_buttonsvActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel codeL;
-    private javax.swing.JTextField codeTF;
-    private javax.swing.JLabel helperLabel;
-    private javax.swing.JPasswordField passPF;
-    private javax.swing.JLabel paswdL;
-    private javax.swing.JButton registerBtn;
-    private javax.swing.JButton saveBtn;
-    private javax.swing.JLabel setAccL;
-    private javax.swing.JLabel userNameLabel;
-    private javax.swing.JTextField usernameTF;
-    private javax.swing.JLabel valAccL;
+    private javax.swing.JLabel OTPlabel;
+    private javax.swing.JLabel accsetuplabel;
+    private javax.swing.JButton buttonsv;
+    private javax.swing.JButton buttonverify;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JTextField oTPTextF;
+    private javax.swing.JLabel otPlabel;
+    private javax.swing.JPasswordField psswrdTextF;
+    private javax.swing.JLabel psswrdlabel;
+    private javax.swing.JTextField unmTextF;
+    private javax.swing.JLabel unmlabel;
+    private javax.swing.JLabel verifypatacclabel;
     // End of variables declaration//GEN-END:variables
 }

@@ -23,6 +23,8 @@ import HealthBuddy.Config.WhatsappUtility;
 import java.awt.*;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import javax.swing.ImageIcon;
+import java.awt.Image;
 
 /**
  *
@@ -49,6 +51,7 @@ public class WorkAreaPatientPanel extends javax.swing.JPanel {
         initComponents();
         populateAvailAppontments();
         populateAppointmentHistoryTable();
+        setSize(1540,800);
 
 
     }
@@ -81,7 +84,7 @@ public class WorkAreaPatientPanel extends javax.swing.JPanel {
     
      public void populateAvailAppontments()
     {
-        DefaultTableModel model = (DefaultTableModel) appointDirTable.getModel();
+        DefaultTableModel model = (DefaultTableModel) docScheduleTable.getModel();
         
         model.setRowCount(0);
         DateFormat formatter = new SimpleDateFormat("dd/mm/yyyy");
@@ -115,7 +118,7 @@ public class WorkAreaPatientPanel extends javax.swing.JPanel {
 
 
     public void populateAppointmentHistoryTable() {
-        DefaultTableModel model = (DefaultTableModel) searchDonationCatalogTable.getModel();
+        DefaultTableModel model = (DefaultTableModel) tblAppHis.getModel();
 
         model.setRowCount(0);
 
@@ -146,141 +149,170 @@ public class WorkAreaPatientPanel extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        donationTabbedPane = new javax.swing.JTabbedPane();
-        menuPanel = new javax.swing.JPanel();
-        deliveryDirLabel = new javax.swing.JLabel();
-        delDirectoryScollPanel = new javax.swing.JScrollPane();
-        appointDirTable = new javax.swing.JTable();
-        deliveryDirLabel2 = new javax.swing.JLabel();
-        backBtn = new javax.swing.JButton();
-        registerBtn = new javax.swing.JButton();
-        manageOrdersTab = new javax.swing.JPanel();
-        searchCarCatalogScrollPanel = new javax.swing.JScrollPane();
-        searchDonationCatalogTable = new javax.swing.JTable();
-        deliveryDirLabel4 = new javax.swing.JLabel();
-        helpTextLabel = new javax.swing.JLabel();
+        donateTabbedPane = new javax.swing.JTabbedPane();
+        mainmenuPanel = new javax.swing.JPanel();
+        msgLabel = new javax.swing.JLabel();
+        docScheduleScollPanel = new javax.swing.JScrollPane();
+        docScheduleTable = new javax.swing.JTable();
+        avbSlotslabel = new javax.swing.JLabel();
+        buttonBck = new javax.swing.JButton();
+        buttonbookSlot = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
+        mnghisTab = new javax.swing.JPanel();
+        srchapHisscrlPane = new javax.swing.JScrollPane();
+        tblAppHis = new javax.swing.JTable();
+        apphismsgLabel = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
-        donationTabbedPane.setForeground(new java.awt.Color(0, 0, 102));
-        donationTabbedPane.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        setBackground(new java.awt.Color(255, 255, 255));
+        setForeground(new java.awt.Color(0, 102, 102));
 
-        deliveryDirLabel.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        deliveryDirLabel.setForeground(new java.awt.Color(0, 0, 102));
-        deliveryDirLabel.setText("Book an appoinment with us to get the help you need...");
+        donateTabbedPane.setBackground(new java.awt.Color(255, 255, 255));
+        donateTabbedPane.setForeground(new java.awt.Color(0, 102, 102));
+        donateTabbedPane.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
 
-        delDirectoryScollPanel.setForeground(new java.awt.Color(0, 0, 102));
-        delDirectoryScollPanel.setFont(new java.awt.Font("Segoe UI", 1, 19)); // NOI18N
+        mainmenuPanel.setBackground(new java.awt.Color(255, 255, 255));
+        mainmenuPanel.setForeground(new java.awt.Color(0, 102, 102));
+        mainmenuPanel.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
 
-        appointDirTable.setFont(new java.awt.Font("Segoe UI", 0, 19)); // NOI18N
-        appointDirTable.setForeground(new java.awt.Color(0, 0, 102));
-        appointDirTable.setModel(appointmentDirectoryTableModel);
-        appointDirTable.setRowHeight(40);
-        delDirectoryScollPanel.setViewportView(appointDirTable);
+        msgLabel.setBackground(new java.awt.Color(255, 255, 255));
+        msgLabel.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        msgLabel.setForeground(new java.awt.Color(0, 102, 102));
+        msgLabel.setText("Kindly Book an Appointment to Visit Doctor");
 
-        deliveryDirLabel2.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        deliveryDirLabel2.setForeground(new java.awt.Color(0, 0, 102));
-        deliveryDirLabel2.setText("Available appointments");
+        docScheduleScollPanel.setForeground(new java.awt.Color(0, 102, 102));
+        docScheduleScollPanel.setFont(new java.awt.Font("Tahoma", 1, 19)); // NOI18N
 
-        backBtn.setFont(new java.awt.Font("Segoe UI", 1, 19)); // NOI18N
-        backBtn.setForeground(new java.awt.Color(0, 0, 102));
-        backBtn.setText("<< Back");
-        backBtn.addActionListener(new java.awt.event.ActionListener() {
+        docScheduleTable.setFont(new java.awt.Font("Tahoma", 0, 19)); // NOI18N
+        docScheduleTable.setForeground(new java.awt.Color(0, 102, 102));
+        docScheduleTable.setModel(appointmentDirectoryTableModel);
+        docScheduleTable.setRowHeight(40);
+        docScheduleTable.setSelectionBackground(new java.awt.Color(0, 102, 102));
+        docScheduleScollPanel.setViewportView(docScheduleTable);
+
+        avbSlotslabel.setBackground(new java.awt.Color(255, 255, 255));
+        avbSlotslabel.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        avbSlotslabel.setForeground(new java.awt.Color(0, 102, 102));
+        avbSlotslabel.setText("Available appointments");
+
+        buttonBck.setBackground(new java.awt.Color(0, 102, 102));
+        buttonBck.setFont(new java.awt.Font("Tahoma", 1, 19)); // NOI18N
+        buttonBck.setForeground(new java.awt.Color(255, 255, 255));
+        buttonBck.setText("<< Back");
+        buttonBck.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        buttonBck.setBorderPainted(false);
+        buttonBck.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                backBtnActionPerformed(evt);
+                buttonBckActionPerformed(evt);
             }
         });
 
-        registerBtn.setFont(new java.awt.Font("Segoe UI", 1, 19)); // NOI18N
-        registerBtn.setForeground(new java.awt.Color(0, 0, 102));
-        registerBtn.setText("Book Appointment");
-        registerBtn.addActionListener(new java.awt.event.ActionListener() {
+        buttonbookSlot.setBackground(new java.awt.Color(0, 102, 102));
+        buttonbookSlot.setFont(new java.awt.Font("Tahoma", 1, 19)); // NOI18N
+        buttonbookSlot.setForeground(new java.awt.Color(255, 255, 255));
+        buttonbookSlot.setText("Book Appointment");
+        buttonbookSlot.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        buttonbookSlot.setBorderPainted(false);
+        buttonbookSlot.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                registerBtnActionPerformed(evt);
+                buttonbookSlotActionPerformed(evt);
             }
         });
 
-        javax.swing.GroupLayout menuPanelLayout = new javax.swing.GroupLayout(menuPanel);
-        menuPanel.setLayout(menuPanelLayout);
-        menuPanelLayout.setHorizontalGroup(
-            menuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(menuPanelLayout.createSequentialGroup()
-                .addGroup(menuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(menuPanelLayout.createSequentialGroup()
+        ImageIcon imageIcont = new ImageIcon(new ImageIcon(getClass().getResource("/HealthBuddy/ui/images/appointment.gif")).getImage().getScaledInstance(600, 500, Image.SCALE_DEFAULT));
+
+        jLabel2.setIcon(imageIcont);
+
+        javax.swing.GroupLayout mainmenuPanelLayout = new javax.swing.GroupLayout(mainmenuPanel);
+        mainmenuPanel.setLayout(mainmenuPanelLayout);
+        mainmenuPanelLayout.setHorizontalGroup(
+            mainmenuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(mainmenuPanelLayout.createSequentialGroup()
+                .addGroup(mainmenuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(mainmenuPanelLayout.createSequentialGroup()
                         .addContainerGap()
-                        .addGroup(menuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(deliveryDirLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 651, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(deliveryDirLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 471, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(delDirectoryScollPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 1105, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(menuPanelLayout.createSequentialGroup()
+                        .addGroup(mainmenuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(avbSlotslabel, javax.swing.GroupLayout.PREFERRED_SIZE, 471, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(msgLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 708, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(mainmenuPanelLayout.createSequentialGroup()
+                                .addComponent(docScheduleScollPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 779, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(60, 60, 60)
+                                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 792, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(mainmenuPanelLayout.createSequentialGroup()
                         .addGap(27, 27, 27)
-                        .addComponent(backBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(buttonBck, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(44, 44, 44)
-                        .addComponent(registerBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 286, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(802, Short.MAX_VALUE))
+                        .addComponent(buttonbookSlot, javax.swing.GroupLayout.PREFERRED_SIZE, 286, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(276, Short.MAX_VALUE))
         );
-        menuPanelLayout.setVerticalGroup(
-            menuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(menuPanelLayout.createSequentialGroup()
+        mainmenuPanelLayout.setVerticalGroup(
+            mainmenuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(mainmenuPanelLayout.createSequentialGroup()
                 .addGap(21, 21, 21)
-                .addComponent(deliveryDirLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(msgLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(deliveryDirLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(avbSlotslabel, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(delDirectoryScollPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 495, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addGroup(menuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(registerBtn)
-                    .addComponent(backBtn))
-                .addContainerGap(147, Short.MAX_VALUE))
+                .addGroup(mainmenuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(docScheduleScollPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 474, Short.MAX_VALUE))
+                .addGap(39, 39, 39)
+                .addGroup(mainmenuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(buttonbookSlot)
+                    .addComponent(buttonBck))
+                .addContainerGap(95, Short.MAX_VALUE))
         );
 
-        donationTabbedPane.addTab("New Appointment", menuPanel);
+        donateTabbedPane.addTab("New Appointment", mainmenuPanel);
 
-        searchDonationCatalogTable.setFont(new java.awt.Font("Segoe UI", 0, 19)); // NOI18N
-        searchDonationCatalogTable.setForeground(new java.awt.Color(0, 0, 102));
-        searchDonationCatalogTable.setModel(appointmentHistoryTableModel);
-        searchDonationCatalogTable.setRowHeight(40);
-        searchCarCatalogScrollPanel.setViewportView(searchDonationCatalogTable);
+        srchapHisscrlPane.setForeground(new java.awt.Color(0, 102, 102));
+        srchapHisscrlPane.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
 
-        deliveryDirLabel4.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        deliveryDirLabel4.setForeground(new java.awt.Color(0, 0, 102));
-        deliveryDirLabel4.setText("Appointment History");
+        tblAppHis.setFont(new java.awt.Font("Tahoma", 0, 19)); // NOI18N
+        tblAppHis.setForeground(new java.awt.Color(0, 102, 102));
+        tblAppHis.setModel(appointmentHistoryTableModel);
+        tblAppHis.setRowHeight(40);
+        tblAppHis.setSelectionBackground(new java.awt.Color(0, 102, 102));
+        srchapHisscrlPane.setViewportView(tblAppHis);
 
-        helpTextLabel.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        helpTextLabel.setForeground(new java.awt.Color(0, 0, 102));
-        helpTextLabel.setText(" ");
+        apphismsgLabel.setBackground(new java.awt.Color(255, 255, 255));
+        apphismsgLabel.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        apphismsgLabel.setForeground(new java.awt.Color(0, 102, 102));
+        apphismsgLabel.setText("Appointment History");
 
-        javax.swing.GroupLayout manageOrdersTabLayout = new javax.swing.GroupLayout(manageOrdersTab);
-        manageOrdersTab.setLayout(manageOrdersTabLayout);
-        manageOrdersTabLayout.setHorizontalGroup(
-            manageOrdersTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(manageOrdersTabLayout.createSequentialGroup()
-                .addGroup(manageOrdersTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(manageOrdersTabLayout.createSequentialGroup()
+        ImageIcon imageIconb = new ImageIcon(new ImageIcon(getClass().getResource("/HealthBuddy/ui/images/apphistorygif.gif")).getImage().getScaledInstance(650, 500, Image.SCALE_DEFAULT));
+
+        jLabel1.setIcon(imageIconb);
+
+        javax.swing.GroupLayout mnghisTabLayout = new javax.swing.GroupLayout(mnghisTab);
+        mnghisTab.setLayout(mnghisTabLayout);
+        mnghisTabLayout.setHorizontalGroup(
+            mnghisTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(mnghisTabLayout.createSequentialGroup()
+                .addGroup(mnghisTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(mnghisTabLayout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(searchCarCatalogScrollPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 1097, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(helpTextLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 798, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(manageOrdersTabLayout.createSequentialGroup()
+                        .addComponent(srchapHisscrlPane, javax.swing.GroupLayout.PREFERRED_SIZE, 776, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(63, 63, 63)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 690, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(mnghisTabLayout.createSequentialGroup()
                         .addGap(21, 21, 21)
-                        .addComponent(deliveryDirLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 294, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(apphismsgLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 294, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(378, Short.MAX_VALUE))
         );
-        manageOrdersTabLayout.setVerticalGroup(
-            manageOrdersTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(manageOrdersTabLayout.createSequentialGroup()
+        mnghisTabLayout.setVerticalGroup(
+            mnghisTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(mnghisTabLayout.createSequentialGroup()
                 .addGap(16, 16, 16)
-                .addComponent(deliveryDirLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGroup(manageOrdersTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(manageOrdersTabLayout.createSequentialGroup()
-                        .addGap(133, 133, 133)
-                        .addComponent(helpTextLabel))
-                    .addGroup(manageOrdersTabLayout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addComponent(searchCarCatalogScrollPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 474, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(260, Short.MAX_VALUE))
+                .addComponent(apphismsgLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addGroup(mnghisTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(srchapHisscrlPane, javax.swing.GroupLayout.PREFERRED_SIZE, 474, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 546, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(127, Short.MAX_VALUE))
         );
 
-        donationTabbedPane.addTab("Appointment History", manageOrdersTab);
+        donateTabbedPane.addTab("Appointment History", mnghisTab);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -288,33 +320,33 @@ public class WorkAreaPatientPanel extends javax.swing.JPanel {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(donationTabbedPane)
+                .addComponent(donateTabbedPane)
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addComponent(donationTabbedPane)
+                .addComponent(donateTabbedPane)
                 .addContainerGap())
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void backBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backBtnActionPerformed
+    private void buttonBckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonBckActionPerformed
         // TODO add your handling code here:
         bodyPanel.remove(this);
         CardLayout layout = (CardLayout) bodyPanel.getLayout();
         layout.previous(bodyPanel);
-    }//GEN-LAST:event_backBtnActionPerformed
+    }//GEN-LAST:event_buttonBckActionPerformed
 
-    private void registerBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_registerBtnActionPerformed
+    private void buttonbookSlotActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonbookSlotActionPerformed
         // TODO add your handling code here:
 
-        DefaultTableModel model = (DefaultTableModel) appointDirTable.getModel();
-        int selectedRow = appointDirTable.getSelectedRow();
+        DefaultTableModel model = (DefaultTableModel) docScheduleTable.getModel();
+        int selectedRow = docScheduleTable.getSelectedRow();
         if (selectedRow < 0){
             return;
         }
-        AssistantAddingTimetoWQ request = (AssistantAddingTimetoWQ)appointDirTable.getValueAt(selectedRow,0);
+        AssistantAddingTimetoWQ request = (AssistantAddingTimetoWQ)docScheduleTable.getValueAt(selectedRow,0);
         if(request.getStatus().equals("Booked")){
             JOptionPane.showMessageDialog(null,"Select Valid Slot. The slot you are trying to book is not available.");
         }
@@ -369,23 +401,24 @@ public class WorkAreaPatientPanel extends javax.swing.JPanel {
 
 
 
-    }//GEN-LAST:event_registerBtnActionPerformed
+    }//GEN-LAST:event_buttonbookSlotActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JTable appointDirTable;
-    private javax.swing.JButton backBtn;
-    private javax.swing.JScrollPane delDirectoryScollPanel;
-    private javax.swing.JLabel deliveryDirLabel;
-    private javax.swing.JLabel deliveryDirLabel2;
-    private javax.swing.JLabel deliveryDirLabel4;
-    private javax.swing.JTabbedPane donationTabbedPane;
-    private javax.swing.JLabel helpTextLabel;
-    private javax.swing.JPanel manageOrdersTab;
-    private javax.swing.JPanel menuPanel;
-    private javax.swing.JButton registerBtn;
-    private javax.swing.JScrollPane searchCarCatalogScrollPanel;
-    private javax.swing.JTable searchDonationCatalogTable;
+    private javax.swing.JLabel apphismsgLabel;
+    private javax.swing.JLabel avbSlotslabel;
+    private javax.swing.JButton buttonBck;
+    private javax.swing.JButton buttonbookSlot;
+    private javax.swing.JScrollPane docScheduleScollPanel;
+    private javax.swing.JTable docScheduleTable;
+    private javax.swing.JTabbedPane donateTabbedPane;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JPanel mainmenuPanel;
+    private javax.swing.JPanel mnghisTab;
+    private javax.swing.JLabel msgLabel;
+    private javax.swing.JScrollPane srchapHisscrlPane;
+    private javax.swing.JTable tblAppHis;
     // End of variables declaration//GEN-END:variables
 
 }
