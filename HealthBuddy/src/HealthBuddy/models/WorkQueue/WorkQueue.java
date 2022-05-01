@@ -10,6 +10,7 @@ import java.util.List;
  * @author Bhawna Singh
  */
 public class WorkQueue {
+
     private ArrayList<WorkRequest> workRequestList;
 
     public WorkQueue() {
@@ -19,11 +20,10 @@ public class WorkQueue {
     public ArrayList<WorkRequest> getWorkRequestList() {
         return workRequestList;
     }
-    
+
     public List<WorkRequest> getWorkRequestListWithNotAccMesg() {
         return workRequestList.stream().filter(list -> !list.getMessage().equals("Acknowledged"))
                 .collect(Collectors.toList());
     }
-    
-}
 
+}

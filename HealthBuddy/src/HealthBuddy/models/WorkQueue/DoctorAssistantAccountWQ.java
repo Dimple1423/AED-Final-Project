@@ -6,13 +6,13 @@ import HealthBuddy.models.Healthcare.Appointment.AppointmentInformation;
  *
  * @author Bhawna Singh
  */
-public class DoctorAssistantAccountWQ extends WorkRequest{
+public class DoctorAssistantAccountWQ extends WorkRequest {
+
     private boolean isrequiredFunds;
     private String prescribed;
     private AppointmentInformation apd;
     private boolean isfundsApproved;
 
-    
     public AppointmentInformation getApd() {
         return apd;
     }
@@ -20,10 +20,11 @@ public class DoctorAssistantAccountWQ extends WorkRequest{
     public void setApd(AppointmentInformation apd) {
         this.apd = apd;
     }
-    
-    public DoctorAssistantAccountWQ(){
+
+    public DoctorAssistantAccountWQ() {
         this.apd = new AppointmentInformation();
     }
+
     public boolean isFundingRequired() {
         return isrequiredFunds;
     }
@@ -39,6 +40,7 @@ public class DoctorAssistantAccountWQ extends WorkRequest{
     public void setPrescribed(String prescribed) {
         this.prescribed = prescribed;
     }
+
     public boolean isFundingApproved() {
         return isfundsApproved;
     }
@@ -46,9 +48,9 @@ public class DoctorAssistantAccountWQ extends WorkRequest{
     public void setFundingApproved(boolean isfundsApproved) {
         this.isfundsApproved = isfundsApproved;
     }
-    
+
     @Override
-    public String toString(){
+    public String toString() {
         return apd.getPatient().getPatientName();
     }
 }

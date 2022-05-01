@@ -1,11 +1,13 @@
 package HealthBuddy.models.WorkQueue;
 
 import HealthBuddy.models.UserData.PatientData;
+
 /**
  *
  * @author Dimple Patel
  */
 public class PatientBookingWQ extends WorkRequest {
+
     private PatientData patient;
     private String doctor;
     public String city;
@@ -42,9 +44,9 @@ public class PatientBookingWQ extends WorkRequest {
     public void setHospitalName(String hospitalName) {
         this.hospitalName = hospitalName;
     }
-    
-   @Override
-   public String toString(){
-       return this.patient.getPatientName();
-   }    
+
+    @Override
+    public String toString() {
+        return this.patient.getPatientName();
+    }
 }

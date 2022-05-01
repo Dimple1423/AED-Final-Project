@@ -10,8 +10,8 @@ import HealthBuddy.Config.Config;
  *
  * @author Bhawna Singh
  */
-public class AssistantAddingTimetoWQ extends WorkRequest{
-    
+public class AssistantAddingTimetoWQ extends WorkRequest {
+
     private String doctor;
     public String city;
     private String nameOfHealthcare;
@@ -33,26 +33,26 @@ public class AssistantAddingTimetoWQ extends WorkRequest{
         this.city = city;
     }
 
-    public String getDoctor() 
-    {
+    public String getDoctor() {
         return doctor;
     }
-    
-    public void setDoctor(String doctor) 
-    {
+
+    public void setDoctor(String doctor) {
         this.doctor = doctor;
     }
-    
+
     public String getTimings() {
         return timings.format(Config.formatter);
     }
 
+    
     public void setTimings(LocalDateTime timings) {
         this.timings = timings;
     }
+
     
     @Override
-    public String toString(){
+    public String toString() {
         return this.nameOfHealthcare;
     }
 }

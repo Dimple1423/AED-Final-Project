@@ -4,7 +4,8 @@ package HealthBuddy.models.WorkQueue;
  *
  * @author Dimple Patel
  */
-public class HealthcareTrustRequestWQ extends WorkRequest{
+public class HealthcareTrustRequestWQ extends WorkRequest {
+
     private float amount;
     private String Message;
     private String PatientName;
@@ -51,15 +52,17 @@ public class HealthcareTrustRequestWQ extends WorkRequest{
     public void setMessage(String Message) {
         this.Message = Message;
     }
-     public String getFunderName() {
+
+    public String getFunderName() {
         return funderName;
     }
 
     public void setFunderName(String funderName) {
         this.funderName = funderName;
     }
+
     @Override
-    public String toString(){
+    public String toString() {
         return this.PatientName;
     }
 }

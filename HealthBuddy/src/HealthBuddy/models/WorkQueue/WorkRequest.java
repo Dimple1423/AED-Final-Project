@@ -8,14 +8,15 @@ import HealthBuddy.models.User.User;
  * @author Bhawna Singh
  */
 public class WorkRequest {
+
     private String message;
     private User sender;
     private User receiver;
     private String status;
     private Date requestDate;
     private Date resolveDate;
-    
-    public WorkRequest(){
+
+    public WorkRequest() {
         requestDate = new Date();
     }
 

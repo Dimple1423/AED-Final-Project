@@ -6,11 +6,12 @@ import HealthBuddy.models.Healthcare.Appointment.AppointmentInformation;
  *
  * @author Dimple Patel
  */
-public class DoctorAttendantWQ extends WorkRequest{
-   private AppointmentInformation appointmentDetails;
+public class DoctorAttendantWQ extends WorkRequest {
+
+    private AppointmentInformation appointmentDetails;
 
     public DoctorAttendantWQ() {
-       appointmentDetails = new AppointmentInformation();
+        appointmentDetails = new AppointmentInformation();
     }
 
     public AppointmentInformation getAppointmentInformation() {
@@ -20,8 +21,9 @@ public class DoctorAttendantWQ extends WorkRequest{
     public void setAppointmentInformation(AppointmentInformation appointmentDetails) {
         this.appointmentDetails = appointmentDetails;
     }
+
     @Override
-    public String toString(){
+    public String toString() {
         return appointmentDetails.getPatient().getPatientName();
     }
 }

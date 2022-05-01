@@ -6,7 +6,8 @@ import java.util.Date;
  *
  * @author Dimple Patel
  */
-public class TrustReceiveWR extends WorkRequest{
+public class TrustReceiveWR extends WorkRequest {
+
     private String patientName;
     private String funderName;
     private String city;
@@ -61,10 +62,9 @@ public class TrustReceiveWR extends WorkRequest{
     public void setDateReceived(Date dateReceived) {
         this.dateReceived = dateReceived;
     }
-    
+
     @Override
-    public String toString()
-    {
+    public String toString() {
         return patientName;
-    }   
+    }
 }
