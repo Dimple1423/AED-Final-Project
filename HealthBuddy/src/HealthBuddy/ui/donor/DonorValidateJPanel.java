@@ -7,10 +7,13 @@ import HealthBuddy.models.Role.Donor;
 import HealthBuddy.models.UserData.DonorData;
 import HealthBuddy.Util.Utilities;
 import HealthBuddy.models.DB4OUtil.DB4OUtil;
+import javax.swing.ImageIcon;
+import java.awt.Image;
+
 
 /**
  *
- * @author 18577
+ * @author Nidhi Singh
  */
 public class DonorValidateJPanel extends javax.swing.JPanel {
     private DonorData donorData;
@@ -30,6 +33,7 @@ public class DonorValidateJPanel extends javax.swing.JPanel {
         validationCode = code;
         this.donorData = donorData;
         setValidated(false);
+        setSize(1540,800);
     }
     
     public boolean getValidated() {
@@ -93,60 +97,83 @@ public class DonorValidateJPanel extends javax.swing.JPanel {
         paswdL = new javax.swing.JLabel();
         passPF = new javax.swing.JPasswordField();
         saveBtn = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
-        setAccL.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
-        setAccL.setForeground(new java.awt.Color(0, 51, 102));
+        setBackground(new java.awt.Color(255, 255, 255));
+
+        setAccL.setBackground(new java.awt.Color(255, 255, 255));
+        setAccL.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
+        setAccL.setForeground(new java.awt.Color(0, 102, 102));
         setAccL.setText("SET YOUR ACCOUNT AS A DONOR");
 
-        codeL.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        codeL.setForeground(new java.awt.Color(0, 0, 102));
+        codeL.setBackground(new java.awt.Color(255, 255, 255));
+        codeL.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        codeL.setForeground(new java.awt.Color(0, 102, 102));
         codeL.setText("Code: ");
 
-        codeTF.setForeground(new java.awt.Color(0, 0, 102));
+        codeTF.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        codeTF.setForeground(new java.awt.Color(0, 102, 102));
         codeTF.setText(" ");
 
-        helperLabel.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        helperLabel.setForeground(new java.awt.Color(0, 0, 102));
+        helperLabel.setBackground(new java.awt.Color(255, 255, 255));
+        helperLabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        helperLabel.setForeground(new java.awt.Color(0, 102, 102));
         helperLabel.setText("Please check your email you will have received a code. Please check the spam folder as well.");
 
-        registerBtn.setFont(new java.awt.Font("Segoe UI", 1, 19)); // NOI18N
-        registerBtn.setForeground(new java.awt.Color(0, 0, 102));
+        registerBtn.setBackground(new java.awt.Color(0, 102, 102));
+        registerBtn.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        registerBtn.setForeground(new java.awt.Color(255, 255, 255));
         registerBtn.setText("Validate");
+        registerBtn.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        registerBtn.setBorderPainted(false);
         registerBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 registerBtnActionPerformed(evt);
             }
         });
 
-        userNameLabel.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        userNameLabel.setForeground(new java.awt.Color(0, 0, 102));
+        userNameLabel.setBackground(new java.awt.Color(255, 255, 255));
+        userNameLabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        userNameLabel.setForeground(new java.awt.Color(0, 102, 102));
         userNameLabel.setText("Username:");
 
-        usernameTF.setForeground(new java.awt.Color(0, 0, 102));
+        usernameTF.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        usernameTF.setForeground(new java.awt.Color(0, 102, 102));
         usernameTF.setText(" ");
 
-        valAccL.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
-        valAccL.setForeground(new java.awt.Color(0, 51, 102));
+        valAccL.setBackground(new java.awt.Color(255, 255, 255));
+        valAccL.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
+        valAccL.setForeground(new java.awt.Color(0, 102, 102));
         valAccL.setText("VALIDATE YOUR ACCOUNT AS A DONOR");
 
-        paswdL.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        paswdL.setForeground(new java.awt.Color(0, 0, 102));
+        paswdL.setBackground(new java.awt.Color(255, 255, 255));
+        paswdL.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        paswdL.setForeground(new java.awt.Color(0, 102, 102));
         paswdL.setText("Password:");
 
+        passPF.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        passPF.setForeground(new java.awt.Color(0, 102, 102));
         passPF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 passPFActionPerformed(evt);
             }
         });
 
-        saveBtn.setFont(new java.awt.Font("Segoe UI", 1, 19)); // NOI18N
-        saveBtn.setForeground(new java.awt.Color(0, 0, 102));
+        saveBtn.setBackground(new java.awt.Color(0, 102, 102));
+        saveBtn.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        saveBtn.setForeground(new java.awt.Color(255, 255, 255));
         saveBtn.setText("Save");
+        saveBtn.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        saveBtn.setBorderPainted(false);
         saveBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 saveBtnActionPerformed(evt);
             }
         });
+
+        ImageIcon imageIcon = new ImageIcon(new ImageIcon(getClass().getResource("/HealthBuddy/ui/images/accvalidate.gif")).getImage().getScaledInstance(500, 500, Image.SCALE_DEFAULT));
+
+        jLabel1.setIcon(imageIcon);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -155,29 +182,38 @@ public class DonorValidateJPanel extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addGap(34, 34, 34)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(saveBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(setAccL, javax.swing.GroupLayout.PREFERRED_SIZE, 807, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(registerBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(userNameLabel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(paswdL, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(64, 64, 64)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(usernameTF, javax.swing.GroupLayout.DEFAULT_SIZE, 398, Short.MAX_VALUE)
-                            .addComponent(passPF)))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(codeL, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(64, 64, 64)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(codeTF, javax.swing.GroupLayout.PREFERRED_SIZE, 398, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(helperLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 814, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(17, Short.MAX_VALUE))
+                            .addComponent(helperLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 814, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(setAccL, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(userNameLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 64, Short.MAX_VALUE)
+                                        .addComponent(usernameTF, javax.swing.GroupLayout.PREFERRED_SIZE, 390, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addGap(123, 123, 123)
+                                .addComponent(registerBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(41, 41, 41))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(paswdL, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(64, 64, 64)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(saveBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(passPF, javax.swing.GroupLayout.PREFERRED_SIZE, 398, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addGap(25, 25, 25)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 567, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(875, Short.MAX_VALUE))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
                     .addGap(34, 34, 34)
                     .addComponent(valAccL, javax.swing.GroupLayout.PREFERRED_SIZE, 807, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(283, Short.MAX_VALUE)))
+                    .addContainerGap(1646, Short.MAX_VALUE)))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -188,26 +224,29 @@ public class DonorValidateJPanel extends javax.swing.JPanel {
                     .addComponent(codeTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(helperLabel)
-                .addGap(52, 52, 52)
-                .addComponent(registerBtn)
-                .addGap(29, 29, 29)
-                .addComponent(setAccL, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(32, 32, 32)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(userNameLabel)
-                    .addComponent(usernameTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(31, 31, 31)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(paswdL)
-                    .addComponent(passPF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(57, 57, 57)
-                .addComponent(saveBtn)
-                .addContainerGap(161, Short.MAX_VALUE))
+                .addGap(38, 38, 38)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(registerBtn)
+                            .addComponent(setAccL, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(32, 32, 32)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(userNameLabel)
+                            .addComponent(usernameTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(50, 50, 50)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(paswdL)
+                            .addComponent(passPF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(68, 68, 68)
+                        .addComponent(saveBtn))
+                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 527, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(220, Short.MAX_VALUE))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
                     .addGap(48, 48, 48)
                     .addComponent(valAccL, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(647, Short.MAX_VALUE)))
+                    .addContainerGap(865, Short.MAX_VALUE)))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -258,6 +297,7 @@ public class DonorValidateJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel codeL;
     private javax.swing.JTextField codeTF;
     private javax.swing.JLabel helperLabel;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JPasswordField passPF;
     private javax.swing.JLabel paswdL;
     private javax.swing.JButton registerBtn;
