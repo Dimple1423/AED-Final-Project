@@ -4,3 +4,5 @@
 /HealthBuddy/nbproject/private/
 /HealthBuddy/build/
 /HealthBuddy/dist/
+/HealthBuddy/Databank.db4o
+/HealthBuddy/src/HealthBuddy/Config/Config.java
