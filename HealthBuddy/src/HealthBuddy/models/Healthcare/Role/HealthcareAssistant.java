@@ -18,6 +18,6 @@ public class HealthcareAssistant extends Role {
 
     @Override
     public JPanel createWorkArea(JPanel userProcessContainer, User account, Organisation organisation, Enterprise enterprise, Network network, EcoSystem system) {
-        return new AssistantWorkAreaPanel(userProcessContainer,account,(HealthcareOrganisationAssistant)organisation,enterprise,network,system); //To change body of generated methods, choose Tools | Templates.
-    }    
+        return new AssistantWorkAreaPanel(userProcessContainer, account, (HealthcareOrganisationAssistant) organisation, enterprise, network, system); //To change body of generated methods, choose Tools | Templates.
+    }
 }

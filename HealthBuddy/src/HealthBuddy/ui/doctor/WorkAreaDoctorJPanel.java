@@ -24,20 +24,18 @@ public class WorkAreaDoctorJPanel extends javax.swing.JPanel {
     /**
      * Creates new form WorkAreaDoctorJPanel
      */
-    
     private EcoSystem ecosystem;
     private Enterprise enterprise;
     private User userAccount;
     private HealthcareOrganisationDoctor docOrganisation;
     private AppointmentInformation appointment;
     private JPanel displayJPanel;
-    
+
     public WorkAreaDoctorJPanel() {
         initComponents();
     }
 
-    public WorkAreaDoctorJPanel(JPanel displayJPanel,User userAccount ,HealthcareOrganisationDoctor docOrganisation, Enterprise enterprise, EcoSystem ecosystem) 
-    {
+    public WorkAreaDoctorJPanel(JPanel displayJPanel, User userAccount, HealthcareOrganisationDoctor docOrganisation, Enterprise enterprise, EcoSystem ecosystem) {
         initComponents();
         this.displayJPanel = displayJPanel;
         this.userAccount = userAccount;
@@ -45,10 +43,11 @@ public class WorkAreaDoctorJPanel extends javax.swing.JPanel {
         this.docOrganisation = docOrganisation;
         this.enterprise = enterprise;
         this.ecosystem = ecosystem;
-        setSize(1540,800);
-        
+        setSize(1540, 800);
+
         populateForm();
     }
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -386,45 +385,45 @@ public class WorkAreaDoctorJPanel extends javax.swing.JPanel {
 
     private void btnAddPrescription9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddPrescription9ActionPerformed
         // TODO add your handling code here:
-         appointment.setDiseases(txtDisease9.getText());
-                appointment.setPrescription(txtPrescription9.getText());
-                boolean bloodRequired = isBloodRequired();
-                boolean donationRequired = isDonationRequired();
-                appointment.setisappointmentTaken(true);
-                appointment.setIsBloodNeeded(bloodRequired);
-                appointment.setIsFundNeeded(donationRequired);
-                
-                DoctorAttendantWQ attendantWorkQueue = new DoctorAttendantWQ();
-                DoctorAssistantAccountWQ assistantWorkQueue = new DoctorAssistantAccountWQ();
-                
-                attendantWorkQueue.setAppointmentInformation(appointment);
-                attendantWorkQueue.setSender(userAccount);
-                attendantWorkQueue.setMessage("Prescribed");
-                assistantWorkQueue.setApd(appointment);
-                assistantWorkQueue.setFundingRequired(donationRequired);
-                assistantWorkQueue.setFundingApproved(false);
-                assistantWorkQueue.setPrescribed(txtPrescription9.getText());
-                HealthcareOrganisationAttendant orgAttendant = null;
-                JOptionPane.showMessageDialog(null, "Prescription details updation complete!!","Success", JOptionPane.INFORMATION_MESSAGE);
-        
-        for (Organisation organisation : enterprise.getOrganizationCatalog().getOrganizationList()){
-            if (organisation instanceof HealthcareOrganisationAttendant){
-                orgAttendant = (HealthcareOrganisationAttendant)organisation;
+        appointment.setDiseases(txtDisease9.getText());
+        appointment.setPrescription(txtPrescription9.getText());
+        boolean bloodRequired = isBloodRequired();
+        boolean donationRequired = isDonationRequired();
+        appointment.setisappointmentTaken(true);
+        appointment.setIsBloodNeeded(bloodRequired);
+        appointment.setIsFundNeeded(donationRequired);
+
+        DoctorAttendantWQ attendantWorkQueue = new DoctorAttendantWQ();
+        DoctorAssistantAccountWQ assistantWorkQueue = new DoctorAssistantAccountWQ();
+
+        attendantWorkQueue.setAppointmentInformation(appointment);
+        attendantWorkQueue.setSender(userAccount);
+        attendantWorkQueue.setMessage("Prescribed");
+        assistantWorkQueue.setApd(appointment);
+        assistantWorkQueue.setFundingRequired(donationRequired);
+        assistantWorkQueue.setFundingApproved(false);
+        assistantWorkQueue.setPrescribed(txtPrescription9.getText());
+        HealthcareOrganisationAttendant orgAttendant = null;
+        JOptionPane.showMessageDialog(null, "Prescription details updation complete!!", "Success", JOptionPane.INFORMATION_MESSAGE);
+
+        for (Organisation organisation : enterprise.getOrganizationCatalog().getOrganizationList()) {
+            if (organisation instanceof HealthcareOrganisationAttendant) {
+                orgAttendant = (HealthcareOrganisationAttendant) organisation;
                 break;
             }
         }
-        if (orgAttendant!=null && appointment.isIsBloodNeeded() == true){
+        if (orgAttendant != null && appointment.isIsBloodNeeded() == true) {
             orgAttendant.getDoctorAttendantWQ().getWorkRequestList().add(attendantWorkQueue);
             userAccount.getWorkQueue().getWorkRequestList().add(attendantWorkQueue);
         }
         HealthcareOrganisationAssistant orgAssistant = null;
-        for (Organisation organisation : enterprise.getOrganizationCatalog().getOrganizationList()){
-            if (organisation instanceof HealthcareOrganisationAssistant){
-                orgAssistant = (HealthcareOrganisationAssistant)organisation;
+        for (Organisation organisation : enterprise.getOrganizationCatalog().getOrganizationList()) {
+            if (organisation instanceof HealthcareOrganisationAssistant) {
+                orgAssistant = (HealthcareOrganisationAssistant) organisation;
                 break;
             }
         }
-        if (orgAssistant!=null && appointment.isFundNeeded() == true){
+        if (orgAssistant != null && appointment.isFundNeeded() == true) {
             orgAssistant.getFundApplicationQueue().getWorkRequestList().add(assistantWorkQueue);
             userAccount.getWorkQueue().getWorkRequestList().add(assistantWorkQueue);
         }
@@ -473,61 +472,48 @@ public class WorkAreaDoctorJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel valuePatientName9;
     // End of variables declaration//GEN-END:variables
 
-public void populateForm()
-    {
-        for(AppointmentInformation appointment : ecosystem.getAppointmentCatalog().getAppointmentCatalog())
-        {
-            if(appointment.isisappointmentTaken() != true)
-            {
+    public void populateForm() {
+        for (AppointmentInformation appointment : ecosystem.getAppointmentCatalog().getAppointmentCatalog()) {
+            if (appointment.isisappointmentTaken() != true) {
                 this.appointment = appointment;
                 txtPatientName9.setText(appointment.getPatient().getPatientName());
                 txtDOB9.setText(String.valueOf(appointment.getPatient().getDateOfBirth()));
                 txtBloodGroup9.setText(appointment.getPatient().getBloodGroup());
                 populateLabel();
                 break;
-                
+
             }
         }
     }
 
-public void populateLabel(){
+    public void populateLabel() {
         int count = -1;
-        for(AppointmentInformation appointment : ecosystem.getAppointmentCatalog().getAppointmentCatalog())
-        {
-            if(appointment.isisappointmentTaken() == false)
-            {
+        for (AppointmentInformation appointment : ecosystem.getAppointmentCatalog().getAppointmentCatalog()) {
+            if (appointment.isisappointmentTaken() == false) {
                 count++;
             }
         }
         lblPatientsWaiting9.setText(String.valueOf(count));
     }
 
-public boolean isBloodRequired()
-    {
-         boolean output=false;
-        if(RadioBloodYes9.isSelected())
-        {
+    public boolean isBloodRequired() {
+        boolean output = false;
+        if (RadioBloodYes9.isSelected()) {
             return true;
-        }
-        else if(RadioBloodNo9.isSelected())
-        {
+        } else if (RadioBloodNo9.isSelected()) {
             return false;
         }
         return false;
     }
 
-public boolean isDonationRequired()
-    {
-        boolean output=false;
-        if(RadioFundsYes9.isSelected())
-        {
+    public boolean isDonationRequired() {
+        boolean output = false;
+        if (RadioFundsYes9.isSelected()) {
             return true;
-        }
-        else if(RadioFundsNo9.isSelected())
-        {
+        } else if (RadioFundsNo9.isSelected()) {
             return false;
         }
-        
+
         return false;
 
 //         output=RadioFundsYes.isSelected()?true:false;
@@ -536,11 +522,11 @@ public boolean isDonationRequired()
 //        return output;
     }
 
-public void resetFields(){
-    txtPatientName9.setText("");
+    public void resetFields() {
+        txtPatientName9.setText("");
         txtDOB9.setText("");
         txtBloodGroup9.setText("");
         txtDisease9.setText("");
         txtPrescription9.setText("");
-}
+    }
 }
