@@ -11,16 +11,17 @@ import HealthBuddy.models.EcoSystem;
  * @author Nidhi Singh
  */
 
-public class SysAdminWorkAreaJPanel extends javax.swing.JPanel {
-JPanel showPanel;
+public class SysAdminWorkAreaJPanel extends JPanel {
     EcoSystem ecosystem;
+    JPanel showPanel;
+
     /**
      * Creates new form SystemAdminWorkAreaJPanel
      */
     public SysAdminWorkAreaJPanel(JPanel showPanel,EcoSystem ecosystem) {
         initComponents();
-        this.ecosystem=ecosystem;
         this.showPanel=showPanel;
+        this.ecosystem=ecosystem;
         setSize(1540,800);
     }
 

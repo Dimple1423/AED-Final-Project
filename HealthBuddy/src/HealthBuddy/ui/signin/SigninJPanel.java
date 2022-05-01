@@ -17,8 +17,10 @@ import HealthBuddy.Config.Config;
  * @author Dimple Patel
  */
 public class SigninJPanel extends javax.swing.JPanel {
-   private JPanel bodyPanel;
+
+    private JPanel bodyPanel;
     private EcoSystem ecosystem;
+
     /**
      * Creates new form LoginJPanel
      */
@@ -26,7 +28,7 @@ public class SigninJPanel extends javax.swing.JPanel {
         initComponents();
         this.bodyPanel = bodyPanel;
         this.ecosystem = ecosystem;
-        setSize(1540,830);
+        setSize(1540, 830);
     }
 
     /**
@@ -165,59 +167,48 @@ public class SigninJPanel extends javax.swing.JPanel {
 
         String userName = Config.getClippedText(usernameTF);
         String password = String.valueOf(passPF.getPassword());
-        
-        User userAccount= ecosystem.getUserCatalog().authenticateUserAccount(userName, password);
-        Enterprise inEnterprise=null;
-        Organisation inOrganisation=null;
+
+        User userAccount = ecosystem.getUserCatalog().authenticateUserAccount(userName, password);
+        Enterprise inEnterprise = null;
+        Organisation inOrganisation = null;
         Network net = null;
 
-        if(userAccount==null)
-        {
+        if (userAccount == null) {
             //Step 2: Go inside each network and check each enterprise
-            for(Network network:ecosystem.getNetworkList()){
+            for (Network network : ecosystem.getNetworkList()) {
                 //Step 2.a: check against each enterprise
                 net = network;
-                for(Enterprise enterprise: network.getEnterpriseCatalog().getEnterpriseList()){
-                    userAccount=enterprise.getUserCatalog().authenticateUserAccount(userName, password);
-                    if(userAccount==null){
+                for (Enterprise enterprise : network.getEnterpriseCatalog().getEnterpriseList()) {
+//                    Creating user account
+                    userAccount = enterprise.getUserCatalog().authenticateUserAccount(userName, password);
+                    if (userAccount == null) {
                         //Step 3:check against each organization for each enterprise
-                        for(Organisation organisation:enterprise.getOrganizationCatalog().getOrganizationList()){
-                            userAccount=organisation.getUserCatalog().authenticateUserAccount(userName, password);
-                            if(userAccount!=null){
-                                inEnterprise=enterprise;
-                                inOrganisation=organisation;
+                        for (Organisation organisation : enterprise.getOrganizationCatalog().getOrganizationList()) {
+                            userAccount = organisation.getUserCatalog().authenticateUserAccount(userName, password);
+                            if (userAccount != null) {
+                                inEnterprise = enterprise;
+                                inOrganisation = organisation;
                                 break;
                             }
                         }
 
-                    }
-
-                    else
-                    {
-                        inEnterprise=enterprise;
+                    } else {
+                        inEnterprise = enterprise;
                         break;
                     }
-                    if(inOrganisation!=null){
-                        break;
-                    }
+                    if (inOrganisation != null) break;
                 }
-                if(inEnterprise!=null)
-                {
-                    break;
-                }
+                if (inEnterprise != null) break;
             }
         }
 
-        if(userAccount==null)
-        {
-            JOptionPane.showMessageDialog(null, "Invalid credentials");
+        if (userAccount == null) {
+            JOptionPane.showMessageDialog(null, "Please Enter correct details");
             return;
-        }
-        else
-        {
-            CardLayout layout=(CardLayout)bodyPanel.getLayout();
-            bodyPanel.add("workArea",userAccount.getRole().createWorkArea(bodyPanel, userAccount,
-                    inOrganisation, inEnterprise,net ,ecosystem));
+        } else {
+            CardLayout layout = (CardLayout) bodyPanel.getLayout();
+            bodyPanel.add("workArea", userAccount.getRole().createWorkArea(bodyPanel, userAccount,
+                    inOrganisation, inEnterprise, net, ecosystem));
             layout.next(bodyPanel);
         }
 

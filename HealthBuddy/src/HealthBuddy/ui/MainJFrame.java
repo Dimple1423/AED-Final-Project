@@ -197,35 +197,23 @@ public class MainJFrame extends javax.swing.JFrame {
 
     private void ButtonSIActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonSIActionPerformed
         // TODO add your handling code here:
-        
-        
         SigninJPanel signinJPanel = new SigninJPanel(bodyPanel, system);
         bodyPanel.add("SigninJPanel", signinJPanel);
         CardLayout layout = (CardLayout) bodyPanel.getLayout();
         layout.next(bodyPanel);
-
         ButtonSO.setEnabled(true);
-
-        
-       
-        
-        
     }//GEN-LAST:event_ButtonSIActionPerformed
 
     private void ButtonDonorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonDonorActionPerformed
         // TODO add your handling code here:
-        
         CreateDonorJPanel createDonor = new CreateDonorJPanel(bodyPanel, system);
         bodyPanel.add("CreateDonorJPanel", createDonor);
         CardLayout layout = (CardLayout) bodyPanel.getLayout();
         layout.next(bodyPanel);
-
-
     }//GEN-LAST:event_ButtonDonorActionPerformed
 
     private void ButtonSOActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonSOActionPerformed
         // TODO add your handling code here:
-        
         ButtonSO.setEnabled(false);
         ButtonSI.setEnabled(true);
         ButtonDonor.setEnabled(true);
