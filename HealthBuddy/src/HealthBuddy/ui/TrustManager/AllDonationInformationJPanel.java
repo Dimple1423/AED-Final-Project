@@ -7,6 +7,8 @@ import HealthBuddy.models.Trust.Donation.TrustDetails;
 import java.awt.CardLayout;
 import javax.swing.JPanel;
 import javax.swing.table.DefaultTableModel;
+import javax.swing.ImageIcon;
+import java.awt.Image;
 
 /**
  *
@@ -32,6 +34,7 @@ public class AllDonationInformationJPanel extends javax.swing.JPanel
         lblValue.setText(enterprise.getName());
         
         populateJTable();
+        setSize(1540,800);
     }
     
     public void populateJTable()
@@ -70,14 +73,18 @@ public class AllDonationInformationJPanel extends javax.swing.JPanel
         lblValue = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(204, 204, 255));
+        setBackground(new java.awt.Color(255, 255, 255));
         setBorder(javax.swing.BorderFactory.createTitledBorder("Donations Details"));
+        setForeground(new java.awt.Color(0, 102, 102));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        lblTitle.setFont(new java.awt.Font("Songti TC", 1, 36)); // NOI18N
-        lblTitle.setForeground(new java.awt.Color(255, 0, 51));
-        lblTitle.setText("DONATIONS INFORMATION");
-        add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 20, 510, -1));
+        lblTitle.setBackground(new java.awt.Color(255, 255, 255));
+        lblTitle.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+        lblTitle.setForeground(new java.awt.Color(0, 102, 102));
+        lblTitle.setText("Donation Information");
+        add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 20, 450, -1));
+
+        jScrollPane1.setForeground(new java.awt.Color(0, 102, 102));
 
         donationDetailsJTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -107,27 +114,34 @@ public class AllDonationInformationJPanel extends javax.swing.JPanel
 
         add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 160, 677, 110));
 
-        btnBack.setFont(new java.awt.Font("Songti TC", 1, 18)); // NOI18N
-        btnBack.setForeground(new java.awt.Color(0, 51, 102));
+        btnBack.setBackground(new java.awt.Color(0, 102, 102));
+        btnBack.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        btnBack.setForeground(new java.awt.Color(255, 255, 255));
         btnBack.setText("Back");
+        btnBack.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnBack.setBorderPainted(false);
         btnBack.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnBackActionPerformed(evt);
             }
         });
-        add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 20, -1, -1));
+        add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(1260, 30, 90, 30));
 
-        lblName.setFont(new java.awt.Font("Songti TC", 1, 18)); // NOI18N
-        lblName.setForeground(new java.awt.Color(0, 51, 102));
+        lblName.setBackground(new java.awt.Color(255, 255, 255));
+        lblName.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        lblName.setForeground(new java.awt.Color(0, 102, 102));
         lblName.setText("Funding Organisation Name");
         add(lblName, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 110, 260, -1));
 
-        lblValue.setFont(new java.awt.Font("Songti TC", 1, 18)); // NOI18N
-        lblValue.setForeground(new java.awt.Color(0, 51, 102));
+        lblValue.setBackground(new java.awt.Color(255, 255, 255));
+        lblValue.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        lblValue.setForeground(new java.awt.Color(0, 102, 102));
         lblValue.setText("value");
         add(lblValue, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 110, 90, 30));
 
-        jLabel2.setBackground(new java.awt.Color(204, 204, 255));
+        jLabel2.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(0, 102, 102));
         add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 280, 830, -1));
     }// </editor-fold>//GEN-END:initComponents
 

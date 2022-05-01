@@ -15,6 +15,8 @@ import javax.swing.table.DefaultTableModel;
 import javax.swing.JOptionPane;
 import java.util.Date;
 import javax.swing.JPanel;
+import javax.swing.ImageIcon;
+import java.awt.Image;
 
 /**
  *
@@ -45,6 +47,7 @@ public class PatientsCureSponsoringInformation extends javax.swing.JPanel
         amountFromFunding = Float.parseFloat(funds);
         
         populateJTable();
+        setSize(1540,800);
     }
     
     public void populateJTable()
@@ -82,12 +85,16 @@ public class PatientsCureSponsoringInformation extends javax.swing.JPanel
         btnSelectSponsor = new javax.swing.JButton();
         btnBack = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(251, 219, 69));
+        setBackground(new java.awt.Color(255, 255, 255));
         setBorder(javax.swing.BorderFactory.createTitledBorder("View Patients"));
+        setForeground(new java.awt.Color(0, 102, 102));
 
-        lblTitle.setFont(new java.awt.Font("Songti TC", 1, 48)); // NOI18N
-        lblTitle.setForeground(new java.awt.Color(59, 186, 210));
-        lblTitle.setText("SPONSOR PATIENTS TREATMENT");
+        lblTitle.setBackground(new java.awt.Color(255, 255, 255));
+        lblTitle.setFont(new java.awt.Font("Tahoma", 1, 48)); // NOI18N
+        lblTitle.setForeground(new java.awt.Color(0, 102, 102));
+        lblTitle.setText("Sponsor Patients' Treatment");
+
+        jScrollPane1.setForeground(new java.awt.Color(0, 102, 102));
 
         patientSponsorshipJTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -117,18 +124,24 @@ public class PatientsCureSponsoringInformation extends javax.swing.JPanel
             patientSponsorshipJTable.getColumnModel().getColumn(4).setResizable(false);
         }
 
-        btnSelectSponsor.setFont(new java.awt.Font("Songti TC", 1, 14)); // NOI18N
-        btnSelectSponsor.setForeground(new java.awt.Color(0, 51, 102));
+        btnSelectSponsor.setBackground(new java.awt.Color(0, 102, 102));
+        btnSelectSponsor.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btnSelectSponsor.setForeground(new java.awt.Color(255, 255, 255));
         btnSelectSponsor.setText("Sponsor");
+        btnSelectSponsor.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnSelectSponsor.setBorderPainted(false);
         btnSelectSponsor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnSelectSponsorActionPerformed(evt);
             }
         });
 
-        btnBack.setFont(new java.awt.Font("Songti TC", 1, 14)); // NOI18N
-        btnBack.setForeground(new java.awt.Color(0, 51, 102));
+        btnBack.setBackground(new java.awt.Color(0, 102, 102));
+        btnBack.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        btnBack.setForeground(new java.awt.Color(255, 255, 255));
         btnBack.setText("Back");
+        btnBack.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnBack.setBorderPainted(false);
         btnBack.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnBackActionPerformed(evt);
@@ -140,19 +153,19 @@ public class PatientsCureSponsoringInformation extends javax.swing.JPanel
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(113, 113, 113)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 672, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(813, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(btnSelectSponsor)
-                .addGap(309, 1495, Short.MAX_VALUE))
-            .addGroup(layout.createSequentialGroup()
                 .addGap(57, 57, 57)
-                .addComponent(lblTitle)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(btnBack)
-                .addGap(28, 28, 28))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 672, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(btnSelectSponsor, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(lblTitle)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 656, Short.MAX_VALUE)
+                        .addComponent(btnBack, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(28, 28, 28))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -161,12 +174,12 @@ public class PatientsCureSponsoringInformation extends javax.swing.JPanel
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(lblTitle))
-                    .addComponent(btnBack))
-                .addGap(40, 40, 40)
+                    .addComponent(btnBack, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(39, 39, 39)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 192, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(btnSelectSponsor)
-                .addContainerGap(334, Short.MAX_VALUE))
+                .addGap(49, 49, 49)
+                .addComponent(btnSelectSponsor, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(372, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
