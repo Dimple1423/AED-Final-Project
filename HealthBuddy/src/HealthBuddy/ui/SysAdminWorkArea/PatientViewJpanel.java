@@ -26,20 +26,20 @@ public class PatientViewJpanel extends javax.swing.JPanel
         this.system=system;
         this.showPanel=showPanel;
         this.patient = patient;
-        txtPatientAddress.setEnabled(false);
-        txtPatientCity.setEnabled(false);
-        txtPatientName.setEnabled(false);
-        txtPatientContactNumber.setEnabled(false);
-        txtPatientState.setEnabled(false);
-        txtZipCode.setEnabled(false);
-        txtPatientUserName.setEnabled(false);
-        txtPatientAddress.setText(patient.getAddress());
-        txtPatientCity.setText(patient.getCity());
-        txtPatientName.setText(patient.getPatientName());
-        txtZipCode.setText(String.valueOf(patient.getZipCode()));
-        txtPatientContactNumber.setText(patient.getContactNo());
-        txtPatientState.setText(patient.getState());
-        txtPatientUserName.setText(patient.getUsername());
+        addtext.setEnabled(false);
+        citytxt.setEnabled(false);
+        nameText.setEnabled(false);
+        mobileText.setEnabled(false);
+        statetxt.setEnabled(false);
+        zipcodeText.setEnabled(false);
+        unameText.setEnabled(false);
+        addtext.setText(patient.getAddress());
+        citytxt.setText(patient.getCity());
+        nameText.setText(patient.getPatientName());
+        zipcodeText.setText(String.valueOf(patient.getZipCode()));
+        mobileText.setText(patient.getContactNo());
+        statetxt.setText(patient.getState());
+        unameText.setText(patient.getUsername());
         setSize(1540,800);
     }
 
@@ -52,22 +52,22 @@ public class PatientViewJpanel extends javax.swing.JPanel
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        lblName = new javax.swing.JLabel();
-        lblPhoneNumber = new javax.swing.JLabel();
-        lblAddress = new javax.swing.JLabel();
-        lblCity = new javax.swing.JLabel();
-        lblTitle = new javax.swing.JLabel();
-        lblState = new javax.swing.JLabel();
-        lblZipCode = new javax.swing.JLabel();
-        txtPatientName = new javax.swing.JTextField();
-        txtPatientContactNumber = new javax.swing.JTextField();
-        txtPatientAddress = new javax.swing.JTextField();
-        txtPatientCity = new javax.swing.JTextField();
-        txtZipCode = new javax.swing.JTextField();
-        txtPatientState = new javax.swing.JTextField();
-        btnBack = new javax.swing.JButton();
-        lblUserName = new javax.swing.JLabel();
-        txtPatientUserName = new javax.swing.JTextField();
+        nameLabel = new javax.swing.JLabel();
+        mobileNumberLabel = new javax.swing.JLabel();
+        addlable = new javax.swing.JLabel();
+        citylabel = new javax.swing.JLabel();
+        titleLabel = new javax.swing.JLabel();
+        statelable = new javax.swing.JLabel();
+        codelable = new javax.swing.JLabel();
+        nameText = new javax.swing.JTextField();
+        mobileText = new javax.swing.JTextField();
+        addtext = new javax.swing.JTextField();
+        citytxt = new javax.swing.JTextField();
+        zipcodeText = new javax.swing.JTextField();
+        statetxt = new javax.swing.JTextField();
+        backButton = new javax.swing.JButton();
+        unameLabel = new javax.swing.JLabel();
+        unameText = new javax.swing.JTextField();
         lblUserPhoto = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
@@ -76,93 +76,105 @@ public class PatientViewJpanel extends javax.swing.JPanel
         setForeground(new java.awt.Color(0, 102, 102));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        lblName.setBackground(new java.awt.Color(255, 255, 255));
-        lblName.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        lblName.setForeground(new java.awt.Color(0, 102, 102));
-        lblName.setText("Patient's Name");
-        add(lblName, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 92, -1, -1));
+        nameLabel.setBackground(new java.awt.Color(255, 255, 255));
+        nameLabel.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        nameLabel.setForeground(new java.awt.Color(0, 102, 102));
+        nameLabel.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
+        nameLabel.setText("Patient's Name:");
+        add(nameLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 230, 170, -1));
 
-        lblPhoneNumber.setBackground(new java.awt.Color(255, 255, 255));
-        lblPhoneNumber.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        lblPhoneNumber.setForeground(new java.awt.Color(0, 102, 102));
-        lblPhoneNumber.setText("Phone Number");
-        add(lblPhoneNumber, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 136, -1, -1));
+        mobileNumberLabel.setBackground(new java.awt.Color(255, 255, 255));
+        mobileNumberLabel.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        mobileNumberLabel.setForeground(new java.awt.Color(0, 102, 102));
+        mobileNumberLabel.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
+        mobileNumberLabel.setText("Mobile Number:");
+        add(mobileNumberLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 270, 170, -1));
 
-        lblAddress.setBackground(new java.awt.Color(255, 255, 255));
-        lblAddress.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        lblAddress.setForeground(new java.awt.Color(0, 102, 102));
-        lblAddress.setText("Address Line1");
-        add(lblAddress, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 174, -1, -1));
+        addlable.setBackground(new java.awt.Color(255, 255, 255));
+        addlable.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        addlable.setForeground(new java.awt.Color(0, 102, 102));
+        addlable.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
+        addlable.setText("Address Line1:");
+        add(addlable, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 310, 170, -1));
 
-        lblCity.setBackground(new java.awt.Color(255, 255, 255));
-        lblCity.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        lblCity.setForeground(new java.awt.Color(0, 102, 102));
-        lblCity.setText("City");
-        add(lblCity, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 212, -1, -1));
+        citylabel.setBackground(new java.awt.Color(255, 255, 255));
+        citylabel.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        citylabel.setForeground(new java.awt.Color(0, 102, 102));
+        citylabel.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
+        citylabel.setText("City:");
+        add(citylabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 350, 170, -1));
 
-        lblTitle.setBackground(new java.awt.Color(255, 255, 255));
-        lblTitle.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        lblTitle.setForeground(new java.awt.Color(0, 102, 102));
-        lblTitle.setText("View Patient Account");
-        add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 24, 300, 35));
+        titleLabel.setBackground(new java.awt.Color(255, 255, 255));
+        titleLabel.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        titleLabel.setForeground(new java.awt.Color(0, 102, 102));
+        titleLabel.setText("Patient Details");
+        add(titleLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 160, 300, 35));
 
-        lblState.setBackground(new java.awt.Color(255, 255, 255));
-        lblState.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        lblState.setForeground(new java.awt.Color(0, 102, 102));
-        lblState.setText("State");
-        add(lblState, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 250, -1, -1));
+        statelable.setBackground(new java.awt.Color(255, 255, 255));
+        statelable.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        statelable.setForeground(new java.awt.Color(0, 102, 102));
+        statelable.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
+        statelable.setText("State:");
+        add(statelable, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 390, 170, -1));
 
-        lblZipCode.setBackground(new java.awt.Color(255, 255, 255));
-        lblZipCode.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        lblZipCode.setForeground(new java.awt.Color(0, 102, 102));
-        lblZipCode.setText("ZipCode");
-        add(lblZipCode, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 288, -1, -1));
+        codelable.setBackground(new java.awt.Color(255, 255, 255));
+        codelable.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        codelable.setForeground(new java.awt.Color(0, 102, 102));
+        codelable.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
+        codelable.setText("Postal Code:");
+        add(codelable, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 430, 170, -1));
 
-        txtPatientName.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        txtPatientName.setForeground(new java.awt.Color(0, 102, 102));
-        add(txtPatientName, new org.netbeans.lib.awtextra.AbsoluteConstraints(195, 87, 181, -1));
+        nameText.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        nameText.setForeground(new java.awt.Color(0, 102, 102));
+        add(nameText, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 230, 181, -1));
 
-        txtPatientContactNumber.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        txtPatientContactNumber.setForeground(new java.awt.Color(0, 102, 102));
-        add(txtPatientContactNumber, new org.netbeans.lib.awtextra.AbsoluteConstraints(195, 131, 181, -1));
+        mobileText.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        mobileText.setForeground(new java.awt.Color(0, 102, 102));
+        add(mobileText, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 270, 181, -1));
 
-        txtPatientAddress.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        txtPatientAddress.setForeground(new java.awt.Color(0, 102, 102));
-        add(txtPatientAddress, new org.netbeans.lib.awtextra.AbsoluteConstraints(195, 169, 181, -1));
+        addtext.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        addtext.setForeground(new java.awt.Color(0, 102, 102));
+        add(addtext, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 310, 181, -1));
 
-        txtPatientCity.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        txtPatientCity.setForeground(new java.awt.Color(0, 102, 102));
-        add(txtPatientCity, new org.netbeans.lib.awtextra.AbsoluteConstraints(195, 207, 181, -1));
+        citytxt.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        citytxt.setForeground(new java.awt.Color(0, 102, 102));
+        add(citytxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 350, 181, -1));
 
-        txtZipCode.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        add(txtZipCode, new org.netbeans.lib.awtextra.AbsoluteConstraints(195, 283, 181, -1));
-
-        txtPatientState.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        txtPatientState.setForeground(new java.awt.Color(0, 102, 102));
-        add(txtPatientState, new org.netbeans.lib.awtextra.AbsoluteConstraints(195, 245, 181, -1));
-
-        btnBack.setBackground(new java.awt.Color(0, 102, 102));
-        btnBack.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        btnBack.setForeground(new java.awt.Color(255, 255, 255));
-        btnBack.setText("Back");
-        btnBack.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btnBack.setBorderPainted(false);
-        btnBack.addActionListener(new java.awt.event.ActionListener() {
+        zipcodeText.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        zipcodeText.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnBackActionPerformed(evt);
+                zipcodeTextActionPerformed(evt);
             }
         });
-        add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(1315, 30, 90, 40));
+        add(zipcodeText, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 430, 181, -1));
 
-        lblUserName.setBackground(new java.awt.Color(255, 255, 255));
-        lblUserName.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        lblUserName.setForeground(new java.awt.Color(0, 102, 102));
-        lblUserName.setText("UserName");
-        add(lblUserName, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 326, -1, -1));
+        statetxt.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        statetxt.setForeground(new java.awt.Color(0, 102, 102));
+        add(statetxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 390, 181, -1));
 
-        txtPatientUserName.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        txtPatientUserName.setForeground(new java.awt.Color(0, 102, 102));
-        add(txtPatientUserName, new org.netbeans.lib.awtextra.AbsoluteConstraints(195, 321, 181, -1));
+        backButton.setBackground(new java.awt.Color(0, 102, 102));
+        backButton.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        backButton.setForeground(new java.awt.Color(255, 255, 255));
+        backButton.setText("Back");
+        backButton.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        backButton.setBorderPainted(false);
+        backButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                backButtonActionPerformed(evt);
+            }
+        });
+        add(backButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1315, 30, 90, 40));
+
+        unameLabel.setBackground(new java.awt.Color(255, 255, 255));
+        unameLabel.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        unameLabel.setForeground(new java.awt.Color(0, 102, 102));
+        unameLabel.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
+        unameLabel.setText("Username:");
+        add(unameLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 470, 170, -1));
+
+        unameText.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        unameText.setForeground(new java.awt.Color(0, 102, 102));
+        add(unameText, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 470, 181, -1));
         add(lblUserPhoto, new org.netbeans.lib.awtextra.AbsoluteConstraints(497, 87, 60, 120));
 
         ImageIcon imageIcon = new ImageIcon(new ImageIcon(getClass().getResource("/HealthBuddy/ui/images/patientinfo.gif")).getImage().getScaledInstance(500, 500, Image.SCALE_DEFAULT));
@@ -171,30 +183,34 @@ public class PatientViewJpanel extends javax.swing.JPanel
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 70, 660, 600));
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
+    private void backButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backButtonActionPerformed
         showPanel.remove(this);
         CardLayout layout = (CardLayout) showPanel.getLayout();
         layout.previous(showPanel); 
-    }//GEN-LAST:event_btnBackActionPerformed
+    }//GEN-LAST:event_backButtonActionPerformed
+
+    private void zipcodeTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_zipcodeTextActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_zipcodeTextActionPerformed
      
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnBack;
+    private javax.swing.JLabel addlable;
+    private javax.swing.JTextField addtext;
+    private javax.swing.JButton backButton;
+    private javax.swing.JLabel citylabel;
+    private javax.swing.JTextField citytxt;
+    private javax.swing.JLabel codelable;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel lblAddress;
-    private javax.swing.JLabel lblCity;
-    private javax.swing.JLabel lblName;
-    private javax.swing.JLabel lblPhoneNumber;
-    private javax.swing.JLabel lblState;
-    private javax.swing.JLabel lblTitle;
-    private javax.swing.JLabel lblUserName;
     private javax.swing.JLabel lblUserPhoto;
-    private javax.swing.JLabel lblZipCode;
-    private javax.swing.JTextField txtPatientAddress;
-    private javax.swing.JTextField txtPatientCity;
-    private javax.swing.JTextField txtPatientContactNumber;
-    private javax.swing.JTextField txtPatientName;
-    private javax.swing.JTextField txtPatientState;
-    private javax.swing.JTextField txtPatientUserName;
-    private javax.swing.JTextField txtZipCode;
+    private javax.swing.JLabel mobileNumberLabel;
+    private javax.swing.JTextField mobileText;
+    private javax.swing.JLabel nameLabel;
+    private javax.swing.JTextField nameText;
+    private javax.swing.JLabel statelable;
+    private javax.swing.JTextField statetxt;
+    private javax.swing.JLabel titleLabel;
+    private javax.swing.JLabel unameLabel;
+    private javax.swing.JTextField unameText;
+    private javax.swing.JTextField zipcodeText;
     // End of variables declaration//GEN-END:variables
 }

@@ -23,8 +23,8 @@ EcoSystem ecosystem;
      */
     public LocationManageJPanel(JPanel showPanel, EcoSystem ecosystem) {
         initComponents();
-        this.showPanel=showPanel;
         this.ecosystem=ecosystem;
+        this.showPanel=showPanel;
         populateLocationTable();
         setSize(1540,830);
     }
@@ -32,11 +32,12 @@ EcoSystem ecosystem;
      private void populateLocationTable() {
         DefaultTableModel model = (DefaultTableModel) LocationJTable.getModel();
         model.setRowCount(0);
-        for (Network network : ecosystem.getNetworkList()) {
-            Object[] row = new Object[1];
-            row[0] = network.getNetworkName();
-            model.addRow(row);
-        }
+//        fetching all networks
+        ecosystem.getNetworkList().forEach(net -> {
+            Object[] tuple = new Object[1];
+            tuple[0] = net.getNetworkName();
+            model.addRow(tuple);
+        });
     }
    
     /**
@@ -91,9 +92,10 @@ EcoSystem ecosystem;
                 return canEdit [columnIndex];
             }
         });
+        LocationJTable.setSelectionBackground(new java.awt.Color(0, 102, 102));
         jScrollPane1.setViewportView(LocationJTable);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 90, 420, 140));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 200, 420, 140));
 
         btnSubmit.setBackground(new java.awt.Color(0, 102, 102));
         btnSubmit.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
@@ -106,18 +108,18 @@ EcoSystem ecosystem;
                 btnSubmitActionPerformed(evt);
             }
         });
-        add(btnSubmit, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 300, 110, 30));
+        add(btnSubmit, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 410, 110, 30));
 
         txtEnterCity.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         txtEnterCity.setForeground(new java.awt.Color(0, 102, 102));
-        add(txtEnterCity, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 250, 130, 30));
+        add(txtEnterCity, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 360, 130, 30));
 
         addCityjLabel.setBackground(new java.awt.Color(255, 255, 255));
         addCityjLabel.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         addCityjLabel.setForeground(new java.awt.Color(0, 102, 102));
         addCityjLabel.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         addCityjLabel.setText("Add City:");
-        add(addCityjLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 250, 100, 30));
+        add(addCityjLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 360, 100, 30));
 
         btnBack.setBackground(new java.awt.Color(0, 102, 102));
         btnBack.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
@@ -136,7 +138,7 @@ EcoSystem ecosystem;
         jLabel2.setFont(new java.awt.Font("Songti TC", 1, 36)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(0, 102, 102));
         jLabel2.setText("Add Network");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 30, 300, 46));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 140, 300, 46));
 
         ImageIcon imageIcon = new ImageIcon(new ImageIcon(getClass().getResource("/HealthBuddy/ui/images/social_network__3_.gif")).getImage().getScaledInstance(800, 800, Image.SCALE_DEFAULT));jLabel1.setIcon(imageIcon);
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 80, 860, 600));

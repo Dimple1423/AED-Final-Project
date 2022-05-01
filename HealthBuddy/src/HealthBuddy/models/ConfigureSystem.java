@@ -12,8 +12,8 @@ public class ConfigureSystem {
     public static EcoSystem configure()
     {    
         EcoSystem system = EcoSystem.getInstance();
-        Employee employee = system.getEmployeeCatalog().addEmployee("sysadmin");
-        User user = system.getUserCatalog().newUserAccount("sysadmin", "sysadmin", employee,new SysAdmin());
+        Employee employee = system.getEmployeeCatalog().addEmployee("hbadmin");
+        User user = system.getUserCatalog().newUserAccount("hbadmin", "hbadmin", employee,new SysAdmin());
         
         return system;
     }

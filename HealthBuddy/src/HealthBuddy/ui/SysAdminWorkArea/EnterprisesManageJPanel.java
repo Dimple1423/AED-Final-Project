@@ -34,26 +34,27 @@ EcoSystem ecosystem;
     private void populateEnterpriseTable() {
         DefaultTableModel model = (DefaultTableModel) tblEnterpriseDetails.getModel();
         model.setRowCount(0);
-        for (Network network : ecosystem.getNetworkList()) {
-            for (Enterprise enterprise : network.getEnterpriseCatalog().getEnterpriseList()) {
-                Object[] row = new Object[3];
-                row[0] = enterprise.getName();
-                row[1] = network.getNetworkName();
-                row[2] = enterprise.getEnterpriseClassification().getVal();
-                model.addRow(row);
-            }
-        }
+        
+        ecosystem.getNetworkList().forEach(net -> {
+            net.getEnterpriseCatalog().getEnterpriseList().forEach(ent -> {
+                Object[] tuple = new Object[3];
+                tuple[0] = ent.getName();
+                tuple[1] = net.getNetworkName();
+                tuple[2] = ent.getEnterpriseClassification().getVal();
+                model.addRow(tuple);
+            });
+        });
     }
 
     private void populateComboBox() {
         networkJComboBox.removeAllItems();
         enterpriseTypeJComboBox.removeAllItems();
-        for (int i = 0; i < ecosystem.getNetworkList().size(); i++) {
-            Network network =ecosystem.getNetworkList().get(i);
-            networkJComboBox.addItem(network);
+        for (int j = 0; j < ecosystem.getNetworkList().size(); j++) {
+            Network net =ecosystem.getNetworkList().get(j);
+            networkJComboBox.addItem(net);
         }
-        for (Enterprise.EnterpriseClassification type : Enterprise.EnterpriseClassification.values()) {
-            enterpriseTypeJComboBox.addItem(type);
+        for (Enterprise.EnterpriseClassification enterpriseType : Enterprise.EnterpriseClassification.values()) {
+            enterpriseTypeJComboBox.addItem(enterpriseType);
         }
     }
 
@@ -97,6 +98,7 @@ EcoSystem ecosystem;
                 "EnterPrise's Name", "Network", "Type"
             }
         ));
+        tblEnterpriseDetails.setSelectionBackground(new java.awt.Color(0, 102, 102));
         jScrollPane1.setViewportView(tblEnterpriseDetails);
 
         add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 160, 440, 180));
@@ -199,25 +201,24 @@ EcoSystem ecosystem;
         Enterprise.EnterpriseClassification type = (Enterprise.EnterpriseClassification) enterpriseTypeJComboBox.getSelectedItem();
         if (network == null || type == null) 
         {
-            JOptionPane.showMessageDialog(null, "Invalid Input!");
+            JOptionPane.showMessageDialog(null, "Please Enter Valid Input!");
             return;
         }
         String name = txtName.getText();
         if(name.isEmpty()==true)
-        {
-            JOptionPane.showMessageDialog(null, "Please add a Name ","Success", JOptionPane.INFORMATION_MESSAGE);
-        }
+            JOptionPane.showMessageDialog(null, "Name is mandatory ","Success", JOptionPane.INFORMATION_MESSAGE);
         else
         {    
             Enterprise enterprise = network.getEnterpriseCatalog().createAndAddEnterprise(name, type, txtcause.getText().trim());
             populateEnterpriseTable();
             txtName.setText("");
+            txtcause.setText("");
         }
     }//GEN-LAST:event_btnSubmitActionPerformed
 
     private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
         // TODO add your handling code here:
-         showPanel.remove(this);
+        showPanel.remove(this);
         Component[] componentArray = showPanel.getComponents();
         Component component = componentArray[componentArray.length - 1];
         SysAdminWorkAreaJPanel sysAdminwjp = (SysAdminWorkAreaJPanel) component;

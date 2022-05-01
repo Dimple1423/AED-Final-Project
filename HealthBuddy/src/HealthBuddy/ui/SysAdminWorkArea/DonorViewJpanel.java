@@ -2,8 +2,10 @@ package HealthBuddy.ui.SysAdminWorkArea;
 
 
 import java.awt.CardLayout;
+import javax.swing.ImageIcon;
 import javax.swing.JPanel;
 import HealthBuddy.models.EcoSystem;
+import java.awt.Image;
 import HealthBuddy.models.UserData.*;
 
 /**
@@ -12,8 +14,8 @@ import HealthBuddy.models.UserData.*;
  */
 public class DonorViewJpanel extends javax.swing.JPanel 
 {
-    private JPanel showPanel;
     private EcoSystem system;
+    private JPanel showPanel;
     private DonorData donorData;
     /**
      * Creates new form CreatePatientAccount
@@ -23,21 +25,22 @@ public class DonorViewJpanel extends javax.swing.JPanel
         initComponents();
         this.system=system;
         this.showPanel=showPanel;
+        setSize(1540,800);
         this.donorData = donorData;
-        txtDonorsAddress.setEnabled(false);
-        txtDonorsCity.setEnabled(false);
-        txtDonorsName.setEnabled(false);
-        txtDonorsContactNumber.setEnabled(false);
-        txtDonorsState.setEnabled(false);
-        txtZipCode.setEnabled(false);
-        txtDonorUserName.setEnabled(false);
-        txtDonorsAddress.setText(donorData.getAddress());
-        txtDonorsCity.setText(donorData.getCity());
-        txtDonorsName.setText(donorData.getDonorName());
-        txtZipCode.setText(String.valueOf(donorData.getZipCode()));
-        txtDonorsContactNumber.setText(donorData.getContactNo());
-        txtDonorsState.setText(donorData.getState());
-        txtDonorUserName.setText(donorData.getUsername());
+        addtxt.setEnabled(false);
+        cityTxt.setEnabled(false);
+        nametxt.setEnabled(false);
+        phonetxt.setEnabled(false);
+        stateTxt.setEnabled(false);
+        postaltxt.setEnabled(false);
+        nameTxt.setEnabled(false);
+        addtxt.setText(donorData.getAddress());
+        cityTxt.setText(donorData.getCity());
+        nametxt.setText(donorData.getDonorName());
+        postaltxt.setText(String.valueOf(donorData.getZipCode()));
+        phonetxt.setText(donorData.getContactNo());
+        stateTxt.setText(donorData.getState());
+        nameTxt.setText(donorData.getUsername());
     }
 
     /**
@@ -49,80 +52,113 @@ public class DonorViewJpanel extends javax.swing.JPanel
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        lblName = new javax.swing.JLabel();
+        namelabel = new javax.swing.JLabel();
         lblGender = new javax.swing.JLabel();
-        lblPhoneNumber = new javax.swing.JLabel();
-        lblAddress = new javax.swing.JLabel();
-        lblCity = new javax.swing.JLabel();
-        lblTitle = new javax.swing.JLabel();
-        lblState = new javax.swing.JLabel();
-        lblZipCode = new javax.swing.JLabel();
-        txtDonorsName = new javax.swing.JTextField();
-        txtDonorsContactNumber = new javax.swing.JTextField();
-        txtDonorsAddress = new javax.swing.JTextField();
-        txtDonorsCity = new javax.swing.JTextField();
-        txtZipCode = new javax.swing.JTextField();
-        txtDonorsState = new javax.swing.JTextField();
+        numberlabel = new javax.swing.JLabel();
+        addlabel = new javax.swing.JLabel();
+        citylabel = new javax.swing.JLabel();
+        tilteLable = new javax.swing.JLabel();
+        statelabel = new javax.swing.JLabel();
+        codelabel = new javax.swing.JLabel();
+        nametxt = new javax.swing.JTextField();
+        phonetxt = new javax.swing.JTextField();
+        addtxt = new javax.swing.JTextField();
+        cityTxt = new javax.swing.JTextField();
+        postaltxt = new javax.swing.JTextField();
+        stateTxt = new javax.swing.JTextField();
         btnBack = new javax.swing.JButton();
-        lblUserName = new javax.swing.JLabel();
-        txtDonorUserName = new javax.swing.JTextField();
+        unamelabel = new javax.swing.JLabel();
+        nameTxt = new javax.swing.JTextField();
         lblUserPhoto = new javax.swing.JLabel();
+        imageLbl = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
         setBorder(javax.swing.BorderFactory.createTitledBorder("Donor Information"));
-        setForeground(new java.awt.Color(0, 51, 153));
+        setForeground(new java.awt.Color(0, 102, 102));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        lblName.setForeground(new java.awt.Color(0, 51, 153));
-        lblName.setText("Donor's Name");
-        add(lblName, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 77, -1, -1));
+        namelabel.setBackground(new java.awt.Color(255, 255, 255));
+        namelabel.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        namelabel.setForeground(new java.awt.Color(0, 102, 102));
+        namelabel.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
+        namelabel.setText("Donor's Name:");
+        add(namelabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 200, 170, 30));
         add(lblGender, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 201, -1, -1));
 
-        lblPhoneNumber.setForeground(new java.awt.Color(0, 51, 153));
-        lblPhoneNumber.setText("Phone Number");
-        add(lblPhoneNumber, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 115, -1, -1));
+        numberlabel.setBackground(new java.awt.Color(255, 255, 255));
+        numberlabel.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        numberlabel.setForeground(new java.awt.Color(0, 102, 102));
+        numberlabel.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
+        numberlabel.setText("Phone Number:");
+        add(numberlabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 250, 160, 20));
 
-        lblAddress.setForeground(new java.awt.Color(0, 51, 153));
-        lblAddress.setText("Address Line1");
-        add(lblAddress, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 150, -1, -1));
+        addlabel.setBackground(new java.awt.Color(255, 255, 255));
+        addlabel.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        addlabel.setForeground(new java.awt.Color(0, 102, 102));
+        addlabel.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
+        addlabel.setText("Address Line1:");
+        add(addlabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 300, -1, -1));
 
-        lblCity.setForeground(new java.awt.Color(0, 51, 153));
-        lblCity.setText("City");
-        add(lblCity, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 190, -1, -1));
+        citylabel.setBackground(new java.awt.Color(255, 255, 255));
+        citylabel.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        citylabel.setForeground(new java.awt.Color(0, 102, 102));
+        citylabel.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
+        citylabel.setText("City:");
+        add(citylabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 340, -1, -1));
 
-        lblTitle.setFont(new java.awt.Font("Songti TC", 1, 24)); // NOI18N
-        lblTitle.setForeground(new java.awt.Color(0, 51, 153));
-        lblTitle.setText("View Donor's ACCOUNT");
-        add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 24, 280, 35));
+        tilteLable.setFont(new java.awt.Font("Songti TC", 1, 24)); // NOI18N
+        tilteLable.setForeground(new java.awt.Color(0, 102, 102));
+        tilteLable.setText("Donor's Details");
+        add(tilteLable, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 140, 200, 35));
 
-        lblState.setForeground(new java.awt.Color(0, 51, 153));
-        lblState.setText("State");
-        add(lblState, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 230, -1, -1));
+        statelabel.setBackground(new java.awt.Color(255, 255, 255));
+        statelabel.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        statelabel.setForeground(new java.awt.Color(0, 102, 102));
+        statelabel.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
+        statelabel.setText("State:");
+        add(statelabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 380, -1, -1));
 
-        lblZipCode.setForeground(new java.awt.Color(0, 51, 153));
-        lblZipCode.setText("ZipCode");
-        add(lblZipCode, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 270, -1, -1));
-        add(txtDonorsName, new org.netbeans.lib.awtextra.AbsoluteConstraints(204, 77, 181, -1));
-        add(txtDonorsContactNumber, new org.netbeans.lib.awtextra.AbsoluteConstraints(204, 115, 181, -1));
-        add(txtDonorsAddress, new org.netbeans.lib.awtextra.AbsoluteConstraints(204, 147, 181, -1));
-        add(txtDonorsCity, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 180, 181, -1));
-        add(txtZipCode, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 260, 181, -1));
-        add(txtDonorsState, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 220, 181, -1));
+        codelabel.setBackground(new java.awt.Color(255, 255, 255));
+        codelabel.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        codelabel.setForeground(new java.awt.Color(0, 102, 102));
+        codelabel.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
+        codelabel.setText("Postal Code:");
+        add(codelabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 420, -1, -1));
 
-        btnBack.setForeground(new java.awt.Color(0, 51, 153));
+        nametxt.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        nametxt.setForeground(new java.awt.Color(0, 102, 102));
+        add(nametxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 200, 181, 30));
+        add(phonetxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 250, 181, 30));
+        add(addtxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 290, 181, 30));
+        add(cityTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 330, 181, 30));
+        add(postaltxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 410, 181, 30));
+        add(stateTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 370, 181, 30));
+
+        btnBack.setBackground(new java.awt.Color(0, 102, 102));
+        btnBack.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btnBack.setForeground(new java.awt.Color(255, 255, 255));
         btnBack.setText("Back");
+        btnBack.setBorderPainted(false);
         btnBack.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnBackActionPerformed(evt);
             }
         });
-        add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 360, -1, -1));
+        add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(1270, 30, 90, 40));
 
-        lblUserName.setForeground(new java.awt.Color(0, 51, 153));
-        lblUserName.setText("UserName");
-        add(lblUserName, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 310, -1, -1));
-        add(txtDonorUserName, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 300, 181, -1));
+        unamelabel.setBackground(new java.awt.Color(255, 255, 255));
+        unamelabel.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        unamelabel.setForeground(new java.awt.Color(0, 102, 102));
+        unamelabel.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
+        unamelabel.setText("Username:");
+        add(unamelabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 460, -1, -1));
+        add(nameTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 450, 181, 30));
         add(lblUserPhoto, new org.netbeans.lib.awtextra.AbsoluteConstraints(497, 87, -1, -1));
+
+        ImageIcon imageIcon =  new ImageIcon(new ImageIcon(getClass().getResource("/HealthBuddy/ui/images/moneyrain.gif")).getImage().getScaledInstance(600, 550, Image.SCALE_DEFAULT));
+
+        imageLbl.setIcon(imageIcon);
+        add(imageLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 40, 630, 770));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
@@ -132,23 +168,24 @@ public class DonorViewJpanel extends javax.swing.JPanel
     }//GEN-LAST:event_btnBackActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel addlabel;
+    private javax.swing.JTextField addtxt;
     private javax.swing.JButton btnBack;
-    private javax.swing.JLabel lblAddress;
-    private javax.swing.JLabel lblCity;
+    private javax.swing.JTextField cityTxt;
+    private javax.swing.JLabel citylabel;
+    private javax.swing.JLabel codelabel;
+    private javax.swing.JLabel imageLbl;
     private javax.swing.JLabel lblGender;
-    private javax.swing.JLabel lblName;
-    private javax.swing.JLabel lblPhoneNumber;
-    private javax.swing.JLabel lblState;
-    private javax.swing.JLabel lblTitle;
-    private javax.swing.JLabel lblUserName;
     private javax.swing.JLabel lblUserPhoto;
-    private javax.swing.JLabel lblZipCode;
-    private javax.swing.JTextField txtDonorUserName;
-    private javax.swing.JTextField txtDonorsAddress;
-    private javax.swing.JTextField txtDonorsCity;
-    private javax.swing.JTextField txtDonorsContactNumber;
-    private javax.swing.JTextField txtDonorsName;
-    private javax.swing.JTextField txtDonorsState;
-    private javax.swing.JTextField txtZipCode;
+    private javax.swing.JTextField nameTxt;
+    private javax.swing.JLabel namelabel;
+    private javax.swing.JTextField nametxt;
+    private javax.swing.JLabel numberlabel;
+    private javax.swing.JTextField phonetxt;
+    private javax.swing.JTextField postaltxt;
+    private javax.swing.JTextField stateTxt;
+    private javax.swing.JLabel statelabel;
+    private javax.swing.JLabel tilteLable;
+    private javax.swing.JLabel unamelabel;
     // End of variables declaration//GEN-END:variables
 }

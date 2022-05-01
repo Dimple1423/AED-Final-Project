@@ -6,10 +6,10 @@ import java.util.Map;
 import java.awt.Image;
 import javax.swing.JPanel;
 import javax.swing.ImageIcon;
+import HealthBuddy.models.Healthcare.Appointment.AppointmentInformation;
 import javax.swing.table.DefaultTableModel;
 import HealthBuddy.models.EcoSystem;
 import HealthBuddy.models.Trust.Donation.TrustDetails;
-import HealthBuddy.models.Healthcare.Appointment.AppointmentInformation;
 
 /**
  *
@@ -33,12 +33,12 @@ public class SysAdminPerformanceJPanel extends javax.swing.JPanel
     
     private void populateJTable(String name, float value)
     {
-        DefaultTableModel model = (DefaultTableModel) tblToDisplayAnalytics.getModel();
+        DefaultTableModel model = (DefaultTableModel) displayPerformanceTable.getModel();
         model.setRowCount(0);
-        Object[] row = new Object[2];
-        row[0] = name;
-        row[1] = value;
-        model.addRow(row);
+        Object[] tuple = new Object[2];
+        tuple[0] = name;
+        tuple[1] = value;
+        model.addRow(tuple);
     }
 
     /**
@@ -50,15 +50,15 @@ public class SysAdminPerformanceJPanel extends javax.swing.JPanel
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        lblTitle = new javax.swing.JLabel();
-        btnOrganisationWithMaximumFunds = new javax.swing.JButton();
-        btnFrequentlyVisitedHospital = new javax.swing.JButton();
-        btnPrimeDonor = new javax.swing.JButton();
-        btnFrequentPatient = new javax.swing.JButton();
-        btnFrequentlyVistedDoctor = new javax.swing.JButton();
-        btnOrganisationWithMaximumDonors = new javax.swing.JButton();
+        performancelabel = new javax.swing.JLabel();
+        fundsbutton = new javax.swing.JButton();
+        mostvisitedhostpitalbutton = new javax.swing.JButton();
+        donorPrimeButton = new javax.swing.JButton();
+        patientButton = new javax.swing.JButton();
+        mostvisiteddoctorButton = new javax.swing.JButton();
+        donorButton = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
-        tblToDisplayAnalytics = new javax.swing.JTable();
+        displayPerformanceTable = new javax.swing.JTable();
         btnBack = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
@@ -67,92 +67,92 @@ public class SysAdminPerformanceJPanel extends javax.swing.JPanel
         setForeground(new java.awt.Color(0, 102, 102));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        lblTitle.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
-        lblTitle.setForeground(new java.awt.Color(0, 102, 102));
-        lblTitle.setText("Performance");
-        add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 30, 260, -1));
+        performancelabel.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+        performancelabel.setForeground(new java.awt.Color(0, 102, 102));
+        performancelabel.setText("Performance");
+        add(performancelabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 30, 260, -1));
 
-        btnOrganisationWithMaximumFunds.setBackground(new java.awt.Color(0, 102, 102));
-        btnOrganisationWithMaximumFunds.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
-        btnOrganisationWithMaximumFunds.setForeground(new java.awt.Color(255, 255, 255));
-        btnOrganisationWithMaximumFunds.setText("Organisation With Maximum Funds");
-        btnOrganisationWithMaximumFunds.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btnOrganisationWithMaximumFunds.setBorderPainted(false);
-        btnOrganisationWithMaximumFunds.addActionListener(new java.awt.event.ActionListener() {
+        fundsbutton.setBackground(new java.awt.Color(0, 102, 102));
+        fundsbutton.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
+        fundsbutton.setForeground(new java.awt.Color(255, 255, 255));
+        fundsbutton.setText("Organisation With Maximum Funds");
+        fundsbutton.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        fundsbutton.setBorderPainted(false);
+        fundsbutton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnOrganisationWithMaximumFundsActionPerformed(evt);
+                fundsbuttonActionPerformed(evt);
             }
         });
-        add(btnOrganisationWithMaximumFunds, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 430, 320, 40));
+        add(fundsbutton, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 430, 320, 40));
 
-        btnFrequentlyVisitedHospital.setBackground(new java.awt.Color(0, 102, 102));
-        btnFrequentlyVisitedHospital.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
-        btnFrequentlyVisitedHospital.setForeground(new java.awt.Color(255, 255, 255));
-        btnFrequentlyVisitedHospital.setText("Frequently Visited Hospital");
-        btnFrequentlyVisitedHospital.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btnFrequentlyVisitedHospital.setBorderPainted(false);
-        btnFrequentlyVisitedHospital.addActionListener(new java.awt.event.ActionListener() {
+        mostvisitedhostpitalbutton.setBackground(new java.awt.Color(0, 102, 102));
+        mostvisitedhostpitalbutton.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
+        mostvisitedhostpitalbutton.setForeground(new java.awt.Color(255, 255, 255));
+        mostvisitedhostpitalbutton.setText("Most Visited Hospital");
+        mostvisitedhostpitalbutton.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        mostvisitedhostpitalbutton.setBorderPainted(false);
+        mostvisitedhostpitalbutton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnFrequentlyVisitedHospitalActionPerformed(evt);
+                mostvisitedhostpitalbuttonActionPerformed(evt);
             }
         });
-        add(btnFrequentlyVisitedHospital, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 380, 280, 40));
+        add(mostvisitedhostpitalbutton, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 380, 280, 40));
 
-        btnPrimeDonor.setBackground(new java.awt.Color(0, 102, 102));
-        btnPrimeDonor.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
-        btnPrimeDonor.setForeground(new java.awt.Color(255, 255, 255));
-        btnPrimeDonor.setText("Prime Donor");
-        btnPrimeDonor.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btnPrimeDonor.setBorderPainted(false);
-        btnPrimeDonor.addActionListener(new java.awt.event.ActionListener() {
+        donorPrimeButton.setBackground(new java.awt.Color(0, 102, 102));
+        donorPrimeButton.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
+        donorPrimeButton.setForeground(new java.awt.Color(255, 255, 255));
+        donorPrimeButton.setText("Prime Donor");
+        donorPrimeButton.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        donorPrimeButton.setBorderPainted(false);
+        donorPrimeButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnPrimeDonorActionPerformed(evt);
+                donorPrimeButtonActionPerformed(evt);
             }
         });
-        add(btnPrimeDonor, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 480, 320, 40));
+        add(donorPrimeButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 480, 320, 40));
 
-        btnFrequentPatient.setBackground(new java.awt.Color(0, 102, 102));
-        btnFrequentPatient.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
-        btnFrequentPatient.setForeground(new java.awt.Color(255, 255, 255));
-        btnFrequentPatient.setText("Frequent Patient");
-        btnFrequentPatient.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btnFrequentPatient.setBorderPainted(false);
-        btnFrequentPatient.addActionListener(new java.awt.event.ActionListener() {
+        patientButton.setBackground(new java.awt.Color(0, 102, 102));
+        patientButton.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
+        patientButton.setForeground(new java.awt.Color(255, 255, 255));
+        patientButton.setText("Most Patient");
+        patientButton.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        patientButton.setBorderPainted(false);
+        patientButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnFrequentPatientActionPerformed(evt);
+                patientButtonActionPerformed(evt);
             }
         });
-        add(btnFrequentPatient, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 480, 280, 40));
+        add(patientButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 480, 280, 40));
 
-        btnFrequentlyVistedDoctor.setBackground(new java.awt.Color(0, 102, 102));
-        btnFrequentlyVistedDoctor.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
-        btnFrequentlyVistedDoctor.setForeground(new java.awt.Color(255, 255, 255));
-        btnFrequentlyVistedDoctor.setText("Frequently visited Doctor");
-        btnFrequentlyVistedDoctor.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btnFrequentlyVistedDoctor.setBorderPainted(false);
-        btnFrequentlyVistedDoctor.addActionListener(new java.awt.event.ActionListener() {
+        mostvisiteddoctorButton.setBackground(new java.awt.Color(0, 102, 102));
+        mostvisiteddoctorButton.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
+        mostvisiteddoctorButton.setForeground(new java.awt.Color(255, 255, 255));
+        mostvisiteddoctorButton.setText("Most visited Doctor");
+        mostvisiteddoctorButton.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        mostvisiteddoctorButton.setBorderPainted(false);
+        mostvisiteddoctorButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnFrequentlyVistedDoctorActionPerformed(evt);
+                mostvisiteddoctorButtonActionPerformed(evt);
             }
         });
-        add(btnFrequentlyVistedDoctor, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 430, 280, 40));
+        add(mostvisiteddoctorButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 430, 280, 40));
 
-        btnOrganisationWithMaximumDonors.setBackground(new java.awt.Color(0, 102, 102));
-        btnOrganisationWithMaximumDonors.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
-        btnOrganisationWithMaximumDonors.setForeground(new java.awt.Color(255, 255, 255));
-        btnOrganisationWithMaximumDonors.setText("Organisation With Maximum Donors");
-        btnOrganisationWithMaximumDonors.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btnOrganisationWithMaximumDonors.setBorderPainted(false);
-        btnOrganisationWithMaximumDonors.addActionListener(new java.awt.event.ActionListener() {
+        donorButton.setBackground(new java.awt.Color(0, 102, 102));
+        donorButton.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
+        donorButton.setForeground(new java.awt.Color(255, 255, 255));
+        donorButton.setText("Organisation With Maximum Donors");
+        donorButton.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        donorButton.setBorderPainted(false);
+        donorButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnOrganisationWithMaximumDonorsActionPerformed(evt);
+                donorButtonActionPerformed(evt);
             }
         });
-        add(btnOrganisationWithMaximumDonors, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 380, 320, 40));
+        add(donorButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 380, 320, 40));
 
-        tblToDisplayAnalytics.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        tblToDisplayAnalytics.setForeground(new java.awt.Color(0, 102, 102));
-        tblToDisplayAnalytics.setModel(new javax.swing.table.DefaultTableModel(
+        displayPerformanceTable.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        displayPerformanceTable.setForeground(new java.awt.Color(0, 102, 102));
+        displayPerformanceTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null},
                 {null, null},
@@ -171,10 +171,11 @@ public class SysAdminPerformanceJPanel extends javax.swing.JPanel
                 return canEdit [columnIndex];
             }
         });
-        jScrollPane1.setViewportView(tblToDisplayAnalytics);
-        if (tblToDisplayAnalytics.getColumnModel().getColumnCount() > 0) {
-            tblToDisplayAnalytics.getColumnModel().getColumn(0).setResizable(false);
-            tblToDisplayAnalytics.getColumnModel().getColumn(1).setResizable(false);
+        displayPerformanceTable.setSelectionBackground(new java.awt.Color(0, 102, 102));
+        jScrollPane1.setViewportView(displayPerformanceTable);
+        if (displayPerformanceTable.getColumnModel().getColumnCount() > 0) {
+            displayPerformanceTable.getColumnModel().getColumn(0).setResizable(false);
+            displayPerformanceTable.getColumnModel().getColumn(1).setResizable(false);
         }
 
         add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 130, 690, 220));
@@ -197,17 +198,14 @@ public class SysAdminPerformanceJPanel extends javax.swing.JPanel
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 100, 670, 520));
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnOrganisationWithMaximumFundsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOrganisationWithMaximumFundsActionPerformed
+    private void fundsbuttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fundsbuttonActionPerformed
         Map<String,Float> funds = new HashMap<String, Float>();
         for (int i = 0; i < ecosystem.getDonationDirectory().getTrustCatalog().size(); i++) {
             TrustDetails fi=ecosystem.getDonationDirectory().getTrustCatalog().get(i);
             String name  = fi.geTrustOrgName();
             float amount = 0;
             if(funds.containsKey(name))
-            {
                 amount = funds.get(name);
-            }
-            
             amount = amount + Float.parseFloat(fi.getDonation());
             funds.put(name, amount);
         }  
@@ -220,11 +218,10 @@ public class SysAdminPerformanceJPanel extends javax.swing.JPanel
                 fundedOrg = s;
             }
         }
-        
-        populateJTable(fundedOrg+ "received maximum funds : ", maxFunds);
-    }//GEN-LAST:event_btnOrganisationWithMaximumFundsActionPerformed
+        populateJTable(fundedOrg+ " has received height donation  : ", maxFunds);
+    }//GEN-LAST:event_fundsbuttonActionPerformed
 
-    private void btnFrequentlyVisitedHospitalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFrequentlyVisitedHospitalActionPerformed
+    private void mostvisitedhostpitalbuttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mostvisitedhostpitalbuttonActionPerformed
         Map<String,Integer> patient = new HashMap<String, Integer>();
    
         for (int i = 0; i < ecosystem.getAppointmentCatalog().getAppointmentCatalog().size(); i++) {
@@ -251,19 +248,17 @@ public class SysAdminPerformanceJPanel extends javax.swing.JPanel
             }
         }
    
-        populateJTable(hospitalName + "is Frequently Visited Hospital: ", maxNumberOfVisits);
-    }//GEN-LAST:event_btnFrequentlyVisitedHospitalActionPerformed
+        populateJTable(hospitalName + "is most visited Hospital: ", maxNumberOfVisits);
+    }//GEN-LAST:event_mostvisitedhostpitalbuttonActionPerformed
 
-    private void btnPrimeDonorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPrimeDonorActionPerformed
+    private void donorPrimeButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_donorPrimeButtonActionPerformed
         Map<String,Float> donators = new HashMap<String, Float>();
         for (int i = 0; i < ecosystem.getDonationDirectory().getTrustCatalog().size(); i++) {
             TrustDetails fi=ecosystem.getDonationDirectory().getTrustCatalog().get(i);
             String donorsUserName  = fi.getDonor().getUsername();
             float amount = 0;
             if(donators.containsKey(fi.getDonor().getUsername()))
-            {
                 amount = donators.get(fi.getDonor().getUsername());
-            }
             amount = amount + Float.parseFloat(fi.getDonation());
             donators.put(donorsUserName, amount);
         }
@@ -276,19 +271,17 @@ public class SysAdminPerformanceJPanel extends javax.swing.JPanel
             }
         }
         
-        populateJTable(donorsNameWhoDonotedMaximumMoney+ "Donated Maximum Amount: ", maxAmountDonated);
-    }//GEN-LAST:event_btnPrimeDonorActionPerformed
+        populateJTable(donorsNameWhoDonotedMaximumMoney+ "donated height amount: ", maxAmountDonated);
+    }//GEN-LAST:event_donorPrimeButtonActionPerformed
 
-    private void btnFrequentPatientActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFrequentPatientActionPerformed
+    private void patientButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_patientButtonActionPerformed
         Map<String,Integer> patient = new HashMap<String, Integer>();
         for (int i = 0; i < ecosystem.getAppointmentCatalog().getAppointmentCatalog().size(); i++) {
             AppointmentInformation ad=ecosystem.getAppointmentCatalog().getAppointmentCatalog().get(i);
             String patientsUserName  = ad.getPatient().getUsername();
             int  NumberOfVisitsMadeByPatient = 0;
             if(patient.containsKey(ad.getPatient().getUsername()))
-            {
                 NumberOfVisitsMadeByPatient = patient.get(ad.getPatient().getUsername());
-            }
             NumberOfVisitsMadeByPatient = NumberOfVisitsMadeByPatient + 1;
             patient.put(patientsUserName, NumberOfVisitsMadeByPatient);    
         }
@@ -304,10 +297,10 @@ public class SysAdminPerformanceJPanel extends javax.swing.JPanel
                 mostActivePatientName = s;
             }
         }
-        populateJTable(mostActivePatientName+ "is highly visited patient: ", maxNumberOfVisits);
-    }//GEN-LAST:event_btnFrequentPatientActionPerformed
+        populateJTable(mostActivePatientName+ "is mostly visited patient: ", maxNumberOfVisits);
+    }//GEN-LAST:event_patientButtonActionPerformed
 
-    private void btnFrequentlyVistedDoctorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFrequentlyVistedDoctorActionPerformed
+    private void mostvisiteddoctorButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mostvisiteddoctorButtonActionPerformed
          Map<String,Integer> doctors = new HashMap<String, Integer>();
         for (int i = 0; i < ecosystem.getAppointmentCatalog().getAppointmentCatalog().size(); i++) {
             AppointmentInformation ad=ecosystem.getAppointmentCatalog().getAppointmentCatalog().get(i);
@@ -315,9 +308,7 @@ public class SysAdminPerformanceJPanel extends javax.swing.JPanel
             int  visitMadeByPatient = 0;
             
             if(doctors.containsKey(ad.getDoctorName()))
-            {
                 visitMadeByPatient = doctors.get(ad.getDoctorName());
-            }
             
             visitMadeByPatient = visitMadeByPatient + 1;
             doctors.put(doctorsName, visitMadeByPatient); 
@@ -334,19 +325,17 @@ public class SysAdminPerformanceJPanel extends javax.swing.JPanel
             }
         }
         
-        populateJTable(frequentlyVisitedDoctor+ "is a popular Doctor: ", maxNumberOfVisits);
-    }//GEN-LAST:event_btnFrequentlyVistedDoctorActionPerformed
+        populateJTable(frequentlyVisitedDoctor+ "is a famous Doctor: ", maxNumberOfVisits);
+    }//GEN-LAST:event_mostvisiteddoctorButtonActionPerformed
 
-    private void btnOrganisationWithMaximumDonorsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOrganisationWithMaximumDonorsActionPerformed
+    private void donorButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_donorButtonActionPerformed
         Map<String,Integer> mostfundedOrg = new HashMap<String, Integer>();
         for (int i = 0; i < ecosystem.getDonationDirectory().getTrustCatalog().size(); i++) {
             TrustDetails fi=ecosystem.getDonationDirectory().getTrustCatalog().get(i);
             String name  = fi.geTrustOrgName();
             int number = 0;
             if(mostfundedOrg.containsKey(name))
-            {
                 number = mostfundedOrg.get(name);
-            }
             number = number + 1;
             mostfundedOrg.put(name, number); 
         }
@@ -362,8 +351,8 @@ public class SysAdminPerformanceJPanel extends javax.swing.JPanel
             }
         }
         
-        populateJTable(fundedOrg + "received highest funds by Donors: " , max);
-    }//GEN-LAST:event_btnOrganisationWithMaximumDonorsActionPerformed
+        populateJTable(fundedOrg + "received maximum funds by Donor: " , max);
+    }//GEN-LAST:event_donorButtonActionPerformed
 
     private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
         showPanel.remove(this);
@@ -373,15 +362,15 @@ public class SysAdminPerformanceJPanel extends javax.swing.JPanel
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnBack;
-    private javax.swing.JButton btnFrequentPatient;
-    private javax.swing.JButton btnFrequentlyVisitedHospital;
-    private javax.swing.JButton btnFrequentlyVistedDoctor;
-    private javax.swing.JButton btnOrganisationWithMaximumDonors;
-    private javax.swing.JButton btnOrganisationWithMaximumFunds;
-    private javax.swing.JButton btnPrimeDonor;
+    private javax.swing.JTable displayPerformanceTable;
+    private javax.swing.JButton donorButton;
+    private javax.swing.JButton donorPrimeButton;
+    private javax.swing.JButton fundsbutton;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JLabel lblTitle;
-    private javax.swing.JTable tblToDisplayAnalytics;
+    private javax.swing.JButton mostvisiteddoctorButton;
+    private javax.swing.JButton mostvisitedhostpitalbutton;
+    private javax.swing.JButton patientButton;
+    private javax.swing.JLabel performancelabel;
     // End of variables declaration//GEN-END:variables
 }
