@@ -24,17 +24,17 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="attendantTabbedPane" alignment="0" max="32767" attributes="0"/>
+          <Component id="attndtTabPane" alignment="0" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="attendantTabbedPane" alignment="0" max="32767" attributes="0"/>
+          <Component id="attndtTabPane" alignment="0" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Container class="javax.swing.JTabbedPane" name="attendantTabbedPane">
+    <Container class="javax.swing.JTabbedPane" name="attndtTabPane">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -49,7 +49,7 @@
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout"/>
       <SubComponents>
-        <Container class="javax.swing.JPanel" name="workArea">
+        <Container class="javax.swing.JPanel" name="attworkAreaPane">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -78,18 +78,16 @@
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="deliveryDirLabel3" min="-2" pref="481" max="-2" attributes="0"/>
+                                  <Component id="attmsgLabel" min="-2" pref="481" max="-2" attributes="0"/>
                                   <Group type="102" attributes="0">
-                                      <Component id="lblWelcome" min="-2" max="-2" attributes="0"/>
+                                      <Component id="welcmLabel" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="lblAttendantName" min="-2" pref="174" max="-2" attributes="0"/>
+                                      <Component id="attvalLabel" min="-2" pref="174" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
                       </Group>
-                      <EmptySpace max="32767" attributes="0"/>
-                      <Component id="jLabel5" min="-2" pref="507" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                      <EmptySpace pref="390" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -97,26 +95,21 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="61" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jLabel5" min="-2" pref="579" max="-2" attributes="0"/>
-                          <Group type="102" attributes="0">
-                              <Component id="deliveryDirLabel3" min="-2" pref="33" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="lblWelcome" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
-                                  <Component id="lblAttendantName" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace min="-2" pref="77" max="-2" attributes="0"/>
-                              <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
-                          </Group>
+                      <Component id="attmsgLabel" min="-2" pref="33" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="welcmLabel" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
+                          <Component id="attvalLabel" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="77" max="32767" attributes="0"/>
+                      <EmptySpace min="-2" pref="77" max="-2" attributes="0"/>
+                      <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JLabel" name="lblWelcome">
+            <Component class="javax.swing.JLabel" name="welcmLabel">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -130,7 +123,7 @@
                 <Property name="text" type="java.lang.String" value="Welcome "/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="deliveryDirLabel3">
+            <Component class="javax.swing.JLabel" name="attmsgLabel">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -144,7 +137,7 @@
                 <Property name="text" type="java.lang.String" value="Attendant Work Area"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="lblAttendantName">
+            <Component class="javax.swing.JLabel" name="attvalLabel">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -171,53 +164,61 @@
               <Layout>
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" alignment="0" attributes="0">
+                      <Group type="102" attributes="0">
                           <EmptySpace min="-2" pref="211" max="-2" attributes="0"/>
-                          <Component id="menuItemName1" min="-2" pref="329" max="-2" attributes="0"/>
+                          <Component id="itmLabel" min="-2" pref="329" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="62" max="-2" attributes="0"/>
-                          <Component id="txtBloodQuant" min="-2" pref="121" max="-2" attributes="0"/>
-                          <EmptySpace min="0" pref="630" max="32767" attributes="0"/>
+                          <Component id="quantBloodTextF" min="-2" pref="121" max="-2" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="1" attributes="0">
-                          <EmptySpace max="32767" attributes="0"/>
-                          <Component id="btnReqBlood" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="432" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="102" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="jScrollPane1" min="-2" pref="892" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace min="-2" pref="192" max="-2" attributes="0"/>
-                                  <Component id="deliveryDirLabel2" min="-2" pref="454" max="-2" attributes="0"/>
+                                  <Component id="patpresinfoLabel" min="-2" pref="454" max="-2" attributes="0"/>
                               </Group>
                           </Group>
-                          <EmptySpace max="32767" attributes="0"/>
+                          <EmptySpace pref="83" max="32767" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="buttonBloodWR" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel5" min="-2" pref="450" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="396" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
                 <DimensionLayout dim="1">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
-                          <Component id="deliveryDirLabel2" min="-2" pref="33" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
-                          <Component id="jScrollPane1" min="-2" pref="171" max="-2" attributes="0"/>
-                          <EmptySpace pref="34" max="32767" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Component id="patpresinfoLabel" min="-2" pref="33" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                                  <Component id="jScrollPane1" min="-2" pref="171" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="jLabel5" min="-2" pref="450" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace pref="500" max="32767" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="menuItemName1" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="txtBloodQuant" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="itmLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="quantBloodTextF" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Component id="btnReqBlood" min="-2" max="-2" attributes="0"/>
+                          <Component id="buttonBloodWR" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
               </Layout>
               <SubComponents>
-                <Component class="javax.swing.JLabel" name="deliveryDirLabel2">
+                <Component class="javax.swing.JLabel" name="patpresinfoLabel">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -243,7 +244,7 @@
 
                   <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
                   <SubComponents>
-                    <Component class="javax.swing.JTable" name="tblAttendant">
+                    <Component class="javax.swing.JTable" name="atttble">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Tahoma" size="16" style="1"/>
@@ -308,7 +309,7 @@
                     </Component>
                   </SubComponents>
                 </Container>
-                <Component class="javax.swing.JLabel" name="menuItemName1">
+                <Component class="javax.swing.JLabel" name="itmLabel">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -322,7 +323,7 @@
                     <Property name="text" type="java.lang.String" value="Total Units of Blood Required: "/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JTextField" name="txtBloodQuant">
+                <Component class="javax.swing.JTextField" name="quantBloodTextF">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Tahoma" size="14" style="0"/>
@@ -333,7 +334,7 @@
                     <Property name="text" type="java.lang.String" value=" "/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JButton" name="btnReqBlood">
+                <Component class="javax.swing.JButton" name="buttonBloodWR">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="66" green="66" red="0" type="rgb"/>
@@ -353,19 +354,19 @@
                     <Property name="borderPainted" type="boolean" value="false"/>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnReqBloodActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonBloodWRActionPerformed"/>
                   </Events>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel5">
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="ImageIcon imageIcon = new ImageIcon(new ImageIcon(getClass().getResource(&quot;/HealthBuddy/ui/images/attendant.gif&quot;)).getImage().getScaledInstance(450, 450, Image.SCALE_DEFAULT));&#xa;&#xa;jLabel5.setIcon(imageIcon);"/>
+                  </AuxValues>
                 </Component>
               </SubComponents>
             </Container>
-            <Component class="javax.swing.JLabel" name="jLabel5">
-              <AuxValues>
-                <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="ImageIcon imageIcon = new ImageIcon(new ImageIcon(getClass().getResource(&quot;/HealthBuddy/ui/images/attendant.gif&quot;)).getImage().getScaledInstance(500, 500, Image.SCALE_DEFAULT));&#xa;&#xa;jLabel5.setIcon(imageIcon);"/>
-              </AuxValues>
-            </Component>
           </SubComponents>
         </Container>
-        <Container class="javax.swing.JPanel" name="checkStatus">
+        <Container class="javax.swing.JPanel" name="Status">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -388,12 +389,12 @@
                   <Group type="102" attributes="0">
                       <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="deliveryDirLabel4" min="-2" pref="683" max="-2" attributes="0"/>
+                          <Component id="msgstatusLabel" min="-2" pref="683" max="-2" attributes="0"/>
                           <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="192" max="-2" attributes="0"/>
-                      <Component id="jLabel2" min="-2" pref="554" max="-2" attributes="0"/>
-                      <EmptySpace pref="316" max="32767" attributes="0"/>
+                      <EmptySpace min="-2" pref="102" max="-2" attributes="0"/>
+                      <Component id="jLabel2" min="-2" pref="643" max="-2" attributes="0"/>
+                      <EmptySpace pref="642" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -403,22 +404,22 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
                               <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
-                              <Component id="deliveryDirLabel4" min="-2" pref="64" max="-2" attributes="0"/>
+                              <Component id="msgstatusLabel" min="-2" pref="64" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
                               <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="71" max="-2" attributes="0"/>
-                              <Component id="jLabel2" min="-2" pref="550" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="69" max="-2" attributes="0"/>
+                              <Component id="jLabel2" min="-2" pref="535" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <EmptySpace pref="96" max="32767" attributes="0"/>
+                      <EmptySpace pref="700" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JLabel" name="deliveryDirLabel4">
+            <Component class="javax.swing.JLabel" name="msgstatusLabel">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -510,7 +511,7 @@
             </Container>
             <Component class="javax.swing.JLabel" name="jLabel2">
               <AuxValues>
-                <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="ImageIcon imageIcona = new ImageIcon(new ImageIcon(getClass().getResource(&quot;/HealthBuddy/ui/images/checkstatus.gif&quot;)).getImage().getScaledInstance(500, 500, Image.SCALE_DEFAULT));&#xa;&#xa;jLabel2.setIcon(imageIcona);"/>
+                <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="ImageIcon imageIcona = new ImageIcon(new ImageIcon(getClass().getResource(&quot;/HealthBuddy/ui/images/checkstatus.gif&quot;)).getImage().getScaledInstance(650, 550, Image.SCALE_DEFAULT));&#xa;&#xa;jLabel2.setIcon(imageIcona);"/>
               </AuxValues>
             </Component>
           </SubComponents>
