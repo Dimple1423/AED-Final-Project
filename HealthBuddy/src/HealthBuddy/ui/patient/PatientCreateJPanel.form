@@ -29,96 +29,88 @@
               <EmptySpace min="20" pref="20" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
-                      <Component id="deliveryDirLabel1" min="-2" pref="320" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="490" max="-2" attributes="0"/>
-                      <Component id="deliveryDirLabel2" min="-2" pref="416" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="119" max="-2" attributes="0"/>
-                      <Component id="backBtn" min="-2" pref="125" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="393" max="-2" attributes="0"/>
-                      <Component id="profilePicPathLabel" min="-2" pref="367" max="-2" attributes="0"/>
+                      <Component id="messagelabel" min="-2" pref="449" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="343" max="-2" attributes="0"/>
+                      <Component id="helptextlabel" min="-2" pref="580" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="buttonbck" min="-2" pref="125" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
                               <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                                  <Component id="deliveryDirLabel" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="menuItemName" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="menuItemName1" alignment="0" min="-2" pref="195" max="-2" attributes="0"/>
+                                  <Component id="registerpatlabel" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="patnamelabel" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="sexlabel" alignment="0" min="-2" pref="195" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="64" pref="64" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" attributes="0">
-                                      <Component id="maleRB" linkSize="3" min="-2" pref="108" max="-2" attributes="0"/>
+                                      <Component id="genderMRB" linkSize="3" min="-2" pref="108" max="-2" attributes="0"/>
                                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                                      <Component id="femaleRB" linkSize="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="genderFRB" linkSize="3" min="-2" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
                                           <Group type="102" alignment="0" attributes="0">
                                               <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
-                                              <Component id="registerBtn" min="-2" pref="203" max="-2" attributes="0"/>
+                                              <Component id="buttonReg" min="-2" pref="203" max="-2" attributes="0"/>
                                           </Group>
                                           <Group type="102" alignment="0" attributes="0">
                                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                                              <Component id="biRB" linkSize="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="genderBiRB" linkSize="3" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                                              <Component id="notToSayRB" linkSize="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="genderundisclosedRB" linkSize="3" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                       </Group>
                                   </Group>
-                                  <Component id="donorNameTF" linkSize="5" min="-2" pref="203" max="-2" attributes="0"/>
+                                  <Component id="patNameTextF" linkSize="5" min="-2" pref="203" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="menuItemName2" alignment="0" min="-2" pref="195" max="-2" attributes="0"/>
-                                  <Component id="menuItemName3" alignment="0" min="-2" pref="195" max="-2" attributes="0"/>
+                                  <Component id="birthlabel" alignment="0" min="-2" pref="195" max="-2" attributes="0"/>
+                                  <Component id="addrslabel" alignment="0" min="-2" pref="195" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="64" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="dobTF" linkSize="5" pref="167" max="32767" attributes="0"/>
-                                  <Component id="addTF" linkSize="5" max="32767" attributes="0"/>
+                                  <Component id="birthTextF" linkSize="5" pref="167" max="32767" attributes="0"/>
+                                  <Component id="addrsTextF" linkSize="5" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="menuItemName8" alignment="1" pref="195" max="32767" attributes="0"/>
-                                  <Component id="menuItemName7" alignment="1" pref="195" max="32767" attributes="0"/>
-                                  <Component id="menuItemName9" alignment="1" pref="195" max="32767" attributes="0"/>
-                                  <Component id="menuItemName10" alignment="1" pref="195" max="32767" attributes="0"/>
-                              </Group>
-                              <EmptySpace min="-2" pref="64" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="1" attributes="0">
-                                  <Component id="bloodGroupCB" linkSize="5" alignment="1" max="32767" attributes="0"/>
-                                  <Component id="uploadPicBtn" linkSize="5" alignment="1" pref="167" max="32767" attributes="0"/>
-                                  <Component id="emailTF" linkSize="5" alignment="1" max="32767" attributes="0"/>
-                                  <Component id="phoneTF" linkSize="5" alignment="1" max="32767" attributes="0"/>
-                              </Group>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="menuItemName6" alignment="1" pref="195" max="32767" attributes="0"/>
-                                  <Component id="menuItemName4" alignment="1" pref="195" max="32767" attributes="0"/>
-                                  <Component id="menuItemName5" alignment="1" pref="195" max="32767" attributes="0"/>
+                                  <Component id="mobPHlabel" alignment="1" pref="195" max="32767" attributes="0"/>
+                                  <Component id="piclabel" alignment="1" pref="195" max="32767" attributes="0"/>
+                                  <Component id="maillabel" alignment="1" pref="195" max="32767" attributes="0"/>
+                                  <Component id="grpBlabel" alignment="1" pref="195" max="32767" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="64" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="1" attributes="0">
-                                  <Component id="stateCombobox" linkSize="5" alignment="1" max="32767" attributes="0"/>
-                                  <Component id="zipCodeTF" linkSize="5" alignment="1" max="32767" attributes="0"/>
-                                  <Component id="cityTF" linkSize="5" max="32767" attributes="0"/>
+                                  <Component id="grpBdropbox" linkSize="5" alignment="1" max="32767" attributes="0"/>
+                                  <Component id="buttonDP" linkSize="5" alignment="1" pref="167" max="32767" attributes="0"/>
+                                  <Component id="mailTextF" linkSize="5" alignment="1" max="32767" attributes="0"/>
+                                  <Component id="mobPHTextF" linkSize="5" alignment="1" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="postcodelabel" alignment="1" pref="195" max="32767" attributes="0"/>
+                                  <Component id="placeNamelabel" alignment="1" pref="195" max="32767" attributes="0"/>
+                                  <Component id="provincelabel" alignment="1" pref="195" max="32767" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="64" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="1" attributes="0">
+                                  <Component id="provincedropbox" linkSize="5" alignment="1" max="32767" attributes="0"/>
+                                  <Component id="postodeTextF" linkSize="5" alignment="1" max="32767" attributes="0"/>
+                                  <Component id="placeTextF" linkSize="5" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" attributes="0">
-                              <EmptySpace min="-2" pref="477" max="-2" attributes="0"/>
-                              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="57" max="-2" attributes="0"/>
-                              <Component id="jLabel2" min="-2" pref="575" max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
+                      <EmptySpace min="-2" pref="57" max="-2" attributes="0"/>
+                      <Component id="giflabel" min="-2" pref="575" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="393" max="-2" attributes="0"/>
+                      <Component id="displayPiclabel" min="-2" pref="12" max="-2" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace pref="1253" max="32767" attributes="0"/>
@@ -130,93 +122,92 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="1" attributes="0">
-                  <Component id="deliveryDirLabel2" min="-2" pref="55" max="-2" attributes="0"/>
-                  <Component id="deliveryDirLabel1" min="-2" pref="44" max="-2" attributes="0"/>
+                  <Component id="helptextlabel" min="-2" pref="55" max="-2" attributes="0"/>
+                  <Component id="messagelabel" min="-2" pref="44" max="-2" attributes="0"/>
                   <Group type="102" alignment="0" attributes="0">
-                      <Component id="backBtn" min="-2" max="-2" attributes="0"/>
+                      <Component id="buttonbck" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="1" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
-                      <Component id="deliveryDirLabel" min="-2" pref="52" max="-2" attributes="0"/>
+                      <Component id="registerpatlabel" min="-2" pref="52" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="menuItemName" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="donorNameTF" linkSize="1" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
+                          <Component id="patnamelabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="patNameTextF" linkSize="1" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="menuItemName1" min="-2" max="-2" attributes="0"/>
+                          <Component id="sexlabel" min="-2" max="-2" attributes="0"/>
                           <Group type="102" alignment="1" attributes="0">
                               <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="maleRB" linkSize="4" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
-                                  <Component id="femaleRB" linkSize="4" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="biRB" linkSize="4" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="notToSayRB" linkSize="4" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="genderMRB" linkSize="4" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
+                                  <Component id="genderFRB" linkSize="4" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="genderBiRB" linkSize="4" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="genderundisclosedRB" linkSize="4" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="3" pref="3" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="menuItemName2" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="dobTF" linkSize="1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="birthlabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="birthTextF" linkSize="1" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="menuItemName3" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="addTF" linkSize="1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="addrslabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="addrsTextF" linkSize="1" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="menuItemName4" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="cityTF" linkSize="1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="placeNamelabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="placeTextF" linkSize="1" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="menuItemName6" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="zipCodeTF" linkSize="1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="postcodelabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="postodeTextF" linkSize="1" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="menuItemName5" min="-2" max="-2" attributes="0"/>
+                          <Component id="provincelabel" min="-2" max="-2" attributes="0"/>
                           <Group type="102" alignment="1" attributes="0">
-                              <Component id="stateCombobox" min="-2" pref="31" max="-2" attributes="0"/>
+                              <Component id="provincedropbox" min="-2" pref="31" max="-2" attributes="0"/>
                               <EmptySpace min="2" pref="2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="menuItemName8" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="phoneTF" linkSize="1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="mobPHlabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="mobPHTextF" linkSize="1" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="menuItemName7" min="-2" max="-2" attributes="0"/>
-                          <Component id="uploadPicBtn" alignment="0" min="-2" pref="30" max="-2" attributes="0"/>
+                          <Component id="piclabel" min="-2" max="-2" attributes="0"/>
+                          <Component id="buttonDP" alignment="0" min="-2" pref="30" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="menuItemName9" min="-2" max="-2" attributes="0"/>
-                          <Component id="emailTF" linkSize="1" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="maillabel" min="-2" max="-2" attributes="0"/>
+                          <Component id="mailTextF" linkSize="1" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="menuItemName10" min="-2" max="-2" attributes="0"/>
-                          <Component id="bloodGroupCB" alignment="0" min="-2" pref="33" max="-2" attributes="0"/>
+                          <Component id="grpBlabel" min="-2" max="-2" attributes="0"/>
+                          <Component id="grpBdropbox" alignment="0" min="-2" pref="33" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="3" max="-2" attributes="0"/>
-                      <Component id="registerBtn" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="2406" max="-2" attributes="0"/>
-                      <Component id="profilePicPathLabel" min="-2" max="-2" attributes="0"/>
+                      <Component id="buttonReg" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="2415" max="-2" attributes="0"/>
+                      <Component id="displayPiclabel" min="-2" pref="7" max="-2" attributes="0"/>
                       <EmptySpace pref="20" max="32767" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="1" attributes="0">
-                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jLabel2" min="-2" pref="557" max="-2" attributes="0"/>
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      <Component id="giflabel" min="-2" pref="557" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="2463" max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -225,7 +216,7 @@
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JLabel" name="deliveryDirLabel">
+    <Component class="javax.swing.JLabel" name="registerpatlabel">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Segoe UI" size="20" style="1"/>
@@ -236,7 +227,7 @@
         <Property name="text" type="java.lang.String" value="Register as a Patient"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="deliveryDirLabel1">
+    <Component class="javax.swing.JLabel" name="messagelabel">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -247,10 +238,10 @@
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="66" green="66" red="0" type="rgb"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Help us, Help you!"/>
+        <Property name="text" type="java.lang.String" value="Let&apos;s Help Each Other!"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="deliveryDirLabel2">
+    <Component class="javax.swing.JLabel" name="helptextlabel">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -261,10 +252,10 @@
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="66" green="66" red="0" type="rgb"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="We want to help you..."/>
+        <Property name="text" type="java.lang.String" value="Health Buddy is Here to Help!"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="menuItemName">
+    <Component class="javax.swing.JLabel" name="patnamelabel">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color type="null"/>
@@ -279,7 +270,7 @@
         <Property name="text" type="java.lang.String" value="Patient Name:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="donorNameTF">
+    <Component class="javax.swing.JTextField" name="patNameTextF">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="14" style="0"/>
@@ -290,7 +281,7 @@
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="menuItemName1">
+    <Component class="javax.swing.JLabel" name="sexlabel">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color type="null"/>
@@ -305,7 +296,7 @@
         <Property name="text" type="java.lang.String" value="Gender:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JRadioButton" name="maleRB">
+    <Component class="javax.swing.JRadioButton" name="genderMRB">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -319,7 +310,7 @@
         <Property name="text" type="java.lang.String" value="Male"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JRadioButton" name="femaleRB">
+    <Component class="javax.swing.JRadioButton" name="genderFRB">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -333,10 +324,10 @@
         <Property name="text" type="java.lang.String" value="Female"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="femaleRBActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="genderFRBActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JRadioButton" name="notToSayRB">
+    <Component class="javax.swing.JRadioButton" name="genderundisclosedRB">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -350,7 +341,7 @@
         <Property name="text" type="java.lang.String" value="Prefer Not to Say"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JRadioButton" name="biRB">
+    <Component class="javax.swing.JRadioButton" name="genderBiRB">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -364,10 +355,10 @@
         <Property name="text" type="java.lang.String" value="Bi Sexual"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="biRBActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="genderBiRBActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JTextField" name="dobTF">
+    <Component class="javax.swing.JTextField" name="birthTextF">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="14" style="0"/>
@@ -378,7 +369,7 @@
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="menuItemName2">
+    <Component class="javax.swing.JLabel" name="birthlabel">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color type="null"/>
@@ -393,7 +384,7 @@
         <Property name="text" type="java.lang.String" value="Date of Birth:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="menuItemName3">
+    <Component class="javax.swing.JLabel" name="addrslabel">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color type="null"/>
@@ -408,7 +399,7 @@
         <Property name="text" type="java.lang.String" value="Address:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="addTF">
+    <Component class="javax.swing.JTextField" name="addrsTextF">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="14" style="0"/>
@@ -419,7 +410,7 @@
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="menuItemName4">
+    <Component class="javax.swing.JLabel" name="placeNamelabel">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color type="null"/>
@@ -434,7 +425,7 @@
         <Property name="text" type="java.lang.String" value="City:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="cityTF">
+    <Component class="javax.swing.JTextField" name="placeTextF">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="14" style="0"/>
@@ -445,7 +436,7 @@
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="menuItemName5">
+    <Component class="javax.swing.JLabel" name="provincelabel">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color type="null"/>
@@ -460,7 +451,7 @@
         <Property name="text" type="java.lang.String" value="State:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JComboBox" name="stateCombobox">
+    <Component class="javax.swing.JComboBox" name="provincedropbox">
       <Properties>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="66" green="0" red="0" type="rgb"/>
@@ -527,7 +518,7 @@
         <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
       </AuxValues>
     </Component>
-    <Component class="javax.swing.JLabel" name="menuItemName6">
+    <Component class="javax.swing.JLabel" name="postcodelabel">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color type="null"/>
@@ -542,7 +533,7 @@
         <Property name="text" type="java.lang.String" value="Zip Code:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="zipCodeTF">
+    <Component class="javax.swing.JTextField" name="postodeTextF">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="14" style="0"/>
@@ -553,7 +544,7 @@
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="menuItemName7">
+    <Component class="javax.swing.JLabel" name="piclabel">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color type="null"/>
@@ -568,7 +559,7 @@
         <Property name="text" type="java.lang.String" value="Profile Picture:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="phoneTF">
+    <Component class="javax.swing.JTextField" name="mobPHTextF">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="14" style="0"/>
@@ -579,7 +570,7 @@
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="menuItemName8">
+    <Component class="javax.swing.JLabel" name="mobPHlabel">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color type="null"/>
@@ -594,7 +585,7 @@
         <Property name="text" type="java.lang.String" value="Contact:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="uploadPicBtn">
+    <Component class="javax.swing.JButton" name="buttonDP">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="66" green="66" red="0" type="rgb"/>
@@ -609,15 +600,15 @@
         <Property name="borderPainted" type="boolean" value="false"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="uploadPicBtnActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonDPActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JLabel" name="profilePicPathLabel">
+    <Component class="javax.swing.JLabel" name="displayPiclabel">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="menuItemName9">
+    <Component class="javax.swing.JLabel" name="maillabel">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color type="null"/>
@@ -632,7 +623,7 @@
         <Property name="text" type="java.lang.String" value="Email:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="emailTF">
+    <Component class="javax.swing.JTextField" name="mailTextF">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="14" style="0"/>
@@ -643,10 +634,10 @@
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="emailTFActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="mailTextFActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="registerBtn">
+    <Component class="javax.swing.JButton" name="buttonReg">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="66" green="66" red="0" type="rgb"/>
@@ -661,10 +652,10 @@
         <Property name="borderPainted" type="boolean" value="false"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="registerBtnActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonRegActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="backBtn">
+    <Component class="javax.swing.JButton" name="buttonbck">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="66" green="66" red="0" type="rgb"/>
@@ -679,10 +670,10 @@
         <Property name="borderPainted" type="boolean" value="false"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="backBtnActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonbckActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JLabel" name="menuItemName10">
+    <Component class="javax.swing.JLabel" name="grpBlabel">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color type="null"/>
@@ -697,7 +688,7 @@
         <Property name="text" type="java.lang.String" value="Blood Group:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JComboBox" name="bloodGroupCB">
+    <Component class="javax.swing.JComboBox" name="grpBdropbox">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="14" style="0"/>
@@ -729,11 +720,9 @@
         <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
       </AuxValues>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel1">
-    </Component>
-    <Component class="javax.swing.JLabel" name="jLabel2">
+    <Component class="javax.swing.JLabel" name="giflabel">
       <AuxValues>
-        <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="ImageIcon imageIcon =  new ImageIcon(new ImageIcon(getClass().getResource(&quot;/HealthBuddy/ui/images/patient.gif&quot;)).getImage().getScaledInstance(500, 500, Image.SCALE_DEFAULT));&#xa;jLabel2.setIcon(imageIcon);"/>
+        <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="ImageIcon imageIcon =  new ImageIcon(new ImageIcon(getClass().getResource(&quot;/HealthBuddy/ui/images/patient.gif&quot;)).getImage().getScaledInstance(500, 500, Image.SCALE_DEFAULT));&#xa;giflabel.setIcon(imageIcon);"/>
       </AuxValues>
     </Component>
   </SubComponents>
