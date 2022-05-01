@@ -22,7 +22,7 @@ import HealthBuddy.models.WorkQueue.HealthcareTrustRequestWQ;
 import HealthBuddy.models.WorkQueue.PatientBookingWQ;
 import HealthBuddy.models.WorkQueue.TrustReceiveWR;
 import HealthBuddy.models.WorkQueue.WorkRequest;
-import HealthBuddy.Util.SMSUtility;
+import HealthBuddy.Config.SMSUtility;
 import javax.swing.ImageIcon;
 import java.awt.Image;
 

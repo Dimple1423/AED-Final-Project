@@ -10,7 +10,7 @@ import HealthBuddy.models.Enterprise.Enterprise;
 import HealthBuddy.models.Network.Network;
 import HealthBuddy.models.Organisation.Organisation;
 import HealthBuddy.models.User.User;
-import HealthBuddy.Util.Utilities;
+import HealthBuddy.Config.Config;
 
 /**
  *
@@ -163,7 +163,7 @@ public class SigninJPanel extends javax.swing.JPanel {
     private void loginBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginBtnActionPerformed
         // TODO add your handling code here:
 
-        String userName = Utilities.getTrimmedText(usernameTF);
+        String userName = Config.getClippedText(usernameTF);
         String password = String.valueOf(passPF.getPassword());
         
         User userAccount= ecosystem.getUserCatalog().authenticateUserAccount(userName, password);

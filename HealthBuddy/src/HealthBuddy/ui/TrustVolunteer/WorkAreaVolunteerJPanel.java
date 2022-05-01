@@ -10,9 +10,9 @@ import HealthBuddy.models.Network.Network;
 import HealthBuddy.models.Trust.Organisation.TrustOrgVolunteer;
 import HealthBuddy.models.WorkQueue.HealthcareTrustRequestWQ;
 import HealthBuddy.models.User.User;
-import HealthBuddy.Util.SendEmailUtility;
+import HealthBuddy.Config.SendEmailUtility;
 import HealthBuddy.models.WorkQueue.WorkRequest;
-import HealthBuddy.Util.Utilities;
+import HealthBuddy.Config.Config;
 import javax.swing.ImageIcon;
 import java.awt.Image;
 
@@ -235,9 +235,9 @@ public class WorkAreaVolunteerJPanel extends javax.swing.JPanel {
                 //Defining newsletter details
 
         
-                String message = "Hello Donors," +",\n\nGreetings from MediStop! Your gift, whether big or small, matters!!" + "\nListed below are the details of the patient we sponsored for treatment:\n" +"\n"+"Patient Name: "+request.getPatientName()+ "\nHospital Name: " + request.getHospitalName()+"\nHospital City: " + request.getCity() + "\nDonation Provided: "+request.getAmount()+"\n\nRegards,\nTeam MediStop";
-                String subject ="News @ MediStop";
-                SendEmailUtility.sendEmail(subject, Utilities.email, Utilities.password, message, receiver);
+                String message = "Hi Donor," +",\n\nHope you are doing well! Your contribution brought a big change in saving lives!! Thank you for your help...!!!" + "\nBelow is the list of patients  whose life was saved because of you:\n" +"\n"+"Patient Name: "+request.getPatientName()+ "\nHospital Name: " + request.getHospitalName()+"\nHospital City: " + request.getCity() + "\nDonation Provided: "+request.getAmount()+"\n\nRegards,\n HealthBuddy Team";
+                String subject ="News @ HealthBuddy";
+                SendEmailUtility.sendEmail(subject, Config.emailId, Config.password, message, receiver);
         
                 JOptionPane.showMessageDialog(null, "Newsletter Successfully Published!!", "Success", JOptionPane.INFORMATION_MESSAGE);
             }

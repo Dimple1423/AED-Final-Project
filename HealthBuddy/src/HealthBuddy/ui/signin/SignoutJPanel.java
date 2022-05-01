@@ -8,7 +8,7 @@ import HealthBuddy.models.Enterprise.Enterprise;
 import HealthBuddy.models.Network.Network;
 import HealthBuddy.models.Organisation.Organisation;
 import HealthBuddy.models.User.User;
-import HealthBuddy.Util.Utilities;
+import HealthBuddy.Config.Config;
 
 /**
  *

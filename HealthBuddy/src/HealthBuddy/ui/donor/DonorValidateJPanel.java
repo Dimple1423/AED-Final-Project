@@ -5,7 +5,7 @@ import javax.swing.*;
 import HealthBuddy.models.EcoSystem;
 import HealthBuddy.models.Role.Donor;
 import HealthBuddy.models.UserData.DonorData;
-import HealthBuddy.Util.Utilities;
+import HealthBuddy.Config.Config;
 import HealthBuddy.models.DB4OUtil.DB4OUtil;
 import javax.swing.ImageIcon;
 import java.awt.Image;
@@ -253,7 +253,7 @@ public class DonorValidateJPanel extends javax.swing.JPanel {
     private void registerBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_registerBtnActionPerformed
         // TODO add your handling code here:
         
-        boolean valid = Utilities.getTrimmedText(codeTF).equals(validationCode);
+        boolean valid = Config.getClippedText(codeTF).equals(validationCode);
         setValidated(valid);
 
     }//GEN-LAST:event_registerBtnActionPerformed
@@ -265,7 +265,7 @@ public class DonorValidateJPanel extends javax.swing.JPanel {
     private void saveBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_saveBtnActionPerformed
         // TODO add your handling code here:
         
-        String userName = Utilities.getTrimmedText(usernameTF);
+        String userName = Config.getClippedText(usernameTF);
         String password = String.valueOf(passPF.getPassword());
         
         boolean result = ecosystem.getUserCatalog().isUserNameUnique(userName);

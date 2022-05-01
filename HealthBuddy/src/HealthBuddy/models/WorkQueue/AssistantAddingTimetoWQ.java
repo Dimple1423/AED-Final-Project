@@ -4,7 +4,7 @@ import java.time.format.DateTimeFormatter;
 import java.time.LocalDateTime;
 import java.util.Date;
 import HealthBuddy.models.User.User;
-import HealthBuddy.Util.Utilities;
+import HealthBuddy.Config.Config;
 
 /**
  *
@@ -44,7 +44,7 @@ public class AssistantAddingTimetoWQ extends WorkRequest{
     }
     
     public String getTimings() {
-        return timings.format(Utilities.formatter);
+        return timings.format(Config.formatter);
     }
 
     public void setTimings(LocalDateTime timings) {

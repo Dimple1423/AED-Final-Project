@@ -10,7 +10,7 @@ import HealthBuddy.ui.signin.SigninJPanel;
 import HealthBuddy.models.EcoSystem;
 import HealthBuddy.ui.donor.CreateDonorJPanel;
 import HealthBuddy.ui.signin.SignoutJPanel;
-import HealthBuddy.Util.Utilities;
+import HealthBuddy.Config.Config;
 
 
 /**

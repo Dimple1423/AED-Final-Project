@@ -16,9 +16,9 @@ import HealthBuddy.models.Network.Network;
 import javax.swing.table.DefaultTableModel;
 import HealthBuddy.models.WorkQueue.PatientBookingWQ;
 import HealthBuddy.models.WorkQueue.AssistantAddingTimetoWQ;
-import HealthBuddy.Util.SMSUtility;
+import HealthBuddy.Config.SMSUtility;
 import HealthBuddy.models.WorkQueue.WorkRequest;
-import HealthBuddy.Util.WhatsappUtility;
+import HealthBuddy.Config.WhatsappUtility;
 
 import java.awt.*;
 import java.text.DateFormat;
