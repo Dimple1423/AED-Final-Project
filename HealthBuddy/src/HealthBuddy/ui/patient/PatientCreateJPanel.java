@@ -1,5 +1,4 @@
 package HealthBuddy.ui.patient;
-
 import java.awt.CardLayout;
 import HealthBuddy.ui.donor.*;
 import java.io.File;
@@ -49,232 +48,231 @@ public class PatientCreateJPanel extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        deliveryDirLabel = new javax.swing.JLabel();
-        deliveryDirLabel1 = new javax.swing.JLabel();
-        deliveryDirLabel2 = new javax.swing.JLabel();
-        menuItemName = new javax.swing.JLabel();
-        donorNameTF = new javax.swing.JTextField();
-        menuItemName1 = new javax.swing.JLabel();
-        maleRB = new javax.swing.JRadioButton();
-        femaleRB = new javax.swing.JRadioButton();
-        notToSayRB = new javax.swing.JRadioButton();
-        biRB = new javax.swing.JRadioButton();
-        dobTF = new javax.swing.JTextField();
-        menuItemName2 = new javax.swing.JLabel();
-        menuItemName3 = new javax.swing.JLabel();
-        addTF = new javax.swing.JTextField();
-        menuItemName4 = new javax.swing.JLabel();
-        cityTF = new javax.swing.JTextField();
-        menuItemName5 = new javax.swing.JLabel();
-        stateCombobox = new javax.swing.JComboBox<>();
-        menuItemName6 = new javax.swing.JLabel();
-        zipCodeTF = new javax.swing.JTextField();
-        menuItemName7 = new javax.swing.JLabel();
-        phoneTF = new javax.swing.JTextField();
-        menuItemName8 = new javax.swing.JLabel();
-        uploadPicBtn = new javax.swing.JButton();
-        profilePicPathLabel = new javax.swing.JLabel();
-        menuItemName9 = new javax.swing.JLabel();
-        emailTF = new javax.swing.JTextField();
-        registerBtn = new javax.swing.JButton();
-        backBtn = new javax.swing.JButton();
-        menuItemName10 = new javax.swing.JLabel();
-        bloodGroupCB = new javax.swing.JComboBox<>();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        registerpatlabel = new javax.swing.JLabel();
+        messagelabel = new javax.swing.JLabel();
+        helptextlabel = new javax.swing.JLabel();
+        patnamelabel = new javax.swing.JLabel();
+        patNameTextF = new javax.swing.JTextField();
+        sexlabel = new javax.swing.JLabel();
+        genderMRB = new javax.swing.JRadioButton();
+        genderFRB = new javax.swing.JRadioButton();
+        genderundisclosedRB = new javax.swing.JRadioButton();
+        genderBiRB = new javax.swing.JRadioButton();
+        birthTextF = new javax.swing.JTextField();
+        birthlabel = new javax.swing.JLabel();
+        addrslabel = new javax.swing.JLabel();
+        addrsTextF = new javax.swing.JTextField();
+        placeNamelabel = new javax.swing.JLabel();
+        placeTextF = new javax.swing.JTextField();
+        provincelabel = new javax.swing.JLabel();
+        provincedropbox = new javax.swing.JComboBox<>();
+        postcodelabel = new javax.swing.JLabel();
+        postodeTextF = new javax.swing.JTextField();
+        piclabel = new javax.swing.JLabel();
+        mobPHTextF = new javax.swing.JTextField();
+        mobPHlabel = new javax.swing.JLabel();
+        buttonDP = new javax.swing.JButton();
+        displayPiclabel = new javax.swing.JLabel();
+        maillabel = new javax.swing.JLabel();
+        mailTextF = new javax.swing.JTextField();
+        buttonReg = new javax.swing.JButton();
+        buttonbck = new javax.swing.JButton();
+        grpBlabel = new javax.swing.JLabel();
+        grpBdropbox = new javax.swing.JComboBox<>();
+        giflabel = new javax.swing.JLabel();
 
         setBackground(null);
         setForeground(new java.awt.Color(0, 102, 102));
         setAutoscrolls(true);
 
-        deliveryDirLabel.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
-        deliveryDirLabel.setForeground(new java.awt.Color(0, 102, 102));
-        deliveryDirLabel.setText("Register as a Patient");
+        registerpatlabel.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        registerpatlabel.setForeground(new java.awt.Color(0, 102, 102));
+        registerpatlabel.setText("Register as a Patient");
 
-        deliveryDirLabel1.setBackground(new java.awt.Color(255, 255, 255));
-        deliveryDirLabel1.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
-        deliveryDirLabel1.setForeground(new java.awt.Color(0, 102, 102));
-        deliveryDirLabel1.setText("Help us, Help you!");
+        messagelabel.setBackground(new java.awt.Color(255, 255, 255));
+        messagelabel.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        messagelabel.setForeground(new java.awt.Color(0, 102, 102));
+        messagelabel.setText("Let's Help Each Other!");
 
-        deliveryDirLabel2.setBackground(new java.awt.Color(255, 255, 255));
-        deliveryDirLabel2.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
-        deliveryDirLabel2.setForeground(new java.awt.Color(0, 102, 102));
-        deliveryDirLabel2.setText("We want to help you...");
+        helptextlabel.setBackground(new java.awt.Color(255, 255, 255));
+        helptextlabel.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        helptextlabel.setForeground(new java.awt.Color(0, 102, 102));
+        helptextlabel.setText("Health Buddy is Here to Help!");
 
-        menuItemName.setBackground(null);
-        menuItemName.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        menuItemName.setForeground(new java.awt.Color(0, 102, 102));
-        menuItemName.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        menuItemName.setText("Patient Name:");
+        patnamelabel.setBackground(null);
+        patnamelabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        patnamelabel.setForeground(new java.awt.Color(0, 102, 102));
+        patnamelabel.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
+        patnamelabel.setText("Patient Name:");
 
-        donorNameTF.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        donorNameTF.setForeground(new java.awt.Color(0, 102, 102));
-        donorNameTF.setText(" ");
+        patNameTextF.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        patNameTextF.setForeground(new java.awt.Color(0, 102, 102));
+        patNameTextF.setText(" ");
 
-        menuItemName1.setBackground(null);
-        menuItemName1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        menuItemName1.setForeground(new java.awt.Color(0, 102, 102));
-        menuItemName1.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        menuItemName1.setText("Gender:");
+        sexlabel.setBackground(null);
+        sexlabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        sexlabel.setForeground(new java.awt.Color(0, 102, 102));
+        sexlabel.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
+        sexlabel.setText("Gender:");
 
-        maleRB.setBackground(new java.awt.Color(255, 255, 255));
-        maleRB.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        maleRB.setForeground(new java.awt.Color(0, 102, 102));
-        maleRB.setText("Male");
+        genderMRB.setBackground(new java.awt.Color(255, 255, 255));
+        genderMRB.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        genderMRB.setForeground(new java.awt.Color(0, 102, 102));
+        genderMRB.setText("Male");
 
-        femaleRB.setBackground(new java.awt.Color(255, 255, 255));
-        femaleRB.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        femaleRB.setForeground(new java.awt.Color(0, 102, 102));
-        femaleRB.setText("Female");
-        femaleRB.addActionListener(new java.awt.event.ActionListener() {
+        genderFRB.setBackground(new java.awt.Color(255, 255, 255));
+        genderFRB.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        genderFRB.setForeground(new java.awt.Color(0, 102, 102));
+        genderFRB.setText("Female");
+        genderFRB.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                femaleRBActionPerformed(evt);
+                genderFRBActionPerformed(evt);
             }
         });
 
-        notToSayRB.setBackground(new java.awt.Color(255, 255, 255));
-        notToSayRB.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        notToSayRB.setForeground(new java.awt.Color(0, 102, 102));
-        notToSayRB.setText("Prefer Not to Say");
+        genderundisclosedRB.setBackground(new java.awt.Color(255, 255, 255));
+        genderundisclosedRB.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        genderundisclosedRB.setForeground(new java.awt.Color(0, 102, 102));
+        genderundisclosedRB.setText("Prefer Not to Say");
 
-        biRB.setBackground(new java.awt.Color(255, 255, 255));
-        biRB.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        biRB.setForeground(new java.awt.Color(0, 102, 102));
-        biRB.setText("Bi Sexual");
-        biRB.addActionListener(new java.awt.event.ActionListener() {
+        genderBiRB.setBackground(new java.awt.Color(255, 255, 255));
+        genderBiRB.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        genderBiRB.setForeground(new java.awt.Color(0, 102, 102));
+        genderBiRB.setText("Bi Sexual");
+        genderBiRB.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                biRBActionPerformed(evt);
+                genderBiRBActionPerformed(evt);
             }
         });
 
-        dobTF.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        dobTF.setForeground(new java.awt.Color(0, 102, 102));
-        dobTF.setText(" ");
+        birthTextF.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        birthTextF.setForeground(new java.awt.Color(0, 102, 102));
+        birthTextF.setText(" ");
 
-        menuItemName2.setBackground(null);
-        menuItemName2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        menuItemName2.setForeground(new java.awt.Color(0, 102, 102));
-        menuItemName2.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        menuItemName2.setText("Date of Birth:");
+        birthlabel.setBackground(null);
+        birthlabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        birthlabel.setForeground(new java.awt.Color(0, 102, 102));
+        birthlabel.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
+        birthlabel.setText("Date of Birth:");
 
-        menuItemName3.setBackground(null);
-        menuItemName3.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        menuItemName3.setForeground(new java.awt.Color(0, 102, 102));
-        menuItemName3.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        menuItemName3.setText("Address:");
+        addrslabel.setBackground(null);
+        addrslabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        addrslabel.setForeground(new java.awt.Color(0, 102, 102));
+        addrslabel.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
+        addrslabel.setText("Address:");
 
-        addTF.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        addTF.setForeground(new java.awt.Color(0, 102, 102));
-        addTF.setText(" ");
+        addrsTextF.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        addrsTextF.setForeground(new java.awt.Color(0, 102, 102));
+        addrsTextF.setText(" ");
 
-        menuItemName4.setBackground(null);
-        menuItemName4.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        menuItemName4.setForeground(new java.awt.Color(0, 102, 102));
-        menuItemName4.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        menuItemName4.setText("City:");
+        placeNamelabel.setBackground(null);
+        placeNamelabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        placeNamelabel.setForeground(new java.awt.Color(0, 102, 102));
+        placeNamelabel.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
+        placeNamelabel.setText("City:");
 
-        cityTF.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        cityTF.setForeground(new java.awt.Color(0, 102, 102));
-        cityTF.setText(" ");
+        placeTextF.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        placeTextF.setForeground(new java.awt.Color(0, 102, 102));
+        placeTextF.setText(" ");
 
-        menuItemName5.setBackground(null);
-        menuItemName5.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        menuItemName5.setForeground(new java.awt.Color(0, 102, 102));
-        menuItemName5.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        menuItemName5.setText("State:");
+        provincelabel.setBackground(null);
+        provincelabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        provincelabel.setForeground(new java.awt.Color(0, 102, 102));
+        provincelabel.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
+        provincelabel.setText("State:");
 
-        stateCombobox.setForeground(new java.awt.Color(0, 0, 102));
-        stateCombobox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "-", "AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "DC", "FL", "GA", "HI", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME", "MD", "MA", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NH", "NJ", "NM", "NY", "NC", "ND", "OH", "OK", "OR", "PA", "RI", "SC", "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY", " " }));
+        provincedropbox.setForeground(new java.awt.Color(0, 0, 102));
+        provincedropbox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "-", "AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "DC", "FL", "GA", "HI", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME", "MD", "MA", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NH", "NJ", "NM", "NY", "NC", "ND", "OH", "OK", "OR", "PA", "RI", "SC", "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY", " " }));
 
-        menuItemName6.setBackground(null);
-        menuItemName6.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        menuItemName6.setForeground(new java.awt.Color(0, 102, 102));
-        menuItemName6.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        menuItemName6.setText("Zip Code:");
+        postcodelabel.setBackground(null);
+        postcodelabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        postcodelabel.setForeground(new java.awt.Color(0, 102, 102));
+        postcodelabel.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
+        postcodelabel.setText("Zip Code:");
 
-        zipCodeTF.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        zipCodeTF.setForeground(new java.awt.Color(0, 102, 102));
-        zipCodeTF.setText(" ");
+        postodeTextF.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        postodeTextF.setForeground(new java.awt.Color(0, 102, 102));
+        postodeTextF.setText(" ");
 
-        menuItemName7.setBackground(null);
-        menuItemName7.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        menuItemName7.setForeground(new java.awt.Color(0, 102, 102));
-        menuItemName7.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        menuItemName7.setText("Profile Picture:");
+        piclabel.setBackground(null);
+        piclabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        piclabel.setForeground(new java.awt.Color(0, 102, 102));
+        piclabel.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
+        piclabel.setText("Profile Picture:");
 
-        phoneTF.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        phoneTF.setForeground(new java.awt.Color(0, 102, 102));
-        phoneTF.setText(" ");
+        mobPHTextF.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        mobPHTextF.setForeground(new java.awt.Color(0, 102, 102));
+        mobPHTextF.setText(" ");
 
-        menuItemName8.setBackground(null);
-        menuItemName8.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        menuItemName8.setForeground(new java.awt.Color(0, 102, 102));
-        menuItemName8.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        menuItemName8.setText("Contact:");
+        mobPHlabel.setBackground(null);
+        mobPHlabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        mobPHlabel.setForeground(new java.awt.Color(0, 102, 102));
+        mobPHlabel.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
+        mobPHlabel.setText("Contact:");
 
-        uploadPicBtn.setBackground(new java.awt.Color(0, 102, 102));
-        uploadPicBtn.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        uploadPicBtn.setForeground(new java.awt.Color(255, 255, 255));
-        uploadPicBtn.setText("Upload +");
-        uploadPicBtn.setBorderPainted(false);
-        uploadPicBtn.addActionListener(new java.awt.event.ActionListener() {
+        buttonDP.setBackground(new java.awt.Color(0, 102, 102));
+        buttonDP.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        buttonDP.setForeground(new java.awt.Color(255, 255, 255));
+        buttonDP.setText("Upload +");
+        buttonDP.setBorderPainted(false);
+        buttonDP.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                uploadPicBtnActionPerformed(evt);
+                buttonDPActionPerformed(evt);
             }
         });
 
-        profilePicPathLabel.setText(" ");
+        displayPiclabel.setText(" ");
 
-        menuItemName9.setBackground(null);
-        menuItemName9.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        menuItemName9.setForeground(new java.awt.Color(0, 102, 102));
-        menuItemName9.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        menuItemName9.setText("Email:");
+        maillabel.setBackground(null);
+        maillabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        maillabel.setForeground(new java.awt.Color(0, 102, 102));
+        maillabel.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
+        maillabel.setText("Email:");
 
-        emailTF.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        emailTF.setForeground(new java.awt.Color(0, 102, 102));
-        emailTF.setText(" ");
-        emailTF.addActionListener(new java.awt.event.ActionListener() {
+        mailTextF.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        mailTextF.setForeground(new java.awt.Color(0, 102, 102));
+        mailTextF.setText(" ");
+        mailTextF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                emailTFActionPerformed(evt);
+                mailTextFActionPerformed(evt);
             }
         });
 
-        registerBtn.setBackground(new java.awt.Color(0, 102, 102));
-        registerBtn.setFont(new java.awt.Font("Segoe UI", 1, 19)); // NOI18N
-        registerBtn.setForeground(new java.awt.Color(255, 255, 255));
-        registerBtn.setText("Register");
-        registerBtn.setBorderPainted(false);
-        registerBtn.addActionListener(new java.awt.event.ActionListener() {
+        buttonReg.setBackground(new java.awt.Color(0, 102, 102));
+        buttonReg.setFont(new java.awt.Font("Segoe UI", 1, 19)); // NOI18N
+        buttonReg.setForeground(new java.awt.Color(255, 255, 255));
+        buttonReg.setText("Register");
+        buttonReg.setBorderPainted(false);
+        buttonReg.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                registerBtnActionPerformed(evt);
+                buttonRegActionPerformed(evt);
             }
         });
 
-        backBtn.setBackground(new java.awt.Color(0, 102, 102));
-        backBtn.setFont(new java.awt.Font("Segoe UI", 1, 19)); // NOI18N
-        backBtn.setForeground(new java.awt.Color(255, 255, 255));
-        backBtn.setText("<< Back");
-        backBtn.setBorderPainted(false);
-        backBtn.addActionListener(new java.awt.event.ActionListener() {
+        buttonbck.setBackground(new java.awt.Color(0, 102, 102));
+        buttonbck.setFont(new java.awt.Font("Segoe UI", 1, 19)); // NOI18N
+        buttonbck.setForeground(new java.awt.Color(255, 255, 255));
+        buttonbck.setText("<< Back");
+        buttonbck.setBorderPainted(false);
+        buttonbck.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                backBtnActionPerformed(evt);
+                buttonbckActionPerformed(evt);
             }
         });
 
-        menuItemName10.setBackground(null);
-        menuItemName10.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        menuItemName10.setForeground(new java.awt.Color(0, 102, 102));
-        menuItemName10.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        menuItemName10.setText("Blood Group:");
+        grpBlabel.setBackground(null);
+        grpBlabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        grpBlabel.setForeground(new java.awt.Color(0, 102, 102));
+        grpBlabel.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
+        grpBlabel.setText("Blood Group:");
 
-        bloodGroupCB.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        bloodGroupCB.setForeground(new java.awt.Color(0, 102, 102));
-        bloodGroupCB.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "-", "A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-", " " }));
-        bloodGroupCB.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        grpBdropbox.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        grpBdropbox.setForeground(new java.awt.Color(0, 102, 102));
+        grpBdropbox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "-", "A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-", " " }));
+        grpBdropbox.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
 
         ImageIcon imageIcon =  new ImageIcon(new ImageIcon(getClass().getResource("/HealthBuddy/ui/images/patient.gif")).getImage().getScaledInstance(500, 500, Image.SCALE_DEFAULT));
-        jLabel2.setIcon(imageIcon);
+        giflabel.setIcon(imageIcon);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -284,172 +282,166 @@ public class PatientCreateJPanel extends javax.swing.JPanel {
                 .addGap(20, 20, 20)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(deliveryDirLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 320, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(490, 490, 490)
-                        .addComponent(deliveryDirLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 416, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(119, 119, 119)
-                        .addComponent(backBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(393, 393, 393)
-                        .addComponent(profilePicPathLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 367, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(messagelabel, javax.swing.GroupLayout.PREFERRED_SIZE, 449, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(343, 343, 343)
+                        .addComponent(helptextlabel, javax.swing.GroupLayout.PREFERRED_SIZE, 580, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(buttonbck, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addComponent(deliveryDirLabel, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(menuItemName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(menuItemName1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(registerpatlabel, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(patnamelabel, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(sexlabel, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(64, 64, 64)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createSequentialGroup()
-                                        .addComponent(maleRB, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(genderMRB, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(18, 18, 18)
-                                        .addComponent(femaleRB)
+                                        .addComponent(genderFRB)
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addGroup(layout.createSequentialGroup()
                                                 .addGap(45, 45, 45)
-                                                .addComponent(registerBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 203, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                .addComponent(buttonReg, javax.swing.GroupLayout.PREFERRED_SIZE, 203, javax.swing.GroupLayout.PREFERRED_SIZE))
                                             .addGroup(layout.createSequentialGroup()
                                                 .addGap(18, 18, 18)
-                                                .addComponent(biRB)
+                                                .addComponent(genderBiRB)
                                                 .addGap(18, 18, 18)
-                                                .addComponent(notToSayRB))))
-                                    .addComponent(donorNameTF, javax.swing.GroupLayout.PREFERRED_SIZE, 203, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                                .addComponent(genderundisclosedRB))))
+                                    .addComponent(patNameTextF, javax.swing.GroupLayout.PREFERRED_SIZE, 203, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(menuItemName2, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(menuItemName3, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(birthlabel, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(addrslabel, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(64, 64, 64)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(dobTF, javax.swing.GroupLayout.DEFAULT_SIZE, 167, Short.MAX_VALUE)
-                                    .addComponent(addTF)))
+                                    .addComponent(birthTextF, javax.swing.GroupLayout.DEFAULT_SIZE, 167, Short.MAX_VALUE)
+                                    .addComponent(addrsTextF)))
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(menuItemName8, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 195, Short.MAX_VALUE)
-                                    .addComponent(menuItemName7, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 195, Short.MAX_VALUE)
-                                    .addComponent(menuItemName9, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 195, Short.MAX_VALUE)
-                                    .addComponent(menuItemName10, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 195, Short.MAX_VALUE))
-                                .addGap(64, 64, 64)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(bloodGroupCB, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(uploadPicBtn, javax.swing.GroupLayout.DEFAULT_SIZE, 167, Short.MAX_VALUE)
-                                    .addComponent(emailTF)
-                                    .addComponent(phoneTF)))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(menuItemName6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 195, Short.MAX_VALUE)
-                                    .addComponent(menuItemName4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 195, Short.MAX_VALUE)
-                                    .addComponent(menuItemName5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 195, Short.MAX_VALUE))
+                                    .addComponent(mobPHlabel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 195, Short.MAX_VALUE)
+                                    .addComponent(piclabel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 195, Short.MAX_VALUE)
+                                    .addComponent(maillabel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 195, Short.MAX_VALUE)
+                                    .addComponent(grpBlabel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 195, Short.MAX_VALUE))
                                 .addGap(64, 64, 64)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(stateCombobox, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(zipCodeTF)
-                                    .addComponent(cityTF))))
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(grpBdropbox, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(buttonDP, javax.swing.GroupLayout.DEFAULT_SIZE, 167, Short.MAX_VALUE)
+                                    .addComponent(mailTextF)
+                                    .addComponent(mobPHTextF)))
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(477, 477, 477)
-                                .addComponent(jLabel1))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(57, 57, 57)
-                                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 575, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(postcodelabel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 195, Short.MAX_VALUE)
+                                    .addComponent(placeNamelabel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 195, Short.MAX_VALUE)
+                                    .addComponent(provincelabel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 195, Short.MAX_VALUE))
+                                .addGap(64, 64, 64)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(provincedropbox, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(postodeTextF)
+                                    .addComponent(placeTextF))))
+                        .addGap(57, 57, 57)
+                        .addComponent(giflabel, javax.swing.GroupLayout.PREFERRED_SIZE, 575, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(393, 393, 393)
+                        .addComponent(displayPiclabel, javax.swing.GroupLayout.PREFERRED_SIZE, 12, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(1253, Short.MAX_VALUE))
         );
 
-        layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {biRB, femaleRB, maleRB, notToSayRB});
+        layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {genderBiRB, genderFRB, genderMRB, genderundisclosedRB});
 
-        layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {addTF, bloodGroupCB, cityTF, dobTF, donorNameTF, emailTF, phoneTF, stateCombobox, uploadPicBtn, zipCodeTF});
+        layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {addrsTextF, birthTextF, buttonDP, grpBdropbox, mailTextF, mobPHTextF, patNameTextF, placeTextF, postodeTextF, provincedropbox});
 
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(deliveryDirLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(deliveryDirLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(helptextlabel, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(messagelabel, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                        .addComponent(backBtn)
+                        .addComponent(buttonbck)
                         .addGap(20, 20, 20)))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(deliveryDirLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(registerpatlabel, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(menuItemName)
-                            .addComponent(donorNameTF, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(patnamelabel)
+                            .addComponent(patNameTextF, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(menuItemName1)
+                            .addComponent(sexlabel)
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(maleRB, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(femaleRB)
-                                    .addComponent(biRB)
-                                    .addComponent(notToSayRB))
+                                    .addComponent(genderMRB, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(genderFRB)
+                                    .addComponent(genderBiRB)
+                                    .addComponent(genderundisclosedRB))
                                 .addGap(3, 3, 3)))
                         .addGap(21, 21, 21)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(menuItemName2)
-                            .addComponent(dobTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(birthlabel)
+                            .addComponent(birthTextF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(19, 19, 19)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(menuItemName3)
-                            .addComponent(addTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(addrslabel)
+                            .addComponent(addrsTextF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(22, 22, 22)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(menuItemName4)
-                            .addComponent(cityTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(placeNamelabel)
+                            .addComponent(placeTextF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(21, 21, 21)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(menuItemName6)
-                            .addComponent(zipCodeTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(postcodelabel)
+                            .addComponent(postodeTextF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(menuItemName5)
+                            .addComponent(provincelabel)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(stateCombobox, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(provincedropbox, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(2, 2, 2)))
                         .addGap(16, 16, 16)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(menuItemName8)
-                            .addComponent(phoneTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(mobPHlabel)
+                            .addComponent(mobPHTextF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(menuItemName7)
-                            .addComponent(uploadPicBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(piclabel)
+                            .addComponent(buttonDP, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(menuItemName9)
-                            .addComponent(emailTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(maillabel)
+                            .addComponent(mailTextF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(menuItemName10)
-                            .addComponent(bloodGroupCB, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(grpBlabel)
+                            .addComponent(grpBdropbox, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(3, 3, 3)
-                        .addComponent(registerBtn)
-                        .addGap(2406, 2406, 2406)
-                        .addComponent(profilePicPathLabel)
+                        .addComponent(buttonReg)
+                        .addGap(2415, 2415, 2415)
+                        .addComponent(displayPiclabel, javax.swing.GroupLayout.PREFERRED_SIZE, 7, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addContainerGap(20, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 557, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(giflabel, javax.swing.GroupLayout.PREFERRED_SIZE, 557, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(2463, 2463, 2463))))
         );
 
-        layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {addTF, cityTF, dobTF, donorNameTF, emailTF, phoneTF, zipCodeTF});
+        layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {addrsTextF, birthTextF, mailTextF, mobPHTextF, patNameTextF, placeTextF, postodeTextF});
 
-        layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {biRB, femaleRB, maleRB, notToSayRB});
+        layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {genderBiRB, genderFRB, genderMRB, genderundisclosedRB});
 
     }// </editor-fold>//GEN-END:initComponents
 
     private boolean femail=true;
     private boolean fbloodgroup=true;
-    private void biRBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_biRBActionPerformed
+    private void genderBiRBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_genderBiRBActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_biRBActionPerformed
+    }//GEN-LAST:event_genderBiRBActionPerformed
 
-    private void uploadPicBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_uploadPicBtnActionPerformed
+    private void buttonDPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonDPActionPerformed
         // TODO add your handling code here:
         String profilePicPath;
         
@@ -460,7 +452,7 @@ public class PatientCreateJPanel extends javax.swing.JPanel {
         if (returnValue == JFileChooser.APPROVE_OPTION) {
             File selectedFile = jfc.getSelectedFile();
             if (selectedFile.getName().endsWith(".jfif") || selectedFile.getName().contains(".jpeg") || selectedFile.getName().contains(".jpg") || selectedFile.getName().contains(".png")){
-                profilePicPathLabel.setText(selectedFile.getName());
+                displayPiclabel.setText(selectedFile.getName());
                 profilePicPath = selectedFile.getAbsolutePath();
             } else {
                 JOptionPane.showConfirmDialog(null, "Only jpeg/jpg and png format supported.", "Error!",
@@ -469,24 +461,24 @@ public class PatientCreateJPanel extends javax.swing.JPanel {
             }
 
         }
-    }//GEN-LAST:event_uploadPicBtnActionPerformed
+    }//GEN-LAST:event_buttonDPActionPerformed
 
-    private void registerBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_registerBtnActionPerformed
+    private void buttonRegActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonRegActionPerformed
         // TODO add your handling code here:
         
         
             try {
-            String date = Config.getClippedText(dobTF);
-            String name = Config.getClippedText(donorNameTF);
+            String date = Config.getClippedText(birthTextF);
+            String name = Config.getClippedText(patNameTextF);
             String gender = getGenderValuesFromGivenRadioButtons();
-            String phone = Config.getClippedText(phoneTF);
-            String city = Config.getClippedText(cityTF);
-            String state = stateCombobox.getSelectedItem().toString();
-            String address = Config.getClippedText(addTF);
-            int zipCode = Integer.parseInt(Config.getClippedText(zipCodeTF));
-            String email = Config.getClippedText(emailTF);
-            String profilePath = profilePicPathLabel.getText();
-            String blood = (String) bloodGroupCB.getSelectedItem();
+            String phone = Config.getClippedText(mobPHTextF);
+            String city = Config.getClippedText(placeTextF);
+            String state = provincedropbox.getSelectedItem().toString();
+            String address = Config.getClippedText(addrsTextF);
+            int zipCode = Integer.parseInt(Config.getClippedText(postodeTextF));
+            String email = Config.getClippedText(mailTextF);
+            String profilePath = displayPiclabel.getText();
+            String blood = (String) grpBdropbox.getSelectedItem();
         
 
 
@@ -548,23 +540,23 @@ public class PatientCreateJPanel extends javax.swing.JPanel {
         
 
        
-    }//GEN-LAST:event_registerBtnActionPerformed
+    }//GEN-LAST:event_buttonRegActionPerformed
 
     
     
     public String getGenderValuesFromGivenRadioButtons()
     {
-        if(maleRB.isSelected())
+        if(genderMRB.isSelected())
         {
             return "Male";
         }
-        else if(femaleRB.isSelected())
+        else if(genderFRB.isSelected())
         {
             return "Female";
-        }  else if(biRB.isSelected())
+        }  else if(genderBiRB.isSelected())
         {
             return "Bi Sexual";
-        }  else if(notToSayRB.isSelected())
+        }  else if(genderundisclosedRB.isSelected())
         {
             return "Unknown";
         }
@@ -572,56 +564,55 @@ public class PatientCreateJPanel extends javax.swing.JPanel {
         return null;
     }
 
-    private void backBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backBtnActionPerformed
+    private void buttonbckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonbckActionPerformed
         // TODO add your handling code here:
           bodyPanel.remove(this);
         CardLayout layout = (CardLayout) bodyPanel.getLayout();
         layout.previous(bodyPanel);
-    }//GEN-LAST:event_backBtnActionPerformed
+    }//GEN-LAST:event_buttonbckActionPerformed
 
-    private void femaleRBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_femaleRBActionPerformed
+    private void genderFRBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_genderFRBActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_femaleRBActionPerformed
+    }//GEN-LAST:event_genderFRBActionPerformed
 
-    private void emailTFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_emailTFActionPerformed
+    private void mailTextFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mailTextFActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_emailTFActionPerformed
+    }//GEN-LAST:event_mailTextFActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JTextField addTF;
-    private javax.swing.JButton backBtn;
-    private javax.swing.JRadioButton biRB;
-    private javax.swing.JComboBox<String> bloodGroupCB;
-    private javax.swing.JTextField cityTF;
-    private javax.swing.JLabel deliveryDirLabel;
-    private javax.swing.JLabel deliveryDirLabel1;
-    private javax.swing.JLabel deliveryDirLabel2;
-    private javax.swing.JTextField dobTF;
-    private javax.swing.JTextField donorNameTF;
-    private javax.swing.JTextField emailTF;
-    private javax.swing.JRadioButton femaleRB;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JRadioButton maleRB;
-    private javax.swing.JLabel menuItemName;
-    private javax.swing.JLabel menuItemName1;
-    private javax.swing.JLabel menuItemName10;
-    private javax.swing.JLabel menuItemName2;
-    private javax.swing.JLabel menuItemName3;
-    private javax.swing.JLabel menuItemName4;
-    private javax.swing.JLabel menuItemName5;
-    private javax.swing.JLabel menuItemName6;
-    private javax.swing.JLabel menuItemName7;
-    private javax.swing.JLabel menuItemName8;
-    private javax.swing.JLabel menuItemName9;
-    private javax.swing.JRadioButton notToSayRB;
-    private javax.swing.JTextField phoneTF;
-    private javax.swing.JLabel profilePicPathLabel;
-    private javax.swing.JButton registerBtn;
-    private javax.swing.JComboBox<String> stateCombobox;
-    private javax.swing.JButton uploadPicBtn;
-    private javax.swing.JTextField zipCodeTF;
+    private javax.swing.JTextField addrsTextF;
+    private javax.swing.JLabel addrslabel;
+    private javax.swing.JTextField birthTextF;
+    private javax.swing.JLabel birthlabel;
+    private javax.swing.JButton buttonDP;
+    private javax.swing.JButton buttonReg;
+    private javax.swing.JButton buttonbck;
+    private javax.swing.JLabel displayPiclabel;
+    private javax.swing.JRadioButton genderBiRB;
+    private javax.swing.JRadioButton genderFRB;
+    private javax.swing.JRadioButton genderMRB;
+    private javax.swing.JRadioButton genderundisclosedRB;
+    private javax.swing.JLabel giflabel;
+    private javax.swing.JComboBox<String> grpBdropbox;
+    private javax.swing.JLabel grpBlabel;
+    private javax.swing.JLabel helptextlabel;
+    private javax.swing.JTextField mailTextF;
+    private javax.swing.JLabel maillabel;
+    private javax.swing.JLabel messagelabel;
+    private javax.swing.JTextField mobPHTextF;
+    private javax.swing.JLabel mobPHlabel;
+    private javax.swing.JTextField patNameTextF;
+    private javax.swing.JLabel patnamelabel;
+    private javax.swing.JLabel piclabel;
+    private javax.swing.JLabel placeNamelabel;
+    private javax.swing.JTextField placeTextF;
+    private javax.swing.JLabel postcodelabel;
+    private javax.swing.JTextField postodeTextF;
+    private javax.swing.JComboBox<String> provincedropbox;
+    private javax.swing.JLabel provincelabel;
+    private javax.swing.JLabel registerpatlabel;
+    private javax.swing.JLabel sexlabel;
     // End of variables declaration//GEN-END:variables
 
 }
