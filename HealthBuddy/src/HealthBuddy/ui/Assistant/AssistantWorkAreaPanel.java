@@ -241,25 +241,22 @@ public class AssistantWorkAreaPanel extends javax.swing.JPanel {
                         .addComponent(lblAssistantName1, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(manageFundingRequestsPanelLayout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 692, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 1947, Short.MAX_VALUE)
+                        .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 692, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(manageFundingRequestsPanelLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(menuItemName14, javax.swing.GroupLayout.PREFERRED_SIZE, 225, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(txtFundReqd, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnRaiseFundingRequest)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 2162, Short.MAX_VALUE)
                 .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 830, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 830, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(173, 173, 173))
             .addGroup(manageFundingRequestsPanelLayout.createSequentialGroup()
-                .addGroup(manageFundingRequestsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(manageFundingRequestsPanelLayout.createSequentialGroup()
-                        .addGap(17, 17, 17)
-                        .addGroup(manageFundingRequestsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btnRaiseFundingRequest)
-                            .addGroup(manageFundingRequestsPanelLayout.createSequentialGroup()
-                                .addComponent(menuItemName14, javax.swing.GroupLayout.PREFERRED_SIZE, 197, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(txtFundReqd, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                    .addGroup(manageFundingRequestsPanelLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(deliveryDirLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 651, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap()
+                .addComponent(deliveryDirLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 651, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         manageFundingRequestsPanelLayout.setVerticalGroup(
@@ -268,26 +265,26 @@ public class AssistantWorkAreaPanel extends javax.swing.JPanel {
                 .addGap(15, 15, 15)
                 .addComponent(deliveryDirLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(49, 49, 49)
-                .addGroup(manageFundingRequestsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel3)
-                    .addGroup(manageFundingRequestsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addComponent(jLabel7)
-                        .addGroup(manageFundingRequestsPanelLayout.createSequentialGroup()
-                            .addGroup(manageFundingRequestsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(lblWelcome1)
-                                .addComponent(lblAssistantName1))
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(helpTextLabel1)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 407, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(45, 45, 45))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(manageFundingRequestsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(menuItemName14)
-                    .addComponent(txtFundReqd, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(32, 32, 32)
-                .addComponent(btnRaiseFundingRequest)
-                .addContainerGap(367, Short.MAX_VALUE))
+                .addGroup(manageFundingRequestsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(manageFundingRequestsPanelLayout.createSequentialGroup()
+                        .addGroup(manageFundingRequestsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel3)
+                            .addComponent(jLabel7))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(manageFundingRequestsPanelLayout.createSequentialGroup()
+                        .addGroup(manageFundingRequestsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(lblWelcome1)
+                            .addComponent(lblAssistantName1))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(helpTextLabel1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 407, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addGroup(manageFundingRequestsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(menuItemName14)
+                            .addComponent(txtFundReqd, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnRaiseFundingRequest))
+                        .addGap(459, 459, 459))))
         );
 
         donationTabbedPane.addTab("Funding Requests", manageFundingRequestsPanel);
@@ -302,8 +299,8 @@ public class AssistantWorkAreaPanel extends javax.swing.JPanel {
 
         jScrollPane5.setForeground(new java.awt.Color(0, 102, 102));
 
-        tblAcknowledgement.setFont(new java.awt.Font("Segoe UI", 0, 19)); // NOI18N
-        tblAcknowledgement.setForeground(new java.awt.Color(0, 0, 102));
+        tblAcknowledgement.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        tblAcknowledgement.setForeground(new java.awt.Color(0, 102, 102));
         tblAcknowledgement.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
@@ -323,6 +320,7 @@ public class AssistantWorkAreaPanel extends javax.swing.JPanel {
                 return canEdit [columnIndex];
             }
         });
+        tblAcknowledgement.setSelectionBackground(new java.awt.Color(0, 102, 102));
         jScrollPane5.setViewportView(tblAcknowledgement);
 
         lblWelcome2.setBackground(new java.awt.Color(255, 255, 255));
@@ -347,8 +345,8 @@ public class AssistantWorkAreaPanel extends javax.swing.JPanel {
                         .addComponent(lblWelcome2)
                         .addGap(18, 18, 18)
                         .addComponent(lblAssistantName2, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 607, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(4041, Short.MAX_VALUE))
+                    .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 707, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(4156, Short.MAX_VALUE))
         );
         fundingAcknowledgementPanelLayout.setVerticalGroup(
             fundingAcknowledgementPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -360,8 +358,8 @@ public class AssistantWorkAreaPanel extends javax.swing.JPanel {
                     .addComponent(lblWelcome2)
                     .addComponent(lblAssistantName2))
                 .addGap(18, 18, 18)
-                .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 443, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(508, Short.MAX_VALUE))
+                .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 401, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(550, Short.MAX_VALUE))
         );
 
         donationTabbedPane.addTab(" Acknowledgments", fundingAcknowledgementPanel);
@@ -393,7 +391,8 @@ public class AssistantWorkAreaPanel extends javax.swing.JPanel {
 
         jScrollPane1.setForeground(new java.awt.Color(0, 102, 102));
 
-        tblAppointment.setForeground(new java.awt.Color(0, 0, 102));
+        tblAppointment.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        tblAppointment.setForeground(new java.awt.Color(0, 102, 102));
         tblAppointment.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -411,6 +410,7 @@ public class AssistantWorkAreaPanel extends javax.swing.JPanel {
             }
         });
         tblAppointment.setRowHeight(40);
+        tblAppointment.setSelectionBackground(new java.awt.Color(0, 102, 102));
         jScrollPane1.setViewportView(tblAppointment);
 
         btnReject.setBackground(new java.awt.Color(0, 102, 102));
@@ -444,26 +444,28 @@ public class AssistantWorkAreaPanel extends javax.swing.JPanel {
             .addGroup(manageAppointmentsPanelLayout.createSequentialGroup()
                 .addGroup(manageAppointmentsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(manageAppointmentsPanelLayout.createSequentialGroup()
-                        .addGap(93, 93, 93)
-                        .addComponent(helpTextLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 798, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(manageAppointmentsPanelLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(btnAccept, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(47, 47, 47)
-                        .addComponent(btnReject, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(manageAppointmentsPanelLayout.createSequentialGroup()
                         .addGap(59, 59, 59)
                         .addComponent(lblWelcome3)
                         .addGap(18, 18, 18)
                         .addComponent(lblAssistantName3, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(manageAppointmentsPanelLayout.createSequentialGroup()
-                        .addGap(17, 17, 17)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 765, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(86, 86, 86)
-                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 505, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(manageAppointmentsPanelLayout.createSequentialGroup()
                         .addGap(39, 39, 39)
-                        .addComponent(deliveryDirLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 651, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(deliveryDirLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 651, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(manageAppointmentsPanelLayout.createSequentialGroup()
+                        .addGap(19, 19, 19)
+                        .addGroup(manageAppointmentsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(manageAppointmentsPanelLayout.createSequentialGroup()
+                                .addComponent(btnAccept, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(47, 47, 47)
+                                .addComponent(btnReject, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(manageAppointmentsPanelLayout.createSequentialGroup()
+                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 765, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(manageAppointmentsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(helpTextLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 798, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(manageAppointmentsPanelLayout.createSequentialGroup()
+                                        .addGap(84, 84, 84)
+                                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 505, javax.swing.GroupLayout.PREFERRED_SIZE)))))))
                 .addContainerGap(3304, Short.MAX_VALUE))
         );
         manageAppointmentsPanelLayout.setVerticalGroup(
@@ -475,17 +477,20 @@ public class AssistantWorkAreaPanel extends javax.swing.JPanel {
                 .addGroup(manageAppointmentsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblWelcome3)
                     .addComponent(lblAssistantName3))
-                .addGap(51, 51, 51)
-                .addComponent(helpTextLabel)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(manageAppointmentsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 402, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 304, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(27, 27, 27)
+                    .addGroup(manageAppointmentsPanelLayout.createSequentialGroup()
+                        .addGap(51, 51, 51)
+                        .addComponent(helpTextLabel)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 304, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(manageAppointmentsPanelLayout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 385, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(48, 48, 48)
                 .addGroup(manageAppointmentsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnAccept)
                     .addComponent(btnReject))
-                .addContainerGap(416, Short.MAX_VALUE))
+                .addContainerGap(473, Short.MAX_VALUE))
         );
 
         donationTabbedPane.addTab("Manage Appointments", manageAppointmentsPanel);
@@ -622,7 +627,7 @@ public class AssistantWorkAreaPanel extends javax.swing.JPanel {
                     .addGroup(manageDocSlotsPanelLayout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(deliveryDirLabel5)))
-                .addContainerGap(4081, Short.MAX_VALUE))
+                .addContainerGap(4296, Short.MAX_VALUE))
         );
         manageDocSlotsPanelLayout.setVerticalGroup(
             manageDocSlotsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

@@ -71,46 +71,37 @@
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="deliveryDirLabel3" min="-2" pref="651" max="-2" attributes="0"/>
-                                  <Component id="deliveryDirLabel2" alignment="0" min="-2" pref="294" max="-2" attributes="0"/>
-                                  <Group type="102" attributes="0">
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="menuItemName1" alignment="0" min="-2" pref="195" max="-2" attributes="0"/>
-                                          <Component id="delDirectoryScollPanel" alignment="0" min="-2" pref="754" max="-2" attributes="0"/>
-                                          <Group type="102" alignment="0" attributes="0">
-                                              <Group type="103" groupAlignment="0" attributes="0">
-                                                  <Group type="102" alignment="0" attributes="0">
-                                                      <Component id="hundBtn" min="-2" pref="56" max="-2" attributes="0"/>
-                                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                                      <Component id="onefiftyBtn" min="-2" max="-2" attributes="0"/>
-                                                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                                                      <Component id="twoHundBtn" min="-2" max="-2" attributes="0"/>
-                                                  </Group>
-                                                  <Component id="menuItemName6" alignment="0" min="-2" pref="176" max="-2" attributes="0"/>
-                                              </Group>
+                                  <Component id="menuItemName1" alignment="0" min="-2" pref="195" max="-2" attributes="0"/>
+                                  <Component id="delDirectoryScollPanel" alignment="0" min="-2" pref="754" max="-2" attributes="0"/>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="1" attributes="0">
+                                          <Group type="102" attributes="0">
+                                              <Component id="hundBtn" min="-2" pref="56" max="-2" attributes="0"/>
+                                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                              <Component id="onefiftyBtn" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                                              <Group type="103" groupAlignment="0" attributes="0">
-                                                  <Component id="frequencyCombobox" min="-2" pref="190" max="-2" attributes="0"/>
-                                                  <Component id="amountTF" min="-2" pref="121" max="-2" attributes="0"/>
-                                              </Group>
+                                              <Component id="twoHundBtn" min="-2" max="-2" attributes="0"/>
                                           </Group>
+                                          <Component id="menuItemName6" min="-2" pref="118" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="frequencyCombobox" min="-2" pref="190" max="-2" attributes="0"/>
+                                          <Component id="amountTF" min="-2" pref="121" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
+                                  <Component id="deliveryDirLabel3" alignment="0" min="-2" pref="651" max="-2" attributes="0"/>
+                                  <Component id="deliveryDirLabel2" alignment="0" min="-2" pref="294" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="101" max="-2" attributes="0"/>
                               <Component id="jLabel2" min="-2" pref="579" max="-2" attributes="0"/>
                           </Group>
-                          <Group type="102" attributes="0">
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="deliveryDirLabel" min="-2" pref="651" max="-2" attributes="0"/>
-                                  <Component id="createDonationBtn" alignment="0" min="-2" pref="200" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
+                          <Component id="deliveryDirLabel" min="-2" pref="651" max="-2" attributes="0"/>
+                          <Component id="createDonationBtn" alignment="0" min="-2" pref="200" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace pref="62" max="32767" attributes="0"/>
                   </Group>
@@ -167,7 +158,7 @@
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="66" green="66" red="0" type="rgb"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="100% of your donation will help a patient in need ..."/>
+                <Property name="text" type="java.lang.String" value="Giving a Little is Better than Not Giving at ALL !!"/>
               </Properties>
             </Component>
             <Container class="javax.swing.JScrollPane" name="delDirectoryScollPanel">
@@ -221,7 +212,7 @@
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="66" green="66" red="0" type="rgb"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Charity Directory"/>
+                <Property name="text" type="java.lang.String" value="Charity Catalog"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="deliveryDirLabel3">
@@ -235,7 +226,7 @@
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="66" green="66" red="0" type="rgb"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="DONATE, Save Lives!"/>
+                <Property name="text" type="java.lang.String" value="Contribute, make a Difference.."/>
               </Properties>
             </Component>
             <Component class="javax.swing.JButton" name="twoHundBtn">
@@ -431,16 +422,16 @@
                                   <Group type="102" alignment="0" attributes="0">
                                       <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
-                                          <Group type="102" attributes="0">
+                                          <Component id="searchCarCatalogScrollPanel" min="-2" pref="647" max="-2" attributes="0"/>
+                                          <Group type="102" alignment="0" attributes="0">
                                               <Component id="propertyComboBox" min="-2" pref="209" max="-2" attributes="0"/>
                                               <EmptySpace max="-2" attributes="0"/>
                                               <Component id="propertyValueTextField" min="-2" pref="236" max="-2" attributes="0"/>
                                               <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
-                                              <Component id="donationListSearchButton" min="-2" max="-2" attributes="0"/>
-                                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="resetTableButton" min="-2" pref="72" max="-2" attributes="0"/>
+                                              <Component id="donationListSearchButton" min="-2" pref="101" max="-2" attributes="0"/>
+                                              <EmptySpace max="32767" attributes="0"/>
+                                              <Component id="resetTableButton" min="-2" pref="103" max="-2" attributes="0"/>
                                           </Group>
-                                          <Component id="searchCarCatalogScrollPanel" min="-2" pref="647" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
@@ -451,7 +442,7 @@
                                       </Group>
                                   </Group>
                               </Group>
-                              <EmptySpace max="32767" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
                               <Component id="jLabel1" min="-2" pref="718" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="58" max="-2" attributes="0"/>
                           </Group>
@@ -472,23 +463,14 @@
                               <Component id="searchHeaderLabel" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" attributes="0">
-                                      <Component id="donationListSearchButton" max="32767" attributes="0"/>
-                                      <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="donationListSearchButton" alignment="3" pref="32" max="32767" attributes="0"/>
+                                      <Component id="resetTableButton" alignment="3" max="32767" attributes="0"/>
                                   </Group>
-                                  <Group type="102" attributes="0">
-                                      <Component id="resetTableButton" max="32767" attributes="0"/>
-                                      <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" attributes="0">
-                                      <Component id="propertyValueTextField" max="32767" attributes="0"/>
-                                      <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" attributes="0">
-                                      <Component id="propertyComboBox" max="32767" attributes="0"/>
-                                      <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
-                                  </Group>
+                                  <Component id="propertyValueTextField" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="propertyComboBox" alignment="1" max="32767" attributes="0"/>
                               </Group>
+                              <EmptySpace min="45" pref="45" max="-2" attributes="0"/>
                               <Component id="searchCarCatalogScrollPanel" min="-2" pref="383" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="115" max="-2" attributes="0"/>
                           </Group>
@@ -498,7 +480,7 @@
                           </Group>
                       </Group>
                       <Component id="helpTextLabel" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="32767" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -510,7 +492,7 @@
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                 </Property>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Tahoma" size="20" style="0"/>
+                  <Font name="Tahoma" size="14" style="0"/>
                 </Property>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="66" green="66" red="0" type="rgb"/>
@@ -549,7 +531,7 @@
             <Component class="javax.swing.JTextField" name="propertyValueTextField">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Tahoma" size="20" style="0"/>
+                  <Font name="Tahoma" size="14" style="0"/>
                 </Property>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="66" green="66" red="0" type="rgb"/>
@@ -613,15 +595,18 @@
                 <Component class="javax.swing.JTable" name="searchDonationCatalogTable">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Segoe UI" size="19" style="0"/>
+                      <Font name="Tahoma" size="14" style="0"/>
                     </Property>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="66" green="0" red="0" type="rgb"/>
+                      <Color blue="66" green="66" red="0" type="rgb"/>
                     </Property>
                     <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
                       <Connection code="donationHistoryTableModel" type="code"/>
                     </Property>
                     <Property name="rowHeight" type="int" value="40"/>
+                    <Property name="selectionBackground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="66" green="66" red="0" type="rgb"/>
+                    </Property>
                     <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
                       <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
                     </Property>

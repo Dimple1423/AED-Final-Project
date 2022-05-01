@@ -112,18 +112,18 @@ public class WorkAreaManagerJPanel extends javax.swing.JPanel
         lblTitle.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
         lblTitle.setForeground(new java.awt.Color(0, 102, 102));
         lblTitle.setText("Funding Manager");
-        add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 0, 410, -1));
+        add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 30, 410, -1));
 
         lblName.setBackground(new java.awt.Color(255, 255, 255));
         lblName.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         lblName.setForeground(new java.awt.Color(0, 102, 102));
         lblName.setText("Funding Organisation Name");
-        add(lblName, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 77, -1, -1));
+        add(lblName, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 110, -1, -1));
 
         lblValue.setBackground(new java.awt.Color(255, 255, 255));
         lblValue.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         lblValue.setForeground(new java.awt.Color(0, 102, 102));
-        add(lblValue, new org.netbeans.lib.awtextra.AbsoluteConstraints(248, 72, -1, -1));
+        add(lblValue, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 110, 120, 20));
 
         btnViewDonations.setBackground(new java.awt.Color(0, 102, 102));
         btnViewDonations.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
@@ -136,11 +136,11 @@ public class WorkAreaManagerJPanel extends javax.swing.JPanel
                 btnViewDonationsActionPerformed(evt);
             }
         });
-        add(btnViewDonations, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 330, 180, 30));
+        add(btnViewDonations, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 360, 190, 30));
 
         btnPickUp.setBackground(new java.awt.Color(0, 102, 102));
         btnPickUp.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        btnPickUp.setForeground(new java.awt.Color(0, 102, 102));
+        btnPickUp.setForeground(new java.awt.Color(255, 255, 255));
         btnPickUp.setText("Pick New Case");
         btnPickUp.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnPickUp.setBorderPainted(false);
@@ -149,30 +149,31 @@ public class WorkAreaManagerJPanel extends javax.swing.JPanel
                 btnPickUpActionPerformed(evt);
             }
         });
-        add(btnPickUp, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 250, 163, 30));
+        add(btnPickUp, new org.netbeans.lib.awtextra.AbsoluteConstraints(43, 280, 190, 30));
 
         lblFunds.setBackground(new java.awt.Color(255, 255, 255));
         lblFunds.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         lblFunds.setForeground(new java.awt.Color(0, 102, 102));
         lblFunds.setText("Funds Received");
-        add(lblFunds, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 119, -1, -1));
+        add(lblFunds, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 150, -1, -1));
 
         lblFundsValue.setBackground(new java.awt.Color(255, 255, 255));
         lblFundsValue.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         lblFundsValue.setForeground(new java.awt.Color(0, 102, 102));
         lblFundsValue.setText("value");
-        add(lblFundsValue, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 116, 80, 20));
+        add(lblFundsValue, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 150, 80, 20));
 
         jLabel1.setBackground(new java.awt.Color(255, 255, 255));
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 102, 102));
         jLabel1.setText("Funds Used");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 161, -1, -1));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 190, -1, -1));
 
         lblFundsUsed.setBackground(new java.awt.Color(255, 255, 255));
         lblFundsUsed.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        lblFundsUsed.setForeground(new java.awt.Color(0, 102, 102));
         lblFundsUsed.setText("0");
-        add(lblFundsUsed, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 160, 20, -1));
+        add(lblFundsUsed, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 190, 40, -1));
 
         btnRefresh.setBackground(new java.awt.Color(0, 102, 102));
         btnRefresh.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
