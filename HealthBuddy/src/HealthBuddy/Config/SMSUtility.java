@@ -1,4 +1,4 @@
-package HealthBuddy.Util;
+package HealthBuddy.Config;
 
 import com.twilio.type.PhoneNumber;
 import com.twilio.Twilio;
@@ -14,9 +14,9 @@ public class SMSUtility {
 
     public static void sendSMS(String receiverPhoneNumber, String messageBody) {
         try {
-            Twilio.init(Utilities.ACCOUNT_SID, Utilities.AUTH_TOKEN);
+            Twilio.init(Config.accountSID, Config.authenticationToken);
             Message message = Message.creator(new PhoneNumber(receiverPhoneNumber),
-                    new PhoneNumber(Utilities.mediStopPhoneNumber),
+                    new PhoneNumber(Config.healthBuddyPhoneNumber),
                     messageBody).create();
             System.out.println(message.getBody());
 

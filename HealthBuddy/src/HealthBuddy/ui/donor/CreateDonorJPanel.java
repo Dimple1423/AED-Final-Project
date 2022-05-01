@@ -12,10 +12,10 @@ import javax.swing.filechooser.FileSystemView;
 
 import HealthBuddy.models.UserData.DonorData;
 import HealthBuddy.models.UserData.DonorCatalog;
-import HealthBuddy.Util.OTPUtility;
-import HealthBuddy.Util.SMSUtility;
-import HealthBuddy.Util.SendEmailUtility;
-import HealthBuddy.Util.Utilities;
+import HealthBuddy.Config.OTPUtility;
+import HealthBuddy.Config.SMSUtility;
+import HealthBuddy.Config.SendEmailUtility;
+import HealthBuddy.Config.Config;
 
 import HealthBuddy.models.EcoSystem;
 
@@ -400,15 +400,15 @@ public class CreateDonorJPanel extends javax.swing.JPanel {
         // TODO add your handling code here:
 
         try {
-            String date = Utilities.getTrimmedText(dobTF);
-            String name = Utilities.getTrimmedText(donorNameTF);
+            String date = Config.getClippedText(dobTF);
+            String name = Config.getClippedText(donorNameTF);
             String gender = getGenderValuesFromGivenRadioButtons();
-            String phone = Utilities.getTrimmedText(phoneTF);
-            String city = Utilities.getTrimmedText(cityTF);
+            String phone = Config.getClippedText(phoneTF);
+            String city = Config.getClippedText(cityTF);
             String state = stateCombobox.getSelectedItem().toString();
-            String address = Utilities.getTrimmedText(addTF);
-            int zipCode = Integer.parseInt(Utilities.getTrimmedText(zipCodeTF));
-            String email = Utilities.getTrimmedText(emailTF);
+            String address = Config.getClippedText(addTF);
+            int zipCode = Integer.parseInt(Config.getClippedText(zipCodeTF));
+            String email = Config.getClippedText(emailTF);
             String profilePath = profilePicPathLabel.getText();
 
             if (phone.isEmpty()) {

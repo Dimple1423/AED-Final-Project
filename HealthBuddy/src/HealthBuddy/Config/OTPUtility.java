@@ -1,4 +1,4 @@
-package HealthBuddy.Util;
+package HealthBuddy.Config;
 
 /**
  *

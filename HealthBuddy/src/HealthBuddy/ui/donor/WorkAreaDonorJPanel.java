@@ -15,9 +15,9 @@ import HealthBuddy.models.Enterprise.Enterprise;
 import HealthBuddy.models.Trust.Donation.TrustDetails;
 import HealthBuddy.models.Network.Network;
 import HealthBuddy.models.UserData.DonorData;
-import HealthBuddy.Util.SMSUtility;
-import HealthBuddy.Util.SendEmailUtility;
-import HealthBuddy.Util.Utilities;
+import HealthBuddy.Config.SMSUtility;
+import HealthBuddy.Config.SendEmailUtility;
+import HealthBuddy.Config.Config;
 import javax.swing.ImageIcon;
 import java.awt.Image;
 
@@ -623,13 +623,13 @@ public class WorkAreaDonorJPanel extends javax.swing.JPanel {
                     fundInfo.seTrustCause(Objects.isNull(charityDirTable.getValueAt(selectedRow, 2)) ? " " : charityDirTable.getValueAt(selectedRow, 2).toString());
                    
 
-                    String body = "Hi " + fundInfo.getDonor().getDonorName() +",\n $  " + amountTF.getText() + "was donated to organization " + fundInfo.geTrustOrgName()+ "\n You have made a meaningful contribution. \n  " + " \n Frequency of donor:  " + fundInfo.getFrequencyType() + "\n Donation Cause  : " + fundInfo.geTrustCause()+ "\n\n\n Thanks, \n Team MediStop";
+                    String body = "Hey " + fundInfo.getDonor().getDonorName() +",\n Contribution of $" + amountTF.getText() + "was made towards " + fundInfo.geTrustOrgName()+ "\n We appreciate your donation! Your contribution will help us change lives – literally!\n  " + " \n Donation frequency:  " + fundInfo.getFrequencyType() + "\n Donation Cause  : " + fundInfo.geTrustCause()+ "\n\n\n Thank you and best regards, \n HealthBuddy Team";
                     JOptionPane.showMessageDialog(null, body, "Success", JOptionPane.INFORMATION_MESSAGE);
 
                     String subject = " Receipt of your donation! ";
 
                     try {
-                        SendEmailUtility.sendEmail(subject, Utilities.email, Utilities.password, body, new String[]{fundInfo.getDonor().getEmail()});
+                        SendEmailUtility.sendEmail(subject, Config.emailId, Config.password, body, new String[]{fundInfo.getDonor().getEmail()});
                     } catch (Exception e) {
 
                         e.printStackTrace();

@@ -14,7 +14,7 @@ import HealthBuddy.models.User.User;
 import HealthBuddy.models.WorkQueue.BloodControllerAttendantWQ;
 import HealthBuddy.models.WorkQueue.DoctorAttendantWQ;
 import HealthBuddy.models.WorkQueue.WorkRequest;
-import HealthBuddy.Util.Utilities;
+import HealthBuddy.Config.Config;
 import javax.swing.ImageIcon;
 import java.awt.Image;
 
@@ -327,7 +327,7 @@ public class WorkAreaAttendantJPanel extends javax.swing.JPanel {
                 DoctorAttendantWQ docAttendantWorkQueue = (DoctorAttendantWQ)tblAttendant.getValueAt(selectedRow, 0);
                 BloodControllerAttendantWQ bloodAttendantWorkQueue= new BloodControllerAttendantWQ();   
                 bloodAttendantWorkQueue.setSender(ua);
-                bloodAttendantWorkQueue.setUnitsOfBlood(Integer.parseInt(Utilities.getTrimmedText(txtBloodQuant)));
+                bloodAttendantWorkQueue.setUnitsOfBlood(Integer.parseInt(Config.getClippedText(txtBloodQuant)));
                 bloodAttendantWorkQueue.setNameOfPatient(docAttendantWorkQueue.getAppointmentInformation().getPatient().getPatientName());
                 bloodAttendantWorkQueue.setTypeOfBlood(docAttendantWorkQueue.getAppointmentInformation().getPatient().getBloodGroup());
                 bloodAttendantWorkQueue.setMessage("InQueue");

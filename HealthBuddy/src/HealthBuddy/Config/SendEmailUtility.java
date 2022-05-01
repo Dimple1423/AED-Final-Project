@@ -1,4 +1,4 @@
-package HealthBuddy.Util;
+package HealthBuddy.Config;
 
 import javax.mail.Message;
 import java.util.Properties;
