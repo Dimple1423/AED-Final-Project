@@ -78,7 +78,6 @@ public class WorkAreaAdminPanel extends javax.swing.JPanel {
         menuItemName14 = new javax.swing.JLabel();
         empNameTF = new javax.swing.JTextField();
         btnAddEmployee = new javax.swing.JButton();
-        jLabel3 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         manageUserPanel = new javax.swing.JPanel();
         deliveryDirLabel7 = new javax.swing.JLabel();
@@ -100,6 +99,9 @@ public class WorkAreaAdminPanel extends javax.swing.JPanel {
         userJTable = new javax.swing.JTable();
         deliveryDirLabel4 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
+
+        setBackground(new java.awt.Color(255, 255, 255));
+        setForeground(new java.awt.Color(0, 102, 102));
 
         jPanel1.setBackground(new java.awt.Color(0, 102, 102));
         jPanel1.setForeground(new java.awt.Color(0, 102, 102));
@@ -255,10 +257,9 @@ public class WorkAreaAdminPanel extends javax.swing.JPanel {
 
         helpTextLabel1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         helpTextLabel1.setForeground(new java.awt.Color(0, 0, 102));
-        helpTextLabel1.setText(" ");
 
         deliveryDirLabel8.setBackground(new java.awt.Color(255, 255, 255));
-        deliveryDirLabel8.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        deliveryDirLabel8.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
         deliveryDirLabel8.setForeground(new java.awt.Color(0, 102, 102));
         deliveryDirLabel8.setText("Admin Work Area");
 
@@ -427,8 +428,7 @@ public class WorkAreaAdminPanel extends javax.swing.JPanel {
                 .addGroup(manageUserPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addGroup(manageUserPanel1Layout.createSequentialGroup()
                         .addGap(93, 93, 93)
-                        .addComponent(helpTextLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 798, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(50, 50, 50))
+                        .addComponent(helpTextLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 798, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, manageUserPanel1Layout.createSequentialGroup()
                         .addGap(42, 42, 42)
                         .addGroup(manageUserPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -438,10 +438,8 @@ public class WorkAreaAdminPanel extends javax.swing.JPanel {
                                     .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                                 .addGap(57, 57, 57)
-                                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 719, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(554, 554, 554)
-                                .addComponent(jLabel3)))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 719, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                .addContainerGap(87, Short.MAX_VALUE))
         );
         manageUserPanel1Layout.setVerticalGroup(
             manageUserPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -456,9 +454,7 @@ public class WorkAreaAdminPanel extends javax.swing.JPanel {
                         .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(manageUserPanel1Layout.createSequentialGroup()
                         .addGap(43, 43, 43)
-                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 610, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(24, 24, 24)
-                        .addComponent(jLabel3)))
+                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 610, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(334, 334, 334)
                 .addComponent(helpTextLabel1)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -471,7 +467,7 @@ public class WorkAreaAdminPanel extends javax.swing.JPanel {
         deliveryDirLabel7.setBackground(new java.awt.Color(255, 255, 255));
         deliveryDirLabel7.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
         deliveryDirLabel7.setForeground(new java.awt.Color(0, 102, 102));
-        deliveryDirLabel7.setText("ADMIN WORK AREA");
+        deliveryDirLabel7.setText("Admin Work Area");
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
         jPanel2.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.darkGray, java.awt.Color.white));
@@ -695,16 +691,16 @@ public class WorkAreaAdminPanel extends javax.swing.JPanel {
                         .addGap(105, 105, 105)
                         .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 771, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(manageUserPanelLayout.createSequentialGroup()
-                        .addGap(523, 523, 523)
+                        .addGap(40, 40, 40)
                         .addComponent(deliveryDirLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 651, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         manageUserPanelLayout.setVerticalGroup(
             manageUserPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(manageUserPanelLayout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(10, 10, 10)
                 .addComponent(deliveryDirLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(16, 16, 16)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(manageUserPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(manageUserPanelLayout.createSequentialGroup()
                         .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -887,7 +883,6 @@ public class WorkAreaAdminPanel extends javax.swing.JPanel {
     private javax.swing.JLabel helpTextLabel1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;

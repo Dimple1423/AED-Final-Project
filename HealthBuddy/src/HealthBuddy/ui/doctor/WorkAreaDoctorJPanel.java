@@ -12,6 +12,8 @@ import HealthBuddy.models.User.User;
 import HealthBuddy.models.Organisation.Organisation;
 import HealthBuddy.models.WorkQueue.DoctorAttendantWQ;
 import HealthBuddy.models.WorkQueue.DoctorAssistantAccountWQ;
+import javax.swing.ImageIcon;
+import java.awt.Image;
 
 /**
  *
@@ -43,6 +45,7 @@ public class WorkAreaDoctorJPanel extends javax.swing.JPanel {
         this.docOrganisation = docOrganisation;
         this.enterprise = enterprise;
         this.ecosystem = ecosystem;
+        setSize(1540,800);
         
         populateForm();
     }
@@ -77,19 +80,24 @@ public class WorkAreaDoctorJPanel extends javax.swing.JPanel {
         lblPatientsWaiting = new javax.swing.JLabel();
         RadioFundsYes = new javax.swing.JRadioButton();
         RadioFundsNo = new javax.swing.JRadioButton();
+        jLabel1 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(102, 153, 255));
+        setBackground(new java.awt.Color(255, 255, 255));
+        setForeground(new java.awt.Color(0, 102, 102));
 
-        lblPatientName.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        lblPatientName.setForeground(new java.awt.Color(0, 0, 102));
+        lblPatientName.setBackground(new java.awt.Color(255, 255, 255));
+        lblPatientName.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        lblPatientName.setForeground(new java.awt.Color(0, 102, 102));
         lblPatientName.setText("Patient Name:");
 
         txtPatientName.setEditable(false);
-        txtPatientName.setForeground(new java.awt.Color(0, 0, 102));
+        txtPatientName.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        txtPatientName.setForeground(new java.awt.Color(0, 102, 102));
         txtPatientName.setText(" ");
 
         txtDOB.setEditable(false);
-        txtDOB.setForeground(new java.awt.Color(0, 0, 102));
+        txtDOB.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        txtDOB.setForeground(new java.awt.Color(0, 102, 102));
         txtDOB.setText(" ");
         txtDOB.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -97,22 +105,27 @@ public class WorkAreaDoctorJPanel extends javax.swing.JPanel {
             }
         });
 
-        lblDOB.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        lblDOB.setForeground(new java.awt.Color(0, 0, 102));
+        lblDOB.setBackground(new java.awt.Color(255, 255, 255));
+        lblDOB.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        lblDOB.setForeground(new java.awt.Color(0, 102, 102));
         lblDOB.setText("Date of Birth:");
 
-        lblBloodGroup.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        lblBloodGroup.setForeground(new java.awt.Color(0, 0, 102));
+        lblBloodGroup.setBackground(new java.awt.Color(255, 255, 255));
+        lblBloodGroup.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        lblBloodGroup.setForeground(new java.awt.Color(0, 102, 102));
         lblBloodGroup.setText("Blood Group:");
 
-        txtBloodGroup.setForeground(new java.awt.Color(0, 0, 102));
+        txtBloodGroup.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        txtBloodGroup.setForeground(new java.awt.Color(0, 102, 102));
         txtBloodGroup.setText(" ");
 
-        lblDisease.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        lblDisease.setForeground(new java.awt.Color(0, 0, 102));
+        lblDisease.setBackground(new java.awt.Color(255, 255, 255));
+        lblDisease.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        lblDisease.setForeground(new java.awt.Color(0, 102, 102));
         lblDisease.setText("Disease:");
 
-        txtDisease.setForeground(new java.awt.Color(0, 0, 102));
+        txtDisease.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        txtDisease.setForeground(new java.awt.Color(0, 102, 102));
         txtDisease.setText(" ");
         txtDisease.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -120,21 +133,28 @@ public class WorkAreaDoctorJPanel extends javax.swing.JPanel {
             }
         });
 
-        lblPrescription.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        lblPrescription.setForeground(new java.awt.Color(0, 0, 102));
+        lblPrescription.setBackground(new java.awt.Color(255, 255, 255));
+        lblPrescription.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        lblPrescription.setForeground(new java.awt.Color(0, 102, 102));
         lblPrescription.setText("Prescription:");
 
-        txtPrescription.setForeground(new java.awt.Color(0, 0, 102));
+        txtPrescription.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        txtPrescription.setForeground(new java.awt.Color(0, 102, 102));
         txtPrescription.setText(" ");
 
-        menuItemName5.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        menuItemName5.setForeground(new java.awt.Color(0, 0, 102));
+        menuItemName5.setBackground(new java.awt.Color(255, 255, 255));
+        menuItemName5.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        menuItemName5.setForeground(new java.awt.Color(0, 102, 102));
         menuItemName5.setText("Blood Required:");
 
-        menuItemName6.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        menuItemName6.setForeground(new java.awt.Color(0, 0, 102));
+        menuItemName6.setBackground(new java.awt.Color(255, 255, 255));
+        menuItemName6.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        menuItemName6.setForeground(new java.awt.Color(0, 102, 102));
         menuItemName6.setText("Funds Required:");
 
+        RadioBloodYes.setBackground(new java.awt.Color(255, 255, 255));
+        RadioBloodYes.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        RadioBloodYes.setForeground(new java.awt.Color(0, 102, 102));
         RadioBloodYes.setText("Yes");
         RadioBloodYes.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -142,6 +162,9 @@ public class WorkAreaDoctorJPanel extends javax.swing.JPanel {
             }
         });
 
+        RadioBloodNo.setBackground(new java.awt.Color(255, 255, 255));
+        RadioBloodNo.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        RadioBloodNo.setForeground(new java.awt.Color(0, 102, 102));
         RadioBloodNo.setText("No");
         RadioBloodNo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -149,35 +172,52 @@ public class WorkAreaDoctorJPanel extends javax.swing.JPanel {
             }
         });
 
-        lblWelcome.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        lblWelcome.setForeground(new java.awt.Color(0, 0, 102));
+        lblWelcome.setBackground(new java.awt.Color(255, 255, 255));
+        lblWelcome.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        lblWelcome.setForeground(new java.awt.Color(0, 102, 102));
         lblWelcome.setText("Welcome ");
 
-        valuePatientName.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        valuePatientName.setBackground(new java.awt.Color(255, 255, 255));
+        valuePatientName.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        valuePatientName.setForeground(new java.awt.Color(0, 102, 102));
         valuePatientName.setText("value");
 
-        btnAddPrescription.setFont(new java.awt.Font("Segoe UI", 1, 19)); // NOI18N
-        btnAddPrescription.setForeground(new java.awt.Color(0, 0, 102));
+        btnAddPrescription.setBackground(new java.awt.Color(0, 102, 102));
+        btnAddPrescription.setFont(new java.awt.Font("Tahoma", 1, 19)); // NOI18N
+        btnAddPrescription.setForeground(new java.awt.Color(255, 255, 255));
         btnAddPrescription.setText("Add Prescription");
+        btnAddPrescription.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnAddPrescription.setBorderPainted(false);
         btnAddPrescription.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAddPrescriptionActionPerformed(evt);
             }
         });
 
-        btnRefresh.setFont(new java.awt.Font("Segoe UI", 1, 19)); // NOI18N
-        btnRefresh.setForeground(new java.awt.Color(0, 0, 102));
+        btnRefresh.setBackground(new java.awt.Color(0, 102, 102));
+        btnRefresh.setFont(new java.awt.Font("Tahoma", 1, 19)); // NOI18N
+        btnRefresh.setForeground(new java.awt.Color(255, 255, 255));
         btnRefresh.setText("Refresh");
+        btnRefresh.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnRefresh.setBorderPainted(false);
         btnRefresh.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnRefreshActionPerformed(evt);
             }
         });
 
-        lblPatientName1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        lblPatientName1.setForeground(new java.awt.Color(0, 0, 102));
+        lblPatientName1.setBackground(new java.awt.Color(255, 255, 255));
+        lblPatientName1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        lblPatientName1.setForeground(new java.awt.Color(0, 102, 102));
         lblPatientName1.setText("Patients Waiting:");
 
+        lblPatientsWaiting.setBackground(new java.awt.Color(255, 255, 255));
+        lblPatientsWaiting.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        lblPatientsWaiting.setForeground(new java.awt.Color(0, 102, 102));
+
+        RadioFundsYes.setBackground(new java.awt.Color(255, 255, 255));
+        RadioFundsYes.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        RadioFundsYes.setForeground(new java.awt.Color(0, 102, 102));
         RadioFundsYes.setText("Yes");
         RadioFundsYes.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -185,12 +225,19 @@ public class WorkAreaDoctorJPanel extends javax.swing.JPanel {
             }
         });
 
+        RadioFundsNo.setBackground(new java.awt.Color(255, 255, 255));
+        RadioFundsNo.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        RadioFundsNo.setForeground(new java.awt.Color(0, 102, 102));
         RadioFundsNo.setText("No");
         RadioFundsNo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 RadioFundsNoActionPerformed(evt);
             }
         });
+
+        ImageIcon imageIcon = new ImageIcon(new ImageIcon(getClass().getResource("/HealthBuddy/ui/images/hipertensao.gif")).getImage().getScaledInstance(650, 550, Image.SCALE_DEFAULT));
+
+        jLabel1.setIcon(imageIcon);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -201,61 +248,57 @@ public class WorkAreaDoctorJPanel extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(menuItemName5, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(lblPrescription, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(64, 64, 64)
-                                .addComponent(txtPrescription, javax.swing.GroupLayout.PREFERRED_SIZE, 398, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(lblDisease, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(64, 64, 64)
-                                .addComponent(txtDisease, javax.swing.GroupLayout.PREFERRED_SIZE, 398, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(lblBloodGroup, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(64, 64, 64)
-                                .addComponent(txtBloodGroup, javax.swing.GroupLayout.PREFERRED_SIZE, 398, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(lblDOB, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(64, 64, 64)
-                                .addComponent(txtDOB, javax.swing.GroupLayout.PREFERRED_SIZE, 398, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(lblPatientName, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(64, 64, 64)
-                                .addComponent(txtPatientName, javax.swing.GroupLayout.PREFERRED_SIZE, 398, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(menuItemName6, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(64, 64, 64)
-                                    .addComponent(RadioFundsYes)
-                                    .addGap(43, 43, 43)
-                                    .addComponent(RadioFundsNo))
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(RadioBloodYes)
-                                    .addGap(43, 43, 43)
-                                    .addComponent(RadioBloodNo)))
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(menuItemName5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(menuItemName6, javax.swing.GroupLayout.DEFAULT_SIZE, 168, Short.MAX_VALUE))
+                                .addGap(91, 91, 91)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                        .addComponent(RadioFundsYes)
+                                        .addGap(43, 43, 43)
+                                        .addComponent(RadioFundsNo))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                        .addComponent(RadioBloodYes)
+                                        .addGap(43, 43, 43)
+                                        .addComponent(RadioBloodNo))))
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(259, 259, 259)
-                                .addComponent(btnAddPrescription, javax.swing.GroupLayout.PREFERRED_SIZE, 199, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(298, 930, Short.MAX_VALUE))
+                                .addComponent(btnAddPrescription, javax.swing.GroupLayout.PREFERRED_SIZE, 199, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                    .addComponent(lblPrescription, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(lblDisease, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(lblBloodGroup, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(lblDOB, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(lblPatientName, javax.swing.GroupLayout.DEFAULT_SIZE, 168, Short.MAX_VALUE))
+                                .addGap(18, 18, 18)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(txtDisease, javax.swing.GroupLayout.DEFAULT_SIZE, 250, Short.MAX_VALUE)
+                                    .addComponent(txtBloodGroup)
+                                    .addComponent(txtDOB)
+                                    .addComponent(txtPatientName)
+                                    .addComponent(txtPrescription))))
+                        .addGap(930, 1026, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(lblPatientName1, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(lblPatientsWaiting, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                 .addComponent(lblWelcome)
-                                .addGap(89, 89, 89)
-                                .addComponent(valuePatientName, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btnRefresh, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addGap(89, 89, 89))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(lblPatientName1, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(39, 39, 39)))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(valuePatientName, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 915, Short.MAX_VALUE)
+                                .addComponent(btnRefresh, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(lblPatientsWaiting, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(216, 216, 216)
+                                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 843, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(0, 0, Short.MAX_VALUE))))))
         );
-
-        layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {lblPatientsWaiting, valuePatientName});
-
-        layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {lblPatientName1, lblWelcome});
-
-        layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {lblBloodGroup, lblDOB, lblDisease, lblPatientName, lblPrescription, menuItemName5, menuItemName6});
 
         layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {RadioBloodNo, RadioBloodYes, RadioFundsNo, RadioFundsYes});
 
@@ -270,44 +313,49 @@ public class WorkAreaDoctorJPanel extends javax.swing.JPanel {
                             .addComponent(valuePatientName))
                         .addGap(59, 59, 59)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lblPatientsWaiting, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(lblPatientName1))
-                        .addGap(55, 55, 55)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(lblPatientName)
-                            .addComponent(txtPatientName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(26, 26, 26)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(lblDOB)
-                            .addComponent(txtDOB, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(29, 29, 29)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(lblBloodGroup)
-                            .addComponent(txtBloodGroup, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(27, 27, 27)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(lblDisease)
-                            .addComponent(txtDisease, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(27, 27, 27)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(lblPrescription)
-                            .addComponent(txtPrescription, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(35, 35, 35)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(RadioBloodYes)
-                                .addComponent(RadioBloodNo))
-                            .addComponent(menuItemName5, javax.swing.GroupLayout.Alignment.TRAILING))
-                        .addGap(31, 31, 31)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(menuItemName6)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(RadioFundsYes)
-                                .addComponent(RadioFundsNo)))
-                        .addGap(67, 67, 67)
-                        .addComponent(btnAddPrescription))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(lblPatientsWaiting, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(lblPatientName1))
+                                .addGap(56, 56, 56)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(lblPatientName)
+                                        .addGap(31, 31, 31)
+                                        .addComponent(lblDOB)
+                                        .addGap(34, 34, 34)
+                                        .addComponent(lblBloodGroup)
+                                        .addGap(32, 32, 32)
+                                        .addComponent(lblDisease)
+                                        .addGap(32, 32, 32)
+                                        .addComponent(lblPrescription))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(txtPatientName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(26, 26, 26)
+                                        .addComponent(txtDOB, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(29, 29, 29)
+                                        .addComponent(txtBloodGroup, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(27, 27, 27)
+                                        .addComponent(txtDisease, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(27, 27, 27)
+                                        .addComponent(txtPrescription, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addGap(34, 34, 34)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(RadioBloodYes)
+                                        .addComponent(RadioBloodNo))
+                                    .addComponent(menuItemName5, javax.swing.GroupLayout.Alignment.TRAILING))
+                                .addGap(31, 31, 31)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(menuItemName6)
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(RadioFundsYes)
+                                        .addComponent(RadioFundsNo)))
+                                .addGap(67, 67, 67)
+                                .addComponent(btnAddPrescription))
+                            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 593, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addComponent(btnRefresh))
-                .addContainerGap(278, Short.MAX_VALUE))
+                .addContainerGap(109, Short.MAX_VALUE))
         );
 
         layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {lblPatientsWaiting, valuePatientName});
@@ -406,6 +454,7 @@ public class WorkAreaDoctorJPanel extends javax.swing.JPanel {
     private javax.swing.JRadioButton RadioFundsYes;
     private javax.swing.JButton btnAddPrescription;
     private javax.swing.JButton btnRefresh;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel lblBloodGroup;
     private javax.swing.JLabel lblDOB;
     private javax.swing.JLabel lblDisease;
