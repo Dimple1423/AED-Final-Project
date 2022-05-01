@@ -18,6 +18,8 @@ import HealthBuddy.models.UserData.DonorData;
 import HealthBuddy.Util.SMSUtility;
 import HealthBuddy.Util.SendEmailUtility;
 import HealthBuddy.Util.Utilities;
+import javax.swing.ImageIcon;
+import java.awt.Image;
 
 /**
  *
@@ -197,6 +199,7 @@ public class WorkAreaDonorJPanel extends javax.swing.JPanel {
         frequencyCombobox = new javax.swing.JComboBox<>();
         menuItemName6 = new javax.swing.JLabel();
         createDonationBtn = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
         manageOrdersTab = new javax.swing.JPanel();
         propertyComboBox = new javax.swing.JComboBox<>();
         searchHeaderLabel = new javax.swing.JLabel();
@@ -208,65 +211,86 @@ public class WorkAreaDonorJPanel extends javax.swing.JPanel {
         userAccLabel = new javax.swing.JLabel();
         helpTextLabel = new javax.swing.JLabel();
         deliveryDirLabel5 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
-        donationTabbedPane.setForeground(new java.awt.Color(0, 0, 102));
-        donationTabbedPane.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        setBackground(new java.awt.Color(255, 255, 255));
 
-        deliveryDirLabel.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        deliveryDirLabel.setForeground(new java.awt.Color(0, 0, 102));
+        donationTabbedPane.setBackground(new java.awt.Color(0, 102, 102));
+        donationTabbedPane.setForeground(new java.awt.Color(255, 255, 255));
+        donationTabbedPane.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+
+        menuPanel.setBackground(new java.awt.Color(255, 255, 255));
+
+        deliveryDirLabel.setBackground(new java.awt.Color(255, 255, 255));
+        deliveryDirLabel.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        deliveryDirLabel.setForeground(new java.awt.Color(0, 102, 102));
         deliveryDirLabel.setText("100% of your donation will help a patient in need ...");
 
-        charityDirTable.setFont(new java.awt.Font("Segoe UI", 0, 19)); // NOI18N
-        charityDirTable.setForeground(new java.awt.Color(0, 0, 102));
+        charityDirTable.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        charityDirTable.setForeground(new java.awt.Color(0, 102, 102));
         charityDirTable.setModel(charityDirectoryTableModel);
         charityDirTable.setRowHeight(40);
         delDirectoryScollPanel.setViewportView(charityDirTable);
 
-        menuItemName1.setFont(new java.awt.Font("Segoe UI", 1, 19)); // NOI18N
-        menuItemName1.setForeground(new java.awt.Color(0, 0, 102));
+        menuItemName1.setBackground(new java.awt.Color(255, 255, 255));
+        menuItemName1.setFont(new java.awt.Font("Tahoma", 1, 19)); // NOI18N
+        menuItemName1.setForeground(new java.awt.Color(0, 102, 102));
         menuItemName1.setText("Donation Amount");
 
-        deliveryDirLabel2.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        deliveryDirLabel2.setForeground(new java.awt.Color(0, 0, 102));
+        deliveryDirLabel2.setBackground(new java.awt.Color(255, 255, 255));
+        deliveryDirLabel2.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        deliveryDirLabel2.setForeground(new java.awt.Color(0, 102, 102));
         deliveryDirLabel2.setText("Charity Directory");
 
-        deliveryDirLabel3.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        deliveryDirLabel3.setForeground(new java.awt.Color(0, 0, 102));
+        deliveryDirLabel3.setBackground(new java.awt.Color(255, 255, 255));
+        deliveryDirLabel3.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        deliveryDirLabel3.setForeground(new java.awt.Color(0, 102, 102));
         deliveryDirLabel3.setText("DONATE, Save Lives!");
 
-        twoHundBtn.setBackground(new java.awt.Color(0, 51, 102));
-        twoHundBtn.setFont(new java.awt.Font("Segoe UI", 0, 19)); // NOI18N
-        twoHundBtn.setForeground(new java.awt.Color(204, 204, 204));
+        twoHundBtn.setBackground(new java.awt.Color(0, 102, 102));
+        twoHundBtn.setFont(new java.awt.Font("Tahoma", 0, 19)); // NOI18N
+        twoHundBtn.setForeground(new java.awt.Color(255, 255, 255));
         twoHundBtn.setText("$ 200");
+        twoHundBtn.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        twoHundBtn.setBorderPainted(false);
         twoHundBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 twoHundBtnActionPerformed(evt);
             }
         });
 
-        hundBtn.setBackground(new java.awt.Color(0, 51, 102));
-        hundBtn.setFont(new java.awt.Font("Segoe UI", 0, 19)); // NOI18N
-        hundBtn.setForeground(new java.awt.Color(204, 204, 204));
+        hundBtn.setBackground(new java.awt.Color(0, 102, 102));
+        hundBtn.setFont(new java.awt.Font("Tahoma", 0, 19)); // NOI18N
+        hundBtn.setForeground(new java.awt.Color(255, 255, 255));
         hundBtn.setText("$ 100");
+        hundBtn.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        hundBtn.setBorderPainted(false);
         hundBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 hundBtnActionPerformed(evt);
             }
         });
 
-        onefiftyBtn.setBackground(new java.awt.Color(0, 51, 102));
-        onefiftyBtn.setFont(new java.awt.Font("Segoe UI", 0, 19)); // NOI18N
-        onefiftyBtn.setForeground(new java.awt.Color(204, 204, 204));
+        onefiftyBtn.setBackground(new java.awt.Color(0, 102, 102));
+        onefiftyBtn.setFont(new java.awt.Font("Tahoma", 0, 19)); // NOI18N
+        onefiftyBtn.setForeground(new java.awt.Color(255, 255, 255));
         onefiftyBtn.setText("$ 150");
+        onefiftyBtn.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        onefiftyBtn.setBorderPainted(false);
         onefiftyBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 onefiftyBtnActionPerformed(evt);
             }
         });
 
+        amountTF.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        amountTF.setForeground(new java.awt.Color(0, 102, 102));
         amountTF.setText(" ");
 
-        frequencyCombobox.setForeground(new java.awt.Color(0, 0, 102));
+        frequencyCombobox.setBackground(new java.awt.Color(255, 255, 255));
+        frequencyCombobox.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        frequencyCombobox.setForeground(new java.awt.Color(0, 102, 102));
+        frequencyCombobox.setMaximumRowCount(10);
         frequencyCombobox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "-", "Bi Weekly", "Monthly", "Quarterly", "Yearly", "One Time" }));
         frequencyCombobox.setActionCommand("");
         frequencyCombobox.addActionListener(new java.awt.event.ActionListener() {
@@ -275,18 +299,26 @@ public class WorkAreaDonorJPanel extends javax.swing.JPanel {
             }
         });
 
-        menuItemName6.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        menuItemName6.setForeground(new java.awt.Color(0, 0, 102));
+        menuItemName6.setBackground(new java.awt.Color(255, 255, 255));
+        menuItemName6.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        menuItemName6.setForeground(new java.awt.Color(0, 102, 102));
         menuItemName6.setText("Frequency");
 
-        createDonationBtn.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
-        createDonationBtn.setForeground(new java.awt.Color(0, 0, 102));
+        createDonationBtn.setBackground(new java.awt.Color(0, 102, 102));
+        createDonationBtn.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
+        createDonationBtn.setForeground(new java.awt.Color(255, 255, 255));
         createDonationBtn.setText("Make Donation");
+        createDonationBtn.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        createDonationBtn.setBorderPainted(false);
         createDonationBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 createDonationBtnActionPerformed(evt);
             }
         });
+
+        ImageIcon imageIcon = new ImageIcon(new ImageIcon(getClass().getResource("/HealthBuddy/ui/images/newdonation.gif")).getImage().getScaledInstance(500, 500, Image.SCALE_DEFAULT));
+
+        jLabel2.setIcon(imageIcon);
 
         javax.swing.GroupLayout menuPanelLayout = new javax.swing.GroupLayout(menuPanel);
         menuPanel.setLayout(menuPanelLayout);
@@ -295,37 +327,35 @@ public class WorkAreaDonorJPanel extends javax.swing.JPanel {
             .addGroup(menuPanelLayout.createSequentialGroup()
                 .addGroup(menuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(menuPanelLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(deliveryDirLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 651, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(menuPanelLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(deliveryDirLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 651, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(menuPanelLayout.createSequentialGroup()
-                        .addContainerGap()
                         .addGroup(menuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(delDirectoryScollPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 1045, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(deliveryDirLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 294, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(menuPanelLayout.createSequentialGroup()
-                        .addGap(10, 10, 10)
-                        .addGroup(menuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(deliveryDirLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 651, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(deliveryDirLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 294, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(menuPanelLayout.createSequentialGroup()
-                                .addComponent(hundBtn)
-                                .addGap(18, 18, 18)
-                                .addComponent(onefiftyBtn)
-                                .addGap(18, 18, 18)
-                                .addComponent(twoHundBtn)
-                                .addGap(18, 18, 18)
-                                .addComponent(amountTF, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(menuItemName1, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addContainerGap()
+                                .addGroup(menuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(menuItemName1, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(delDirectoryScollPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 754, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(menuPanelLayout.createSequentialGroup()
+                                        .addGroup(menuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addGroup(menuPanelLayout.createSequentialGroup()
+                                                .addComponent(hundBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                                .addComponent(onefiftyBtn)
+                                                .addGap(18, 18, 18)
+                                                .addComponent(twoHundBtn))
+                                            .addComponent(menuItemName6, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGap(18, 18, 18)
+                                        .addGroup(menuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(frequencyCombobox, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(amountTF, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE))))))
+                        .addGap(101, 101, 101)
+                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 579, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(menuPanelLayout.createSequentialGroup()
-                        .addGap(20, 20, 20)
+                        .addContainerGap()
                         .addGroup(menuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(createDonationBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(menuPanelLayout.createSequentialGroup()
-                                .addComponent(menuItemName6, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(50, 50, 50)
-                                .addComponent(frequencyCombobox, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addContainerGap(239, Short.MAX_VALUE))
+                            .addComponent(deliveryDirLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 651, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(createDonationBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(62, Short.MAX_VALUE))
         );
         menuPanelLayout.setVerticalGroup(
             menuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -333,33 +363,41 @@ public class WorkAreaDonorJPanel extends javax.swing.JPanel {
                 .addGap(32, 32, 32)
                 .addComponent(deliveryDirLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(deliveryDirLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(deliveryDirLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(delDirectoryScollPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 269, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(menuItemName1)
-                .addGap(11, 11, 11)
                 .addGroup(menuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(menuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(amountTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(onefiftyBtn)
-                        .addComponent(twoHundBtn))
-                    .addComponent(hundBtn))
-                .addGap(18, 18, 18)
-                .addGroup(menuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(frequencyCombobox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(menuItemName6))
-                .addGap(35, 35, 35)
+                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 544, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(menuPanelLayout.createSequentialGroup()
+                        .addComponent(deliveryDirLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(26, 26, 26)
+                        .addComponent(deliveryDirLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(delDirectoryScollPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 269, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(31, 31, 31)
+                        .addComponent(menuItemName1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(menuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(menuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(amountTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(onefiftyBtn)
+                                .addComponent(twoHundBtn))
+                            .addComponent(hundBtn))
+                        .addGap(18, 18, 18)
+                        .addGroup(menuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(frequencyCombobox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(menuItemName6))))
+                .addGap(3, 3, 3)
                 .addComponent(createDonationBtn)
-                .addContainerGap(149, Short.MAX_VALUE))
+                .addContainerGap(88, Short.MAX_VALUE))
         );
 
         donationTabbedPane.addTab("New Donation", menuPanel);
 
-        propertyComboBox.setFont(new java.awt.Font("Segoe UI", 0, 20)); // NOI18N
-        propertyComboBox.setForeground(new java.awt.Color(0, 0, 102));
+        manageOrdersTab.setBackground(new java.awt.Color(255, 255, 255));
+        manageOrdersTab.setForeground(new java.awt.Color(0, 102, 102));
+
+        propertyComboBox.setBackground(new java.awt.Color(255, 255, 255));
+        propertyComboBox.setFont(new java.awt.Font("Tahoma", 0, 20)); // NOI18N
+        propertyComboBox.setForeground(new java.awt.Color(0, 102, 102));
+        propertyComboBox.setMaximumRowCount(12);
         propertyComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "-", "Charity Name", "City", "Charity Cause" }));
         propertyComboBox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -367,25 +405,33 @@ public class WorkAreaDonorJPanel extends javax.swing.JPanel {
             }
         });
 
-        searchHeaderLabel.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        searchHeaderLabel.setBackground(new java.awt.Color(255, 255, 255));
+        searchHeaderLabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        searchHeaderLabel.setForeground(new java.awt.Color(0, 102, 102));
         searchHeaderLabel.setText("Select property to filter out records");
 
-        propertyValueTextField.setFont(new java.awt.Font("Segoe UI", 0, 20)); // NOI18N
-        propertyValueTextField.setForeground(new java.awt.Color(0, 0, 102));
+        propertyValueTextField.setFont(new java.awt.Font("Tahoma", 0, 20)); // NOI18N
+        propertyValueTextField.setForeground(new java.awt.Color(0, 102, 102));
         propertyValueTextField.setText(" ");
 
-        donationListSearchButton.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
-        donationListSearchButton.setForeground(new java.awt.Color(0, 0, 102));
+        donationListSearchButton.setBackground(new java.awt.Color(0, 102, 102));
+        donationListSearchButton.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
+        donationListSearchButton.setForeground(new java.awt.Color(255, 255, 255));
         donationListSearchButton.setText("Search");
+        donationListSearchButton.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        donationListSearchButton.setBorderPainted(false);
         donationListSearchButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 donationListSearchButtonActionPerformed(evt);
             }
         });
 
-        resetTableButton.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
-        resetTableButton.setForeground(new java.awt.Color(0, 0, 102));
+        resetTableButton.setBackground(new java.awt.Color(0, 102, 102));
+        resetTableButton.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
+        resetTableButton.setForeground(new java.awt.Color(255, 255, 255));
         resetTableButton.setText("Reset");
+        resetTableButton.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        resetTableButton.setBorderPainted(false);
         resetTableButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 resetTableButtonActionPerformed(evt);
@@ -398,72 +444,93 @@ public class WorkAreaDonorJPanel extends javax.swing.JPanel {
         searchDonationCatalogTable.setRowHeight(40);
         searchCarCatalogScrollPanel.setViewportView(searchDonationCatalogTable);
 
-        userAccLabel.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        userAccLabel.setForeground(new java.awt.Color(0, 0, 102));
+        userAccLabel.setBackground(new java.awt.Color(255, 255, 255));
+        userAccLabel.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        userAccLabel.setForeground(new java.awt.Color(0, 102, 102));
         userAccLabel.setText(" ");
 
         helpTextLabel.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         helpTextLabel.setForeground(new java.awt.Color(0, 0, 102));
         helpTextLabel.setText(" ");
 
-        deliveryDirLabel5.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        deliveryDirLabel5.setForeground(new java.awt.Color(0, 0, 102));
+        deliveryDirLabel5.setBackground(new java.awt.Color(255, 255, 255));
+        deliveryDirLabel5.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        deliveryDirLabel5.setForeground(new java.awt.Color(0, 102, 102));
         deliveryDirLabel5.setText("Donation History");
+
+        ImageIcon imageIcona = new ImageIcon(new ImageIcon(getClass().getResource("/HealthBuddy/ui/images/search.gif")).getImage().getScaledInstance(650, 550, Image.SCALE_DEFAULT));
+
+        jLabel1.setIcon(imageIcona);
 
         javax.swing.GroupLayout manageOrdersTabLayout = new javax.swing.GroupLayout(manageOrdersTab);
         manageOrdersTab.setLayout(manageOrdersTabLayout);
         manageOrdersTabLayout.setHorizontalGroup(
             manageOrdersTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(manageOrdersTabLayout.createSequentialGroup()
+                .addGap(21, 21, 21)
                 .addGroup(manageOrdersTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(manageOrdersTabLayout.createSequentialGroup()
-                        .addGap(93, 93, 93)
-                        .addComponent(helpTextLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 798, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(manageOrdersTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(userAccLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 246, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(manageOrdersTabLayout.createSequentialGroup()
+                                .addGap(677, 677, 677)
+                                .addComponent(helpTextLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 798, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(manageOrdersTabLayout.createSequentialGroup()
-                        .addGap(21, 21, 21)
                         .addGroup(manageOrdersTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(manageOrdersTabLayout.createSequentialGroup()
-                                .addComponent(propertyComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 338, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(propertyValueTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 318, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(donationListSearchButton)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(resetTableButton))
-                            .addComponent(searchHeaderLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 345, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(searchCarCatalogScrollPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 1097, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(userAccLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 246, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(172, Short.MAX_VALUE))
-            .addGroup(manageOrdersTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(manageOrdersTabLayout.createSequentialGroup()
-                    .addGap(31, 31, 31)
-                    .addComponent(deliveryDirLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 294, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(965, Short.MAX_VALUE)))
+                                .addGap(6, 6, 6)
+                                .addGroup(manageOrdersTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(manageOrdersTabLayout.createSequentialGroup()
+                                        .addComponent(propertyComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 209, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(propertyValueTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(24, 24, 24)
+                                        .addComponent(donationListSearchButton)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(resetTableButton, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(searchCarCatalogScrollPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 647, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(manageOrdersTabLayout.createSequentialGroup()
+                                .addGap(14, 14, 14)
+                                .addGroup(manageOrdersTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(deliveryDirLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 294, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(searchHeaderLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 345, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 718, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(58, 58, 58))))
         );
         manageOrdersTabLayout.setVerticalGroup(
             manageOrdersTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(manageOrdersTabLayout.createSequentialGroup()
                 .addGap(21, 21, 21)
                 .addComponent(userAccLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(50, 50, 50)
-                .addComponent(searchHeaderLabel)
-                .addGap(18, 18, 18)
-                .addGroup(manageOrdersTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(resetTableButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(donationListSearchButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, manageOrdersTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(propertyComboBox)
-                        .addComponent(propertyValueTextField)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(5, 5, 5)
+                .addGroup(manageOrdersTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(manageOrdersTabLayout.createSequentialGroup()
+                        .addComponent(deliveryDirLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(searchHeaderLabel)
+                        .addGap(18, 18, 18)
+                        .addGroup(manageOrdersTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(manageOrdersTabLayout.createSequentialGroup()
+                                .addComponent(donationListSearchButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addGap(45, 45, 45))
+                            .addGroup(manageOrdersTabLayout.createSequentialGroup()
+                                .addComponent(resetTableButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addGap(45, 45, 45))
+                            .addGroup(manageOrdersTabLayout.createSequentialGroup()
+                                .addComponent(propertyValueTextField)
+                                .addGap(42, 42, 42))
+                            .addGroup(manageOrdersTabLayout.createSequentialGroup()
+                                .addComponent(propertyComboBox)
+                                .addGap(45, 45, 45)))
+                        .addComponent(searchCarCatalogScrollPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 383, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(115, 115, 115))
+                    .addGroup(manageOrdersTabLayout.createSequentialGroup()
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 567, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addComponent(helpTextLabel)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(searchCarCatalogScrollPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 474, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(106, Short.MAX_VALUE))
-            .addGroup(manageOrdersTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(manageOrdersTabLayout.createSequentialGroup()
-                    .addGap(69, 69, 69)
-                    .addComponent(deliveryDirLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(699, Short.MAX_VALUE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         donationTabbedPane.addTab("Donation History", manageOrdersTab);
@@ -610,6 +677,8 @@ public class WorkAreaDonorJPanel extends javax.swing.JPanel {
     private javax.swing.JComboBox<String> frequencyCombobox;
     private javax.swing.JLabel helpTextLabel;
     private javax.swing.JButton hundBtn;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel manageOrdersTab;
     private javax.swing.JLabel menuItemName1;
     private javax.swing.JLabel menuItemName6;
