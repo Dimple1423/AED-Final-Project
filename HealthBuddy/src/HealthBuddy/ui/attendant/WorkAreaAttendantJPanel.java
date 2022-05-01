@@ -154,7 +154,7 @@ public class WorkAreaAttendantJPanel extends javax.swing.JPanel {
                 .addComponent(menuItemName1, javax.swing.GroupLayout.PREFERRED_SIZE, 329, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(62, 62, 62)
                 .addComponent(txtBloodQuant, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 361, Short.MAX_VALUE))
+                .addGap(0, 630, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(btnReqBlood)
@@ -184,6 +184,10 @@ public class WorkAreaAttendantJPanel extends javax.swing.JPanel {
                 .addGap(18, 18, 18))
         );
 
+        ImageIcon imageIcon = new ImageIcon(new ImageIcon(getClass().getResource("/HealthBuddy/ui/images/attendant.gif")).getImage().getScaledInstance(500, 500, Image.SCALE_DEFAULT));
+
+        jLabel5.setIcon(imageIcon);
+
         javax.swing.GroupLayout workAreaLayout = new javax.swing.GroupLayout(workArea);
         workArea.setLayout(workAreaLayout);
         workAreaLayout.setHorizontalGroup(
@@ -202,26 +206,24 @@ public class WorkAreaAttendantJPanel extends javax.swing.JPanel {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(lblAttendantName, javax.swing.GroupLayout.PREFERRED_SIZE, 174, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 519, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(583, 583, 583))
+                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 507, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(26, 26, 26))
         );
         workAreaLayout.setVerticalGroup(
             workAreaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(workAreaLayout.createSequentialGroup()
-                .addGroup(workAreaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                .addGap(61, 61, 61)
+                .addGroup(workAreaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 579, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(workAreaLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 592, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(workAreaLayout.createSequentialGroup()
-                        .addGap(61, 61, 61)
                         .addComponent(deliveryDirLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(51, 51, 51)
                         .addGroup(workAreaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(lblWelcome, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(lblAttendantName))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(77, 77, 77)
                         .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(119, Short.MAX_VALUE))
+                .addContainerGap(77, Short.MAX_VALUE))
         );
 
         attendantTabbedPane.addTab("Work Area", workArea);
@@ -269,6 +271,10 @@ public class WorkAreaAttendantJPanel extends javax.swing.JPanel {
                 .addContainerGap(45, Short.MAX_VALUE))
         );
 
+        ImageIcon imageIcona = new ImageIcon(new ImageIcon(getClass().getResource("/HealthBuddy/ui/images/checkstatus.gif")).getImage().getScaledInstance(500, 500, Image.SCALE_DEFAULT));
+
+        jLabel2.setIcon(imageIcona);
+
         javax.swing.GroupLayout checkStatusLayout = new javax.swing.GroupLayout(checkStatus);
         checkStatus.setLayout(checkStatusLayout);
         checkStatusLayout.setHorizontalGroup(
@@ -278,9 +284,9 @@ public class WorkAreaAttendantJPanel extends javax.swing.JPanel {
                 .addGroup(checkStatusLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(deliveryDirLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 683, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(66, 66, 66)
+                .addGap(192, 192, 192)
                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 554, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(59, Short.MAX_VALUE))
+                .addContainerGap(316, Short.MAX_VALUE))
         );
         checkStatusLayout.setVerticalGroup(
             checkStatusLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -292,9 +298,9 @@ public class WorkAreaAttendantJPanel extends javax.swing.JPanel {
                         .addGap(28, 28, 28)
                         .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(checkStatusLayout.createSequentialGroup()
-                        .addGap(44, 44, 44)
-                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 598, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(75, Short.MAX_VALUE))
+                        .addGap(71, 71, 71)
+                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 550, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(96, Short.MAX_VALUE))
         );
 
         attendantTabbedPane.addTab("Check Status", checkStatus);
@@ -303,7 +309,7 @@ public class WorkAreaAttendantJPanel extends javax.swing.JPanel {
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(attendantTabbedPane, javax.swing.GroupLayout.PREFERRED_SIZE, 1536, Short.MAX_VALUE)
+            .addComponent(attendantTabbedPane)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

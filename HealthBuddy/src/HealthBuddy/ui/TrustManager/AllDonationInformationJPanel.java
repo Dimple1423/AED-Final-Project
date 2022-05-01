@@ -86,6 +86,8 @@ public class AllDonationInformationJPanel extends javax.swing.JPanel
 
         jScrollPane1.setForeground(new java.awt.Color(0, 102, 102));
 
+        donationDetailsJTable.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        donationDetailsJTable.setForeground(new java.awt.Color(0, 102, 102));
         donationDetailsJTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null},
@@ -105,6 +107,7 @@ public class AllDonationInformationJPanel extends javax.swing.JPanel
                 return canEdit [columnIndex];
             }
         });
+        donationDetailsJTable.setSelectionBackground(new java.awt.Color(0, 102, 102));
         jScrollPane1.setViewportView(donationDetailsJTable);
         if (donationDetailsJTable.getColumnModel().getColumnCount() > 0) {
             donationDetailsJTable.getColumnModel().getColumn(0).setResizable(false);
@@ -130,14 +133,14 @@ public class AllDonationInformationJPanel extends javax.swing.JPanel
         lblName.setBackground(new java.awt.Color(255, 255, 255));
         lblName.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         lblName.setForeground(new java.awt.Color(0, 102, 102));
-        lblName.setText("Funding Organisation Name");
-        add(lblName, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 110, 260, -1));
+        lblName.setText("Funding Organisation Name :");
+        add(lblName, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 110, 270, -1));
 
         lblValue.setBackground(new java.awt.Color(255, 255, 255));
         lblValue.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         lblValue.setForeground(new java.awt.Color(0, 102, 102));
         lblValue.setText("value");
-        add(lblValue, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 110, 90, 30));
+        add(lblValue, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 110, 90, 20));
 
         jLabel2.setBackground(new java.awt.Color(255, 255, 255));
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N

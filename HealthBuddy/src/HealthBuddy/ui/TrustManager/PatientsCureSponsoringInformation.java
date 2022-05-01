@@ -96,6 +96,8 @@ public class PatientsCureSponsoringInformation extends javax.swing.JPanel
 
         jScrollPane1.setForeground(new java.awt.Color(0, 102, 102));
 
+        patientSponsorshipJTable.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        patientSponsorshipJTable.setForeground(new java.awt.Color(0, 102, 102));
         patientSponsorshipJTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null},
