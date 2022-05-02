@@ -61,6 +61,7 @@ public class SysAdminPerformanceJPanel extends javax.swing.JPanel
         displayPerformanceTable = new javax.swing.JTable();
         btnBack = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
+        graphButton = new javax.swing.JButton();
 
         setBackground(new java.awt.Color(255, 255, 255));
         setBorder(javax.swing.BorderFactory.createTitledBorder("Analytics Information"));
@@ -191,11 +192,24 @@ public class SysAdminPerformanceJPanel extends javax.swing.JPanel
                 btnBackActionPerformed(evt);
             }
         });
-        add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(1240, 20, 110, 40));
+        add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(1230, 40, 110, 40));
 
         ImageIcon imageIcon =  new ImageIcon(new ImageIcon(getClass().getResource("/HealthBuddy/ui/images/performance.gif")).getImage().getScaledInstance(700, 600, Image.SCALE_DEFAULT));
         jLabel1.setIcon(imageIcon);
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 100, 670, 520));
+
+        graphButton.setBackground(new java.awt.Color(0, 102, 102));
+        graphButton.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        graphButton.setForeground(new java.awt.Color(255, 255, 255));
+        graphButton.setText("View System Performance");
+        graphButton.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        graphButton.setBorderPainted(false);
+        graphButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                graphButtonActionPerformed(evt);
+            }
+        });
+        add(graphButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 540, 220, 40));
     }// </editor-fold>//GEN-END:initComponents
 
     private void fundsbuttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fundsbuttonActionPerformed
@@ -218,7 +232,7 @@ public class SysAdminPerformanceJPanel extends javax.swing.JPanel
                 fundedOrg = s;
             }
         }
-        populateJTable(fundedOrg+ " has received height donation  : ", maxFunds);
+        populateJTable(fundedOrg+ " has received highest donation  : ", maxFunds);
     }//GEN-LAST:event_fundsbuttonActionPerformed
 
     private void mostvisitedhostpitalbuttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mostvisitedhostpitalbuttonActionPerformed
@@ -248,7 +262,7 @@ public class SysAdminPerformanceJPanel extends javax.swing.JPanel
             }
         }
    
-        populateJTable(hospitalName + "is most visited Hospital: ", maxNumberOfVisits);
+        populateJTable(hospitalName + " is most visited Hospital: ", maxNumberOfVisits);
     }//GEN-LAST:event_mostvisitedhostpitalbuttonActionPerformed
 
     private void donorPrimeButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_donorPrimeButtonActionPerformed
@@ -271,7 +285,7 @@ public class SysAdminPerformanceJPanel extends javax.swing.JPanel
             }
         }
         
-        populateJTable(donorsNameWhoDonotedMaximumMoney+ "donated height amount: ", maxAmountDonated);
+        populateJTable(donorsNameWhoDonotedMaximumMoney+ " donated highest amount: ", maxAmountDonated);
     }//GEN-LAST:event_donorPrimeButtonActionPerformed
 
     private void patientButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_patientButtonActionPerformed
@@ -297,11 +311,11 @@ public class SysAdminPerformanceJPanel extends javax.swing.JPanel
                 mostActivePatientName = s;
             }
         }
-        populateJTable(mostActivePatientName+ "is mostly visited patient: ", maxNumberOfVisits);
+        populateJTable(mostActivePatientName+ " is mostly visited patient: ", maxNumberOfVisits);
     }//GEN-LAST:event_patientButtonActionPerformed
 
     private void mostvisiteddoctorButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mostvisiteddoctorButtonActionPerformed
-         Map<String,Integer> doctors = new HashMap<String, Integer>();
+        Map<String,Integer> doctors = new HashMap<String, Integer>();
         for (int i = 0; i < ecosystem.getAppointmentCatalog().getAppointmentCatalog().size(); i++) {
             AppointmentInformation ad=ecosystem.getAppointmentCatalog().getAppointmentCatalog().get(i);
             String doctorsName  = ad.getDoctorName();
@@ -325,7 +339,7 @@ public class SysAdminPerformanceJPanel extends javax.swing.JPanel
             }
         }
         
-        populateJTable(frequentlyVisitedDoctor+ "is a famous Doctor: ", maxNumberOfVisits);
+        populateJTable(frequentlyVisitedDoctor+ " is a famous Doctor: ", maxNumberOfVisits);
     }//GEN-LAST:event_mostvisiteddoctorButtonActionPerformed
 
     private void donorButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_donorButtonActionPerformed
@@ -351,7 +365,7 @@ public class SysAdminPerformanceJPanel extends javax.swing.JPanel
             }
         }
         
-        populateJTable(fundedOrg + "received maximum funds by Donor: " , max);
+        populateJTable(fundedOrg + " received maximum funds by Donor: " , max);
     }//GEN-LAST:event_donorButtonActionPerformed
 
     private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
@@ -360,12 +374,21 @@ public class SysAdminPerformanceJPanel extends javax.swing.JPanel
         layout.previous(showPanel);
     }//GEN-LAST:event_btnBackActionPerformed
 
+    private void graphButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_graphButtonActionPerformed
+        // TODO add your handling code here:
+        PerformanceJPanel performanceJPanel = new PerformanceJPanel(showPanel,ecosystem);
+        showPanel.add("performanceJPanel",performanceJPanel);
+        CardLayout layout=(CardLayout)showPanel.getLayout();
+        layout.next(showPanel);
+    }//GEN-LAST:event_graphButtonActionPerformed
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnBack;
     private javax.swing.JTable displayPerformanceTable;
     private javax.swing.JButton donorButton;
     private javax.swing.JButton donorPrimeButton;
     private javax.swing.JButton fundsbutton;
+    private javax.swing.JButton graphButton;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JButton mostvisiteddoctorButton;
