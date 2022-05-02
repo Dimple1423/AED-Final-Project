@@ -2,8 +2,10 @@ package HealthBuddy.ui.TrustManager;
 
 import HealthBuddy.models.Trust.Organisation.TrustOrgManager;
 import HealthBuddy.models.EcoSystem;
+import java.awt.Image;
 import HealthBuddy.models.Network.Network;
 import HealthBuddy.models.Enterprise.EnterpriseTrust;
+import javax.swing.ImageIcon;
 import HealthBuddy.models.User.User;
 import HealthBuddy.models.WorkQueue.WorkRequest;
 import HealthBuddy.models.WorkQueue.HealthcareTrustRequestWQ;
@@ -99,6 +101,7 @@ public class WorkAreaManagerJPanel extends javax.swing.JPanel
         fundusedjlabel = new javax.swing.JLabel();
         trustusedtext = new javax.swing.JLabel();
         btnRefresh = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
         setBorder(javax.swing.BorderFactory.createTitledBorder("Funding Manager"));
@@ -184,6 +187,11 @@ public class WorkAreaManagerJPanel extends javax.swing.JPanel
             }
         });
         add(btnRefresh, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 20, 120, 40));
+
+        ImageIcon imageIcon =  new ImageIcon(new ImageIcon(getClass().getResource("/HealthBuddy/ui/images/trustmanager.gif")).getImage().getScaledInstance(700, 500, Image.SCALE_DEFAULT));
+
+        jLabel1.setIcon(imageIcon);
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 140, 680, 470));
     }// </editor-fold>//GEN-END:initComponents
 
     private void viewDonButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_viewDonButtonActionPerformed
@@ -218,6 +226,7 @@ public class WorkAreaManagerJPanel extends javax.swing.JPanel
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnRefresh;
     private javax.swing.JLabel fundusedjlabel;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel namelabel;
     private javax.swing.JButton pickupButton;
     private javax.swing.JLabel receivelabel;
