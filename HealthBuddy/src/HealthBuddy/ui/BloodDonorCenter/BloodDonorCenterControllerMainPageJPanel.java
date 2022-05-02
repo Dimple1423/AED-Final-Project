@@ -17,25 +17,26 @@ import javax.swing.JPanel;
  * @author Nidhi Singh
  */
 public class BloodDonorCenterControllerMainPageJPanel extends javax.swing.JPanel {
+
     private JPanel showPanel;
     private User userAccount;
     private BDCControllerOrganisation headsOrganisation;
     private EcoSystem ecoSystem;
     private Network network;
     private EnterpriseBloodDonorCenter enterprise;
+
     /**
      * Creates new form BloodBankInchargeLandingJPanel
      */
-   
     public BloodDonorCenterControllerMainPageJPanel(JPanel showPanel, User account, BDCControllerOrganisation headsOrganisation, EnterpriseBloodDonorCenter bloodbankEnterprise, Network network, EcoSystem ecoSystem) {
         initComponents();
-        this.showPanel=showPanel;
-        setSize(1540,800);
+        this.showPanel = showPanel;
+        setSize(1540, 800);
         this.headsOrganisation = headsOrganisation;
         this.userAccount = account;
         this.enterprise = bloodbankEnterprise;
         this.ecoSystem = ecoSystem;
-        this.network=network;
+        this.network = network;
     }
 
     /**
@@ -93,23 +94,23 @@ public class BloodDonorCenterControllerMainPageJPanel extends javax.swing.JPanel
     }// </editor-fold>//GEN-END:initComponents
 
     private void ViewRequestjButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ViewRequestjButton9ActionPerformed
-        
-         BloodDonorCenterControllerWorkAreaJPanel headBloodBankWorkAreaPanel = new BloodDonorCenterControllerWorkAreaJPanel(showPanel,userAccount,headsOrganisation,enterprise,network,ecoSystem);
+
+        BloodDonorCenterControllerWorkAreaJPanel headBloodBankWorkAreaPanel = new BloodDonorCenterControllerWorkAreaJPanel(showPanel, userAccount, headsOrganisation, enterprise, network, ecoSystem);
         showPanel.add("HeadBloodBankWorkAreaJPanel", headBloodBankWorkAreaPanel);
         CardLayout layout = (CardLayout) showPanel.getLayout();
         layout.next(showPanel);
-        
-               
+
+
     }//GEN-LAST:event_ViewRequestjButton9ActionPerformed
 
     private void GoToInventoryjButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_GoToInventoryjButton9ActionPerformed
         // TODO add your handling code here:
-        BloodDonorCenterStorageJPanel bloodBankStoragePanel = new BloodDonorCenterStorageJPanel(showPanel,userAccount,headsOrganisation,enterprise,network,ecoSystem);
+        BloodDonorCenterStorageJPanel bloodBankStoragePanel = new BloodDonorCenterStorageJPanel(showPanel, userAccount, headsOrganisation, enterprise, network, ecoSystem);
         showPanel.add("BloodBankStorageJPanel", bloodBankStoragePanel);
         CardLayout layout = (CardLayout) showPanel.getLayout();
         layout.next(showPanel);
-        
-        
+
+
     }//GEN-LAST:event_GoToInventoryjButton9ActionPerformed
 
 

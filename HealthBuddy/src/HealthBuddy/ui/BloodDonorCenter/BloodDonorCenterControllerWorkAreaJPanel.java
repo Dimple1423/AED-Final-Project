@@ -27,7 +27,6 @@ public class BloodDonorCenterControllerWorkAreaJPanel extends javax.swing.JPanel
     /**
      * Creates new form BloodDonorCenterControllerWorkAreaJPanel
      */
-   
     private JPanel showPanel;
     private User userAccount;
     private BDCControllerOrganisation headsOrganisation;
@@ -35,40 +34,36 @@ public class BloodDonorCenterControllerWorkAreaJPanel extends javax.swing.JPanel
     private Network network;
     private EnterpriseBloodDonorCenter enterprise;
     private BloodDonorCenterInventoryCatalog bloodBankStockDirectory;
+    
 
     public BloodDonorCenterControllerWorkAreaJPanel(JPanel displayJPanel, User userAccount, BDCControllerOrganisation headsOrganisation, EnterpriseBloodDonorCenter enterprise, Network network, EcoSystem business) {
-               
-       
+
         initComponents();
-        this.showPanel=displayJPanel;
+        this.showPanel = displayJPanel;
         this.headsOrganisation = headsOrganisation;
         this.userAccount = userAccount;
         this.enterprise = enterprise;
         this.system = business;
-        this.network=network;
-        this.userAccount=userAccount;
-        this.bloodBankStockDirectory = this.headsOrganisation.getBbStockDirectory();    
+        this.network = network;
+        this.userAccount = userAccount;
+        this.bloodBankStockDirectory = this.headsOrganisation.getBbStockDirectory();
         populateTable();
-        setSize(1540,800);
+        setSize(1540, 800);
     }
-   
-    
-    
-    public void populateTable()
-    {
+
+    public void populateTable() {
         DefaultTableModel model = (DefaultTableModel) BloodRequestJTable.getModel();
-        
+
         model.setRowCount(0);
-        
-        for(WorkRequest request :network.getBloodDonorCenterRequests().getWorkRequestList())
-        {
-            BloodControllerAttendantWQ nb = (BloodControllerAttendantWQ)request;
+
+        for (WorkRequest request : network.getBloodDonorCenterRequests().getWorkRequestList()) {
+            BloodControllerAttendantWQ nb = (BloodControllerAttendantWQ) request;
             Object[] row = new Object[4];
             row[0] = nb;
             row[1] = nb.getTypeOfBlood();
             row[2] = nb.getUnitsOfBlood();
-            row[3]=request.getMessage();
-            
+            row[3] = request.getMessage();
+
             model.addRow(row);
         }
     }
@@ -159,75 +154,56 @@ public class BloodDonorCenterControllerWorkAreaJPanel extends javax.swing.JPanel
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnAccept9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAccept9ActionPerformed
-       int selectedRow=BloodRequestJTable.getSelectedRow();
-       
-       if(selectedRow<0)
-       {
-           JOptionPane.showMessageDialog(null, "Kindly Select a Row","Warning", JOptionPane.WARNING_MESSAGE);
-       }
-       else
-       {
-           BloodControllerAttendantWQ  bloodHeadAttendentWorkQueue = (BloodControllerAttendantWQ)BloodRequestJTable.getValueAt(selectedRow, 0);
-           boolean result = bloodBankStockDirectory.checkBloodQuantity(bloodHeadAttendentWorkQueue.getTypeOfBlood(), bloodHeadAttendentWorkQueue.getUnitsOfBlood());
-           
-           if(bloodHeadAttendentWorkQueue.getMessage().equals("Blood Supplied"))
-           {
-               JOptionPane.showMessageDialog(null, "Hurray! Delivery of Blood made earlier than expected","Warning", JOptionPane.WARNING_MESSAGE);
-           }
-           
-           else if(result == true)
-           {
-                    bloodHeadAttendentWorkQueue.setMessage("Blood Supplied");
-                    populateTable();
-                
-                    BloodControllerAttendantWQ bhawq= new BloodControllerAttendantWQ();
-                             
-                    bhawq.setSender(userAccount);
-                    bhawq.setStatus("Blood Supplied");
-                    bhawq.setTypeOfBlood(bloodHeadAttendentWorkQueue.getTypeOfBlood());
-                    bhawq.setNameOfPatient(bloodHeadAttendentWorkQueue.getNameOfPatient());
-                    bhawq.setUnitsOfBlood(bloodHeadAttendentWorkQueue.getUnitsOfBlood());
-                
-             
-                    HealthcareOrganisationAttendant bb = null;
-                    for(Network network : system.getNetworkList())
-                    {
-                        if(network.getNetworkName().equals(network.getNetworkName()))
-                        {
-                            for(Enterprise ent : network.getEnterpriseCatalog().getEnterpriseList())
-                            {
-                                for(Organisation org : ent.getOrganizationCatalog().getOrganizationList())
-                                {
-                                    if(org.getName().equalsIgnoreCase("Attendant Organisation"))
-                                    {
-                                        for(User uacnt : org.getUserCatalog().getUserCatalog())
-                                        {
-                                            if(uacnt.getUsername().equalsIgnoreCase(bloodHeadAttendentWorkQueue.getSender().getUsername()))
-                                            {
-                                                bb = (HealthcareOrganisationAttendant)org;
-                                                break;
-                                            }
+        int selectedRow = BloodRequestJTable.getSelectedRow();
+
+        if (selectedRow < 0) {
+            JOptionPane.showMessageDialog(null, "Kindly Select a Row", "Warning", JOptionPane.WARNING_MESSAGE);
+        } else {
+            BloodControllerAttendantWQ bloodHeadAttendentWorkQueue = (BloodControllerAttendantWQ) BloodRequestJTable.getValueAt(selectedRow, 0);
+            boolean result = bloodBankStockDirectory.checkBloodQuantity(bloodHeadAttendentWorkQueue.getTypeOfBlood(), bloodHeadAttendentWorkQueue.getUnitsOfBlood());
+
+            if (bloodHeadAttendentWorkQueue.getMessage().equals("Blood Supplied")) {
+                JOptionPane.showMessageDialog(null, "Hurray! Delivery of Blood made earlier than expected", "Warning", JOptionPane.WARNING_MESSAGE);
+            } else if (result == true) {
+                bloodHeadAttendentWorkQueue.setMessage("Blood Supplied");
+                populateTable();
+
+                BloodControllerAttendantWQ bhawq = new BloodControllerAttendantWQ();
+
+                bhawq.setSender(userAccount);
+                bhawq.setStatus("Blood Supplied");
+                bhawq.setTypeOfBlood(bloodHeadAttendentWorkQueue.getTypeOfBlood());
+                bhawq.setNameOfPatient(bloodHeadAttendentWorkQueue.getNameOfPatient());
+                bhawq.setUnitsOfBlood(bloodHeadAttendentWorkQueue.getUnitsOfBlood());
+
+                HealthcareOrganisationAttendant bb = null;
+                for (Network network : system.getNetworkList()) {
+                    if (network.getNetworkName().equals(network.getNetworkName())) {
+                        for (Enterprise ent : network.getEnterpriseCatalog().getEnterpriseList()) {
+                            for (Organisation org : ent.getOrganizationCatalog().getOrganizationList()) {
+                                if (org.getName().equalsIgnoreCase("Attendant Organisation")) {
+                                    for (User uacnt : org.getUserCatalog().getUserCatalog()) {
+                                        if (uacnt.getUsername().equalsIgnoreCase(bloodHeadAttendentWorkQueue.getSender().getUsername())) {
+                                            bb = (HealthcareOrganisationAttendant) org;
+                                            break;
                                         }
                                     }
-                                }   
+                                }
                             }
-                    
-                            if (bb!= null)
-                            {
-                                bb.getBloodHeadAttendantWQ().getWorkRequestList().add(bhawq);
-                                userAccount.getWorkQueue().getWorkRequestList().add(bhawq);
-                            }   
-                
-                            JOptionPane.showMessageDialog(null, "Request Posted successfully", "Success", JOptionPane.INFORMATION_MESSAGE);
-                        }      
+                        }
+
+                        if (bb != null) {
+                            bb.getBloodHeadAttendantWQ().getWorkRequestList().add(bhawq);
+                            userAccount.getWorkQueue().getWorkRequestList().add(bhawq);
+                        }
+
+                        JOptionPane.showMessageDialog(null, "Request Posted successfully", "Success", JOptionPane.INFORMATION_MESSAGE);
                     }
                 }
-           
-           else
-           {
-               JOptionPane.showMessageDialog(null, "InSufficient blood quantity for this group at the moment", "Warning", JOptionPane.WARNING_MESSAGE);
-           }
-        } 
+            } else {
+                JOptionPane.showMessageDialog(null, "InSufficient blood quantity for this group at the moment", "Warning", JOptionPane.WARNING_MESSAGE);
+            }
+        }
     }//GEN-LAST:event_btnAccept9ActionPerformed
 
     private void btnBack9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBack9ActionPerformed
@@ -247,5 +223,4 @@ public class BloodDonorCenterControllerWorkAreaJPanel extends javax.swing.JPanel
     private javax.swing.JLabel lblTitle9;
     // End of variables declaration//GEN-END:variables
 
-    
 }

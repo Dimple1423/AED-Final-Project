@@ -24,7 +24,6 @@ public class BloodDonorCenterStorageJPanel extends javax.swing.JPanel {
     /**
      * Creates new form BloodDonorCenterStorageJPanel
      */
-     
     private JPanel showPanel;
     private User userAccount;
     private BDCControllerOrganisation headOrganisation;
@@ -32,35 +31,31 @@ public class BloodDonorCenterStorageJPanel extends javax.swing.JPanel {
     private Network network;
     private EnterpriseBloodDonorCenter bloodBankEnterprise;
     private BloodDonorCenterInventoryCatalog bbsd;
-   
-    public BloodDonorCenterStorageJPanel(JPanel showPanel, User userAccount, BDCControllerOrganisation headOrganisation, EnterpriseBloodDonorCenter bloodBankEnterprise, Network network, EcoSystem ecosystem) 
-    {
+
+    public BloodDonorCenterStorageJPanel(JPanel showPanel, User userAccount, BDCControllerOrganisation headOrganisation, EnterpriseBloodDonorCenter bloodBankEnterprise, Network network, EcoSystem ecosystem) {
         initComponents();
-        
-        this.showPanel=showPanel;
+
+        this.showPanel = showPanel;
         this.headOrganisation = headOrganisation;
         this.userAccount = userAccount;
         this.bloodBankEnterprise = bloodBankEnterprise;
         this.ecosystem = ecosystem;
-        this.network=network;
-        this.bbsd=headOrganisation.getBbStockDirectory();
-        setSize(1540,800);
+        this.network = network;
+        this.bbsd = headOrganisation.getBbStockDirectory();
+        setSize(1540, 800);
         populatecomboBox();
     }
 
-    private void populatecomboBox()
-    {
+    private void populatecomboBox() {
         BloodTypeComboBox9.removeAllItems();
-        
-        for(BloodGroup t:BloodGroup.values())
-        {
-            if(t.getVal().equals(BloodGroup.getBloodGroupONegative().getVal()) ||t.getVal().equals(BloodGroup.getBloodGroupOPositive().getVal()) ||t.getVal().equals(BloodGroup.getBloodGroupBPositive().getVal())||t.getVal().equals(BloodGroup.getBloodGroupBNegative().getVal()) ||t.getVal().equals(BloodGroup.getBloodGroupAPositive().getVal())||t.getVal().equals(BloodGroup.getBloodGroupANegative().getVal())||t.getVal().equals(BloodGroup.getBloodGroupABPositive().getVal())||t.getVal().equals(BloodGroup.getBloodGroupABNegative().getVal()))
-            {
-                BloodTypeComboBox9.addItem(t);   
-            }                  
+
+        for (BloodGroup t : BloodGroup.values()) {
+            if (t.getVal().equals(BloodGroup.getBloodGroupONegative().getVal()) || t.getVal().equals(BloodGroup.getBloodGroupOPositive().getVal()) || t.getVal().equals(BloodGroup.getBloodGroupBPositive().getVal()) || t.getVal().equals(BloodGroup.getBloodGroupBNegative().getVal()) || t.getVal().equals(BloodGroup.getBloodGroupAPositive().getVal()) || t.getVal().equals(BloodGroup.getBloodGroupANegative().getVal()) || t.getVal().equals(BloodGroup.getBloodGroupABPositive().getVal()) || t.getVal().equals(BloodGroup.getBloodGroupABNegative().getVal())) {
+                BloodTypeComboBox9.addItem(t);
+            }
         }
     }
-    
+
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -229,40 +224,35 @@ public class BloodDonorCenterStorageJPanel extends javax.swing.JPanel {
         showPanel.remove(this);
         CardLayout layout = (CardLayout) showPanel.getLayout();
         layout.previous(showPanel);
-        
+
     }//GEN-LAST:event_btnBack9ActionPerformed
 
     private void BloodTypeComboBox9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BloodTypeComboBox9ActionPerformed
         BloodGroup typ = (BloodGroup) BloodTypeComboBox9.getSelectedItem();
-        if(typ != null)
-        {
+        if (typ != null) {
             populateTable(typ);
         }
     }//GEN-LAST:event_BloodTypeComboBox9ActionPerformed
 
     private void buttonAddBlood9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonAddBlood9ActionPerformed
-        try
-        {
-            Integer quantity= (Integer.parseInt(unitsOfBlood9TextF.getText()));                          
+        try {
+            Integer quantity = (Integer.parseInt(unitsOfBlood9TextF.getText()));
             BloodGroup typ = (BloodGroup) BloodTypeComboBox9.getSelectedItem();
-           
-            BloodDonorCenterInventory bb=  bbsd.findBloodGroup(typ);
-        
-            if(bb.getBloodGroup() == null || bb.getBloodGroup() == "")
-            {
+
+            BloodDonorCenterInventory bb = bbsd.findBloodGroup(typ);
+
+            if (bb.getBloodGroup() == null || bb.getBloodGroup() == "") {
                 bb.setBloodGroup(typ.getVal());
             }
-        
+
             int bloodquan = bb.getBloodVolume();
             bloodquan = bloodquan + quantity;
-        
+
             bb.setBloodVolume(bloodquan);
-        
+
             populateTable(typ);
             unitsOfBlood9TextF.setText("");
-        }
-        catch(Exception e)
-        {
+        } catch (Exception e) {
             JOptionPane.showMessageDialog(null, "Input entered is wrong", "Error", JOptionPane.ERROR_MESSAGE);
         }
     }//GEN-LAST:event_buttonAddBlood9ActionPerformed
@@ -270,25 +260,22 @@ public class BloodDonorCenterStorageJPanel extends javax.swing.JPanel {
     private void unitsOfBlood9TextFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_unitsOfBlood9TextFActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_unitsOfBlood9TextFActionPerformed
-       
-   private void populateTable(BloodGroup typ)
-   {
-        DefaultTableModel model = (DefaultTableModel)BloodInvntryjTable9.getModel();
-        
+
+    private void populateTable(BloodGroup typ) {
+        DefaultTableModel model = (DefaultTableModel) BloodInvntryjTable9.getModel();
+
         model.setRowCount(0);
-        
-        for(BloodDonorCenterInventory b :bbsd.getStock())
-        {
-            if(b.getBloodGroup()!= null && b.getBloodGroup().equals(typ.getVal()))
-            {
+
+        for (BloodDonorCenterInventory b : bbsd.getStock()) {
+            if (b.getBloodGroup() != null && b.getBloodGroup().equals(typ.getVal())) {
                 Object[] row = new Object[2];
                 row[0] = b.getBloodGroup();
-                row[1]=b.getBloodVolume();
+                row[1] = b.getBloodVolume();
                 model.addRow(row);
             }
         }
     }
-         
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTable BloodInvntryjTable9;
     private javax.swing.JComboBox<Object> BloodTypeComboBox9;
