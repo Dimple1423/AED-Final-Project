@@ -41,6 +41,7 @@ public class PerformanceJPanel extends javax.swing.JPanel {
         populateDoctorsGraph();
         populateOrgFundsGraph();
         populateHospitalGraph();
+        
     }
 
     /**
