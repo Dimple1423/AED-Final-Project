@@ -41,9 +41,9 @@ public class WorkAreaVolunteerJPanel extends javax.swing.JPanel {
         setSize(1540,800);
         
         //Setting label values
-        lblVolunteerName.setText(userAccount.getUsername());
-        lblFundsOrgName.setText(this.enterprise.getName());
-        lblFundsOrgCity.setText(network.getNetworkName());
+        lblVolunteerName9.setText(userAccount.getUsername());
+        lblFundsOrgName9.setText(this.enterprise.getName());
+        lblFundsOrgCity9.setText(network.getNetworkName());
         
         populateTable();
         
@@ -58,22 +58,22 @@ public class WorkAreaVolunteerJPanel extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jScrollPane1 = new javax.swing.JScrollPane();
-        tblPatientCharity = new javax.swing.JTable();
-        lblWelcome = new javax.swing.JLabel();
-        lblFundsName = new javax.swing.JLabel();
-        lblFundsOrgName = new javax.swing.JLabel();
-        lblFundsName1 = new javax.swing.JLabel();
-        lblFundsOrgCity = new javax.swing.JLabel();
-        btnPublish = new javax.swing.JButton();
+        jScrollPane9 = new javax.swing.JScrollPane();
+        tblPatientCharity9 = new javax.swing.JTable();
+        lblWelcome9 = new javax.swing.JLabel();
+        lblFundsName9 = new javax.swing.JLabel();
+        lblFundsOrgName9 = new javax.swing.JLabel();
+        lblFundsName19 = new javax.swing.JLabel();
+        lblFundsOrgCity9 = new javax.swing.JLabel();
+        btnPublish9 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
-        lblVolunteerName = new javax.swing.JLabel();
+        lblVolunteerName9 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
 
-        tblPatientCharity.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        tblPatientCharity.setForeground(new java.awt.Color(0, 102, 102));
-        tblPatientCharity.setModel(new javax.swing.table.DefaultTableModel(
+        tblPatientCharity9.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        tblPatientCharity9.setForeground(new java.awt.Color(0, 102, 102));
+        tblPatientCharity9.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null},
                 {null, null, null, null, null},
@@ -92,40 +92,40 @@ public class WorkAreaVolunteerJPanel extends javax.swing.JPanel {
                 return canEdit [columnIndex];
             }
         });
-        jScrollPane1.setViewportView(tblPatientCharity);
+        jScrollPane9.setViewportView(tblPatientCharity9);
 
-        lblWelcome.setBackground(new java.awt.Color(255, 255, 255));
-        lblWelcome.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
-        lblWelcome.setForeground(new java.awt.Color(0, 102, 102));
-        lblWelcome.setText(", Thank You For Your Valuable Contribution");
+        lblWelcome9.setBackground(new java.awt.Color(255, 255, 255));
+        lblWelcome9.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+        lblWelcome9.setForeground(new java.awt.Color(0, 102, 102));
+        lblWelcome9.setText(", Thank You For Your Valuable Contribution");
 
-        lblFundsName.setBackground(new java.awt.Color(255, 255, 255));
-        lblFundsName.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        lblFundsName.setForeground(new java.awt.Color(0, 102, 102));
-        lblFundsName.setText("Funding Organisation Name:");
+        lblFundsName9.setBackground(new java.awt.Color(255, 255, 255));
+        lblFundsName9.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        lblFundsName9.setForeground(new java.awt.Color(0, 102, 102));
+        lblFundsName9.setText("Funding Organisation Name:");
 
-        lblFundsOrgName.setBackground(new java.awt.Color(255, 255, 255));
-        lblFundsOrgName.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        lblFundsOrgName.setForeground(new java.awt.Color(0, 102, 102));
-        lblFundsOrgName.setText("value");
+        lblFundsOrgName9.setBackground(new java.awt.Color(255, 255, 255));
+        lblFundsOrgName9.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        lblFundsOrgName9.setForeground(new java.awt.Color(0, 102, 102));
+        lblFundsOrgName9.setText("value");
 
-        lblFundsName1.setBackground(new java.awt.Color(255, 255, 255));
-        lblFundsName1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        lblFundsName1.setForeground(new java.awt.Color(0, 102, 102));
-        lblFundsName1.setText("Funding Organisation Address:");
+        lblFundsName19.setBackground(new java.awt.Color(255, 255, 255));
+        lblFundsName19.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        lblFundsName19.setForeground(new java.awt.Color(0, 102, 102));
+        lblFundsName19.setText("Funding Organisation Address:");
 
-        lblFundsOrgCity.setBackground(new java.awt.Color(255, 255, 255));
-        lblFundsOrgCity.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        lblFundsOrgCity.setForeground(new java.awt.Color(0, 102, 102));
-        lblFundsOrgCity.setText("value");
+        lblFundsOrgCity9.setBackground(new java.awt.Color(255, 255, 255));
+        lblFundsOrgCity9.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        lblFundsOrgCity9.setForeground(new java.awt.Color(0, 102, 102));
+        lblFundsOrgCity9.setText("value");
 
-        btnPublish.setBackground(new java.awt.Color(0, 102, 102));
-        btnPublish.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        btnPublish.setForeground(new java.awt.Color(255, 255, 255));
-        btnPublish.setText("Publish Journal");
-        btnPublish.addActionListener(new java.awt.event.ActionListener() {
+        btnPublish9.setBackground(new java.awt.Color(0, 102, 102));
+        btnPublish9.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        btnPublish9.setForeground(new java.awt.Color(255, 255, 255));
+        btnPublish9.setText("Publish Journal");
+        btnPublish9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnPublishActionPerformed(evt);
+                btnPublish9ActionPerformed(evt);
             }
         });
 
@@ -133,9 +133,9 @@ public class WorkAreaVolunteerJPanel extends javax.swing.JPanel {
 
         jLabel1.setIcon(imageIcon);
 
-        lblVolunteerName.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
-        lblVolunteerName.setForeground(new java.awt.Color(0, 102, 102));
-        lblVolunteerName.setText("value");
+        lblVolunteerName9.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+        lblVolunteerName9.setForeground(new java.awt.Color(0, 102, 102));
+        lblVolunteerName9.setText("value");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -148,22 +148,22 @@ public class WorkAreaVolunteerJPanel extends javax.swing.JPanel {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(lblFundsName1)
-                                    .addComponent(lblFundsName, javax.swing.GroupLayout.PREFERRED_SIZE, 289, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(lblFundsName19)
+                                    .addComponent(lblFundsName9, javax.swing.GroupLayout.PREFERRED_SIZE, 289, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(60, 60, 60)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(lblFundsOrgName, javax.swing.GroupLayout.DEFAULT_SIZE, 109, Short.MAX_VALUE)
-                                    .addComponent(lblFundsOrgCity, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 644, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(lblFundsOrgName9, javax.swing.GroupLayout.DEFAULT_SIZE, 109, Short.MAX_VALUE)
+                                    .addComponent(lblFundsOrgCity9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                            .addComponent(jScrollPane9, javax.swing.GroupLayout.PREFERRED_SIZE, 644, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(210, 210, 210)
-                                .addComponent(btnPublish, javax.swing.GroupLayout.PREFERRED_SIZE, 245, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(btnPublish9, javax.swing.GroupLayout.PREFERRED_SIZE, 245, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(80, 80, 80)
                         .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 700, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(lblVolunteerName, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(lblVolunteerName9, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(lblWelcome, javax.swing.GroupLayout.PREFERRED_SIZE, 913, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(lblWelcome9, javax.swing.GroupLayout.PREFERRED_SIZE, 913, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(42, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -171,22 +171,22 @@ public class WorkAreaVolunteerJPanel extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addGap(47, 47, 47)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblWelcome)
-                    .addComponent(lblVolunteerName, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lblWelcome9)
+                    .addComponent(lblVolunteerName9, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(lblFundsName)
-                            .addComponent(lblFundsOrgName))
+                            .addComponent(lblFundsName9)
+                            .addComponent(lblFundsOrgName9))
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(lblFundsName1)
-                            .addComponent(lblFundsOrgCity))
+                            .addComponent(lblFundsName19)
+                            .addComponent(lblFundsOrgCity9))
                         .addGap(47, 47, 47)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jScrollPane9, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(44, 44, 44)
-                        .addComponent(btnPublish))
+                        .addComponent(btnPublish9))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(20, 20, 20)
                         .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 586, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -194,18 +194,18 @@ public class WorkAreaVolunteerJPanel extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnPublishActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPublishActionPerformed
+    private void btnPublish9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPublish9ActionPerformed
         // TODO add your handling code here:
-        DefaultTableModel model = (DefaultTableModel) tblPatientCharity.getModel();
-        int selectedRow = tblPatientCharity.getSelectedRow();
+        DefaultTableModel model = (DefaultTableModel) tblPatientCharity9.getModel();
+        int selectedRow = tblPatientCharity9.getSelectedRow();
         
         if (selectedRow > -1)
         {
-            HealthcareTrustRequestWQ request = (HealthcareTrustRequestWQ)tblPatientCharity.getValueAt(selectedRow,0);
+            HealthcareTrustRequestWQ request = (HealthcareTrustRequestWQ)tblPatientCharity9.getValueAt(selectedRow,0);
             
             if(request.getStatus().equalsIgnoreCase("Published"))
             {
-                JOptionPane.showMessageDialog(null, "Newsletter Already Published!", "Warning", JOptionPane.WARNING_MESSAGE);
+                JOptionPane.showMessageDialog(null, "Newsletter Publication Already made!", "Warning", JOptionPane.WARNING_MESSAGE);
             }
             else
             {
@@ -239,34 +239,34 @@ public class WorkAreaVolunteerJPanel extends javax.swing.JPanel {
                 String subject ="News @ HealthBuddy";
                 SendEmailUtility.sendEmail(subject, Config.emailId, Config.password, message, receiver);
         
-                JOptionPane.showMessageDialog(null, "Newsletter Successfully Published!!", "Success", JOptionPane.INFORMATION_MESSAGE);
+                JOptionPane.showMessageDialog(null, "Publication of NewsLetter Successful!!", "Success", JOptionPane.INFORMATION_MESSAGE);
             }
         }
         else
         {
-            JOptionPane.showMessageDialog(null, "Please select a case you wish to publish.", "Warning", JOptionPane.WARNING_MESSAGE);
+            JOptionPane.showMessageDialog(null, "Kindly select a record you would like to Broadcast.", "Warning", JOptionPane.WARNING_MESSAGE);
         }
         
             
-    }//GEN-LAST:event_btnPublishActionPerformed
+    }//GEN-LAST:event_btnPublish9ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnPublish;
+    private javax.swing.JButton btnPublish9;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JLabel lblFundsName;
-    private javax.swing.JLabel lblFundsName1;
-    private javax.swing.JLabel lblFundsOrgCity;
-    private javax.swing.JLabel lblFundsOrgName;
-    private javax.swing.JLabel lblVolunteerName;
-    private javax.swing.JLabel lblWelcome;
-    private javax.swing.JTable tblPatientCharity;
+    private javax.swing.JScrollPane jScrollPane9;
+    private javax.swing.JLabel lblFundsName19;
+    private javax.swing.JLabel lblFundsName9;
+    private javax.swing.JLabel lblFundsOrgCity9;
+    private javax.swing.JLabel lblFundsOrgName9;
+    private javax.swing.JLabel lblVolunteerName9;
+    private javax.swing.JLabel lblWelcome9;
+    private javax.swing.JTable tblPatientCharity9;
     // End of variables declaration//GEN-END:variables
 
     public void populateTable()
     {
-        DefaultTableModel model = (DefaultTableModel) tblPatientCharity.getModel();
+        DefaultTableModel model = (DefaultTableModel) tblPatientCharity9.getModel();
         model.setRowCount(0);
         
         for(WorkRequest workRequest : network.getFundsRequests().getWorkRequestList())
