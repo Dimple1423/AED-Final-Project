@@ -72,10 +72,10 @@ public class AssistantWorkAreaPanel extends javax.swing.JPanel {
         populateComboDoctor();
         populateAppointmentTable();
         populateAcknowledgmentTable();
-        lblAssistantName.setText(ua.getEmployee().getEmployeeName());
-        lblAssistantName1.setText(ua.getEmployee().getEmployeeName());
-        lblAssistantName2.setText(ua.getEmployee().getEmployeeName());
-        lblAssistantName3.setText(ua.getEmployee().getEmployeeName());
+        assistantNmLabel9.setText(ua.getEmployee().getEmployeeName());
+        lblAssistantNm2.setText(ua.getEmployee().getEmployeeName());
+        lblAsstantNm5.setText(ua.getEmployee().getEmployeeName());
+        assistntName9.setText(ua.getEmployee().getEmployeeName());
         setSize(1540,800);
 
     }
@@ -102,86 +102,86 @@ public class AssistantWorkAreaPanel extends javax.swing.JPanel {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        donationTabbedPane = new javax.swing.JTabbedPane();
-        manageFundingRequestsPanel = new javax.swing.JPanel();
-        helpTextLabel1 = new javax.swing.JLabel();
-        deliveryDirLabel8 = new javax.swing.JLabel();
-        menuItemName14 = new javax.swing.JLabel();
-        txtFundReqd = new javax.swing.JTextField();
-        btnRaiseFundingRequest = new javax.swing.JButton();
+        donateTabPn = new javax.swing.JTabbedPane();
+        fundreqmanagePan = new javax.swing.JPanel();
+        msgaLabel = new javax.swing.JLabel();
+        msgbLabel = new javax.swing.JLabel();
+        msgcLabel = new javax.swing.JLabel();
+        fReqTextF = new javax.swing.JTextField();
+        buttonFundR = new javax.swing.JButton();
         jScrollPane4 = new javax.swing.JScrollPane();
         tblFundingRequests = new javax.swing.JTable();
-        lblWelcome1 = new javax.swing.JLabel();
-        lblAssistantName1 = new javax.swing.JLabel();
+        WelcmLabel = new javax.swing.JLabel();
+        lblAssistantNm2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
-        fundingAcknowledgementPanel = new javax.swing.JPanel();
-        deliveryDirLabel11 = new javax.swing.JLabel();
+        trustackPanel1 = new javax.swing.JPanel();
+        deliDirLabel12 = new javax.swing.JLabel();
         jScrollPane5 = new javax.swing.JScrollPane();
         tblAcknowledgement = new javax.swing.JTable();
-        lblWelcome2 = new javax.swing.JLabel();
-        lblAssistantName2 = new javax.swing.JLabel();
-        manageAppointmentsPanel = new javax.swing.JPanel();
-        helpTextLabel = new javax.swing.JLabel();
-        deliveryDirLabel7 = new javax.swing.JLabel();
-        btnAccept = new javax.swing.JButton();
+        lblWelcm4 = new javax.swing.JLabel();
+        lblAsstantNm5 = new javax.swing.JLabel();
+        mangApptmntPan5 = new javax.swing.JPanel();
+        hlpLabel7 = new javax.swing.JLabel();
+        delvryDirLabel9 = new javax.swing.JLabel();
+        buttonallow = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         tblAppointment = new javax.swing.JTable();
-        btnReject = new javax.swing.JButton();
-        lblWelcome3 = new javax.swing.JLabel();
-        lblAssistantName3 = new javax.swing.JLabel();
+        buttonRejct4 = new javax.swing.JButton();
+        welcmLabel6 = new javax.swing.JLabel();
+        assistntName9 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        manageDocSlotsPanel = new javax.swing.JPanel();
-        menuItemName6 = new javax.swing.JLabel();
-        deliveryDirLabel5 = new javax.swing.JLabel();
-        btnAddSlot = new javax.swing.JButton();
-        comboManageSlots = new javax.swing.JComboBox();
-        menuItemName12 = new javax.swing.JLabel();
-        comboDay = new javax.swing.JComboBox();
-        comboMonth = new javax.swing.JComboBox();
-        comboYear = new javax.swing.JComboBox();
-        lblWelcome = new javax.swing.JLabel();
-        lblAssistantName = new javax.swing.JLabel();
-        menuItemName13 = new javax.swing.JLabel();
-        comboMinute = new javax.swing.JComboBox();
-        comboHour = new javax.swing.JComboBox();
+        mngDoctimePan6 = new javax.swing.JPanel();
+        menuListName9 = new javax.swing.JLabel();
+        dlvryDirLabel9 = new javax.swing.JLabel();
+        buttontnAddTime9 = new javax.swing.JButton();
+        comboManageTime9 = new javax.swing.JComboBox();
+        menuListName19 = new javax.swing.JLabel();
+        combDate9 = new javax.swing.JComboBox();
+        cmbMonth9 = new javax.swing.JComboBox();
+        comboYr9 = new javax.swing.JComboBox();
+        lblWelcm9 = new javax.swing.JLabel();
+        assistantNmLabel9 = new javax.swing.JLabel();
+        menuItemName26 = new javax.swing.JLabel();
+        comboMin9 = new javax.swing.JComboBox();
+        comboHr9 = new javax.swing.JComboBox();
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setForeground(new java.awt.Color(0, 102, 102));
         jPanel1.setPreferredSize(new java.awt.Dimension(1925, 857));
 
-        donationTabbedPane.setBackground(new java.awt.Color(0, 102, 102));
-        donationTabbedPane.setForeground(new java.awt.Color(255, 255, 255));
-        donationTabbedPane.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        donateTabPn.setBackground(new java.awt.Color(0, 102, 102));
+        donateTabPn.setForeground(new java.awt.Color(255, 255, 255));
+        donateTabPn.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
 
-        manageFundingRequestsPanel.setBackground(new java.awt.Color(255, 255, 255));
-        manageFundingRequestsPanel.setForeground(new java.awt.Color(0, 102, 102));
+        fundreqmanagePan.setBackground(new java.awt.Color(255, 255, 255));
+        fundreqmanagePan.setForeground(new java.awt.Color(0, 102, 102));
 
-        helpTextLabel1.setBackground(new java.awt.Color(255, 255, 255));
-        helpTextLabel1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        helpTextLabel1.setForeground(new java.awt.Color(0, 102, 102));
-        helpTextLabel1.setText(" ");
+        msgaLabel.setBackground(new java.awt.Color(255, 255, 255));
+        msgaLabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        msgaLabel.setForeground(new java.awt.Color(0, 102, 102));
+        msgaLabel.setText(" ");
 
-        deliveryDirLabel8.setBackground(new java.awt.Color(255, 255, 255));
-        deliveryDirLabel8.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
-        deliveryDirLabel8.setForeground(new java.awt.Color(0, 102, 102));
-        deliveryDirLabel8.setText("Assistant Work Area");
+        msgbLabel.setBackground(new java.awt.Color(255, 255, 255));
+        msgbLabel.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+        msgbLabel.setForeground(new java.awt.Color(0, 102, 102));
+        msgbLabel.setText("Assistant Work Area");
 
-        menuItemName14.setBackground(new java.awt.Color(255, 255, 255));
-        menuItemName14.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        menuItemName14.setForeground(new java.awt.Color(0, 102, 102));
-        menuItemName14.setText("Funding Required:      $");
+        msgcLabel.setBackground(new java.awt.Color(255, 255, 255));
+        msgcLabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        msgcLabel.setForeground(new java.awt.Color(0, 102, 102));
+        msgcLabel.setText("Funding Required:      $");
 
-        txtFundReqd.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        txtFundReqd.setForeground(new java.awt.Color(0, 102, 102));
+        fReqTextF.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        fReqTextF.setForeground(new java.awt.Color(0, 102, 102));
 
-        btnRaiseFundingRequest.setBackground(new java.awt.Color(0, 102, 102));
-        btnRaiseFundingRequest.setFont(new java.awt.Font("Tahoma", 1, 19)); // NOI18N
-        btnRaiseFundingRequest.setForeground(new java.awt.Color(255, 255, 255));
-        btnRaiseFundingRequest.setText("Raise Funding Request");
-        btnRaiseFundingRequest.addActionListener(new java.awt.event.ActionListener() {
+        buttonFundR.setBackground(new java.awt.Color(0, 102, 102));
+        buttonFundR.setFont(new java.awt.Font("Tahoma", 1, 19)); // NOI18N
+        buttonFundR.setForeground(new java.awt.Color(255, 255, 255));
+        buttonFundR.setText("Raise Funding Request");
+        buttonFundR.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnRaiseFundingRequestActionPerformed(evt);
+                buttonFundRActionPerformed(evt);
             }
         });
 
@@ -211,91 +211,91 @@ public class AssistantWorkAreaPanel extends javax.swing.JPanel {
         tblFundingRequests.setRowHeight(40);
         jScrollPane4.setViewportView(tblFundingRequests);
 
-        lblWelcome1.setBackground(new java.awt.Color(255, 255, 255));
-        lblWelcome1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        lblWelcome1.setForeground(new java.awt.Color(0, 102, 102));
-        lblWelcome1.setText("Welcome ");
+        WelcmLabel.setBackground(new java.awt.Color(255, 255, 255));
+        WelcmLabel.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        WelcmLabel.setForeground(new java.awt.Color(0, 102, 102));
+        WelcmLabel.setText("Welcome ");
 
-        lblAssistantName1.setBackground(new java.awt.Color(255, 255, 255));
-        lblAssistantName1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        lblAssistantName1.setForeground(new java.awt.Color(0, 102, 102));
-        lblAssistantName1.setText("value");
+        lblAssistantNm2.setBackground(new java.awt.Color(255, 255, 255));
+        lblAssistantNm2.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        lblAssistantNm2.setForeground(new java.awt.Color(0, 102, 102));
+        lblAssistantNm2.setText("value");
 
         jLabel3.setBackground(new java.awt.Color(204, 204, 255));
 
         jLabel7.setBackground(new java.awt.Color(204, 204, 255));
 
-        javax.swing.GroupLayout manageFundingRequestsPanelLayout = new javax.swing.GroupLayout(manageFundingRequestsPanel);
-        manageFundingRequestsPanel.setLayout(manageFundingRequestsPanelLayout);
-        manageFundingRequestsPanelLayout.setHorizontalGroup(
-            manageFundingRequestsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(manageFundingRequestsPanelLayout.createSequentialGroup()
-                .addGroup(manageFundingRequestsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(manageFundingRequestsPanelLayout.createSequentialGroup()
+        javax.swing.GroupLayout fundreqmanagePanLayout = new javax.swing.GroupLayout(fundreqmanagePan);
+        fundreqmanagePan.setLayout(fundreqmanagePanLayout);
+        fundreqmanagePanLayout.setHorizontalGroup(
+            fundreqmanagePanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(fundreqmanagePanLayout.createSequentialGroup()
+                .addGroup(fundreqmanagePanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(fundreqmanagePanLayout.createSequentialGroup()
                         .addGap(93, 93, 93)
-                        .addComponent(helpTextLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 798, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(manageFundingRequestsPanelLayout.createSequentialGroup()
+                        .addComponent(msgaLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 798, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(fundreqmanagePanLayout.createSequentialGroup()
                         .addGap(25, 25, 25)
-                        .addComponent(lblWelcome1)
+                        .addComponent(WelcmLabel)
                         .addGap(18, 18, 18)
-                        .addComponent(lblAssistantName1, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(manageFundingRequestsPanelLayout.createSequentialGroup()
+                        .addComponent(lblAssistantNm2, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(fundreqmanagePanLayout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 692, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(manageFundingRequestsPanelLayout.createSequentialGroup()
+                    .addGroup(fundreqmanagePanLayout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(menuItemName14, javax.swing.GroupLayout.PREFERRED_SIZE, 225, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(msgcLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 225, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(txtFundReqd, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(fReqTextF, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnRaiseFundingRequest)))
+                        .addComponent(buttonFundR)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 2162, Short.MAX_VALUE)
                 .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 830, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 830, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(173, 173, 173))
-            .addGroup(manageFundingRequestsPanelLayout.createSequentialGroup()
+            .addGroup(fundreqmanagePanLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(deliveryDirLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 651, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(msgbLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 651, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        manageFundingRequestsPanelLayout.setVerticalGroup(
-            manageFundingRequestsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(manageFundingRequestsPanelLayout.createSequentialGroup()
+        fundreqmanagePanLayout.setVerticalGroup(
+            fundreqmanagePanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(fundreqmanagePanLayout.createSequentialGroup()
                 .addGap(15, 15, 15)
-                .addComponent(deliveryDirLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(msgbLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(49, 49, 49)
-                .addGroup(manageFundingRequestsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(manageFundingRequestsPanelLayout.createSequentialGroup()
-                        .addGroup(manageFundingRequestsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(fundreqmanagePanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(fundreqmanagePanLayout.createSequentialGroup()
+                        .addGroup(fundreqmanagePanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel3)
                             .addComponent(jLabel7))
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(manageFundingRequestsPanelLayout.createSequentialGroup()
-                        .addGroup(manageFundingRequestsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(lblWelcome1)
-                            .addComponent(lblAssistantName1))
+                    .addGroup(fundreqmanagePanLayout.createSequentialGroup()
+                        .addGroup(fundreqmanagePanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(WelcmLabel)
+                            .addComponent(lblAssistantNm2))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(helpTextLabel1)
+                        .addComponent(msgaLabel)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 407, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addGroup(manageFundingRequestsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(menuItemName14)
-                            .addComponent(txtFundReqd, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btnRaiseFundingRequest))
+                        .addGroup(fundreqmanagePanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(msgcLabel)
+                            .addComponent(fReqTextF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(buttonFundR))
                         .addGap(459, 459, 459))))
         );
 
-        donationTabbedPane.addTab("Funding Requests", manageFundingRequestsPanel);
+        donateTabPn.addTab("Funding Requests", fundreqmanagePan);
 
-        fundingAcknowledgementPanel.setBackground(new java.awt.Color(255, 255, 255));
-        fundingAcknowledgementPanel.setForeground(new java.awt.Color(0, 102, 102));
+        trustackPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        trustackPanel1.setForeground(new java.awt.Color(0, 102, 102));
 
-        deliveryDirLabel11.setBackground(new java.awt.Color(255, 255, 255));
-        deliveryDirLabel11.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
-        deliveryDirLabel11.setForeground(new java.awt.Color(0, 102, 102));
-        deliveryDirLabel11.setText("Assistant Work Area");
+        deliDirLabel12.setBackground(new java.awt.Color(255, 255, 255));
+        deliDirLabel12.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+        deliDirLabel12.setForeground(new java.awt.Color(0, 102, 102));
+        deliDirLabel12.setText("Assistant Work Area");
 
         jScrollPane5.setForeground(new java.awt.Color(0, 102, 102));
 
@@ -323,69 +323,69 @@ public class AssistantWorkAreaPanel extends javax.swing.JPanel {
         tblAcknowledgement.setSelectionBackground(new java.awt.Color(0, 102, 102));
         jScrollPane5.setViewportView(tblAcknowledgement);
 
-        lblWelcome2.setBackground(new java.awt.Color(255, 255, 255));
-        lblWelcome2.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        lblWelcome2.setForeground(new java.awt.Color(0, 102, 102));
-        lblWelcome2.setText("Welcome ");
+        lblWelcm4.setBackground(new java.awt.Color(255, 255, 255));
+        lblWelcm4.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        lblWelcm4.setForeground(new java.awt.Color(0, 102, 102));
+        lblWelcm4.setText("Welcome ");
 
-        lblAssistantName2.setBackground(new java.awt.Color(255, 255, 255));
-        lblAssistantName2.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        lblAssistantName2.setForeground(new java.awt.Color(0, 102, 102));
-        lblAssistantName2.setText("value");
+        lblAsstantNm5.setBackground(new java.awt.Color(255, 255, 255));
+        lblAsstantNm5.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        lblAsstantNm5.setForeground(new java.awt.Color(0, 102, 102));
+        lblAsstantNm5.setText("value");
 
-        javax.swing.GroupLayout fundingAcknowledgementPanelLayout = new javax.swing.GroupLayout(fundingAcknowledgementPanel);
-        fundingAcknowledgementPanel.setLayout(fundingAcknowledgementPanelLayout);
-        fundingAcknowledgementPanelLayout.setHorizontalGroup(
-            fundingAcknowledgementPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(fundingAcknowledgementPanelLayout.createSequentialGroup()
+        javax.swing.GroupLayout trustackPanel1Layout = new javax.swing.GroupLayout(trustackPanel1);
+        trustackPanel1.setLayout(trustackPanel1Layout);
+        trustackPanel1Layout.setHorizontalGroup(
+            trustackPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(trustackPanel1Layout.createSequentialGroup()
                 .addGap(29, 29, 29)
-                .addGroup(fundingAcknowledgementPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(deliveryDirLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 488, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(fundingAcknowledgementPanelLayout.createSequentialGroup()
-                        .addComponent(lblWelcome2)
+                .addGroup(trustackPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(deliDirLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 488, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(trustackPanel1Layout.createSequentialGroup()
+                        .addComponent(lblWelcm4)
                         .addGap(18, 18, 18)
-                        .addComponent(lblAssistantName2, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(lblAsstantNm5, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 707, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(4156, Short.MAX_VALUE))
         );
-        fundingAcknowledgementPanelLayout.setVerticalGroup(
-            fundingAcknowledgementPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(fundingAcknowledgementPanelLayout.createSequentialGroup()
+        trustackPanel1Layout.setVerticalGroup(
+            trustackPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(trustackPanel1Layout.createSequentialGroup()
                 .addGap(32, 32, 32)
-                .addComponent(deliveryDirLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(deliDirLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(fundingAcknowledgementPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblWelcome2)
-                    .addComponent(lblAssistantName2))
+                .addGroup(trustackPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblWelcm4)
+                    .addComponent(lblAsstantNm5))
                 .addGap(18, 18, 18)
                 .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 401, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(550, Short.MAX_VALUE))
         );
 
-        donationTabbedPane.addTab(" Acknowledgments", fundingAcknowledgementPanel);
+        donateTabPn.addTab(" Acknowledgments", trustackPanel1);
 
-        manageAppointmentsPanel.setBackground(new java.awt.Color(255, 255, 255));
-        manageAppointmentsPanel.setForeground(new java.awt.Color(0, 102, 102));
+        mangApptmntPan5.setBackground(new java.awt.Color(255, 255, 255));
+        mangApptmntPan5.setForeground(new java.awt.Color(0, 102, 102));
 
-        helpTextLabel.setBackground(new java.awt.Color(255, 255, 255));
-        helpTextLabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        helpTextLabel.setForeground(new java.awt.Color(0, 102, 102));
-        helpTextLabel.setText(" ");
+        hlpLabel7.setBackground(new java.awt.Color(255, 255, 255));
+        hlpLabel7.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        hlpLabel7.setForeground(new java.awt.Color(0, 102, 102));
+        hlpLabel7.setText(" ");
 
-        deliveryDirLabel7.setBackground(new java.awt.Color(255, 255, 255));
-        deliveryDirLabel7.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
-        deliveryDirLabel7.setForeground(new java.awt.Color(0, 102, 102));
-        deliveryDirLabel7.setText("Assistant Work Area");
+        delvryDirLabel9.setBackground(new java.awt.Color(255, 255, 255));
+        delvryDirLabel9.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+        delvryDirLabel9.setForeground(new java.awt.Color(0, 102, 102));
+        delvryDirLabel9.setText("Assistant Work Area");
 
-        btnAccept.setBackground(new java.awt.Color(0, 102, 102));
-        btnAccept.setFont(new java.awt.Font("Tahoma", 1, 19)); // NOI18N
-        btnAccept.setForeground(new java.awt.Color(255, 255, 255));
-        btnAccept.setText("Accept");
-        btnAccept.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btnAccept.setBorderPainted(false);
-        btnAccept.addActionListener(new java.awt.event.ActionListener() {
+        buttonallow.setBackground(new java.awt.Color(0, 102, 102));
+        buttonallow.setFont(new java.awt.Font("Tahoma", 1, 19)); // NOI18N
+        buttonallow.setForeground(new java.awt.Color(255, 255, 255));
+        buttonallow.setText("Accept");
+        buttonallow.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        buttonallow.setBorderPainted(false);
+        buttonallow.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnAcceptActionPerformed(evt);
+                buttonallowActionPerformed(evt);
             }
         });
 
@@ -413,253 +413,253 @@ public class AssistantWorkAreaPanel extends javax.swing.JPanel {
         tblAppointment.setSelectionBackground(new java.awt.Color(0, 102, 102));
         jScrollPane1.setViewportView(tblAppointment);
 
-        btnReject.setBackground(new java.awt.Color(0, 102, 102));
-        btnReject.setFont(new java.awt.Font("Tahoma", 1, 19)); // NOI18N
-        btnReject.setForeground(new java.awt.Color(255, 255, 255));
-        btnReject.setText("Reject");
-        btnReject.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btnReject.setBorderPainted(false);
-        btnReject.addActionListener(new java.awt.event.ActionListener() {
+        buttonRejct4.setBackground(new java.awt.Color(0, 102, 102));
+        buttonRejct4.setFont(new java.awt.Font("Tahoma", 1, 19)); // NOI18N
+        buttonRejct4.setForeground(new java.awt.Color(255, 255, 255));
+        buttonRejct4.setText("Reject");
+        buttonRejct4.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        buttonRejct4.setBorderPainted(false);
+        buttonRejct4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnRejectActionPerformed(evt);
+                buttonRejct4ActionPerformed(evt);
             }
         });
 
-        lblWelcome3.setBackground(new java.awt.Color(255, 255, 255));
-        lblWelcome3.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        lblWelcome3.setForeground(new java.awt.Color(0, 102, 102));
-        lblWelcome3.setText("Welcome ");
+        welcmLabel6.setBackground(new java.awt.Color(255, 255, 255));
+        welcmLabel6.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        welcmLabel6.setForeground(new java.awt.Color(0, 102, 102));
+        welcmLabel6.setText("Welcome ");
 
-        lblAssistantName3.setBackground(new java.awt.Color(255, 255, 255));
-        lblAssistantName3.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        lblAssistantName3.setForeground(new java.awt.Color(0, 102, 102));
-        lblAssistantName3.setText("value");
+        assistntName9.setBackground(new java.awt.Color(255, 255, 255));
+        assistntName9.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        assistntName9.setForeground(new java.awt.Color(0, 102, 102));
+        assistntName9.setText("value");
 
         jLabel5.setBackground(new java.awt.Color(255, 255, 255));
 
-        javax.swing.GroupLayout manageAppointmentsPanelLayout = new javax.swing.GroupLayout(manageAppointmentsPanel);
-        manageAppointmentsPanel.setLayout(manageAppointmentsPanelLayout);
-        manageAppointmentsPanelLayout.setHorizontalGroup(
-            manageAppointmentsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(manageAppointmentsPanelLayout.createSequentialGroup()
-                .addGroup(manageAppointmentsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(manageAppointmentsPanelLayout.createSequentialGroup()
+        javax.swing.GroupLayout mangApptmntPan5Layout = new javax.swing.GroupLayout(mangApptmntPan5);
+        mangApptmntPan5.setLayout(mangApptmntPan5Layout);
+        mangApptmntPan5Layout.setHorizontalGroup(
+            mangApptmntPan5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(mangApptmntPan5Layout.createSequentialGroup()
+                .addGroup(mangApptmntPan5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(mangApptmntPan5Layout.createSequentialGroup()
                         .addGap(59, 59, 59)
-                        .addComponent(lblWelcome3)
+                        .addComponent(welcmLabel6)
                         .addGap(18, 18, 18)
-                        .addComponent(lblAssistantName3, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(manageAppointmentsPanelLayout.createSequentialGroup()
+                        .addComponent(assistntName9, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(mangApptmntPan5Layout.createSequentialGroup()
                         .addGap(39, 39, 39)
-                        .addComponent(deliveryDirLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 651, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(manageAppointmentsPanelLayout.createSequentialGroup()
+                        .addComponent(delvryDirLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 651, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(mangApptmntPan5Layout.createSequentialGroup()
                         .addGap(19, 19, 19)
-                        .addGroup(manageAppointmentsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(manageAppointmentsPanelLayout.createSequentialGroup()
-                                .addComponent(btnAccept, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(mangApptmntPan5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(mangApptmntPan5Layout.createSequentialGroup()
+                                .addComponent(buttonallow, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(47, 47, 47)
-                                .addComponent(btnReject, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(manageAppointmentsPanelLayout.createSequentialGroup()
+                                .addComponent(buttonRejct4, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(mangApptmntPan5Layout.createSequentialGroup()
                                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 765, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(manageAppointmentsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(helpTextLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 798, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(manageAppointmentsPanelLayout.createSequentialGroup()
+                                .addGroup(mangApptmntPan5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(hlpLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 798, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(mangApptmntPan5Layout.createSequentialGroup()
                                         .addGap(84, 84, 84)
                                         .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 505, javax.swing.GroupLayout.PREFERRED_SIZE)))))))
                 .addContainerGap(3304, Short.MAX_VALUE))
         );
-        manageAppointmentsPanelLayout.setVerticalGroup(
-            manageAppointmentsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(manageAppointmentsPanelLayout.createSequentialGroup()
+        mangApptmntPan5Layout.setVerticalGroup(
+            mangApptmntPan5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(mangApptmntPan5Layout.createSequentialGroup()
                 .addGap(21, 21, 21)
-                .addComponent(deliveryDirLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(delvryDirLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(41, 41, 41)
-                .addGroup(manageAppointmentsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblWelcome3)
-                    .addComponent(lblAssistantName3))
-                .addGroup(manageAppointmentsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(manageAppointmentsPanelLayout.createSequentialGroup()
+                .addGroup(mangApptmntPan5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(welcmLabel6)
+                    .addComponent(assistntName9))
+                .addGroup(mangApptmntPan5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(mangApptmntPan5Layout.createSequentialGroup()
                         .addGap(51, 51, 51)
-                        .addComponent(helpTextLabel)
+                        .addComponent(hlpLabel7)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 304, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(manageAppointmentsPanelLayout.createSequentialGroup()
+                    .addGroup(mangApptmntPan5Layout.createSequentialGroup()
                         .addGap(18, 18, 18)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 385, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(48, 48, 48)
-                .addGroup(manageAppointmentsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnAccept)
-                    .addComponent(btnReject))
+                .addGroup(mangApptmntPan5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(buttonallow)
+                    .addComponent(buttonRejct4))
                 .addContainerGap(473, Short.MAX_VALUE))
         );
 
-        donationTabbedPane.addTab("Manage Appointments", manageAppointmentsPanel);
+        donateTabPn.addTab("Manage Appointments", mangApptmntPan5);
 
-        manageDocSlotsPanel.setBackground(new java.awt.Color(255, 255, 255));
-        manageDocSlotsPanel.setForeground(new java.awt.Color(0, 102, 102));
-        manageDocSlotsPanel.setFont(new java.awt.Font("Segoe UI", 1, 19)); // NOI18N
-        manageDocSlotsPanel.setMaximumSize(new java.awt.Dimension(1000, 500));
+        mngDoctimePan6.setBackground(new java.awt.Color(255, 255, 255));
+        mngDoctimePan6.setForeground(new java.awt.Color(0, 102, 102));
+        mngDoctimePan6.setFont(new java.awt.Font("Segoe UI", 1, 19)); // NOI18N
+        mngDoctimePan6.setMaximumSize(new java.awt.Dimension(1000, 500));
 
-        menuItemName6.setBackground(new java.awt.Color(255, 255, 255));
-        menuItemName6.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        menuItemName6.setForeground(new java.awt.Color(0, 102, 102));
-        menuItemName6.setText("Doctor Name:");
+        menuListName9.setBackground(new java.awt.Color(255, 255, 255));
+        menuListName9.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        menuListName9.setForeground(new java.awt.Color(0, 102, 102));
+        menuListName9.setText("Doctor Name:");
 
-        deliveryDirLabel5.setBackground(new java.awt.Color(255, 255, 255));
-        deliveryDirLabel5.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
-        deliveryDirLabel5.setForeground(new java.awt.Color(0, 102, 102));
-        deliveryDirLabel5.setText("Assistant Work Area");
+        dlvryDirLabel9.setBackground(new java.awt.Color(255, 255, 255));
+        dlvryDirLabel9.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+        dlvryDirLabel9.setForeground(new java.awt.Color(0, 102, 102));
+        dlvryDirLabel9.setText("Assistant Work Area");
 
-        btnAddSlot.setBackground(new java.awt.Color(0, 102, 102));
-        btnAddSlot.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
-        btnAddSlot.setForeground(new java.awt.Color(255, 255, 255));
-        btnAddSlot.setText("Add Slot Available");
-        btnAddSlot.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btnAddSlot.setBorderPainted(false);
-        btnAddSlot.addActionListener(new java.awt.event.ActionListener() {
+        buttontnAddTime9.setBackground(new java.awt.Color(0, 102, 102));
+        buttontnAddTime9.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
+        buttontnAddTime9.setForeground(new java.awt.Color(255, 255, 255));
+        buttontnAddTime9.setText("Add Slot Available");
+        buttontnAddTime9.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        buttontnAddTime9.setBorderPainted(false);
+        buttontnAddTime9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnAddSlotActionPerformed(evt);
+                buttontnAddTime9ActionPerformed(evt);
             }
         });
 
-        comboManageSlots.setBackground(new java.awt.Color(255, 255, 255));
-        comboManageSlots.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        comboManageSlots.setForeground(new java.awt.Color(0, 102, 102));
-        comboManageSlots.setMaximumRowCount(12);
+        comboManageTime9.setBackground(new java.awt.Color(255, 255, 255));
+        comboManageTime9.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        comboManageTime9.setForeground(new java.awt.Color(0, 102, 102));
+        comboManageTime9.setMaximumRowCount(12);
 
-        menuItemName12.setBackground(new java.awt.Color(255, 255, 255));
-        menuItemName12.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        menuItemName12.setForeground(new java.awt.Color(0, 102, 102));
-        menuItemName12.setText("Date:");
+        menuListName19.setBackground(new java.awt.Color(255, 255, 255));
+        menuListName19.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        menuListName19.setForeground(new java.awt.Color(0, 102, 102));
+        menuListName19.setText("Date:");
 
-        comboDay.setBackground(new java.awt.Color(255, 255, 255));
-        comboDay.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        comboDay.setForeground(new java.awt.Color(0, 102, 102));
-        comboDay.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "MM", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12" }));
+        combDate9.setBackground(new java.awt.Color(255, 255, 255));
+        combDate9.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        combDate9.setForeground(new java.awt.Color(0, 102, 102));
+        combDate9.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "MM", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12" }));
 
-        comboMonth.setBackground(new java.awt.Color(255, 255, 255));
-        comboMonth.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        comboMonth.setForeground(new java.awt.Color(0, 102, 102));
-        comboMonth.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "DD", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31" }));
-        comboMonth.addActionListener(new java.awt.event.ActionListener() {
+        cmbMonth9.setBackground(new java.awt.Color(255, 255, 255));
+        cmbMonth9.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        cmbMonth9.setForeground(new java.awt.Color(0, 102, 102));
+        cmbMonth9.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "DD", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31" }));
+        cmbMonth9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                comboMonthActionPerformed(evt);
+                cmbMonth9ActionPerformed(evt);
             }
         });
 
-        comboYear.setBackground(new java.awt.Color(255, 255, 255));
-        comboYear.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        comboYear.setForeground(new java.awt.Color(0, 102, 102));
-        comboYear.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "YYYY", "2021", "2022", "2023", "2024", "2025" }));
-        comboYear.addActionListener(new java.awt.event.ActionListener() {
+        comboYr9.setBackground(new java.awt.Color(255, 255, 255));
+        comboYr9.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        comboYr9.setForeground(new java.awt.Color(0, 102, 102));
+        comboYr9.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "YYYY", "2021", "2022", "2023", "2024", "2025" }));
+        comboYr9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                comboYearActionPerformed(evt);
+                comboYr9ActionPerformed(evt);
             }
         });
 
-        lblWelcome.setBackground(new java.awt.Color(255, 255, 255));
-        lblWelcome.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        lblWelcome.setForeground(new java.awt.Color(0, 102, 102));
-        lblWelcome.setText("Welcome ");
+        lblWelcm9.setBackground(new java.awt.Color(255, 255, 255));
+        lblWelcm9.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        lblWelcm9.setForeground(new java.awt.Color(0, 102, 102));
+        lblWelcm9.setText("Welcome ");
 
-        lblAssistantName.setBackground(new java.awt.Color(255, 255, 255));
-        lblAssistantName.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        lblAssistantName.setForeground(new java.awt.Color(0, 102, 102));
-        lblAssistantName.setText("value");
+        assistantNmLabel9.setBackground(new java.awt.Color(255, 255, 255));
+        assistantNmLabel9.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        assistantNmLabel9.setForeground(new java.awt.Color(0, 102, 102));
+        assistantNmLabel9.setText("value");
 
-        menuItemName13.setBackground(new java.awt.Color(255, 255, 255));
-        menuItemName13.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        menuItemName13.setForeground(new java.awt.Color(0, 102, 102));
-        menuItemName13.setText("Time: ");
+        menuItemName26.setBackground(new java.awt.Color(255, 255, 255));
+        menuItemName26.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        menuItemName26.setForeground(new java.awt.Color(0, 102, 102));
+        menuItemName26.setText("Time: ");
 
-        comboMinute.setBackground(new java.awt.Color(255, 255, 255));
-        comboMinute.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        comboMinute.setForeground(new java.awt.Color(0, 102, 102));
-        comboMinute.setModel(minuteModel);
-        comboMinute.addActionListener(new java.awt.event.ActionListener() {
+        comboMin9.setBackground(new java.awt.Color(255, 255, 255));
+        comboMin9.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        comboMin9.setForeground(new java.awt.Color(0, 102, 102));
+        comboMin9.setModel(minuteModel);
+        comboMin9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                comboMinuteActionPerformed(evt);
+                comboMin9ActionPerformed(evt);
             }
         });
 
-        comboHour.setBackground(new java.awt.Color(255, 255, 255));
-        comboHour.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        comboHour.setForeground(new java.awt.Color(0, 102, 102));
-        comboHour.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "HH", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23" }));
-        comboHour.addActionListener(new java.awt.event.ActionListener() {
+        comboHr9.setBackground(new java.awt.Color(255, 255, 255));
+        comboHr9.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        comboHr9.setForeground(new java.awt.Color(0, 102, 102));
+        comboHr9.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "HH", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23" }));
+        comboHr9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                comboHourActionPerformed(evt);
+                comboHr9ActionPerformed(evt);
             }
         });
 
-        javax.swing.GroupLayout manageDocSlotsPanelLayout = new javax.swing.GroupLayout(manageDocSlotsPanel);
-        manageDocSlotsPanel.setLayout(manageDocSlotsPanelLayout);
-        manageDocSlotsPanelLayout.setHorizontalGroup(
-            manageDocSlotsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(manageDocSlotsPanelLayout.createSequentialGroup()
-                .addGroup(manageDocSlotsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(manageDocSlotsPanelLayout.createSequentialGroup()
+        javax.swing.GroupLayout mngDoctimePan6Layout = new javax.swing.GroupLayout(mngDoctimePan6);
+        mngDoctimePan6.setLayout(mngDoctimePan6Layout);
+        mngDoctimePan6Layout.setHorizontalGroup(
+            mngDoctimePan6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(mngDoctimePan6Layout.createSequentialGroup()
+                .addGroup(mngDoctimePan6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(mngDoctimePan6Layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(lblWelcome)
+                        .addComponent(lblWelcm9)
                         .addGap(18, 18, 18)
-                        .addComponent(lblAssistantName, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(manageDocSlotsPanelLayout.createSequentialGroup()
+                        .addComponent(assistantNmLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(mngDoctimePan6Layout.createSequentialGroup()
                         .addGap(15, 15, 15)
-                        .addGroup(manageDocSlotsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(menuItemName6, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(menuItemName12, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(menuItemName13, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(mngDoctimePan6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(menuListName9, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(menuListName19, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(menuItemName26, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(manageDocSlotsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(comboManageSlots, javax.swing.GroupLayout.PREFERRED_SIZE, 380, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(manageDocSlotsPanelLayout.createSequentialGroup()
-                                .addGroup(manageDocSlotsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(comboMonth, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(comboHour, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(mngDoctimePan6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(comboManageTime9, javax.swing.GroupLayout.PREFERRED_SIZE, 380, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(mngDoctimePan6Layout.createSequentialGroup()
+                                .addGroup(mngDoctimePan6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(cmbMonth9, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(comboHr9, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(32, 32, 32)
-                                .addGroup(manageDocSlotsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(comboMinute, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(manageDocSlotsPanelLayout.createSequentialGroup()
-                                        .addComponent(comboDay, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGroup(mngDoctimePan6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(comboMin9, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(mngDoctimePan6Layout.createSequentialGroup()
+                                        .addComponent(combDate9, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(18, 18, 18)
-                                        .addComponent(comboYear, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                            .addComponent(btnAddSlot, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(manageDocSlotsPanelLayout.createSequentialGroup()
+                                        .addComponent(comboYr9, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                            .addComponent(buttontnAddTime9, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(mngDoctimePan6Layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(deliveryDirLabel5)))
+                        .addComponent(dlvryDirLabel9)))
                 .addContainerGap(4296, Short.MAX_VALUE))
         );
-        manageDocSlotsPanelLayout.setVerticalGroup(
-            manageDocSlotsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(manageDocSlotsPanelLayout.createSequentialGroup()
+        mngDoctimePan6Layout.setVerticalGroup(
+            mngDoctimePan6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(mngDoctimePan6Layout.createSequentialGroup()
                 .addGap(21, 21, 21)
-                .addComponent(deliveryDirLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(dlvryDirLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(37, 37, 37)
-                .addGroup(manageDocSlotsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblWelcome)
-                    .addComponent(lblAssistantName))
+                .addGroup(mngDoctimePan6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblWelcm9)
+                    .addComponent(assistantNmLabel9))
                 .addGap(60, 60, 60)
-                .addGroup(manageDocSlotsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(menuItemName6)
-                    .addComponent(comboManageSlots, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(mngDoctimePan6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(menuListName9)
+                    .addComponent(comboManageTime9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(33, 33, 33)
-                .addGroup(manageDocSlotsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(menuItemName12)
-                    .addComponent(comboDay, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(comboYear, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(comboMonth, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(mngDoctimePan6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(menuListName19)
+                    .addComponent(combDate9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(comboYr9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(cmbMonth9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(45, 45, 45)
-                .addGroup(manageDocSlotsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(menuItemName13)
-                    .addGroup(manageDocSlotsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(comboMinute, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(comboHour, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGroup(mngDoctimePan6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(menuItemName26)
+                    .addGroup(mngDoctimePan6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(comboMin9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(comboHr9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(36, 36, 36)
-                .addComponent(btnAddSlot)
+                .addComponent(buttontnAddTime9)
                 .addContainerGap(671, Short.MAX_VALUE))
         );
 
-        donationTabbedPane.addTab("Manage Doctor Slots", manageDocSlotsPanel);
+        donateTabPn.addTab("Manage Doctor Slots", mngDoctimePan6);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -667,14 +667,14 @@ public class AssistantWorkAreaPanel extends javax.swing.JPanel {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(donationTabbedPane, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(donateTabPn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(donationTabbedPane, javax.swing.GroupLayout.PREFERRED_SIZE, 1121, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(donateTabPn, javax.swing.GroupLayout.PREFERRED_SIZE, 1121, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -699,15 +699,15 @@ public class AssistantWorkAreaPanel extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnAddSlotActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddSlotActionPerformed
+    private void buttontnAddTime9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttontnAddTime9ActionPerformed
         // TODO add your handling code here:
         String day,month,year, hour, minute;
         
-           day = (String)comboDay.getSelectedItem();
-           month = (String)comboMonth.getSelectedItem();
-           year = (String)comboYear.getSelectedItem();
-           hour = (String) comboHour.getSelectedItem();
-           minute =  (String) comboMinute.getSelectedItem();
+           day = (String)combDate9.getSelectedItem();
+           month = (String)cmbMonth9.getSelectedItem();
+           year = (String)comboYr9.getSelectedItem();
+           hour = (String) comboHr9.getSelectedItem();
+           minute =  (String) comboMin9.getSelectedItem();
            int date=1,monthValue=1,yearValue=1990, hourValue=0, minuteValue =0;
 
            try {
@@ -722,7 +722,7 @@ public class AssistantWorkAreaPanel extends javax.swing.JPanel {
            } catch (Exception e) {
 
                JOptionPane.showMessageDialog(null,
-                       "Incorrect values for date, month, year", "Error", JOptionPane.INFORMATION_MESSAGE);
+                       "Invalid entry for day", "Error", JOptionPane.INFORMATION_MESSAGE);
 
                return;
            }
@@ -742,7 +742,7 @@ public class AssistantWorkAreaPanel extends javax.swing.JPanel {
                }
            }
            Employee e = new Employee();
-           e = (Employee)comboManageSlots.getSelectedItem();
+           e = (Employee)comboManageTime9.getSelectedItem();
            
            assistantAddSlot.setDoctor(e.getEmployeeName());
            assistantAddSlot.setSender(ua);
@@ -753,10 +753,10 @@ public class AssistantWorkAreaPanel extends javax.swing.JPanel {
            ecosystem.getPatientDir().getWorkQueue().getWorkRequestList().add(assistantAddSlot);
            ua.getWorkQueue().getWorkRequestList().add(assistantAddSlot);
             
-           JOptionPane.showMessageDialog(null, "Doctor's  available slot added successfully!!", "Success", JOptionPane.INFORMATION_MESSAGE);
-    }//GEN-LAST:event_btnAddSlotActionPerformed
+           JOptionPane.showMessageDialog(null, "Successfully added doctor's slot!!", "Success", JOptionPane.INFORMATION_MESSAGE);
+    }//GEN-LAST:event_buttontnAddTime9ActionPerformed
 
-    private void btnAcceptActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAcceptActionPerformed
+    private void buttonallowActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonallowActionPerformed
         // TODO add your handling code here:
        int selectedRow = tblAppointment.getSelectedRow();
             if(selectedRow>-1)
@@ -766,13 +766,13 @@ public class AssistantWorkAreaPanel extends javax.swing.JPanel {
                 if(patientBooking.getStatus().equals("Approved"))
                 {
 
-                    JOptionPane.showMessageDialog(null,"Patient appointment already approved!","Warning",JOptionPane.WARNING_MESSAGE);
+                    JOptionPane.showMessageDialog(null,"Appointment for this patient is already accepted!","Warning",JOptionPane.WARNING_MESSAGE);
                 }
                 else if(patientBooking.getStatus().equals("Rejected"))
                 {
 
 
-                    JOptionPane.showMessageDialog(null,"Patient appointment already rejected!","Warning",JOptionPane.WARNING_MESSAGE);
+                    JOptionPane.showMessageDialog(null,"Appointment for this patient is already denied!","Warning",JOptionPane.WARNING_MESSAGE);
                 }
                 
                 else
@@ -785,20 +785,20 @@ public class AssistantWorkAreaPanel extends javax.swing.JPanel {
                     appointment.setHospitalName(patientBooking.getHospitalName());
                     appointment.setPatient(patientBooking.getPatient());
                     appointment.setDate(new Date());
-                    String message = "Dear " + patientBooking.getPatient().getPatientName() + ",\n\nYour appointment has been confirmed.  " + " " + "\n\nThanks,\nTeam MediStop";
+                    String message = "Dear " + patientBooking.getPatient().getPatientName() + ",\n\nThis is appointment confirmation message from HealthBuddy.  " + " " + "\n\nThanks,\nHealthBuddy Team";
 
                     SMSUtility.sendSMS(patientBooking.getPatient().getContactNo(), message);
-                    JOptionPane.showMessageDialog(null, "Patient Appointment Approved!!", "Success", JOptionPane.INFORMATION_MESSAGE);
+                    JOptionPane.showMessageDialog(null, "Approved Patient Appointment!!", "Success", JOptionPane.INFORMATION_MESSAGE);
                 }
             }
             
             else
             {
-                JOptionPane.showMessageDialog(null, "Please select a patient record first!","Warning", JOptionPane.WARNING_MESSAGE);
-    }//GEN-LAST:event_btnAcceptActionPerformed
+                JOptionPane.showMessageDialog(null, "Kindly select patient from the record first!","Warning", JOptionPane.WARNING_MESSAGE);
+    }//GEN-LAST:event_buttonallowActionPerformed
     }
     
-    private void btnRaiseFundingRequestActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRaiseFundingRequestActionPerformed
+    private void buttonFundRActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonFundRActionPerformed
         // TODO add your handling code here:
          try{
          int selectedRow = tblFundingRequests.getSelectedRow();
@@ -809,7 +809,7 @@ public class AssistantWorkAreaPanel extends javax.swing.JPanel {
                 HealthcareTrustRequestWQ fundsRequest = new HealthcareTrustRequestWQ();
                 
                 fundsRequest.setSender(ua);
-                fundsRequest.setAmount(Float.parseFloat(txtFundReqd.getText()));
+                fundsRequest.setAmount(Float.parseFloat(fReqTextF.getText()));
                 fundsRequest.setHospitalName(enterprise.getName());
                 fundsRequest.setMessage("Sponsorship Required");
                 fundsRequest.setPatientName(assistantAccounting.getApd().getPatient().getPatientName());
@@ -828,25 +828,25 @@ public class AssistantWorkAreaPanel extends javax.swing.JPanel {
                         break;
                 }
                 }
-                txtFundReqd.setText("");
+                fReqTextF.setText("");
             }
         
             else
             {
-                JOptionPane.showMessageDialog(null, "Please select a patient to proceed!","Warning", JOptionPane.WARNING_MESSAGE);
+                JOptionPane.showMessageDialog(null, "Kindly select a patient record to move forward!","Warning", JOptionPane.WARNING_MESSAGE);
                     }
          }
             catch(Exception e)
         {
-            JOptionPane.showMessageDialog(null,"Please enter proper values!","Error",JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(null,"Kindly enter appropriate information!","Error",JOptionPane.ERROR_MESSAGE);
         }
-    }//GEN-LAST:event_btnRaiseFundingRequestActionPerformed
+    }//GEN-LAST:event_buttonFundRActionPerformed
 
-    private void comboYearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comboYearActionPerformed
+    private void comboYr9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comboYr9ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_comboYearActionPerformed
+    }//GEN-LAST:event_comboYr9ActionPerformed
 
-    private void btnRejectActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRejectActionPerformed
+    private void buttonRejct4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonRejct4ActionPerformed
         // TODO add your handling code here:
          int selectedRow = tblAppointment.getSelectedRow();
          if(selectedRow>-1)
@@ -855,11 +855,11 @@ public class AssistantWorkAreaPanel extends javax.swing.JPanel {
                 
                 if(patientBooking.getStatus().equals("Approved"))
                 {
-                    JOptionPane.showMessageDialog(null,"Patient appointment already approved!","Warning",JOptionPane.WARNING_MESSAGE);
+                    JOptionPane.showMessageDialog(null,"Appointment for this patient is already accepted!","Warning",JOptionPane.WARNING_MESSAGE);
                 }
                 else if(patientBooking.getStatus().equals("Rejected"))
                 {
-                    JOptionPane.showMessageDialog(null,"Patient appointment already rejected!","Warning",JOptionPane.WARNING_MESSAGE);
+                    JOptionPane.showMessageDialog(null,"Appointment for this patient is already denied!","Warning",JOptionPane.WARNING_MESSAGE);
                 }
                 else
                 {
@@ -867,7 +867,7 @@ public class AssistantWorkAreaPanel extends javax.swing.JPanel {
                     populateAppointmentTable();
 
                     JOptionPane.showMessageDialog(null, "Patient Appointment Rejected!!", "Error", JOptionPane.INFORMATION_MESSAGE);
-                    String message = "Dear " + patientBooking.getPatient().getPatientName() + ",\n\nYour appointment has been rejected due to change in schedule. \n Please rebook your appointment.  " + " " + "\n\nThanks,\nTeam MediStop";
+                    String message = "Dear " + patientBooking.getPatient().getPatientName() + ",\n\nDue to change in schedule your appointment is denied. \n Kindly reconsider your appointment.  " + " " + "\n\nThanks,\nTeam MediStop";
 
                     SMSUtility.sendSMS(patientBooking.getPatient().getContactNo(), message);
                 }
@@ -875,42 +875,44 @@ public class AssistantWorkAreaPanel extends javax.swing.JPanel {
             }
             else
             {
-                 JOptionPane.showMessageDialog(null, "Please Select any Patient appointment to proceed","Warning", JOptionPane.WARNING_MESSAGE);
+                 JOptionPane.showMessageDialog(null, "Kindly Select a Patient appointment record to move forward","Warning", JOptionPane.WARNING_MESSAGE);
             }
-    }//GEN-LAST:event_btnRejectActionPerformed
+    }//GEN-LAST:event_buttonRejct4ActionPerformed
 
-    private void comboMonthActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comboMonthActionPerformed
+    private void cmbMonth9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbMonth9ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_comboMonthActionPerformed
+    }//GEN-LAST:event_cmbMonth9ActionPerformed
 
-    private void comboMinuteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comboMinuteActionPerformed
+    private void comboMin9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comboMin9ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_comboMinuteActionPerformed
+    }//GEN-LAST:event_comboMin9ActionPerformed
 
-    private void comboHourActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comboHourActionPerformed
+    private void comboHr9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comboHr9ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_comboHourActionPerformed
+    }//GEN-LAST:event_comboHr9ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnAccept;
-    private javax.swing.JButton btnAddSlot;
-    private javax.swing.JButton btnRaiseFundingRequest;
-    private javax.swing.JButton btnReject;
-    private javax.swing.JComboBox comboDay;
-    private javax.swing.JComboBox comboHour;
-    private javax.swing.JComboBox comboManageSlots;
-    private javax.swing.JComboBox comboMinute;
-    private javax.swing.JComboBox comboMonth;
-    private javax.swing.JComboBox comboYear;
-    private javax.swing.JLabel deliveryDirLabel11;
-    private javax.swing.JLabel deliveryDirLabel5;
-    private javax.swing.JLabel deliveryDirLabel7;
-    private javax.swing.JLabel deliveryDirLabel8;
-    private javax.swing.JTabbedPane donationTabbedPane;
-    private javax.swing.JPanel fundingAcknowledgementPanel;
-    private javax.swing.JLabel helpTextLabel;
-    private javax.swing.JLabel helpTextLabel1;
+    private javax.swing.JLabel WelcmLabel;
+    private javax.swing.JLabel assistantNmLabel9;
+    private javax.swing.JLabel assistntName9;
+    private javax.swing.JButton buttonFundR;
+    private javax.swing.JButton buttonRejct4;
+    private javax.swing.JButton buttonallow;
+    private javax.swing.JButton buttontnAddTime9;
+    private javax.swing.JComboBox cmbMonth9;
+    private javax.swing.JComboBox combDate9;
+    private javax.swing.JComboBox comboHr9;
+    private javax.swing.JComboBox comboManageTime9;
+    private javax.swing.JComboBox comboMin9;
+    private javax.swing.JComboBox comboYr9;
+    private javax.swing.JLabel deliDirLabel12;
+    private javax.swing.JLabel delvryDirLabel9;
+    private javax.swing.JLabel dlvryDirLabel9;
+    private javax.swing.JTabbedPane donateTabPn;
+    private javax.swing.JTextField fReqTextF;
+    private javax.swing.JPanel fundreqmanagePan;
+    private javax.swing.JLabel hlpLabel7;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel7;
@@ -918,25 +920,23 @@ public class AssistantWorkAreaPanel extends javax.swing.JPanel {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JScrollPane jScrollPane5;
-    private javax.swing.JLabel lblAssistantName;
-    private javax.swing.JLabel lblAssistantName1;
-    private javax.swing.JLabel lblAssistantName2;
-    private javax.swing.JLabel lblAssistantName3;
-    private javax.swing.JLabel lblWelcome;
-    private javax.swing.JLabel lblWelcome1;
-    private javax.swing.JLabel lblWelcome2;
-    private javax.swing.JLabel lblWelcome3;
-    private javax.swing.JPanel manageAppointmentsPanel;
-    private javax.swing.JPanel manageDocSlotsPanel;
-    private javax.swing.JPanel manageFundingRequestsPanel;
-    private javax.swing.JLabel menuItemName12;
-    private javax.swing.JLabel menuItemName13;
-    private javax.swing.JLabel menuItemName14;
-    private javax.swing.JLabel menuItemName6;
+    private javax.swing.JLabel lblAssistantNm2;
+    private javax.swing.JLabel lblAsstantNm5;
+    private javax.swing.JLabel lblWelcm4;
+    private javax.swing.JLabel lblWelcm9;
+    private javax.swing.JPanel mangApptmntPan5;
+    private javax.swing.JLabel menuItemName26;
+    private javax.swing.JLabel menuListName19;
+    private javax.swing.JLabel menuListName9;
+    private javax.swing.JPanel mngDoctimePan6;
+    private javax.swing.JLabel msgaLabel;
+    private javax.swing.JLabel msgbLabel;
+    private javax.swing.JLabel msgcLabel;
     private javax.swing.JTable tblAcknowledgement;
     private javax.swing.JTable tblAppointment;
     private javax.swing.JTable tblFundingRequests;
-    private javax.swing.JTextField txtFundReqd;
+    private javax.swing.JPanel trustackPanel1;
+    private javax.swing.JLabel welcmLabel6;
     // End of variables declaration//GEN-END:variables
 
     
@@ -1008,13 +1008,13 @@ public void populateFundingRequestsTable(){
 }
 
 public void populateComboDoctor(){
-    comboManageSlots.removeAllItems();
+    comboManageTime9.removeAllItems();
         for(Organisation o : enterprise.getOrganizationCatalog().getOrganizationList()){
             if(o.getName().equals("Doctor Organisation"))
             {
                 for(Employee e: o.getEmployeeCatalog().getEmployeeCatalog())
                 {
-                    comboManageSlots.addItem(e);
+                    comboManageTime9.addItem(e);
                 }
             }
         }
