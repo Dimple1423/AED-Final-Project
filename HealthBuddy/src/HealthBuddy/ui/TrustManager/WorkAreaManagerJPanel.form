@@ -247,5 +247,15 @@
         </Constraint>
       </Constraints>
     </Component>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="ImageIcon imageIcon =  new ImageIcon(new ImageIcon(getClass().getResource(&quot;/HealthBuddy/ui/images/trustmanager.gif&quot;)).getImage().getScaledInstance(700, 500, Image.SCALE_DEFAULT));&#xa;&#xa;jLabel1.setIcon(imageIcon);"/>
+      </AuxValues>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="500" y="140" width="680" height="470"/>
+        </Constraint>
+      </Constraints>
+    </Component>
   </SubComponents>
 </Form>
