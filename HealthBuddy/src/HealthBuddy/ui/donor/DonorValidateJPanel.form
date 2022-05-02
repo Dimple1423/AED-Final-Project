@@ -25,34 +25,34 @@
               <EmptySpace min="34" pref="34" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <Component id="codeL" min="-2" pref="195" max="-2" attributes="0"/>
+                      <Component id="codeL9" min="-2" pref="195" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="64" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="codeTF" min="-2" pref="398" max="-2" attributes="0"/>
-                          <Component id="helperLabel" min="-2" pref="814" max="-2" attributes="0"/>
+                          <Component id="codeTF9" min="-2" pref="398" max="-2" attributes="0"/>
+                          <Component id="helperLabel9" min="-2" pref="814" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
                               <Group type="103" groupAlignment="1" attributes="0">
-                                  <Component id="setAccL" max="32767" attributes="0"/>
+                                  <Component id="setAccL9" max="32767" attributes="0"/>
                                   <Group type="102" attributes="0">
-                                      <Component id="userNameLabel" min="-2" pref="195" max="-2" attributes="0"/>
+                                      <Component id="userNameLabel9" min="-2" pref="195" max="-2" attributes="0"/>
                                       <EmptySpace pref="64" max="32767" attributes="0"/>
-                                      <Component id="usernameTF" min="-2" pref="390" max="-2" attributes="0"/>
+                                      <Component id="usernameTF9" min="-2" pref="390" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                               <EmptySpace min="-2" pref="123" max="-2" attributes="0"/>
-                              <Component id="registerBtn" min="-2" pref="173" max="-2" attributes="0"/>
+                              <Component id="registerBtn9" min="-2" pref="173" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
-                              <Component id="paswdL" min="-2" pref="195" max="-2" attributes="0"/>
+                              <Component id="paswdL9" min="-2" pref="195" max="-2" attributes="0"/>
                               <EmptySpace min="64" pref="64" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="saveBtn" min="-2" pref="173" max="-2" attributes="0"/>
-                                  <Component id="passPF" min="-2" pref="398" max="-2" attributes="0"/>
+                                  <Component id="saveBtn9" min="-2" pref="173" max="-2" attributes="0"/>
+                                  <Component id="passPF9" min="-2" pref="398" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
@@ -65,7 +65,7 @@
           <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
-                  <Component id="valAccL" min="-2" pref="807" max="-2" attributes="0"/>
+                  <Component id="valAccL9" min="-2" pref="807" max="-2" attributes="0"/>
                   <EmptySpace pref="1646" max="32767" attributes="0"/>
               </Group>
           </Group>
@@ -76,30 +76,30 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="119" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="codeL" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="codeTF" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="codeL9" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="codeTF9" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Component id="helperLabel" min="-2" max="-2" attributes="0"/>
+              <Component id="helperLabel9" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="registerBtn" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="setAccL" alignment="3" min="-2" pref="52" max="-2" attributes="0"/>
+                          <Component id="registerBtn9" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="setAccL9" alignment="3" min="-2" pref="52" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="userNameLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="usernameTF" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="userNameLabel9" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="usernameTF9" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="paswdL" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="passPF" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="paswdL9" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="passPF9" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="68" max="-2" attributes="0"/>
-                      <Component id="saveBtn" min="-2" max="-2" attributes="0"/>
+                      <Component id="saveBtn9" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <Component id="jLabel1" min="-2" pref="527" max="-2" attributes="0"/>
               </Group>
@@ -108,7 +108,7 @@
           <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
-                  <Component id="valAccL" min="-2" pref="52" max="-2" attributes="0"/>
+                  <Component id="valAccL9" min="-2" pref="52" max="-2" attributes="0"/>
                   <EmptySpace pref="865" max="32767" attributes="0"/>
               </Group>
           </Group>
@@ -116,7 +116,7 @@
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JLabel" name="setAccL">
+    <Component class="javax.swing.JLabel" name="setAccL9">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -130,7 +130,7 @@
         <Property name="text" type="java.lang.String" value="SET YOUR ACCOUNT AS A DONOR"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="codeL">
+    <Component class="javax.swing.JLabel" name="codeL9">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -144,7 +144,7 @@
         <Property name="text" type="java.lang.String" value="Code: "/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="codeTF">
+    <Component class="javax.swing.JTextField" name="codeTF9">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="14" style="0"/>
@@ -155,7 +155,7 @@
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="helperLabel">
+    <Component class="javax.swing.JLabel" name="helperLabel9">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -169,7 +169,7 @@
         <Property name="text" type="java.lang.String" value="Please check your email you will have received a code. Please check the spam folder as well."/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="registerBtn">
+    <Component class="javax.swing.JButton" name="registerBtn9">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="66" green="66" red="0" type="rgb"/>
@@ -189,10 +189,10 @@
         <Property name="borderPainted" type="boolean" value="false"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="registerBtnActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="registerBtn9ActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JLabel" name="userNameLabel">
+    <Component class="javax.swing.JLabel" name="userNameLabel9">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -206,7 +206,7 @@
         <Property name="text" type="java.lang.String" value="Username:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="usernameTF">
+    <Component class="javax.swing.JTextField" name="usernameTF9">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="14" style="0"/>
@@ -217,7 +217,7 @@
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="valAccL">
+    <Component class="javax.swing.JLabel" name="valAccL9">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -231,7 +231,7 @@
         <Property name="text" type="java.lang.String" value="VALIDATE YOUR ACCOUNT AS A DONOR"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="paswdL">
+    <Component class="javax.swing.JLabel" name="paswdL9">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -245,7 +245,7 @@
         <Property name="text" type="java.lang.String" value="Password:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JPasswordField" name="passPF">
+    <Component class="javax.swing.JPasswordField" name="passPF9">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="14" style="0"/>
@@ -255,10 +255,10 @@
         </Property>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="passPFActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="passPF9ActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="saveBtn">
+    <Component class="javax.swing.JButton" name="saveBtn9">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="66" green="66" red="0" type="rgb"/>
@@ -278,7 +278,7 @@
         <Property name="borderPainted" type="boolean" value="false"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="saveBtnActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="saveBtn9ActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel1">
