@@ -17,8 +17,10 @@ import java.awt.Image;
  * @author Dimple Patel
  */
 public class SignoutJPanel extends javax.swing.JPanel {
-   private JPanel bodyPanel;
+
+    private JPanel bodyPanel;
     private EcoSystem ecosystem;
+
     /**
      * Creates new form LoginJPanel
      */
@@ -26,7 +28,7 @@ public class SignoutJPanel extends javax.swing.JPanel {
         initComponents();
         this.bodyPanel = bodyPanel;
         this.ecosystem = ecosystem;
-        setSize(1540,800);
+        setSize(1540, 800);
     }
 
     /**

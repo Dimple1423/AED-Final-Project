@@ -196,9 +196,13 @@ public class SigninJPanel extends javax.swing.JPanel {
                         inEnterprise = enterprise;
                         break;
                     }
-                    if (inOrganisation != null) break;
+                    if (inOrganisation != null) {
+                        break;
+                    }
                 }
-                if (inEnterprise != null) break;
+                if (inEnterprise != null) {
+                    break;
+                }
             }
         }
 
