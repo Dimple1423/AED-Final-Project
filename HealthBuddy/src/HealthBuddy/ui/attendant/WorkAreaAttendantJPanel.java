@@ -339,7 +339,7 @@ public class WorkAreaAttendantJPanel extends javax.swing.JPanel {
                         ua.getWorkQueue().getWorkRequestList().add(bloodAttendantWorkQueue);
                         quantBloodTextF.setText("");
                         populateAttendantTable();
-                        JOptionPane.showMessageDialog(null, "Request sent successfully!!", "Success", JOptionPane.INFORMATION_MESSAGE);
+                        JOptionPane.showMessageDialog(null, "Request sent successfully!!", "Success!", JOptionPane.INFORMATION_MESSAGE);
                         break;
                     }
                 }
@@ -349,7 +349,7 @@ public class WorkAreaAttendantJPanel extends javax.swing.JPanel {
                 JOptionPane.showMessageDialog(null, "Entered quantity is invalid!");
             }
         } else {
-            JOptionPane.showMessageDialog(null, "Please select a Patient record!", "Warning", JOptionPane.WARNING_MESSAGE);
+            JOptionPane.showMessageDialog(null, "Please select a Patient record!", "Warning!", JOptionPane.WARNING_MESSAGE);
         }
 
         populateBloodStatusTable();

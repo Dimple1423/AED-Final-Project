@@ -18,7 +18,8 @@ import java.awt.Image;
  * @author Dimple Patel
  */
 public class PatientValidateJPanel extends javax.swing.JPanel {
-     private PatientData patientData;
+
+    private PatientData patientData;
     private JPanel bodyPanel;
     private EcoSystem ecosystem;
     private boolean isValidated;
@@ -30,54 +31,52 @@ public class PatientValidateJPanel extends javax.swing.JPanel {
      */
     public PatientValidateJPanel(JPanel bodyPanel, EcoSystem ecosystem, String code, PatientData patient) {
         initComponents();
-         this.bodyPanel = bodyPanel;
+        this.bodyPanel = bodyPanel;
         this.ecosystem = ecosystem;
         validationCode = code;
         this.patientData = patient;
         setValidated(false);
-        setSize(1540,800);
+        setSize(1540, 800);
     }
-    
-    
+
     public boolean getValidated() {
         return isValidated;
     }
-    
+
     public void setValidated(boolean valid) {
-       isValidated = valid;
-       
-       if (isValidated) {
-           verifypatacclabel.setVisible(false);
-           OTPlabel.setVisible(false);
-           oTPTextF.setVisible(false);
-           otPlabel.setVisible(false);
-           buttonverify.setVisible(false);
+        isValidated = valid;
 
-           accsetuplabel.setVisible(true);
-           unmlabel.setVisible(true);
-           unmTextF.setVisible(true);
-           psswrdTextF.setVisible(true);
-           psswrdlabel.setVisible(true);
-           buttonsv.setVisible(true);
-       
-       } else {
+        if (isValidated) {
+            verifypatacclabel.setVisible(false);
+            OTPlabel.setVisible(false);
+            oTPTextF.setVisible(false);
+            otPlabel.setVisible(false);
+            buttonverify.setVisible(false);
 
-           verifypatacclabel.setVisible(true);
-           OTPlabel.setVisible(true);
-           oTPTextF.setVisible(true);
-           otPlabel.setVisible(true);
-           buttonverify.setVisible(true);
+            accsetuplabel.setVisible(true);
+            unmlabel.setVisible(true);
+            unmTextF.setVisible(true);
+            psswrdTextF.setVisible(true);
+            psswrdlabel.setVisible(true);
+            buttonsv.setVisible(true);
 
+        } else {
 
-           accsetuplabel.setVisible(false);
-           unmlabel.setVisible(false);
-           unmTextF.setVisible(false);
-           psswrdTextF.setVisible(false);
-           psswrdlabel.setVisible(false);
-           buttonsv.setVisible(false);
-       
-       }
-       
+            verifypatacclabel.setVisible(true);
+            OTPlabel.setVisible(true);
+            oTPTextF.setVisible(true);
+            otPlabel.setVisible(true);
+            buttonverify.setVisible(true);
+
+            accsetuplabel.setVisible(false);
+            unmlabel.setVisible(false);
+            unmTextF.setVisible(false);
+            psswrdTextF.setVisible(false);
+            psswrdlabel.setVisible(false);
+            buttonsv.setVisible(false);
+
+        }
+
     }
 
     /**
@@ -260,12 +259,12 @@ public class PatientValidateJPanel extends javax.swing.JPanel {
 
     private void buttonsvActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonsvActionPerformed
         // TODO add your handling code here:
-        
+
         String userName = Config.getClippedText(unmTextF);
         String password = String.valueOf(psswrdTextF.getPassword());
-        
+
         boolean result = ecosystem.getUserCatalog().isUserNameUnique(userName);
-        
+
         if (result) {
             patientData.setUsername(userName);
             ecosystem.getUserCatalog().newPatientAccount(userName, password,
@@ -275,15 +274,14 @@ public class PatientValidateJPanel extends javax.swing.JPanel {
 
             JOptionPane.showMessageDialog(null, "Your Registration as Patient is Successful \nKindly Signin now to get started ",
                     "Success", JOptionPane.INFORMATION_MESSAGE);
-            
+
             buttonsv.setEnabled(false);
             unmTextF.setEditable(false);
             psswrdTextF.setEditable(false);
             unmTextF.setText("");
             psswrdTextF.setText("");
-        }
-        else {
-            JOptionPane.showMessageDialog(null, "Kindly try a with different credentials, these credentials already exists","Error", JOptionPane.ERROR_MESSAGE);
+        } else {
+            JOptionPane.showMessageDialog(null, "Kindly try with different credentials, these credentials already exists", "Error", JOptionPane.ERROR_MESSAGE);
             unmTextF.setText("");
             psswrdTextF.setText("");
         }

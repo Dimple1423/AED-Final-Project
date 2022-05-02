@@ -1,6 +1,5 @@
 package HealthBuddy.ui.patient;
 
-
 import HealthBuddy.models.Enterprise.Enterprise;
 import HealthBuddy.models.EcoSystem;
 import HealthBuddy.models.Healthcare.Organisation.HealthcareOrganisationAssistant;
@@ -30,6 +29,7 @@ import java.awt.Image;
  * @author Dimple Patel
  */
 public class WorkAreaPatientPanel extends javax.swing.JPanel {
+
     DefaultTableModel appointmentDirectoryTableModel;
     DefaultTableModel appointmentHistoryTableModel;
     private User userAccount;
@@ -38,7 +38,9 @@ public class WorkAreaPatientPanel extends javax.swing.JPanel {
     private Organisation organisation;
     private JPanel bodyPanel;
 
-    /** Creates new form DonorWorkAreaPanel */
+    /**
+     * Creates new form DonorWorkAreaPanel
+     */
     public WorkAreaPatientPanel(JPanel bodyPanel, EcoSystem ecoSys, User userAcc, Organisation organisation) {
         ecoSystem = ecoSys;
         userAccount = userAcc;
@@ -50,11 +52,10 @@ public class WorkAreaPatientPanel extends javax.swing.JPanel {
         initComponents();
         populateAvailAppontments();
         populateAppointmentHistoryTable();
-        setSize(1540,800);
-
+        setSize(1540, 800);
 
     }
-    
+
     public void initApptDirTableModel() {
         appointmentDirectoryTableModel = new DefaultTableModel();
         appointmentDirectoryTableModel.addColumn("Hospital");
@@ -62,11 +63,9 @@ public class WorkAreaPatientPanel extends javax.swing.JPanel {
         appointmentDirectoryTableModel.addColumn("Timestamp");
         appointmentDirectoryTableModel.addColumn("Status");
     }
-    
+
     public void initApptHistoryDirTableModel() {
 
-
-        
         appointmentHistoryTableModel = new DefaultTableModel();
         appointmentHistoryTableModel.addColumn("Patient Name");
 
@@ -75,54 +74,42 @@ public class WorkAreaPatientPanel extends javax.swing.JPanel {
 
         appointmentHistoryTableModel.addColumn("Hospital");
         appointmentHistoryTableModel.addColumn("City");
-        appointmentHistoryTableModel.addColumn("Disease");    
-
+        appointmentHistoryTableModel.addColumn("Disease");
 
     }
-    
-    
-     public void populateAvailAppontments()
-    {
+
+    public void populateAvailAppontments() {
         DefaultTableModel model = (DefaultTableModel) docScheduleTable.getModel();
-        
+
         model.setRowCount(0);
         DateFormat formatter = new SimpleDateFormat("dd/mm/yyyy");
 
-        for (Network network: ecoSystem.getNetworkList()) {
-        
-          for(WorkRequest request: ecoSystem.getPatientDir().getWorkQueue().getWorkRequestList()){
-            AssistantAddingTimetoWQ assistantAddingTimingsWorkQueue = new AssistantAddingTimetoWQ();
-              assistantAddingTimingsWorkQueue = (AssistantAddingTimetoWQ)request;
-            if(network.getNetworkName().equals(assistantAddingTimingsWorkQueue.getCity()))
-            {
+        for (Network network : ecoSystem.getNetworkList()) {
 
-                Object[] rowdata = {assistantAddingTimingsWorkQueue, assistantAddingTimingsWorkQueue.getDoctor(),
+            for (WorkRequest request : ecoSystem.getPatientDir().getWorkQueue().getWorkRequestList()) {
+                AssistantAddingTimetoWQ assistantAddingTimingsWorkQueue = new AssistantAddingTimetoWQ();
+                assistantAddingTimingsWorkQueue = (AssistantAddingTimetoWQ) request;
+                if (network.getNetworkName().equals(assistantAddingTimingsWorkQueue.getCity())) {
+
+                    Object[] rowdata = {assistantAddingTimingsWorkQueue, assistantAddingTimingsWorkQueue.getDoctor(),
                         assistantAddingTimingsWorkQueue.getTimings(),
-                        assistantAddingTimingsWorkQueue.getStatus() };
+                        assistantAddingTimingsWorkQueue.getStatus()};
 
-                model.addRow(rowdata);
+                    model.addRow(rowdata);
+                }
             }
-        }
-          
-        
-      
-        
-        }
-        
-         
-          
-    }
 
+        }
+
+    }
 
     public void populateAppointmentHistoryTable() {
         DefaultTableModel model = (DefaultTableModel) tblAppHis.getModel();
 
         model.setRowCount(0);
 
-        for(AppointmentInformation appDetails : ecoSystem.getAppointmentCatalog().getAppointmentCatalog())
-        {
-            if(userAccount.getUsername().equalsIgnoreCase(appDetails.getPatient().getUsername()))
-            {
+        for (AppointmentInformation appDetails : ecoSystem.getAppointmentCatalog().getAppointmentCatalog()) {
+            if (userAccount.getUsername().equalsIgnoreCase(appDetails.getPatient().getUsername())) {
                 Object[] row = new Object[6];
                 row[0] = appDetails.getPatient().getPatientName();
                 row[1] = appDetails.getDate();
@@ -137,10 +124,10 @@ public class WorkAreaPatientPanel extends javax.swing.JPanel {
 
     }
 
-    /** This method is called from within the constructor to
-     * initialize the form.
-     * WARNING: Do NOT modify this code. The content of this method is
-     * always regenerated by the Form Editor.
+    /**
+     * This method is called from within the constructor to initialize the form.
+     * WARNING: Do NOT modify this code. The content of this method is always
+     * regenerated by the Form Editor.
      */
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -340,22 +327,20 @@ public class WorkAreaPatientPanel extends javax.swing.JPanel {
 
         DefaultTableModel model = (DefaultTableModel) docScheduleTable.getModel();
         int selectedRow = docScheduleTable.getSelectedRow();
-        if (selectedRow < 0){
+        if (selectedRow < 0) {
             return;
         }
-        AssistantAddingTimetoWQ request = (AssistantAddingTimetoWQ)docScheduleTable.getValueAt(selectedRow,0);
-        if(request.getStatus().equals("Booked")){
-            JOptionPane.showMessageDialog(null,"Kindly Select Valid Slot. The time you are trying to reserve is already taken.");
-        }
-        else{
+        AssistantAddingTimetoWQ request = (AssistantAddingTimetoWQ) docScheduleTable.getValueAt(selectedRow, 0);
+        if (request.getStatus().equals("Booked")) {
+            JOptionPane.showMessageDialog(null, "Kindly Select a Valid Slot. The time you are trying to reserve is already taken.");
+        } else {
             request.setStatus("Booked");
 //            Network net = (Network) cityJComboBox.getSelectedItem();
             populateAvailAppontments();
             PatientBookingWQ patientBookingWorkQueue = new PatientBookingWQ();
             PatientData patientData = null;
-            for(PatientData pat : ecoSystem.getPatientDir().getPatientCatalog()){
-                if(pat.getUsername().equals(userAccount.getUsername()))
-                {
+            for (PatientData pat : ecoSystem.getPatientDir().getPatientCatalog()) {
+                if (pat.getUsername().equals(userAccount.getUsername())) {
                     patientData = pat;
                     break;
                 }
@@ -367,34 +352,30 @@ public class WorkAreaPatientPanel extends javax.swing.JPanel {
             patientBookingWorkQueue.setDoctor(request.getDoctor());
             patientBookingWorkQueue.setHospitalName(request.getHealthcareName());
             Enterprise enterprise = null;
-            for(Network n: ecoSystem.getNetworkList() ){
-                for(Enterprise e: n.getEnterpriseCatalog().getEnterpriseList()){
-                    if(e.getName().equalsIgnoreCase(request.getHealthcareName()))
-                    {
+            for (Network n : ecoSystem.getNetworkList()) {
+                for (Enterprise e : n.getEnterpriseCatalog().getEnterpriseList()) {
+                    if (e.getName().equalsIgnoreCase(request.getHealthcareName())) {
                         enterprise = e;
                         break;
                     }
                 }
             }
             HealthcareOrganisationAssistant org = null;
-            for (Organisation o : enterprise.getOrganizationCatalog().getOrganizationList()){
-                if(o instanceof HealthcareOrganisationAssistant)
-                {
-                    org = (HealthcareOrganisationAssistant)o;
+            for (Organisation o : enterprise.getOrganizationCatalog().getOrganizationList()) {
+                if (o instanceof HealthcareOrganisationAssistant) {
+                    org = (HealthcareOrganisationAssistant) o;
                     break;
                 }
             }
             org.getIncomingPatients().getWorkRequestList().add(patientBookingWorkQueue);
             userAccount.getWorkQueue().getWorkRequestList().add(patientBookingWorkQueue);
 
-            String message = "Dear "+ patientData.getPatientName() +",\n\nYou have requested your appointment at " + " " + request.getTimings() + " with Doctor: " + request.getDoctor() + " at Hospital " + request.getHealthcareName()+"\n\nThank you,\nHealthBuddy Team";
+            String message = "Dear " + patientData.getPatientName() + ",\n\nYou have requested your appointment at " + " " + request.getTimings() + " with Doctor: " + request.getDoctor() + " at Hospital " + request.getHealthcareName() + "\n\nThank you,\nHealthBuddy Team";
             SMSUtility.sendSMS(patientData.getContactNo(), message);
-            JOptionPane.showMessageDialog(null,"TimeSlot has been reserved.");
+            JOptionPane.showMessageDialog(null, "TimeSlot has been reserved.");
 
             populateAppointmentHistoryTable();
         }
-
-
 
 
     }//GEN-LAST:event_buttonbookSlotActionPerformed
