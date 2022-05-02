@@ -31,42 +31,42 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="menuItemName5" max="32767" attributes="0"/>
-                                  <Component id="menuItemName6" pref="168" max="32767" attributes="0"/>
+                                  <Component id="menuItemName19" max="32767" attributes="0"/>
+                                  <Component id="menuItemName9" pref="168" max="32767" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="91" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="1" attributes="0">
-                                      <Component id="RadioFundsYes" linkSize="7" min="-2" max="-2" attributes="0"/>
+                                      <Component id="RadioFundsYes9" linkSize="7" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace min="43" pref="43" max="-2" attributes="0"/>
-                                      <Component id="RadioFundsNo" linkSize="7" min="-2" max="-2" attributes="0"/>
+                                      <Component id="RadioFundsNo9" linkSize="7" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="1" attributes="0">
-                                      <Component id="RadioBloodYes" linkSize="7" min="-2" max="-2" attributes="0"/>
+                                      <Component id="RadioBloodYes9" linkSize="7" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace min="43" pref="43" max="-2" attributes="0"/>
-                                      <Component id="RadioBloodNo" linkSize="7" min="-2" max="-2" attributes="0"/>
+                                      <Component id="RadioBloodNo9" linkSize="7" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="259" max="-2" attributes="0"/>
-                              <Component id="btnAddPrescription" min="-2" pref="199" max="-2" attributes="0"/>
+                              <Component id="btnAddPrescription9" min="-2" pref="199" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                                  <Component id="lblPrescription" max="32767" attributes="0"/>
-                                  <Component id="lblDisease" max="32767" attributes="0"/>
-                                  <Component id="lblBloodGroup" max="32767" attributes="0"/>
-                                  <Component id="lblDOB" max="32767" attributes="0"/>
-                                  <Component id="lblPatientName" pref="168" max="32767" attributes="0"/>
+                                  <Component id="lblPrescription9" max="32767" attributes="0"/>
+                                  <Component id="lblDisease9" max="32767" attributes="0"/>
+                                  <Component id="lblBloodGroup9" max="32767" attributes="0"/>
+                                  <Component id="lblDOB9" max="32767" attributes="0"/>
+                                  <Component id="lblPatientName9" pref="168" max="32767" attributes="0"/>
                               </Group>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="txtDisease" alignment="0" pref="250" max="32767" attributes="0"/>
-                                  <Component id="txtBloodGroup" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="txtDOB" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="txtPatientName" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="txtPrescription" max="32767" attributes="0"/>
+                                  <Component id="txtDisease9" alignment="0" pref="250" max="32767" attributes="0"/>
+                                  <Component id="txtBloodGroup9" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="txtDOB9" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="txtPatientName9" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="txtPrescription9" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
@@ -75,22 +75,22 @@
                   <Group type="102" alignment="0" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
-                              <Component id="lblWelcome" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblWelcome9" min="-2" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="89" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
-                              <Component id="lblPatientName1" min="-2" pref="168" max="-2" attributes="0"/>
+                              <Component id="lblPatientName19" min="-2" pref="168" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
-                              <Component id="valuePatientName" min="-2" pref="189" max="-2" attributes="0"/>
+                              <Component id="valuePatientName9" min="-2" pref="189" max="-2" attributes="0"/>
                               <EmptySpace pref="915" max="32767" attributes="0"/>
-                              <Component id="btnRefresh" min="-2" pref="173" max="-2" attributes="0"/>
+                              <Component id="btnRefresh9" min="-2" pref="173" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
-                              <Component id="lblPatientsWaiting" min="-2" pref="124" max="-2" attributes="0"/>
+                              <Component id="lblPatientsWaiting9" min="-2" pref="124" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="216" max="-2" attributes="0"/>
                               <Component id="jLabel1" min="-2" pref="843" max="-2" attributes="0"/>
                               <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
@@ -108,64 +108,64 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="lblWelcome" linkSize="4" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="valuePatientName" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblWelcome9" linkSize="4" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="valuePatientName9" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="59" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="lblPatientsWaiting" linkSize="2" alignment="0" min="-2" pref="25" max="-2" attributes="0"/>
-                                  <Component id="lblPatientName1" linkSize="4" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblPatientsWaiting9" linkSize="2" alignment="0" min="-2" pref="25" max="-2" attributes="0"/>
+                                  <Component id="lblPatientName19" linkSize="4" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="56" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" attributes="0">
-                                      <Component id="lblPatientName" linkSize="6" min="-2" max="-2" attributes="0"/>
+                                      <Component id="lblPatientName9" linkSize="6" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
-                                      <Component id="lblDOB" linkSize="6" min="-2" max="-2" attributes="0"/>
+                                      <Component id="lblDOB9" linkSize="6" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
-                                      <Component id="lblBloodGroup" linkSize="6" min="-2" max="-2" attributes="0"/>
+                                      <Component id="lblBloodGroup9" linkSize="6" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
-                                      <Component id="lblDisease" linkSize="6" min="-2" max="-2" attributes="0"/>
+                                      <Component id="lblDisease9" linkSize="6" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
-                                      <Component id="lblPrescription" linkSize="6" min="-2" max="-2" attributes="0"/>
+                                      <Component id="lblPrescription9" linkSize="6" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" attributes="0">
-                                      <Component id="txtPatientName" min="-2" max="-2" attributes="0"/>
+                                      <Component id="txtPatientName9" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
-                                      <Component id="txtDOB" min="-2" max="-2" attributes="0"/>
+                                      <Component id="txtDOB9" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
-                                      <Component id="txtBloodGroup" min="-2" max="-2" attributes="0"/>
+                                      <Component id="txtBloodGroup9" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
-                                      <Component id="txtDisease" min="-2" max="-2" attributes="0"/>
+                                      <Component id="txtDisease9" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
-                                      <Component id="txtPrescription" min="-2" max="-2" attributes="0"/>
+                                      <Component id="txtPrescription9" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                               <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="103" alignment="1" groupAlignment="0" attributes="0">
-                                      <Component id="RadioBloodYes" linkSize="8" min="-2" max="-2" attributes="0"/>
-                                      <Component id="RadioBloodNo" linkSize="8" min="-2" max="-2" attributes="0"/>
+                                      <Component id="RadioBloodYes9" linkSize="8" min="-2" max="-2" attributes="0"/>
+                                      <Component id="RadioBloodNo9" linkSize="8" min="-2" max="-2" attributes="0"/>
                                   </Group>
-                                  <Component id="menuItemName5" linkSize="6" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="menuItemName19" linkSize="6" alignment="1" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="1" attributes="0">
-                                  <Component id="menuItemName6" linkSize="6" min="-2" max="-2" attributes="0"/>
+                                  <Component id="menuItemName9" linkSize="6" min="-2" max="-2" attributes="0"/>
                                   <Group type="103" alignment="1" groupAlignment="0" attributes="0">
-                                      <Component id="RadioFundsYes" linkSize="8" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="RadioFundsNo" linkSize="8" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="RadioFundsYes9" linkSize="8" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="RadioFundsNo9" linkSize="8" alignment="0" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                               <EmptySpace min="-2" pref="67" max="-2" attributes="0"/>
-                              <Component id="btnAddPrescription" min="-2" max="-2" attributes="0"/>
+                              <Component id="btnAddPrescription9" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Component id="jLabel1" min="-2" pref="593" max="-2" attributes="0"/>
                       </Group>
                   </Group>
-                  <Component id="btnRefresh" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnRefresh9" alignment="0" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace pref="109" max="32767" attributes="0"/>
           </Group>
@@ -173,7 +173,7 @@
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JLabel" name="lblPatientName">
+    <Component class="javax.swing.JLabel" name="lblPatientName9">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -187,7 +187,7 @@
         <Property name="text" type="java.lang.String" value="Patient Name:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="txtPatientName">
+    <Component class="javax.swing.JTextField" name="txtPatientName9">
       <Properties>
         <Property name="editable" type="boolean" value="false"/>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -199,7 +199,7 @@
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="txtDOB">
+    <Component class="javax.swing.JTextField" name="txtDOB9">
       <Properties>
         <Property name="editable" type="boolean" value="false"/>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -211,10 +211,10 @@
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtDOBActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtDOB9ActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JLabel" name="lblDOB">
+    <Component class="javax.swing.JLabel" name="lblDOB9">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -228,7 +228,7 @@
         <Property name="text" type="java.lang.String" value="Date of Birth:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="lblBloodGroup">
+    <Component class="javax.swing.JLabel" name="lblBloodGroup9">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -242,7 +242,7 @@
         <Property name="text" type="java.lang.String" value="Blood Group:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="txtBloodGroup">
+    <Component class="javax.swing.JTextField" name="txtBloodGroup9">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="14" style="0"/>
@@ -253,7 +253,7 @@
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="lblDisease">
+    <Component class="javax.swing.JLabel" name="lblDisease9">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -267,7 +267,7 @@
         <Property name="text" type="java.lang.String" value="Disease:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="txtDisease">
+    <Component class="javax.swing.JTextField" name="txtDisease9">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="14" style="0"/>
@@ -278,10 +278,10 @@
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtDiseaseActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtDisease9ActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JLabel" name="lblPrescription">
+    <Component class="javax.swing.JLabel" name="lblPrescription9">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -295,7 +295,7 @@
         <Property name="text" type="java.lang.String" value="Prescription:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="txtPrescription">
+    <Component class="javax.swing.JTextField" name="txtPrescription9">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="14" style="0"/>
@@ -306,7 +306,7 @@
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="menuItemName5">
+    <Component class="javax.swing.JLabel" name="menuItemName19">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -320,7 +320,7 @@
         <Property name="text" type="java.lang.String" value="Blood Required:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="menuItemName6">
+    <Component class="javax.swing.JLabel" name="menuItemName9">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -334,7 +334,7 @@
         <Property name="text" type="java.lang.String" value="Funds Required:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JRadioButton" name="RadioBloodYes">
+    <Component class="javax.swing.JRadioButton" name="RadioBloodYes9">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -348,10 +348,10 @@
         <Property name="text" type="java.lang.String" value="Yes"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="RadioBloodYesActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="RadioBloodYes9ActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JRadioButton" name="RadioBloodNo">
+    <Component class="javax.swing.JRadioButton" name="RadioBloodNo9">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -365,10 +365,10 @@
         <Property name="text" type="java.lang.String" value="No"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="RadioBloodNoActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="RadioBloodNo9ActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JLabel" name="lblWelcome">
+    <Component class="javax.swing.JLabel" name="lblWelcome9">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -382,7 +382,7 @@
         <Property name="text" type="java.lang.String" value="Welcome "/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="valuePatientName">
+    <Component class="javax.swing.JLabel" name="valuePatientName9">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -396,7 +396,7 @@
         <Property name="text" type="java.lang.String" value="value"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="btnAddPrescription">
+    <Component class="javax.swing.JButton" name="btnAddPrescription9">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="66" green="66" red="0" type="rgb"/>
@@ -416,10 +416,10 @@
         <Property name="borderPainted" type="boolean" value="false"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnAddPrescriptionActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnAddPrescription9ActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="btnRefresh">
+    <Component class="javax.swing.JButton" name="btnRefresh9">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="66" green="66" red="0" type="rgb"/>
@@ -439,10 +439,10 @@
         <Property name="borderPainted" type="boolean" value="false"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnRefreshActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnRefresh9ActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JLabel" name="lblPatientName1">
+    <Component class="javax.swing.JLabel" name="lblPatientName19">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -456,7 +456,7 @@
         <Property name="text" type="java.lang.String" value="Patients Waiting:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="lblPatientsWaiting">
+    <Component class="javax.swing.JLabel" name="lblPatientsWaiting9">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -469,7 +469,7 @@
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JRadioButton" name="RadioFundsYes">
+    <Component class="javax.swing.JRadioButton" name="RadioFundsYes9">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -483,10 +483,10 @@
         <Property name="text" type="java.lang.String" value="Yes"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="RadioFundsYesActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="RadioFundsYes9ActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JRadioButton" name="RadioFundsNo">
+    <Component class="javax.swing.JRadioButton" name="RadioFundsNo9">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -500,7 +500,7 @@
         <Property name="text" type="java.lang.String" value="No"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="RadioFundsNoActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="RadioFundsNo9ActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel1">
