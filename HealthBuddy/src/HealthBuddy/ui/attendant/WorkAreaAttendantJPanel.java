@@ -44,7 +44,7 @@ public class WorkAreaAttendantJPanel extends javax.swing.JPanel {
         this.ua=userAccount;
         populateAttendantTable();
         populateBloodStatusTable();
-       attvalLabel.setText(ua.getEmployee().getEmployeeName());
+       valLabel.setText(ua.getEmployee().getEmployeeName());
        setSize(1540,800);
     }
 
@@ -59,22 +59,22 @@ public class WorkAreaAttendantJPanel extends javax.swing.JPanel {
 
         attndtTabPane = new javax.swing.JTabbedPane();
         attworkAreaPane = new javax.swing.JPanel();
-        welcmLabel = new javax.swing.JLabel();
-        attmsgLabel = new javax.swing.JLabel();
-        attvalLabel = new javax.swing.JLabel();
+        welLAbel = new javax.swing.JLabel();
+        attTitleLabel = new javax.swing.JLabel();
+        valLabel = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
-        patpresinfoLabel = new javax.swing.JLabel();
+        patDetailLabel = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        atttble = new javax.swing.JTable();
+        tablePat = new javax.swing.JTable();
         itmLabel = new javax.swing.JLabel();
         quantBloodTextF = new javax.swing.JTextField();
         buttonBloodWR = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
         Status = new javax.swing.JPanel();
-        msgstatusLabel = new javax.swing.JLabel();
+        bloodDonorLable = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jScrollPane3 = new javax.swing.JScrollPane();
-        tblBloodStatus = new javax.swing.JTable();
+        bloodStatusTabel = new javax.swing.JTable();
         jLabel2 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
@@ -87,34 +87,34 @@ public class WorkAreaAttendantJPanel extends javax.swing.JPanel {
         attworkAreaPane.setBackground(new java.awt.Color(255, 255, 255));
         attworkAreaPane.setForeground(new java.awt.Color(0, 102, 102));
 
-        welcmLabel.setBackground(new java.awt.Color(255, 255, 255));
-        welcmLabel.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        welcmLabel.setForeground(new java.awt.Color(0, 102, 102));
-        welcmLabel.setText("Welcome ");
+        welLAbel.setBackground(new java.awt.Color(255, 255, 255));
+        welLAbel.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        welLAbel.setForeground(new java.awt.Color(0, 102, 102));
+        welLAbel.setText("Welcome ");
 
-        attmsgLabel.setBackground(new java.awt.Color(255, 255, 255));
-        attmsgLabel.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
-        attmsgLabel.setForeground(new java.awt.Color(0, 102, 102));
-        attmsgLabel.setText("Attendant Work Area");
+        attTitleLabel.setBackground(new java.awt.Color(255, 255, 255));
+        attTitleLabel.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+        attTitleLabel.setForeground(new java.awt.Color(0, 102, 102));
+        attTitleLabel.setText("Attendant Work Area");
 
-        attvalLabel.setBackground(new java.awt.Color(255, 255, 255));
-        attvalLabel.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        attvalLabel.setForeground(new java.awt.Color(0, 102, 102));
-        attvalLabel.setText("value");
+        valLabel.setBackground(new java.awt.Color(255, 255, 255));
+        valLabel.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        valLabel.setForeground(new java.awt.Color(0, 102, 102));
+        valLabel.setText("value");
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setForeground(new java.awt.Color(0, 102, 102));
 
-        patpresinfoLabel.setBackground(new java.awt.Color(255, 255, 255));
-        patpresinfoLabel.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        patpresinfoLabel.setForeground(new java.awt.Color(0, 102, 102));
-        patpresinfoLabel.setText("Patient Prescription Details");
+        patDetailLabel.setBackground(new java.awt.Color(255, 255, 255));
+        patDetailLabel.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        patDetailLabel.setForeground(new java.awt.Color(0, 102, 102));
+        patDetailLabel.setText("Patient Prescription Details");
 
         jScrollPane1.setForeground(new java.awt.Color(0, 102, 102));
 
-        atttble.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
-        atttble.setForeground(new java.awt.Color(0, 102, 102));
-        atttble.setModel(new javax.swing.table.DefaultTableModel(
+        tablePat.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
+        tablePat.setForeground(new java.awt.Color(0, 102, 102));
+        tablePat.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
             },
@@ -122,7 +122,7 @@ public class WorkAreaAttendantJPanel extends javax.swing.JPanel {
                 "Patient Name", "Disease", "Doctor Name", "Blood Required", "Donation Required", "Blood Group", "Message"
             }
         ));
-        jScrollPane1.setViewportView(atttble);
+        jScrollPane1.setViewportView(tablePat);
 
         itmLabel.setBackground(new java.awt.Color(255, 255, 255));
         itmLabel.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
@@ -166,7 +166,7 @@ public class WorkAreaAttendantJPanel extends javax.swing.JPanel {
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 892, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(192, 192, 192)
-                        .addComponent(patpresinfoLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 454, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(patDetailLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 454, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 83, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(buttonBloodWR)
@@ -178,7 +178,7 @@ public class WorkAreaAttendantJPanel extends javax.swing.JPanel {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(patpresinfoLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(patDetailLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
@@ -205,22 +205,22 @@ public class WorkAreaAttendantJPanel extends javax.swing.JPanel {
                     .addGroup(attworkAreaPaneLayout.createSequentialGroup()
                         .addGap(47, 47, 47)
                         .addGroup(attworkAreaPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(attmsgLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 481, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(attTitleLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 481, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(attworkAreaPaneLayout.createSequentialGroup()
-                                .addComponent(welcmLabel)
+                                .addComponent(welLAbel)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(attvalLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 174, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                .addComponent(valLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 174, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                 .addContainerGap(390, Short.MAX_VALUE))
         );
         attworkAreaPaneLayout.setVerticalGroup(
             attworkAreaPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(attworkAreaPaneLayout.createSequentialGroup()
                 .addGap(61, 61, 61)
-                .addComponent(attmsgLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(attTitleLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(51, 51, 51)
                 .addGroup(attworkAreaPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(welcmLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(attvalLabel))
+                    .addComponent(welLAbel, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(valLabel))
                 .addGap(77, 77, 77)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -231,10 +231,10 @@ public class WorkAreaAttendantJPanel extends javax.swing.JPanel {
         Status.setBackground(new java.awt.Color(255, 255, 255));
         Status.setForeground(new java.awt.Color(0, 102, 102));
 
-        msgstatusLabel.setBackground(new java.awt.Color(255, 255, 255));
-        msgstatusLabel.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
-        msgstatusLabel.setForeground(new java.awt.Color(0, 102, 102));
-        msgstatusLabel.setText("Blood Donor Center Request Status");
+        bloodDonorLable.setBackground(new java.awt.Color(255, 255, 255));
+        bloodDonorLable.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+        bloodDonorLable.setForeground(new java.awt.Color(0, 102, 102));
+        bloodDonorLable.setText("Blood Donor Center Request Status");
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
         jPanel2.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.darkGray, java.awt.Color.lightGray));
@@ -242,9 +242,9 @@ public class WorkAreaAttendantJPanel extends javax.swing.JPanel {
 
         jScrollPane3.setForeground(new java.awt.Color(0, 102, 102));
 
-        tblBloodStatus.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        tblBloodStatus.setForeground(new java.awt.Color(0, 102, 102));
-        tblBloodStatus.setModel(new javax.swing.table.DefaultTableModel(
+        bloodStatusTabel.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        bloodStatusTabel.setForeground(new java.awt.Color(0, 102, 102));
+        bloodStatusTabel.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
             },
@@ -252,7 +252,8 @@ public class WorkAreaAttendantJPanel extends javax.swing.JPanel {
                 "Patient Name", "Blood Type", "Quantity of Blood", "Request Status"
             }
         ));
-        jScrollPane3.setViewportView(tblBloodStatus);
+        bloodStatusTabel.setSelectionBackground(new java.awt.Color(0, 102, 102));
+        jScrollPane3.setViewportView(bloodStatusTabel);
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -282,7 +283,7 @@ public class WorkAreaAttendantJPanel extends javax.swing.JPanel {
             .addGroup(StatusLayout.createSequentialGroup()
                 .addGap(46, 46, 46)
                 .addGroup(StatusLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(msgstatusLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 683, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(bloodDonorLable, javax.swing.GroupLayout.PREFERRED_SIZE, 683, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(102, 102, 102)
                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 643, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -294,7 +295,7 @@ public class WorkAreaAttendantJPanel extends javax.swing.JPanel {
                 .addGroup(StatusLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(StatusLayout.createSequentialGroup()
                         .addGap(34, 34, 34)
-                        .addComponent(msgstatusLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(bloodDonorLable, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(28, 28, 28)
                         .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(StatusLayout.createSequentialGroup()
@@ -320,11 +321,11 @@ public class WorkAreaAttendantJPanel extends javax.swing.JPanel {
     private void buttonBloodWRActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonBloodWRActionPerformed
         // TODO add your handling code here:
         
-        int selectedRow=atttble.getSelectedRow();
+        int selectedRow=tablePat.getSelectedRow();
         if(selectedRow>-1)
             {
                 try {
-                DoctorAttendantWQ docAttendantWorkQueue = (DoctorAttendantWQ)atttble.getValueAt(selectedRow, 0);
+                DoctorAttendantWQ docAttendantWorkQueue = (DoctorAttendantWQ)tablePat.getValueAt(selectedRow, 0);
                 BloodControllerAttendantWQ bloodAttendantWorkQueue= new BloodControllerAttendantWQ();   
                 bloodAttendantWorkQueue.setSender(ua);
                 bloodAttendantWorkQueue.setUnitsOfBlood(Integer.parseInt(Config.getClippedText(quantBloodTextF)));
@@ -362,11 +363,11 @@ public class WorkAreaAttendantJPanel extends javax.swing.JPanel {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel Status;
-    private javax.swing.JLabel attmsgLabel;
+    private javax.swing.JLabel attTitleLabel;
     private javax.swing.JTabbedPane attndtTabPane;
-    private javax.swing.JTable atttble;
-    private javax.swing.JLabel attvalLabel;
     private javax.swing.JPanel attworkAreaPane;
+    private javax.swing.JLabel bloodDonorLable;
+    private javax.swing.JTable bloodStatusTabel;
     private javax.swing.JButton buttonBloodWR;
     private javax.swing.JLabel itmLabel;
     private javax.swing.JLabel jLabel2;
@@ -375,17 +376,17 @@ public class WorkAreaAttendantJPanel extends javax.swing.JPanel {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane3;
-    private javax.swing.JLabel msgstatusLabel;
-    private javax.swing.JLabel patpresinfoLabel;
+    private javax.swing.JLabel patDetailLabel;
     private javax.swing.JTextField quantBloodTextF;
-    private javax.swing.JTable tblBloodStatus;
-    private javax.swing.JLabel welcmLabel;
+    private javax.swing.JTable tablePat;
+    private javax.swing.JLabel valLabel;
+    private javax.swing.JLabel welLAbel;
     // End of variables declaration//GEN-END:variables
  
     //Populate Attendant Work Area Table
     public void populateAttendantTable()
     {
-        DefaultTableModel model = (DefaultTableModel) atttble.getModel();
+        DefaultTableModel model = (DefaultTableModel) tablePat.getModel();
         model.setRowCount(0);
         
         for(WorkRequest request : attendantOrg.getDoctorAttendantWQ().getWorkRequestList()){
@@ -407,7 +408,7 @@ public class WorkAreaAttendantJPanel extends javax.swing.JPanel {
     //Populate Blood Status Table
     public void populateBloodStatusTable(){
     
-    DefaultTableModel model = (DefaultTableModel) tblBloodStatus.getModel();
+    DefaultTableModel model = (DefaultTableModel) bloodStatusTabel.getModel();
     model.setRowCount(0);
     
        for(WorkRequest request :attendantOrg.getBloodHeadAttendantWQ().getWorkRequestList()){

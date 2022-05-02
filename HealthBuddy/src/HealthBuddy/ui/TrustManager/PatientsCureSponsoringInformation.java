@@ -52,7 +52,7 @@ public class PatientsCureSponsoringInformation extends javax.swing.JPanel
     
     public void populateJTable()
     {
-            DefaultTableModel model = (DefaultTableModel) patientSponsorshipJTable.getModel();
+            DefaultTableModel model = (DefaultTableModel) patsponsorTAble.getModel();
         
             model.setRowCount(0);
             for(WorkRequest request : network.getFundsRequests().getWorkRequestList())
@@ -79,26 +79,26 @@ public class PatientsCureSponsoringInformation extends javax.swing.JPanel
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        lblTitle = new javax.swing.JLabel();
+        titlelabel = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        patientSponsorshipJTable = new javax.swing.JTable();
-        btnSelectSponsor = new javax.swing.JButton();
-        btnBack = new javax.swing.JButton();
+        patsponsorTAble = new javax.swing.JTable();
+        sponsorButton = new javax.swing.JButton();
+        backButton = new javax.swing.JButton();
 
         setBackground(new java.awt.Color(255, 255, 255));
         setBorder(javax.swing.BorderFactory.createTitledBorder("View Patients"));
         setForeground(new java.awt.Color(0, 102, 102));
 
-        lblTitle.setBackground(new java.awt.Color(255, 255, 255));
-        lblTitle.setFont(new java.awt.Font("Tahoma", 1, 48)); // NOI18N
-        lblTitle.setForeground(new java.awt.Color(0, 102, 102));
-        lblTitle.setText("Sponsor Patients' Treatment");
+        titlelabel.setBackground(new java.awt.Color(255, 255, 255));
+        titlelabel.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        titlelabel.setForeground(new java.awt.Color(0, 102, 102));
+        titlelabel.setText("Sponsor Patients' Treatment");
 
         jScrollPane1.setForeground(new java.awt.Color(0, 102, 102));
 
-        patientSponsorshipJTable.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        patientSponsorshipJTable.setForeground(new java.awt.Color(0, 102, 102));
-        patientSponsorshipJTable.setModel(new javax.swing.table.DefaultTableModel(
+        patsponsorTAble.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        patsponsorTAble.setForeground(new java.awt.Color(0, 102, 102));
+        patsponsorTAble.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null},
                 {null, null, null, null, null},
@@ -117,36 +117,37 @@ public class PatientsCureSponsoringInformation extends javax.swing.JPanel
                 return canEdit [columnIndex];
             }
         });
-        jScrollPane1.setViewportView(patientSponsorshipJTable);
-        if (patientSponsorshipJTable.getColumnModel().getColumnCount() > 0) {
-            patientSponsorshipJTable.getColumnModel().getColumn(0).setResizable(false);
-            patientSponsorshipJTable.getColumnModel().getColumn(1).setResizable(false);
-            patientSponsorshipJTable.getColumnModel().getColumn(2).setResizable(false);
-            patientSponsorshipJTable.getColumnModel().getColumn(3).setResizable(false);
-            patientSponsorshipJTable.getColumnModel().getColumn(4).setResizable(false);
+        patsponsorTAble.setSelectionBackground(new java.awt.Color(0, 102, 102));
+        jScrollPane1.setViewportView(patsponsorTAble);
+        if (patsponsorTAble.getColumnModel().getColumnCount() > 0) {
+            patsponsorTAble.getColumnModel().getColumn(0).setResizable(false);
+            patsponsorTAble.getColumnModel().getColumn(1).setResizable(false);
+            patsponsorTAble.getColumnModel().getColumn(2).setResizable(false);
+            patsponsorTAble.getColumnModel().getColumn(3).setResizable(false);
+            patsponsorTAble.getColumnModel().getColumn(4).setResizable(false);
         }
 
-        btnSelectSponsor.setBackground(new java.awt.Color(0, 102, 102));
-        btnSelectSponsor.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        btnSelectSponsor.setForeground(new java.awt.Color(255, 255, 255));
-        btnSelectSponsor.setText("Sponsor");
-        btnSelectSponsor.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btnSelectSponsor.setBorderPainted(false);
-        btnSelectSponsor.addActionListener(new java.awt.event.ActionListener() {
+        sponsorButton.setBackground(new java.awt.Color(0, 102, 102));
+        sponsorButton.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        sponsorButton.setForeground(new java.awt.Color(255, 255, 255));
+        sponsorButton.setText("Sponsor");
+        sponsorButton.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        sponsorButton.setBorderPainted(false);
+        sponsorButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnSelectSponsorActionPerformed(evt);
+                sponsorButtonActionPerformed(evt);
             }
         });
 
-        btnBack.setBackground(new java.awt.Color(0, 102, 102));
-        btnBack.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        btnBack.setForeground(new java.awt.Color(255, 255, 255));
-        btnBack.setText("Back");
-        btnBack.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btnBack.setBorderPainted(false);
-        btnBack.addActionListener(new java.awt.event.ActionListener() {
+        backButton.setBackground(new java.awt.Color(0, 102, 102));
+        backButton.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        backButton.setForeground(new java.awt.Color(255, 255, 255));
+        backButton.setText("Back");
+        backButton.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        backButton.setBorderPainted(false);
+        backButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnBackActionPerformed(evt);
+                backButtonActionPerformed(evt);
             }
         });
 
@@ -159,43 +160,44 @@ public class PatientsCureSponsoringInformation extends javax.swing.JPanel
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 672, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE))
+                        .addGap(0, 793, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(btnSelectSponsor, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(sponsorButton, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(lblTitle)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 656, Short.MAX_VALUE)
-                        .addComponent(btnBack, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(179, 179, 179)
+                        .addComponent(titlelabel)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(backButton, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(28, 28, 28))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(backButton, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(lblTitle))
-                    .addComponent(btnBack, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(39, 39, 39)
+                        .addGap(22, 22, 22)
+                        .addComponent(titlelabel)))
+                .addGap(30, 30, 30)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 192, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(49, 49, 49)
-                .addComponent(btnSelectSponsor, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(372, Short.MAX_VALUE))
+                .addComponent(sponsorButton, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(401, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnSelectSponsorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSelectSponsorActionPerformed
+    private void sponsorButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sponsorButtonActionPerformed
         
-        DefaultTableModel model = (DefaultTableModel) patientSponsorshipJTable.getModel();
-        int selectedRow = patientSponsorshipJTable.getSelectedRow();
+        DefaultTableModel model = (DefaultTableModel) patsponsorTAble.getModel();
+        int selectedRow = patsponsorTAble.getSelectedRow();
         if (selectedRow < 0)
         {
             JOptionPane.showMessageDialog(null, "Select a patient to sponsor", "Warning", JOptionPane.WARNING_MESSAGE);
         }
         else
         {
-            HealthcareTrustRequestWQ request = (HealthcareTrustRequestWQ)patientSponsorshipJTable.getValueAt(selectedRow,0);
+            HealthcareTrustRequestWQ request = (HealthcareTrustRequestWQ)patsponsorTAble.getValueAt(selectedRow,0);
             float amount = request.getAmount();
             
             if(amount<amountFromFunding)
@@ -260,20 +262,20 @@ public class PatientsCureSponsoringInformation extends javax.swing.JPanel
                 JOptionPane.showMessageDialog(null, "Funding Oranisation can't sponsor the treatment due to money sortage", "Warning", JOptionPane.WARNING_MESSAGE);
             }
         }
-    }//GEN-LAST:event_btnSelectSponsorActionPerformed
+    }//GEN-LAST:event_sponsorButtonActionPerformed
 
-    private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
+    private void backButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backButtonActionPerformed
         showPanel.remove(this);
         CardLayout layout = (CardLayout) showPanel.getLayout();
         layout.previous(showPanel);
-    }//GEN-LAST:event_btnBackActionPerformed
+    }//GEN-LAST:event_backButtonActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnBack;
-    private javax.swing.JButton btnSelectSponsor;
+    private javax.swing.JButton backButton;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JLabel lblTitle;
-    private javax.swing.JTable patientSponsorshipJTable;
+    private javax.swing.JTable patsponsorTAble;
+    private javax.swing.JButton sponsorButton;
+    private javax.swing.JLabel titlelabel;
     // End of variables declaration//GEN-END:variables
 }

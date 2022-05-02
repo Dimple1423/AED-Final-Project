@@ -107,7 +107,7 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" attributes="0">
                                   <EmptySpace min="-2" pref="72" max="-2" attributes="0"/>
-                                  <Component id="deliveryDirLabel5" min="-2" pref="490" max="-2" attributes="0"/>
+                                  <Component id="adminWorkareaLabel" min="-2" pref="490" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
@@ -124,7 +124,7 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
-                          <Component id="deliveryDirLabel5" min="-2" pref="33" max="-2" attributes="0"/>
+                          <Component id="adminWorkareaLabel" min="-2" pref="33" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="81" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="jPanel3" min="-2" max="-2" attributes="0"/>
@@ -136,7 +136,7 @@
                 </DimensionLayout>
               </Layout>
               <SubComponents>
-                <Component class="javax.swing.JLabel" name="deliveryDirLabel5">
+                <Component class="javax.swing.JLabel" name="adminWorkareaLabel">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -172,17 +172,17 @@
                               <EmptySpace pref="46" max="32767" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="1" attributes="0">
-                                      <Component id="deliveryDirLabel" min="-2" pref="344" max="-2" attributes="0"/>
+                                      <Component id="titleOrgLabel" min="-2" pref="344" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="158" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="1" attributes="0">
-                                      <Component id="menuItemName6" min="-2" pref="195" max="-2" attributes="0"/>
+                                      <Component id="orgTypeLabel" min="-2" pref="195" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="comboManageOrg" min="-2" pref="177" max="-2" attributes="0"/>
+                                      <Component id="OrgCombo" min="-2" pref="177" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="150" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="1" attributes="0">
-                                      <Component id="btnCreateOrg" min="-2" pref="342" max="-2" attributes="0"/>
+                                      <Component id="createOrgButton" min="-2" pref="342" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="157" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="1" attributes="0">
@@ -197,23 +197,23 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="deliveryDirLabel" min="-2" pref="33" max="-2" attributes="0"/>
+                              <Component id="titleOrgLabel" min="-2" pref="33" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="menuItemName6" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="comboManageOrg" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="orgTypeLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="OrgCombo" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace pref="111" max="32767" attributes="0"/>
                               <Component id="jScrollPane1" min="-2" pref="92" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="85" max="-2" attributes="0"/>
-                              <Component id="btnCreateOrg" min="-2" max="-2" attributes="0"/>
+                              <Component id="createOrgButton" min="-2" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="52" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
                   </Layout>
                   <SubComponents>
-                    <Component class="javax.swing.JLabel" name="deliveryDirLabel">
+                    <Component class="javax.swing.JLabel" name="titleOrgLabel">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -227,7 +227,7 @@
                         <Property name="text" type="java.lang.String" value="Manage Organisation"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="menuItemName6">
+                    <Component class="javax.swing.JLabel" name="orgTypeLabel">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -241,11 +241,8 @@
                         <Property name="text" type="java.lang.String" value="Organisation Type:"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JComboBox" name="comboManageOrg">
+                    <Component class="javax.swing.JComboBox" name="OrgCombo">
                       <Properties>
-                        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                          <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                        </Property>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Tahoma" size="14" style="0"/>
                         </Property>
@@ -258,7 +255,7 @@
                         </Property>
                       </Properties>
                       <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="comboManageOrgActionPerformed"/>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="OrgComboActionPerformed"/>
                       </Events>
                     </Component>
                     <Container class="javax.swing.JScrollPane" name="jScrollPane1">
@@ -268,7 +265,7 @@
 
                       <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
                       <SubComponents>
-                        <Component class="javax.swing.JTable" name="tblManageOrg">
+                        <Component class="javax.swing.JTable" name="managerOrgTabel">
                           <Properties>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Tahoma" size="14" style="0"/>
@@ -296,6 +293,9 @@
                                 </Column>
                               </TableColumnModel>
                             </Property>
+                            <Property name="selectionBackground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                              <Color blue="66" green="66" red="0" type="rgb"/>
+                            </Property>
                             <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
                               <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
                             </Property>
@@ -303,7 +303,7 @@
                         </Component>
                       </SubComponents>
                     </Container>
-                    <Component class="javax.swing.JButton" name="btnCreateOrg">
+                    <Component class="javax.swing.JButton" name="createOrgButton">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="66" green="66" red="0" type="rgb"/>
@@ -315,9 +315,10 @@
                           <Color blue="ff" green="ff" red="ff" type="rgb"/>
                         </Property>
                         <Property name="text" type="java.lang.String" value="Create Organisation Role"/>
+                        <Property name="borderPainted" type="boolean" value="false"/>
                       </Properties>
                       <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCreateOrgActionPerformed"/>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="createOrgButtonActionPerformed"/>
                       </Events>
                     </Component>
                   </SubComponents>
@@ -350,7 +351,7 @@
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
-                          <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" attributes="0">
                                   <EmptySpace min="-2" pref="93" max="-2" attributes="0"/>
                                   <Component id="helpTextLabel1" min="-2" pref="798" max="-2" attributes="0"/>
@@ -358,19 +359,17 @@
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="deliveryDirLabel8" min="-2" pref="651" max="-2" attributes="0"/>
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                              <Component id="jPanel6" max="32767" attributes="0"/>
-                                              <Component id="jPanel4" max="32767" attributes="0"/>
-                                          </Group>
-                                          <EmptySpace min="-2" pref="57" max="-2" attributes="0"/>
-                                          <Component id="jLabel2" min="-2" pref="719" max="-2" attributes="0"/>
+                                      <Component id="manageEmpLabel" min="-2" pref="651" max="-2" attributes="0"/>
+                                      <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
+                                          <Component id="empTExt" max="32767" attributes="0"/>
+                                          <Component id="jPanel4" max="32767" attributes="0"/>
                                       </Group>
                                   </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="jLabel2" min="-2" pref="719" max="-2" attributes="0"/>
                               </Group>
                           </Group>
-                          <EmptySpace pref="87" max="32767" attributes="0"/>
+                          <EmptySpace pref="73" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -378,20 +377,20 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
+                              <Group type="102" attributes="0">
                                   <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
-                                  <Component id="deliveryDirLabel8" min="-2" pref="33" max="-2" attributes="0"/>
+                                  <Component id="manageEmpLabel" min="-2" pref="33" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Component id="jPanel4" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
-                                  <Component id="jPanel6" min="-2" max="-2" attributes="0"/>
+                                  <Component id="empTExt" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
                                   <Component id="jLabel2" min="-2" pref="610" max="-2" attributes="0"/>
                               </Group>
                           </Group>
-                          <EmptySpace min="-2" pref="386" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="385" max="-2" attributes="0"/>
                           <Component id="helpTextLabel1" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="32767" attributes="0"/>
                       </Group>
@@ -409,7 +408,7 @@
                     </Property>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JLabel" name="deliveryDirLabel8">
+                <Component class="javax.swing.JLabel" name="manageEmpLabel">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -446,16 +445,16 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
                               <EmptySpace max="32767" attributes="0"/>
-                              <Component id="deliveryDirLabel6" min="-2" pref="294" max="-2" attributes="0"/>
+                              <Component id="viewEmpLabel" min="-2" pref="294" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="92" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
                                       <EmptySpace min="-2" pref="58" max="-2" attributes="0"/>
-                                      <Component id="menuItemName12" min="-2" pref="204" max="-2" attributes="0"/>
+                                      <Component id="selctOrgLabel" min="-2" pref="204" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
-                                      <Component id="comboViewEmpOrg" min="-2" pref="193" max="-2" attributes="0"/>
+                                      <Component id="viewEmpCombo" min="-2" pref="193" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
                                       <EmptySpace max="-2" attributes="0"/>
@@ -470,11 +469,11 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="deliveryDirLabel6" min="-2" pref="33" max="-2" attributes="0"/>
+                              <Component id="viewEmpLabel" min="-2" pref="33" max="-2" attributes="0"/>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="menuItemName12" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="comboViewEmpOrg" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="selctOrgLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="viewEmpCombo" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Component id="jScrollPane3" min="-2" pref="125" max="-2" attributes="0"/>
@@ -484,7 +483,7 @@
                     </DimensionLayout>
                   </Layout>
                   <SubComponents>
-                    <Component class="javax.swing.JLabel" name="deliveryDirLabel6">
+                    <Component class="javax.swing.JLabel" name="viewEmpLabel">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -498,7 +497,7 @@
                         <Property name="text" type="java.lang.String" value="View Employee"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="menuItemName12">
+                    <Component class="javax.swing.JLabel" name="selctOrgLabel">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -512,7 +511,7 @@
                         <Property name="text" type="java.lang.String" value="Select Organisation:"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JComboBox" name="comboViewEmpOrg">
+                    <Component class="javax.swing.JComboBox" name="viewEmpCombo">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Tahoma" size="14" style="0"/>
@@ -525,7 +524,7 @@
                         </Property>
                       </Properties>
                       <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="comboViewEmpOrgActionPerformed"/>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="viewEmpComboActionPerformed"/>
                       </Events>
                     </Component>
                     <Container class="javax.swing.JScrollPane" name="jScrollPane3">
@@ -535,7 +534,7 @@
 
                       <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
                       <SubComponents>
-                        <Component class="javax.swing.JTable" name="tblEmployee">
+                        <Component class="javax.swing.JTable" name="employeeTable">
                           <Properties>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Tahoma" size="14" style="0"/>
@@ -563,6 +562,9 @@
                                 </Column>
                               </TableColumnModel>
                             </Property>
+                            <Property name="selectionBackground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                              <Color blue="66" green="66" red="0" type="rgb"/>
+                            </Property>
                             <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
                               <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
                             </Property>
@@ -572,7 +574,7 @@
                     </Container>
                   </SubComponents>
                 </Container>
-                <Container class="javax.swing.JPanel" name="jPanel6">
+                <Container class="javax.swing.JPanel" name="empTExt">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -595,26 +597,26 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
                               <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                              <Component id="btnAddEmployee" min="-2" pref="220" max="-2" attributes="0"/>
+                              <Component id="addEmpButton" min="-2" pref="220" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="143" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" attributes="0">
                               <Group type="103" groupAlignment="1" attributes="0">
                                   <Group type="102" attributes="0">
-                                      <Component id="menuItemName14" min="-2" pref="156" max="-2" attributes="0"/>
+                                      <Component id="empNameLabel" min="-2" pref="156" max="-2" attributes="0"/>
                                       <EmptySpace type="separate" max="-2" attributes="0"/>
                                       <Component id="empNameTF" min="-2" pref="190" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Group type="102" alignment="0" attributes="0">
                                           <EmptySpace min="-2" pref="114" max="-2" attributes="0"/>
-                                          <Component id="deliveryDirLabel9" min="-2" max="-2" attributes="0"/>
+                                          <Component id="createEmpLAbel" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                       <Group type="102" alignment="0" attributes="0">
                                           <EmptySpace min="-2" pref="74" max="-2" attributes="0"/>
-                                          <Component id="menuItemName13" min="-2" max="-2" attributes="0"/>
+                                          <Component id="selOrgLabel" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
-                                          <Component id="comboUpdateEmpOrg" min="-2" pref="193" max="-2" attributes="0"/>
+                                          <Component id="selOrgCmb" min="-2" pref="193" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                               </Group>
@@ -626,26 +628,26 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
-                              <Component id="deliveryDirLabel9" min="-2" pref="33" max="-2" attributes="0"/>
+                              <Component id="createEmpLAbel" min="-2" pref="33" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="1" attributes="0">
-                                  <Component id="menuItemName13" min="-2" max="-2" attributes="0"/>
-                                  <Component id="comboUpdateEmpOrg" min="-2" max="-2" attributes="0"/>
+                                  <Component id="selOrgLabel" min="-2" max="-2" attributes="0"/>
+                                  <Component id="selOrgCmb" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="empNameTF" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="menuItemName14" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="empNameLabel" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="btnAddEmployee" min="-2" max="-2" attributes="0"/>
+                              <Component id="addEmpButton" min="-2" max="-2" attributes="0"/>
                               <EmptySpace pref="52" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
                   </Layout>
                   <SubComponents>
-                    <Component class="javax.swing.JLabel" name="deliveryDirLabel9">
+                    <Component class="javax.swing.JLabel" name="createEmpLAbel">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -659,7 +661,7 @@
                         <Property name="text" type="java.lang.String" value="Update/Create Employee"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="menuItemName13">
+                    <Component class="javax.swing.JLabel" name="selOrgLabel">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Tahoma" size="18" style="1"/>
@@ -670,14 +672,14 @@
                         <Property name="text" type="java.lang.String" value="Select Organisation:"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JComboBox" name="comboUpdateEmpOrg">
+                    <Component class="javax.swing.JComboBox" name="selOrgCmb">
                       <Properties>
                         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
                           <StringArray count="0"/>
                         </Property>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="menuItemName14">
+                    <Component class="javax.swing.JLabel" name="empNameLabel">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Tahoma" size="18" style="1"/>
@@ -690,21 +692,22 @@
                     </Component>
                     <Component class="javax.swing.JTextField" name="empNameTF">
                     </Component>
-                    <Component class="javax.swing.JButton" name="btnAddEmployee">
+                    <Component class="javax.swing.JButton" name="addEmpButton">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                          <Color blue="66" green="66" red="0" type="rgb"/>
                         </Property>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Tahoma" size="19" style="1"/>
                         </Property>
                         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                          <Color blue="66" green="66" red="0" type="rgb"/>
+                          <Color blue="ff" green="ff" red="ff" type="rgb"/>
                         </Property>
                         <Property name="text" type="java.lang.String" value="Add Employee"/>
+                        <Property name="borderPainted" type="boolean" value="false"/>
                       </Properties>
                       <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnAddEmployeeActionPerformed"/>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="addEmpButtonActionPerformed"/>
                       </Events>
                     </Component>
                   </SubComponents>
@@ -734,9 +737,9 @@
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
-                          <EmptySpace min="40" pref="40" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="40" pref="40" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
                                       <Component id="jPanel5" min="-2" max="-2" attributes="0"/>
@@ -744,7 +747,10 @@
                                   <EmptySpace min="-2" pref="105" max="-2" attributes="0"/>
                                   <Component id="jLabel4" min="-2" pref="771" max="-2" attributes="0"/>
                               </Group>
-                              <Component id="deliveryDirLabel7" alignment="0" min="-2" pref="651" max="-2" attributes="0"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="209" max="-2" attributes="0"/>
+                                  <Component id="addminLAbel" min="-2" pref="358" max="-2" attributes="0"/>
+                              </Group>
                           </Group>
                           <EmptySpace max="32767" attributes="0"/>
                       </Group>
@@ -754,7 +760,7 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
-                          <Component id="deliveryDirLabel7" min="-2" pref="33" max="-2" attributes="0"/>
+                          <Component id="addminLAbel" min="-2" pref="33" max="-2" attributes="0"/>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" attributes="0">
@@ -764,13 +770,13 @@
                               </Group>
                               <Component id="jLabel4" min="-2" pref="640" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace pref="54" max="32767" attributes="0"/>
+                          <EmptySpace pref="53" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
               </Layout>
               <SubComponents>
-                <Component class="javax.swing.JLabel" name="deliveryDirLabel7">
+                <Component class="javax.swing.JLabel" name="addminLAbel">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -806,7 +812,7 @@
                               <EmptySpace pref="161" max="32767" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="1" attributes="0">
-                                      <Component id="deliveryDirLabel10" min="-2" max="-2" attributes="0"/>
+                                      <Component id="userCreateLabel" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="174" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="1" attributes="0">
@@ -814,35 +820,35 @@
                                           <Group type="102" alignment="1" attributes="0">
                                               <Group type="103" groupAlignment="1" attributes="0">
                                                   <Group type="102" alignment="1" attributes="0">
-                                                      <Component id="menuItemName9" linkSize="3" min="-2" pref="68" max="-2" attributes="0"/>
+                                                      <Component id="roleLabel" linkSize="3" min="-2" pref="68" max="-2" attributes="0"/>
                                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                                      <Component id="comboUserRole" linkSize="1" min="-2" pref="193" max="-2" attributes="0"/>
+                                                      <Component id="rolecmb" linkSize="1" min="-2" pref="193" max="-2" attributes="0"/>
                                                   </Group>
                                                   <Group type="102" alignment="1" attributes="0">
-                                                      <Component id="menuItemName8" linkSize="3" min="-2" pref="96" max="-2" attributes="0"/>
+                                                      <Component id="empLabel" linkSize="3" min="-2" pref="96" max="-2" attributes="0"/>
                                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                                      <Component id="comboUserEmployee" linkSize="1" min="-2" pref="193" max="-2" attributes="0"/>
+                                                      <Component id="empcmb" linkSize="1" min="-2" pref="193" max="-2" attributes="0"/>
                                                   </Group>
                                                   <Group type="102" alignment="1" attributes="0">
-                                                      <Component id="menuItemName7" linkSize="3" min="-2" pref="137" max="-2" attributes="0"/>
+                                                      <Component id="orgLable" linkSize="3" min="-2" pref="137" max="-2" attributes="0"/>
                                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                                      <Component id="comboUserOrganisation" linkSize="1" min="-2" pref="193" max="-2" attributes="0"/>
+                                                      <Component id="orgcmb" linkSize="1" min="-2" pref="193" max="-2" attributes="0"/>
                                                   </Group>
                                                   <Group type="102" alignment="1" attributes="0">
                                                       <Group type="103" groupAlignment="0" attributes="0">
-                                                          <Component id="menuItemName10" linkSize="3" alignment="0" min="-2" pref="109" max="-2" attributes="0"/>
-                                                          <Component id="menuItemName11" linkSize="3" alignment="0" min="-2" pref="96" max="-2" attributes="0"/>
+                                                          <Component id="unameLabel" linkSize="3" alignment="0" min="-2" pref="109" max="-2" attributes="0"/>
+                                                          <Component id="passLabel" linkSize="3" alignment="0" min="-2" pref="96" max="-2" attributes="0"/>
                                                       </Group>
                                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                                       <Group type="103" groupAlignment="0" attributes="0">
-                                                          <Component id="txtPassword" linkSize="1" min="-2" pref="190" max="-2" attributes="0"/>
-                                                          <Component id="txtUsername" linkSize="1" min="-2" pref="190" max="-2" attributes="0"/>
+                                                          <Component id="passText" linkSize="1" min="-2" pref="190" max="-2" attributes="0"/>
+                                                          <Component id="unameText" linkSize="1" min="-2" pref="190" max="-2" attributes="0"/>
                                                       </Group>
                                                   </Group>
                                               </Group>
                                               <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
                                           </Group>
-                                          <Component id="btnCreateUser" alignment="1" min="-2" pref="220" max="-2" attributes="0"/>
+                                          <Component id="createUserButton" alignment="1" min="-2" pref="220" max="-2" attributes="0"/>
                                       </Group>
                                       <EmptySpace min="-2" pref="122" max="-2" attributes="0"/>
                                   </Group>
@@ -853,41 +859,41 @@
                     <DimensionLayout dim="1">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
-                              <Component id="deliveryDirLabel10" min="-2" pref="33" max="-2" attributes="0"/>
+                              <Component id="userCreateLabel" min="-2" pref="33" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="1" attributes="0">
-                                  <Component id="menuItemName7" linkSize="4" min="-2" max="-2" attributes="0"/>
-                                  <Component id="comboUserOrganisation" linkSize="2" min="-2" max="-2" attributes="0"/>
+                                  <Component id="orgLable" linkSize="4" min="-2" max="-2" attributes="0"/>
+                                  <Component id="orgcmb" linkSize="2" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="menuItemName8" linkSize="4" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="comboUserEmployee" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="empLabel" linkSize="4" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="empcmb" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="menuItemName9" linkSize="4" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="comboUserRole" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="roleLabel" linkSize="4" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="rolecmb" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="txtUsername" linkSize="2" alignment="1" min="-2" max="-2" attributes="0"/>
-                                  <Component id="menuItemName10" linkSize="4" min="-2" max="-2" attributes="0"/>
+                                  <Component id="unameText" linkSize="2" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="unameLabel" linkSize="4" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="menuItemName11" linkSize="4" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="txtPassword" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="passLabel" linkSize="4" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="passText" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace max="32767" attributes="0"/>
-                              <Component id="btnCreateUser" min="-2" max="-2" attributes="0"/>
+                              <Component id="createUserButton" min="-2" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
                   </Layout>
                   <SubComponents>
-                    <Component class="javax.swing.JLabel" name="menuItemName7">
+                    <Component class="javax.swing.JLabel" name="orgLable">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -901,7 +907,7 @@
                         <Property name="text" type="java.lang.String" value="Organisation:"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JComboBox" name="comboUserOrganisation">
+                    <Component class="javax.swing.JComboBox" name="orgcmb">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Tahoma" size="13" style="0"/>
@@ -914,10 +920,10 @@
                         </Property>
                       </Properties>
                       <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="comboUserOrganisationActionPerformed"/>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="orgcmbActionPerformed"/>
                       </Events>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="menuItemName8">
+                    <Component class="javax.swing.JLabel" name="empLabel">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -931,7 +937,7 @@
                         <Property name="text" type="java.lang.String" value="Employee:"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JComboBox" name="comboUserEmployee">
+                    <Component class="javax.swing.JComboBox" name="empcmb">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Tahoma" size="13" style="0"/>
@@ -944,7 +950,7 @@
                         </Property>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="menuItemName9">
+                    <Component class="javax.swing.JLabel" name="roleLabel">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -958,7 +964,7 @@
                         <Property name="text" type="java.lang.String" value="Role:"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JComboBox" name="comboUserRole">
+                    <Component class="javax.swing.JComboBox" name="rolecmb">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Tahoma" size="13" style="0"/>
@@ -971,7 +977,7 @@
                         </Property>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="menuItemName10">
+                    <Component class="javax.swing.JLabel" name="unameLabel">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="66" green="66" red="0" type="rgb"/>
@@ -985,7 +991,7 @@
                         <Property name="text" type="java.lang.String" value="Username:"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="txtUsername">
+                    <Component class="javax.swing.JTextField" name="unameText">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Tahoma" size="13" style="0"/>
@@ -995,7 +1001,7 @@
                         </Property>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="menuItemName11">
+                    <Component class="javax.swing.JLabel" name="passLabel">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -1009,7 +1015,7 @@
                         <Property name="text" type="java.lang.String" value="Password:"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="txtPassword">
+                    <Component class="javax.swing.JTextField" name="passText">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Tahoma" size="13" style="0"/>
@@ -1019,10 +1025,10 @@
                         </Property>
                       </Properties>
                       <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtPasswordActionPerformed"/>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="passTextActionPerformed"/>
                       </Events>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="deliveryDirLabel10">
+                    <Component class="javax.swing.JLabel" name="userCreateLabel">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -1036,7 +1042,7 @@
                         <Property name="text" type="java.lang.String" value="Update/Create User"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JButton" name="btnCreateUser">
+                    <Component class="javax.swing.JButton" name="createUserButton">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="66" green="66" red="0" type="rgb"/>
@@ -1056,7 +1062,7 @@
                         <Property name="borderPainted" type="boolean" value="false"/>
                       </Properties>
                       <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCreateUserActionPerformed"/>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="createUserButtonActionPerformed"/>
                       </Events>
                     </Component>
                   </SubComponents>
@@ -1081,7 +1087,7 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
                               <EmptySpace pref="251" max="32767" attributes="0"/>
-                              <Component id="deliveryDirLabel4" min="-2" pref="294" max="-2" attributes="0"/>
+                              <Component id="viewUserLabel" min="-2" pref="294" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="97" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
@@ -1095,7 +1101,7 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
                               <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
-                              <Component id="deliveryDirLabel4" min="-2" pref="33" max="-2" attributes="0"/>
+                              <Component id="viewUserLabel" min="-2" pref="33" max="-2" attributes="0"/>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
                               <Component id="jScrollPane2" min="-2" pref="125" max="-2" attributes="0"/>
                               <EmptySpace pref="41" max="32767" attributes="0"/>
@@ -1111,7 +1117,7 @@
 
                       <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
                       <SubComponents>
-                        <Component class="javax.swing.JTable" name="userJTable">
+                        <Component class="javax.swing.JTable" name="userTable">
                           <Properties>
                             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                               <Color blue="66" green="66" red="0" type="rgb"/>
@@ -1143,7 +1149,7 @@
                         </Component>
                       </SubComponents>
                     </Container>
-                    <Component class="javax.swing.JLabel" name="deliveryDirLabel4">
+                    <Component class="javax.swing.JLabel" name="viewUserLabel">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="ff" green="ff" red="ff" type="rgb"/>
