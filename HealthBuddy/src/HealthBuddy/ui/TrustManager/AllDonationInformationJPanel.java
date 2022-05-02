@@ -2,8 +2,10 @@ package HealthBuddy.ui.TrustManager;
 
 import HealthBuddy.models.EcoSystem;
 import HealthBuddy.models.Enterprise.Enterprise;
+import java.awt.Image;
 import HealthBuddy.models.User.User;
 import HealthBuddy.models.Trust.Donation.TrustDetails;
+import javax.swing.ImageIcon;
 import java.awt.CardLayout;
 import javax.swing.JPanel;
 import javax.swing.table.DefaultTableModel;
@@ -72,6 +74,7 @@ public class AllDonationInformationJPanel extends javax.swing.JPanel
         nameLabel = new javax.swing.JLabel();
         valueLable = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
         setBorder(javax.swing.BorderFactory.createTitledBorder("Donations Details"));
@@ -146,6 +149,10 @@ public class AllDonationInformationJPanel extends javax.swing.JPanel
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(0, 102, 102));
         add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 280, 830, -1));
+
+        ImageIcon imageIcon =  new ImageIcon(new ImageIcon(getClass().getResource("/HealthBuddy/ui/images/viewdonation.gif")).getImage().getScaledInstance(600, 500, Image.SCALE_DEFAULT));
+        jLabel1.setIcon(imageIcon);
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 140, 650, 550));
     }// </editor-fold>//GEN-END:initComponents
 
     private void backButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backButtonActionPerformed
@@ -158,6 +165,7 @@ public class AllDonationInformationJPanel extends javax.swing.JPanel
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton backButton;
     private javax.swing.JTable donationDetailsJTable;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel nameLabel;
