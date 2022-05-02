@@ -46,7 +46,8 @@ public class WorkAreaDonorJPanel extends javax.swing.JPanel {
         populateCharityTable();
         populateDonationHistoryTable();
 
-        userAccLabel.setText("Hi  " + donorData.getDonorName());
+        userAccLabel9.setText("Hi  " + donorData.getDonorName());
+        setSize(1540,800);
     }
     
     public void initCharityDirTableModel() {
@@ -59,7 +60,7 @@ public class WorkAreaDonorJPanel extends javax.swing.JPanel {
     
     public void populateCharityTable()
     {
-        DefaultTableModel charityModel = (DefaultTableModel) charityDirTable.getModel();
+        DefaultTableModel charityModel = (DefaultTableModel) charityDirTable9.getModel();
 
         charityModel.setRowCount(0);
 
@@ -85,7 +86,7 @@ public class WorkAreaDonorJPanel extends javax.swing.JPanel {
     public void populateDonationHistoryTable() {
 
         List<TrustDetails> donorData = ecoSystem.getDonationDirectory().getTrustDetailsForADonor(userAccount.getUsername());
-        DefaultTableModel appointmentHisTable = (DefaultTableModel) searchDonationCatalogTable.getModel();
+        DefaultTableModel appointmentHisTable = (DefaultTableModel) searchDonationCatalogTable9.getModel();
         
         appointmentHisTable.setRowCount(0);
         DateFormat formatter = new SimpleDateFormat("dd/mm/yyyy");
@@ -109,7 +110,7 @@ public class WorkAreaDonorJPanel extends javax.swing.JPanel {
     public void populateDonationHistoryTableWithCharityName(String charityname) {
 
         List<TrustDetails> donorData = ecoSystem.getDonationDirectory().getTrustDetailsForACharityName(charityname);
-        DefaultTableModel appointmentHisTable = (DefaultTableModel) searchDonationCatalogTable.getModel();
+        DefaultTableModel appointmentHisTable = (DefaultTableModel) searchDonationCatalogTable9.getModel();
         
         appointmentHisTable.setRowCount(0);
         DateFormat formatter = new SimpleDateFormat("dd/mm/yyyy");
@@ -128,7 +129,7 @@ public class WorkAreaDonorJPanel extends javax.swing.JPanel {
      public void populateDonationHistoryTableWithCharityCause(String cause) {
 
         List<TrustDetails> donorData = ecoSystem.getDonationDirectory().getTrustDetailsForACharityCause(cause);
-        DefaultTableModel appointmentHisTable = (DefaultTableModel) searchDonationCatalogTable.getModel();
+        DefaultTableModel appointmentHisTable = (DefaultTableModel) searchDonationCatalogTable9.getModel();
         
         appointmentHisTable.setRowCount(0);
         DateFormat formatter = new SimpleDateFormat("dd/mm/yyyy");
@@ -147,7 +148,7 @@ public class WorkAreaDonorJPanel extends javax.swing.JPanel {
     public void populateDonationHistoryTableWithCharityCity(String city) {
 
         List<TrustDetails> donorData = ecoSystem.getDonationDirectory().getTrustDetailsForACharityCity(city);
-        DefaultTableModel appointmentHisTable = (DefaultTableModel) searchDonationCatalogTable.getModel();
+        DefaultTableModel appointmentHisTable = (DefaultTableModel) searchDonationCatalogTable9.getModel();
         
         appointmentHisTable.setRowCount(0);
         DateFormat formatter = new SimpleDateFormat("dd/mm/yyyy");
@@ -184,135 +185,135 @@ public class WorkAreaDonorJPanel extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        donationTabbedPane = new javax.swing.JTabbedPane();
-        menuPanel = new javax.swing.JPanel();
-        deliveryDirLabel = new javax.swing.JLabel();
-        delDirectoryScollPanel = new javax.swing.JScrollPane();
-        charityDirTable = new javax.swing.JTable();
-        menuItemName1 = new javax.swing.JLabel();
-        deliveryDirLabel2 = new javax.swing.JLabel();
-        deliveryDirLabel3 = new javax.swing.JLabel();
-        twoHundBtn = new javax.swing.JButton();
-        hundBtn = new javax.swing.JButton();
-        onefiftyBtn = new javax.swing.JButton();
-        amountTF = new javax.swing.JTextField();
-        frequencyCombobox = new javax.swing.JComboBox<>();
-        menuItemName6 = new javax.swing.JLabel();
-        createDonationBtn = new javax.swing.JButton();
+        donationTabbedPane9 = new javax.swing.JTabbedPane();
+        menuPanel9 = new javax.swing.JPanel();
+        deliveryDirLabel9 = new javax.swing.JLabel();
+        delDirectoryScollPanel9 = new javax.swing.JScrollPane();
+        charityDirTable9 = new javax.swing.JTable();
+        menuItemName19 = new javax.swing.JLabel();
+        deliveryDirLabel29 = new javax.swing.JLabel();
+        deliveryDirLabel39 = new javax.swing.JLabel();
+        twoHundBtn9 = new javax.swing.JButton();
+        hundBtn9 = new javax.swing.JButton();
+        onefiftyBtn9 = new javax.swing.JButton();
+        amountTF9 = new javax.swing.JTextField();
+        frequencyCombobox9 = new javax.swing.JComboBox<>();
+        menuItemName69 = new javax.swing.JLabel();
+        createDonationBtn9 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
-        manageOrdersTab = new javax.swing.JPanel();
-        propertyComboBox = new javax.swing.JComboBox<>();
-        searchHeaderLabel = new javax.swing.JLabel();
-        propertyValueTextField = new javax.swing.JTextField();
-        donationListSearchButton = new javax.swing.JButton();
-        resetTableButton = new javax.swing.JButton();
-        searchCarCatalogScrollPanel = new javax.swing.JScrollPane();
-        searchDonationCatalogTable = new javax.swing.JTable();
-        userAccLabel = new javax.swing.JLabel();
-        helpTextLabel = new javax.swing.JLabel();
-        deliveryDirLabel5 = new javax.swing.JLabel();
+        manageOrdersTab9 = new javax.swing.JPanel();
+        propertyComboBox9 = new javax.swing.JComboBox<>();
+        searchHeaderLabel9 = new javax.swing.JLabel();
+        propertyValueTextField9 = new javax.swing.JTextField();
+        donationListSearchButton9 = new javax.swing.JButton();
+        resetTableButton9 = new javax.swing.JButton();
+        searchCarCatalogScrollPanel9 = new javax.swing.JScrollPane();
+        searchDonationCatalogTable9 = new javax.swing.JTable();
+        userAccLabel9 = new javax.swing.JLabel();
+        helpTextLabel9 = new javax.swing.JLabel();
+        deliveryDirLabel59 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
 
-        donationTabbedPane.setBackground(new java.awt.Color(0, 102, 102));
-        donationTabbedPane.setForeground(new java.awt.Color(255, 255, 255));
-        donationTabbedPane.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        donationTabbedPane9.setBackground(new java.awt.Color(0, 102, 102));
+        donationTabbedPane9.setForeground(new java.awt.Color(255, 255, 255));
+        donationTabbedPane9.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
 
-        menuPanel.setBackground(new java.awt.Color(255, 255, 255));
+        menuPanel9.setBackground(new java.awt.Color(255, 255, 255));
 
-        deliveryDirLabel.setBackground(new java.awt.Color(255, 255, 255));
-        deliveryDirLabel.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        deliveryDirLabel.setForeground(new java.awt.Color(0, 102, 102));
-        deliveryDirLabel.setText("Giving a Little is Better than Not Giving at ALL !!");
+        deliveryDirLabel9.setBackground(new java.awt.Color(255, 255, 255));
+        deliveryDirLabel9.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        deliveryDirLabel9.setForeground(new java.awt.Color(0, 102, 102));
+        deliveryDirLabel9.setText("Giving a Little is Better than Not Giving at ALL !!");
 
-        charityDirTable.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        charityDirTable.setForeground(new java.awt.Color(0, 102, 102));
-        charityDirTable.setModel(charityDirectoryTableModel);
-        charityDirTable.setRowHeight(40);
-        delDirectoryScollPanel.setViewportView(charityDirTable);
+        charityDirTable9.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        charityDirTable9.setForeground(new java.awt.Color(0, 102, 102));
+        charityDirTable9.setModel(charityDirectoryTableModel);
+        charityDirTable9.setRowHeight(40);
+        delDirectoryScollPanel9.setViewportView(charityDirTable9);
 
-        menuItemName1.setBackground(new java.awt.Color(255, 255, 255));
-        menuItemName1.setFont(new java.awt.Font("Tahoma", 1, 19)); // NOI18N
-        menuItemName1.setForeground(new java.awt.Color(0, 102, 102));
-        menuItemName1.setText("Donation Amount");
+        menuItemName19.setBackground(new java.awt.Color(255, 255, 255));
+        menuItemName19.setFont(new java.awt.Font("Tahoma", 1, 19)); // NOI18N
+        menuItemName19.setForeground(new java.awt.Color(0, 102, 102));
+        menuItemName19.setText("Donation Amount");
 
-        deliveryDirLabel2.setBackground(new java.awt.Color(255, 255, 255));
-        deliveryDirLabel2.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        deliveryDirLabel2.setForeground(new java.awt.Color(0, 102, 102));
-        deliveryDirLabel2.setText("Charity Catalog");
+        deliveryDirLabel29.setBackground(new java.awt.Color(255, 255, 255));
+        deliveryDirLabel29.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        deliveryDirLabel29.setForeground(new java.awt.Color(0, 102, 102));
+        deliveryDirLabel29.setText("Charity Catalog");
 
-        deliveryDirLabel3.setBackground(new java.awt.Color(255, 255, 255));
-        deliveryDirLabel3.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        deliveryDirLabel3.setForeground(new java.awt.Color(0, 102, 102));
-        deliveryDirLabel3.setText("Contribute, make a Difference..");
+        deliveryDirLabel39.setBackground(new java.awt.Color(255, 255, 255));
+        deliveryDirLabel39.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        deliveryDirLabel39.setForeground(new java.awt.Color(0, 102, 102));
+        deliveryDirLabel39.setText("Contribute, make a Difference..");
 
-        twoHundBtn.setBackground(new java.awt.Color(0, 102, 102));
-        twoHundBtn.setFont(new java.awt.Font("Tahoma", 0, 19)); // NOI18N
-        twoHundBtn.setForeground(new java.awt.Color(255, 255, 255));
-        twoHundBtn.setText("$ 200");
-        twoHundBtn.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        twoHundBtn.setBorderPainted(false);
-        twoHundBtn.addActionListener(new java.awt.event.ActionListener() {
+        twoHundBtn9.setBackground(new java.awt.Color(0, 102, 102));
+        twoHundBtn9.setFont(new java.awt.Font("Tahoma", 0, 19)); // NOI18N
+        twoHundBtn9.setForeground(new java.awt.Color(255, 255, 255));
+        twoHundBtn9.setText("$ 200");
+        twoHundBtn9.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        twoHundBtn9.setBorderPainted(false);
+        twoHundBtn9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                twoHundBtnActionPerformed(evt);
+                twoHundBtn9ActionPerformed(evt);
             }
         });
 
-        hundBtn.setBackground(new java.awt.Color(0, 102, 102));
-        hundBtn.setFont(new java.awt.Font("Tahoma", 0, 19)); // NOI18N
-        hundBtn.setForeground(new java.awt.Color(255, 255, 255));
-        hundBtn.setText("$ 100");
-        hundBtn.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        hundBtn.setBorderPainted(false);
-        hundBtn.addActionListener(new java.awt.event.ActionListener() {
+        hundBtn9.setBackground(new java.awt.Color(0, 102, 102));
+        hundBtn9.setFont(new java.awt.Font("Tahoma", 0, 19)); // NOI18N
+        hundBtn9.setForeground(new java.awt.Color(255, 255, 255));
+        hundBtn9.setText("$ 100");
+        hundBtn9.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        hundBtn9.setBorderPainted(false);
+        hundBtn9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                hundBtnActionPerformed(evt);
+                hundBtn9ActionPerformed(evt);
             }
         });
 
-        onefiftyBtn.setBackground(new java.awt.Color(0, 102, 102));
-        onefiftyBtn.setFont(new java.awt.Font("Tahoma", 0, 19)); // NOI18N
-        onefiftyBtn.setForeground(new java.awt.Color(255, 255, 255));
-        onefiftyBtn.setText("$ 150");
-        onefiftyBtn.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        onefiftyBtn.setBorderPainted(false);
-        onefiftyBtn.addActionListener(new java.awt.event.ActionListener() {
+        onefiftyBtn9.setBackground(new java.awt.Color(0, 102, 102));
+        onefiftyBtn9.setFont(new java.awt.Font("Tahoma", 0, 19)); // NOI18N
+        onefiftyBtn9.setForeground(new java.awt.Color(255, 255, 255));
+        onefiftyBtn9.setText("$ 150");
+        onefiftyBtn9.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        onefiftyBtn9.setBorderPainted(false);
+        onefiftyBtn9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                onefiftyBtnActionPerformed(evt);
+                onefiftyBtn9ActionPerformed(evt);
             }
         });
 
-        amountTF.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        amountTF.setForeground(new java.awt.Color(0, 102, 102));
-        amountTF.setText(" ");
+        amountTF9.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        amountTF9.setForeground(new java.awt.Color(0, 102, 102));
+        amountTF9.setText(" ");
 
-        frequencyCombobox.setBackground(new java.awt.Color(255, 255, 255));
-        frequencyCombobox.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        frequencyCombobox.setForeground(new java.awt.Color(0, 102, 102));
-        frequencyCombobox.setMaximumRowCount(10);
-        frequencyCombobox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "-", "Bi Weekly", "Monthly", "Quarterly", "Yearly", "One Time" }));
-        frequencyCombobox.setActionCommand("");
-        frequencyCombobox.addActionListener(new java.awt.event.ActionListener() {
+        frequencyCombobox9.setBackground(new java.awt.Color(255, 255, 255));
+        frequencyCombobox9.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        frequencyCombobox9.setForeground(new java.awt.Color(0, 102, 102));
+        frequencyCombobox9.setMaximumRowCount(10);
+        frequencyCombobox9.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "-", "Bi Weekly", "Monthly", "Quarterly", "Yearly", "One Time" }));
+        frequencyCombobox9.setActionCommand("");
+        frequencyCombobox9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                frequencyComboboxActionPerformed(evt);
+                frequencyCombobox9ActionPerformed(evt);
             }
         });
 
-        menuItemName6.setBackground(new java.awt.Color(255, 255, 255));
-        menuItemName6.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        menuItemName6.setForeground(new java.awt.Color(0, 102, 102));
-        menuItemName6.setText("Frequency");
+        menuItemName69.setBackground(new java.awt.Color(255, 255, 255));
+        menuItemName69.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        menuItemName69.setForeground(new java.awt.Color(0, 102, 102));
+        menuItemName69.setText("Frequency");
 
-        createDonationBtn.setBackground(new java.awt.Color(0, 102, 102));
-        createDonationBtn.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
-        createDonationBtn.setForeground(new java.awt.Color(255, 255, 255));
-        createDonationBtn.setText("Make Donation");
-        createDonationBtn.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        createDonationBtn.setBorderPainted(false);
-        createDonationBtn.addActionListener(new java.awt.event.ActionListener() {
+        createDonationBtn9.setBackground(new java.awt.Color(0, 102, 102));
+        createDonationBtn9.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
+        createDonationBtn9.setForeground(new java.awt.Color(255, 255, 255));
+        createDonationBtn9.setText("Make Donation");
+        createDonationBtn9.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        createDonationBtn9.setBorderPainted(false);
+        createDonationBtn9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                createDonationBtnActionPerformed(evt);
+                createDonationBtn9ActionPerformed(evt);
             }
         });
 
@@ -320,210 +321,210 @@ public class WorkAreaDonorJPanel extends javax.swing.JPanel {
 
         jLabel2.setIcon(imageIcon);
 
-        javax.swing.GroupLayout menuPanelLayout = new javax.swing.GroupLayout(menuPanel);
-        menuPanel.setLayout(menuPanelLayout);
-        menuPanelLayout.setHorizontalGroup(
-            menuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(menuPanelLayout.createSequentialGroup()
+        javax.swing.GroupLayout menuPanel9Layout = new javax.swing.GroupLayout(menuPanel9);
+        menuPanel9.setLayout(menuPanel9Layout);
+        menuPanel9Layout.setHorizontalGroup(
+            menuPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(menuPanel9Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(menuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(menuPanelLayout.createSequentialGroup()
-                        .addGroup(menuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(menuItemName1, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(delDirectoryScollPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 754, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(menuPanelLayout.createSequentialGroup()
-                                .addGroup(menuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addGroup(menuPanelLayout.createSequentialGroup()
-                                        .addComponent(hundBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(menuPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(menuPanel9Layout.createSequentialGroup()
+                        .addGroup(menuPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(menuItemName19, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(delDirectoryScollPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, 754, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(menuPanel9Layout.createSequentialGroup()
+                                .addGroup(menuPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addGroup(menuPanel9Layout.createSequentialGroup()
+                                        .addComponent(hundBtn9, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(onefiftyBtn)
+                                        .addComponent(onefiftyBtn9)
                                         .addGap(18, 18, 18)
-                                        .addComponent(twoHundBtn))
-                                    .addComponent(menuItemName6, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(twoHundBtn9))
+                                    .addComponent(menuItemName69, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(18, 18, 18)
-                                .addGroup(menuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(frequencyCombobox, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(amountTF, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addComponent(deliveryDirLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 651, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(deliveryDirLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 294, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(menuPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(frequencyCombobox9, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(amountTF9, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(deliveryDirLabel39, javax.swing.GroupLayout.PREFERRED_SIZE, 651, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(deliveryDirLabel29, javax.swing.GroupLayout.PREFERRED_SIZE, 294, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(101, 101, 101)
                         .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 579, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(deliveryDirLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 651, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(createDonationBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(deliveryDirLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 651, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(createDonationBtn9, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(62, Short.MAX_VALUE))
         );
-        menuPanelLayout.setVerticalGroup(
-            menuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(menuPanelLayout.createSequentialGroup()
+        menuPanel9Layout.setVerticalGroup(
+            menuPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(menuPanel9Layout.createSequentialGroup()
                 .addGap(32, 32, 32)
-                .addComponent(deliveryDirLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(deliveryDirLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addGroup(menuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(menuPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 544, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(menuPanelLayout.createSequentialGroup()
-                        .addComponent(deliveryDirLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(menuPanel9Layout.createSequentialGroup()
+                        .addComponent(deliveryDirLabel39, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(26, 26, 26)
-                        .addComponent(deliveryDirLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(deliveryDirLabel29, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(delDirectoryScollPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 269, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(delDirectoryScollPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, 269, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(31, 31, 31)
-                        .addComponent(menuItemName1)
+                        .addComponent(menuItemName19)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(menuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(menuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(amountTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(onefiftyBtn)
-                                .addComponent(twoHundBtn))
-                            .addComponent(hundBtn))
+                        .addGroup(menuPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(menuPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(amountTF9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(onefiftyBtn9)
+                                .addComponent(twoHundBtn9))
+                            .addComponent(hundBtn9))
                         .addGap(18, 18, 18)
-                        .addGroup(menuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(frequencyCombobox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(menuItemName6))))
+                        .addGroup(menuPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(frequencyCombobox9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(menuItemName69))))
                 .addGap(3, 3, 3)
-                .addComponent(createDonationBtn)
+                .addComponent(createDonationBtn9)
                 .addContainerGap(88, Short.MAX_VALUE))
         );
 
-        donationTabbedPane.addTab("New Donation", menuPanel);
+        donationTabbedPane9.addTab("New Donation", menuPanel9);
 
-        manageOrdersTab.setBackground(new java.awt.Color(255, 255, 255));
-        manageOrdersTab.setForeground(new java.awt.Color(0, 102, 102));
+        manageOrdersTab9.setBackground(new java.awt.Color(255, 255, 255));
+        manageOrdersTab9.setForeground(new java.awt.Color(0, 102, 102));
 
-        propertyComboBox.setBackground(new java.awt.Color(255, 255, 255));
-        propertyComboBox.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        propertyComboBox.setForeground(new java.awt.Color(0, 102, 102));
-        propertyComboBox.setMaximumRowCount(12);
-        propertyComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "-", "Charity Name", "City", "Charity Cause" }));
-        propertyComboBox.addActionListener(new java.awt.event.ActionListener() {
+        propertyComboBox9.setBackground(new java.awt.Color(255, 255, 255));
+        propertyComboBox9.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        propertyComboBox9.setForeground(new java.awt.Color(0, 102, 102));
+        propertyComboBox9.setMaximumRowCount(12);
+        propertyComboBox9.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "-", "Charity Name", "City", "Charity Cause" }));
+        propertyComboBox9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                propertyComboBoxActionPerformed(evt);
+                propertyComboBox9ActionPerformed(evt);
             }
         });
 
-        searchHeaderLabel.setBackground(new java.awt.Color(255, 255, 255));
-        searchHeaderLabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        searchHeaderLabel.setForeground(new java.awt.Color(0, 102, 102));
-        searchHeaderLabel.setText("Select property to filter out records");
+        searchHeaderLabel9.setBackground(new java.awt.Color(255, 255, 255));
+        searchHeaderLabel9.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        searchHeaderLabel9.setForeground(new java.awt.Color(0, 102, 102));
+        searchHeaderLabel9.setText("Select property to filter out records");
 
-        propertyValueTextField.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        propertyValueTextField.setForeground(new java.awt.Color(0, 102, 102));
-        propertyValueTextField.setText(" ");
+        propertyValueTextField9.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        propertyValueTextField9.setForeground(new java.awt.Color(0, 102, 102));
+        propertyValueTextField9.setText(" ");
 
-        donationListSearchButton.setBackground(new java.awt.Color(0, 102, 102));
-        donationListSearchButton.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
-        donationListSearchButton.setForeground(new java.awt.Color(255, 255, 255));
-        donationListSearchButton.setText("Search");
-        donationListSearchButton.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        donationListSearchButton.setBorderPainted(false);
-        donationListSearchButton.addActionListener(new java.awt.event.ActionListener() {
+        donationListSearchButton9.setBackground(new java.awt.Color(0, 102, 102));
+        donationListSearchButton9.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
+        donationListSearchButton9.setForeground(new java.awt.Color(255, 255, 255));
+        donationListSearchButton9.setText("Search");
+        donationListSearchButton9.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        donationListSearchButton9.setBorderPainted(false);
+        donationListSearchButton9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                donationListSearchButtonActionPerformed(evt);
+                donationListSearchButton9ActionPerformed(evt);
             }
         });
 
-        resetTableButton.setBackground(new java.awt.Color(0, 102, 102));
-        resetTableButton.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
-        resetTableButton.setForeground(new java.awt.Color(255, 255, 255));
-        resetTableButton.setText("Reset");
-        resetTableButton.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        resetTableButton.setBorderPainted(false);
-        resetTableButton.addActionListener(new java.awt.event.ActionListener() {
+        resetTableButton9.setBackground(new java.awt.Color(0, 102, 102));
+        resetTableButton9.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
+        resetTableButton9.setForeground(new java.awt.Color(255, 255, 255));
+        resetTableButton9.setText("Reset");
+        resetTableButton9.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        resetTableButton9.setBorderPainted(false);
+        resetTableButton9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                resetTableButtonActionPerformed(evt);
+                resetTableButton9ActionPerformed(evt);
             }
         });
 
-        searchDonationCatalogTable.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        searchDonationCatalogTable.setForeground(new java.awt.Color(0, 102, 102));
-        searchDonationCatalogTable.setModel(donationHistoryTableModel);
-        searchDonationCatalogTable.setRowHeight(40);
-        searchDonationCatalogTable.setSelectionBackground(new java.awt.Color(0, 102, 102));
-        searchCarCatalogScrollPanel.setViewportView(searchDonationCatalogTable);
+        searchDonationCatalogTable9.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        searchDonationCatalogTable9.setForeground(new java.awt.Color(0, 102, 102));
+        searchDonationCatalogTable9.setModel(donationHistoryTableModel);
+        searchDonationCatalogTable9.setRowHeight(40);
+        searchDonationCatalogTable9.setSelectionBackground(new java.awt.Color(0, 102, 102));
+        searchCarCatalogScrollPanel9.setViewportView(searchDonationCatalogTable9);
 
-        userAccLabel.setBackground(new java.awt.Color(255, 255, 255));
-        userAccLabel.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        userAccLabel.setForeground(new java.awt.Color(0, 102, 102));
-        userAccLabel.setText(" ");
+        userAccLabel9.setBackground(new java.awt.Color(255, 255, 255));
+        userAccLabel9.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        userAccLabel9.setForeground(new java.awt.Color(0, 102, 102));
+        userAccLabel9.setText(" ");
 
-        helpTextLabel.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        helpTextLabel.setForeground(new java.awt.Color(0, 0, 102));
-        helpTextLabel.setText(" ");
+        helpTextLabel9.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        helpTextLabel9.setForeground(new java.awt.Color(0, 0, 102));
+        helpTextLabel9.setText(" ");
 
-        deliveryDirLabel5.setBackground(new java.awt.Color(255, 255, 255));
-        deliveryDirLabel5.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        deliveryDirLabel5.setForeground(new java.awt.Color(0, 102, 102));
-        deliveryDirLabel5.setText("Donation History");
+        deliveryDirLabel59.setBackground(new java.awt.Color(255, 255, 255));
+        deliveryDirLabel59.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        deliveryDirLabel59.setForeground(new java.awt.Color(0, 102, 102));
+        deliveryDirLabel59.setText("Donation History");
 
         ImageIcon imageIcona = new ImageIcon(new ImageIcon(getClass().getResource("/HealthBuddy/ui/images/search.gif")).getImage().getScaledInstance(650, 550, Image.SCALE_DEFAULT));
 
         jLabel1.setIcon(imageIcona);
 
-        javax.swing.GroupLayout manageOrdersTabLayout = new javax.swing.GroupLayout(manageOrdersTab);
-        manageOrdersTab.setLayout(manageOrdersTabLayout);
-        manageOrdersTabLayout.setHorizontalGroup(
-            manageOrdersTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(manageOrdersTabLayout.createSequentialGroup()
+        javax.swing.GroupLayout manageOrdersTab9Layout = new javax.swing.GroupLayout(manageOrdersTab9);
+        manageOrdersTab9.setLayout(manageOrdersTab9Layout);
+        manageOrdersTab9Layout.setHorizontalGroup(
+            manageOrdersTab9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(manageOrdersTab9Layout.createSequentialGroup()
                 .addGap(21, 21, 21)
-                .addGroup(manageOrdersTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(manageOrdersTabLayout.createSequentialGroup()
-                        .addGroup(manageOrdersTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(userAccLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 246, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(manageOrdersTabLayout.createSequentialGroup()
+                .addGroup(manageOrdersTab9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(manageOrdersTab9Layout.createSequentialGroup()
+                        .addGroup(manageOrdersTab9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(userAccLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 246, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(manageOrdersTab9Layout.createSequentialGroup()
                                 .addGap(677, 677, 677)
-                                .addComponent(helpTextLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 798, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(helpTextLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 798, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(manageOrdersTabLayout.createSequentialGroup()
-                        .addGroup(manageOrdersTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(manageOrdersTabLayout.createSequentialGroup()
+                    .addGroup(manageOrdersTab9Layout.createSequentialGroup()
+                        .addGroup(manageOrdersTab9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(manageOrdersTab9Layout.createSequentialGroup()
                                 .addGap(6, 6, 6)
-                                .addGroup(manageOrdersTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(searchCarCatalogScrollPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 647, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(manageOrdersTabLayout.createSequentialGroup()
-                                        .addComponent(propertyComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 209, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGroup(manageOrdersTab9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(searchCarCatalogScrollPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, 647, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(manageOrdersTab9Layout.createSequentialGroup()
+                                        .addComponent(propertyComboBox9, javax.swing.GroupLayout.PREFERRED_SIZE, 209, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(propertyValueTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(propertyValueTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(24, 24, 24)
-                                        .addComponent(donationListSearchButton, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(donationListSearchButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(resetTableButton, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                            .addGroup(manageOrdersTabLayout.createSequentialGroup()
+                                        .addComponent(resetTableButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addGroup(manageOrdersTab9Layout.createSequentialGroup()
                                 .addGap(14, 14, 14)
-                                .addGroup(manageOrdersTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(deliveryDirLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 294, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(searchHeaderLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 345, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addGroup(manageOrdersTab9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(deliveryDirLabel59, javax.swing.GroupLayout.PREFERRED_SIZE, 294, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(searchHeaderLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 345, javax.swing.GroupLayout.PREFERRED_SIZE))))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 718, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(58, 58, 58))))
         );
-        manageOrdersTabLayout.setVerticalGroup(
-            manageOrdersTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(manageOrdersTabLayout.createSequentialGroup()
+        manageOrdersTab9Layout.setVerticalGroup(
+            manageOrdersTab9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(manageOrdersTab9Layout.createSequentialGroup()
                 .addGap(21, 21, 21)
-                .addComponent(userAccLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(userAccLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(5, 5, 5)
-                .addGroup(manageOrdersTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(manageOrdersTabLayout.createSequentialGroup()
-                        .addComponent(deliveryDirLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(manageOrdersTab9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(manageOrdersTab9Layout.createSequentialGroup()
+                        .addComponent(deliveryDirLabel59, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(searchHeaderLabel)
+                        .addComponent(searchHeaderLabel9)
                         .addGap(18, 18, 18)
-                        .addGroup(manageOrdersTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(manageOrdersTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(donationListSearchButton, javax.swing.GroupLayout.DEFAULT_SIZE, 32, Short.MAX_VALUE)
-                                .addComponent(resetTableButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                            .addComponent(propertyValueTextField)
-                            .addComponent(propertyComboBox, javax.swing.GroupLayout.Alignment.TRAILING))
+                        .addGroup(manageOrdersTab9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(manageOrdersTab9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(donationListSearchButton9, javax.swing.GroupLayout.DEFAULT_SIZE, 32, Short.MAX_VALUE)
+                                .addComponent(resetTableButton9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(propertyValueTextField9)
+                            .addComponent(propertyComboBox9, javax.swing.GroupLayout.Alignment.TRAILING))
                         .addGap(45, 45, 45)
-                        .addComponent(searchCarCatalogScrollPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 383, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(searchCarCatalogScrollPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, 383, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(115, 115, 115))
-                    .addGroup(manageOrdersTabLayout.createSequentialGroup()
+                    .addGroup(manageOrdersTab9Layout.createSequentialGroup()
                         .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 567, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                .addComponent(helpTextLabel)
+                .addComponent(helpTextLabel9)
                 .addContainerGap())
         );
 
-        donationTabbedPane.addTab("Donation History", manageOrdersTab);
+        donationTabbedPane9.addTab("Donation History", manageOrdersTab9);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -531,39 +532,39 @@ public class WorkAreaDonorJPanel extends javax.swing.JPanel {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(donationTabbedPane)
+                .addComponent(donationTabbedPane9)
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addComponent(donationTabbedPane)
+                .addComponent(donationTabbedPane9)
                 .addContainerGap())
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void propertyComboBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_propertyComboBoxActionPerformed
+    private void propertyComboBox9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_propertyComboBox9ActionPerformed
         // TODO add your handling code here:
 
-        String propertyLabel = ((Object)propertyComboBox.getSelectedItem()).toString();
-        String propertyName = ((Object)propertyComboBox.getSelectedItem()).toString();
-        propertyValueTextField.setText("");
+        String propertyLabel = ((Object)propertyComboBox9.getSelectedItem()).toString();
+        String propertyName = ((Object)propertyComboBox9.getSelectedItem()).toString();
+        propertyValueTextField9.setText("");
 
-        helpTextLabel.setText("");
+        helpTextLabel9.setText("");
         switch (propertyName) {
-            case "charityName": helpTextLabel.setText("Please type in valid charity name. Any other value would result in invalid filters."); break;
-            case "charityCause": helpTextLabel.setText("Acceptable values: X1, X2 etc.");break;
+            case "charityName": helpTextLabel9.setText("Please type in valid charity name. Any other value would result in invalid filters."); break;
+            case "charityCause": helpTextLabel9.setText("Acceptable values: X1, X2 etc.");break;
  
         }
 
-    }//GEN-LAST:event_propertyComboBoxActionPerformed
+    }//GEN-LAST:event_propertyComboBox9ActionPerformed
 
-    private void donationListSearchButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_donationListSearchButtonActionPerformed
+    private void donationListSearchButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_donationListSearchButton9ActionPerformed
         // TODO add your handling code here:
 
-        String propertyLabel = ((Object)propertyComboBox.getSelectedItem()).toString();
+        String propertyLabel = ((Object)propertyComboBox9.getSelectedItem()).toString();
 
-        String filterPropertyValue = propertyValueTextField.getText();
+        String filterPropertyValue = propertyValueTextField9.getText();
         
         if (propertyLabel.equals("Charity Name")) {
             populateDonationHistoryTableWithCharityName(filterPropertyValue);
@@ -575,55 +576,55 @@ public class WorkAreaDonorJPanel extends javax.swing.JPanel {
             populateDonationHistoryTableWithCharityCause(filterPropertyValue);
         }
 
-    }//GEN-LAST:event_donationListSearchButtonActionPerformed
+    }//GEN-LAST:event_donationListSearchButton9ActionPerformed
 
-    private void resetTableButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_resetTableButtonActionPerformed
+    private void resetTableButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_resetTableButton9ActionPerformed
         // TODO add your handling code here:
        // populateSearchTableHistory(carCatalog.getCars());
        populateDonationHistoryTable();
-    }//GEN-LAST:event_resetTableButtonActionPerformed
+    }//GEN-LAST:event_resetTableButton9ActionPerformed
 
-    private void frequencyComboboxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_frequencyComboboxActionPerformed
+    private void frequencyCombobox9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_frequencyCombobox9ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_frequencyComboboxActionPerformed
+    }//GEN-LAST:event_frequencyCombobox9ActionPerformed
 
-    private void hundBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hundBtnActionPerformed
+    private void hundBtn9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hundBtn9ActionPerformed
         // TODO add your handling code here:
-        amountTF.setText("100.0");
-    }//GEN-LAST:event_hundBtnActionPerformed
+        amountTF9.setText("100.0");
+    }//GEN-LAST:event_hundBtn9ActionPerformed
 
-    private void onefiftyBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_onefiftyBtnActionPerformed
+    private void onefiftyBtn9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_onefiftyBtn9ActionPerformed
         // TODO add your handling code here:
-        amountTF.setText("150.0");
-    }//GEN-LAST:event_onefiftyBtnActionPerformed
+        amountTF9.setText("150.0");
+    }//GEN-LAST:event_onefiftyBtn9ActionPerformed
 
-    private void twoHundBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_twoHundBtnActionPerformed
+    private void twoHundBtn9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_twoHundBtn9ActionPerformed
         // TODO add your handling code here:
-        amountTF.setText("200.0");
-    }//GEN-LAST:event_twoHundBtnActionPerformed
+        amountTF9.setText("200.0");
+    }//GEN-LAST:event_twoHundBtn9ActionPerformed
 
-    private void createDonationBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_createDonationBtnActionPerformed
+    private void createDonationBtn9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_createDonationBtn9ActionPerformed
         // TODO add your handling code here:
-        int selectedRow = charityDirTable.getSelectedRow();
+        int selectedRow = charityDirTable9.getSelectedRow();
         
           try
             {
-                float am = Float.parseFloat(amountTF.getText().trim());
-                if(amountTF.getText() != "" || amountTF.getText() != null)
+                float am = Float.parseFloat(amountTF9.getText().trim());
+                if(amountTF9.getText() != "" || amountTF9.getText() != null)
                 {
                     TrustDetails fundInfo = ecoSystem.getDonationDirectory().newDonation();
                     fundInfo.setDonationDate(new Date());
-                    fundInfo.seTrustOrgName(charityDirTable.getValueAt(selectedRow, 0).toString());
-                    fundInfo.seTrustOrgCity(charityDirTable.getValueAt(selectedRow, 1).toString());
-                    fundInfo.setDonation(amountTF.getText());
-                    fundInfo.setFrequencyType(((Object)frequencyCombobox.getSelectedItem()).toString());
+                    fundInfo.seTrustOrgName(charityDirTable9.getValueAt(selectedRow, 0).toString());
+                    fundInfo.seTrustOrgCity(charityDirTable9.getValueAt(selectedRow, 1).toString());
+                    fundInfo.setDonation(amountTF9.getText());
+                    fundInfo.setFrequencyType(((Object)frequencyCombobox9.getSelectedItem()).toString());
                     fundInfo.setDonor(ecoSystem.getDonorDir().getDonor(userAccount.getUsername()));
 
 
-                    fundInfo.seTrustCause(Objects.isNull(charityDirTable.getValueAt(selectedRow, 2)) ? " " : charityDirTable.getValueAt(selectedRow, 2).toString());
+                    fundInfo.seTrustCause(Objects.isNull(charityDirTable9.getValueAt(selectedRow, 2)) ? " " : charityDirTable9.getValueAt(selectedRow, 2).toString());
                    
 
-                    String body = "Hey " + fundInfo.getDonor().getDonorName() +",\n Contribution of $" + amountTF.getText() + "was made towards " + fundInfo.geTrustOrgName()+ "\n We appreciate your donation! Your contribution will help us change lives – literally!\n  " + " \n Donation frequency:  " + fundInfo.getFrequencyType() + "\n Donation Cause  : " + fundInfo.geTrustCause()+ "\n\n\n Thank you and best regards, \n HealthBuddy Team";
+                    String body = "Hey " + fundInfo.getDonor().getDonorName() +",\n Contribution of $" + amountTF9.getText() + "was made towards " + fundInfo.geTrustOrgName()+ "\n We appreciate your donation! Your contribution will help us change lives – literally!\n  " + " \n Donation frequency:  " + fundInfo.getFrequencyType() + "\n Donation Cause  : " + fundInfo.geTrustCause()+ "\n\n\n Thank you and best regards, \n HealthBuddy Team";
                     JOptionPane.showMessageDialog(null, body, "Success", JOptionPane.INFORMATION_MESSAGE);
 
                     String subject = " Receipt of your donation! ";
@@ -633,55 +634,55 @@ public class WorkAreaDonorJPanel extends javax.swing.JPanel {
                     } catch (Exception e) {
 
                         e.printStackTrace();
-                        JOptionPane.showMessageDialog(null, "Something went wrong!", "Error", JOptionPane.INFORMATION_MESSAGE);
+                        JOptionPane.showMessageDialog(null, "Looks like Something is wrong!", "Error", JOptionPane.INFORMATION_MESSAGE);
                     }
                     populateDonationHistoryTable();
-                    amountTF.setText("");
+                    amountTF9.setText("");
                 }
             
                 else
                 {
-                    JOptionPane.showMessageDialog(null, " Incorrect amount added. Please correct it! ", "Error! ", JOptionPane.ERROR_MESSAGE);
+                    JOptionPane.showMessageDialog(null, " Added amount is Incorrect. Kindly correct it! ", "Error! ", JOptionPane.ERROR_MESSAGE);
                 }
             }
             catch(Exception e)
             {
                 e.printStackTrace();
-                JOptionPane.showMessageDialog(null, "Incorrect amount added. Please correct it!", "Error", JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(null, "Added Amount is Incorrect. Kindly correct it!", "Error", JOptionPane.ERROR_MESSAGE);
             }
 
-    }//GEN-LAST:event_createDonationBtnActionPerformed
+    }//GEN-LAST:event_createDonationBtn9ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JTextField amountTF;
-    private javax.swing.JTable charityDirTable;
-    private javax.swing.JButton createDonationBtn;
-    private javax.swing.JScrollPane delDirectoryScollPanel;
-    private javax.swing.JLabel deliveryDirLabel;
-    private javax.swing.JLabel deliveryDirLabel2;
-    private javax.swing.JLabel deliveryDirLabel3;
-    private javax.swing.JLabel deliveryDirLabel5;
-    private javax.swing.JButton donationListSearchButton;
-    private javax.swing.JTabbedPane donationTabbedPane;
-    private javax.swing.JComboBox<String> frequencyCombobox;
-    private javax.swing.JLabel helpTextLabel;
-    private javax.swing.JButton hundBtn;
+    private javax.swing.JTextField amountTF9;
+    private javax.swing.JTable charityDirTable9;
+    private javax.swing.JButton createDonationBtn9;
+    private javax.swing.JScrollPane delDirectoryScollPanel9;
+    private javax.swing.JLabel deliveryDirLabel29;
+    private javax.swing.JLabel deliveryDirLabel39;
+    private javax.swing.JLabel deliveryDirLabel59;
+    private javax.swing.JLabel deliveryDirLabel9;
+    private javax.swing.JButton donationListSearchButton9;
+    private javax.swing.JTabbedPane donationTabbedPane9;
+    private javax.swing.JComboBox<String> frequencyCombobox9;
+    private javax.swing.JLabel helpTextLabel9;
+    private javax.swing.JButton hundBtn9;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JPanel manageOrdersTab;
-    private javax.swing.JLabel menuItemName1;
-    private javax.swing.JLabel menuItemName6;
-    private javax.swing.JPanel menuPanel;
-    private javax.swing.JButton onefiftyBtn;
-    private javax.swing.JComboBox<String> propertyComboBox;
-    private javax.swing.JTextField propertyValueTextField;
-    private javax.swing.JButton resetTableButton;
-    private javax.swing.JScrollPane searchCarCatalogScrollPanel;
-    private javax.swing.JTable searchDonationCatalogTable;
-    private javax.swing.JLabel searchHeaderLabel;
-    private javax.swing.JButton twoHundBtn;
-    private javax.swing.JLabel userAccLabel;
+    private javax.swing.JPanel manageOrdersTab9;
+    private javax.swing.JLabel menuItemName19;
+    private javax.swing.JLabel menuItemName69;
+    private javax.swing.JPanel menuPanel9;
+    private javax.swing.JButton onefiftyBtn9;
+    private javax.swing.JComboBox<String> propertyComboBox9;
+    private javax.swing.JTextField propertyValueTextField9;
+    private javax.swing.JButton resetTableButton9;
+    private javax.swing.JScrollPane searchCarCatalogScrollPanel9;
+    private javax.swing.JTable searchDonationCatalogTable9;
+    private javax.swing.JLabel searchHeaderLabel9;
+    private javax.swing.JButton twoHundBtn9;
+    private javax.swing.JLabel userAccLabel9;
     // End of variables declaration//GEN-END:variables
 
 }
