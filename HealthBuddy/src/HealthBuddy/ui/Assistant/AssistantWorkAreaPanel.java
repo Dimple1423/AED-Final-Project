@@ -115,12 +115,14 @@ public class AssistantWorkAreaPanel extends javax.swing.JPanel {
         lblAssistantNm2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
         trustackPanel1 = new javax.swing.JPanel();
         deliDirLabel12 = new javax.swing.JLabel();
         jScrollPane5 = new javax.swing.JScrollPane();
         tblAcknowledgement = new javax.swing.JTable();
         lblWelcm4 = new javax.swing.JLabel();
         lblAsstantNm5 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
         mangApptmntPan5 = new javax.swing.JPanel();
         hlpLabel7 = new javax.swing.JLabel();
         delvryDirLabel9 = new javax.swing.JLabel();
@@ -131,6 +133,7 @@ public class AssistantWorkAreaPanel extends javax.swing.JPanel {
         welcmLabel6 = new javax.swing.JLabel();
         assistntName9 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
         mngDoctimePan6 = new javax.swing.JPanel();
         menuListName9 = new javax.swing.JLabel();
         dlvryDirLabel9 = new javax.swing.JLabel();
@@ -145,6 +148,7 @@ public class AssistantWorkAreaPanel extends javax.swing.JPanel {
         menuItemName26 = new javax.swing.JLabel();
         comboMin9 = new javax.swing.JComboBox();
         comboHr9 = new javax.swing.JComboBox();
+        jLabel6 = new javax.swing.JLabel();
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setForeground(new java.awt.Color(0, 102, 102));
@@ -225,6 +229,10 @@ public class AssistantWorkAreaPanel extends javax.swing.JPanel {
 
         jLabel7.setBackground(new java.awt.Color(204, 204, 255));
 
+        ImageIcon imageIcon = new ImageIcon(new ImageIcon(getClass().getResource("/HealthBuddy/ui/images/assistantpg1.gif")).getImage().getScaledInstance(600, 500, Image.SCALE_DEFAULT));
+
+        jLabel1.setIcon(imageIcon);
+
         javax.swing.GroupLayout fundreqmanagePanLayout = new javax.swing.GroupLayout(fundreqmanagePan);
         fundreqmanagePan.setLayout(fundreqmanagePanLayout);
         fundreqmanagePanLayout.setHorizontalGroup(
@@ -241,22 +249,24 @@ public class AssistantWorkAreaPanel extends javax.swing.JPanel {
                         .addComponent(lblAssistantNm2, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(fundreqmanagePanLayout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 692, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(fundreqmanagePanLayout.createSequentialGroup()
-                        .addContainerGap()
                         .addComponent(msgcLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 225, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(fReqTextF, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(buttonFundR)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 2162, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 3442, Short.MAX_VALUE)
                 .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 830, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 830, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(173, 173, 173))
             .addGroup(fundreqmanagePanLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(msgbLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 651, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(fundreqmanagePanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(msgbLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 651, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(fundreqmanagePanLayout.createSequentialGroup()
+                        .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 692, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(83, 83, 83)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 645, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         fundreqmanagePanLayout.setVerticalGroup(
@@ -275,16 +285,21 @@ public class AssistantWorkAreaPanel extends javax.swing.JPanel {
                         .addGroup(fundreqmanagePanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(WelcmLabel)
                             .addComponent(lblAssistantNm2))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(msgaLabel)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 407, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addGroup(fundreqmanagePanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(msgcLabel)
-                            .addComponent(fReqTextF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(buttonFundR))
-                        .addGap(459, 459, 459))))
+                        .addGroup(fundreqmanagePanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(fundreqmanagePanLayout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(msgaLabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 407, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addGroup(fundreqmanagePanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(msgcLabel)
+                                    .addComponent(fReqTextF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(buttonFundR)))
+                            .addGroup(fundreqmanagePanLayout.createSequentialGroup()
+                                .addGap(54, 54, 54)
+                                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 465, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(430, 430, 430))))
         );
 
         donateTabPn.addTab("Funding Requests", fundreqmanagePan);
@@ -333,6 +348,10 @@ public class AssistantWorkAreaPanel extends javax.swing.JPanel {
         lblAsstantNm5.setForeground(new java.awt.Color(0, 102, 102));
         lblAsstantNm5.setText("value");
 
+        ImageIcon imageIcona = new ImageIcon(new ImageIcon(getClass().getResource("/HealthBuddy/ui/images/assacknowledgement.gif")).getImage().getScaledInstance(600, 500, Image.SCALE_DEFAULT));
+
+        jLabel2.setIcon(imageIcona);
+
         javax.swing.GroupLayout trustackPanel1Layout = new javax.swing.GroupLayout(trustackPanel1);
         trustackPanel1.setLayout(trustackPanel1Layout);
         trustackPanel1Layout.setHorizontalGroup(
@@ -345,8 +364,11 @@ public class AssistantWorkAreaPanel extends javax.swing.JPanel {
                         .addComponent(lblWelcm4)
                         .addGap(18, 18, 18)
                         .addComponent(lblAsstantNm5, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 707, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(4156, Short.MAX_VALUE))
+                    .addGroup(trustackPanel1Layout.createSequentialGroup()
+                        .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 707, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(130, 130, 130)
+                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 629, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(4677, Short.MAX_VALUE))
         );
         trustackPanel1Layout.setVerticalGroup(
             trustackPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -358,7 +380,9 @@ public class AssistantWorkAreaPanel extends javax.swing.JPanel {
                     .addComponent(lblWelcm4)
                     .addComponent(lblAsstantNm5))
                 .addGap(18, 18, 18)
-                .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 401, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(trustackPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jScrollPane5, javax.swing.GroupLayout.DEFAULT_SIZE, 401, Short.MAX_VALUE))
                 .addContainerGap(550, Short.MAX_VALUE))
         );
 
@@ -436,6 +460,11 @@ public class AssistantWorkAreaPanel extends javax.swing.JPanel {
         assistntName9.setText("value");
 
         jLabel5.setBackground(new java.awt.Color(255, 255, 255));
+        ImageIcon imageIconc = new ImageIcon(new ImageIcon(getClass().getResource("/HealthBuddy/ui/images/manageappointment.gif")).getImage().getScaledInstance(500, 500, Image.SCALE_DEFAULT));
+
+        jLabel5.setIcon(imageIconc);
+
+        jLabel4.setText("jLabel4");
 
         javax.swing.GroupLayout mangApptmntPan5Layout = new javax.swing.GroupLayout(mangApptmntPan5);
         mangApptmntPan5.setLayout(mangApptmntPan5Layout);
@@ -458,39 +487,47 @@ public class AssistantWorkAreaPanel extends javax.swing.JPanel {
                                 .addComponent(buttonallow, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(47, 47, 47)
                                 .addComponent(buttonRejct4, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(mangApptmntPan5Layout.createSequentialGroup()
-                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 765, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(mangApptmntPan5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(hlpLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 798, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(mangApptmntPan5Layout.createSequentialGroup()
-                                        .addGap(84, 84, 84)
-                                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 505, javax.swing.GroupLayout.PREFERRED_SIZE)))))))
+                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 765, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(78, 78, 78)
+                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 626, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(hlpLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 798, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 564, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(3304, Short.MAX_VALUE))
         );
         mangApptmntPan5Layout.setVerticalGroup(
             mangApptmntPan5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(mangApptmntPan5Layout.createSequentialGroup()
-                .addGap(21, 21, 21)
-                .addComponent(delvryDirLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(41, 41, 41)
-                .addGroup(mangApptmntPan5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(welcmLabel6)
-                    .addComponent(assistntName9))
-                .addGroup(mangApptmntPan5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(mangApptmntPan5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(mangApptmntPan5Layout.createSequentialGroup()
-                        .addGap(51, 51, 51)
-                        .addComponent(hlpLabel7)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 304, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(mangApptmntPan5Layout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 385, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(48, 48, 48)
-                .addGroup(mangApptmntPan5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(buttonallow)
-                    .addComponent(buttonRejct4))
-                .addContainerGap(473, Short.MAX_VALUE))
+                        .addGap(142, 142, 142)
+                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 492, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, mangApptmntPan5Layout.createSequentialGroup()
+                        .addGap(21, 21, 21)
+                        .addComponent(delvryDirLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(41, 41, 41)
+                        .addGroup(mangApptmntPan5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(welcmLabel6)
+                            .addComponent(assistntName9))
+                        .addGroup(mangApptmntPan5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, mangApptmntPan5Layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 386, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(48, 48, 48))
+                            .addGroup(mangApptmntPan5Layout.createSequentialGroup()
+                                .addGroup(mangApptmntPan5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(mangApptmntPan5Layout.createSequentialGroup()
+                                        .addGap(51, 51, 51)
+                                        .addComponent(hlpLabel7))
+                                    .addGroup(mangApptmntPan5Layout.createSequentialGroup()
+                                        .addGap(18, 18, 18)
+                                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 385, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addGroup(mangApptmntPan5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(buttonallow)
+                            .addComponent(buttonRejct4))))
+                .addContainerGap(441, Short.MAX_VALUE))
         );
 
         donateTabPn.addTab("Manage Appointments", mangApptmntPan5);
@@ -522,7 +559,6 @@ public class AssistantWorkAreaPanel extends javax.swing.JPanel {
             }
         });
 
-        comboManageTime9.setBackground(new java.awt.Color(255, 255, 255));
         comboManageTime9.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         comboManageTime9.setForeground(new java.awt.Color(0, 102, 102));
         comboManageTime9.setMaximumRowCount(12);
@@ -532,12 +568,10 @@ public class AssistantWorkAreaPanel extends javax.swing.JPanel {
         menuListName19.setForeground(new java.awt.Color(0, 102, 102));
         menuListName19.setText("Date:");
 
-        combDate9.setBackground(new java.awt.Color(255, 255, 255));
         combDate9.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         combDate9.setForeground(new java.awt.Color(0, 102, 102));
         combDate9.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "MM", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12" }));
 
-        cmbMonth9.setBackground(new java.awt.Color(255, 255, 255));
         cmbMonth9.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         cmbMonth9.setForeground(new java.awt.Color(0, 102, 102));
         cmbMonth9.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "DD", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31" }));
@@ -547,7 +581,6 @@ public class AssistantWorkAreaPanel extends javax.swing.JPanel {
             }
         });
 
-        comboYr9.setBackground(new java.awt.Color(255, 255, 255));
         comboYr9.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         comboYr9.setForeground(new java.awt.Color(0, 102, 102));
         comboYr9.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "YYYY", "2021", "2022", "2023", "2024", "2025" }));
@@ -572,7 +605,6 @@ public class AssistantWorkAreaPanel extends javax.swing.JPanel {
         menuItemName26.setForeground(new java.awt.Color(0, 102, 102));
         menuItemName26.setText("Time: ");
 
-        comboMin9.setBackground(new java.awt.Color(255, 255, 255));
         comboMin9.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         comboMin9.setForeground(new java.awt.Color(0, 102, 102));
         comboMin9.setModel(minuteModel);
@@ -582,7 +614,6 @@ public class AssistantWorkAreaPanel extends javax.swing.JPanel {
             }
         });
 
-        comboHr9.setBackground(new java.awt.Color(255, 255, 255));
         comboHr9.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         comboHr9.setForeground(new java.awt.Color(0, 102, 102));
         comboHr9.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "HH", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23" }));
@@ -591,6 +622,10 @@ public class AssistantWorkAreaPanel extends javax.swing.JPanel {
                 comboHr9ActionPerformed(evt);
             }
         });
+
+        ImageIcon imageIconk = new ImageIcon(new ImageIcon(getClass().getResource("/HealthBuddy/ui/images/managedoctime.gif")).getImage().getScaledInstance(700, 550, Image.SCALE_DEFAULT));
+
+        jLabel6.setIcon(imageIconk);
 
         javax.swing.GroupLayout mngDoctimePan6Layout = new javax.swing.GroupLayout(mngDoctimePan6);
         mngDoctimePan6.setLayout(mngDoctimePan6Layout);
@@ -623,11 +658,13 @@ public class AssistantWorkAreaPanel extends javax.swing.JPanel {
                                         .addComponent(combDate9, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(18, 18, 18)
                                         .addComponent(comboYr9, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                            .addComponent(buttontnAddTime9, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(buttontnAddTime9, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(245, 245, 245)
+                        .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 694, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(mngDoctimePan6Layout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(dlvryDirLabel9)))
-                .addContainerGap(4296, Short.MAX_VALUE))
+                .addContainerGap(4637, Short.MAX_VALUE))
         );
         mngDoctimePan6Layout.setVerticalGroup(
             mngDoctimePan6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -638,25 +675,30 @@ public class AssistantWorkAreaPanel extends javax.swing.JPanel {
                 .addGroup(mngDoctimePan6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblWelcm9)
                     .addComponent(assistantNmLabel9))
-                .addGap(60, 60, 60)
-                .addGroup(mngDoctimePan6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(menuListName9)
-                    .addComponent(comboManageTime9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(33, 33, 33)
-                .addGroup(mngDoctimePan6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(menuListName19)
-                    .addComponent(combDate9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(comboYr9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(cmbMonth9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(45, 45, 45)
                 .addGroup(mngDoctimePan6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(menuItemName26)
-                    .addGroup(mngDoctimePan6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(comboMin9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(comboHr9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(36, 36, 36)
-                .addComponent(buttontnAddTime9)
-                .addContainerGap(671, Short.MAX_VALUE))
+                    .addGroup(mngDoctimePan6Layout.createSequentialGroup()
+                        .addGap(60, 60, 60)
+                        .addGroup(mngDoctimePan6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(menuListName9)
+                            .addComponent(comboManageTime9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(33, 33, 33)
+                        .addGroup(mngDoctimePan6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(menuListName19)
+                            .addComponent(combDate9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(comboYr9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(cmbMonth9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(45, 45, 45)
+                        .addGroup(mngDoctimePan6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(menuItemName26)
+                            .addGroup(mngDoctimePan6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(comboMin9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(comboHr9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(36, 36, 36)
+                        .addComponent(buttontnAddTime9))
+                    .addGroup(mngDoctimePan6Layout.createSequentialGroup()
+                        .addGap(10, 10, 10)
+                        .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 548, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(397, Short.MAX_VALUE))
         );
 
         donateTabPn.addTab("Manage Doctor Slots", mngDoctimePan6);
@@ -913,8 +955,12 @@ public class AssistantWorkAreaPanel extends javax.swing.JPanel {
     private javax.swing.JTextField fReqTextF;
     private javax.swing.JPanel fundreqmanagePan;
     private javax.swing.JLabel hlpLabel7;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;

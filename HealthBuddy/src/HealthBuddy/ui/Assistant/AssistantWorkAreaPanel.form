@@ -122,10 +122,6 @@
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jScrollPane4" min="-2" pref="692" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace max="-2" attributes="0"/>
                                   <Component id="msgcLabel" min="-2" pref="225" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Component id="fReqTextF" min="-2" pref="216" max="-2" attributes="0"/>
@@ -133,7 +129,7 @@
                                   <Component id="buttonFundR" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
-                          <EmptySpace pref="2162" max="32767" attributes="0"/>
+                          <EmptySpace pref="3442" max="32767" attributes="0"/>
                           <Component id="jLabel7" min="-2" pref="830" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="jLabel3" min="-2" pref="830" max="-2" attributes="0"/>
@@ -141,7 +137,14 @@
                       </Group>
                       <Group type="102" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="msgbLabel" min="-2" pref="651" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="msgbLabel" min="-2" pref="651" max="-2" attributes="0"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="jScrollPane4" min="-2" pref="692" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="83" max="-2" attributes="0"/>
+                                  <Component id="jLabel1" min="-2" pref="645" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
                           <EmptySpace max="32767" attributes="0"/>
                       </Group>
                   </Group>
@@ -165,17 +168,25 @@
                                       <Component id="WelcmLabel" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="lblAssistantNm2" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
-                                  <EmptySpace min="-2" max="-2" attributes="0"/>
-                                  <Component id="msgaLabel" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jScrollPane4" min="-2" pref="407" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="msgcLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="fReqTextF" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="buttonFundR" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" attributes="0">
+                                          <EmptySpace min="-2" max="-2" attributes="0"/>
+                                          <Component id="msgaLabel" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="jScrollPane4" min="-2" pref="407" max="-2" attributes="0"/>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="3" attributes="0">
+                                              <Component id="msgcLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="fReqTextF" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="buttonFundR" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <EmptySpace min="-2" pref="54" max="-2" attributes="0"/>
+                                          <Component id="jLabel1" min="-2" pref="465" max="-2" attributes="0"/>
+                                      </Group>
                                   </Group>
-                                  <EmptySpace min="-2" pref="459" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="430" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
@@ -354,6 +365,11 @@
                     </Property>
                   </Properties>
                 </Component>
+                <Component class="javax.swing.JLabel" name="jLabel1">
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="ImageIcon imageIcon = new ImageIcon(new ImageIcon(getClass().getResource(&quot;/HealthBuddy/ui/images/assistantpg1.gif&quot;)).getImage().getScaledInstance(600, 500, Image.SCALE_DEFAULT));&#xa;&#xa;jLabel1.setIcon(imageIcon);"/>
+                  </AuxValues>
+                </Component>
               </SubComponents>
             </Container>
             <Container class="javax.swing.JPanel" name="trustackPanel1">
@@ -385,9 +401,13 @@
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Component id="lblAsstantNm5" min="-2" pref="74" max="-2" attributes="0"/>
                               </Group>
-                              <Component id="jScrollPane5" alignment="0" min="-2" pref="707" max="-2" attributes="0"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="jScrollPane5" min="-2" pref="707" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="130" max="-2" attributes="0"/>
+                                  <Component id="jLabel2" min="-2" pref="629" max="-2" attributes="0"/>
+                              </Group>
                           </Group>
-                          <EmptySpace pref="4156" max="32767" attributes="0"/>
+                          <EmptySpace pref="4677" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -402,7 +422,10 @@
                               <Component id="lblAsstantNm5" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Component id="jScrollPane5" min="-2" pref="401" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="jLabel2" max="32767" attributes="0"/>
+                              <Component id="jScrollPane5" pref="401" max="32767" attributes="0"/>
+                          </Group>
                           <EmptySpace pref="550" max="32767" attributes="0"/>
                       </Group>
                   </Group>
@@ -513,6 +536,11 @@
                     <Property name="text" type="java.lang.String" value="value"/>
                   </Properties>
                 </Component>
+                <Component class="javax.swing.JLabel" name="jLabel2">
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="ImageIcon imageIcona = new ImageIcon(new ImageIcon(getClass().getResource(&quot;/HealthBuddy/ui/images/assacknowledgement.gif&quot;)).getImage().getScaledInstance(600, 500, Image.SCALE_DEFAULT));&#xa;&#xa;jLabel2.setIcon(imageIcona);"/>
+                  </AuxValues>
+                </Component>
               </SubComponents>
             </Container>
             <Container class="javax.swing.JPanel" name="mangApptmntPan5">
@@ -550,23 +578,19 @@
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="102" attributes="0">
+                                      <Group type="102" alignment="0" attributes="0">
                                           <Component id="buttonallow" min="-2" pref="220" max="-2" attributes="0"/>
                                           <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
                                           <Component id="buttonRejct4" min="-2" pref="220" max="-2" attributes="0"/>
                                       </Group>
-                                      <Group type="102" attributes="0">
-                                          <Component id="jScrollPane1" min="-2" pref="765" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="hlpLabel7" alignment="0" min="-2" pref="798" max="-2" attributes="0"/>
-                                              <Group type="102" alignment="0" attributes="0">
-                                                  <EmptySpace min="-2" pref="84" max="-2" attributes="0"/>
-                                                  <Component id="jLabel5" min="-2" pref="505" max="-2" attributes="0"/>
-                                              </Group>
-                                          </Group>
-                                      </Group>
+                                      <Component id="jScrollPane1" alignment="0" min="-2" pref="765" max="-2" attributes="0"/>
                                   </Group>
+                                  <EmptySpace min="-2" pref="78" max="-2" attributes="0"/>
+                                  <Component id="jLabel5" min="-2" pref="626" max="-2" attributes="0"/>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Component id="hlpLabel7" min="-2" pref="798" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="jLabel4" min="-2" pref="564" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <EmptySpace pref="3304" max="32767" attributes="0"/>
@@ -575,32 +599,47 @@
                 </DimensionLayout>
                 <DimensionLayout dim="1">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
-                          <Component id="delvryDirLabel9" min="-2" pref="33" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="welcmLabel6" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="assistntName9" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <Group type="103" groupAlignment="1" attributes="0">
                               <Group type="102" attributes="0">
-                                  <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
-                                  <Component id="hlpLabel7" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jLabel5" min="-2" pref="304" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="142" max="-2" attributes="0"/>
+                                  <Component id="jLabel5" min="-2" pref="492" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jScrollPane1" min="-2" pref="385" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+                                  <Component id="delvryDirLabel9" min="-2" pref="33" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="welcmLabel6" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="assistntName9" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" alignment="1" attributes="0">
+                                          <EmptySpace max="32767" attributes="0"/>
+                                          <Component id="jLabel4" min="-2" pref="386" max="-2" attributes="0"/>
+                                          <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" attributes="0">
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
+                                                  <Component id="hlpLabel7" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                                  <Component id="jScrollPane1" min="-2" pref="385" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                          <EmptySpace max="32767" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="buttonallow" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="buttonRejct4" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
                               </Group>
                           </Group>
-                          <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="buttonallow" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="buttonRejct4" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace pref="473" max="32767" attributes="0"/>
+                          <EmptySpace pref="441" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -783,6 +822,14 @@
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
                     </Property>
                   </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="ImageIcon imageIconc = new ImageIcon(new ImageIcon(getClass().getResource(&quot;/HealthBuddy/ui/images/manageappointment.gif&quot;)).getImage().getScaledInstance(500, 500, Image.SCALE_DEFAULT));&#xa;&#xa;jLabel5.setIcon(imageIconc);"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel4">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="jLabel4"/>
+                  </Properties>
                 </Component>
               </SubComponents>
             </Container>
@@ -847,13 +894,15 @@
                                       </Group>
                                       <Component id="buttontnAddTime9" alignment="0" min="-2" pref="220" max="-2" attributes="0"/>
                                   </Group>
+                                  <EmptySpace min="-2" pref="245" max="-2" attributes="0"/>
+                                  <Component id="jLabel6" min="-2" pref="694" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="dlvryDirLabel9" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
-                          <EmptySpace pref="4296" max="32767" attributes="0"/>
+                          <EmptySpace pref="4637" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -867,29 +916,37 @@
                               <Component id="lblWelcm9" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="assistantNmLabel9" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace min="-2" pref="60" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="menuListName9" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="comboManageTime9" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="menuListName19" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="combDate9" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="comboYr9" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="cmbMonth9" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="menuItemName26" min="-2" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="comboMin9" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="comboHr9" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Group type="102" attributes="0">
+                                  <EmptySpace min="-2" pref="60" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="menuListName9" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="comboManageTime9" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="menuListName19" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="combDate9" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="comboYr9" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="cmbMonth9" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="menuItemName26" min="-2" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="3" attributes="0">
+                                          <Component id="comboMin9" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="comboHr9" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
+                                  <Component id="buttontnAddTime9" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                                  <Component id="jLabel6" min="-2" pref="548" max="-2" attributes="0"/>
                               </Group>
                           </Group>
-                          <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
-                          <Component id="buttontnAddTime9" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="671" max="32767" attributes="0"/>
+                          <EmptySpace pref="397" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -1172,6 +1229,11 @@
                   <Events>
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="comboHr9ActionPerformed"/>
                   </Events>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel6">
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="ImageIcon imageIconk = new ImageIcon(new ImageIcon(getClass().getResource(&quot;/HealthBuddy/ui/images/managedoctime.gif&quot;)).getImage().getScaledInstance(700, 550, Image.SCALE_DEFAULT));&#xa;&#xa;jLabel6.setIcon(imageIconk);"/>
+                  </AuxValues>
                 </Component>
               </SubComponents>
             </Container>
