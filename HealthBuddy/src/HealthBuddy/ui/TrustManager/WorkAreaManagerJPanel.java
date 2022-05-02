@@ -2,11 +2,11 @@ package HealthBuddy.ui.TrustManager;
 
 import HealthBuddy.models.Trust.Organisation.TrustOrgManager;
 import HealthBuddy.models.EcoSystem;
-import HealthBuddy.models.Enterprise.EnterpriseTrust;
 import HealthBuddy.models.Network.Network;
+import HealthBuddy.models.Enterprise.EnterpriseTrust;
 import HealthBuddy.models.User.User;
-import HealthBuddy.models.WorkQueue.HealthcareTrustRequestWQ;
 import HealthBuddy.models.WorkQueue.WorkRequest;
+import HealthBuddy.models.WorkQueue.HealthcareTrustRequestWQ;
 import HealthBuddy.models.Trust.Donation.TrustDetails;
 import java.awt.CardLayout;
 import javax.swing.JOptionPane;
@@ -39,7 +39,7 @@ public class WorkAreaManagerJPanel extends javax.swing.JPanel
         this.network = network;
         setSize(1540,800);
         
-        lblValue.setText(enterprise.getName());    
+        valtext.setText(enterprise.getName());    
         
         float amountReceived = 0;
         
@@ -47,13 +47,11 @@ public class WorkAreaManagerJPanel extends javax.swing.JPanel
         {
             for(TrustDetails dd : ecoSystem.getDonationDirectory().getTrustCatalog())
             {
-                if(dd.geTrustOrgName().equalsIgnoreCase(lblValue.getText()))
-                {
+                if(dd.geTrustOrgName().equalsIgnoreCase(valtext.getText()))
                     amountReceived += Float.parseFloat(dd.getDonation());
-                }
             }
         
-            lblFundsValue.setText(String.valueOf(amountReceived));
+            trustvaltext.setText(String.valueOf(amountReceived));
             float sumUsed = fundCalculation();
             float sumAvailable = (amountReceived-sumUsed);
             funds = String.valueOf(amountReceived-sumUsed);
@@ -78,8 +76,7 @@ public class WorkAreaManagerJPanel extends javax.swing.JPanel
                 }
             }
         
-        lblFundsUsed.setText(String.valueOf(sum));
-        
+        trustusedtext.setText(String.valueOf(sum));
         return sum;
     }   
     
@@ -92,15 +89,15 @@ public class WorkAreaManagerJPanel extends javax.swing.JPanel
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        lblTitle = new javax.swing.JLabel();
-        lblName = new javax.swing.JLabel();
-        lblValue = new javax.swing.JLabel();
-        btnViewDonations = new javax.swing.JButton();
-        btnPickUp = new javax.swing.JButton();
-        lblFunds = new javax.swing.JLabel();
-        lblFundsValue = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
-        lblFundsUsed = new javax.swing.JLabel();
+        titlelable = new javax.swing.JLabel();
+        namelabel = new javax.swing.JLabel();
+        valtext = new javax.swing.JLabel();
+        viewDonButton = new javax.swing.JButton();
+        pickupButton = new javax.swing.JButton();
+        receivelabel = new javax.swing.JLabel();
+        trustvaltext = new javax.swing.JLabel();
+        fundusedjlabel = new javax.swing.JLabel();
+        trustusedtext = new javax.swing.JLabel();
         btnRefresh = new javax.swing.JButton();
 
         setBackground(new java.awt.Color(255, 255, 255));
@@ -108,72 +105,72 @@ public class WorkAreaManagerJPanel extends javax.swing.JPanel
         setForeground(new java.awt.Color(0, 102, 102));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        lblTitle.setBackground(new java.awt.Color(255, 255, 255));
-        lblTitle.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
-        lblTitle.setForeground(new java.awt.Color(0, 102, 102));
-        lblTitle.setText("Funding Manager");
-        add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 30, 410, -1));
+        titlelable.setBackground(new java.awt.Color(255, 255, 255));
+        titlelable.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+        titlelable.setForeground(new java.awt.Color(0, 102, 102));
+        titlelable.setText("Trust Manager");
+        add(titlelable, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 70, 410, -1));
 
-        lblName.setBackground(new java.awt.Color(255, 255, 255));
-        lblName.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        lblName.setForeground(new java.awt.Color(0, 102, 102));
-        lblName.setText("Funding Organisation Name");
-        add(lblName, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 110, -1, -1));
+        namelabel.setBackground(new java.awt.Color(255, 255, 255));
+        namelabel.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        namelabel.setForeground(new java.awt.Color(0, 102, 102));
+        namelabel.setText("Funding Organisation Name");
+        add(namelabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 150, -1, -1));
 
-        lblValue.setBackground(new java.awt.Color(255, 255, 255));
-        lblValue.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        lblValue.setForeground(new java.awt.Color(0, 102, 102));
-        add(lblValue, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 110, 120, 20));
+        valtext.setBackground(new java.awt.Color(255, 255, 255));
+        valtext.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        valtext.setForeground(new java.awt.Color(0, 102, 102));
+        add(valtext, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 150, 120, 20));
 
-        btnViewDonations.setBackground(new java.awt.Color(0, 102, 102));
-        btnViewDonations.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        btnViewDonations.setForeground(new java.awt.Color(255, 255, 255));
-        btnViewDonations.setText("View Donations");
-        btnViewDonations.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btnViewDonations.setBorderPainted(false);
-        btnViewDonations.addActionListener(new java.awt.event.ActionListener() {
+        viewDonButton.setBackground(new java.awt.Color(0, 102, 102));
+        viewDonButton.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        viewDonButton.setForeground(new java.awt.Color(255, 255, 255));
+        viewDonButton.setText("View Donations Details");
+        viewDonButton.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        viewDonButton.setBorderPainted(false);
+        viewDonButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnViewDonationsActionPerformed(evt);
+                viewDonButtonActionPerformed(evt);
             }
         });
-        add(btnViewDonations, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 360, 190, 30));
+        add(viewDonButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 400, 240, 30));
 
-        btnPickUp.setBackground(new java.awt.Color(0, 102, 102));
-        btnPickUp.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        btnPickUp.setForeground(new java.awt.Color(255, 255, 255));
-        btnPickUp.setText("Pick New Case");
-        btnPickUp.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btnPickUp.setBorderPainted(false);
-        btnPickUp.addActionListener(new java.awt.event.ActionListener() {
+        pickupButton.setBackground(new java.awt.Color(0, 102, 102));
+        pickupButton.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        pickupButton.setForeground(new java.awt.Color(255, 255, 255));
+        pickupButton.setText("Pick New Case");
+        pickupButton.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        pickupButton.setBorderPainted(false);
+        pickupButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnPickUpActionPerformed(evt);
+                pickupButtonActionPerformed(evt);
             }
         });
-        add(btnPickUp, new org.netbeans.lib.awtextra.AbsoluteConstraints(43, 280, 190, 30));
+        add(pickupButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 320, 240, 30));
 
-        lblFunds.setBackground(new java.awt.Color(255, 255, 255));
-        lblFunds.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        lblFunds.setForeground(new java.awt.Color(0, 102, 102));
-        lblFunds.setText("Funds Received");
-        add(lblFunds, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 150, -1, -1));
+        receivelabel.setBackground(new java.awt.Color(255, 255, 255));
+        receivelabel.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        receivelabel.setForeground(new java.awt.Color(0, 102, 102));
+        receivelabel.setText("Funds Received");
+        add(receivelabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 190, -1, -1));
 
-        lblFundsValue.setBackground(new java.awt.Color(255, 255, 255));
-        lblFundsValue.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        lblFundsValue.setForeground(new java.awt.Color(0, 102, 102));
-        lblFundsValue.setText("value");
-        add(lblFundsValue, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 150, 80, 20));
+        trustvaltext.setBackground(new java.awt.Color(255, 255, 255));
+        trustvaltext.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        trustvaltext.setForeground(new java.awt.Color(0, 102, 102));
+        trustvaltext.setText("value");
+        add(trustvaltext, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 190, 80, 20));
 
-        jLabel1.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 102, 102));
-        jLabel1.setText("Funds Used");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 190, -1, -1));
+        fundusedjlabel.setBackground(new java.awt.Color(255, 255, 255));
+        fundusedjlabel.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        fundusedjlabel.setForeground(new java.awt.Color(0, 102, 102));
+        fundusedjlabel.setText("Funds Used");
+        add(fundusedjlabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 230, -1, -1));
 
-        lblFundsUsed.setBackground(new java.awt.Color(255, 255, 255));
-        lblFundsUsed.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        lblFundsUsed.setForeground(new java.awt.Color(0, 102, 102));
-        lblFundsUsed.setText("0");
-        add(lblFundsUsed, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 190, 40, -1));
+        trustusedtext.setBackground(new java.awt.Color(255, 255, 255));
+        trustusedtext.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        trustusedtext.setForeground(new java.awt.Color(0, 102, 102));
+        trustusedtext.setText("0");
+        add(trustusedtext, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 230, 40, -1));
 
         btnRefresh.setBackground(new java.awt.Color(0, 102, 102));
         btnRefresh.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
@@ -189,19 +186,19 @@ public class WorkAreaManagerJPanel extends javax.swing.JPanel
         add(btnRefresh, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 20, 120, 40));
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnViewDonationsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnViewDonationsActionPerformed
+    private void viewDonButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_viewDonButtonActionPerformed
         AllDonationInformationJPanel completeDonationRelatedDetailsJPanel = new AllDonationInformationJPanel(showPanel, ecoSystem,enterprise, userAccount);
         showPanel.add("completeDonationRelatedDetailsJPanel", completeDonationRelatedDetailsJPanel);
         CardLayout layout = (CardLayout) showPanel.getLayout();
         layout.next(showPanel);
-    }//GEN-LAST:event_btnViewDonationsActionPerformed
+    }//GEN-LAST:event_viewDonButtonActionPerformed
 
-    private void btnPickUpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPickUpActionPerformed
+    private void pickupButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pickupButtonActionPerformed
         PatientsCureSponsoringInformation patientsTreatmentSponsoringDetails = new PatientsCureSponsoringInformation(showPanel,enterprise,network,ecoSystem, userAccount,funds);
         showPanel.add("patientsTreatmentSponsoringDetails", patientsTreatmentSponsoringDetails);
         CardLayout layout = (CardLayout) showPanel.getLayout();
         layout.next(showPanel);
-    }//GEN-LAST:event_btnPickUpActionPerformed
+    }//GEN-LAST:event_pickupButtonActionPerformed
 
     private void btnRefreshActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRefreshActionPerformed
         float sum =0;
@@ -211,25 +208,23 @@ public class WorkAreaManagerJPanel extends javax.swing.JPanel
                 HealthcareTrustRequestWQ hospitalFundsRequestWorkQueue = (HealthcareTrustRequestWQ)request;
                 
                 if(hospitalFundsRequestWorkQueue.getMessage().equalsIgnoreCase("Acknowledged") && hospitalFundsRequestWorkQueue.getFunderName().equalsIgnoreCase(enterprise.getName()))
-                {
                     sum += hospitalFundsRequestWorkQueue.getAmount();
-                }
             }
         
-        lblFundsUsed.setText(String.valueOf(sum));
+        trustusedtext.setText(String.valueOf(sum));
     }//GEN-LAST:event_btnRefreshActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnPickUp;
     private javax.swing.JButton btnRefresh;
-    private javax.swing.JButton btnViewDonations;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel lblFunds;
-    private javax.swing.JLabel lblFundsUsed;
-    private javax.swing.JLabel lblFundsValue;
-    private javax.swing.JLabel lblName;
-    private javax.swing.JLabel lblTitle;
-    private javax.swing.JLabel lblValue;
+    private javax.swing.JLabel fundusedjlabel;
+    private javax.swing.JLabel namelabel;
+    private javax.swing.JButton pickupButton;
+    private javax.swing.JLabel receivelabel;
+    private javax.swing.JLabel titlelable;
+    private javax.swing.JLabel trustusedtext;
+    private javax.swing.JLabel trustvaltext;
+    private javax.swing.JLabel valtext;
+    private javax.swing.JButton viewDonButton;
     // End of variables declaration//GEN-END:variables
 }

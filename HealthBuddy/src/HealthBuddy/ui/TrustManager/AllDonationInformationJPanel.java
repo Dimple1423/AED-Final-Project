@@ -31,7 +31,7 @@ public class AllDonationInformationJPanel extends javax.swing.JPanel
         this.enterprise = enterprise;
         this.userAccount = userAccount;
         
-        lblValue.setText(enterprise.getName());
+        valueLable.setText(enterprise.getName());
         
         populateJTable();
         setSize(1540,800);
@@ -45,7 +45,7 @@ public class AllDonationInformationJPanel extends javax.swing.JPanel
         
         for(TrustDetails dd : ecoSystem.getDonationDirectory().getTrustCatalog())
         {
-            if(dd.geTrustOrgName().equalsIgnoreCase(lblValue.getText()))
+            if(dd.geTrustOrgName().equalsIgnoreCase(valueLable.getText()))
             {
                 Object[] row = new Object[3];
                 row[0] = dd.getDonor().getDonorName();
@@ -65,12 +65,12 @@ public class AllDonationInformationJPanel extends javax.swing.JPanel
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        lblTitle = new javax.swing.JLabel();
+        titleLabel = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         donationDetailsJTable = new javax.swing.JTable();
-        btnBack = new javax.swing.JButton();
-        lblName = new javax.swing.JLabel();
-        lblValue = new javax.swing.JLabel();
+        backButton = new javax.swing.JButton();
+        nameLabel = new javax.swing.JLabel();
+        valueLable = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
@@ -78,11 +78,11 @@ public class AllDonationInformationJPanel extends javax.swing.JPanel
         setForeground(new java.awt.Color(0, 102, 102));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        lblTitle.setBackground(new java.awt.Color(255, 255, 255));
-        lblTitle.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
-        lblTitle.setForeground(new java.awt.Color(0, 102, 102));
-        lblTitle.setText("Donation Information");
-        add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 20, 450, -1));
+        titleLabel.setBackground(new java.awt.Color(255, 255, 255));
+        titleLabel.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+        titleLabel.setForeground(new java.awt.Color(0, 102, 102));
+        titleLabel.setText("Donation Information");
+        add(titleLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 100, 450, -1));
 
         jScrollPane1.setForeground(new java.awt.Color(0, 102, 102));
 
@@ -115,32 +115,32 @@ public class AllDonationInformationJPanel extends javax.swing.JPanel
             donationDetailsJTable.getColumnModel().getColumn(2).setResizable(false);
         }
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 160, 677, 110));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 210, 677, 110));
 
-        btnBack.setBackground(new java.awt.Color(0, 102, 102));
-        btnBack.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        btnBack.setForeground(new java.awt.Color(255, 255, 255));
-        btnBack.setText("Back");
-        btnBack.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btnBack.setBorderPainted(false);
-        btnBack.addActionListener(new java.awt.event.ActionListener() {
+        backButton.setBackground(new java.awt.Color(0, 102, 102));
+        backButton.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        backButton.setForeground(new java.awt.Color(255, 255, 255));
+        backButton.setText("Back");
+        backButton.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        backButton.setBorderPainted(false);
+        backButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnBackActionPerformed(evt);
+                backButtonActionPerformed(evt);
             }
         });
-        add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(1260, 30, 90, 30));
+        add(backButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1260, 30, 90, 30));
 
-        lblName.setBackground(new java.awt.Color(255, 255, 255));
-        lblName.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        lblName.setForeground(new java.awt.Color(0, 102, 102));
-        lblName.setText("Funding Organisation Name :");
-        add(lblName, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 110, 270, -1));
+        nameLabel.setBackground(new java.awt.Color(255, 255, 255));
+        nameLabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        nameLabel.setForeground(new java.awt.Color(0, 102, 102));
+        nameLabel.setText("Funding Organisation Name :");
+        add(nameLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 160, 300, -1));
 
-        lblValue.setBackground(new java.awt.Color(255, 255, 255));
-        lblValue.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        lblValue.setForeground(new java.awt.Color(0, 102, 102));
-        lblValue.setText("value");
-        add(lblValue, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 110, 90, 20));
+        valueLable.setBackground(new java.awt.Color(255, 255, 255));
+        valueLable.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        valueLable.setForeground(new java.awt.Color(0, 102, 102));
+        valueLable.setText("value");
+        add(valueLable, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 160, 90, 20));
 
         jLabel2.setBackground(new java.awt.Color(255, 255, 255));
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -148,20 +148,20 @@ public class AllDonationInformationJPanel extends javax.swing.JPanel
         add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 280, 830, -1));
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
+    private void backButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backButtonActionPerformed
         showPanel.remove(this);
         CardLayout layout = (CardLayout) showPanel.getLayout();
         layout.previous(showPanel);
-    }//GEN-LAST:event_btnBackActionPerformed
+    }//GEN-LAST:event_backButtonActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnBack;
+    private javax.swing.JButton backButton;
     private javax.swing.JTable donationDetailsJTable;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JLabel lblName;
-    private javax.swing.JLabel lblTitle;
-    private javax.swing.JLabel lblValue;
+    private javax.swing.JLabel nameLabel;
+    private javax.swing.JLabel titleLabel;
+    private javax.swing.JLabel valueLable;
     // End of variables declaration//GEN-END:variables
 }
