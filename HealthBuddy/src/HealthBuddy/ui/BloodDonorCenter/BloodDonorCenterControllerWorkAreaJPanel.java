@@ -82,11 +82,11 @@ public class BloodDonorCenterControllerWorkAreaJPanel extends javax.swing.JPanel
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jScrollPane1 = new javax.swing.JScrollPane();
+        jScrollPane9 = new javax.swing.JScrollPane();
         BloodRequestJTable = new javax.swing.JTable();
-        lblTitle = new javax.swing.JLabel();
-        btnAccept = new javax.swing.JButton();
-        btnBack = new javax.swing.JButton();
+        lblTitle9 = new javax.swing.JLabel();
+        btnAccept9 = new javax.swing.JButton();
+        btnBack9 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
@@ -111,7 +111,7 @@ public class BloodDonorCenterControllerWorkAreaJPanel extends javax.swing.JPanel
                 return canEdit [columnIndex];
             }
         });
-        jScrollPane1.setViewportView(BloodRequestJTable);
+        jScrollPane9.setViewportView(BloodRequestJTable);
         if (BloodRequestJTable.getColumnModel().getColumnCount() > 0) {
             BloodRequestJTable.getColumnModel().getColumn(0).setResizable(false);
             BloodRequestJTable.getColumnModel().getColumn(1).setResizable(false);
@@ -119,51 +119,51 @@ public class BloodDonorCenterControllerWorkAreaJPanel extends javax.swing.JPanel
             BloodRequestJTable.getColumnModel().getColumn(3).setResizable(false);
         }
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 230, 540, 170));
+        add(jScrollPane9, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 230, 540, 170));
 
-        lblTitle.setBackground(new java.awt.Color(255, 255, 255));
-        lblTitle.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
-        lblTitle.setForeground(new java.awt.Color(0, 102, 102));
-        lblTitle.setText("Blood Request");
-        add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 180, 260, 34));
+        lblTitle9.setBackground(new java.awt.Color(255, 255, 255));
+        lblTitle9.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        lblTitle9.setForeground(new java.awt.Color(0, 102, 102));
+        lblTitle9.setText("Blood Request");
+        add(lblTitle9, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 180, 260, 34));
 
-        btnAccept.setBackground(new java.awt.Color(0, 102, 102));
-        btnAccept.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        btnAccept.setForeground(new java.awt.Color(255, 255, 255));
-        btnAccept.setText("Accept Request");
-        btnAccept.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btnAccept.setBorderPainted(false);
-        btnAccept.addActionListener(new java.awt.event.ActionListener() {
+        btnAccept9.setBackground(new java.awt.Color(0, 102, 102));
+        btnAccept9.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        btnAccept9.setForeground(new java.awt.Color(255, 255, 255));
+        btnAccept9.setText("Accept Request");
+        btnAccept9.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnAccept9.setBorderPainted(false);
+        btnAccept9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnAcceptActionPerformed(evt);
+                btnAccept9ActionPerformed(evt);
             }
         });
-        add(btnAccept, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 420, 190, 40));
+        add(btnAccept9, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 420, 190, 40));
 
-        btnBack.setBackground(new java.awt.Color(0, 102, 102));
-        btnBack.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        btnBack.setForeground(new java.awt.Color(255, 255, 255));
-        btnBack.setText("Back");
-        btnBack.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btnBack.setBorderPainted(false);
-        btnBack.addActionListener(new java.awt.event.ActionListener() {
+        btnBack9.setBackground(new java.awt.Color(0, 102, 102));
+        btnBack9.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        btnBack9.setForeground(new java.awt.Color(255, 255, 255));
+        btnBack9.setText("Back");
+        btnBack9.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnBack9.setBorderPainted(false);
+        btnBack9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnBackActionPerformed(evt);
+                btnBack9ActionPerformed(evt);
             }
         });
-        add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(1293, 30, 90, 40));
+        add(btnBack9, new org.netbeans.lib.awtextra.AbsoluteConstraints(1293, 30, 90, 40));
 
         ImageIcon imageIcon =  new ImageIcon(new ImageIcon(getClass().getResource("/HealthBuddy/ui/images/bloodRequest.jpg")).getImage().getScaledInstance(950, 550, Image.SCALE_DEFAULT));
         jLabel1.setIcon(imageIcon);
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 80, 900, 640));
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnAcceptActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAcceptActionPerformed
+    private void btnAccept9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAccept9ActionPerformed
        int selectedRow=BloodRequestJTable.getSelectedRow();
        
        if(selectedRow<0)
        {
-           JOptionPane.showMessageDialog(null, "No row is selected","Warning", JOptionPane.WARNING_MESSAGE);
+           JOptionPane.showMessageDialog(null, "Kindly Select a Row","Warning", JOptionPane.WARNING_MESSAGE);
        }
        else
        {
@@ -172,7 +172,7 @@ public class BloodDonorCenterControllerWorkAreaJPanel extends javax.swing.JPanel
            
            if(bloodHeadAttendentWorkQueue.getMessage().equals("Blood Supplied"))
            {
-               JOptionPane.showMessageDialog(null, "Blood is Delivered earlier","Warning", JOptionPane.WARNING_MESSAGE);
+               JOptionPane.showMessageDialog(null, "Hurray! Delivery of Blood made earlier than expected","Warning", JOptionPane.WARNING_MESSAGE);
            }
            
            else if(result == true)
@@ -218,33 +218,33 @@ public class BloodDonorCenterControllerWorkAreaJPanel extends javax.swing.JPanel
                                 userAccount.getWorkQueue().getWorkRequestList().add(bhawq);
                             }   
                 
-                            JOptionPane.showMessageDialog(null, "Posted successfully", "Success", JOptionPane.INFORMATION_MESSAGE);
+                            JOptionPane.showMessageDialog(null, "Request Posted successfully", "Success", JOptionPane.INFORMATION_MESSAGE);
                         }      
                     }
                 }
            
            else
            {
-               JOptionPane.showMessageDialog(null, "Sufficient blood quantity not available at present for this blood group", "Warning", JOptionPane.WARNING_MESSAGE);
+               JOptionPane.showMessageDialog(null, "InSufficient blood quantity for this group at the moment", "Warning", JOptionPane.WARNING_MESSAGE);
            }
         } 
-    }//GEN-LAST:event_btnAcceptActionPerformed
+    }//GEN-LAST:event_btnAccept9ActionPerformed
 
-    private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
+    private void btnBack9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBack9ActionPerformed
 
         showPanel.remove(this);
         CardLayout layout = (CardLayout) showPanel.getLayout();
         layout.previous(showPanel);
-    }//GEN-LAST:event_btnBackActionPerformed
+    }//GEN-LAST:event_btnBack9ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTable BloodRequestJTable;
-    private javax.swing.JButton btnAccept;
-    private javax.swing.JButton btnBack;
+    private javax.swing.JButton btnAccept9;
+    private javax.swing.JButton btnBack9;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JLabel lblTitle;
+    private javax.swing.JScrollPane jScrollPane9;
+    private javax.swing.JLabel lblTitle9;
     // End of variables declaration//GEN-END:variables
 
     
