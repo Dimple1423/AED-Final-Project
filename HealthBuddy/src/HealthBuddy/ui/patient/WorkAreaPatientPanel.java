@@ -18,7 +18,6 @@ import HealthBuddy.models.WorkQueue.PatientBookingWQ;
 import HealthBuddy.models.WorkQueue.AssistantAddingTimetoWQ;
 import HealthBuddy.Config.SMSUtility;
 import HealthBuddy.models.WorkQueue.WorkRequest;
-import HealthBuddy.Config.WhatsappUtility;
 
 import java.awt.*;
 import java.text.DateFormat;
@@ -390,9 +389,8 @@ public class WorkAreaPatientPanel extends javax.swing.JPanel {
             org.getIncomingPatients().getWorkRequestList().add(patientBookingWorkQueue);
             userAccount.getWorkQueue().getWorkRequestList().add(patientBookingWorkQueue);
 
-            String message = "Dear "+ patientData.getPatientName() +",\n\nYour appointment has been requested for " + " " + request.getTimings() + " with Doctor: " + request.getDoctor() + " at Hospital " + request.getHealthcareName()+"\n\nThanks,\nTeam MediStop";
+            String message = "Dear "+ patientData.getPatientName() +",\n\nYou have requested your appointment at " + " " + request.getTimings() + " with Doctor: " + request.getDoctor() + " at Hospital " + request.getHealthcareName()+"\n\nThank you,\nHealthBuddy Team";
             SMSUtility.sendSMS(patientData.getContactNo(), message);
-            WhatsappUtility.sendWhatsappMessage(patientData.getContactNo(), message);
             JOptionPane.showMessageDialog(null,"Slot has been booked.");
 
             populateAppointmentHistoryTable();
