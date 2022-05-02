@@ -105,13 +105,11 @@ public class WorkAreaPatientPanel extends javax.swing.JPanel {
         }
           
         
-        
-        
+      
         
         }
         
-        
-        
+         
           
     }
 
@@ -347,7 +345,7 @@ public class WorkAreaPatientPanel extends javax.swing.JPanel {
         }
         AssistantAddingTimetoWQ request = (AssistantAddingTimetoWQ)docScheduleTable.getValueAt(selectedRow,0);
         if(request.getStatus().equals("Booked")){
-            JOptionPane.showMessageDialog(null,"Select Valid Slot. The slot you are trying to book is not available.");
+            JOptionPane.showMessageDialog(null,"Kindly Select Valid Slot. The time you are trying to reserve is already taken.");
         }
         else{
             request.setStatus("Booked");
@@ -391,7 +389,7 @@ public class WorkAreaPatientPanel extends javax.swing.JPanel {
 
             String message = "Dear "+ patientData.getPatientName() +",\n\nYou have requested your appointment at " + " " + request.getTimings() + " with Doctor: " + request.getDoctor() + " at Hospital " + request.getHealthcareName()+"\n\nThank you,\nHealthBuddy Team";
             SMSUtility.sendSMS(patientData.getContactNo(), message);
-            JOptionPane.showMessageDialog(null,"Slot has been booked.");
+            JOptionPane.showMessageDialog(null,"TimeSlot has been reserved.");
 
             populateAppointmentHistoryTable();
         }
