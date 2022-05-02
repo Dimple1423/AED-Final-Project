@@ -510,12 +510,12 @@ public class PatientCreateJPanel extends javax.swing.JPanel {
                 if (femail) {
                     String[] to = {email};
                     String phoneNumber = patient.getContactNo();
-                    String from = "medistop2021vzd@gmail.com";
-                    String pwd = "TravelDell@26893";
+                    String from = "dimple.patel1408@gmail.com";
+                    String pwd = "Dimple@1423";
 
                     String code = OTPUtility.generateOTP(4);
 
-                    String message = "Dear "+ name +",\n\nPlease enter the below code to activate your account:" + " " + code +"\n\nThanks,\nTeam MediStop";
+                    String message = "Dear "+ name +",\n\nThis is your one time OTP :" + " " + code +"Don't share it with anyone!" +"\n\nThanks,\nHealthBuddy Team";
                     String subject = "Account Verification Mail";
                     SMSUtility.sendSMS(patient.getContactNo(), " Account Verification Mail  " + message);
 
@@ -526,20 +526,14 @@ public class PatientCreateJPanel extends javax.swing.JPanel {
                     CardLayout layout = (CardLayout) bodyPanel.getLayout();
                     layout.next(bodyPanel);
                 }
-                else{
+                else
                     JOptionPane.showMessageDialog(null, "Email or Blood-Group inputes are not correct Please Try Again", "Error", JOptionPane.ERROR_MESSAGE);
-                }
         }
         catch(Exception e)
         {
             e.printStackTrace();
             JOptionPane.showMessageDialog(null, "Please enter the valid details", "Error", JOptionPane.ERROR_MESSAGE);
         }
-        
-        
-        
-
-       
     }//GEN-LAST:event_buttonRegActionPerformed
 
     

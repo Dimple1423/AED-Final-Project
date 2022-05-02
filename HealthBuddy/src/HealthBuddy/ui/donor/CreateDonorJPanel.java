@@ -11,8 +11,8 @@ import javax.swing.JOptionPane;
 import javax.swing.filechooser.FileSystemView;
 
 import HealthBuddy.models.UserData.DonorData;
-import HealthBuddy.models.UserData.DonorCatalog;
 import HealthBuddy.Config.OTPUtility;
+import HealthBuddy.models.UserData.DonorCatalog;
 import HealthBuddy.Config.SMSUtility;
 import HealthBuddy.Config.SendEmailUtility;
 import HealthBuddy.Config.Config;
@@ -35,6 +35,7 @@ public class CreateDonorJPanel extends javax.swing.JPanel {
     public CreateDonorJPanel(JPanel bodyPanel, EcoSystem ecosystem) {
         initComponents();
         this.bodyPanel = bodyPanel;
+        setSize(1540,800);
         this.ecosystem = ecosystem;
     }
 
@@ -429,27 +430,17 @@ public class CreateDonorJPanel extends javax.swing.JPanel {
             donor.setZipCode(zipCode);
             donor.setEmail(email);
 
-//            String PATTERN = "^\\S+@\\S+$";
-//            Pattern patt = Pattern.compile(PATTERN);
-//            Matcher match = patt.matcher(emailTF.getText());
-//            if (!match.matches()) {
-//                femail = false;
-////            lblemailformat.setText("Email Format is not correct");
-//            } else {
-//                femail = true;
-////            lblemailformat.setText(null);
-//            }
             femail = email.contains("@");
 
             if (femail) {
                 String[] to = {email};
                 String phoneNumber = donor.getContactNo();
-                String from = "medistop2021vzd@gmail.com";
-                String pwd = "TravelDell@26893";
+                String from = "dimple.patel1408@gmail.com\"";
+                String pwd = "Dimple@1423";
 
                 String code = OTPUtility.generateOTP(4);
 
-                String message = "Dear " + name + ",\n\nPlease enter the below code to activate your account:" + " " + code + "\n\nThanks,\nTeam MediStop";
+                String message = "Dear " + name + ",\n\nThis is your one time OTP :" + " " + code +"Don't share it with anyone!" + "\n\nThanks,\nHealthbuddy Team";
                 String subject = "Account Verification Mail";
                 SMSUtility.sendSMS(donor.getContactNo(), " Account Verification Mail  " + message);
 
