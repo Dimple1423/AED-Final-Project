@@ -435,7 +435,7 @@ public class CreateDonorJPanel extends javax.swing.JPanel {
             if (femail) {
                 String[] to = {email};
                 String phoneNumber = donor.getContactNo();
-                String from = "dimple.patel1408@gmail.com\"";
+                String from = "dimple.patel1408@gmail.com";
                 String pwd = "Dimple@1423";
 
                 String code = OTPUtility.generateOTP(4);
