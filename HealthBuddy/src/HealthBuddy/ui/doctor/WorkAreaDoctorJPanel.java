@@ -41,7 +41,7 @@ public class WorkAreaDoctorJPanel extends javax.swing.JPanel {
         initComponents();
         this.displayJPanel = displayJPanel;
         this.userAccount = userAccount;
-        valuePatientName.setText(userAccount.getUsername());
+        valuePatientName9.setText(userAccount.getUsername());
         this.docOrganisation = docOrganisation;
         this.enterprise = enterprise;
         this.ecosystem = ecosystem;
@@ -58,180 +58,180 @@ public class WorkAreaDoctorJPanel extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        lblPatientName = new javax.swing.JLabel();
-        txtPatientName = new javax.swing.JTextField();
-        txtDOB = new javax.swing.JTextField();
-        lblDOB = new javax.swing.JLabel();
-        lblBloodGroup = new javax.swing.JLabel();
-        txtBloodGroup = new javax.swing.JTextField();
-        lblDisease = new javax.swing.JLabel();
-        txtDisease = new javax.swing.JTextField();
-        lblPrescription = new javax.swing.JLabel();
-        txtPrescription = new javax.swing.JTextField();
-        menuItemName5 = new javax.swing.JLabel();
-        menuItemName6 = new javax.swing.JLabel();
-        RadioBloodYes = new javax.swing.JRadioButton();
-        RadioBloodNo = new javax.swing.JRadioButton();
-        lblWelcome = new javax.swing.JLabel();
-        valuePatientName = new javax.swing.JLabel();
-        btnAddPrescription = new javax.swing.JButton();
-        btnRefresh = new javax.swing.JButton();
-        lblPatientName1 = new javax.swing.JLabel();
-        lblPatientsWaiting = new javax.swing.JLabel();
-        RadioFundsYes = new javax.swing.JRadioButton();
-        RadioFundsNo = new javax.swing.JRadioButton();
+        lblPatientName9 = new javax.swing.JLabel();
+        txtPatientName9 = new javax.swing.JTextField();
+        txtDOB9 = new javax.swing.JTextField();
+        lblDOB9 = new javax.swing.JLabel();
+        lblBloodGroup9 = new javax.swing.JLabel();
+        txtBloodGroup9 = new javax.swing.JTextField();
+        lblDisease9 = new javax.swing.JLabel();
+        txtDisease9 = new javax.swing.JTextField();
+        lblPrescription9 = new javax.swing.JLabel();
+        txtPrescription9 = new javax.swing.JTextField();
+        menuItemName19 = new javax.swing.JLabel();
+        menuItemName9 = new javax.swing.JLabel();
+        RadioBloodYes9 = new javax.swing.JRadioButton();
+        RadioBloodNo9 = new javax.swing.JRadioButton();
+        lblWelcome9 = new javax.swing.JLabel();
+        valuePatientName9 = new javax.swing.JLabel();
+        btnAddPrescription9 = new javax.swing.JButton();
+        btnRefresh9 = new javax.swing.JButton();
+        lblPatientName19 = new javax.swing.JLabel();
+        lblPatientsWaiting9 = new javax.swing.JLabel();
+        RadioFundsYes9 = new javax.swing.JRadioButton();
+        RadioFundsNo9 = new javax.swing.JRadioButton();
         jLabel1 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
         setForeground(new java.awt.Color(0, 102, 102));
 
-        lblPatientName.setBackground(new java.awt.Color(255, 255, 255));
-        lblPatientName.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        lblPatientName.setForeground(new java.awt.Color(0, 102, 102));
-        lblPatientName.setText("Patient Name:");
+        lblPatientName9.setBackground(new java.awt.Color(255, 255, 255));
+        lblPatientName9.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        lblPatientName9.setForeground(new java.awt.Color(0, 102, 102));
+        lblPatientName9.setText("Patient Name:");
 
-        txtPatientName.setEditable(false);
-        txtPatientName.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        txtPatientName.setForeground(new java.awt.Color(0, 102, 102));
-        txtPatientName.setText(" ");
+        txtPatientName9.setEditable(false);
+        txtPatientName9.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        txtPatientName9.setForeground(new java.awt.Color(0, 102, 102));
+        txtPatientName9.setText(" ");
 
-        txtDOB.setEditable(false);
-        txtDOB.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        txtDOB.setForeground(new java.awt.Color(0, 102, 102));
-        txtDOB.setText(" ");
-        txtDOB.addActionListener(new java.awt.event.ActionListener() {
+        txtDOB9.setEditable(false);
+        txtDOB9.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        txtDOB9.setForeground(new java.awt.Color(0, 102, 102));
+        txtDOB9.setText(" ");
+        txtDOB9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtDOBActionPerformed(evt);
+                txtDOB9ActionPerformed(evt);
             }
         });
 
-        lblDOB.setBackground(new java.awt.Color(255, 255, 255));
-        lblDOB.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        lblDOB.setForeground(new java.awt.Color(0, 102, 102));
-        lblDOB.setText("Date of Birth:");
+        lblDOB9.setBackground(new java.awt.Color(255, 255, 255));
+        lblDOB9.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        lblDOB9.setForeground(new java.awt.Color(0, 102, 102));
+        lblDOB9.setText("Date of Birth:");
 
-        lblBloodGroup.setBackground(new java.awt.Color(255, 255, 255));
-        lblBloodGroup.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        lblBloodGroup.setForeground(new java.awt.Color(0, 102, 102));
-        lblBloodGroup.setText("Blood Group:");
+        lblBloodGroup9.setBackground(new java.awt.Color(255, 255, 255));
+        lblBloodGroup9.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        lblBloodGroup9.setForeground(new java.awt.Color(0, 102, 102));
+        lblBloodGroup9.setText("Blood Group:");
 
-        txtBloodGroup.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        txtBloodGroup.setForeground(new java.awt.Color(0, 102, 102));
-        txtBloodGroup.setText(" ");
+        txtBloodGroup9.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        txtBloodGroup9.setForeground(new java.awt.Color(0, 102, 102));
+        txtBloodGroup9.setText(" ");
 
-        lblDisease.setBackground(new java.awt.Color(255, 255, 255));
-        lblDisease.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        lblDisease.setForeground(new java.awt.Color(0, 102, 102));
-        lblDisease.setText("Disease:");
+        lblDisease9.setBackground(new java.awt.Color(255, 255, 255));
+        lblDisease9.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        lblDisease9.setForeground(new java.awt.Color(0, 102, 102));
+        lblDisease9.setText("Disease:");
 
-        txtDisease.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        txtDisease.setForeground(new java.awt.Color(0, 102, 102));
-        txtDisease.setText(" ");
-        txtDisease.addActionListener(new java.awt.event.ActionListener() {
+        txtDisease9.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        txtDisease9.setForeground(new java.awt.Color(0, 102, 102));
+        txtDisease9.setText(" ");
+        txtDisease9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtDiseaseActionPerformed(evt);
+                txtDisease9ActionPerformed(evt);
             }
         });
 
-        lblPrescription.setBackground(new java.awt.Color(255, 255, 255));
-        lblPrescription.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        lblPrescription.setForeground(new java.awt.Color(0, 102, 102));
-        lblPrescription.setText("Prescription:");
+        lblPrescription9.setBackground(new java.awt.Color(255, 255, 255));
+        lblPrescription9.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        lblPrescription9.setForeground(new java.awt.Color(0, 102, 102));
+        lblPrescription9.setText("Prescription:");
 
-        txtPrescription.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        txtPrescription.setForeground(new java.awt.Color(0, 102, 102));
-        txtPrescription.setText(" ");
+        txtPrescription9.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        txtPrescription9.setForeground(new java.awt.Color(0, 102, 102));
+        txtPrescription9.setText(" ");
 
-        menuItemName5.setBackground(new java.awt.Color(255, 255, 255));
-        menuItemName5.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        menuItemName5.setForeground(new java.awt.Color(0, 102, 102));
-        menuItemName5.setText("Blood Required:");
+        menuItemName19.setBackground(new java.awt.Color(255, 255, 255));
+        menuItemName19.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        menuItemName19.setForeground(new java.awt.Color(0, 102, 102));
+        menuItemName19.setText("Blood Required:");
 
-        menuItemName6.setBackground(new java.awt.Color(255, 255, 255));
-        menuItemName6.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        menuItemName6.setForeground(new java.awt.Color(0, 102, 102));
-        menuItemName6.setText("Funds Required:");
+        menuItemName9.setBackground(new java.awt.Color(255, 255, 255));
+        menuItemName9.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        menuItemName9.setForeground(new java.awt.Color(0, 102, 102));
+        menuItemName9.setText("Funds Required:");
 
-        RadioBloodYes.setBackground(new java.awt.Color(255, 255, 255));
-        RadioBloodYes.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        RadioBloodYes.setForeground(new java.awt.Color(0, 102, 102));
-        RadioBloodYes.setText("Yes");
-        RadioBloodYes.addActionListener(new java.awt.event.ActionListener() {
+        RadioBloodYes9.setBackground(new java.awt.Color(255, 255, 255));
+        RadioBloodYes9.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        RadioBloodYes9.setForeground(new java.awt.Color(0, 102, 102));
+        RadioBloodYes9.setText("Yes");
+        RadioBloodYes9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                RadioBloodYesActionPerformed(evt);
+                RadioBloodYes9ActionPerformed(evt);
             }
         });
 
-        RadioBloodNo.setBackground(new java.awt.Color(255, 255, 255));
-        RadioBloodNo.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        RadioBloodNo.setForeground(new java.awt.Color(0, 102, 102));
-        RadioBloodNo.setText("No");
-        RadioBloodNo.addActionListener(new java.awt.event.ActionListener() {
+        RadioBloodNo9.setBackground(new java.awt.Color(255, 255, 255));
+        RadioBloodNo9.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        RadioBloodNo9.setForeground(new java.awt.Color(0, 102, 102));
+        RadioBloodNo9.setText("No");
+        RadioBloodNo9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                RadioBloodNoActionPerformed(evt);
+                RadioBloodNo9ActionPerformed(evt);
             }
         });
 
-        lblWelcome.setBackground(new java.awt.Color(255, 255, 255));
-        lblWelcome.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        lblWelcome.setForeground(new java.awt.Color(0, 102, 102));
-        lblWelcome.setText("Welcome ");
+        lblWelcome9.setBackground(new java.awt.Color(255, 255, 255));
+        lblWelcome9.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        lblWelcome9.setForeground(new java.awt.Color(0, 102, 102));
+        lblWelcome9.setText("Welcome ");
 
-        valuePatientName.setBackground(new java.awt.Color(255, 255, 255));
-        valuePatientName.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        valuePatientName.setForeground(new java.awt.Color(0, 102, 102));
-        valuePatientName.setText("value");
+        valuePatientName9.setBackground(new java.awt.Color(255, 255, 255));
+        valuePatientName9.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        valuePatientName9.setForeground(new java.awt.Color(0, 102, 102));
+        valuePatientName9.setText("value");
 
-        btnAddPrescription.setBackground(new java.awt.Color(0, 102, 102));
-        btnAddPrescription.setFont(new java.awt.Font("Tahoma", 1, 19)); // NOI18N
-        btnAddPrescription.setForeground(new java.awt.Color(255, 255, 255));
-        btnAddPrescription.setText("Add Prescription");
-        btnAddPrescription.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btnAddPrescription.setBorderPainted(false);
-        btnAddPrescription.addActionListener(new java.awt.event.ActionListener() {
+        btnAddPrescription9.setBackground(new java.awt.Color(0, 102, 102));
+        btnAddPrescription9.setFont(new java.awt.Font("Tahoma", 1, 19)); // NOI18N
+        btnAddPrescription9.setForeground(new java.awt.Color(255, 255, 255));
+        btnAddPrescription9.setText("Add Prescription");
+        btnAddPrescription9.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnAddPrescription9.setBorderPainted(false);
+        btnAddPrescription9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnAddPrescriptionActionPerformed(evt);
+                btnAddPrescription9ActionPerformed(evt);
             }
         });
 
-        btnRefresh.setBackground(new java.awt.Color(0, 102, 102));
-        btnRefresh.setFont(new java.awt.Font("Tahoma", 1, 19)); // NOI18N
-        btnRefresh.setForeground(new java.awt.Color(255, 255, 255));
-        btnRefresh.setText("Refresh");
-        btnRefresh.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btnRefresh.setBorderPainted(false);
-        btnRefresh.addActionListener(new java.awt.event.ActionListener() {
+        btnRefresh9.setBackground(new java.awt.Color(0, 102, 102));
+        btnRefresh9.setFont(new java.awt.Font("Tahoma", 1, 19)); // NOI18N
+        btnRefresh9.setForeground(new java.awt.Color(255, 255, 255));
+        btnRefresh9.setText("Refresh");
+        btnRefresh9.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnRefresh9.setBorderPainted(false);
+        btnRefresh9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnRefreshActionPerformed(evt);
+                btnRefresh9ActionPerformed(evt);
             }
         });
 
-        lblPatientName1.setBackground(new java.awt.Color(255, 255, 255));
-        lblPatientName1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        lblPatientName1.setForeground(new java.awt.Color(0, 102, 102));
-        lblPatientName1.setText("Patients Waiting:");
+        lblPatientName19.setBackground(new java.awt.Color(255, 255, 255));
+        lblPatientName19.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        lblPatientName19.setForeground(new java.awt.Color(0, 102, 102));
+        lblPatientName19.setText("Patients Waiting:");
 
-        lblPatientsWaiting.setBackground(new java.awt.Color(255, 255, 255));
-        lblPatientsWaiting.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        lblPatientsWaiting.setForeground(new java.awt.Color(0, 102, 102));
+        lblPatientsWaiting9.setBackground(new java.awt.Color(255, 255, 255));
+        lblPatientsWaiting9.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        lblPatientsWaiting9.setForeground(new java.awt.Color(0, 102, 102));
 
-        RadioFundsYes.setBackground(new java.awt.Color(255, 255, 255));
-        RadioFundsYes.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        RadioFundsYes.setForeground(new java.awt.Color(0, 102, 102));
-        RadioFundsYes.setText("Yes");
-        RadioFundsYes.addActionListener(new java.awt.event.ActionListener() {
+        RadioFundsYes9.setBackground(new java.awt.Color(255, 255, 255));
+        RadioFundsYes9.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        RadioFundsYes9.setForeground(new java.awt.Color(0, 102, 102));
+        RadioFundsYes9.setText("Yes");
+        RadioFundsYes9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                RadioFundsYesActionPerformed(evt);
+                RadioFundsYes9ActionPerformed(evt);
             }
         });
 
-        RadioFundsNo.setBackground(new java.awt.Color(255, 255, 255));
-        RadioFundsNo.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        RadioFundsNo.setForeground(new java.awt.Color(0, 102, 102));
-        RadioFundsNo.setText("No");
-        RadioFundsNo.addActionListener(new java.awt.event.ActionListener() {
+        RadioFundsNo9.setBackground(new java.awt.Color(255, 255, 255));
+        RadioFundsNo9.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        RadioFundsNo9.setForeground(new java.awt.Color(0, 102, 102));
+        RadioFundsNo9.setText("No");
+        RadioFundsNo9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                RadioFundsNoActionPerformed(evt);
+                RadioFundsNo9ActionPerformed(evt);
             }
         });
 
@@ -250,57 +250,57 @@ public class WorkAreaDoctorJPanel extends javax.swing.JPanel {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(menuItemName5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(menuItemName6, javax.swing.GroupLayout.DEFAULT_SIZE, 168, Short.MAX_VALUE))
+                                    .addComponent(menuItemName19, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(menuItemName9, javax.swing.GroupLayout.DEFAULT_SIZE, 168, Short.MAX_VALUE))
                                 .addGap(91, 91, 91)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                        .addComponent(RadioFundsYes)
+                                        .addComponent(RadioFundsYes9)
                                         .addGap(43, 43, 43)
-                                        .addComponent(RadioFundsNo))
+                                        .addComponent(RadioFundsNo9))
                                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                        .addComponent(RadioBloodYes)
+                                        .addComponent(RadioBloodYes9)
                                         .addGap(43, 43, 43)
-                                        .addComponent(RadioBloodNo))))
+                                        .addComponent(RadioBloodNo9))))
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(259, 259, 259)
-                                .addComponent(btnAddPrescription, javax.swing.GroupLayout.PREFERRED_SIZE, 199, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(btnAddPrescription9, javax.swing.GroupLayout.PREFERRED_SIZE, 199, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addComponent(lblPrescription, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(lblDisease, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(lblBloodGroup, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(lblDOB, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(lblPatientName, javax.swing.GroupLayout.DEFAULT_SIZE, 168, Short.MAX_VALUE))
+                                    .addComponent(lblPrescription9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(lblDisease9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(lblBloodGroup9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(lblDOB9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(lblPatientName9, javax.swing.GroupLayout.DEFAULT_SIZE, 168, Short.MAX_VALUE))
                                 .addGap(18, 18, 18)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(txtDisease, javax.swing.GroupLayout.DEFAULT_SIZE, 250, Short.MAX_VALUE)
-                                    .addComponent(txtBloodGroup)
-                                    .addComponent(txtDOB)
-                                    .addComponent(txtPatientName)
-                                    .addComponent(txtPrescription))))
+                                    .addComponent(txtDisease9, javax.swing.GroupLayout.DEFAULT_SIZE, 250, Short.MAX_VALUE)
+                                    .addComponent(txtBloodGroup9)
+                                    .addComponent(txtDOB9)
+                                    .addComponent(txtPatientName9)
+                                    .addComponent(txtPrescription9))))
                         .addGap(930, 1026, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(lblWelcome)
+                                .addComponent(lblWelcome9)
                                 .addGap(89, 89, 89))
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(lblPatientName1, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(lblPatientName19, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(39, 39, 39)))
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(valuePatientName, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(valuePatientName9, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 915, Short.MAX_VALUE)
-                                .addComponent(btnRefresh, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(btnRefresh9, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(lblPatientsWaiting, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(lblPatientsWaiting9, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(216, 216, 216)
                                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 843, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(0, 0, Short.MAX_VALUE))))))
         );
 
-        layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {RadioBloodNo, RadioBloodYes, RadioFundsNo, RadioFundsYes});
+        layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {RadioBloodNo9, RadioBloodYes9, RadioFundsNo9, RadioFundsYes9});
 
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -309,85 +309,85 @@ public class WorkAreaDoctorJPanel extends javax.swing.JPanel {
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(lblWelcome)
-                            .addComponent(valuePatientName))
+                            .addComponent(lblWelcome9)
+                            .addComponent(valuePatientName9))
                         .addGap(59, 59, 59)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(lblPatientsWaiting, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(lblPatientName1))
+                                    .addComponent(lblPatientsWaiting9, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(lblPatientName19))
                                 .addGap(56, 56, 56)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createSequentialGroup()
-                                        .addComponent(lblPatientName)
+                                        .addComponent(lblPatientName9)
                                         .addGap(31, 31, 31)
-                                        .addComponent(lblDOB)
+                                        .addComponent(lblDOB9)
                                         .addGap(34, 34, 34)
-                                        .addComponent(lblBloodGroup)
+                                        .addComponent(lblBloodGroup9)
                                         .addGap(32, 32, 32)
-                                        .addComponent(lblDisease)
+                                        .addComponent(lblDisease9)
                                         .addGap(32, 32, 32)
-                                        .addComponent(lblPrescription))
+                                        .addComponent(lblPrescription9))
                                     .addGroup(layout.createSequentialGroup()
-                                        .addComponent(txtPatientName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(txtPatientName9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(26, 26, 26)
-                                        .addComponent(txtDOB, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(txtDOB9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(29, 29, 29)
-                                        .addComponent(txtBloodGroup, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(txtBloodGroup9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(27, 27, 27)
-                                        .addComponent(txtDisease, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(txtDisease9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(27, 27, 27)
-                                        .addComponent(txtPrescription, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                        .addComponent(txtPrescription9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                 .addGap(34, 34, 34)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(RadioBloodYes)
-                                        .addComponent(RadioBloodNo))
-                                    .addComponent(menuItemName5, javax.swing.GroupLayout.Alignment.TRAILING))
+                                        .addComponent(RadioBloodYes9)
+                                        .addComponent(RadioBloodNo9))
+                                    .addComponent(menuItemName19, javax.swing.GroupLayout.Alignment.TRAILING))
                                 .addGap(31, 31, 31)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(menuItemName6)
+                                    .addComponent(menuItemName9)
                                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(RadioFundsYes)
-                                        .addComponent(RadioFundsNo)))
+                                        .addComponent(RadioFundsYes9)
+                                        .addComponent(RadioFundsNo9)))
                                 .addGap(67, 67, 67)
-                                .addComponent(btnAddPrescription))
+                                .addComponent(btnAddPrescription9))
                             .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 593, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addComponent(btnRefresh))
+                    .addComponent(btnRefresh9))
                 .addContainerGap(109, Short.MAX_VALUE))
         );
 
-        layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {lblPatientsWaiting, valuePatientName});
+        layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {lblPatientsWaiting9, valuePatientName9});
 
-        layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {lblPatientName1, lblWelcome});
+        layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {lblPatientName19, lblWelcome9});
 
-        layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {lblBloodGroup, lblDOB, lblDisease, lblPatientName, lblPrescription, menuItemName5, menuItemName6});
+        layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {lblBloodGroup9, lblDOB9, lblDisease9, lblPatientName9, lblPrescription9, menuItemName19, menuItemName9});
 
-        layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {RadioBloodNo, RadioBloodYes, RadioFundsNo, RadioFundsYes});
+        layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {RadioBloodNo9, RadioBloodYes9, RadioFundsNo9, RadioFundsYes9});
 
     }// </editor-fold>//GEN-END:initComponents
 
-    private void txtDOBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtDOBActionPerformed
+    private void txtDOB9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtDOB9ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtDOBActionPerformed
+    }//GEN-LAST:event_txtDOB9ActionPerformed
 
-    private void txtDiseaseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtDiseaseActionPerformed
+    private void txtDisease9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtDisease9ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtDiseaseActionPerformed
+    }//GEN-LAST:event_txtDisease9ActionPerformed
 
-    private void RadioBloodYesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RadioBloodYesActionPerformed
-        RadioBloodNo.setSelected(false);
-    }//GEN-LAST:event_RadioBloodYesActionPerformed
+    private void RadioBloodYes9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RadioBloodYes9ActionPerformed
+        RadioBloodNo9.setSelected(false);
+    }//GEN-LAST:event_RadioBloodYes9ActionPerformed
 
-    private void RadioBloodNoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RadioBloodNoActionPerformed
-        RadioBloodYes.setSelected(false);
-    }//GEN-LAST:event_RadioBloodNoActionPerformed
+    private void RadioBloodNo9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RadioBloodNo9ActionPerformed
+        RadioBloodYes9.setSelected(false);
+    }//GEN-LAST:event_RadioBloodNo9ActionPerformed
 
-    private void btnAddPrescriptionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddPrescriptionActionPerformed
+    private void btnAddPrescription9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddPrescription9ActionPerformed
         // TODO add your handling code here:
-         appointment.setDiseases(txtDisease.getText());
-                appointment.setPrescription(txtPrescription.getText());
+         appointment.setDiseases(txtDisease9.getText());
+                appointment.setPrescription(txtPrescription9.getText());
                 boolean bloodRequired = isBloodRequired();
                 boolean donationRequired = isDonationRequired();
                 appointment.setisappointmentTaken(true);
@@ -403,9 +403,9 @@ public class WorkAreaDoctorJPanel extends javax.swing.JPanel {
                 assistantWorkQueue.setApd(appointment);
                 assistantWorkQueue.setFundingRequired(donationRequired);
                 assistantWorkQueue.setFundingApproved(false);
-                assistantWorkQueue.setPrescribed(txtPrescription.getText());
+                assistantWorkQueue.setPrescribed(txtPrescription9.getText());
                 HealthcareOrganisationAttendant orgAttendant = null;
-                JOptionPane.showMessageDialog(null, "Prescription updated successfully!!","Success", JOptionPane.INFORMATION_MESSAGE);
+                JOptionPane.showMessageDialog(null, "Prescription details updation complete!!","Success", JOptionPane.INFORMATION_MESSAGE);
         
         for (Organisation organisation : enterprise.getOrganizationCatalog().getOrganizationList()){
             if (organisation instanceof HealthcareOrganisationAttendant){
@@ -431,46 +431,46 @@ public class WorkAreaDoctorJPanel extends javax.swing.JPanel {
         //--->Resetting form fields
         resetFields();
         populateForm();
-    }//GEN-LAST:event_btnAddPrescriptionActionPerformed
+    }//GEN-LAST:event_btnAddPrescription9ActionPerformed
 
-    private void btnRefreshActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRefreshActionPerformed
+    private void btnRefresh9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRefresh9ActionPerformed
         // TODO add your handling code here:
         resetFields();
-    }//GEN-LAST:event_btnRefreshActionPerformed
+    }//GEN-LAST:event_btnRefresh9ActionPerformed
 
-    private void RadioFundsYesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RadioFundsYesActionPerformed
+    private void RadioFundsYes9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RadioFundsYes9ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_RadioFundsYesActionPerformed
+    }//GEN-LAST:event_RadioFundsYes9ActionPerformed
 
-    private void RadioFundsNoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RadioFundsNoActionPerformed
+    private void RadioFundsNo9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RadioFundsNo9ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_RadioFundsNoActionPerformed
+    }//GEN-LAST:event_RadioFundsNo9ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JRadioButton RadioBloodNo;
-    private javax.swing.JRadioButton RadioBloodYes;
-    private javax.swing.JRadioButton RadioFundsNo;
-    private javax.swing.JRadioButton RadioFundsYes;
-    private javax.swing.JButton btnAddPrescription;
-    private javax.swing.JButton btnRefresh;
+    private javax.swing.JRadioButton RadioBloodNo9;
+    private javax.swing.JRadioButton RadioBloodYes9;
+    private javax.swing.JRadioButton RadioFundsNo9;
+    private javax.swing.JRadioButton RadioFundsYes9;
+    private javax.swing.JButton btnAddPrescription9;
+    private javax.swing.JButton btnRefresh9;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel lblBloodGroup;
-    private javax.swing.JLabel lblDOB;
-    private javax.swing.JLabel lblDisease;
-    private javax.swing.JLabel lblPatientName;
-    private javax.swing.JLabel lblPatientName1;
-    private javax.swing.JLabel lblPatientsWaiting;
-    private javax.swing.JLabel lblPrescription;
-    private javax.swing.JLabel lblWelcome;
-    private javax.swing.JLabel menuItemName5;
-    private javax.swing.JLabel menuItemName6;
-    private javax.swing.JTextField txtBloodGroup;
-    private javax.swing.JTextField txtDOB;
-    private javax.swing.JTextField txtDisease;
-    private javax.swing.JTextField txtPatientName;
-    private javax.swing.JTextField txtPrescription;
-    private javax.swing.JLabel valuePatientName;
+    private javax.swing.JLabel lblBloodGroup9;
+    private javax.swing.JLabel lblDOB9;
+    private javax.swing.JLabel lblDisease9;
+    private javax.swing.JLabel lblPatientName19;
+    private javax.swing.JLabel lblPatientName9;
+    private javax.swing.JLabel lblPatientsWaiting9;
+    private javax.swing.JLabel lblPrescription9;
+    private javax.swing.JLabel lblWelcome9;
+    private javax.swing.JLabel menuItemName19;
+    private javax.swing.JLabel menuItemName9;
+    private javax.swing.JTextField txtBloodGroup9;
+    private javax.swing.JTextField txtDOB9;
+    private javax.swing.JTextField txtDisease9;
+    private javax.swing.JTextField txtPatientName9;
+    private javax.swing.JTextField txtPrescription9;
+    private javax.swing.JLabel valuePatientName9;
     // End of variables declaration//GEN-END:variables
 
 public void populateForm()
@@ -480,9 +480,9 @@ public void populateForm()
             if(appointment.isisappointmentTaken() != true)
             {
                 this.appointment = appointment;
-                txtPatientName.setText(appointment.getPatient().getPatientName());
-                txtDOB.setText(String.valueOf(appointment.getPatient().getDateOfBirth()));
-                txtBloodGroup.setText(appointment.getPatient().getBloodGroup());
+                txtPatientName9.setText(appointment.getPatient().getPatientName());
+                txtDOB9.setText(String.valueOf(appointment.getPatient().getDateOfBirth()));
+                txtBloodGroup9.setText(appointment.getPatient().getBloodGroup());
                 populateLabel();
                 break;
                 
@@ -499,17 +499,17 @@ public void populateLabel(){
                 count++;
             }
         }
-        lblPatientsWaiting.setText(String.valueOf(count));
+        lblPatientsWaiting9.setText(String.valueOf(count));
     }
 
 public boolean isBloodRequired()
     {
          boolean output=false;
-        if(RadioBloodYes.isSelected())
+        if(RadioBloodYes9.isSelected())
         {
             return true;
         }
-        else if(RadioBloodNo.isSelected())
+        else if(RadioBloodNo9.isSelected())
         {
             return false;
         }
@@ -519,11 +519,11 @@ public boolean isBloodRequired()
 public boolean isDonationRequired()
     {
         boolean output=false;
-        if(RadioFundsYes.isSelected())
+        if(RadioFundsYes9.isSelected())
         {
             return true;
         }
-        else if(RadioFundsNo.isSelected())
+        else if(RadioFundsNo9.isSelected())
         {
             return false;
         }
@@ -537,10 +537,10 @@ public boolean isDonationRequired()
     }
 
 public void resetFields(){
-    txtPatientName.setText("");
-        txtDOB.setText("");
-        txtBloodGroup.setText("");
-        txtDisease.setText("");
-        txtPrescription.setText("");
+    txtPatientName9.setText("");
+        txtDOB9.setText("");
+        txtBloodGroup9.setText("");
+        txtDisease9.setText("");
+        txtPrescription9.setText("");
 }
 }
