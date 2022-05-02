@@ -952,11 +952,12 @@ public void populateAppointmentTable()
         {
             PatientBookingWQ patient = new PatientBookingWQ();
             patient = (PatientBookingWQ)request;
-            Object[] row = new Object[4];
+            Object[] row = new Object[5];
             row[0] = patient;
             row[1] = patient.getPatient().getPatientId();
             row[2] = formatter.format(patient.getRequestDate());;
             row[3] = request.getStatus();
+            row[4] = patient.getDoctor();
             
             model.addRow(row);
         }          

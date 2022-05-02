@@ -440,7 +440,7 @@ public class CreateDonorJPanel extends javax.swing.JPanel {
 
                 String code = OTPUtility.generateOTP(4);
 
-                String message = "Dear " + name + ",\n\nThis is your one time OTP :" + " " + code +"Don't share it with anyone!" + "\n\nThanks,\nHealthbuddy Team";
+                String message = "Dear " + name + ",\n\nThis is your one time OTP :" + " " + code +" \nDon't share it with anyone!" + "\n\nThanks,\nHealthbuddy Team";
                 String subject = "Account Verification Mail";
                 SMSUtility.sendSMS(donor.getContactNo(), " Account Verification Mail  " + message);
 
