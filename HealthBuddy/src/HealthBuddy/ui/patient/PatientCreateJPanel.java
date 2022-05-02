@@ -483,11 +483,11 @@ public class PatientCreateJPanel extends javax.swing.JPanel {
 
 
             if (phone.isEmpty()) {
-                JOptionPane.showMessageDialog(null, "Please enter the valid details for Phone Number", "Error", JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(null, "Kindly enter correct Mobile Number", "Error", JOptionPane.ERROR_MESSAGE);
             } else if (email.isEmpty()) {
-                JOptionPane.showMessageDialog(null, "Please enter the valid details for Email", "Error", JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(null, "Kindly enter correct Email information", "Error", JOptionPane.ERROR_MESSAGE);
             } else if (blood.isEmpty()) {
-                JOptionPane.showMessageDialog(null, "Please enter the valid details for Blood", "Error", JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(null, "Kindly enter correct Blood information", "Error", JOptionPane.ERROR_MESSAGE);
             }
 
             PatientData patient = new PatientData();
@@ -527,12 +527,12 @@ public class PatientCreateJPanel extends javax.swing.JPanel {
                     layout.next(bodyPanel);
                 }
                 else
-                    JOptionPane.showMessageDialog(null, "Email or Blood-Group inputes are not correct Please Try Again", "Error", JOptionPane.ERROR_MESSAGE);
+                    JOptionPane.showMessageDialog(null, "Email or Blood-Group inputs are not correct Kindly Try Again", "Error", JOptionPane.ERROR_MESSAGE);
         }
         catch(Exception e)
         {
             e.printStackTrace();
-            JOptionPane.showMessageDialog(null, "Please enter the valid details", "Error", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(null, "Kindly enter the valid information", "Error", JOptionPane.ERROR_MESSAGE);
         }
     }//GEN-LAST:event_buttonRegActionPerformed
 
