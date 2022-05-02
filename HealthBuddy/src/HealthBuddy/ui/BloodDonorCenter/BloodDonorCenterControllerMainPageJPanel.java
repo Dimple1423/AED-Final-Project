@@ -47,8 +47,8 @@ public class BloodDonorCenterControllerMainPageJPanel extends javax.swing.JPanel
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        ViewRequestjButton = new javax.swing.JButton();
-        GoToInventoryjButton = new javax.swing.JButton();
+        ViewRequestjButton9 = new javax.swing.JButton();
+        GoToInventoryjButton9 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
 
@@ -57,29 +57,29 @@ public class BloodDonorCenterControllerMainPageJPanel extends javax.swing.JPanel
         setForeground(new java.awt.Color(0, 102, 102));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        ViewRequestjButton.setBackground(new java.awt.Color(0, 102, 102));
-        ViewRequestjButton.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        ViewRequestjButton.setForeground(new java.awt.Color(255, 255, 255));
-        ViewRequestjButton.setText("View Requests");
-        ViewRequestjButton.setBorderPainted(false);
-        ViewRequestjButton.addActionListener(new java.awt.event.ActionListener() {
+        ViewRequestjButton9.setBackground(new java.awt.Color(0, 102, 102));
+        ViewRequestjButton9.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        ViewRequestjButton9.setForeground(new java.awt.Color(255, 255, 255));
+        ViewRequestjButton9.setText("View Requests");
+        ViewRequestjButton9.setBorderPainted(false);
+        ViewRequestjButton9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ViewRequestjButtonActionPerformed(evt);
+                ViewRequestjButton9ActionPerformed(evt);
             }
         });
-        add(ViewRequestjButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 190, 220, 66));
+        add(ViewRequestjButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 190, 220, 66));
 
-        GoToInventoryjButton.setBackground(new java.awt.Color(0, 102, 102));
-        GoToInventoryjButton.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        GoToInventoryjButton.setForeground(new java.awt.Color(255, 255, 255));
-        GoToInventoryjButton.setText("Go To Inventory");
-        GoToInventoryjButton.setBorderPainted(false);
-        GoToInventoryjButton.addActionListener(new java.awt.event.ActionListener() {
+        GoToInventoryjButton9.setBackground(new java.awt.Color(0, 102, 102));
+        GoToInventoryjButton9.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        GoToInventoryjButton9.setForeground(new java.awt.Color(255, 255, 255));
+        GoToInventoryjButton9.setText("Go To Inventory");
+        GoToInventoryjButton9.setBorderPainted(false);
+        GoToInventoryjButton9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                GoToInventoryjButtonActionPerformed(evt);
+                GoToInventoryjButton9ActionPerformed(evt);
             }
         });
-        add(GoToInventoryjButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 310, 220, 66));
+        add(GoToInventoryjButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 310, 220, 66));
 
         jLabel1.setBackground(new java.awt.Color(255, 255, 255));
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
@@ -92,7 +92,7 @@ public class BloodDonorCenterControllerMainPageJPanel extends javax.swing.JPanel
         add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 80, 1090, 610));
     }// </editor-fold>//GEN-END:initComponents
 
-    private void ViewRequestjButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ViewRequestjButtonActionPerformed
+    private void ViewRequestjButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ViewRequestjButton9ActionPerformed
         
          BloodDonorCenterControllerWorkAreaJPanel headBloodBankWorkAreaPanel = new BloodDonorCenterControllerWorkAreaJPanel(showPanel,userAccount,headsOrganisation,enterprise,network,ecoSystem);
         showPanel.add("HeadBloodBankWorkAreaJPanel", headBloodBankWorkAreaPanel);
@@ -100,9 +100,9 @@ public class BloodDonorCenterControllerMainPageJPanel extends javax.swing.JPanel
         layout.next(showPanel);
         
                
-    }//GEN-LAST:event_ViewRequestjButtonActionPerformed
+    }//GEN-LAST:event_ViewRequestjButton9ActionPerformed
 
-    private void GoToInventoryjButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_GoToInventoryjButtonActionPerformed
+    private void GoToInventoryjButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_GoToInventoryjButton9ActionPerformed
         // TODO add your handling code here:
         BloodDonorCenterStorageJPanel bloodBankStoragePanel = new BloodDonorCenterStorageJPanel(showPanel,userAccount,headsOrganisation,enterprise,network,ecoSystem);
         showPanel.add("BloodBankStorageJPanel", bloodBankStoragePanel);
@@ -110,12 +110,12 @@ public class BloodDonorCenterControllerMainPageJPanel extends javax.swing.JPanel
         layout.next(showPanel);
         
         
-    }//GEN-LAST:event_GoToInventoryjButtonActionPerformed
+    }//GEN-LAST:event_GoToInventoryjButton9ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton GoToInventoryjButton;
-    private javax.swing.JButton ViewRequestjButton;
+    private javax.swing.JButton GoToInventoryjButton9;
+    private javax.swing.JButton ViewRequestjButton9;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     // End of variables declaration//GEN-END:variables
