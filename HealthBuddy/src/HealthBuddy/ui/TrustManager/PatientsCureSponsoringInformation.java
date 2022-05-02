@@ -258,6 +258,7 @@ public class PatientsCureSponsoringInformation extends javax.swing.JPanel {
         }
     }//GEN-LAST:event_sponsorButtonActionPerformed
 
+    
     private void backButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backButtonActionPerformed
         showPanel.remove(this);
         CardLayout layout = (CardLayout) showPanel.getLayout();

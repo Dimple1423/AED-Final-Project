@@ -55,6 +55,7 @@ public class AllDonationInformationJPanel extends javax.swing.JPanel {
         }
     }
 
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -159,6 +160,7 @@ public class AllDonationInformationJPanel extends javax.swing.JPanel {
     }//GEN-LAST:event_backButtonActionPerformed
 
 
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton backButton;
     private javax.swing.JTable donationDetailsJTable;
@@ -170,3 +172,4 @@ public class AllDonationInformationJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel valueLable;
     // End of variables declaration//GEN-END:variables
 }
+

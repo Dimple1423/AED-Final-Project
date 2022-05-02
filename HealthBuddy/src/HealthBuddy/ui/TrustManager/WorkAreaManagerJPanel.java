@@ -16,6 +16,7 @@ import javax.swing.JPanel;
 import javax.swing.ImageIcon;
 import java.awt.Image;
 
+
 /**
  *
  * @author Nidhi Singh
@@ -32,6 +33,7 @@ public class WorkAreaManagerJPanel extends javax.swing.JPanel {
     /**
      * Creates new form ManagerWorkAreaJPanel
      */
+    
     public WorkAreaManagerJPanel(JPanel showPanel, User userAccount, TrustOrgManager organisation, EnterpriseTrust enterprise, Network network, EcoSystem ecoSystem) {
         initComponents();
         this.showPanel = showPanel;
@@ -195,6 +197,7 @@ public class WorkAreaManagerJPanel extends javax.swing.JPanel {
         layout.next(showPanel);
     }//GEN-LAST:event_viewDonButtonActionPerformed
 
+    
     private void pickupButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pickupButtonActionPerformed
         PatientsCureSponsoringInformation patientsTreatmentSponsoringDetails = new PatientsCureSponsoringInformation(showPanel, enterprise, network, ecoSystem, userAccount, funds);
         showPanel.add("patientsTreatmentSponsoringDetails", patientsTreatmentSponsoringDetails);
@@ -231,3 +234,4 @@ public class WorkAreaManagerJPanel extends javax.swing.JPanel {
     private javax.swing.JButton viewDonButton;
     // End of variables declaration//GEN-END:variables
 }
+
