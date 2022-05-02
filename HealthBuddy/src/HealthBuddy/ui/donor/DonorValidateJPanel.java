@@ -44,34 +44,34 @@ public class DonorValidateJPanel extends javax.swing.JPanel {
        isValidated = valid;
        
        if (isValidated) {
-           valAccL.setVisible(false);
-           codeL.setVisible(false);
-           codeTF.setVisible(false);
-           helperLabel.setVisible(false);
-           registerBtn.setVisible(false);
+           valAccL9.setVisible(false);
+           codeL9.setVisible(false);
+           codeTF9.setVisible(false);
+           helperLabel9.setVisible(false);
+           registerBtn9.setVisible(false);
 
-           setAccL.setVisible(true);
-           userNameLabel.setVisible(true);
-           usernameTF.setVisible(true);
-           passPF.setVisible(true);
-           paswdL.setVisible(true);
-           saveBtn.setVisible(true);
+           setAccL9.setVisible(true);
+           userNameLabel9.setVisible(true);
+           usernameTF9.setVisible(true);
+           passPF9.setVisible(true);
+           paswdL9.setVisible(true);
+           saveBtn9.setVisible(true);
        
        } else {
 
-           valAccL.setVisible(true);
-           codeL.setVisible(true);
-           codeTF.setVisible(true);
-           helperLabel.setVisible(true);
-           registerBtn.setVisible(true);
+           valAccL9.setVisible(true);
+           codeL9.setVisible(true);
+           codeTF9.setVisible(true);
+           helperLabel9.setVisible(true);
+           registerBtn9.setVisible(true);
 
 
-           setAccL.setVisible(false);
-           userNameLabel.setVisible(false);
-           usernameTF.setVisible(false);
-           passPF.setVisible(false);
-           paswdL.setVisible(false);
-           saveBtn.setVisible(false);
+           setAccL9.setVisible(false);
+           userNameLabel9.setVisible(false);
+           usernameTF9.setVisible(false);
+           passPF9.setVisible(false);
+           paswdL9.setVisible(false);
+           saveBtn9.setVisible(false);
        
        }
        
@@ -86,88 +86,88 @@ public class DonorValidateJPanel extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setAccL = new javax.swing.JLabel();
-        codeL = new javax.swing.JLabel();
-        codeTF = new javax.swing.JTextField();
-        helperLabel = new javax.swing.JLabel();
-        registerBtn = new javax.swing.JButton();
-        userNameLabel = new javax.swing.JLabel();
-        usernameTF = new javax.swing.JTextField();
-        valAccL = new javax.swing.JLabel();
-        paswdL = new javax.swing.JLabel();
-        passPF = new javax.swing.JPasswordField();
-        saveBtn = new javax.swing.JButton();
+        setAccL9 = new javax.swing.JLabel();
+        codeL9 = new javax.swing.JLabel();
+        codeTF9 = new javax.swing.JTextField();
+        helperLabel9 = new javax.swing.JLabel();
+        registerBtn9 = new javax.swing.JButton();
+        userNameLabel9 = new javax.swing.JLabel();
+        usernameTF9 = new javax.swing.JTextField();
+        valAccL9 = new javax.swing.JLabel();
+        paswdL9 = new javax.swing.JLabel();
+        passPF9 = new javax.swing.JPasswordField();
+        saveBtn9 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
 
-        setAccL.setBackground(new java.awt.Color(255, 255, 255));
-        setAccL.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
-        setAccL.setForeground(new java.awt.Color(0, 102, 102));
-        setAccL.setText("SET YOUR ACCOUNT AS A DONOR");
+        setAccL9.setBackground(new java.awt.Color(255, 255, 255));
+        setAccL9.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
+        setAccL9.setForeground(new java.awt.Color(0, 102, 102));
+        setAccL9.setText("SET YOUR ACCOUNT AS A DONOR");
 
-        codeL.setBackground(new java.awt.Color(255, 255, 255));
-        codeL.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        codeL.setForeground(new java.awt.Color(0, 102, 102));
-        codeL.setText("Code: ");
+        codeL9.setBackground(new java.awt.Color(255, 255, 255));
+        codeL9.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        codeL9.setForeground(new java.awt.Color(0, 102, 102));
+        codeL9.setText("Code: ");
 
-        codeTF.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        codeTF.setForeground(new java.awt.Color(0, 102, 102));
-        codeTF.setText(" ");
+        codeTF9.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        codeTF9.setForeground(new java.awt.Color(0, 102, 102));
+        codeTF9.setText(" ");
 
-        helperLabel.setBackground(new java.awt.Color(255, 255, 255));
-        helperLabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        helperLabel.setForeground(new java.awt.Color(0, 102, 102));
-        helperLabel.setText("Please check your email you will have received a code. Please check the spam folder as well.");
+        helperLabel9.setBackground(new java.awt.Color(255, 255, 255));
+        helperLabel9.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        helperLabel9.setForeground(new java.awt.Color(0, 102, 102));
+        helperLabel9.setText("Please check your email you will have received a code. Please check the spam folder as well.");
 
-        registerBtn.setBackground(new java.awt.Color(0, 102, 102));
-        registerBtn.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        registerBtn.setForeground(new java.awt.Color(255, 255, 255));
-        registerBtn.setText("Validate");
-        registerBtn.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        registerBtn.setBorderPainted(false);
-        registerBtn.addActionListener(new java.awt.event.ActionListener() {
+        registerBtn9.setBackground(new java.awt.Color(0, 102, 102));
+        registerBtn9.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        registerBtn9.setForeground(new java.awt.Color(255, 255, 255));
+        registerBtn9.setText("Validate");
+        registerBtn9.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        registerBtn9.setBorderPainted(false);
+        registerBtn9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                registerBtnActionPerformed(evt);
+                registerBtn9ActionPerformed(evt);
             }
         });
 
-        userNameLabel.setBackground(new java.awt.Color(255, 255, 255));
-        userNameLabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        userNameLabel.setForeground(new java.awt.Color(0, 102, 102));
-        userNameLabel.setText("Username:");
+        userNameLabel9.setBackground(new java.awt.Color(255, 255, 255));
+        userNameLabel9.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        userNameLabel9.setForeground(new java.awt.Color(0, 102, 102));
+        userNameLabel9.setText("Username:");
 
-        usernameTF.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        usernameTF.setForeground(new java.awt.Color(0, 102, 102));
-        usernameTF.setText(" ");
+        usernameTF9.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        usernameTF9.setForeground(new java.awt.Color(0, 102, 102));
+        usernameTF9.setText(" ");
 
-        valAccL.setBackground(new java.awt.Color(255, 255, 255));
-        valAccL.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
-        valAccL.setForeground(new java.awt.Color(0, 102, 102));
-        valAccL.setText("VALIDATE YOUR ACCOUNT AS A DONOR");
+        valAccL9.setBackground(new java.awt.Color(255, 255, 255));
+        valAccL9.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
+        valAccL9.setForeground(new java.awt.Color(0, 102, 102));
+        valAccL9.setText("VALIDATE YOUR ACCOUNT AS A DONOR");
 
-        paswdL.setBackground(new java.awt.Color(255, 255, 255));
-        paswdL.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        paswdL.setForeground(new java.awt.Color(0, 102, 102));
-        paswdL.setText("Password:");
+        paswdL9.setBackground(new java.awt.Color(255, 255, 255));
+        paswdL9.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        paswdL9.setForeground(new java.awt.Color(0, 102, 102));
+        paswdL9.setText("Password:");
 
-        passPF.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        passPF.setForeground(new java.awt.Color(0, 102, 102));
-        passPF.addActionListener(new java.awt.event.ActionListener() {
+        passPF9.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        passPF9.setForeground(new java.awt.Color(0, 102, 102));
+        passPF9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                passPFActionPerformed(evt);
+                passPF9ActionPerformed(evt);
             }
         });
 
-        saveBtn.setBackground(new java.awt.Color(0, 102, 102));
-        saveBtn.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        saveBtn.setForeground(new java.awt.Color(255, 255, 255));
-        saveBtn.setText("Save");
-        saveBtn.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        saveBtn.setBorderPainted(false);
-        saveBtn.addActionListener(new java.awt.event.ActionListener() {
+        saveBtn9.setBackground(new java.awt.Color(0, 102, 102));
+        saveBtn9.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        saveBtn9.setForeground(new java.awt.Color(255, 255, 255));
+        saveBtn9.setText("Save");
+        saveBtn9.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        saveBtn9.setBorderPainted(false);
+        saveBtn9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                saveBtnActionPerformed(evt);
+                saveBtn9ActionPerformed(evt);
             }
         });
 
@@ -183,36 +183,36 @@ public class DonorValidateJPanel extends javax.swing.JPanel {
                 .addGap(34, 34, 34)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(codeL, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(codeL9, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(64, 64, 64)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(codeTF, javax.swing.GroupLayout.PREFERRED_SIZE, 398, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(helperLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 814, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(codeTF9, javax.swing.GroupLayout.PREFERRED_SIZE, 398, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(helperLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 814, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(setAccL, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(setAccL9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addGroup(layout.createSequentialGroup()
-                                        .addComponent(userNameLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(userNameLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 64, Short.MAX_VALUE)
-                                        .addComponent(usernameTF, javax.swing.GroupLayout.PREFERRED_SIZE, 390, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                        .addComponent(usernameTF9, javax.swing.GroupLayout.PREFERRED_SIZE, 390, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                 .addGap(123, 123, 123)
-                                .addComponent(registerBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(registerBtn9, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(41, 41, 41))
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(paswdL, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(paswdL9, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(64, 64, 64)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(saveBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(passPF, javax.swing.GroupLayout.PREFERRED_SIZE, 398, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                    .addComponent(saveBtn9, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(passPF9, javax.swing.GroupLayout.PREFERRED_SIZE, 398, javax.swing.GroupLayout.PREFERRED_SIZE))))
                         .addGap(25, 25, 25)
                         .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 567, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(875, Short.MAX_VALUE))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
                     .addGap(34, 34, 34)
-                    .addComponent(valAccL, javax.swing.GroupLayout.PREFERRED_SIZE, 807, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(valAccL9, javax.swing.GroupLayout.PREFERRED_SIZE, 807, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addContainerGap(1646, Short.MAX_VALUE)))
         );
         layout.setVerticalGroup(
@@ -220,53 +220,53 @@ public class DonorValidateJPanel extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addGap(119, 119, 119)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(codeL)
-                    .addComponent(codeTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(codeL9)
+                    .addComponent(codeTF9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(helperLabel)
+                .addComponent(helperLabel9)
                 .addGap(38, 38, 38)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(registerBtn)
-                            .addComponent(setAccL, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(registerBtn9)
+                            .addComponent(setAccL9, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(32, 32, 32)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(userNameLabel)
-                            .addComponent(usernameTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(userNameLabel9)
+                            .addComponent(usernameTF9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(50, 50, 50)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(paswdL)
-                            .addComponent(passPF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(paswdL9)
+                            .addComponent(passPF9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(68, 68, 68)
-                        .addComponent(saveBtn))
+                        .addComponent(saveBtn9))
                     .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 527, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(220, Short.MAX_VALUE))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
                     .addGap(48, 48, 48)
-                    .addComponent(valAccL, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(valAccL9, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addContainerGap(865, Short.MAX_VALUE)))
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void registerBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_registerBtnActionPerformed
+    private void registerBtn9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_registerBtn9ActionPerformed
         // TODO add your handling code here:
         
-        boolean valid = Config.getClippedText(codeTF).equals(validationCode);
+        boolean valid = Config.getClippedText(codeTF9).equals(validationCode);
         setValidated(valid);
 
-    }//GEN-LAST:event_registerBtnActionPerformed
+    }//GEN-LAST:event_registerBtn9ActionPerformed
 
-    private void passPFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_passPFActionPerformed
+    private void passPF9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_passPF9ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_passPFActionPerformed
+    }//GEN-LAST:event_passPF9ActionPerformed
 
-    private void saveBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_saveBtnActionPerformed
+    private void saveBtn9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_saveBtn9ActionPerformed
         // TODO add your handling code here:
         
-        String userName = Config.getClippedText(usernameTF);
-        String password = String.valueOf(passPF.getPassword());
+        String userName = Config.getClippedText(usernameTF9);
+        String password = String.valueOf(passPF9.getPassword());
         
         boolean result = ecosystem.getUserCatalog().isUserNameUnique(userName);
         
@@ -276,35 +276,35 @@ public class DonorValidateJPanel extends javax.swing.JPanel {
             ecosystem.getDonorDir().addDonor(donorData);
             dB4OUtil.storeSystem(ecosystem);
 
-            JOptionPane.showMessageDialog(null, "You have been officially registered as Donor \nPlease Login to start donating.. ",
+            JOptionPane.showMessageDialog(null, "Your Donor registration is complete \nPlease Signin to begin your contribution",
                     "Success", JOptionPane.INFORMATION_MESSAGE);
             
-            saveBtn.setEnabled(false);
-            usernameTF.setEditable(false);
-            passPF.setEditable(false);
-            usernameTF.setText("");
-            passPF.setText("");
+            saveBtn9.setEnabled(false);
+            usernameTF9.setEditable(false);
+            passPF9.setEditable(false);
+            usernameTF9.setText("");
+            passPF9.setText("");
         }
         else {
-            JOptionPane.showMessageDialog(null, "Try a different username, current username already exists","Error", JOptionPane.ERROR_MESSAGE);
-            usernameTF.setText("");
-            passPF.setText("");
+            JOptionPane.showMessageDialog(null, "Please try with a unique username, this username is already used","Error", JOptionPane.ERROR_MESSAGE);
+            usernameTF9.setText("");
+            passPF9.setText("");
         }
-    }//GEN-LAST:event_saveBtnActionPerformed
+    }//GEN-LAST:event_saveBtn9ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel codeL;
-    private javax.swing.JTextField codeTF;
-    private javax.swing.JLabel helperLabel;
+    private javax.swing.JLabel codeL9;
+    private javax.swing.JTextField codeTF9;
+    private javax.swing.JLabel helperLabel9;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JPasswordField passPF;
-    private javax.swing.JLabel paswdL;
-    private javax.swing.JButton registerBtn;
-    private javax.swing.JButton saveBtn;
-    private javax.swing.JLabel setAccL;
-    private javax.swing.JLabel userNameLabel;
-    private javax.swing.JTextField usernameTF;
-    private javax.swing.JLabel valAccL;
+    private javax.swing.JPasswordField passPF9;
+    private javax.swing.JLabel paswdL9;
+    private javax.swing.JButton registerBtn9;
+    private javax.swing.JButton saveBtn9;
+    private javax.swing.JLabel setAccL9;
+    private javax.swing.JLabel userNameLabel9;
+    private javax.swing.JTextField usernameTF9;
+    private javax.swing.JLabel valAccL9;
     // End of variables declaration//GEN-END:variables
 }
