@@ -515,7 +515,7 @@ public class PatientCreateJPanel extends javax.swing.JPanel {
 
                     String code = OTPUtility.generateOTP(4);
 
-                    String message = "Dear "+ name +",\n\nThis is your one time OTP :" + " " + code +"Don't share it with anyone!" +"\n\nThanks,\nHealthBuddy Team";
+                    String message = "Dear "+ name +",\n\nThis is your one time OTP :" + " " + code +" \nDon't share it with anyone!" +"\n\nThanks,\nHealthBuddy Team";
                     String subject = "Account Verification Mail";
                     SMSUtility.sendSMS(patient.getContactNo(), " Account Verification Mail  " + message);
 
